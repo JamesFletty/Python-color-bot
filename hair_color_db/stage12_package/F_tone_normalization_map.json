@@ -1,0 +1,5453 @@
+{
+  "artifact": "tone_normalization_map",
+  "count": 353,
+  "tone_normalization_map": [
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "AB",
+      "manufacturer_term": "Ash Blue",
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "mapping_rationale": "Legend: Ash Blue - maximum refinement of warmth",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "ABn",
+      "manufacturer_term": "Ash Brown",
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "mapping_rationale": "Legend: Ash Brown - ultra-cool ash brunette",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "CB",
+      "manufacturer_term": "Copper Brown",
+      "normalized_tones": [
+        "Copper",
+        "Brown"
+      ],
+      "mapping_rationale": "Legend: Copper Brown",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "GB",
+      "manufacturer_term": "Gold Beige",
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "mapping_rationale": "Legend: Gold Beige",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "GN",
+      "manufacturer_term": "Green Natural",
+      "normalized_tones": [
+        "Green",
+        "Natural"
+      ],
+      "mapping_rationale": "Legend: Green Natural - Controls unwanted red tones when lifting",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "Natural",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "mapping_rationale": "Legend: Natural",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "Natural Ash",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "mapping_rationale": "Legend: Natural Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "NG",
+      "manufacturer_term": "Natural Gold",
+      "normalized_tones": [
+        "Natural",
+        "Gold"
+      ],
+      "mapping_rationale": "Legend: Natural Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "NN",
+      "manufacturer_term": "Natural Natural",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Legend: Natural Natural - extreme coverage neutral tones",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "NW",
+      "manufacturer_term": "Natural Warm",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "mapping_rationale": "Legend: Natural Warm",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "Ruby Brown",
+      "normalized_tones": [
+        "Red",
+        "Brown"
+      ],
+      "mapping_rationale": "Legend: Ruby Brown - soft ruby-like results",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "RO",
+      "manufacturer_term": "Red Orange",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "Legend: Red Orange; Orange not in taxonomy, mapped to Copper (orange undertone family)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "Red Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Legend: Red Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "RV",
+      "manufacturer_term": "Red Violet",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Legend: Red Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "VRo",
+      "manufacturer_term": "Violet Rose",
+      "normalized_tones": [
+        "Violet",
+        "Other"
+      ],
+      "mapping_rationale": "Legend: Violet Rose; Rose not in taxonomy, secondary mapped to Other",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Lacquers",
+      "manufacturer_tone_code": "WG",
+      "manufacturer_term": "Warm Gold",
+      "normalized_tones": [
+        "Warm",
+        "Gold"
+      ],
+      "mapping_rationale": "Legend: Warm Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "ABn",
+      "manufacturer_term": "Ash Brown (inferred from sibling line legend)",
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "mapping_rationale": "No SEQ legend; Color Gels Lacquers legend defines ABn = Ash Brown; cross-line reuse is inferred per spec rule",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "AG",
+      "manufacturer_term": "Ash Gold (inferred)",
+      "normalized_tones": [
+        "Ash",
+        "Gold"
+      ],
+      "mapping_rationale": "No printed legend; inferred from official shade names: Misty Beige, Glossy Greige, Smokey Beige (greige = ash+gold)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "B",
+      "manufacturer_term": "Blue",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "Legend: Blue",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "C",
+      "manufacturer_term": "Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Legend: Copper (Orange)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "CB",
+      "manufacturer_term": "Copper Brown",
+      "normalized_tones": [
+        "Copper",
+        "Brown"
+      ],
+      "mapping_rationale": "Legend: Copper Brown (Red/Orange)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "CC",
+      "manufacturer_term": "Copper Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Legend: Copper Copper (Orange/Orange)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "CR",
+      "manufacturer_term": "Copper Red (inferred)",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "No printed legend; inferred from official shade names: Sunrise, Sunset",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "Gold",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Legend: Gold (Yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "GB",
+      "manufacturer_term": "Gold Beige",
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "mapping_rationale": "Legend: Gold Beige (Gold/Mauve)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "GG",
+      "manufacturer_term": "Gold Gold",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Legend: Gold Gold (Yellow Yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "GN",
+      "manufacturer_term": "Green Natural",
+      "normalized_tones": [
+        "Green",
+        "Natural"
+      ],
+      "mapping_rationale": "Legend: Green Natural (Green/Yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "M",
+      "manufacturer_term": "Mocha (inferred, ambiguous)",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "No printed legend; names Sand Dunes/Driftwood/Smoked Cedar/Midnight Ash are smoky-neutral; mapped to Mocha per family naming, flagged ambiguous",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "Natural",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "mapping_rationale": "Legend: Natural",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "Natural Ash (inferred)",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "mapping_rationale": "No printed legend; inferred from official shade names: Marble, Mist, Volcanic, Pewter, Granite, Smoke",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "NB",
+      "manufacturer_term": "Neutral Brown",
+      "normalized_tones": [
+        "Neutral",
+        "Brown"
+      ],
+      "mapping_rationale": "Legend (2013 AU chart, flagged in Stage 4 issue log): Neutral Brown Blonde",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "NCh",
+      "manufacturer_term": "Natural Chocolate (inferred)",
+      "normalized_tones": [
+        "Natural",
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "No printed legend; inferred from official shade names: Fondue, Ganache, Dark Chocolate",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "NW",
+      "manufacturer_term": "Natural Warm (inferred)",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "mapping_rationale": "No printed legend; inferred from official shade names: Cream Soda, Milk Tea, Macchiato, Cocoa Bean",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "P",
+      "manufacturer_term": "Pearl (inferred)",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "No printed legend; inferred from official shade names: Ivory Pearl, Opal Glow, Mother of Pearl",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "R",
+      "manufacturer_term": "Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Legend: Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "Red Brown",
+      "normalized_tones": [
+        "Red",
+        "Brown"
+      ],
+      "mapping_rationale": "Legend: Red Brown (Red)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "Red Red (inferred from sibling line legend)",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "No SEQ legend; Color Gels Lacquers legend defines RR = Red Red; cross-line reuse is inferred per spec rule",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "RV",
+      "manufacturer_term": "Red Violet",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Legend: Red Violet (Red/Violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "T",
+      "manufacturer_term": "Titanium",
+      "normalized_tones": [
+        "Blue",
+        "Cool"
+      ],
+      "mapping_rationale": "Legend: Titanium (printed tone Silver/Blue); shade names Platinum/Chrome/Silver/Steel/Iron",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "V",
+      "manufacturer_term": "Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Legend: Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "VB",
+      "manufacturer_term": "Violet Blue (inferred)",
+      "normalized_tones": [
+        "Violet",
+        "Blue"
+      ],
+      "mapping_rationale": "No printed legend; inferred from official shade names: Violet Frost, Violet Star, Violet Lagoon",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "VG",
+      "manufacturer_term": "Violet Gold (inferred)",
+      "normalized_tones": [
+        "Violet",
+        "Gold"
+      ],
+      "mapping_rationale": "No printed legend; inferred from official shade names: Iridescence, Gilded Taupe",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "VRo",
+      "manufacturer_term": "Violet Rose (inferred from sibling line legend)",
+      "normalized_tones": [
+        "Violet",
+        "Other"
+      ],
+      "mapping_rationale": "No SEQ legend; Color Gels Lacquers legend defines VRo = Violet Rose; cross-line reuse is inferred per spec rule",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "VV",
+      "manufacturer_term": "Violet Violet (inferred)",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "No printed legend; inferred from official shade name: Lavender Ice",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "manufacturer_tone_code": "WG",
+      "manufacturer_term": "Warm Gold",
+      "normalized_tones": [
+        "Warm",
+        "Gold"
+      ],
+      "mapping_rationale": "Legend: Warm Gold (Yellow/Orange)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "0",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural (neutral)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "00",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural (neutral); secondary 0 = Natural (neutral)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "01",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Neutral",
+        "Ash",
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural (neutral); secondary 1 = Cendré (blue/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "1",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "10",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 0 = Natural (neutral)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "11",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 1 = Cendré (blue/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "12",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 2 = Ash (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "13",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 3 = Matte (green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "14",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Beige",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 4 = Beige (muted gold)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "140",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Beige",
+        "Gold",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 4 = Beige (muted gold); tertiary 0 = Natural (neutral)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": [
+        "Three tone digits observed (special/Absolutes-style code); per-digit decoding applied but the third digit role is not documented in fetched sources."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "16",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 6 = Chocolate (warm brown)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "19",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 9 = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "2",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Ash (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "21",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Ash (blue); secondary 1 = Cendré (blue/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "22",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Ash (blue); secondary 2 = Ash (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "24",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Beige",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Ash (blue); secondary 4 = Beige (muted gold)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "33",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Matte (green); secondary 3 = Matte (green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "4",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "40",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 0 = Natural (neutral)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "42",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold",
+        "Ash",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 2 = Ash (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "450",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 5 = Gold; tertiary 0 = Natural (neutral)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": [
+        "Three tone digits observed (special/Absolutes-style code); per-digit decoding applied but the third digit role is not documented in fetched sources."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "46",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold",
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 6 = Chocolate (warm brown)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "460",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold",
+        "Brown",
+        "Warm",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 6 = Chocolate (warm brown); tertiary 0 = Natural (neutral)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": [
+        "Three tone digits observed (special/Absolutes-style code); per-digit decoding applied but the third digit role is not documented in fetched sources."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "470",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold",
+        "Copper",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 7 = Copper (orange); tertiary 0 = Natural (neutral)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": [
+        "Three tone digits observed (special/Absolutes-style code); per-digit decoding applied but the third digit role is not documented in fetched sources."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "49",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 9 = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "5",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "50",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold; secondary 0 = Natural (neutral)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "55",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold; secondary 5 = Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "560",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Brown",
+        "Warm",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold; secondary 6 = Chocolate (warm brown); tertiary 0 = Natural (neutral)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": [
+        "Three tone digits observed (special/Absolutes-style code); per-digit decoding applied but the third digit role is not documented in fetched sources."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "57",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold; secondary 7 = Copper (orange)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "6",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "60",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Warm",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 0 = Natural (neutral)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "63",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Warm",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 3 = Matte (green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "65",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Warm",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 5 = Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "68",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Warm",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 8 = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "7",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Copper (orange)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "70",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Copper (orange); secondary 0 = Natural (neutral)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "710",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Ash",
+        "Blue",
+        "Violet",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Copper (orange); secondary 1 = Cendré (blue/violet); tertiary 0 = Natural (neutral)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": [
+        "Three tone digits observed (special/Absolutes-style code); per-digit decoding applied but the third digit role is not documented in fetched sources."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "77",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Copper (orange); secondary 7 = Copper (orange)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "80",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Red; secondary 0 = Natural (neutral)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "88",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Red; secondary 8 = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "89",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Red; secondary 9 = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "98",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Violet; secondary 8 = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "manufacturer_tone_code": "99",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Violet; secondary 9 = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "0",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural (neutral)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "00",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural (neutral); secondary 0 = Natural (neutral)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "1",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "11",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 1 = Cendré (blue/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "12",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 2 = Ash (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "13",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 3 = Matte (green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "16",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 6 = Chocolate (warm brown)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "19",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 9 = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "21",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Ash (blue); secondary 1 = Cendré (blue/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "22",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Ash (blue); secondary 2 = Ash (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "24",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Beige",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Ash (blue); secondary 4 = Beige (muted gold)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "33",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Matte (green); secondary 3 = Matte (green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "4",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "42",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold",
+        "Ash",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 2 = Ash (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "46",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold",
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 6 = Chocolate (warm brown)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "48",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 8 = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "49",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Beige",
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 9 = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "5",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "55",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold; secondary 5 = Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "57",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold; secondary 7 = Copper (orange)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "6",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "63",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Warm",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 3 = Matte (green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "65",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Warm",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 5 = Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "67",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Warm",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 7 = Copper (orange)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "68",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Warm",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 8 = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "7",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Copper (orange)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "77",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Copper (orange); secondary 7 = Copper (orange)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "78",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Copper (orange); secondary 8 = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "88",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Red; secondary 8 = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "89",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Red; secondary 9 = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "98",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Violet; secondary 8 = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "manufacturer_tone_code": "99",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Violet; secondary 9 = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/0",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/00",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 0 = Natural",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/01",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash",
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/02",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 2 = Matt (green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/03",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 3 = Gold (yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/04",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Red",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 4 = Red (warm)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/05",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Mahogany",
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/06",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/07",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/1",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/16",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Green",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Ash (blue/green); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/3",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/34",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Red",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 4 = Red (warm)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/35",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Mahogany",
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/36",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/37",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/38",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Pearl",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 8 = Pearl (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/4",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/41",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm",
+        "Ash",
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm); secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/43",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm); secondary 3 = Gold (yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/44",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm); secondary 4 = Red (warm)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/45",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm",
+        "Mahogany",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm); secondary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/47",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm",
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm); secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/5",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mahogany",
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/54",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mahogany",
+        "Red",
+        "Violet",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Mahogany (red/violet); secondary 4 = Red (warm)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/56",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mahogany",
+        "Red",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Mahogany (red/violet); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/57",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mahogany",
+        "Red",
+        "Violet",
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Mahogany (red/violet); secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/6",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/65",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Cool",
+        "Mahogany",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Violet (cool); secondary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/66",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Violet (cool); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/68",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Cool",
+        "Pearl",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Violet (cool); secondary 8 = Pearl (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/7",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/71",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Ash",
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Brown (red, yellow, blue); secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/73",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Brown (red, yellow, blue); secondary 3 = Gold (yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/75",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Mahogany",
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Brown (red, yellow, blue); secondary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/77",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Brown (red, yellow, blue); secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/8",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Pearl",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Pearl (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/81",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Pearl",
+        "Blue",
+        "Ash",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Pearl (blue); secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/86",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Pearl",
+        "Blue",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Pearl (blue); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/88",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Pearl",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Pearl (blue); secondary 8 = Pearl (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/89",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Pearl",
+        "Blue",
+        "Ash",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Pearl (blue); secondary 9 = Cendre (blue/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/96",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Cendre (blue/violet); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "/97",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Cendre (blue/violet); secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/0",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/00",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 0 = Natural",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/01",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash",
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/02",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 2 = Matt (green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/03",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 3 = Gold (yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/04",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Red",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 4 = Red (warm)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/07",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural; secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/1",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/11",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Ash (blue/green); secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/16",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Green",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Ash (blue/green); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/17",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Green",
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Ash (blue/green); secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/18",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Green",
+        "Pearl"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Ash (blue/green); secondary 8 = Pearl (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/2",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Matt (green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/22",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Matt (green); secondary 2 = Matt (green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/28",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Green",
+        "Pearl",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Matt (green); secondary 8 = Pearl (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/3",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/30",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 0 = Natural",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/31",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Ash",
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/33",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 3 = Gold (yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/34",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Red",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 4 = Red (warm)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/36",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/37",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/38",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Pearl",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Gold (yellow); secondary 8 = Pearl (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/4",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/41",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm",
+        "Ash",
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm); secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/43",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm); secondary 3 = Gold (yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/44",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm); secondary 4 = Red (warm)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/45",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm",
+        "Mahogany",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm); secondary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/46",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/47",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Warm",
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Red (warm); secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/5",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mahogany",
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/55",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mahogany",
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Mahogany (red/violet); secondary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/56",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mahogany",
+        "Red",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Mahogany (red/violet); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/6",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/61",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Cool",
+        "Ash",
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Violet (cool); secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/65",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Cool",
+        "Mahogany",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Violet (cool); secondary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/66",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Violet (cool); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/7",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/71",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Ash",
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Brown (red, yellow, blue); secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/73",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Brown (red, yellow, blue); secondary 3 = Gold (yellow)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/74",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Red",
+        "Warm"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Brown (red, yellow, blue); secondary 4 = Red (warm)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/75",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown",
+        "Mahogany",
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Brown (red, yellow, blue); secondary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/77",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Brown (red, yellow, blue); secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/8",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Pearl",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Pearl (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/81",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Pearl",
+        "Blue",
+        "Ash",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Pearl (blue); secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/86",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Pearl",
+        "Blue",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Pearl (blue); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/88",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Pearl",
+        "Blue"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Pearl (blue); secondary 8 = Pearl (blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/89",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Pearl",
+        "Blue",
+        "Ash",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Pearl (blue); secondary 9 = Cendre (blue/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/91",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Cendre (blue/violet); secondary 1 = Ash (blue/green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/95",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Mahogany",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Cendre (blue/violet); secondary 5 = Mahogany (red/violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/96",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Cool"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Cendre (blue/violet); secondary 6 = Violet (cool)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "/97",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue",
+        "Violet",
+        "Brown"
+      ],
+      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Cendre (blue/violet); secondary 7 = Brown (red, yellow, blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "01",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "02",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "03",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "07",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .7 = green (Gr)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "1",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "11",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "12",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "13",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "18",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Mocha"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .8 = mocha (M)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "2",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "21",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "22",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "23",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "24",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "3",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "31",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "32",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "34",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "40",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "43",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "45",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "46",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "64",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "66",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "8",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .8 = mocha (M)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "82",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mocha",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .8 = mocha (M); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "0",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "01",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "03",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "04",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "07",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .7 = green (Gr)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "1",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "10",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "11",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "12",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "13",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "15",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "17",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .7 = green (Gr)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "18",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Mocha"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .8 = mocha (M)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "20",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "21",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "22",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "23",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "26",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "3",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "31",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "32",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "34",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "35",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "4",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "40",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "43",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "44",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "45",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "46",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "5",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "52",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .5 = red-violet (Rv); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "55",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .5 = red-violet (Rv); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "56",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .5 = red-violet (Rv); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "6",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "60",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "62",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "64",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "65",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "66",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "70",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Green",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .7 = green (Gr); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "8",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .8 = mocha (M)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "primary Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "AA",
+      "manufacturer_term": "primary Ash / secondary Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A=Ash (digit legend '.1 Ash'); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "Anti-Brass",
+      "manufacturer_term": "Anti-Brass fast toner",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "functional neutralizer name as printed; underlying pigment not stated — flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "Anti-Red",
+      "manufacturer_term": "Anti-Red fast toner",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "functional neutralizer name as printed; underlying pigment not stated — flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "Anti-Yellow",
+      "manufacturer_term": "Anti-Yellow fast toner",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "functional neutralizer name as printed; underlying pigment not stated — flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "BC",
+      "manufacturer_term": "primary Brown (ambiguous vs Blue) / secondary Copper",
+      "normalized_tones": [
+        "Brown",
+        "Copper"
+      ],
+      "mapping_rationale": "B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue); C=Copper (digit legend '.4 Copper')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "BLUE",
+      "manufacturer_term": "Blue (booster, printed word)",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade printed as the word BLUE",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "BR",
+      "manufacturer_term": "primary Brown (ambiguous vs Blue) / secondary Red",
+      "normalized_tones": [
+        "Brown",
+        "Red"
+      ],
+      "mapping_rationale": "B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "CG",
+      "manufacturer_term": "primary Copper / secondary Gold",
+      "normalized_tones": [
+        "Copper",
+        "Gold"
+      ],
+      "mapping_rationale": "C=Copper (digit legend '.4 Copper'); G=Gold (digit legend '.3 Gold')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "CR",
+      "manufacturer_term": "primary Copper / secondary Red",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "C=Copper (digit legend '.4 Copper'); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "Clear",
+      "manufacturer_term": "Clear",
+      "normalized_tones": [],
+      "mapping_rationale": "printed legend: reduces tonal deposit / adds shine; non-pigmented",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "primary Gold",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "G=Gold (digit legend '.3 Gold')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "GV",
+      "manufacturer_term": "primary Gold / secondary Violet",
+      "normalized_tones": [
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "G=Gold (digit legend '.3 Gold'); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "M",
+      "manufacturer_term": "primary Mocha (ambiguous vs Mahogany)",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "M=Mocha (ambiguous vs Mahogany) (digit legend lists both '.5 Mahogany' and '.8 Mocha'; letter M conventionally = Mocha in Matrix US naming — flagged ambiguous)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "MM",
+      "manufacturer_term": "primary Mocha (ambiguous vs Mahogany) / secondary Mocha (ambiguous vs Mahogany)",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "M=Mocha (ambiguous vs Mahogany) (digit legend lists both '.5 Mahogany' and '.8 Mocha'; letter M conventionally = Mocha in Matrix US naming — flagged ambiguous); M=Mocha (ambiguous vs Mahogany) (digit legend lists both '.5 Mahogany' and '.8 Mocha'; letter M conventionally = Mocha in Matrix US naming — flagged ambiguous)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "primary Neutral",
+      "normalized_tones": [
+        "Neutral"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ))",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "primary Neutral / secondary Ash",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "NJ",
+      "manufacturer_term": "primary Neutral / secondary Jade",
+      "normalized_tones": [
+        "Neutral",
+        "Green"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); J=Jade (digit legend '.7 Jade' + J used as secondary tone in printed example 4NJ; Jade not in taxonomy, mapped to Green)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "NV",
+      "manufacturer_term": "primary Neutral / secondary Violet",
+      "normalized_tones": [
+        "Neutral",
+        "Violet"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "P",
+      "manufacturer_term": "primary Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "P=Pearl (digit legend '.9 Pearl'; letter P inferred as its initial)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "primary Red / secondary Brown (ambiguous vs Blue)",
+      "normalized_tones": [
+        "Red",
+        "Brown"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RC+",
+      "manufacturer_term": "primary Red / secondary Copper — intensified (+)",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); C=Copper (digit legend '.4 Copper'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RED",
+      "manufacturer_term": "Red (booster, printed word)",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade printed as the word RED",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "primary Red / secondary Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RR+",
+      "manufacturer_term": "primary Red / secondary Red — intensified (+)",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); R=Red (digit legend '.6 Red'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RV",
+      "manufacturer_term": "primary Red / secondary Violet",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RV+",
+      "manufacturer_term": "primary Red / secondary Violet — intensified (+)",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); V=Violet (digit legend '.2 Violet'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "SPA",
+      "manufacturer_term": "Sheer Pastel primary Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "printed legend 'Sheer Pastel (SP)' + A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "SPN",
+      "manufacturer_term": "Sheer Pastel primary Neutral",
+      "normalized_tones": [
+        "Neutral"
+      ],
+      "mapping_rationale": "printed legend 'Sheer Pastel (SP)' + N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ))",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "SPP",
+      "manufacturer_term": "Sheer Pastel primary Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "printed legend 'Sheer Pastel (SP)' + P=Pearl (digit legend '.9 Pearl'; letter P inferred as its initial)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "SPV",
+      "manufacturer_term": "Sheer Pastel primary Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "printed legend 'Sheer Pastel (SP)' + V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "V",
+      "manufacturer_term": "primary Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "VA",
+      "manufacturer_term": "primary Violet / secondary Ash",
+      "normalized_tones": [
+        "Violet",
+        "Ash"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet'); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "VV",
+      "manufacturer_term": "primary Violet / secondary Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet'); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "WN",
+      "manufacturer_term": "primary Warm / secondary Neutral",
+      "normalized_tones": [
+        "Warm",
+        "Neutral"
+      ],
+      "mapping_rationale": "W=Warm (no printed letter legend; W inferred as Warm from NW/WN family convention — flagged); N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ))",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "primary Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "A+",
+      "manufacturer_term": "Ash Plus",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "printed legend 'A+ (Ultra Blonde) = Ash Plus'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "AA",
+      "manufacturer_term": "primary Ash / secondary Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A=Ash (digit legend '.1 Ash'); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "AV",
+      "manufacturer_term": "primary Ash / secondary Violet",
+      "normalized_tones": [
+        "Ash",
+        "Violet"
+      ],
+      "mapping_rationale": "A=Ash (digit legend '.1 Ash'); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "BC",
+      "manufacturer_term": "primary Brown (ambiguous vs Blue) / secondary Copper",
+      "normalized_tones": [
+        "Brown",
+        "Copper"
+      ],
+      "mapping_rationale": "B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue); C=Copper (digit legend '.4 Copper')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "BLUE",
+      "manufacturer_term": "Blue (booster, printed word)",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade printed as the word BLUE",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "BR",
+      "manufacturer_term": "primary Brown (ambiguous vs Blue) / secondary Red",
+      "normalized_tones": [
+        "Brown",
+        "Red"
+      ],
+      "mapping_rationale": "B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "CC",
+      "manufacturer_term": "primary Copper / secondary Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "C=Copper (digit legend '.4 Copper'); C=Copper (digit legend '.4 Copper')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "CG",
+      "manufacturer_term": "primary Copper / secondary Gold",
+      "normalized_tones": [
+        "Copper",
+        "Gold"
+      ],
+      "mapping_rationale": "C=Copper (digit legend '.4 Copper'); G=Gold (digit legend '.3 Gold')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "CR",
+      "manufacturer_term": "primary Copper / secondary Red",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "C=Copper (digit legend '.4 Copper'); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "EBC",
+      "manufacturer_term": "Extra Blonding Cream (additive)",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "printed legend: additive that disperses underlying pigment; not a tone",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "primary Gold",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "G=Gold (digit legend '.3 Gold')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "M",
+      "manufacturer_term": "primary Mocha (ambiguous vs Mahogany)",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "M=Mocha (ambiguous vs Mahogany) (digit legend lists both '.5 Mahogany' and '.8 Mocha'; letter M conventionally = Mocha in Matrix US naming — flagged ambiguous)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "primary Neutral",
+      "normalized_tones": [
+        "Neutral"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ))",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "N+",
+      "manufacturer_term": "primary Neutral — intensified (+)",
+      "normalized_tones": [
+        "Neutral"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "primary Neutral / secondary Ash",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "NG",
+      "manufacturer_term": "primary Neutral / secondary Gold",
+      "normalized_tones": [
+        "Neutral",
+        "Gold"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); G=Gold (digit legend '.3 Gold')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "NJ",
+      "manufacturer_term": "primary Neutral / secondary Jade",
+      "normalized_tones": [
+        "Neutral",
+        "Green"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); J=Jade (digit legend '.7 Jade' + J used as secondary tone in printed example 4NJ; Jade not in taxonomy, mapped to Green)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "NV",
+      "manufacturer_term": "primary Neutral / secondary Violet",
+      "normalized_tones": [
+        "Neutral",
+        "Violet"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "NW",
+      "manufacturer_term": "primary Neutral / secondary Warm",
+      "normalized_tones": [
+        "Neutral",
+        "Warm"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); W=Warm (no printed letter legend; W inferred as Warm from NW/WN family convention — flagged)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "P",
+      "manufacturer_term": "primary Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "P=Pearl (digit legend '.9 Pearl'; letter P inferred as its initial)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "R",
+      "manufacturer_term": "primary Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "primary Red / secondary Brown (ambiguous vs Blue)",
+      "normalized_tones": [
+        "Red",
+        "Brown"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RC",
+      "manufacturer_term": "primary Red / secondary Copper",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); C=Copper (digit legend '.4 Copper')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RED",
+      "manufacturer_term": "Red (booster, printed word)",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade printed as the word RED",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "primary Red / secondary Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RR+",
+      "manufacturer_term": "primary Red / secondary Red — intensified (+)",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); R=Red (digit legend '.6 Red'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RV",
+      "manufacturer_term": "primary Red / secondary Violet",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RV+",
+      "manufacturer_term": "primary Red / secondary Violet — intensified (+)",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); V=Violet (digit legend '.2 Violet'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "Silver",
+      "manufacturer_term": "Silver (printed word)",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "shade printed as the word Silver; Silver not in taxonomy",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "V+",
+      "manufacturer_term": "primary Violet — intensified (+)",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "VA",
+      "manufacturer_term": "primary Violet / secondary Ash",
+      "normalized_tones": [
+        "Violet",
+        "Ash"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet'); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "VR",
+      "manufacturer_term": "primary Violet / secondary Red",
+      "normalized_tones": [
+        "Violet",
+        "Red"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet'); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "Violet",
+      "manufacturer_term": "Violet (printed word)",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade printed as the word Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "W",
+      "manufacturer_term": "primary Warm",
+      "normalized_tones": [
+        "Warm"
+      ],
+      "mapping_rationale": "W=Warm (no printed letter legend; W inferred as Warm from NW/WN family convention — flagged)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    }
+  ],
+  "unresolved_mappings": [
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "manufacturer_tone_code": "A",
+      "reason": "tone_meaning_unresolved",
+      "details": "No printed legend; single shade 03A Terra Cotta (warm name) contradicts conventional 'A = Ash'; unresolved"
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "manufacturer_tone_code": "AA",
+      "reason": "tone_meaning_unresolved",
+      "details": "No printed legend; shade names (Papaya, Bonfire) suggest warm/copper but contradict conventional 'AA = intense ash' reading; unresolved"
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "manufacturer_tone_code": "GI",
+      "reason": "tone_meaning_unresolved",
+      "details": "No printed legend; shade names (Tahitian Sand, Hamptons, St. Barths, Tenerife) do not unambiguously identify a tone family"
+    }
+  ],
+  "issue_log": []
+}

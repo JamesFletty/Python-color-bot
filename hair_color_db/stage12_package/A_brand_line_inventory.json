@@ -1,0 +1,2142 @@
+{
+  "stage": 1,
+  "artifact": "brand_line_inventory",
+  "generated": "2026-06-12",
+  "completion_status": "complete",
+  "brand_line_inventory": [
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Shades EQ Gloss",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redken.com",
+      "official_line_url": "https://www.redken.com/blog/shades-eq-demi-permanent-hair-gloss.html",
+      "notes": [
+        "Confirmed on redken.com blog and professional shade-chart pages as acidic demi-permanent hair gloss/toner ('#1 demi-permanent hair color in the world').",
+        "Sub-ranges seen on redken.com shade-chart page: Shades EQ Gloss, Shades EQ Bonder Inside, Shades EQ Cream & Cover Plus."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Color Gels Lacquers",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redken.com",
+      "official_line_url": "https://www.redken.com/professional/haircolor/color-gels",
+      "notes": [
+        "Confirmed on redken.com/professional/haircolor/color-gels (permanent hair colors & developers) and in the redken.com shade-chart list.",
+        "Family also includes Color Gels Oils and Color Gels Lacquers 10 Minute per the official shade-chart page."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Color Fusion::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Color Fusion",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redken.com",
+      "official_line_url": null,
+      "notes": [
+        "Listed in the current redken.com professional haircolor navigation and on the official shade-chart page (https://www.redken.com/professional/education/shade-charts); search synthesis describes it as a professional permanent color line."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Flash Lift Bonder Inside::global",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Flash Lift / Flash Lift Bonder Inside",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.redken.com",
+      "official_line_url": "https://www.redken.com.au/products/salon-hair-color-products/hair-colours/flash-lift-bonder-inside",
+      "notes": [
+        "Product page verified on official Redken Australia/NZ site (lightening powder, up to 8 levels of lift, built-in bonding additive).",
+        "US site references it: redken.com Shades EQ Bonder Inside page cites '77% less hair breakage when used along with Flash Lift Bonder Inside', and redken.com blog posts describe it as Redken's lightener."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Chromatics::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Chromatics",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redken.com",
+      "official_line_url": null,
+      "notes": [
+        "Appears in the current redken.com professional haircolor navigation menu, but no dedicated product page was fetched to confirm current availability, so status is marked unclear rather than confirmed active."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Shades ALK::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Shades ALK",
+      "line_category": "unknown",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redken.com",
+      "official_line_url": null,
+      "notes": [
+        "Confirmed present on redken.com: listed in the haircolor navigation and a 'Get to Know Shades ALK' resource link on the professional haircolor page; category (alkaline liquid color) not verified from a fetched product page, so left unknown."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Blonde Idol::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Blonde Idol",
+      "line_category": "unknown",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redken.com",
+      "official_line_url": null,
+      "notes": [
+        "Listed in current redken.com haircolor navigation and on the official shade-chart page; exact category (high-lift color/lightener) not verified from a product page."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Blonde IQ::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Blonde IQ",
+      "line_category": "unknown",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redken.com",
+      "official_line_url": null,
+      "notes": [
+        "Listed in current redken.com haircolor navigation; no product page fetched, category not verified."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Color Camo::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Color Camo",
+      "line_category": "unknown",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redken.com",
+      "official_line_url": null,
+      "notes": [
+        "Listed with a downloadable shade chart on redken.com/professional/education/shade-charts; commonly a men's camouflage color but category not verified on a fetched page."
+      ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand_name": "Wella Professionals",
+      "parent_company": "Wella Company",
+      "product_line_name": "Koleston Perfect",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": "https://www.wella.com/professional/en-US/koleston-perfect",
+      "notes": [
+        "Dedicated range page on wella.com US professional site: purest permanent color, 140+ shades, up to 100% grey coverage, ME+ dye technology."
+      ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Illumina Color::US",
+      "brand_name": "Wella Professionals",
+      "parent_company": "Wella Company",
+      "product_line_name": "Illumina Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": "https://www.wella.com/professional/en-US/color",
+      "notes": [
+        "Confirmed on wella.com/professional/en-US/color: permanent color with Microlight Technology, up to 100% grey coverage; also in official Wella colour brand factsheet PDF."
+      ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand_name": "Wella Professionals",
+      "parent_company": "Wella Company",
+      "product_line_name": "Color Touch",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": "https://www.wella.com/professional/en-US/color",
+      "notes": [
+        "Confirmed on wella.com US color page and in the official Wella colour brand factsheet: ammonia-free demi-permanent, up to 28 washes; factsheet also lists Color Touch Plus variant."
+      ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Shinefinity::US",
+      "brand_name": "Wella Professionals",
+      "parent_company": "Wella Company",
+      "product_line_name": "Shinefinity",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": "https://www.wella.com/professional/en-US/color",
+      "notes": [
+        "Confirmed on wella.com US color page and official factsheet: zero-lift, zero-damage demi-permanent color glaze (ammonia/silicone/alcohol free, vegan); categorized here as toner/glaze per Wella's 'Zero Lift Glaze' positioning."
+      ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Fresh::US",
+      "brand_name": "Wella Professionals",
+      "parent_company": "Wella Company",
+      "product_line_name": "Color Fresh (incl. Color Fresh Create, Color Fresh Masks)",
+      "line_category": "semi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": "https://www.wella.com/professional/en-US/color",
+      "notes": [
+        "Color Fresh Create confirmed on wella.com US color page as vibrant semi-permanent palette (ammonia-, fragrance-, peroxide-free).",
+        "Official Wella colour brand factsheet PDF lists Color Fresh, Color Fresh Create, Color Fresh Masks, and Perfecton by Color Fresh."
+      ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Blondor::US",
+      "brand_name": "Wella Professionals",
+      "parent_company": "Wella Company",
+      "product_line_name": "Blondor (incl. BlondorPlex, Blondor Freelights, Blondor Toner)",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": "https://www.wella.com/professional/en-US/color",
+      "notes": [
+        "Blondor section present on wella.com US color page; official factsheet lists Blondor, Blondor Freelights, and Blondor Toner; BlondorPlex usage confirmed on official Wella professional store blog."
+      ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Magma::global",
+      "brand_name": "Wella Professionals",
+      "parent_company": "Wella Company",
+      "product_line_name": "Magma",
+      "line_category": "mixed_system",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.wella.com/professional",
+      "official_line_url": null,
+      "notes": [
+        "Listed in Wella's official colour brand factsheet PDF (assets.ctfassets.net, Wella-published) alongside Blondor; Magma is a lighten-and-tone pigmented lightener system, so categorized as mixed_system. Not verified on the US site specifically."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA ROYAL",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
+      "notes": [
+        "Dedicated US page confirmed: heritage permanent color, 143 shades across 5 sublines (core IGORA ROYAL plus technical lines Highlifts, Fashion Lights, Absolutes, Silver Whites).",
+        "Also confirmed on the fetched schwarzkopf-professional.com/us/en/color.html landing page."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ZERO AMM::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA ZERO AMM",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora/zero-amm.html",
+      "notes": [
+        "Dedicated US page confirmed: ammonia-free permanent color creme (MEA-based), 46 shades, up to 100% white coverage; successor to the ESSENSITY range."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA VIBRANCE",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "notes": [
+        "Confirmed on fetched US color landing page: demi-permanent, ammonia-free, 68 shades, lasts up to 25 shampoos, gel or cream consistency, matched to IGORA ROYAL numbering."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::Chroma ID::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "Chroma ID",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com",
+      "official_line_url": null,
+      "notes": [
+        "Confirmed on official schwarzkopf-professional.com IGORA pages (US and CA): 'Chroma ID, our first low commitment mix & tone colour system for maximum colour intensity and zero damage' — bonding color masks (semi-permanent direct-dye system).",
+        "The fetched US color landing page references 'Express Bonding Color Masks', which corresponds to Chroma ID."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::BlondMe::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "BLONDME",
+      "line_category": "mixed_system",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "notes": [
+        "Confirmed on fetched US color landing page: 'improved BLONDME Lighteners and our truly acidic Glow Toners' — a holistic blonde system spanning lighteners and toners, so categorized mixed_system."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VARIO BLOND::global",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA VARIO BLOND",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.schwarzkopf-professional.com",
+      "official_line_url": "https://www.schwarzkopf-professional.com/com/en/colour/igora.html",
+      "notes": [
+        "Confirmed on official global and Canadian IGORA pages: lightening range with bonding technology, up to 8 levels of lift. Not specifically verified on the US page."
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation (Kao Salon Division)",
+      "product_line_name": "Topchic",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com",
+      "official_line_url": "https://www.goldwell.com/en-us/education/color-guide1/",
+      "notes": [
+        "Confirmed on goldwell.com en-US Color Guide ('TOPCHIC & TOPCHIC HiBLONDES CONTROL — permanent oxidative hair color') and on the en-GB hair color portfolio page ('a global color icon for 50+ years', incl. Topchic Can Depot System)."
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic Zero::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation (Kao Salon Division)",
+      "product_line_name": "Topchic Zero",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com",
+      "official_line_url": "https://www.goldwell.com/en-us/education/color-guide1/",
+      "notes": [
+        "Confirmed on goldwell.com en-US Color Guide: ammonia-free permanent color, up to 100% grey coverage, 27 shades."
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation (Kao Salon Division)",
+      "product_line_name": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com",
+      "official_line_url": "https://www.goldwell.com/en-us/education/color-guide1/",
+      "notes": [
+        "Confirmed on goldwell.com en-US Color Guide: 'COLORANCE, COLORANCE COVER PLUS, COLORANCE GLOSS TONES — demi-permanent hair color'; also on en-GB portfolio page (ammonia-free, colors and repairs in one step)."
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Elumen::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation (Kao Salon Division)",
+      "product_line_name": "Elumen (incl. Elumen Play)",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com",
+      "official_line_url": "https://www.goldwell.com/en-gb/products/hair-color/permanent/elumen/",
+      "notes": [
+        "Confirmed on goldwell.com Elumen page: oxidant-free, ammonia-free, PPD-free color using only direct dyes, yet marketed as 'no damage permanent haircolor' with up to 100% grey coverage.",
+        "en-US Color Guide lists 'ELUMEN, ELUMEN PLAY & ELUMEN CARE — long-lasting or semi-permanent hair color'; Elumen Play is the semi-permanent direct-dye sister line."
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::SilkLift::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation (Kao Salon Division)",
+      "product_line_name": "LightDimensions SilkLift",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com",
+      "official_line_url": "https://www.goldwell.com/en-us/education/color-guide1/",
+      "notes": [
+        "Confirmed on goldwell.com en-US Color Guide under 'LIGHTDIMENSIONS SILKLIFT, BRIGHTENER, OXYCUR PLATIN & SOFT COLOR — Goldwell's best lightening line-up ever'."
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Oxycur Platin::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation (Kao Salon Division)",
+      "product_line_name": "Oxycur Platin",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com",
+      "official_line_url": "https://www.goldwell.com/en-us/education/color-guide1/",
+      "notes": [
+        "Listed in goldwell.com en-US Color Guide lightening line-up and in System Products page developer-lotion compatibility lists."
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::@Pure Pigments::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation (Kao Salon Division)",
+      "product_line_name": "@Pure Pigments",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com",
+      "official_line_url": "https://www.goldwell.com/en-us/education/color-guide1/system-products/",
+      "notes": [
+        "Confirmed on goldwell.com en-US System Products page: 'high-definition direct dye additives' to be combined with Topchic, Topchic Zero and Colorance — an additive system rather than a standalone color line."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "SoColor (Pre-Bonded)",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": "https://www.matrix.com/professional/products/haircolor/socolor/permanent-cream-hair-color",
+      "notes": [
+        "Confirmed on matrix.com product page (SoColor Permanent Cream Hair Color) and official 2023 Matrix haircolor manual PDF (Permanent: SoColor Pre-Bonded, SoColor 10 Min Pre-Bonded, Coil Color)."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "SoColor Sync",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": null,
+      "notes": [
+        "Confirmed in matrix.com site navigation and official 2023 haircolor manual PDF: ammonia-free demi-permanent (SoColor Sync Pre-Bonded), 'pre-paired' with permanent SoColor for root-to-ends services.",
+        "The 'Alchemy' sub-branding mentioned in the brief could not be verified on a fetched matrix.com page; see issue log."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::Tonal Control::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Tonal Control Pre-Bonded",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": "https://www.matrix.com/professional/products/haircolor/tonal-control/tonal-control-pre-bonded",
+      "notes": [
+        "Confirmed on matrix.com product page: acidic gel-cream toners with Real-Time Visible Oxidation, no lift, lasts up to 24 washes; classed as demi-permanent toner in the official 2023 manual."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::Light Master::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Light Master (incl. Light Master Pre-Bonded)",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": null,
+      "notes": [
+        "Confirmed in the official 2023 Matrix haircolor manual PDF hosted on matrix.com, listed under Lighteners (Light Master, Light Master Pre-Bonded) alongside Curl Lights, Lift + Tone, Open Air Pre-Bonded, and High Riser Pre-Bonded."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "SoColor Cult (Vivids)",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": null,
+      "notes": [
+        "Confirmed in the official 2023 Matrix haircolor manual PDF on matrix.com under Semi-Permanent ('SoColor Cult Vivids'); manual notes it is not Pre-Bonded. Semi-permanent direct-dye vivids range."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Oréal (Professional Products Division)",
+      "product_line_name": "Super Sync",
+      "line_category": "unknown",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": null,
+      "notes": [
+        "Appears in matrix.com haircolor navigation (SoColor, SoColor Sync, Super Sync, Tonal Control) but no dedicated product page was fetched, so category and status remain unverified."
+      ]
+    },
+    {
+      "canonical_key": "Joico::LumiShine Permanent Creme Color::US",
+      "brand_name": "Joico",
+      "parent_company": "Henkel",
+      "product_line_name": "LumiShine Permanent Crème Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": "https://www.joico.com/pro-color/lumishine-permanent/",
+      "notes": [
+        "Confirmed on joico.com dedicated line page: permanent creme color with ArgiPlex bond-building technology, 100% gray coverage, including newer Mocha (M) and Natural Beige (NB) series.",
+        "Also listed on https://www.joico.com/pro-color/shop/ under LumiShine."
+      ]
+    },
+    {
+      "canonical_key": "Joico::LumiShine YouthLock Permanent Creme Color::US",
+      "brand_name": "Joico",
+      "parent_company": "Henkel",
+      "product_line_name": "LumiShine YouthLock Permanent Crème Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": "https://www.joico.com/pro-color/shop/",
+      "notes": [
+        "Confirmed on joico.com Pro Color Shop page: collagen-infused permanent creme color, 100% gray coverage; listed as a distinct LumiShine sub-line (Permanent / YouthLock / Lumi10 / Demi-Crème / Demi-Liquid)."
+      ]
+    },
+    {
+      "canonical_key": "Joico::LumiShine Lumi10 Permanent Creme Color::US",
+      "brand_name": "Joico",
+      "parent_company": "Henkel",
+      "product_line_name": "LumiShine Lumi10 Permanent Crème Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": "https://www.joico.com/pro-color/shop/",
+      "notes": [
+        "Confirmed on joico.com (Pro Color Shop and LumiShine Permanent page): 10-minute permanent color delivering 100% gray coverage."
+      ]
+    },
+    {
+      "canonical_key": "Joico::LumiShine Demi-Permanent Creme Color::US",
+      "brand_name": "Joico",
+      "parent_company": "Henkel",
+      "product_line_name": "LumiShine Demi-Permanent Crème Color",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": "https://www.joico.com/pro-color/shop/",
+      "notes": [
+        "Confirmed on joico.com Pro Color Shop page: 'LumiShine DD Dimensional Deposit Demi-Permanent Crème Color', ammonia-free deposit system."
+      ]
+    },
+    {
+      "canonical_key": "Joico::LumiShine Demi-Permanent Liquid Color::US",
+      "brand_name": "Joico",
+      "parent_company": "Henkel",
+      "product_line_name": "LumiShine Demi-Permanent Liquid Color",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": "https://www.joico.com/pro-color/shop/",
+      "notes": [
+        "Confirmed on joico.com Pro Color Shop page as a distinct demi-permanent liquid format alongside the demi crème."
+      ]
+    },
+    {
+      "canonical_key": "Joico::Vero K-PAK Color::US",
+      "brand_name": "Joico",
+      "parent_company": "Henkel",
+      "product_line_name": "Vero K-PAK Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": "https://www.joico.com/pro-color/vero-k-pak-color/",
+      "notes": [
+        "Confirmed on joico.com dedicated line page: permanent crème color with Quadramine Complex; mixed with Veroxide developers.",
+        "Shop page also lists Vero K-PAK sub-ranges: Permanent Crème, Color Age Defy, Chrome (demi, in some listings), Lighteners, Developers."
+      ]
+    },
+    {
+      "canonical_key": "Joico::Blonde Life::US",
+      "brand_name": "Joico",
+      "parent_company": "Henkel",
+      "product_line_name": "Blonde Life",
+      "line_category": "mixed_system",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": "https://www.joico.com/pro-color/shop/",
+      "notes": [
+        "Confirmed on joico.com Pro Color page: 'system of lighteners & toners created just for blondes' with bond-building Arginine.",
+        "Shop page lists sub-lines: Blonde Life Lighteners, Blonde Life Demi Gloss, Blonde Life Quick Tone (liquid-creme toner), Developers — hence categorized mixed_system (lightener + toner)."
+      ]
+    },
+    {
+      "canonical_key": "Joico::Color Intensity::US",
+      "brand_name": "Joico",
+      "parent_company": "Henkel",
+      "product_line_name": "Color Intensity",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": "https://www.joico.com/pro-color/",
+      "notes": [
+        "Confirmed on joico.com Pro Color page: concentrated semi-permanent pigments, applied straight from the tube, 'NO DEVELOPER REQUIRED', lasts up to 20+ shampoos.",
+        "Joico markets it as semi-permanent; categorized direct_dye because it is a non-oxidative, no-developer pigment line."
+      ]
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand_name": "Kenra Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "Kenra Color Permanent",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.kenraprofessional.com",
+      "official_line_url": "https://kenraprofessional.com/kenra-color",
+      "notes": [
+        "Confirmed on kenraprofessional.com Kenra Color landing page ('PERMANENT: Gentle, low-ammonia color...') and the official 2024 Color Workbook PDF (low ammonia, Balancing Complex 5, up to 100% gray coverage)."
+      ]
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand_name": "Kenra Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "Kenra Color Demi-Permanent",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.kenraprofessional.com",
+      "official_line_url": "https://kenraprofessional.com/kenra-color",
+      "notes": [
+        "Confirmed on kenraprofessional.com landing page and official Color Workbook PDF: ammonia-free, mixed 1:2 with 9 Volume Activator, natural gray coverage up to 75%.",
+        "Also confirmed in official blog post '3 Ways to Cover (or Blend) Gray Hair with Kenra Color'."
+      ]
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Creatives::US",
+      "brand_name": "Kenra Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "Kenra Color Creatives (Semi-Permanent)",
+      "line_category": "semi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.kenraprofessional.com",
+      "official_line_url": "https://www.kenraprofessional.com/kenra-color/creatives/",
+      "notes": [
+        "Confirmed on official Creatives page: intermixable semi-permanent vivid shades (Trendy Chic and Classically Bold palettes), longevity up to 50 washes; Workbook PDF confirms 'KENRA COLOR CREATIVES ... intermixable semi-permanent colors', formulated without developer."
+      ]
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand_name": "Kenra Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "Kenra Color Rapid Toners",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.kenraprofessional.com",
+      "official_line_url": "https://www.kenraprofessional.com/collection/kenra-color-rapid-toners",
+      "notes": [
+        "Confirmed on official collection page and product pages (e.g., RoV Rose Violet Rapid Toner): ammonia-free demi-permanent toning cremes processing in 5 minutes or less; 7 intermixable shades (B, SV, VP, GrBl, SA, GV, RoV)."
+      ]
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand_name": "Kenra Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "Studio Stylist Express",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.kenraprofessional.com",
+      "official_line_url": "https://kenraprofessional.com/kenra-color",
+      "notes": [
+        "Confirmed on kenraprofessional.com landing page ('Get Permanent Color in 10 minutes') and Workbook PDF: 17 permanent shades processing in 10 minutes or less with Kenra Color Developer 10V-30V."
+      ]
+    },
+    {
+      "canonical_key": "Kenra Professional::Simply Blonde::US",
+      "brand_name": "Kenra Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "Simply Blonde",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.kenraprofessional.com",
+      "official_line_url": "https://kenraprofessional.com/kenra-color",
+      "notes": [
+        "Confirmed on kenraprofessional.com Kenra Color landing page: 'a collection of high-performance lighteners, toners, and ultra lifts'; also appears in the official Color Workbook PDF.",
+        "Collection spans lighteners plus toners/ultra lifts; primary positioning is blonding, so categorized lightener."
+      ]
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand_name": "Pravana",
+      "parent_company": "Henkel",
+      "product_line_name": "ChromaSilk Crème Color (Permanent)",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/",
+      "notes": [
+        "Confirmed on pravana.com color category page: 'Award-winning permanent creme hair colors, formulated with silk and keratin span over 12 different tonal families.'",
+        "Official 2022 Product Knowledge Guide PDF corroborates the ChromaSilk permanent portfolio."
+      ]
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand_name": "Pravana",
+      "parent_company": "Henkel",
+      "product_line_name": "ChromaSilk VIVIDS (Original, Neons, Pastels)",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/semi-permanent/chromasilk-vivids-original/",
+      "notes": [
+        "Confirmed on official VIVIDS Original line and shade pages: 'semi-permanent, non-oxidative hair color that is designed to be used without developer'; sub-collections VIVIDS Original, VIVIDS Neons (and Pastels per official PDF) listed on pravana.com.",
+        "Marketed as semi-permanent; categorized direct_dye because it is non-oxidative and developer-free."
+      ]
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand_name": "Pravana",
+      "parent_company": "Henkel",
+      "product_line_name": "ChromaSilk VIVIDS Everlasting",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/",
+      "notes": [
+        "Listed on pravana.com color category page; official Product Knowledge Guide PDF states 'VIVIDS Everlasting permanent hair color bridges the gap between permanent creme hair color and direct dye' and that it intermixes with ChromaSilk Permanent Crème."
+      ]
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand_name": "Pravana",
+      "parent_company": "Henkel",
+      "product_line_name": "ChromaSilk Express Tones",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/demi-permanent/chromasilk-express-tones/violet/",
+      "notes": [
+        "Confirmed on official product pages (filed under demi-permanent on pravana.com): ammonia-free toners processing in 5 minutes or less, mixed 1:1.5 with ChromaSilk Zero Lift Creme Developer; Blondes and Brunette series confirmed in official PDF."
+      ]
+    },
+    {
+      "canonical_key": "Pravana::Pure Light::US",
+      "brand_name": "Pravana",
+      "parent_company": "Henkel",
+      "product_line_name": "Pure Light (Power Lightener, Ultra Lightener)",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/",
+      "notes": [
+        "Confirmed on pravana.com color category page ('Pure Light Lighteners offer innovative lightening options') and official PDF: Pure Light Power Lightener (up to 7 levels of lift, blue dust-free powder) and Pure Light Ultra Lightener (up to 9 levels, ReUnite Mending Technology).",
+        "VIVIDS shade pages instruct pre-lightening with the 'PRAVANA PURE LIGHT series'."
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Color::global",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "Paul Mitchell The Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": "https://paulmitchell.co.th/en/product/paul-mitchell-the-color-en/",
+      "notes": [
+        "Confirmed on official Paul Mitchell international site (paulmitchell.co.th): permanent cream color, low ammonia, beeswax base, ChromaLuxe technology.",
+        "Behindthechair.com listing (updated Oct 2024) corroborates current availability and points to pro.paulmitchell.com; US pro site itself could not be fetched directly, so region marked global."
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Color XG::global",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "Paul Mitchell Color XG (incl. CoverSmart)",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": "https://paulmitchell.co.th/en/product/paul-mitchell-color-xg-en/",
+      "notes": [
+        "Confirmed on official Paul Mitchell international site: permanent cream color with DYESMART System, up to 100% gray coverage; separate official page confirms Color XG CoverSmart for 50%+ gray / resistant hair."
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::Crema XG::global",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "Paul Mitchell Crema XG",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": null,
+      "notes": [
+        "Verified via Salon Success (official Paul Mitchell UK distributor, salon-success.co.uk): ammonia-free demi-permanent cream color shade-matched to Color XG, 1:1 with 10 volume Cream Developer; launch and positioning corroborated by Estetica Magazine trade press.",
+        "No official paulmitchell.com/paulmitchellpro.com line page was directly fetched, hence official_line_url null."
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Demi::global",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "Paul Mitchell The Demi",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": "https://paulmitchell.co.th/en/product/paul-mitchell-the-demi-en/",
+      "notes": [
+        "Confirmed on official Paul Mitchell international site: demi-permanent no-ammonia formula, 65+ shades including Flash Toners, Muted Metallics and Clear, 5-20 minute processing.",
+        "Officially positioned as the replacement for the retired PM Shines line."
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::PM Shines::US",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "PM Shines",
+      "line_category": "demi",
+      "apparent_status": "discontinued",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": null,
+      "notes": [
+        "Official Paul Mitchell US Facebook video 'PM SHINES x The Demi: Making the Switch' states PM Shines 'will be retiring this year' and that The Demi is its replacement.",
+        "Demi-permanent liquid shine color; no longer listed on current Paul Mitchell sites."
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::Pop XG::global",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "Pop XG",
+      "line_category": "direct_dye",
+      "apparent_status": "unclear",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": "https://paulmitchell.de/products/pop-xg-haarfarbe",
+      "notes": [
+        "Semi-permanent/direct-dye cream vivids line, 13 intermixable shades, no developer; verified via official Paul Mitchell Germany page (still listed as salon-exclusive) and official Pop XG education PDF.",
+        "Status unclear: search results suggest the line may have been discontinued in US professional distribution, but the official German site still lists it; could not confirm on a US official page."
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Color 10 Minute::global",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "Paul Mitchell The Color (10 Minute express permanent)",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": null,
+      "notes": [
+        "A 10-minute express permanent line ('Color 10 Minute') is described with its own swatch chart by third-party sources (beautywithfam.com chart guide) for quick gray coverage at levels 3-7.",
+        "Could not verify on an official Paul Mitchell page during this research, so status is unclear."
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::Lighteners::global",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "Paul Mitchell Lighteners (e.g., Dual-Purpose Lightener, Skylight, Bond Rx)",
+      "line_category": "lightener",
+      "apparent_status": "unclear",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": null,
+      "notes": [
+        "Paul Mitchell clearly sells professional lighteners (official Pop XG education PDF instructs to 'pre-lighten hair with your favorite Paul Mitchell lightener'), and search results name Dual-Purpose Lightener, Skylight clay lightener, and Bond Rx Lightener.",
+        "Individual lightener names were not confirmed on a fetched official page, so the specific product roster is marked unclear rather than asserted."
+      ]
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand_name": "Pulp Riot",
+      "parent_company": "L'Oréal",
+      "product_line_name": "Pulp Riot Semi-Permanent (Paint)",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pulpriothair.com",
+      "official_line_url": "https://www.pulpriothair.com/products/haircolor/semi-permanent-haircolor",
+      "notes": [
+        "Confirmed on pulpriothair.com: 'The NEW Pulp Riot Paint', 40+ intermixable vibrant shades, no developer, lasts up to 50 washes; sub-collections include OG Semis, Elemental, Cosmic (official pages fetched).",
+        "Marketed as semi-permanent; categorized direct_dye because it is applied without developer."
+      ]
+    },
+    {
+      "canonical_key": "Pulp Riot::FACTION8::US",
+      "brand_name": "Pulp Riot",
+      "parent_company": "L'Oréal",
+      "product_line_name": "FACTION8",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pulpriothair.com",
+      "official_line_url": "https://www.pulpriothair.com/products/haircolor/permanent-haircolor/faction8",
+      "notes": [
+        "Confirmed on official FACTION8 page: full permanent color line with bold deposit, cool-based naturals (-00, -0, -03), up to 100% grey coverage, 1:1 with Pulp Riot Developer; includes High Lift series mixed 1:2."
+      ]
+    },
+    {
+      "canonical_key": "Pulp Riot::High Speed Toner::US",
+      "brand_name": "Pulp Riot",
+      "parent_company": "L'Oréal",
+      "product_line_name": "High Speed Toners",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pulpriothair.com",
+      "official_line_url": "https://www.pulpriothair.com/products/haircolor/high-speed-toners",
+      "notes": [
+        "Confirmed on official category and shade pages (e.g., Icy): alkaline express toners for pre-lightened hair, tone in as little as 5 minutes, mixed 1:2 with 6 or 10 volume developer, adjustable ratios up to 1:4."
+      ]
+    },
+    {
+      "canonical_key": "Pulp Riot::Liquid Demi::US",
+      "brand_name": "Pulp Riot",
+      "parent_company": "L'Oréal",
+      "product_line_name": "Liquid Demi",
+      "line_category": "demi",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pulpriothair.com",
+      "official_line_url": null,
+      "notes": [
+        "The line verifiably existed: no-lift, ammonia-free acidic demi-permanent liquid color, 1:1 with dedicated Liquid Demi 6.7 vol Developer, ~35 cool-based shades (confirmed via multiple professional retailers including SalonCentric-affiliated listings and salon education sources).",
+        "Status unclear: no Liquid Demi page exists on pulpriothair.com today (fetch of /products/haircolor/liquid-demi returned 404, and the site's color navigation shows only semi-permanent, FACTION8 permanent, and High Speed Toners); a salon blog explicitly states the Liquid Demis 'have since been discontinued', while some Canadian retailers still show stock."
+      ]
+    },
+    {
+      "canonical_key": "Pulp Riot::Lighteners::US",
+      "brand_name": "Pulp Riot",
+      "parent_company": "L'Oréal",
+      "product_line_name": "Pulp Riot Lighteners",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pulpriothair.com",
+      "official_line_url": "https://www.pulpriothair.com/products/lighteners",
+      "notes": [
+        "Confirmed on official lighteners page: 'Pulp Riot offers a range of high performance lighteners designed for any blonding situation, technique, or application.'",
+        "Page is JS-heavy, so individual lightener product names could not be read from the fetched HTML."
+      ]
+    },
+    {
+      "canonical_key": "Pulp Riot::Blank Canvas::US",
+      "brand_name": "Pulp Riot",
+      "parent_company": "L'Oréal",
+      "product_line_name": "Blank Canvas (Semi-Permanent Color Remover)",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pulpriothair.com",
+      "official_line_url": "https://www.pulpriothair.com/products/lighteners/blank-canvas",
+      "notes": [
+        "Confirmed on official page: persulfate-based, dripless white formula mixed 1:3 with Pulp Riot developer to remove semi-permanent/direct-dye pigment; official copy notes it 'will lighten natural hair'.",
+        "Strictly a color remover rather than a dye line; it sits under the Lighteners section of pulpriothair.com, hence line_category lightener (no 'remover' category exists in the taxonomy)."
+      ]
+    },
+    {
+      "canonical_key": "Davines::Mask with Vibrachrom::US",
+      "brand_name": "Davines",
+      "parent_company": "Davines Group (Davines S.p.A.)",
+      "product_line_name": "Mask with Vibrachrom",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://davinespro.com",
+      "official_line_url": "https://davinespro.com/en/us/products/colour/mask-with-vibrachrom",
+      "notes": [
+        "Confirmed on davinespro.com US line page: 'ammonia-formulated, permanent colour' with Vibrachrom technology, 100% white coverage, Extralift series up to 5 levels."
+      ]
+    },
+    {
+      "canonical_key": "Davines::A New Colour::US",
+      "brand_name": "Davines",
+      "parent_company": "Davines Group (Davines S.p.A.)",
+      "product_line_name": "A New Colour",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://davinespro.com",
+      "official_line_url": "https://davinespro.com/en/us/products/colour/a-new-colour",
+      "notes": [
+        "Confirmed on davinespro.com US line page: 'ammonia free permanent colouring system', full white coverage, lifts up to 3 levels (4.5 with 000 Booster)."
+      ]
+    },
+    {
+      "canonical_key": "Davines::View::US",
+      "brand_name": "Davines",
+      "parent_company": "Davines Group (Davines S.p.A.)",
+      "product_line_name": "View",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://davinespro.com",
+      "official_line_url": "https://davinespro.com/en/us/products/colour/view",
+      "notes": [
+        "Confirmed on davinespro.com US line page: acidic pH, ammonia-free demi-permanent system for toning/refreshing, blends up to 50% white hair."
+      ]
+    },
+    {
+      "canonical_key": "Davines::The Present Time::US",
+      "brand_name": "Davines",
+      "parent_company": "Davines Group (Davines S.p.A.)",
+      "product_line_name": "The Present Time",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://davinespro.com",
+      "official_line_url": "https://davinespro.com/en/us/products/colour/the-present-time",
+      "notes": [
+        "Confirmed on davinespro.com US line page and official Davines blog: ammonia-free demi-permanent alkaline colour, 60 nuances, up to 1 level of lift, up to 70% white coverage."
+      ]
+    },
+    {
+      "canonical_key": "Davines::The Century of Light::US",
+      "brand_name": "Davines",
+      "parent_company": "Davines Group (Davines S.p.A.)",
+      "product_line_name": "The Century of Light",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://davinespro.com",
+      "official_line_url": "https://davinespro.com/en/us/products/colour/century-of-light",
+      "notes": [
+        "Confirmed on davinespro.com US line page: premium bleaching system of three products - Progress (multi-purpose powder), Liberty (free-hand powder), Tolerance (ammonia-free lightening oil)."
+      ]
+    },
+    {
+      "canonical_key": "Davines::Finest Pigments::US",
+      "brand_name": "Davines",
+      "parent_company": "Davines Group (Davines S.p.A.)",
+      "product_line_name": "Finest Pigments",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://davinespro.com",
+      "official_line_url": "https://davinespro.com/en/us/products/colour/finest-pigments",
+      "notes": [
+        "Confirmed on davinespro.com US line page and us.davines.com collection (15 products in stock): ammonia-free direct colouring system in gel, 14 nuances plus Finest Gloss, no activator required."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Framcolor 2001::US",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi S.p.A.",
+      "product_line_name": "Framcolor 2001",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.framesiprofessional.com",
+      "official_line_url": "https://www.framesiprofessional.com/products/lines/framcolor-2001/",
+      "notes": [
+        "Confirmed on framesiprofessional.com (US) line page: permanent color, 103 shades, 22 series, 100% gray coverage, up to 5 levels of lift, 1:2 mix ratio. Also listed on framesi.it/en global site."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Framcolor 2001 Intense::global",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi S.p.A.",
+      "product_line_name": "Framcolor 2001 Intense",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.framesi.it/en/",
+      "official_line_url": null,
+      "notes": [
+        "Listed in framesi.it/en main navigation as 'FRAMCOLOR 2001 INTENSE PERMANENT COLOR - COMFORT FORMULA' and shown as a permanent line in the framesiprofessional.com Ultimate Product Guide 2022 PDF; dedicated line page URL not captured."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Glamour::US",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi S.p.A.",
+      "product_line_name": "Framcolor Glamour",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.framesiprofessional.com",
+      "official_line_url": "https://www.framesiprofessional.com/products/lines/framcolor-glamour/",
+      "notes": [
+        "Confirmed on framesiprofessional.com (US) line page: pre-mixed permanent color, 60+ shades, 100% gray coverage, 1:1 mix ratio, up to 5 levels of lift. Also on framesi.it/en (product-framcolor-glamour)."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Eclectic::US",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi S.p.A.",
+      "product_line_name": "Framcolor Eclectic",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.framesiprofessional.com",
+      "official_line_url": null,
+      "notes": [
+        "Confirmed via framesi.it/en navigation ('FRAMCOLOR ECLECTIC DEMI-PERMANENT AMMONIA FREE COLOR') and framesiprofessional.com Ultimate Product Guide 2022 PDF: ammonia-free, PPD-free demi-permanent, 1:2 mix ratio, up to 100% gray coverage."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Eclectic Care::US",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi S.p.A.",
+      "product_line_name": "Framcolor Eclectic Care",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.framesiprofessional.com",
+      "official_line_url": null,
+      "notes": [
+        "Confirmed via framesi.it/en navigation ('FRAMCOLOR ECLECTIC CARE PERMANENT AMMONIA-FREE COLOR') and framesiprofessional.com Ultimate Product Guide 2022 PDF: ammonia-free permanent, 100% gray coverage, up to 3 levels of lift, intermixable with Framcolor Eclectic."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Eclectic 5D Color Gloss::global",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi S.p.A.",
+      "product_line_name": "Framcolor Eclectic 5D Color Gloss",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.framesi.it/en/",
+      "official_line_url": null,
+      "notes": [
+        "Listed in framesi.it/en main navigation as 'FRAMCOLOR ECLECTIC 5D COLOR GLOSS DEMI-PERMANENT LIQUID COLOR'; not verified on the US site, so marked global."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Pure Pigment Plus::global",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi S.p.A.",
+      "product_line_name": "Framcolor Pure Pigment Plus",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.framesi.it/en/",
+      "official_line_url": null,
+      "notes": [
+        "Listed in framesi.it/en main navigation as 'FRAMCOLOR PURE PIGMENT PLUS DIRECT PIGMENTS COLOR&CARE'; categorized as direct pigments by the official site."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Decolor B::US",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi S.p.A.",
+      "product_line_name": "Decolor B",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.framesiprofessional.com",
+      "official_line_url": "https://www.framesiprofessional.com/products/lines/decolor-b/",
+      "notes": [
+        "Confirmed on framesiprofessional.com (US) line page: lightener family including Infinity+ (10+ levels), Diamond, No Dust, Cream Plus; Clay Lightener also listed in the 2022 product guide. Also on framesi.it/en as 'DECOLOR B SYSTEM'."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Futura::US",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi S.p.A.",
+      "product_line_name": "Framcolor Futura",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.framesiprofessional.com",
+      "official_line_url": null,
+      "notes": [
+        "Appears as a permanent haircolor line in the framesiprofessional.com Ultimate Product Guide 2022 PDF, but is not listed in the current framesi.it/en navigation or among current US line pages found; current status unverified."
+      ]
+    },
+    {
+      "canonical_key": "Keune::Tinta Color::global",
+      "brand_name": "Keune",
+      "parent_company": "Keune Haircosmetics",
+      "product_line_name": "Tinta Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.keune.com",
+      "official_line_url": "https://www.keune.com/na/keune-tinta-color/",
+      "notes": [
+        "Confirmed on keune.com (including the North America /na/ page): 'our permanent color range', Tinta Color 2023 relaunch, Shade Shifters enable up to 650 custom shades."
+      ]
+    },
+    {
+      "canonical_key": "Keune::Semi Color::global",
+      "brand_name": "Keune",
+      "parent_company": "Keune Haircosmetics",
+      "product_line_name": "Semi Color",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.keune.com",
+      "official_line_url": "https://www.keune.com/keune-semi-color/",
+      "notes": [
+        "Confirmed on keune.com: ammonia-free demi-permanent range, up to 24 washes, up to 70% grey blending, vegan formula. Despite the 'Semi' name, the official page describes it as demi-permanent."
+      ]
+    },
+    {
+      "canonical_key": "Keune::So Pure Color::global",
+      "brand_name": "Keune",
+      "parent_company": "Keune Haircosmetics",
+      "product_line_name": "So Pure Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.keune.com",
+      "official_line_url": "https://www.keune.com/keune-so-pure-color/",
+      "notes": [
+        "Confirmed on keune.com (global and /na/ pages): ammonia-free color range with up to 100% grey coverage; described as a permanent coloring treatment (pigments penetrate the cortex)."
+      ]
+    },
+    {
+      "canonical_key": "Keune::Color Chameleon::global",
+      "brand_name": "Keune",
+      "parent_company": "Keune Haircosmetics",
+      "product_line_name": "Color Chameleon",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.keune.com",
+      "official_line_url": "https://www.keune.com/keune-color-chameleon/",
+      "notes": [
+        "Confirmed on keune.com: range of nine intense direct dyes plus two shade shifters (Clear and Dark); ammonia-free, no developer, fully removable; launched March 2020 per distributor blog."
+      ]
+    },
+    {
+      "canonical_key": "Keune::Ultimate Blonde::global",
+      "brand_name": "Keune",
+      "parent_company": "Keune Haircosmetics",
+      "product_line_name": "Ultimate Blonde",
+      "line_category": "mixed_system",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.keune.com",
+      "official_line_url": "https://www.keune.com/keune-color/",
+      "notes": [
+        "Confirmed on the keune.com Keune Color overview page: 'a range of professional lightening powders... and a collection of toners'; categorized as mixed_system because it spans lighteners and toners. Dedicated line page URL not captured."
+      ]
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::Evolution of the Color::US",
+      "brand_name": "Alfaparf Milano Professional",
+      "parent_company": "Alfaparf Group (Beauty & Business S.p.A.)",
+      "product_line_name": "Evolution of the Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.alfaparfmilanopro.com/us-en",
+      "official_line_url": "https://www.alfaparfmilanopro.com/ie-en/color-shape/products/evolution-of-the-color",
+      "notes": [
+        "Confirmed on alfaparfmilanopro.com (listed on us-en homepage; full line page verified on ie-en): 'long-lasting permanent cosmetic color' with patented Color Guard technology; official PDF shows 123 shades."
+      ]
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::Evolution of the Color Shine Effect::global",
+      "brand_name": "Alfaparf Milano Professional",
+      "parent_company": "Alfaparf Group (Beauty & Business S.p.A.)",
+      "product_line_name": "Evolution of the Color Shine Effect",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.alfaparfmilanopro.com",
+      "official_line_url": "https://www.alfaparfmilanopro.com/sites/default/files/2025-06/APMP_EvolutionShine_PP031829_LOCANDINA_TECNICA_ENG.pdf",
+      "notes": [
+        "Confirmed via official 2025 technical PDF on alfaparfmilanopro.com and listing on the int-en products page: ammonia- and MEA-free permanent color, 55 shades, emollient-oil alkalizing system."
+      ]
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::Color Wear::US",
+      "brand_name": "Alfaparf Milano Professional",
+      "parent_company": "Alfaparf Group (Beauty & Business S.p.A.)",
+      "product_line_name": "Color Wear",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.alfaparfmilanopro.com/us-en",
+      "official_line_url": null,
+      "notes": [
+        "Confirmed on alfaparfmilanopro.com us-en homepage ('The natural evolution of tone-on-tone color') and int-en products page; tone-on-tone (demi) coloring with natural-origin alkalizing agent."
+      ]
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::Color Wear Gloss Toner::US",
+      "brand_name": "Alfaparf Milano Professional",
+      "parent_company": "Alfaparf Group (Beauty & Business S.p.A.)",
+      "product_line_name": "Color Wear Gloss Toner",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.alfaparfmilanopro.com/us-en",
+      "official_line_url": null,
+      "notes": [
+        "Confirmed as a distinct listing on the alfaparfmilanopro.com us-en homepage color range; toner for post-bleaching/gloss services within the Color Wear family."
+      ]
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::Pigments::US",
+      "brand_name": "Alfaparf Milano Professional",
+      "parent_company": "Alfaparf Group (Beauty & Business S.p.A.)",
+      "product_line_name": "Pigments",
+      "line_category": "mixed_system",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.alfaparfmilanopro.com/us-en",
+      "official_line_url": "https://www.alfaparfmilanopro.com/int-en/color-shape/products",
+      "notes": [
+        "Confirmed on alfaparfmilanopro.com us-en homepage ('Pure, ultra-concentrated pigments') and int-en products page with named shades (Ash .1, Gold .3, Copper .4, Red .6, etc.); pure pigment additives mixed into color or care services, hence mixed_system."
+      ]
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::rEvolution::US",
+      "brand_name": "Alfaparf Milano Professional",
+      "parent_company": "Alfaparf Group (Beauty & Business S.p.A.)",
+      "product_line_name": "rEvolution (rEvolution JC)",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.alfaparfmilanopro.com/us-en",
+      "official_line_url": "https://www.alfaparfmilanopro.com/int-en/color-shape/products",
+      "notes": [
+        "Confirmed on alfaparfmilanopro.com us-en homepage ('rEvolution - Direct cream color') and int-en products page which lists rEvolution JC shades (e.g., Magenta)."
+      ]
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::BB Bleach::US",
+      "brand_name": "Alfaparf Milano Professional",
+      "parent_company": "Alfaparf Group (Beauty & Business S.p.A.)",
+      "product_line_name": "BB Bleach",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.alfaparfmilanopro.com/us-en",
+      "official_line_url": null,
+      "notes": [
+        "Confirmed as a listing in the color range on the official alfaparfmilanopro.com us-en homepage; described in search results as the professional lightening line with multiple powders and Bond System technology. Dedicated line page not fetched."
+      ]
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Permanent::US",
+      "brand_name": "Aveda",
+      "parent_company": "The Estée Lauder Companies",
+      "product_line_name": "Full Spectrum Permanent",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.aveda.com/hair-color",
+      "official_line_url": "https://joinaveda.com/wp-content/uploads/2024/06/AvedaHairColor_Brochure_9.07.23_v2-1.pdf",
+      "notes": [
+        "Confirmed in Aveda's official professional hair color brochure (joinaveda.com, 2023/2024): 'full spectrum permanent vegan treatment hair color' with patented technology, 100% grey coverage; salon-exclusive per aveda.com/hair-color."
+      ]
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Deep::US",
+      "brand_name": "Aveda",
+      "parent_company": "The Estée Lauder Companies",
+      "product_line_name": "Full Spectrum Deep",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.aveda.com/hair-color",
+      "official_line_url": "https://joinaveda.com/wp-content/uploads/2024/06/AvedaHairColor_Brochure_9.07.23_v2-1.pdf",
+      "notes": [
+        "Confirmed in official joinaveda.com brochure: 'extra lift & deposit creme color for dark hair', up to 6 levels of lift in 30 minutes; launched 2004 per avedameansbusiness.com history article."
+      ]
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Demi+::US",
+      "brand_name": "Aveda",
+      "parent_company": "The Estée Lauder Companies",
+      "product_line_name": "Full Spectrum Demi+",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.aveda.com/hair-color",
+      "official_line_url": "https://joinaveda.com/wp-content/uploads/2024/06/AvedaHairColor_Brochure_9.07.23_v2-1.pdf",
+      "notes": [
+        "Confirmed in official joinaveda.com brochure: 'custom-deposit treatment hair color', ammonia-free demi-permanent results, up to 24 washes, blends up to 75% grey; debuted 2018 per avedameansbusiness.com."
+      ]
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Vibrants::US",
+      "brand_name": "Aveda",
+      "parent_company": "The Estée Lauder Companies",
+      "product_line_name": "Full Spectrum Vibrants",
+      "line_category": "semi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.aveda.com/vibrant-hair-color",
+      "official_line_url": "https://joinaveda.com/wp-content/uploads/2024/06/AvedaHairColor_Brochure_9.07.23_v2-1.pdf",
+      "notes": [
+        "Confirmed in official joinaveda.com brochure and on aveda.com/vibrant-hair-color: 'semi-permanent treatment hair color', nine shades plus Clear/Charcoal mixers, lasts up to 15 washes, 95% naturally derived."
+      ]
+    },
+    {
+      "canonical_key": "Aveda::Enlightenment Blonding (Enlightener)::US",
+      "brand_name": "Aveda",
+      "parent_company": "The Estée Lauder Companies",
+      "product_line_name": "Enlightenment Blonding (Enlightener)",
+      "line_category": "mixed_system",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.aveda.com/hair-color",
+      "official_line_url": "https://joinaveda.com/wp-content/uploads/2024/06/AvedaHairColor_Brochure_9.07.23_v2-1.pdf",
+      "notes": [
+        "Confirmed in official joinaveda.com brochure: components are Enlightener powder lightener, Enlightener creme booster, and 3 Enlightener blonde finish protective toners; Enlightener also referenced in stylist formulas on aveda.com/hair-color. Mixed_system because it spans lighteners and toners."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand_name": "L'Oréal Professionnel",
+      "parent_company": "L'Oréal Groupe",
+      "product_line_name": "Majirel",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": "https://us.lorealprofessionnel.com/all-products/hair-color/majirel-permanent-creme-color",
+      "notes": [
+        "Verified on official US product page: 'Permanent Crème Color', up to 100% grey coverage, 1:1.5 mix with Majicrème Developer.",
+        "Official US Majirel color chart PDF also documents sub-ranges Majirel Cool Inforced and Majirouge (reds/coppers) within the Majirel family."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel High Lift::US",
+      "brand_name": "L'Oréal Professionnel",
+      "parent_company": "L'Oréal Groupe",
+      "product_line_name": "Majirel High Lift",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": "https://us.lorealprofessionnel.com/hair-color/majirel/permanent-majirel-high-lift",
+      "notes": [
+        "Verified on official US product page: high-lift permanent color, up to 4.5 levels of lift with 40-vol, 1:2 mixing ratio, not designed for white coverage."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel Cool Cover::US",
+      "brand_name": "L'Oréal Professionnel",
+      "parent_company": "L'Oréal Groupe",
+      "product_line_name": "Majirel Cool Cover",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": null,
+      "notes": [
+        "Verified via official US-hosted Majirel color chart PDF and how-to-use PDF on us.lorealprofessionnel.com: 'Cool reflects. Extreme coverage.', 23 shades, 1:1.5 with 20/30-vol Majicrème Developer.",
+        "No standalone US product landing page located; documented within the Majirel family materials."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::iNOA::US",
+      "brand_name": "L'Oréal Professionnel",
+      "parent_company": "L'Oréal Groupe",
+      "product_line_name": "iNOA",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": "https://us.lorealprofessionnel.com/all-products/hair-color/inoa",
+      "notes": [
+        "Verified on official US line page: ammonia-free permanent color with Oil Delivery System (ODS), dedicated iNOA Rich Developers (10/20/30-vol) and post-color shampoo."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand_name": "L'Oréal Professionnel",
+      "parent_company": "L'Oréal Groupe",
+      "product_line_name": "Dia Light",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": "https://us.lorealprofessionnel.com/pro-resources/shade-charts",
+      "notes": [
+        "Verified on official US shade-charts page: 'The acidic demi-permanent color to gloss, tone and refresh.'",
+        "Also referenced in the official iNOA technical guide PDF as the acidic gel-crème demi used with 6-vol Diactivateur."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Color::US",
+      "brand_name": "L'Oréal Professionnel",
+      "parent_company": "L'Oréal Groupe",
+      "product_line_name": "Dia Color",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": "https://us.lorealprofessionnel.com/all-products/hair-color/dia-color",
+      "notes": [
+        "Verified on official US line page: alkaline demi-permanent, no ammonia, up to 70% grey coverage, 40 shades, lifts up to 1.5 levels.",
+        "US page explicitly positions Dia Color as the reimagined successor to Dia Richesse, with a Dia Richesse-to-Dia Color conversion chart."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand_name": "L'Oréal Professionnel",
+      "parent_company": "L'Oréal Groupe",
+      "product_line_name": "Dia Richesse",
+      "line_category": "demi",
+      "apparent_status": "unclear",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.lorealprofessionnel.com",
+      "official_line_url": null,
+      "notes": [
+        "The official US Dia Color page states Dia Richesse has been 'reimagined' as Dia Color and provides a conversion chart, indicating Dia Richesse is being phased out/replaced in the US.",
+        "Dia Richesse remains widely referenced in other markets (e.g., UK retailer guides), so global status is unclear rather than confirmed discontinued."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Blond Studio::US",
+      "brand_name": "L'Oréal Professionnel",
+      "parent_company": "L'Oréal Groupe",
+      "product_line_name": "Blond Studio",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": "https://us.lorealprofessionnel.com/all-products/hair-color",
+      "notes": [
+        "Verified on official US hair-color catalog: multiple Blond Studio SKUs listed including No Bleach Lightening Cream, Platinium Plus paste, 7 Clay Lightener, Multi-Techniques 8 Powder (with and without bonder), and 9 Lightening Powder (with and without bonder)."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Colorful Hair::global",
+      "brand_name": "L'Oréal Professionnel",
+      "parent_company": "L'Oréal Groupe",
+      "product_line_name": "Colorful Hair (#COLORFULHAIR)",
+      "line_category": "direct_dye",
+      "apparent_status": "unclear",
+      "region_or_market": "global",
+      "official_brand_url": "https://www.lorealprofessionnel.com",
+      "official_line_url": "https://www.lorealprofessionnel.nl/haarkleuring/colorfulhair/tijdelijke-kleuring-colorfulhair",
+      "notes": [
+        "Verified as a real L'Oréal Professionnel direct-dye/temporary color line on the official Dutch site (lorealprofessionnel.nl): 7 shades + Crystal Clear, no oxidant, lasts up to 15 shampoos.",
+        "Not present in the current us.lorealprofessionnel.com hair-color catalog, and a major reseller (glamot.com) lists all variants as no longer purchasable, so current availability is unclear."
+      ]
+    },
+    {
+      "canonical_key": "Rusk::Deepshine Permanent (Pure Pigments)::US",
+      "brand_name": "Rusk",
+      "parent_company": "Beauty Quest Group",
+      "product_line_name": "Deepshine Permanent Pure Pigments Conditioning Cream Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://ruskprofessional.com",
+      "official_line_url": "https://ruskprofessional.com/pages/deepshine-permanent",
+      "notes": [
+        "Verified on official ruskprofessional.com pages (/pages/deepshine-permanent and /products/rusk-deepshine-permanent-color): Micro Pure Pigment Technology, 100% gray coverage, 1:1.5 or 1:2 mix with Deepshine developers.",
+        "The official page itself uses the wording 'Deepshine Permanent Pure Pigments Conditioning Cream Color' — 'Pure Pigments' is part of this line, not a separate line."
+      ]
+    },
+    {
+      "canonical_key": "Rusk::Deepshine Gloss::US",
+      "brand_name": "Rusk",
+      "parent_company": "Beauty Quest Group",
+      "product_line_name": "Deepshine Gloss",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://ruskprofessional.com",
+      "official_line_url": "https://ruskprofessional.com/pages/deepshinegloss",
+      "notes": [
+        "Verified on official page: demi-permanent liquid color, PPD- and ammonia-free, 1:1 mix, up to 20-minute processing."
+      ]
+    },
+    {
+      "canonical_key": "Rusk::Deepshine Xpress Gloss::US",
+      "brand_name": "Rusk",
+      "parent_company": "Beauty Quest Group",
+      "product_line_name": "Deepshine Xpress Gloss",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://ruskprofessional.com",
+      "official_line_url": "https://ruskprofessional.com/pages/downloadable-assets",
+      "notes": [
+        "Verified via official ruskprofessional.com downloadable-assets page, which hosts 'About Deepshine Xpress Gloss' and 'How to Use Deepshine Xpress Gloss' documents.",
+        "Trade press (Happi, July 2022) confirms launch as a quick-gloss capsule collection sold via CosmoProf/Marlo Beauty."
+      ]
+    },
+    {
+      "canonical_key": "Rusk::RUSKin10::US",
+      "brand_name": "Rusk",
+      "parent_company": "Beauty Quest Group",
+      "product_line_name": "RUSKin10 (RUSK IN 10)",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://ruskprofessional.com",
+      "official_line_url": "https://ruskprofessional.com/pages/ruskin10",
+      "notes": [
+        "Verified on official page: 10-minute permanent cream color with Micro Pigment technology, complete gray coverage, 1:2 with 20-vol developer."
+      ]
+    },
+    {
+      "canonical_key": "Rusk::Deepshine Direct::US",
+      "brand_name": "Rusk",
+      "parent_company": "Beauty Quest Group",
+      "product_line_name": "Deepshine Direct",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://ruskprofessional.com",
+      "official_line_url": "https://ruskprofessional.com/collections/deepshine-direct",
+      "notes": [
+        "Verified on official collection page: intense, vibrant deposit-only colors in 10 shades (incl. Icy White toner), intermixable; positioned as semi-permanent direct color."
+      ]
+    },
+    {
+      "canonical_key": "Rusk::Deepshine Lighteners::US",
+      "brand_name": "Rusk",
+      "parent_company": "Beauty Quest Group",
+      "product_line_name": "Deepshine Lighteners",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://ruskprofessional.com",
+      "official_line_url": null,
+      "notes": [
+        "The official Deepshine Direct collection page links to a 'deepshine lighteners' collection on ruskprofessional.com, confirming a lightener offering exists; the dedicated collection page itself was not fetched, so shade/SKU detail is unverified."
+      ]
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Color Rhapsody::US",
+      "brand_name": "Moroccanoil Professional",
+      "parent_company": "Moroccanoil, Inc.",
+      "product_line_name": "Color Rhapsody Permanent Cream Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://moroccanoilprofessionals.com",
+      "official_line_url": "https://moroccanoilprofessionals.com/collections/haircolor",
+      "notes": [
+        "Verified on official moroccanoilprofessionals.com haircolor collection and moroccanoil.com/pages/permanent-color: ProArginine + ArganID system.",
+        "The official collection lists four Rhapsody variants as one permanent family: Color Rhapsody, Color Rhapsody High Lift, Color Rhapsody Ultimates (max grey coverage), and Color Rhapsody 10."
+      ]
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Color Calypso::US",
+      "brand_name": "Moroccanoil Professional",
+      "parent_company": "Moroccanoil, Inc.",
+      "product_line_name": "Color Calypso Demi-Permanent (Gloss & Cream)",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://moroccanoilprofessionals.com",
+      "official_line_url": "https://www.moroccanoil.com/pages/demi-permanent-color",
+      "notes": [
+        "Verified on official moroccanoil.com demi-permanent page and in the official Color Manual PDF on moroccanoilprofessionals.com: includes Color Calypso Demi-Permanent Gloss (liquid, used with Gloss Activator) and Color Calypso Demi-Permanent Cream Color."
+      ]
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Color Infusion::US",
+      "brand_name": "Moroccanoil Professional",
+      "parent_company": "Moroccanoil, Inc.",
+      "product_line_name": "Color Infusion Pure Color Mixer",
+      "line_category": "mixed_system",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://moroccanoilprofessionals.com",
+      "official_line_url": "https://moroccanoilprofessionals.com/products/color-infusion-pure-color-mixer",
+      "notes": [
+        "Verified on official product page and moroccanoil.com/pages/color-infusion: 7 gel-based pure pigments used to intensify, neutralize, or pastelize Color Rhapsody / Color Calypso formulas; can also be mixed with Oxidative Cream Developer for a direct color boost.",
+        "Categorized as mixed_system because it is a pigment mixer/booster used within the oxidative color system rather than a standalone permanent/demi/semi line."
+      ]
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Blonde Voyage Lighteners::US",
+      "brand_name": "Moroccanoil Professional",
+      "parent_company": "Moroccanoil, Inc.",
+      "product_line_name": "Blonde Voyage Lighteners (Powder, Clay, Cream)",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://moroccanoilprofessionals.com",
+      "official_line_url": "https://www.moroccanoil.com/pages/blonde-voyage-lighteners",
+      "notes": [
+        "Verified on official moroccanoil.com page and the official Color Manual PDF: Blonde Voyage Powder Lightener (up to 9 levels), Clay Lightener, and Cream Lightener, all with BondCare + ArganID system; all three also listed on the moroccanoilprofessionals.com haircolor collection."
+      ]
+    },
+    {
+      "canonical_key": "Moroccanoil::Color Depositing Masks::US",
+      "brand_name": "Moroccanoil",
+      "parent_company": "Moroccanoil, Inc.",
+      "product_line_name": "Color Depositing Masks",
+      "line_category": "semi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.moroccanoil.com",
+      "official_line_url": "https://www.moroccanoil.com/collections/color-depositing-masks",
+      "notes": [
+        "Verified on official moroccanoil.com collection page: 6 shades (Cocoa, Bordeaux, Copper, Platinum, Rose Gold, Coral) in 6.7 oz and travel sizes.",
+        "This is a temporary, retail/at-home color-depositing conditioning treatment sold direct-to-consumer, not a developer-mixed professional color line."
+      ]
+    },
+    {
+      "canonical_key": "Danger Jones::Semi-Permanent Color::US",
+      "brand_name": "Danger Jones",
+      "parent_company": null,
+      "product_line_name": "Semi-Permanent Hair Color",
+      "line_category": "semi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.dangerjonescreative.com",
+      "official_line_url": "https://www.dangerjonescreative.com/hair-color-semi-permanents",
+      "notes": [
+        "Verified on official site: 25+ vivid direct-dye shades (incl. 5 UV-reactive neons, Clear, Dopamine black), no developer needed, 35-minute room-temperature processing, ammonia/PPD/MEA/paraben-free, vegan.",
+        "Technically a direct dye (applied straight from tube with no developer); brand markets it as 'semi-permanent'.",
+        "Brand is independent/founder-led (David & Alexis Thurston); site footer shows 'Thurston A&R'. Parent company set to null since no corporate parent verified on an official source."
+      ]
+    },
+    {
+      "canonical_key": "Danger Jones::Gloss Toner with Bonder::US",
+      "brand_name": "Danger Jones",
+      "parent_company": null,
+      "product_line_name": "Gloss Toner with Bonder",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.dangerjonescreative.com",
+      "official_line_url": "https://www.dangerjonescreative.com/hair-color-gloss-toners-with-bonder",
+      "notes": [
+        "Verified on official site: 56 acidic, zero-lift demi-permanent liquid gloss toner shades with vegan bonder; 1:1 with dedicated Gloss Toner Developer, 3-10 minute processing (30-35 min for grey blending)."
+      ]
+    },
+    {
+      "canonical_key": "Danger Jones::Artistic Toners::US",
+      "brand_name": "Danger Jones",
+      "parent_company": null,
+      "product_line_name": "Artistic Toners",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.dangerjonescreative.com",
+      "official_line_url": "https://www.dangerjonescreative.com/hair-color-artistic-toners",
+      "notes": [
+        "Verified on official site: alkaline, progressive demi-permanent cream toners with bonder; mixed 1:2 to 1:3 with 5-volume Deluxe Cream Developer, 5-20 minute processing; core shades Cool Blonde, Silver, Violet (per CosmoProf listing).",
+        "Officially not intermixable with the acidic Gloss Toners due to incompatible pH."
+      ]
+    },
+    {
+      "canonical_key": "Danger Jones::Lighteners::US",
+      "brand_name": "Danger Jones",
+      "parent_company": null,
+      "product_line_name": "Powder Lightener & Cream Lightener (with Bonding Complex)",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.dangerjonescreative.com",
+      "official_line_url": "https://www.dangerjonescreative.com/hair-color-blonding",
+      "notes": [
+        "Verified on official blonding page: Powder Lightener (9+ levels of lift; Polycare Split + Arginine bonding complex, Ormagel seaweed) and the newer Cream Lightener (9+ levels, gentler, with jojoba and aloe vera), both used with Deluxe Cream Developers."
+      ]
+    },
+    {
+      "canonical_key": "Danger Jones::Epilogue::US",
+      "brand_name": "Danger Jones",
+      "parent_company": null,
+      "product_line_name": "Epilogue Permanent Hair Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.dangerjonescreative.com",
+      "official_line_url": "https://www.dangerjonescreativeepilogue.com/",
+      "notes": [
+        "Verified on the official Epilogue site (dangerjonescreativeepilogue.com): brand's first permanent line, launched March 2026; 84 intermixable shades incl. high lifts and boosters, 100% grey coverage, PPD- and resorcinol-free, vegan bonding complex, 1:1 with Deluxe Cream Developer (5-40 vol), 35-45 min processing.",
+        "Launch corroborated by trade press (The Tease, 03/2026) and CosmoProf availability."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Permanent Haircolor::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": "Henkel Corporation",
+      "product_line_name": "Permanent Haircolor",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/permanent-haircolor/",
+      "notes": [
+        "Verified on official mydentitycolor.com page: permanent crèmes with Miru-Style X-HP heat protection and VibraRiche technology; 1:1 with 10-40V developer, 30-40 minute processing.",
+        "Site footer: '© 2026 Henkel Corporation. All Rights Reserved.' confirms parent company; US purchasing is routed to CosmoProfBeauty.com."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Demi-Permanent Haircolor::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": "Henkel Corporation",
+      "product_line_name": "Demi-Permanent Haircolor",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/demi-permanent-haircolor/",
+      "notes": [
+        "Verified on official page: demi-permanent crèmes mixed 1:2 with dedicated 6V Demi-Permanent Developer, 5-25 minute processing."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Demi-Permanent X-Press Toners::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": "Henkel Corporation",
+      "product_line_name": "Demi-Permanent X-Press Toners",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/x-press-toners/",
+      "notes": [
+        "Verified on official page: 7 fast-processing demi-permanent toner shades (Titanium, Sand Storm, Pearl, Misty Mauve, Golden Sand, Eclipse, Blush)."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Reflect Liquid Demi-Permanent::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": "Henkel Corporation",
+      "product_line_name": "Reflect Liquid Demi-Permanent",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/reflect-liquid-demi-permanent/",
+      "notes": [
+        "Verified on official page: 15-shade liquid demi-permanent range plus Clear; deposit-only, ammonia- and alcohol-free, 1:1 with 6V developer, 15-minute processing, lasts up to 25 shampoos."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Super Power Direct Dye::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": "Henkel Corporation",
+      "product_line_name": "Super Power Direct Dye",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/direct-dyes/",
+      "notes": [
+        "Verified on official direct-dyes page: 9+ Super Power shades listed (Violet Sorcery, Titanium Shield, Sheer Power, Purple Raven, Pink Possession, Phoenix Fire, Ocean Reign, Night Warrior, Magenta Magic); no developer required, ~20-minute processing per retailer detail."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Direct Dye Vibrant Pastel::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": "Henkel Corporation",
+      "product_line_name": "Direct Dye Vibrant / Pastel",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/direct-dye-vibrant-pastel/",
+      "notes": [
+        "Verified on official education page: original Vibrant/Pastel direct dye range, no developer required, 20-minute processing, pre-lightening with Big9 recommended.",
+        "Note: only Super Power shades appear under the site's /direct-dyes/ product listing, so the original Vibrant/Pastel range may be transitioning to Super Power; education page is still live in 2026."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Big9 Creme Lightener::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": "Henkel Corporation",
+      "product_line_name": "Big9 Creme Lightener",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/big9/",
+      "notes": [
+        "Verified on official page: creme lightener lifting up to 9 levels in a single application without heat; 1:1.5 mix for global application, on-scalp up to 20 volume."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::#Magnum8 Powder Lightener::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": "Henkel Corporation",
+      "product_line_name": "#Magnum8 Powder Lightener",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/magnum8-powder-lightener/",
+      "notes": [
+        "Verified on official page: dust-free violet powder lightener, lifts up to 8 levels, 1:1 to 1:3 mixing with #mydentity developer."
+      ]
+    }
+  ],
+  "issue_log": [
+    {
+      "item": "Redken professional haircolor landing page",
+      "issue_type": "js_heavy_page",
+      "details": "Direct fetch of https://www.redken.com/professional/haircolor returned mostly sign-up forms and navigation labels rather than product content; line enumeration for Redken relied on the navigation list and shade-chart page surfaced in search results (Blonde Idol, Blonde IQ, Color Fusion, Chromatics, Color Gels Lacquers, Shades ALK, Shades EQ, Color Camo)."
+    },
+    {
+      "item": "Redken::Flash Lift Bonder Inside",
+      "issue_type": "region_verification",
+      "details": "Full product page verified only on the official Redken Australia/NZ site (redken.com.au); US redken.com confirms the line indirectly (Shades EQ Bonder Inside page and blog articles reference Flash Lift Bonder Inside). Marked region_or_market as global."
+    },
+    {
+      "item": "Redken::Chromatics",
+      "issue_type": "unverified_status",
+      "details": "Chromatics is listed in the current redken.com haircolor navigation, but no live product page was confirmed; given long-running stylist reports of phase-out, status set to unclear."
+    },
+    {
+      "item": "Matrix::SoColor Sync 'Alchemy'",
+      "issue_type": "unverified_name",
+      "details": "The brief suggested 'SoColor Sync (Alchemy)'. Official matrix.com pages and the 2023 manual reference 'SoColor Sync Pre-Bonded'; the Alchemy sub-brand/relaunch name was not found on a fetched official page, so it is omitted from the verified name."
+    },
+    {
+      "item": "Wella::Magma",
+      "issue_type": "region_verification",
+      "details": "Magma verified only via Wella's official colour brand factsheet PDF (Wella-hosted Contentful asset), not on the US site; region set to global."
+    },
+    {
+      "item": "Schwarzkopf::Chroma ID",
+      "issue_type": "no_dedicated_page_fetched",
+      "details": "Chroma ID is confirmed in descriptions on official schwarzkopf-professional.com IGORA pages and corresponds to the 'Express Bonding Color Masks' block on the fetched US color landing page, but a dedicated Chroma ID product page was not directly fetched; official_line_url left null."
+    },
+    {
+      "item": "Goldwell US product pages",
+      "issue_type": "region_verification",
+      "details": "Goldwell's consumer-facing hair color portfolio page surfaced in search was the en-GB version; en-US verification came from goldwell.com en-US Color Guide and System Products education pages. Goldwell directs purchasing to the Kao Pro Store, so retail-level line pages are limited."
+    },
+    {
+      "item": "Matrix::Super Sync",
+      "issue_type": "unverified_line",
+      "details": "Seen only in matrix.com navigation; no product page fetched. Included with status 'unclear' and category 'unknown'."
+    },
+    {
+      "item": "Wella Professionals::Color Renew / Perfecton / Color Fresh Masks",
+      "issue_type": "not_individually_verified",
+      "details": "These appear in Wella's official factsheet PDF but were not verified on live US web pages; only Color Fresh (Create/Masks) was included, grouped under the Color Fresh entry."
+    },
+    {
+      "item": "Pulp Riot Liquid Demi",
+      "issue_type": "unverifiable_status",
+      "details": "Line is documented by professional retailers and a dedicated developer (Liquid Demi 6.7 vol), but pulpriothair.com no longer lists it (direct fetch returned 404) and a salon source states it was discontinued. Marked unclear; could not find an official discontinuation notice."
+    },
+    {
+      "item": "Pulp Riot (whole brand) — UK/Ireland",
+      "issue_type": "region_restriction",
+      "details": "Per hair2buy.co.uk, L'Oréal discontinued Pulp Riot distribution in the UK and Ireland as of September 30, 2024. US distribution (SalonCentric) continues. Inventory entries reflect US market."
+    },
+    {
+      "item": "pulpriothair.com category pages",
+      "issue_type": "js_heavy_page",
+      "details": "Fetched pages (/products/haircolor, /products/lighteners, collection pages) render only header/intro text without product grids, so individual SKU/collection names within Lighteners could not be enumerated from HTML."
+    },
+    {
+      "item": "Paul Mitchell US pro site",
+      "issue_type": "broken_page",
+      "details": "https://www.paulmitchellpro.com/professional-hair-color returned 404. Verification relied on official international Paul Mitchell sites (paulmitchell.co.th, paulmitchell.de), official education PDFs, official distributor Salon Success (UK), and trade press; affected lines are marked region 'global' instead of 'US'."
+    },
+    {
+      "item": "Paul Mitchell 'the color 10' (10-minute express permanent)",
+      "issue_type": "unverified_line",
+      "details": "Referenced by third-party chart guides and search synthesis as a current 10-minute permanent line, but no official Paul Mitchell page confirming it was fetched. Included with apparent_status 'unclear'."
+    },
+    {
+      "item": "Paul Mitchell lighteners (Dual-Purpose Lightener, Skylight, Bond Rx)",
+      "issue_type": "unverified_line",
+      "details": "Specific lightener product names appeared only in search-result synthesis, not on a fetched official page. The existence of Paul Mitchell lighteners as a category is supported by official Pop XG education materials, so a single lightener entry was logged as 'unclear' rather than enumerating unverified names."
+    },
+    {
+      "item": "Paul Mitchell Pop XG",
+      "issue_type": "conflicting_evidence",
+      "details": "Official paulmitchell.de still lists Pop XG as a salon-exclusive line, but search results indicate it may no longer be distributed in the US (e.g., not found at SalonCentric). Marked unclear."
+    },
+    {
+      "item": "PM Shines",
+      "issue_type": "discontinued_line",
+      "details": "Official Paul Mitchell US Facebook video confirms PM Shines was retired and replaced by The Demi. Included with apparent_status 'discontinued'."
+    },
+    {
+      "item": "Pravana product detail pages",
+      "issue_type": "gated_content",
+      "details": "pravana.com product pages display a 'Color Certification Program' modal for pro features; core line descriptions were still readable. Some structural details (e.g., full VIVIDS sub-collection roster) were cross-checked against the official Product Knowledge Guide PDF dated 2022, which may not reflect 2026 line changes."
+    },
+    {
+      "item": "Kenra Simply Blonde categorization",
+      "issue_type": "category_ambiguity",
+      "details": "Simply Blonde spans lighteners, toners, and ultra lifts per the official landing page; categorized as 'lightener' (primary positioning) rather than splitting into unverified sub-lines."
+    },
+    {
+      "item": "Joico Vero K-PAK Chrome",
+      "issue_type": "unverified_line",
+      "details": "The joico.com Pro Color Shop page navigation shows a 'Chrome' item under Vero K-PAK in one menu variant, but no dedicated description was captured in fetched content, so it was noted within the Vero K-PAK entry rather than listed as a separate verified line."
+    },
+    {
+      "item": "Parent company attributions",
+      "issue_type": "secondary_knowledge",
+      "details": "Parent companies (Henkel for Joico/Kenra/Pravana, L'Oréal for Pulp Riot, John Paul Mitchell Systems for Paul Mitchell) are based on widely reported acquisitions and were not re-verified on official corporate pages during this session."
+    },
+    {
+      "item": "Davines Heart of Glass",
+      "issue_type": "not_a_color_line",
+      "details": "Listed in the prompt as a possible color line, but official sources (davinespro.com UK Mask page and an Allure article) describe Heart of Glass as a blonde care/maintenance and bonding-treatment family, not a hair color line. Excluded from the inventory."
+    },
+    {
+      "item": "Keune Blend",
+      "issue_type": "not_a_color_line",
+      "details": "Listed in the prompt as a possible color line, but Keune BLEND is a hair styling product line (gel, glue, de-frizz) launched in 2017, per retailer pages and a launch press article. No evidence of a Keune color line named Blend on keune.com. Excluded from the inventory."
+    },
+    {
+      "item": "Aveda Vivids/AVC",
+      "issue_type": "name_not_verified",
+      "details": "No Aveda line named 'Vivids' or 'AVC' was found on official sources. Aveda's vivid/fashion-shade line is officially named Full Spectrum Vibrants (semi-permanent), which is included instead."
+    },
+    {
+      "item": "Davines colour catalog page (davinespro.com/en/us/products/colour)",
+      "issue_type": "js_heavy_page",
+      "details": "Direct fetch returned a Chromium error/JS shell rather than readable content. Individual line pages were instead verified via search-indexed content from davinespro.com line URLs."
+    },
+    {
+      "item": "Framesi US products page (framesiprofessional.com/products/)",
+      "issue_type": "js_heavy_page",
+      "details": "Fetch returned only navigation and a sign-in form; line details were verified via individual line pages (Framcolor 2001, Framcolor Glamour, Decolor B) and the official Ultimate Product Guide 2022 PDF."
+    },
+    {
+      "item": "Framesi Framcolor Futura",
+      "issue_type": "unverified_status",
+      "details": "Appears as a permanent color line in the official framesiprofessional.com Ultimate Product Guide 2022 PDF but is absent from current framesi.it/en navigation and current US line pages found; marked apparent_status=unclear."
+    },
+    {
+      "item": "Framesi Framcolor 2001 Intense / Eclectic 5D Color Gloss / Pure Pigment Plus",
+      "issue_type": "no_dedicated_page_fetched",
+      "details": "Verified only via the framesi.it/en site navigation text (and, for 2001 Intense, the US product guide PDF); dedicated line page URLs were not captured, so official_line_url is null."
+    },
+    {
+      "item": "Alfaparf BB Bleach and Color Wear / Color Wear Gloss Toner",
+      "issue_type": "no_dedicated_page_fetched",
+      "details": "Verified via listings on the official alfaparfmilanopro.com us-en homepage and int-en products page rather than dedicated line pages; official_line_url left null where no line-specific URL was confirmed."
+    },
+    {
+      "item": "Aveda professional color documentation",
+      "issue_type": "source_location",
+      "details": "Aveda's consumer site (aveda.com) describes color only as salon services; detailed line-level facts come from the official salon-facing brochure hosted on joinaveda.com (Aveda's professional recruitment/education site). Brochure data verified is dated 2023, fetched June 2026."
+    },
+    {
+      "item": "Keune Ultimate Blonde",
+      "issue_type": "no_dedicated_page_fetched",
+      "details": "Verified via the official keune.com/keune-color overview page describing it as lightening powders plus toners; a dedicated Ultimate Blonde line page URL was not captured."
+    },
+    {
+      "item": "Rusk In10sity",
+      "issue_type": "could_not_verify",
+      "details": "No Rusk line named 'In10sity' could be found on ruskprofessional.com or in credible search results. The brand's 10-minute color is officially 'RUSKin10' (RUSK IN 10); 'In10sity' appears to be a conflation. Recorded RUSKin10 instead."
+    },
+    {
+      "item": "L'Oréal Professionnel Colorful Hair",
+      "issue_type": "unclear_status",
+      "details": "Verified as an official L'Oréal Professionnel direct-dye line only on a non-US official site (lorealprofessionnel.nl). It is absent from the current us.lorealprofessionnel.com hair-color catalog, and reseller glamot.com lists all variants as permanently unavailable. Marked apparent_status=unclear, region=global."
+    },
+    {
+      "item": "L'Oréal Professionnel Dia Richesse",
+      "issue_type": "replacement/transition",
+      "details": "Official US Dia Color page states Dia Richesse was 'reimagined' as Dia Color and publishes a Dia Richesse-to-Dia Color conversion chart, indicating US phase-out; status in other markets not verified, so logged as unclear rather than discontinued."
+    },
+    {
+      "item": "Majirel Cool Cover",
+      "issue_type": "verification_limitation",
+      "details": "Verified only via official US-hosted PDF assets (Majirel color chart and how-to-use guides on us.lorealprofessionnel.com), not a dedicated product landing page; official_line_url set to null."
+    },
+    {
+      "item": "Moroccanoil Color Depositing Masks",
+      "issue_type": "classification_note",
+      "details": "Verified on moroccanoil.com, but this is a retail/at-home temporary color-conditioning treatment, not a professional developer-mixed color line; included for completeness since the brief asked to verify it."
+    },
+    {
+      "item": "Moroccanoil 'Color Depositing / Color Infusion / Color Rhapsody' brief wording",
+      "issue_type": "scope_clarification",
+      "details": "All three exist, plus two lines not named in the brief: Color Calypso (demi-permanent gloss & cream) and Blonde Voyage lighteners (powder/clay/cream), both verified on official sources and added to the inventory."
+    },
+    {
+      "item": "Rusk Deepshine Lighteners",
+      "issue_type": "partial_verification",
+      "details": "A 'deepshine lighteners' collection link appears on the official Deepshine Direct page, but the dedicated collection page content was not fetched; SKU-level detail unverified."
+    },
+    {
+      "item": "Rusk Designer Collection rebrand (2026)",
+      "issue_type": "naming_risk",
+      "details": "Modern Salon (2026) reports Beauty Quest Group is relaunching RUSK under a unified 'RUSK Designer Collection' identity. Current color line names (Deepshine, RUSKin10) are still live on ruskprofessional.com, but naming/packaging may change during the relaunch."
+    },
+    {
+      "item": "dangerjonescreative.com page fetches",
+      "issue_type": "broken_page",
+      "details": "Guessed URLs /hair-color-permanents and /hair-color-toners returned 404. Verified lines via working official pages instead: /hair-color-semi-permanents, /hair-color-blonding, /hair-color-gloss-toners-with-bonder, /hair-color-artistic-toners, and the dedicated dangerjonescreativeepilogue.com site."
+    },
+    {
+      "item": "Danger Jones parent_company",
+      "issue_type": "unknown_value",
+      "details": "Brand is independent/founder-led (David & Alexis Thurston; site footer 'Thurston A&R'). No corporate parent verified on an official source, so parent_company left null."
+    },
+    {
+      "item": "Danger Jones Semi-Permanent Color Remover",
+      "issue_type": "scope_exclusion",
+      "details": "Official semi-permanent page references a 'Semi-Permanent Color Remover' product; excluded from the inventory as an ancillary remover rather than a color line."
+    },
+    {
+      "item": "#mydentity Direct Dye Vibrant Pastel vs Super Power",
+      "issue_type": "unclear_status",
+      "details": "The official /direct-dyes/ product listing shows only Super Power Direct Dye shades, while the Vibrant/Pastel education page remains live. The original Vibrant/Pastel range may be superseded by Super Power; both recorded, with the caveat noted."
+    },
+    {
+      "item": "#mydentity US purchasing",
+      "issue_type": "geo_restriction",
+      "details": "mydentitycolor.com is informational only; the site directs US purchases to CosmoProfBeauty.com and international buyers to regional distributors (e.g., mydentity.eu). Product pages carry minimal spec detail in some cases (e.g., Big9 'FEATURES' tab content not rendered in fetch)."
+    },
+    {
+      "item": "Moroccanoil official color manual",
+      "issue_type": "evidence_source",
+      "details": "Primary enumeration of Moroccanoil pro color lines came from the official Color Manual PDF hosted on moroccanoilprofessionals.com (lists Color Calypso Gloss/Cream, Color Rhapsody incl. High Lift and Ultimates, Color Infusion, Blonde Voyage Powder/Clay/Cream, developers/activators)."
+    }
+  ]
+}

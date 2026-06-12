@@ -1,0 +1,479 @@
+{
+  "artifact": "qa_findings",
+  "count": 21,
+  "qa_findings": [
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "record_ref": "Redken::Shades EQ Gloss::US#010GI",
+      "issue_type": "unmapped_tone_codes",
+      "severity": "medium",
+      "details": "codes ['GI'] have no normalized mapping",
+      "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "record_ref": "Redken::Shades EQ Gloss::US#09GI",
+      "issue_type": "unmapped_tone_codes",
+      "severity": "medium",
+      "details": "codes ['GI'] have no normalized mapping",
+      "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "record_ref": "Redken::Shades EQ Gloss::US#09AA",
+      "issue_type": "unmapped_tone_codes",
+      "severity": "medium",
+      "details": "codes ['AA'] have no normalized mapping",
+      "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "record_ref": "Redken::Shades EQ Gloss::US#08GI",
+      "issue_type": "unmapped_tone_codes",
+      "severity": "medium",
+      "details": "codes ['GI'] have no normalized mapping",
+      "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "record_ref": "Redken::Shades EQ Gloss::US#06GI",
+      "issue_type": "unmapped_tone_codes",
+      "severity": "medium",
+      "details": "codes ['GI'] have no normalized mapping",
+      "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "record_ref": "Redken::Shades EQ Gloss::US#06AA",
+      "issue_type": "unmapped_tone_codes",
+      "severity": "medium",
+      "details": "codes ['AA'] have no normalized mapping",
+      "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "record_ref": "Redken::Shades EQ Gloss::US#03A",
+      "issue_type": "unmapped_tone_codes",
+      "severity": "medium",
+      "details": "codes ['A'] have no normalized mapping",
+      "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "record_ref": "line_total",
+      "issue_type": "count_vs_manufacturer_claim",
+      "severity": "medium",
+      "details": "extracted 138 records vs manufacturer-claimed 143 shades",
+      "recommended_fix": "Pull newer official chart or per-sub-range pages to close the count gap."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "record_ref": "line_total",
+      "issue_type": "count_vs_manufacturer_claim",
+      "severity": "medium",
+      "details": "extracted 76 records vs manufacturer-claimed 68 shades",
+      "recommended_fix": "Pull newer official chart or per-sub-range pages to close the count gap."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "504N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 504N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "505N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 505N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "506N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 506N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "507N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 507N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "508N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 508N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "509N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 509N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "504NA",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 504NA",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "506NA",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 506NA",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "508NA",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 508NA",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "510NA",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 510NA",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "505M",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 505M",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "record_ref": "Matrix::SoColor Sync::US#Clear",
+      "issue_type": "unmapped_tone_codes",
+      "severity": "medium",
+      "details": "codes ['Clear'] have no normalized mapping",
+      "recommended_fix": "Resolve via official legend retrieval."
+    }
+  ],
+  "source_conflicts_from_extraction": [
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "shade_code": null,
+      "field_name": "processing_time_minutes for 20 volume developer (line-wide mixing & processing table)",
+      "conflicting_values": [
+        "30-35 minutes (official mini shade chart 2020)",
+        "30 minutes (official full-size shade chart 2020)"
+      ],
+      "preferred_value": "30-35 minutes",
+      "reason": "Both sources are official 2020 PDFs; the mini chart's dedicated Mixing & Processing table gives the wider range; recorded both, preferring the more detailed table."
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "shade_code": "05C",
+      "field_name": "shade_name",
+      "conflicting_values": [
+        "Chili (official Redken AU mini chart)",
+        "Chilli (salon-services.com UK distributor chart)"
+      ],
+      "preferred_value": "Chili",
+      "reason": "Official Redken chart spelling preferred over distributor chart spelling."
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "shade_code": "09NB",
+      "field_name": "shade_name",
+      "conflicting_values": [
+        "Irish Crème (official US 2022 chart)",
+        "Irish Creme (official AU 2013 chart)",
+        "Irish Créme (salon-services UK chart)"
+      ],
+      "preferred_value": "Irish Crème",
+      "reason": "US 2022 official chart preferred for the US canonical key; differences are diacritic-only."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "shade_code": null,
+      "field_name": "total_shade_count",
+      "conflicting_values": [
+        "143 different shades (official US IGORA ROYAL page, fetched June 2026)",
+        "133 distinct code/name entries extractable from the (c) 2021 US Paper Swatch Chart"
+      ],
+      "preferred_value": null,
+      "reason": "The 2021 chart text layer yields 133 entries (incl. E-1, Pastelfier and 4 named Silver Whites); the current official page claims 143. Some chart swatches/codes may be lost in text extraction or the portfolio may have been extended after 2021. Unresolved."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "shade_code": null,
+      "field_name": "total_shade_count",
+      "conflicting_values": [
+        "68 shades (task brief claim)",
+        "over 60 shades (2022 Instruction For Use)",
+        "76 distinct codes enumerated in the 2021 booklet portfolio overview",
+        "IFU additionally references '8 9.5-Toners, 5 NEW 10- Toners and a CLEAR 0-00' (the five 10- toner codes are not enumerated in any fetched source)"
+      ],
+      "preferred_value": "76 codes recorded (all individually observed in the booklet)",
+      "reason": "Only individually observed codes were recorded. The five 10- toners exist per the 2022 IFU and the official page (Level 10 Toner longevity claim) but their codes were never printed in fetched sources, so they are logged as missing rather than invented."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "shade_code": "4-64",
+      "field_name": "shade_code_existence",
+      "conflicting_values": [
+        "'04NB -> 4-64' printed once in the booklet's Redken Shades EQ conversion table",
+        "4-64 absent from the booklet portfolio overview (which lists 4-6, 4-63, 4-46)"
+      ],
+      "preferred_value": null,
+      "reason": "Appears only once, in a conversion table; likely a misprint of 4-63 or 4-46. Not recorded as a shade record."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "shade_code": "5-75",
+      "field_name": "shade_code_existence",
+      "conflicting_values": [
+        "'5-75' appears in the text extraction of the booklet swatch page 5",
+        "portfolio overview lists 5-7 and 5-65 but no 5-75"
+      ],
+      "preferred_value": "treated as a text-extraction kerning artifact of adjacent codes 5-7 / 5-65",
+      "reason": "Page 5 extraction shows several kerning-split codes (e.g. '7-4 8' for 7-48, '9.5-4 9' for 9.5-49); 5-75 is not corroborated anywhere else. Not recorded as a shade."
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "shade_code": null,
+      "field_name": "processing_time_with_heat (standard shades)",
+      "conflicting_values": [
+        "15-25 min with heat (official leaflet and usage booklet)",
+        "15-20 min with heat (Koleston_Perfect_Fact_Sheet.pdf, US factsheet)"
+      ],
+      "preferred_value": "15-25 min with heat",
+      "reason": "Leaflet and technical folder are the more detailed, current usage documents; factsheet appears older."
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "shade_code": null,
+      "field_name": "Special Blonde lift per developer strength",
+      "conflicting_values": [
+        "12% = 4-5 levels, 9% = 3 levels (official leaflet and US factsheet)",
+        "12% = 5 levels, 9% = 4 levels, 6% = 3 levels (UK Colour Brand Factsheet on assets.ctfassets.net, WP_COL_FS.pdf)"
+      ],
+      "preferred_value": "12% = 4-5 levels, 9% = 3 levels",
+      "reason": "Matches the current official leaflet; UK factsheet may reflect a different market/version."
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "shade_code": null,
+      "field_name": "total shade count claim",
+      "conflicting_values": [
+        "140+ shades (official US range page, wella.com/professional/en-US/koleston-perfect)",
+        "more than 160 shades (older Technical Folder usage booklet)",
+        "100+ unique shades (salon-services Koleston Perfect Technical Guide)"
+      ],
+      "preferred_value": "140+ shades (US market claim)",
+      "reason": "Canonical key is the US market; the US range page is the current official US source. Counts likely differ by market and document generation."
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "shade_code": null,
+      "field_name": "color longevity (washes/shampoos)",
+      "conflicting_values": [
+        "lasts up to 15 shampoos (UK factsheet WELLA-Color-College_FactSheet_Color_Touch_FINAL.pdf)",
+        "lasts up to 24 shampoos (EN factsheet Color_Touch_Fact_Sheet.pdf)",
+        "beautifully fades over 28 washes (official US store page); lasts up to 28 washes (distributor technical guide, stated for blonde toning)"
+      ],
+      "preferred_value": "fades over 28 washes",
+      "reason": "US store page is the current official US-market source; lower figures come from older factsheets/formulations."
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "shade_code": null,
+      "field_name": "ammonia-free claim scope",
+      "conflicting_values": [
+        "Ammonia free: COLOR TOUCH, Sunlights (except Sunlight/0) and Relights (technical folder/factsheets)",
+        "Ammonia Free Formula except Color Touch Plus which is low-ammonia (US store page); Plus 'contains both MEA and low-ammonia' (distributor guide)"
+      ],
+      "preferred_value": "Core Color Touch ammonia-free; Color Touch Plus low-ammonia",
+      "reason": "Statements are consistent once Plus is treated separately; recorded as scope clarification rather than true contradiction."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "shade_code": "5.35",
+      "field_name": "US dual letter code",
+      "conflicting_values": [
+        "'5.35/7GRv' (09/25 chart, printed in the level-5 row)",
+        "'5.35/5GRv' (07/23 chart)"
+      ],
+      "preferred_value": "5GRv",
+      "reason": "The 09/25 chart prints '7GRv' in the level-5 row, inconsistent with the numeric level prefix 5; the 07/23 chart prints 5GRv, consistent with the level. The '7' is almost certainly a typo in the 2025 PDF."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "shade_code": "4.35",
+      "field_name": "US dual letter code",
+      "conflicting_values": [
+        "'4.35/7GRv' (09/25 chart, printed in the level-4 row)",
+        "'4.35/4GRv' (07/23 chart)"
+      ],
+      "preferred_value": "4GRv",
+      "reason": "The 09/25 chart prints '7GRv' in the level-4 row, inconsistent with the numeric level prefix 4; the 07/23 chart prints 4GRv, consistent with the level. The '7' is almost certainly a typo in the 2025 PDF."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "shade_code": "",
+      "field_name": "mixing quantities (tube size)",
+      "conflicting_values": [
+        "'1 tube + 3 oz. Majicreme Developer' with '2oz tube' (09/25 chart and current product page)",
+        "'1.7 oz. tube + 2.6 oz. Majicreme Developer' (07/23 chart and how-to-use PDF)"
+      ],
+      "preferred_value": "2 oz tube + 3 oz Majicreme Developer (1:1.5)",
+      "reason": "The 2025 'Improved' Majirel relaunch increased the tube to 2 oz; the ratio (1:1.5) is identical in all sources. Newer official sources preferred."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "shade_code": "",
+      "field_name": "mixing quantities and developer options",
+      "conflicting_values": [
+        "'1 tube (1.7 oz.) to 2.6 oz. Diactivateur developer; 6-vol. (1.8%) or 9-vol. (2.7%)' (Dia Light Color Chart 2025 PDF)",
+        "'1 tube (2 oz.) to 3 oz. DIActivateur Developer; 6-vol. (1.8%), 9-vol. (2.7%) or 15-vol. (4.5%); 6/9 vol recommended' (official Dia Light product page, accessed 2026-06)"
+      ],
+      "preferred_value": "1 tube (2 oz.) + 3 oz. DIActivateur Developer (1:1.5); 6-vol, 9-vol, or 15-vol, with 6/9-vol recommended",
+      "reason": "The product page describes the newer 2 oz tube format ('Larger tube size, now 2 oz. vs. 1.7 oz.') and is the more recently updated official source; ratio (1:1.5) and 2-20 minute time are identical in both."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "shade_code": null,
+      "field_name": "blended_collection_shade_count",
+      "conflicting_values": [
+        "58 (manual 'At a Glance' table)",
+        "62 codes enumerated from the Blended palette charts (incl. Power Cools AA/VA shades)"
+      ],
+      "preferred_value": null,
+      "reason": "Manual states 58 Blended shades but the palette charts print 62 codes; Power Cools may be counted separately. Unresolved; all observed codes recorded."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "shade_code": null,
+      "field_name": "reflect_collection_shade_count",
+      "conflicting_values": [
+        "18 (manual 'At a Glance' table)",
+        "10 Reflective Palette codes + 7 specialty codes (HD x3, SoRed x2, SoBoost x2) enumerated from charts"
+      ],
+      "preferred_value": null,
+      "reason": "Counts do not reconcile from the text-extracted palette; all observed codes recorded."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "shade_code": null,
+      "field_name": "processing_time (Blended/Reflect/HD)",
+      "conflicting_values": [
+        "30-45 minutes room temperature (collection pages)",
+        "30 minutes (manual FAQ per-technology list)"
+      ],
+      "preferred_value": "30-45 minutes room temperature",
+      "reason": "Collection technical pages give the fuller instruction including the 45-minute condition; FAQ list appears abbreviated."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "shade_code": null,
+      "field_name": "ultra_blonde_natural_base_range",
+      "conflicting_values": [
+        "'high lift on light brown to dark blonde natural bases' (manual overview p.31)",
+        "'high lift on medium brown to medium blonde natural bases' (Ultra Blonde collection page p.43)",
+        "'High Lift on Natural Levels 5+' (At a Glance)"
+      ],
+      "preferred_value": null,
+      "reason": "Same manual states the recommended natural base range three different ways; unresolved."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "shade_code": null,
+      "field_name": "tone_digit_legend",
+      "conflicting_values": [
+        "'.3 Gold / .5 Mahogany' (SoColor & SoColor Sync decoding pages)",
+        "'.3 Gold/Warm / .5 Brown' (Fundamentals of Haircolor section)"
+      ],
+      "preferred_value": "Decoding-page wording (Gold / Mahogany)",
+      "reason": "The line-specific decoding pages are used for tone_family_legend; the fundamentals page differs and is logged."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "shade_code": "504NA",
+      "field_name": "collection_membership (also 506NA, 508NA, 510NA, 505M)",
+      "conflicting_values": [
+        "Extra Coverage Palette",
+        "DreamAge Palette"
+      ],
+      "preferred_value": null,
+      "reason": "Identical codes printed on both the Extra Coverage and DreamAge palette charts; manual does not state whether these are shared SKUs or distinct products. Recorded once per collection."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "shade_code": null,
+      "field_name": "sub_collections / mixing instructions",
+      "conflicting_values": [
+        "2023 manual collections (Blended, Extra Coverage, DreamAge, Reflect, Ultra Blonde, HD, SoRed, SoColor 10 min)",
+        "Official product page 'How to use': adds 'High Impact Brunettes: 1:1.5 mixing ration, 35 minutes' and 'Reflect Collection Metallics: 1:1 mixing ratio with 20 volume or 30 volume MATRIX Cream Developer. Timing is 35 minutes.'"
+      ],
+      "preferred_value": "2023 manual collection set",
+      "reason": "Product-page boilerplate references sub-collections absent from the 2023 manual (possibly legacy SoColor Beauty ranges); shades for these could not be observed, so none were recorded."
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "shade_code": null,
+      "field_name": "alkaline_shade_count",
+      "conflicting_values": [
+        "69 (manual 'At a Glance' table)",
+        "70-71 codes enumerated from palette charts (incl. Clear and HD-CR)"
+      ],
+      "preferred_value": null,
+      "reason": "Counts do not reconcile exactly; HD-CR appears only on the HD tips page and Clear may be counted separately. All observed codes recorded."
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "shade_code": null,
+      "field_name": "gray_coverage_claim",
+      "conflicting_values": [
+        "'SoColor Sync should not be used for gray coverage, but should be used for gray blending' (SoColor FAQ)",
+        "'SoColor Sync is ideal for gray blending and provides up to 75% gray coverage' (SoColor Sync FAQ)",
+        "'Up to 75% gray blending' (services guide)"
+      ],
+      "preferred_value": null,
+      "reason": "Manual frames the 75% figure both as 'coverage' and as 'blending'; both wordings recorded verbatim."
+    }
+  ],
+  "unresolved_issues": [
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "manufacturer_tone_code": "A",
+      "reason": "tone_meaning_unresolved",
+      "details": "No printed legend; single shade 03A Terra Cotta (warm name) contradicts conventional 'A = Ash'; unresolved"
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "manufacturer_tone_code": "AA",
+      "reason": "tone_meaning_unresolved",
+      "details": "No printed legend; shade names (Papaya, Bonfire) suggest warm/copper but contradict conventional 'AA = intense ash' reading; unresolved"
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "manufacturer_tone_code": "GI",
+      "reason": "tone_meaning_unresolved",
+      "details": "No printed legend; shade names (Tahitian Sand, Hamptons, St. Barths, Tenerife) do not unambiguously identify a tone family"
+    }
+  ],
+  "issue_log": []
+}
