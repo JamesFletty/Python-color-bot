@@ -1,6 +1,6 @@
 {
   "artifact": "line_technical_records",
-  "count": 15,
+  "count": 23,
   "line_technical_records": [
     {
       "canonical_key": "Redken::Shades EQ Gloss::US",
@@ -1282,6 +1282,210 @@
       "assumptions": [],
       "data_gaps": [
         "Shade-level extraction blocked: image-only palettes on official Color Guide (no PDF/text chart cataloged)."
+      ]
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "color_type": "permanent direct-dye hybrid",
+      "default_mixing_ratio": "10V or 20V only (no high-volume developer)",
+      "developer_options": [
+        "10V",
+        "20V"
+      ],
+      "developer_strengths_if_stated": "10V max deposit; 20V lighter/brighter (product pages)",
+      "processing_time_ranges": null,
+      "gray_coverage_rules": "Up to 100% gray: 25% Everlasting + 75% ChromaSilk Permanent (printed How To Use)",
+      "lift_rules": "Low-volume developer only; intermix ratios by level (25–50%)",
+      "tone_family_legend": "Named direct-dye shades (no level/tone digit system)",
+      "special_usage_notes": "Intermixable with ChromaSilk Permanent Crème and other Everlasting shades",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.pravana.com/products/color/permanent/chromasilk-vivids-everlasting/",
+      "source_document": "ChromaSilk VIVIDS Everlasting line + shade product pages",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Pulp Riot Semi-Permanent (Paint)",
+      "color_type": "semi-permanent direct dye",
+      "default_mixing_ratio": null,
+      "developer_options": [],
+      "developer_strengths_if_stated": null,
+      "processing_time_ranges": null,
+      "gray_coverage_rules": "N/A — non-oxidative",
+      "lift_rules": "No lift; pre-lightening required for vivid deposit",
+      "tone_family_legend": "Named shades across OG Semis, Cosmic, Neon Electric, NeoPop, Impulse, 70s collections",
+      "special_usage_notes": "44+ intermixable shades; no developer (official line page)",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.pulpriothair.com/products/haircolor/semi-permanent-haircolor",
+      "source_document": "Pulp Riot Semi-Permanent Hair Color line page",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [
+        "Sub-collections grouped under canonical Semi-Permanent line per Stage 1 inventory"
+      ],
+      "data_gaps": [
+        "Not all 44+ shades verified on sub-collection pages crawled in Batch 4"
+      ]
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "color_type": "permanent",
+      "default_mixing_ratio": "1:1 with Kenra Color Permanent Developer",
+      "developer_options": [
+        "10V",
+        "20V",
+        "30V",
+        "40V"
+      ],
+      "developer_strengths_if_stated": "10V deposit/gray; 20V–40V lift per workbook chart",
+      "processing_time_ranges": "30 minutes; up to 40 minutes for gray coverage",
+      "gray_coverage_rules": "Incorporate Natural (N) series per % gray (workbook 5-step chart)",
+      "lift_rules": "Up to 3–4 levels depending on developer (workbook)",
+      "tone_family_legend": "Level + dominant/secondary reflection letters (workbook shade identifier)",
+      "special_usage_notes": "Balancing Complex 5; low ammonia",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://kenraprofessional.com/static/5296dab40130e6ed3e0a51c27797a1af/2026_Kenra_Color_Workbook.pdf",
+      "source_document": "Kenra Color Workbook 2026",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "color_type": "demi-permanent",
+      "default_mixing_ratio": "1:2 with Kenra Color Demi-Permanent Activator (9 Volume)",
+      "developer_options": [
+        "9 Volume Activator"
+      ],
+      "developer_strengths_if_stated": "9 Volume only",
+      "processing_time_ranges": "25 minutes (workbook)",
+      "gray_coverage_rules": "Up to 75% natural gray coverage (Stage 1 / workbook)",
+      "lift_rules": "Deposit only",
+      "tone_family_legend": "Shares shade identifiers with permanent line on wall chart",
+      "special_usage_notes": "Ammonia-free",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://kenraprofessional.com/static/5296dab40130e6ed3e0a51c27797a1af/2026_Kenra_Color_Workbook.pdf",
+      "source_document": "Kenra Color Workbook 2026",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "color_type": "demi-permanent toner",
+      "default_mixing_ratio": "1:2 with 9 Volume Activator",
+      "developer_options": [
+        "9 Volume Activator"
+      ],
+      "developer_strengths_if_stated": "9 Volume",
+      "processing_time_ranges": "5 minutes or less",
+      "gray_coverage_rules": null,
+      "lift_rules": "No lift — toning cremes",
+      "tone_family_legend": "7 intermixable shades: B, SA, SV, VP, GrBl, GV, RoV",
+      "special_usage_notes": "Ammonia-free rapid toners",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.kenraprofessional.com/collection/kenra-color-rapid-toners",
+      "source_document": "Kenra Color Rapid Toners collection page + Wall Chart 2025",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "color_type": "permanent express",
+      "default_mixing_ratio": "1:1 with Kenra Color Developer 10V–30V",
+      "developer_options": [
+        "10V",
+        "20V",
+        "30V"
+      ],
+      "developer_strengths_if_stated": "10V–30V",
+      "processing_time_ranges": "10 minutes or less (5 minutes for gray blending)",
+      "gray_coverage_rules": "N/NB series up to 100% gray in 10 minutes",
+      "lift_rules": "Lifts and deposits",
+      "tone_family_legend": "N, NB, A, B, G series per SSE manual shade chart",
+      "special_usage_notes": "17 shades; not intermixable with standard Kenra Color permanent/demi",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://kenraprofessional.com/static/79c78d5dc48cfbc132fc33166e1a48ee/Studio_Stylist_Express_Color_Manual.pdf",
+      "source_document": "Studio Stylist Express Technical Manual",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Creatives::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Creatives (Semi-Permanent)",
+      "color_type": "semi-permanent direct dye",
+      "default_mixing_ratio": null,
+      "developer_options": [],
+      "developer_strengths_if_stated": null,
+      "processing_time_ranges": null,
+      "gray_coverage_rules": "N/A",
+      "lift_rules": "No developer",
+      "tone_family_legend": "Trendy Chic and Classically Bold palettes (official page)",
+      "special_usage_notes": "Intermixable semi-permanent vivids; up to 50 washes",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.kenraprofessional.com/kenra-color/creatives/",
+      "source_document": "Kenra Color Creatives official landing page",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": [
+        "Shade list rendered client-side on /color-list?filter=creatives; shade-level Stage 4 deferred in Batch 4"
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Demi::global",
+      "brand": "Paul Mitchell",
+      "product_line": "Paul Mitchell The Demi",
+      "color_type": "demi-permanent",
+      "default_mixing_ratio": "1:1 with Paul Mitchell Cream Developer",
+      "developer_options": [
+        "Cream Developer 10 volume"
+      ],
+      "developer_strengths_if_stated": "10 volume",
+      "processing_time_ranges": "5–20 minutes",
+      "gray_coverage_rules": "Blending/refining; not positioned for resistant gray coverage",
+      "lift_rules": "No-lift demi-permanent",
+      "tone_family_legend": "65+ shades incl. Flash Toners, Muted Metallics, Clear (official TH product page)",
+      "special_usage_notes": "Ammonia-free; replaces PM Shines",
+      "region_or_market": "global",
+      "discontinued_status": null,
+      "source_url": "https://paulmitchell.co.th/en/product/paul-mitchell-the-demi-en/",
+      "source_document": "Paul Mitchell The Demi official product page (paulmitchell.co.th)",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [
+        "US paulmitchell.com lacks public shade chart; international official page used"
+      ],
+      "data_gaps": [
+        "Shade swatches on official page are image-only; only 14 numeric codes found in HTML metadata — full shade-level Stage 4 deferred"
       ]
     }
   ],

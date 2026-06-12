@@ -271,7 +271,7 @@
       "product_line": "LumiShine Permanent Crème Color",
       "gap_type": "source_access_blocked",
       "severity": "high",
-      "details": "Status: deferred from Batch 3. joico.com returns HTTP 403 (Cloudflare) from automated fetch; no official PDF mirror found on CosmoProf/SalonCentric.",
+      "details": "Status: deferred from Batch 4. joico.com and direct PDF URLs return HTTP 403 (Cloudflare); no official distributor PDF mirror found.",
       "recommended_next_action": "Retry from residential IP, use manufacturer education portal login, or locate distributor-hosted PDF."
     },
     {
@@ -280,7 +280,7 @@
       "product_line": "LumiShine YouthLock Permanent Crème Color",
       "gap_type": "source_access_blocked",
       "severity": "high",
-      "details": "Status: deferred from Batch 3. joico.com returns HTTP 403 (Cloudflare) from automated fetch; no official PDF mirror found on CosmoProf/SalonCentric.",
+      "details": "Status: deferred from Batch 4. joico.com and direct PDF URLs return HTTP 403 (Cloudflare); no official distributor PDF mirror found.",
       "recommended_next_action": "Retry from residential IP, use manufacturer education portal login, or locate distributor-hosted PDF."
     },
     {
@@ -289,7 +289,7 @@
       "product_line": "LumiShine Lumi10 Permanent Crème Color",
       "gap_type": "source_access_blocked",
       "severity": "high",
-      "details": "Status: deferred from Batch 3. joico.com returns HTTP 403 (Cloudflare) from automated fetch; no official PDF mirror found on CosmoProf/SalonCentric.",
+      "details": "Status: deferred from Batch 4. joico.com and direct PDF URLs return HTTP 403 (Cloudflare); no official distributor PDF mirror found.",
       "recommended_next_action": "Retry from residential IP, use manufacturer education portal login, or locate distributor-hosted PDF."
     },
     {
@@ -298,7 +298,7 @@
       "product_line": "LumiShine Demi-Permanent Crème Color",
       "gap_type": "source_access_blocked",
       "severity": "high",
-      "details": "Status: deferred from Batch 3. joico.com returns HTTP 403 (Cloudflare) from automated fetch; no official PDF mirror found on CosmoProf/SalonCentric.",
+      "details": "Status: deferred from Batch 4. joico.com and direct PDF URLs return HTTP 403 (Cloudflare); no official distributor PDF mirror found.",
       "recommended_next_action": "Retry from residential IP, use manufacturer education portal login, or locate distributor-hosted PDF."
     },
     {
@@ -307,7 +307,7 @@
       "product_line": "LumiShine Demi-Permanent Liquid Color",
       "gap_type": "source_access_blocked",
       "severity": "high",
-      "details": "Status: deferred from Batch 3. joico.com returns HTTP 403 (Cloudflare) from automated fetch; no official PDF mirror found on CosmoProf/SalonCentric.",
+      "details": "Status: deferred from Batch 4. joico.com and direct PDF URLs return HTTP 403 (Cloudflare); no official distributor PDF mirror found.",
       "recommended_next_action": "Retry from residential IP, use manufacturer education portal login, or locate distributor-hosted PDF."
     },
     {
@@ -316,7 +316,7 @@
       "product_line": "Vero K-PAK Color",
       "gap_type": "source_access_blocked",
       "severity": "high",
-      "details": "Status: deferred from Batch 3. joico.com returns HTTP 403 (Cloudflare) from automated fetch; no official PDF mirror found on CosmoProf/SalonCentric.",
+      "details": "Status: deferred from Batch 4. joico.com and direct PDF URLs return HTTP 403 (Cloudflare); no official distributor PDF mirror found.",
       "recommended_next_action": "Retry from residential IP, use manufacturer education portal login, or locate distributor-hosted PDF."
     },
     {
@@ -325,7 +325,7 @@
       "product_line": "Blonde Life",
       "gap_type": "source_access_blocked",
       "severity": "medium",
-      "details": "Status: deferred from Batch 3. joico.com returns HTTP 403 (Cloudflare) from automated fetch; no official PDF mirror found on CosmoProf/SalonCentric.",
+      "details": "Status: deferred from Batch 4. joico.com and direct PDF URLs return HTTP 403 (Cloudflare); no official distributor PDF mirror found.",
       "recommended_next_action": "Retry from residential IP, use manufacturer education portal login, or locate distributor-hosted PDF."
     },
     {
@@ -334,53 +334,17 @@
       "product_line": "Color Intensity",
       "gap_type": "source_access_blocked",
       "severity": "medium",
-      "details": "Status: deferred from Batch 3. joico.com returns HTTP 403 (Cloudflare) from automated fetch; no official PDF mirror found on CosmoProf/SalonCentric.",
+      "details": "Status: deferred from Batch 4. joico.com and direct PDF URLs return HTTP 403 (Cloudflare); no official distributor PDF mirror found.",
       "recommended_next_action": "Retry from residential IP, use manufacturer education portal login, or locate distributor-hosted PDF."
-    },
-    {
-      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
-      "brand": "Kenra Professional",
-      "product_line": "Kenra Color Permanent",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "high",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
-      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
-      "brand": "Kenra Professional",
-      "product_line": "Kenra Color Demi-Permanent",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "high",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
     },
     {
       "canonical_key": "Kenra Professional::Kenra Color Creatives::US",
       "brand": "Kenra Professional",
       "product_line": "Kenra Color Creatives (Semi-Permanent)",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "medium",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
-      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
-      "brand": "Kenra Professional",
-      "product_line": "Kenra Color Rapid Toners",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "medium",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
-      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
-      "brand": "Kenra Professional",
-      "product_line": "Studio Stylist Express",
-      "gap_type": "shade_extraction_not_started",
+      "gap_type": "shade_extraction_blocked",
       "severity": "high",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+      "details": "Status: line technical extracted in Batch 4; shade-level Stage 4 blocked — official /color-list?filter=creatives renders shade inventory client-side without public PDF.",
+      "recommended_next_action": "Locate machine-readable Creatives shade chart/PDF or authenticated color-list API export."
     },
     {
       "canonical_key": "Kenra Professional::Simply Blonde::US",
@@ -388,15 +352,6 @@
       "product_line": "Simply Blonde",
       "gap_type": "shade_extraction_not_started",
       "severity": "medium",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
-      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
-      "brand": "Pravana",
-      "product_line": "ChromaSilk VIVIDS Everlasting",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "high",
       "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
       "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
     },
@@ -440,10 +395,10 @@
       "canonical_key": "Paul Mitchell::The Demi::global",
       "brand": "Paul Mitchell",
       "product_line": "Paul Mitchell The Demi",
-      "gap_type": "shade_extraction_not_started",
+      "gap_type": "shade_extraction_blocked",
       "severity": "high",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+      "details": "Status: line technical extracted in Batch 4; shade-level Stage 4 blocked — official paulmitchell.co.th page publishes 65+ swatches as images only.",
+      "recommended_next_action": "Locate official The Demi shade chart PDF or distributor catalog with extractable codes."
     },
     {
       "canonical_key": "Paul Mitchell::PM Shines::US",
@@ -479,15 +434,6 @@
       "gap_type": "shade_extraction_not_started",
       "severity": "medium",
       "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: unclear.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
-      "canonical_key": "Pulp Riot::Semi-Permanent::US",
-      "brand": "Pulp Riot",
-      "product_line": "Pulp Riot Semi-Permanent (Paint)",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "medium",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
       "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
     },
     {
@@ -1263,6 +1209,15 @@
       "severity": "medium",
       "details": "139 shades extracted in Batch 3. Full digit/combo tone legend lives in pro-gated Product Knowledge Guide PDF; combo-code mappings partially inferred from public product pages.",
       "recommended_next_action": "Retrieve pro-gated Product Knowledge Guide or official mixing-ratio PDF to confirm inferred tone codes."
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Pulp Riot Semi-Permanent (Paint)",
+      "gap_type": "partial_line_coverage",
+      "severity": "medium",
+      "details": "29 shades extracted in Batch 4 from 6 sub-collections; official line claims 44+ shades — remaining shades not on crawled collection pages.",
+      "recommended_next_action": "Crawl remaining sub-collections or official shade chart when cataloged."
     }
   ],
   "risk_report": [

@@ -1,6 +1,6 @@
 {
   "artifact": "tone_normalization_map",
-  "count": 444,
+  "count": 544,
   "tone_normalization_map": [
     {
       "canonical_key": "Redken::Color Gels Lacquers::US",
@@ -6729,6 +6729,1445 @@
         "Gold"
       ],
       "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "A",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A = Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "AA",
+      "manufacturer_term": "AA",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "AA = double Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "B",
+      "manufacturer_term": "B",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "Rapid Toner B = Blue",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "BC",
+      "manufacturer_term": "BC",
+      "normalized_tones": [
+        "Brown",
+        "Copper"
+      ],
+      "mapping_rationale": "BC = Brown/Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "Bl",
+      "manufacturer_term": "Bl",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "1Bl = Blue black",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "C",
+      "manufacturer_term": "C",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "C = Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "CN",
+      "manufacturer_term": "CN",
+      "normalized_tones": [
+        "Copper",
+        "Neutral"
+      ],
+      "mapping_rationale": "CN = Copper Neutral",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "DF",
+      "manufacturer_term": "DF",
+      "normalized_tones": [
+        "Pearl",
+        "Cool"
+      ],
+      "mapping_rationale": "DF = Diamond Frost demi booster",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "G",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "G = Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "GB",
+      "manufacturer_term": "GB",
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "mapping_rationale": "GB = Gold Beige",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "N",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "N = Natural/Neutral",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "NA",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "NA = Neutral Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "NB",
+      "manufacturer_term": "NB",
+      "normalized_tones": [
+        "Neutral",
+        "Beige"
+      ],
+      "mapping_rationale": "NB = Neutral Brown/Beige",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "NUA",
+      "manufacturer_term": "NUA",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "NUA = Neutral Ultra Ash",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "PV",
+      "manufacturer_term": "PV",
+      "normalized_tones": [
+        "Pearl",
+        "Violet"
+      ],
+      "mapping_rationale": "PV = Pearl Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "R",
+      "manufacturer_term": "R",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "RB",
+      "normalized_tones": [
+        "Red",
+        "Brown"
+      ],
+      "mapping_rationale": "RB = Red Brown",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "RC",
+      "manufacturer_term": "RC",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "RC = Red Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "RR",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "RR = double Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "RV",
+      "manufacturer_term": "RV",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "RV = Red Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "SM",
+      "manufacturer_term": "SM",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "SM = Smokey Mocha",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "UA",
+      "manufacturer_term": "UA",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "UA = Ultra Ash",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "V",
+      "manufacturer_term": "V",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "V = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "VM",
+      "manufacturer_term": "VM",
+      "normalized_tones": [
+        "Violet",
+        "Mocha"
+      ],
+      "mapping_rationale": "VM = Violet Mocha",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "VR",
+      "manufacturer_term": "VR",
+      "normalized_tones": [
+        "Violet",
+        "Red"
+      ],
+      "mapping_rationale": "VR = Violet Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "VV",
+      "manufacturer_term": "VV",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "VV = double Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "A",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A = Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "AA",
+      "manufacturer_term": "AA",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "AA = double Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "B",
+      "manufacturer_term": "B",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "Rapid Toner B = Blue",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "BC",
+      "manufacturer_term": "BC",
+      "normalized_tones": [
+        "Brown",
+        "Copper"
+      ],
+      "mapping_rationale": "BC = Brown/Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "Bl",
+      "manufacturer_term": "Bl",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "1Bl = Blue black",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "C",
+      "manufacturer_term": "C",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "C = Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "CN",
+      "manufacturer_term": "CN",
+      "normalized_tones": [
+        "Copper",
+        "Neutral"
+      ],
+      "mapping_rationale": "CN = Copper Neutral",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "DF",
+      "manufacturer_term": "DF",
+      "normalized_tones": [
+        "Pearl",
+        "Cool"
+      ],
+      "mapping_rationale": "DF = Diamond Frost demi booster",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "G",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "G = Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "GB",
+      "manufacturer_term": "GB",
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "mapping_rationale": "GB = Gold Beige",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "N",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "N = Natural/Neutral",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "NA",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "NA = Neutral Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "NB",
+      "manufacturer_term": "NB",
+      "normalized_tones": [
+        "Neutral",
+        "Beige"
+      ],
+      "mapping_rationale": "NB = Neutral Brown/Beige",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "NUA",
+      "manufacturer_term": "NUA",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "NUA = Neutral Ultra Ash",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "PV",
+      "manufacturer_term": "PV",
+      "normalized_tones": [
+        "Pearl",
+        "Violet"
+      ],
+      "mapping_rationale": "PV = Pearl Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "R",
+      "manufacturer_term": "R",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "RB",
+      "normalized_tones": [
+        "Red",
+        "Brown"
+      ],
+      "mapping_rationale": "RB = Red Brown",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "RC",
+      "manufacturer_term": "RC",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "RC = Red Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "RR",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "RR = double Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "RV",
+      "manufacturer_term": "RV",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "RV = Red Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "SM",
+      "manufacturer_term": "SM",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "SM = Smokey Mocha",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "UA",
+      "manufacturer_term": "UA",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "UA = Ultra Ash",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "V",
+      "manufacturer_term": "V",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "V = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "VM",
+      "manufacturer_term": "VM",
+      "normalized_tones": [
+        "Violet",
+        "Mocha"
+      ],
+      "mapping_rationale": "VM = Violet Mocha",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "VR",
+      "manufacturer_term": "VR",
+      "normalized_tones": [
+        "Violet",
+        "Red"
+      ],
+      "mapping_rationale": "VR = Violet Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "VV",
+      "manufacturer_term": "VV",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "VV = double Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "B",
+      "manufacturer_term": "B",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "Rapid Toner B = Blue",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "GV",
+      "manufacturer_term": "GV",
+      "normalized_tones": [
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "Rapid Toner Gold Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "GrBl",
+      "manufacturer_term": "GrBl",
+      "normalized_tones": [
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Rapid Toner Gray Blue",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "RoV",
+      "manufacturer_term": "RoV",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Rapid Toner Rose Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "SA",
+      "manufacturer_term": "SA",
+      "normalized_tones": [
+        "Ash",
+        "Neutral"
+      ],
+      "mapping_rationale": "Rapid Toner Smokey Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "SV",
+      "manufacturer_term": "SV",
+      "normalized_tones": [
+        "Violet",
+        "Other"
+      ],
+      "mapping_rationale": "Rapid Toner Silver Violet",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "VP",
+      "manufacturer_term": "VP",
+      "normalized_tones": [
+        "Violet",
+        "Pearl"
+      ],
+      "mapping_rationale": "Rapid Toner Violet Pearl",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "A",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "SSE A series",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "manufacturer_tone_code": "B",
+      "manufacturer_term": "B",
+      "normalized_tones": [
+        "Brown",
+        "Beige"
+      ],
+      "mapping_rationale": "SSE B series",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "G",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "SSE G series",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "N",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "SSE N series",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "manufacturer_tone_code": "NB",
+      "manufacturer_term": "NB",
+      "normalized_tones": [
+        "Neutral",
+        "Beige"
+      ],
+      "mapping_rationale": "SSE NB series",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Bewitching Blue",
+      "manufacturer_term": "Bewitching Blue",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name contains 'blue'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Enchanted Pink",
+      "manufacturer_term": "Enchanted Pink",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name contains 'pink'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Mystic Magenta",
+      "manufacturer_term": "Mystic Magenta",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "shade name contains 'magenta'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Pastel Potion",
+      "manufacturer_term": "Pastel Potion",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Everlasting named shade",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Poison Berry",
+      "manufacturer_term": "Poison Berry",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "shade name contains 'berry'",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Scarlette Red",
+      "manufacturer_term": "Scarlette Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name contains 'red'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Violet Reign",
+      "manufacturer_term": "Violet Reign",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name contains 'violet'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "ABSINTHE",
+      "manufacturer_term": "ABSINTHE",
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'absinthe'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "AQUATIC",
+      "manufacturer_term": "AQUATIC",
+      "normalized_tones": [
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'aquatic'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "ASTEROID",
+      "manufacturer_term": "ASTEROID",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "BLUE MUSE",
+      "manufacturer_term": "BLUE MUSE",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'blue'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "BLUSH",
+      "manufacturer_term": "BLUSH",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'blush'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "CANDY",
+      "manufacturer_term": "CANDY",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "CARELESS",
+      "manufacturer_term": "CARELESS",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "CLEAR",
+      "manufacturer_term": "CLEAR",
+      "normalized_tones": [],
+      "mapping_rationale": "Pulp Riot shade name contains 'clear'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "CUPID",
+      "manufacturer_term": "CUPID",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'cupid'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "DARK MATTER",
+      "manufacturer_term": "DARK MATTER",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "DEVIANT",
+      "manufacturer_term": "DEVIANT",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "EXOPLANET",
+      "manufacturer_term": "EXOPLANET",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "FICKLE",
+      "manufacturer_term": "FICKLE",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "FIREBALL",
+      "manufacturer_term": "FIREBALL",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'fireball'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "IMPETUOUS",
+      "manufacturer_term": "IMPETUOUS",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "JAM",
+      "manufacturer_term": "JAM",
+      "normalized_tones": [
+        "Red",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'jam'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "LAVA",
+      "manufacturer_term": "LAVA",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "LAVA LAMP",
+      "manufacturer_term": "LAVA LAMP",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "LEMON",
+      "manufacturer_term": "LEMON",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'lemon'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "LILAC",
+      "manufacturer_term": "LILAC",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'lilac'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "NIGHTFALL",
+      "manufacturer_term": "NIGHTFALL",
+      "normalized_tones": [
+        "Violet",
+        "Blue"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'nightfall'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "NOIR",
+      "manufacturer_term": "NOIR",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "NUCLEAR",
+      "manufacturer_term": "NUCLEAR",
+      "normalized_tones": [],
+      "mapping_rationale": "Pulp Riot shade name contains 'clear'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "SATIRE",
+      "manufacturer_term": "SATIRE",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "SHAG RUG",
+      "manufacturer_term": "SHAG RUG",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "SMOKE",
+      "manufacturer_term": "SMOKE",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "TRAGIC",
+      "manufacturer_term": "TRAGIC",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "VELVET",
+      "manufacturer_term": "VELVET",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "VOLATILE",
+      "manufacturer_term": "VOLATILE",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
