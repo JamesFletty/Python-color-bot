@@ -1,0 +1,149 @@
+{
+  "source_catalog": [
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand_name": "Matrix",
+      "product_line_name": "SoColor Pre-Bonded",
+      "source_title": "2023 Matrix Manual Haircolor",
+      "source_type": "official_pdf_manual",
+      "source_url": "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8",
+      "publisher_domain": "matrix.com",
+      "publication_or_revision_date": "2023",
+      "file_type": "pdf",
+      "access_status": "public",
+      "region_or_market": "US",
+      "coverage_summary": "82-page official manual covering SoColor Pre-Bonded (Blended, Extra Coverage, DreamAge, Reflect, Ultra Blonde, HD, SoRed, SoBoost, SoColor 10 min), SoColor Sync Pre-Bonded, Tonal Control, SoColor Cult, Coil Color and lighteners. Full palette charts, mixing ratios, developers, processing times, gray-coverage and lift rules, tone decoding, FAQs.",
+      "expected_data_types_present": [
+        "shade_codes",
+        "palette_families",
+        "levels (column headers + label decode)",
+        "mixing_ratios",
+        "developer_recommendations",
+        "processing_times",
+        "gray_coverage_claims",
+        "lift_claims",
+        "tone_legend",
+        "usage_rules"
+      ],
+      "source_priority_tier": 1,
+      "notes": [
+        "Verified %PDF-1.7 header; 5.68 MB; 82 pages; text extracted with pypdf.",
+        "Primary source for both canonical keys."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand_name": "Matrix",
+      "product_line_name": "SoColor Sync Pre-Bonded",
+      "source_title": "2023 Matrix Manual Haircolor",
+      "source_type": "official_pdf_manual",
+      "source_url": "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8",
+      "publisher_domain": "matrix.com",
+      "publication_or_revision_date": "2023",
+      "file_type": "pdf",
+      "access_status": "public",
+      "region_or_market": "US",
+      "coverage_summary": "Same manual as above; SoColor Sync section (demi-permanent pp.~90-122) includes alkaline toner palettes, fast toners, HD series, Clear, decoding, gray-blending tables and FAQs.",
+      "expected_data_types_present": [
+        "shade_codes",
+        "palette_families",
+        "mixing_ratios",
+        "developer_recommendations",
+        "processing_times",
+        "gray_blending_rules",
+        "tone_legend",
+        "usage_rules"
+      ],
+      "source_priority_tier": 1,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand_name": "Matrix",
+      "product_line_name": "SoColor Pre-Bonded",
+      "source_title": "Matrix SoColor Pre-Bonded Permanent Cream Hair Color | Matrix Professional (product page)",
+      "source_type": "official_product_page",
+      "source_url": "https://www.matrix.com/professional/products/haircolor/socolor/permanent-cream-hair-color",
+      "publisher_domain": "matrix.com",
+      "publication_or_revision_date": null,
+      "file_type": "html",
+      "access_status": "public",
+      "region_or_market": "US",
+      "coverage_summary": "Marketing copy (Pre-Bonded/Pre-Blended/Pre-Paired) and 'How to use' mixing/timing boilerplate (Standard 30-45 min; High Impact Brunettes 1:1.5, 35 min; Ultra.Blonde 1:2, 50 min; Reflect Collection Metallics 1:1 with 20/30 vol, 35 min). Shade swatch list is JavaScript-rendered and not extractable.",
+      "expected_data_types_present": [
+        "mixing_ratios",
+        "processing_times",
+        "marketing_claims"
+      ],
+      "source_priority_tier": 1,
+      "notes": [
+        "Mentions sub-collections (High Impact Brunettes, Reflect Collection Metallics) absent from the 2023 manual - logged as a source conflict."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand_name": "Matrix",
+      "product_line_name": "SoColor Sync Pre-Bonded",
+      "source_title": "SoColor Sync Pre-Bonded | Matrix Professional (product page)",
+      "source_type": "official_product_page",
+      "source_url": "https://www.matrix.com/professional/products/haircolor/socolor-sync",
+      "publisher_domain": "matrix.com",
+      "publication_or_revision_date": null,
+      "file_type": "html",
+      "access_status": "public",
+      "region_or_market": "US",
+      "coverage_summary": "Page fetched but static HTML contained only navigation/sign-up content; no shade or technical data extractable (JavaScript-rendered).",
+      "expected_data_types_present": [],
+      "source_priority_tier": 1,
+      "notes": [
+        "No usable technical content in static fetch."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand_name": "Matrix",
+      "product_line_name": "SoColor Pre-Bonded",
+      "source_title": "SalonCentric Matrix SoColor category page",
+      "source_type": "distributor_catalog",
+      "source_url": "https://www.saloncentric.com/matrix/socolor/",
+      "publisher_domain": "saloncentric.com",
+      "publication_or_revision_date": null,
+      "file_type": "html",
+      "access_status": "unavailable",
+      "region_or_market": "US",
+      "coverage_summary": "Blocked: HTTP 403 (bot protection). No data extracted.",
+      "expected_data_types_present": [],
+      "source_priority_tier": 2,
+      "notes": [
+        "Tier-2 fallback for shade names skipped per instructions when blocked."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand_name": "Matrix",
+      "product_line_name": "SoColor Pre-Bonded",
+      "source_title": "CosmoProf Matrix SoColor landing page",
+      "source_type": "distributor_catalog",
+      "source_url": "https://www.cosmoprofbeauty.com/matrix-socolor",
+      "publisher_domain": "cosmoprofbeauty.com",
+      "publication_or_revision_date": null,
+      "file_type": "html",
+      "access_status": "public",
+      "region_or_market": "US",
+      "coverage_summary": "Fetched (HTTP 200) but page is a promotional landing page ('SoColor Buy 6 Get 1 Free', 'SoColor Chocolate Shades') with no shade enumeration; product grids JavaScript-rendered.",
+      "expected_data_types_present": [],
+      "source_priority_tier": 2,
+      "notes": []
+    }
+  ],
+  "missing_source_targets": [
+    "Official per-line shade chart PDF with per-shade names/swatches (e.g. a SoColor swatch book) - not located on matrix.com via search; needed to fill shade_name and official_swatch_image_exists.",
+    "Accessible distributor catalog (SalonCentric blocked 403; CosmoProf JS-rendered) for shade-name cross-reference.",
+    "Any official statement of discontinued/current status per shade as of June 2026.",
+    "Documentation of 'High Impact Brunettes' and 'Reflect Collection Metallics' sub-collections referenced on the product page but absent from the 2023 manual."
+  ],
+  "issue_log": [
+    "Manual found via site search ('matrix haircolor manual 2023 pdf site:matrix.com'); downloaded with curl, %PDF header verified, text extracted with pypdf (82 pages).",
+    "All shade-level records derive from the 2023 manual; product pages contributed only line-level usage boilerplate."
+  ]
+}

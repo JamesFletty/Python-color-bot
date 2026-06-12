@@ -1,0 +1,144 @@
+{
+  "line_technical_records": [
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "color_type": "permanent",
+      "default_mixing_ratio": "1:1.5",
+      "developer_options": [
+        "Majicrème Developer"
+      ],
+      "developer_strengths_if_stated": [
+        "12.5-vol (3.75%)",
+        "20-vol (6%)",
+        "30-vol (9%)",
+        "40-vol (12%) maximum"
+      ],
+      "processing_time_ranges": [
+        "35 minutes (Majirel / Majirel Cool Cover / Majirel Cool Inforced / Majirouge — printed as 'Development time: 35 minutes')",
+        "50 minutes (Majirel High-Lift only — printed as 'Development time: 50 minutes' on 07/23 chart)"
+      ],
+      "gray_coverage_rules": [
+        "100% grey coverage claim (2025 chart: 'Same 100% grey coverage'; 2023 chart: '100% grey coverage').",
+        "Under 50% white: Choose the client's desired Majirel shade.",
+        "Over 50% white, warm target shade: ½ tube of the desired shade + ½ tube of the corresponding level Gold shade (.3/G).",
+        "Over 50% white, cool target shade: ½ tube of the desired shade + ½ tube of the corresponding level Natural shade (N) (2023 chart prints '-/N').",
+        "2023 chart (P2634200): 6.03, 7.03 and 8.03 give 'Complete coverage without mixing'.",
+        "Majirel Cool Cover, Level 3-5: For up to 100% coverage of white hair, apply target shade without mixing.",
+        "Majirel Cool Cover, Level 6 & above: For up to 100% natural coverage of white hair, apply target shade; for up to 100% opaque coverage of white hair apply ½ target shade + ½ natural shade on the same level.",
+        "Majirel High-Lift (2023 chart): grey blending only — up to 30% white, apply target shade + 30-vol Majicrème Developer; 'Majirel High-Lift is not designed for white coverage.'"
+      ],
+      "lift_rules": [
+        "20-Vol: up to 2 levels of lift.",
+        "30-Vol: up to 3 levels of lift.",
+        "Majirel High-Lift (2023 chart, 1:2 ratio): 30-vol up to 3 levels (maximum neutralization); 40-vol up to 4½ levels (maximum lift)."
+      ],
+      "tone_family_legend": [
+        {"code": "N", "meaning": "natural"},
+        {"code": ".1", "meaning": "blue (B)"},
+        {"code": ".2", "meaning": "violet (V)"},
+        {"code": ".3", "meaning": "gold (G)"},
+        {"code": ".4", "meaning": "copper (C)"},
+        {"code": ".5", "meaning": "red-violet (Rv)"},
+        {"code": ".6", "meaning": "red (R)"},
+        {"code": ".7", "meaning": "green (Gr)"},
+        {"code": ".8", "meaning": "mocha (M)"}
+      ],
+      "special_usage_notes": [
+        "Mixing guideline as printed (2025 chart): '1 to 1.5 mixing ratio. 1 tube + 3 oz. Majicrème Developer. Measure 3 oz. of Majicrème Developer 12.5-vol., 20-vol., or 30-vol. depending on the desired intensity of the result.'",
+        "Mixing guideline as printed (2023 chart, P2634200): '1 : 1.5 mixing ratio: 1.7 oz. tube + 2.6 oz. Majicrème Developer.'",
+        "2023 chart safety panel: 'USE EXCLUSIVELY WITH MAJICRÈME DEVELOPERS, 12.5-VOL (3.75%), 20-VOL. (6%), 30-VOL (9%), 40-VOL (12%) MAXIMUM.'",
+        "Carmilane™, Rubilane™ & DM5 WARNING (2025 chart): these shades must be used alone and must not be used in combination with any other shade from a different technology family (e.g. Carmilane™ 5.60 can be mixed with Carmilane™ 6.66). 2023 chart extends the same warning to Lumax (Carmilane™ 5.60/5RRR cannot be mixed with Lumax 6.60/6RRR).",
+        "Majirel Boosters (2025 chart): Blue, Violet, Green, Copper, Clear; mixed as '.25 Majirel Booster + Majirel Shade + Developer', development time 35 minutes. 'If the violet booster is used with a level 8 and up, be cautious and use a very small amount.'",
+        "Majirel Clear (2023 chart): break the base; subdue the intensity of tone; create a lighter shade; dilute another shade for color-matching/refreshing on mid-lengths and ends; create pastel shades with mixers, Carmilane, Rubilane, Lumax, or DM5 shades.",
+        "Mix shades (2023 chart): Cool Mix .10 Blue Mix, .70 Green Mix, .20 Violet Mix; Warm Mix .40 Copper Mix, .60 Red Mix; plus 901S/NB and 900S/NN.",
+        "Cool Cover reflect labels as printed on 2023 chart: .11/BB 'Ash+', .1/B 'Ash', .2/V 'Violet', .0/N 'Neutral', .13/BG 'Beige' (Cool Cover section only; the main dual-coding legend on both charts prints .1 as 'blue').",
+        "Level legend (both charts): 10 pale blonde, 9 very light blonde, 8 light blonde, 7 blonde, 6 dark blonde, 5 light brown, 4 brown, 3 dark brown, 2 darkest brown, 1 black.",
+        "Dual coding example as printed: '5GV = 5.32 — Level of color / Primary tone of color / Secondary tone of color'.",
+        "Mocha (.8/M) placement note (2023 chart): '.8 LEVELS 4, 5, & 6' and '.8 LEVELS 7 & 8' printed against the color wheel.",
+        "2025 chart 'Improved' formula claims: odor trapping technology for reduced ammonia odor; larger 2 oz. tube; same 100% grey coverage; same 1 to 1.5 mixing ratio and 35-minute processing time.",
+        "Rinsing (2025 chart): emulsify with warm water, rinse, shampoo twice with L'Oréal Professionnel Post-Color Shampoo. Rinsing (2023 chart): rinse and shampoo with Metal Detox Shampoo, follow with Metal Detox mask.",
+        "Allergy warning printed on 2023 chart: skin allergy test 48 hours before each use; wear gloves; do not use on clients with prior reactions or sensitive/itchy/damaged scalp."
+      ],
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://us.lorealprofessionnel.com/-/media/project/loreal/brand-sites/lp/americas/us/shade-charts/majirel-colorchart-2025-r5-spreads-(1).pdf?rev=3ffa8e1e7ce644a68aa92c63c0c6b0e8",
+      "source_document": "Majirel Color Chart 2025 (LPSEPMAJ03 - 09/25); supplemented by Majirel Color Chart (P2634200 - 07/23)",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": [
+        "The two charts state the 1:1.5 ratio differently in ounces (2025: 1 tube + 3 oz. developer, reflecting the larger 2 oz. tube; 2023: 1.7 oz. tube + 2.6 oz. developer). Both printed versions are recorded; no reconciliation beyond what is printed.",
+        "The main dual-coding legend prints .1 as 'blue' (B), not 'Ash'; 'Ash' wording appears only in the 2023 Cool Cover section labels. No legend entry was invented beyond printed wording.",
+        "12.5-vol lift capability (levels of lift) is not stated on either chart; only 20-vol and 30-vol lift levels are printed for core Majirel.",
+        "Neither chart states a developer strength explicitly tied to grey coverage for core Majirel (developer choice is printed only as 'depending on the desired intensity of the result')."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "color_type": "demi-permanent (printed: 'Acidic gel-crème demi')",
+      "default_mixing_ratio": "1:1.5",
+      "developer_options": [
+        "Diactivateur Developer"
+      ],
+      "developer_strengths_if_stated": [
+        "6-vol (1.8%)",
+        "9-vol (2.7%)"
+      ],
+      "processing_time_ranges": [
+        "Flexible processing time: 2 to 20 minutes"
+      ],
+      "gray_coverage_rules": [],
+      "lift_rules": [
+        "Zero lift (printed: 'Zero ammonia. Zero lift. Ultra conditioning.').",
+        "'Dia Light has an acid pH close to the natural pH of the hair. There is no lift with gentle penetration of colorants for long lasting color.'"
+      ],
+      "tone_family_legend": [
+        {"code": "N", "meaning": "natural"},
+        {"code": ".1", "meaning": "blue (B)"},
+        {"code": ".2", "meaning": "violet (V)"},
+        {"code": ".3", "meaning": "gold (G)"},
+        {"code": ".4", "meaning": "copper (C)"},
+        {"code": ".5", "meaning": "red-violet (Rv)"},
+        {"code": ".6", "meaning": "red (R)"},
+        {"code": ".7", "meaning": "green (Gr)"},
+        {"code": ".8", "meaning": "mocha (M)"}
+      ],
+      "special_usage_notes": [
+        "Preparation as printed: '1 : 1.5 mixing ratio — 1 tube (1.7 oz.) to 2.6 oz. Diactivateur developer. Measure 2.6 oz. of 6-vol. (1.8%) or 9-vol. (2.7%) Diactivateur Developer, depending on the desired intensity of the result.'",
+        "Application: on dry hair, spray Metal Detox Pre-Treatment on each section and apply Dia Light formula with a brush or a bottle on regrowth, mid-lengths or ends; on wet hair, after shampooing with Metal Detox Shampoo, apply with a brush or bottle on pre-lightened hair.",
+        "Dia Light Liquifier: best for fast bottle application and toning all over; Step 1 mix Dia Light shade + Diactivateur developer at 1:1.5; Step 2 add Liquifier (half dose .2 oz., full dose .4 oz.); 'Liquifier only to be used with Dia Light + Diactivateur developer. Liquifier is not a developer.' Uses: fast application, ultimate customization, adjust color intensity (increase transparency and shine).",
+        "Dia DM5 & Rubilane™ WARNING: 'It is imperative that DM5 & Rubilane™ shades be used alone. They must not be used in combination with any other shade.'",
+        "Claims printed: '+30% more conditioning* (*vs. uncolored hair)'; conditions hair after lightening and color services; gel-crème consistency for controlled, precision application; cationic polymers have a resurfacing effect on the cuticle.",
+        "Mocha composition as printed: 'Mocha .8/M Contains: Violet .2/V, Blue .1/B, Gold .3/G'.",
+        "Dual coding example as printed: '5GV = 5.32 — Level of color / Primary tone of color / Secondary tone of color'.",
+        "Level legend: 10 pale blonde, 9 very light blonde, 8 light blonde, 7 blonde, 6 dark blonde, 5 light brown, 4 brown, 3 dark brown, 2 darkest brown, 1 black.",
+        "Rinsing: when development time is complete, add a little warm water and gently emulsify; rinse thoroughly and shampoo with Metal Detox Shampoo; follow with Metal Detox mask.",
+        "2 NEW coral shades flagged on the 2025 chart: 10.24/10VC and 8.24/8VC."
+      ],
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://us.lorealprofessionnel.com/-/media/project/loreal/brand-sites/lp/americas/us/shade-charts/dialight-color-chart-2025.pdf?rev=cdb8ab6fa8ce4222b2fc86755bdc6115",
+      "source_document": "Dia Light Color Chart 2025 (LPJUNDL01)",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": [
+        "No grey/white coverage or blending instructions are printed on the Dia Light 2025 chart; gray_coverage_rules left empty.",
+        "No developer-to-result mapping beyond 'depending on the desired intensity of the result' is printed for 6-vol vs 9-vol.",
+        "The chart prints only the document code LPJUNDL01 with no MM/YY revision date.",
+        "No processing-time differentiation by hair condition or service type is printed beyond the single flexible 2-20 minute range."
+      ]
+    }
+  ],
+  "issue_log": [
+    "Majirel 2025 chart (LPSEPMAJ03) and 2023 chart (P2634200) print the 1:1.5 mixing ratio with different ounce quantities (1 tube + 3 oz. vs 1.7 oz. tube + 2.6 oz.); this reflects the 2025 'larger 2oz tube' change and both are recorded verbatim, with the 2025 chart treated as current.",
+        "The reflect-digit legend on these US charts prints .1 as 'blue' (dual code B), not 'Ash'; 'Ash'/'Ash+' wording appears only as Cool Cover section labels on the 2023 chart (.1/B Ash, .11/BB Ash+). Recorded exactly as printed rather than normalizing to 'Ash'.",
+    "The 40-vol (12%) Majicrème option and the Majirel High-Lift 1:2 ratio / 50-minute / 40-vol up-to-4½-levels rules appear only on the 2023 chart (P2634200); the 2025 chart (LPSEPMAJ03) does not mention 40-vol or High-Lift. Both recorded with their source documents identified.",
+    "pypdf text extraction of the 2023 Majirel chart shows apparent typos in the shade grid (e.g. '5.35/7GRv' and '4.35/7GRv' on the 2025 chart rows for levels 5 and 4); these affect shade-grid cells only, not the line-level technical rules recorded here.",
+    "Official product page and shade-charts hub were not fetched: the three PDFs contained all required line-level technical content, so no additional sources were used."
+  ]
+}

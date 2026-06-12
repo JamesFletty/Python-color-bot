@@ -1,0 +1,2042 @@
+{
+  "stage": 7,
+  "artifact": "tone_normalization_map",
+  "batch": 2,
+  "completion_status": "complete",
+  "tone_normalization_map": [
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "01",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "02",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "03",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "07",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .7 = green (Gr)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "1",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "11",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "12",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "13",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "18",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Mocha"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .8 = mocha (M)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "2",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "21",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "22",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "23",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "24",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "3",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "31",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "32",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "34",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "40",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "43",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "45",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "46",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "64",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "66",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "8",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .8 = mocha (M)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "82",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mocha",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .8 = mocha (M); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "0",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "01",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "03",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "04",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "07",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .7 = green (Gr)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "1",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "10",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "11",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "12",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "13",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "15",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "17",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Green"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .7 = green (Gr)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "18",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Mocha"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .1 = blue (B); secondary .8 = mocha (M)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "20",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "21",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "22",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "23",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "26",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .2 = violet (V); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "3",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "31",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .1 = blue (B)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "32",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "34",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "35",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .3 = gold (G); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "4",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "40",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "43",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Gold"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .3 = gold (G)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "44",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "45",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "46",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .4 = copper (C); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "5",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "52",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .5 = red-violet (Rv); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "55",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .5 = red-violet (Rv); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "56",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .5 = red-violet (Rv); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "6",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "60",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "62",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .2 = violet (V)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "64",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .4 = copper (C)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "65",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .5 = red-violet (Rv)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "66",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .6 = red (R); secondary .6 = red (R)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "70",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Green",
+        "Natural"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .7 = green (Gr); secondary .0 = Natural (N)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "8",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .8 = mocha (M)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "primary Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "AA",
+      "manufacturer_term": "primary Ash / secondary Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A=Ash (digit legend '.1 Ash'); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "Anti-Brass",
+      "manufacturer_term": "Anti-Brass fast toner",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "functional neutralizer name as printed; underlying pigment not stated — flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "Anti-Red",
+      "manufacturer_term": "Anti-Red fast toner",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "functional neutralizer name as printed; underlying pigment not stated — flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "Anti-Yellow",
+      "manufacturer_term": "Anti-Yellow fast toner",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "functional neutralizer name as printed; underlying pigment not stated — flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "BC",
+      "manufacturer_term": "primary Brown (ambiguous vs Blue) / secondary Copper",
+      "normalized_tones": [
+        "Brown",
+        "Copper"
+      ],
+      "mapping_rationale": "B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue); C=Copper (digit legend '.4 Copper')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "BLUE",
+      "manufacturer_term": "Blue (booster, printed word)",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade printed as the word BLUE",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "BR",
+      "manufacturer_term": "primary Brown (ambiguous vs Blue) / secondary Red",
+      "normalized_tones": [
+        "Brown",
+        "Red"
+      ],
+      "mapping_rationale": "B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "CG",
+      "manufacturer_term": "primary Copper / secondary Gold",
+      "normalized_tones": [
+        "Copper",
+        "Gold"
+      ],
+      "mapping_rationale": "C=Copper (digit legend '.4 Copper'); G=Gold (digit legend '.3 Gold')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "CR",
+      "manufacturer_term": "primary Copper / secondary Red",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "C=Copper (digit legend '.4 Copper'); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "Clear",
+      "manufacturer_term": "Clear",
+      "normalized_tones": [],
+      "mapping_rationale": "printed legend: reduces tonal deposit / adds shine; non-pigmented",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "primary Gold",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "G=Gold (digit legend '.3 Gold')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "GV",
+      "manufacturer_term": "primary Gold / secondary Violet",
+      "normalized_tones": [
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "G=Gold (digit legend '.3 Gold'); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "M",
+      "manufacturer_term": "primary Mocha (ambiguous vs Mahogany)",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "M=Mocha (ambiguous vs Mahogany) (digit legend lists both '.5 Mahogany' and '.8 Mocha'; letter M conventionally = Mocha in Matrix US naming — flagged ambiguous)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "MM",
+      "manufacturer_term": "primary Mocha (ambiguous vs Mahogany) / secondary Mocha (ambiguous vs Mahogany)",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "M=Mocha (ambiguous vs Mahogany) (digit legend lists both '.5 Mahogany' and '.8 Mocha'; letter M conventionally = Mocha in Matrix US naming — flagged ambiguous); M=Mocha (ambiguous vs Mahogany) (digit legend lists both '.5 Mahogany' and '.8 Mocha'; letter M conventionally = Mocha in Matrix US naming — flagged ambiguous)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "primary Neutral",
+      "normalized_tones": [
+        "Neutral"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ))",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "primary Neutral / secondary Ash",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "NJ",
+      "manufacturer_term": "primary Neutral / secondary Jade",
+      "normalized_tones": [
+        "Neutral",
+        "Green"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); J=Jade (digit legend '.7 Jade' + J used as secondary tone in printed example 4NJ; Jade not in taxonomy, mapped to Green)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "NV",
+      "manufacturer_term": "primary Neutral / secondary Violet",
+      "normalized_tones": [
+        "Neutral",
+        "Violet"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "P",
+      "manufacturer_term": "primary Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "P=Pearl (digit legend '.9 Pearl'; letter P inferred as its initial)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "primary Red / secondary Brown (ambiguous vs Blue)",
+      "normalized_tones": [
+        "Red",
+        "Brown"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RC+",
+      "manufacturer_term": "primary Red / secondary Copper — intensified (+)",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); C=Copper (digit legend '.4 Copper'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RED",
+      "manufacturer_term": "Red (booster, printed word)",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade printed as the word RED",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "primary Red / secondary Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RR+",
+      "manufacturer_term": "primary Red / secondary Red — intensified (+)",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); R=Red (digit legend '.6 Red'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RV",
+      "manufacturer_term": "primary Red / secondary Violet",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "RV+",
+      "manufacturer_term": "primary Red / secondary Violet — intensified (+)",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); V=Violet (digit legend '.2 Violet'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "SPA",
+      "manufacturer_term": "Sheer Pastel primary Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "printed legend 'Sheer Pastel (SP)' + A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "SPN",
+      "manufacturer_term": "Sheer Pastel primary Neutral",
+      "normalized_tones": [
+        "Neutral"
+      ],
+      "mapping_rationale": "printed legend 'Sheer Pastel (SP)' + N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ))",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "SPP",
+      "manufacturer_term": "Sheer Pastel primary Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "printed legend 'Sheer Pastel (SP)' + P=Pearl (digit legend '.9 Pearl'; letter P inferred as its initial)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "SPV",
+      "manufacturer_term": "Sheer Pastel primary Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "printed legend 'Sheer Pastel (SP)' + V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "V",
+      "manufacturer_term": "primary Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "VA",
+      "manufacturer_term": "primary Violet / secondary Ash",
+      "normalized_tones": [
+        "Violet",
+        "Ash"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet'); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "VV",
+      "manufacturer_term": "primary Violet / secondary Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet'); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "manufacturer_tone_code": "WN",
+      "manufacturer_term": "primary Warm / secondary Neutral",
+      "normalized_tones": [
+        "Warm",
+        "Neutral"
+      ],
+      "mapping_rationale": "W=Warm (no printed letter legend; W inferred as Warm from NW/WN family convention — flagged); N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ))",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "primary Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "A+",
+      "manufacturer_term": "Ash Plus",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "printed legend 'A+ (Ultra Blonde) = Ash Plus'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "AA",
+      "manufacturer_term": "primary Ash / secondary Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A=Ash (digit legend '.1 Ash'); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "AV",
+      "manufacturer_term": "primary Ash / secondary Violet",
+      "normalized_tones": [
+        "Ash",
+        "Violet"
+      ],
+      "mapping_rationale": "A=Ash (digit legend '.1 Ash'); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "BC",
+      "manufacturer_term": "primary Brown (ambiguous vs Blue) / secondary Copper",
+      "normalized_tones": [
+        "Brown",
+        "Copper"
+      ],
+      "mapping_rationale": "B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue); C=Copper (digit legend '.4 Copper')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "BLUE",
+      "manufacturer_term": "Blue (booster, printed word)",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade printed as the word BLUE",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "BR",
+      "manufacturer_term": "primary Brown (ambiguous vs Blue) / secondary Red",
+      "normalized_tones": [
+        "Brown",
+        "Red"
+      ],
+      "mapping_rationale": "B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "CC",
+      "manufacturer_term": "primary Copper / secondary Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "C=Copper (digit legend '.4 Copper'); C=Copper (digit legend '.4 Copper')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "CG",
+      "manufacturer_term": "primary Copper / secondary Gold",
+      "normalized_tones": [
+        "Copper",
+        "Gold"
+      ],
+      "mapping_rationale": "C=Copper (digit legend '.4 Copper'); G=Gold (digit legend '.3 Gold')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "CR",
+      "manufacturer_term": "primary Copper / secondary Red",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "C=Copper (digit legend '.4 Copper'); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "EBC",
+      "manufacturer_term": "Extra Blonding Cream (additive)",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "printed legend: additive that disperses underlying pigment; not a tone",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "primary Gold",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "G=Gold (digit legend '.3 Gold')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "M",
+      "manufacturer_term": "primary Mocha (ambiguous vs Mahogany)",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "M=Mocha (ambiguous vs Mahogany) (digit legend lists both '.5 Mahogany' and '.8 Mocha'; letter M conventionally = Mocha in Matrix US naming — flagged ambiguous)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "primary Neutral",
+      "normalized_tones": [
+        "Neutral"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ))",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "N+",
+      "manufacturer_term": "primary Neutral — intensified (+)",
+      "normalized_tones": [
+        "Neutral"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "primary Neutral / secondary Ash",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "NG",
+      "manufacturer_term": "primary Neutral / secondary Gold",
+      "normalized_tones": [
+        "Neutral",
+        "Gold"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); G=Gold (digit legend '.3 Gold')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "NJ",
+      "manufacturer_term": "primary Neutral / secondary Jade",
+      "normalized_tones": [
+        "Neutral",
+        "Green"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); J=Jade (digit legend '.7 Jade' + J used as secondary tone in printed example 4NJ; Jade not in taxonomy, mapped to Green)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "NV",
+      "manufacturer_term": "primary Neutral / secondary Violet",
+      "normalized_tones": [
+        "Neutral",
+        "Violet"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "NW",
+      "manufacturer_term": "primary Neutral / secondary Warm",
+      "normalized_tones": [
+        "Neutral",
+        "Warm"
+      ],
+      "mapping_rationale": "N=Neutral (digit legend '.0 Neutral' + example decode (N = primary tone in 4NJ)); W=Warm (no printed letter legend; W inferred as Warm from NW/WN family convention — flagged)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "P",
+      "manufacturer_term": "primary Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "P=Pearl (digit legend '.9 Pearl'; letter P inferred as its initial)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "R",
+      "manufacturer_term": "primary Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "primary Red / secondary Brown (ambiguous vs Blue)",
+      "normalized_tones": [
+        "Red",
+        "Brown"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); B=Brown (ambiguous vs Blue) (no printed letter legend; B in BR/BC/RB inferred as Brown — flagged; standalone word shades use full word BLUE for blue)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RC",
+      "manufacturer_term": "primary Red / secondary Copper",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); C=Copper (digit legend '.4 Copper')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RED",
+      "manufacturer_term": "Red (booster, printed word)",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade printed as the word RED",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "primary Red / secondary Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RR+",
+      "manufacturer_term": "primary Red / secondary Red — intensified (+)",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); R=Red (digit legend '.6 Red'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RV",
+      "manufacturer_term": "primary Red / secondary Violet",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); V=Violet (digit legend '.2 Violet')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "RV+",
+      "manufacturer_term": "primary Red / secondary Violet — intensified (+)",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "R=Red (digit legend '.6 Red'); V=Violet (digit legend '.2 Violet'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "Silver",
+      "manufacturer_term": "Silver (printed word)",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "shade printed as the word Silver; Silver not in taxonomy",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "V+",
+      "manufacturer_term": "primary Violet — intensified (+)",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet'); '+' suffix = intensified series (legend shows A+ = Ash Plus)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "VA",
+      "manufacturer_term": "primary Violet / secondary Ash",
+      "normalized_tones": [
+        "Violet",
+        "Ash"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet'); A=Ash (digit legend '.1 Ash')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "VR",
+      "manufacturer_term": "primary Violet / secondary Red",
+      "normalized_tones": [
+        "Violet",
+        "Red"
+      ],
+      "mapping_rationale": "V=Violet (digit legend '.2 Violet'); R=Red (digit legend '.6 Red')",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "Violet",
+      "manufacturer_term": "Violet (printed word)",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade printed as the word Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor",
+      "manufacturer_tone_code": "W",
+      "manufacturer_term": "primary Warm",
+      "normalized_tones": [
+        "Warm"
+      ],
+      "mapping_rationale": "W=Warm (no printed letter legend; W inferred as Warm from NW/WN family convention — flagged)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    }
+  ],
+  "unresolved_mappings": [],
+  "issue_log": []
+}

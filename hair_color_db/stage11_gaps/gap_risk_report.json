@@ -1,0 +1,1338 @@
+{
+  "stage": 11,
+  "artifact": "gap_risk_report",
+  "generated": "2026-06-12",
+  "completion_status": "complete",
+  "gap_report": [
+    {
+      "canonical_key": "Redken::Color Fusion::US",
+      "brand": "Redken",
+      "product_line": "Color Fusion",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Redken::Flash Lift Bonder Inside::global",
+      "brand": "Redken",
+      "product_line": "Flash Lift / Flash Lift Bonder Inside",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Redken::Chromatics::US",
+      "brand": "Redken",
+      "product_line": "Chromatics",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: unclear.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Redken::Shades ALK::US",
+      "brand": "Redken",
+      "product_line": "Shades ALK",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Redken::Blonde Idol::US",
+      "brand": "Redken",
+      "product_line": "Blonde Idol",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Redken::Blonde IQ::US",
+      "brand": "Redken",
+      "product_line": "Blonde IQ",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Redken::Color Camo::US",
+      "brand": "Redken",
+      "product_line": "Color Camo",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Wella Professionals::Illumina Color::US",
+      "brand": "Wella Professionals",
+      "product_line": "Illumina Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Wella Professionals::Shinefinity::US",
+      "brand": "Wella Professionals",
+      "product_line": "Shinefinity",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Fresh::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Fresh (incl. Color Fresh Create, Color Fresh Masks)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Wella Professionals::Blondor::US",
+      "brand": "Wella Professionals",
+      "product_line": "Blondor (incl. BlondorPlex, Blondor Freelights, Blondor Toner)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Wella Professionals::Magma::global",
+      "brand": "Wella Professionals",
+      "product_line": "Magma",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ZERO AMM::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ZERO AMM",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::Chroma ID::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "Chroma ID",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::BlondMe::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "BLONDME",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VARIO BLOND::global",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VARIO BLOND",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Goldwell::Topchic Zero::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic Zero",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Goldwell::Elumen::US",
+      "brand": "Goldwell",
+      "product_line": "Elumen (incl. Elumen Play)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Goldwell::SilkLift::US",
+      "brand": "Goldwell",
+      "product_line": "LightDimensions SilkLift",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Goldwell::Oxycur Platin::US",
+      "brand": "Goldwell",
+      "product_line": "Oxycur Platin",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Goldwell::@Pure Pigments::US",
+      "brand": "Goldwell",
+      "product_line": "@Pure Pigments",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand": "Matrix",
+      "product_line": "SoColor (Pre-Bonded)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Sync",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Matrix::Tonal Control::US",
+      "brand": "Matrix",
+      "product_line": "Tonal Control Pre-Bonded",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Matrix::Light Master::US",
+      "brand": "Matrix",
+      "product_line": "Light Master (incl. Light Master Pre-Bonded)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: unclear.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Joico::LumiShine Permanent Creme Color::US",
+      "brand": "Joico",
+      "product_line": "LumiShine Permanent Crème Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Joico::LumiShine YouthLock Permanent Creme Color::US",
+      "brand": "Joico",
+      "product_line": "LumiShine YouthLock Permanent Crème Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Joico::LumiShine Lumi10 Permanent Creme Color::US",
+      "brand": "Joico",
+      "product_line": "LumiShine Lumi10 Permanent Crème Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Joico::LumiShine Demi-Permanent Creme Color::US",
+      "brand": "Joico",
+      "product_line": "LumiShine Demi-Permanent Crème Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Joico::LumiShine Demi-Permanent Liquid Color::US",
+      "brand": "Joico",
+      "product_line": "LumiShine Demi-Permanent Liquid Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Joico::Vero K-PAK Color::US",
+      "brand": "Joico",
+      "product_line": "Vero K-PAK Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Joico::Blonde Life::US",
+      "brand": "Joico",
+      "product_line": "Blonde Life",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Joico::Color Intensity::US",
+      "brand": "Joico",
+      "product_line": "Color Intensity",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Creatives::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Creatives (Semi-Permanent)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Kenra Professional::Simply Blonde::US",
+      "brand": "Kenra Professional",
+      "product_line": "Simply Blonde",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Crème Color (Permanent)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS (Original, Neons, Pastels)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Pravana::Pure Light::US",
+      "brand": "Pravana",
+      "product_line": "Pure Light (Power Lightener, Ultra Lightener)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Color::global",
+      "brand": "Paul Mitchell",
+      "product_line": "Paul Mitchell The Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Color XG::global",
+      "brand": "Paul Mitchell",
+      "product_line": "Paul Mitchell Color XG (incl. CoverSmart)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Paul Mitchell::Crema XG::global",
+      "brand": "Paul Mitchell",
+      "product_line": "Paul Mitchell Crema XG",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Demi::global",
+      "brand": "Paul Mitchell",
+      "product_line": "Paul Mitchell The Demi",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Paul Mitchell::PM Shines::US",
+      "brand": "Paul Mitchell",
+      "product_line": "PM Shines",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: discontinued.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Paul Mitchell::Pop XG::global",
+      "brand": "Paul Mitchell",
+      "product_line": "Pop XG",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: unclear.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Color 10 Minute::global",
+      "brand": "Paul Mitchell",
+      "product_line": "Paul Mitchell The Color (10 Minute express permanent)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: unclear.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Paul Mitchell::Lighteners::global",
+      "brand": "Paul Mitchell",
+      "product_line": "Paul Mitchell Lighteners (e.g., Dual-Purpose Lightener, Skylight, Bond Rx)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: unclear.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Pulp Riot Semi-Permanent (Paint)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Pulp Riot::FACTION8::US",
+      "brand": "Pulp Riot",
+      "product_line": "FACTION8",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Pulp Riot::High Speed Toner::US",
+      "brand": "Pulp Riot",
+      "product_line": "High Speed Toners",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Pulp Riot::Liquid Demi::US",
+      "brand": "Pulp Riot",
+      "product_line": "Liquid Demi",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: unclear.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Pulp Riot::Lighteners::US",
+      "brand": "Pulp Riot",
+      "product_line": "Pulp Riot Lighteners",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Pulp Riot::Blank Canvas::US",
+      "brand": "Pulp Riot",
+      "product_line": "Blank Canvas (Semi-Permanent Color Remover)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Davines::Mask with Vibrachrom::US",
+      "brand": "Davines",
+      "product_line": "Mask with Vibrachrom",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Davines::A New Colour::US",
+      "brand": "Davines",
+      "product_line": "A New Colour",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Davines::View::US",
+      "brand": "Davines",
+      "product_line": "View",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Davines::The Present Time::US",
+      "brand": "Davines",
+      "product_line": "The Present Time",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Davines::The Century of Light::US",
+      "brand": "Davines",
+      "product_line": "The Century of Light",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Davines::Finest Pigments::US",
+      "brand": "Davines",
+      "product_line": "Finest Pigments",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Framesi::Framcolor 2001::US",
+      "brand": "Framesi",
+      "product_line": "Framcolor 2001",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Framesi::Framcolor 2001 Intense::global",
+      "brand": "Framesi",
+      "product_line": "Framcolor 2001 Intense",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Glamour::US",
+      "brand": "Framesi",
+      "product_line": "Framcolor Glamour",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Eclectic::US",
+      "brand": "Framesi",
+      "product_line": "Framcolor Eclectic",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Eclectic Care::US",
+      "brand": "Framesi",
+      "product_line": "Framcolor Eclectic Care",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Eclectic 5D Color Gloss::global",
+      "brand": "Framesi",
+      "product_line": "Framcolor Eclectic 5D Color Gloss",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Pure Pigment Plus::global",
+      "brand": "Framesi",
+      "product_line": "Framcolor Pure Pigment Plus",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Framesi::Decolor B::US",
+      "brand": "Framesi",
+      "product_line": "Decolor B",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Futura::US",
+      "brand": "Framesi",
+      "product_line": "Framcolor Futura",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: unclear.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Keune::Tinta Color::global",
+      "brand": "Keune",
+      "product_line": "Tinta Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Keune::Semi Color::global",
+      "brand": "Keune",
+      "product_line": "Semi Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Keune::So Pure Color::global",
+      "brand": "Keune",
+      "product_line": "So Pure Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Keune::Color Chameleon::global",
+      "brand": "Keune",
+      "product_line": "Color Chameleon",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Keune::Ultimate Blonde::global",
+      "brand": "Keune",
+      "product_line": "Ultimate Blonde",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::Evolution of the Color::US",
+      "brand": "Alfaparf Milano Professional",
+      "product_line": "Evolution of the Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::Evolution of the Color Shine Effect::global",
+      "brand": "Alfaparf Milano Professional",
+      "product_line": "Evolution of the Color Shine Effect",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::Color Wear::US",
+      "brand": "Alfaparf Milano Professional",
+      "product_line": "Color Wear",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::Color Wear Gloss Toner::US",
+      "brand": "Alfaparf Milano Professional",
+      "product_line": "Color Wear Gloss Toner",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::Pigments::US",
+      "brand": "Alfaparf Milano Professional",
+      "product_line": "Pigments",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::rEvolution::US",
+      "brand": "Alfaparf Milano Professional",
+      "product_line": "rEvolution (rEvolution JC)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Alfaparf Milano Professional::BB Bleach::US",
+      "brand": "Alfaparf Milano Professional",
+      "product_line": "BB Bleach",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Permanent::US",
+      "brand": "Aveda",
+      "product_line": "Full Spectrum Permanent",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Deep::US",
+      "brand": "Aveda",
+      "product_line": "Full Spectrum Deep",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Demi+::US",
+      "brand": "Aveda",
+      "product_line": "Full Spectrum Demi+",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Vibrants::US",
+      "brand": "Aveda",
+      "product_line": "Full Spectrum Vibrants",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Aveda::Enlightenment Blonding (Enlightener)::US",
+      "brand": "Aveda",
+      "product_line": "Enlightenment Blonding (Enlightener)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel High Lift::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel High Lift",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel Cool Cover::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel Cool Cover",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::iNOA::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "iNOA",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Color::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: unclear.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Blond Studio::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Blond Studio",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Colorful Hair::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Colorful Hair (#COLORFULHAIR)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: unclear.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Rusk::Deepshine Permanent (Pure Pigments)::US",
+      "brand": "Rusk",
+      "product_line": "Deepshine Permanent Pure Pigments Conditioning Cream Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Rusk::Deepshine Gloss::US",
+      "brand": "Rusk",
+      "product_line": "Deepshine Gloss",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Rusk::Deepshine Xpress Gloss::US",
+      "brand": "Rusk",
+      "product_line": "Deepshine Xpress Gloss",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Rusk::RUSKin10::US",
+      "brand": "Rusk",
+      "product_line": "RUSKin10 (RUSK IN 10)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Rusk::Deepshine Direct::US",
+      "brand": "Rusk",
+      "product_line": "Deepshine Direct",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Rusk::Deepshine Lighteners::US",
+      "brand": "Rusk",
+      "product_line": "Deepshine Lighteners",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Color Rhapsody::US",
+      "brand": "Moroccanoil Professional",
+      "product_line": "Color Rhapsody Permanent Cream Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Color Calypso::US",
+      "brand": "Moroccanoil Professional",
+      "product_line": "Color Calypso Demi-Permanent (Gloss & Cream)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Color Infusion::US",
+      "brand": "Moroccanoil Professional",
+      "product_line": "Color Infusion Pure Color Mixer",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Blonde Voyage Lighteners::US",
+      "brand": "Moroccanoil Professional",
+      "product_line": "Blonde Voyage Lighteners (Powder, Clay, Cream)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Moroccanoil::Color Depositing Masks::US",
+      "brand": "Moroccanoil",
+      "product_line": "Color Depositing Masks",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Danger Jones::Semi-Permanent Color::US",
+      "brand": "Danger Jones",
+      "product_line": "Semi-Permanent Hair Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Danger Jones::Gloss Toner with Bonder::US",
+      "brand": "Danger Jones",
+      "product_line": "Gloss Toner with Bonder",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Danger Jones::Artistic Toners::US",
+      "brand": "Danger Jones",
+      "product_line": "Artistic Toners",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Danger Jones::Lighteners::US",
+      "brand": "Danger Jones",
+      "product_line": "Powder Lightener & Cream Lightener (with Bonding Complex)",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Danger Jones::Epilogue::US",
+      "brand": "Danger Jones",
+      "product_line": "Epilogue Permanent Hair Color",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Permanent Haircolor::US",
+      "brand": "Guy Tang #mydentity",
+      "product_line": "Permanent Haircolor",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Demi-Permanent Haircolor::US",
+      "brand": "Guy Tang #mydentity",
+      "product_line": "Demi-Permanent Haircolor",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Demi-Permanent X-Press Toners::US",
+      "brand": "Guy Tang #mydentity",
+      "product_line": "Demi-Permanent X-Press Toners",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Reflect Liquid Demi-Permanent::US",
+      "brand": "Guy Tang #mydentity",
+      "product_line": "Reflect Liquid Demi-Permanent",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "high",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Super Power Direct Dye::US",
+      "brand": "Guy Tang #mydentity",
+      "product_line": "Super Power Direct Dye",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Direct Dye Vibrant Pastel::US",
+      "brand": "Guy Tang #mydentity",
+      "product_line": "Direct Dye Vibrant / Pastel",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Big9 Creme Lightener::US",
+      "brand": "Guy Tang #mydentity",
+      "product_line": "Big9 Creme Lightener",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::#Magnum8 Powder Lightener::US",
+      "brand": "Guy Tang #mydentity",
+      "product_line": "#Magnum8 Powder Lightener",
+      "gap_type": "shade_extraction_not_started",
+      "severity": "medium",
+      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
+      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "gap_type": "tone_code_unresolved",
+      "severity": "medium",
+      "details": "Tone code A: No printed legend; single shade 03A Terra Cotta (warm name) contradicts conventional 'A = Ash'; unresolved",
+      "recommended_next_action": "Retrieve a newer official chart or education material that prints the tone legend for this code."
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "gap_type": "tone_code_unresolved",
+      "severity": "medium",
+      "details": "Tone code AA: No printed legend; shade names (Papaya, Bonfire) suggest warm/copper but contradict conventional 'AA = intense ash' reading; unresolved",
+      "recommended_next_action": "Retrieve a newer official chart or education material that prints the tone legend for this code."
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand": "Redken",
+      "product_line": "Shades EQ Gloss",
+      "gap_type": "tone_code_unresolved",
+      "severity": "medium",
+      "details": "Tone code GI: No printed legend; shade names (Tahitian Sand, Hamptons, St. Barths, Tenerife) do not unambiguously identify a tone family",
+      "recommended_next_action": "Retrieve a newer official chart or education material that prints the tone legend for this code."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "gap_type": "incomplete_shade_enumeration",
+      "severity": "medium",
+      "details": "extracted 138 records vs manufacturer-claimed 143 shades",
+      "recommended_next_action": "Pull newer official chart or per-sub-range pages to close the count gap."
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "gap_type": "incomplete_shade_enumeration",
+      "severity": "medium",
+      "details": "extracted 76 records vs manufacturer-claimed 68 shades",
+      "recommended_next_action": "Pull newer official chart or per-sub-range pages to close the count gap."
+    },
+    {
+      "canonical_key": "Redken::Chromatics::US",
+      "brand": "Redken",
+      "product_line": "Chromatics",
+      "gap_type": "line_status_unverified",
+      "severity": "low",
+      "details": "apparent_status=unclear: Line status unverified or discontinued; source retrieval may require archived or regional materials.",
+      "recommended_next_action": "Confirm status with manufacturer/distributor; check archived shade books for discontinued lines."
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync",
+      "gap_type": "line_status_unverified",
+      "severity": "low",
+      "details": "apparent_status=unclear: Line status unverified or discontinued; source retrieval may require archived or regional materials.",
+      "recommended_next_action": "Confirm status with manufacturer/distributor; check archived shade books for discontinued lines."
+    },
+    {
+      "canonical_key": "Paul Mitchell::PM Shines::US",
+      "brand": "Paul Mitchell",
+      "product_line": "PM Shines",
+      "gap_type": "line_status_unverified",
+      "severity": "low",
+      "details": "apparent_status=discontinued: Line status unverified or discontinued; source retrieval may require archived or regional materials.",
+      "recommended_next_action": "Confirm status with manufacturer/distributor; check archived shade books for discontinued lines."
+    },
+    {
+      "canonical_key": "Paul Mitchell::Pop XG::global",
+      "brand": "Paul Mitchell",
+      "product_line": "Pop XG",
+      "gap_type": "line_status_unverified",
+      "severity": "low",
+      "details": "apparent_status=unclear: Line status unverified or discontinued; source retrieval may require archived or regional materials.",
+      "recommended_next_action": "Confirm status with manufacturer/distributor; check archived shade books for discontinued lines."
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Color 10 Minute::global",
+      "brand": "Paul Mitchell",
+      "product_line": "Paul Mitchell The Color (10 Minute express permanent)",
+      "gap_type": "line_status_unverified",
+      "severity": "low",
+      "details": "apparent_status=unclear: Line status unverified or discontinued; source retrieval may require archived or regional materials.",
+      "recommended_next_action": "Confirm status with manufacturer/distributor; check archived shade books for discontinued lines."
+    },
+    {
+      "canonical_key": "Paul Mitchell::Lighteners::global",
+      "brand": "Paul Mitchell",
+      "product_line": "Paul Mitchell Lighteners (e.g., Dual-Purpose Lightener, Skylight, Bond Rx)",
+      "gap_type": "line_status_unverified",
+      "severity": "low",
+      "details": "apparent_status=unclear: Line status unverified or discontinued; source retrieval may require archived or regional materials.",
+      "recommended_next_action": "Confirm status with manufacturer/distributor; check archived shade books for discontinued lines."
+    },
+    {
+      "canonical_key": "Pulp Riot::Liquid Demi::US",
+      "brand": "Pulp Riot",
+      "product_line": "Liquid Demi",
+      "gap_type": "line_status_unverified",
+      "severity": "low",
+      "details": "apparent_status=unclear: Line status unverified or discontinued; source retrieval may require archived or regional materials.",
+      "recommended_next_action": "Confirm status with manufacturer/distributor; check archived shade books for discontinued lines."
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Futura::US",
+      "brand": "Framesi",
+      "product_line": "Framcolor Futura",
+      "gap_type": "line_status_unverified",
+      "severity": "low",
+      "details": "apparent_status=unclear: Line status unverified or discontinued; source retrieval may require archived or regional materials.",
+      "recommended_next_action": "Confirm status with manufacturer/distributor; check archived shade books for discontinued lines."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "gap_type": "line_status_unverified",
+      "severity": "low",
+      "details": "apparent_status=unclear: Line status unverified or discontinued; source retrieval may require archived or regional materials.",
+      "recommended_next_action": "Confirm status with manufacturer/distributor; check archived shade books for discontinued lines."
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Colorful Hair::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Colorful Hair (#COLORFULHAIR)",
+      "gap_type": "line_status_unverified",
+      "severity": "low",
+      "details": "apparent_status=unclear: Line status unverified or discontinued; source retrieval may require archived or regional materials.",
+      "recommended_next_action": "Confirm status with manufacturer/distributor; check archived shade books for discontinued lines."
+    }
+  ],
+  "risk_report": [
+    {
+      "risk_type": "licensing_copyright",
+      "severity": "high",
+      "details": "Shade names, charts, swatch books, and education PDFs are manufacturer-copyrighted marketing/technical works. Storing extracted facts (codes, levels, ratios) is generally factual data, but republishing chart layouts, swatch imagery, or large verbatim text excerpts could infringe; several artifacts quote legend wording verbatim.",
+      "affected_scope": "All shade and legend records; any future UI that displays manufacturer assets.",
+      "mitigation": "Keep verbatim quotes limited to short attributions; never redistribute PDFs/swatch images; show provenance links instead. Obtain legal review before commercial redistribution; consider manufacturer/distributor data partnerships."
+    },
+    {
+      "risk_type": "terms_of_service_scraping",
+      "severity": "medium",
+      "details": "SalonCentric and wellastore actively bot-block (403/timeouts observed); scraping gated pro portals may violate their ToS. All Batch 1-2 data came from publicly served pages/PDFs.",
+      "affected_scope": "Future ingestion of distributor catalogs (Tier 2).",
+      "mitigation": "Prefer official public PDFs; request API/feed access from distributors; respect robots and rate limits."
+    },
+    {
+      "risk_type": "data_staleness",
+      "severity": "high",
+      "details": "Newest parseable official charts vary widely: Redken 2020-2022, Matrix 2023, L'Oréal 2025, SKP 2021-2022. Shades launched after a chart's revision date are absent (e.g., IGORA ROYAL 133 extracted vs 143 claimed).",
+      "affected_scope": "All normalized shade records; formula generation accuracy.",
+      "mitigation": "Track per-source revision dates (already stored); schedule re-crawl; reconcile against manufacturer 'NEW' announcements."
+    },
+    {
+      "risk_type": "tone_interpretation",
+      "severity": "medium",
+      "details": "~15% of tone mappings are inferred (flagged) rather than legend-confirmed; 8 codes remain fully unresolved (e.g., Redken SEQ GI, AA, A). Cross-line letter reuse (SEQ borrowing CGL legend) is explicitly inferred.",
+      "affected_scope": "Multi-brand tone mapping and formula conversion quality.",
+      "mitigation": "Treat ambiguity_flag/mapping_confidence as first-class inputs to conversion logic; queue unresolved codes for education-material retrieval."
+    },
+    {
+      "risk_type": "regional_variance",
+      "severity": "medium",
+      "details": "Several lines verified only on non-US official sites (Paul Mitchell via TH/DE sites, Wella Magma global, L'Oréal Colorful Hair NL); US shade availability can differ from global charts (Wella store tiles unreadable).",
+      "affected_scope": "Any market-specific formula recommendations.",
+      "mitigation": "Keep region in the canonical key (already in schema); extract per-market charts before serving market-specific output."
+    },
+    {
+      "risk_type": "brand_transition",
+      "severity": "low",
+      "details": "Active rebrands/transitions observed: Rusk Designer Collection relaunch (2026), Dia Richesse -> Dia Color, PM Shines -> The Demi, possible Matrix Super Sync addition, #mydentity Vibrant/Pastel -> Super Power.",
+      "affected_scope": "Brand/line naming stability; conversion charts between old and new lines.",
+      "mitigation": "Model successor relationships between lines; ingest official conversion charts (Dia Richesse->Dia Color chart exists on the US site)."
+    },
+    {
+      "risk_type": "coverage_bias",
+      "severity": "medium",
+      "details": "Batches 1-2 cover 10 lines from 5 large brands (all L'Oréal/Henkel/Wella-affiliated except none independent); 14 of 20 seed brands have inventory + sources but no shade-level data yet.",
+      "affected_scope": "Multi-brand conversion claims; product completeness.",
+      "mitigation": "Prioritize next batches: Goldwell (Topchic/Colorance), Joico (LumiShine), Pravana (ChromaSilk), Paul Mitchell (The Demi), plus independents (Danger Jones Epilogue is 2026-new with a live official site)."
+    }
+  ],
+  "issue_log": []
+}

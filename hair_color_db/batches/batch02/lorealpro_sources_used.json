@@ -1,0 +1,108 @@
+{
+  "source_catalog": [
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand_name": "L'Oréal Professionnel",
+      "product_line_name": "Majirel",
+      "source_title": "Majirel Color Chart 2025 (printed document code: LPSEPMAJ03 • 09/25)",
+      "source_type": "official_pdf_shade_chart",
+      "source_url": "https://us.lorealprofessionnel.com/-/media/project/loreal/brand-sites/lp/americas/us/shade-charts/majirel-colorchart-2025-r5-spreads-(1).pdf?rev=3ffa8e1e7ce644a68aa92c63c0c6b0e8",
+      "publisher_domain": "us.lorealprofessionnel.com",
+      "publication_or_revision_date": "2025-09",
+      "file_type": "pdf",
+      "access_status": "public",
+      "region_or_market": "US",
+      "coverage_summary": "2-page spread chart for the improved Majirel formula: full shade grid with US dual coding, Cool Cover shade list, dual coding system legend, color wheel/law of color, boosters, mixing guidelines (1:1.5, 1 tube + 3 oz. Majicrème Developer, 12.5/20/30-vol), 35-minute development time, levels of lift (20-vol up to 2, 30-vol up to 3), grey coverage rules (under/over 50% white; Cool Cover by level), Carmilane/Rubilane/DM5 warning, application and rinsing guidelines.",
+      "expected_data_types_present": [
+        "shade_codes",
+        "dual_coding_us_codes",
+        "tone_family_legend",
+        "mixing_ratio",
+        "developer_strengths",
+        "processing_time",
+        "lift_levels",
+        "gray_coverage_rules",
+        "special_usage_warnings",
+        "application_and_rinsing_instructions"
+      ],
+      "source_priority_tier": 1,
+      "notes": [
+        "Primary/current source for Majirel line-level technical rules (improved formula, larger 2 oz. tube).",
+        "Verified %PDF-1.7 header; parsed with pypdf (2 pages)."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand_name": "L'Oréal Professionnel",
+      "product_line_name": "Majirel",
+      "source_title": "Majirel Color Chart (printed document code: P2634200 • 07/23)",
+      "source_type": "official_pdf_shade_chart",
+      "source_url": "https://us.lorealprofessionnel.com/-/media/project/loreal/brand-sites/lp/americas/us/products/hair-color/majirel/majirel/majirel-color-chart-0686e00000xfmelaab.pdf?rev=62c3f6b7eccc4605a81bc9ed3f388648&hash=886B4B4553D78C3E29A4DCAFBB18A0C5",
+      "publisher_domain": "us.lorealprofessionnel.com",
+      "publication_or_revision_date": "2023-07",
+      "file_type": "pdf",
+      "access_status": "public",
+      "region_or_market": "US",
+      "coverage_summary": "9-page brochure covering Majirel, Majirel Cool Inforced, Majirel Cool Cover, Majirouge and Majirel High-Lift: shade grids, Carmilane/Lumax/Rubilane/DM5 shade lists, mix shades (.10/.70/.20/.40/.60, 901S, 900S), Majirel Clear uses, dual coding legend, formulation guidelines (1:1.5 ratio = 1.7 oz. tube + 2.6 oz. Majicrème Developer; High-Lift 1:2 and 50 minutes; 35-minute development; 20/30-vol lift, High-Lift 30/40-vol), grey coverage and blending rules (incl. 6.03/7.03/8.03 complete coverage without mixing), Majicrème developer strengths with percentages incl. 40-vol max, allergy warning, Ionène G + Incell technology, Metal Detox application/rinsing.",
+      "expected_data_types_present": [
+        "shade_codes",
+        "dual_coding_us_codes",
+        "tone_family_legend",
+        "mixing_ratio",
+        "developer_strengths_with_percentages",
+        "processing_time",
+        "lift_levels",
+        "gray_coverage_rules",
+        "sub_range_rules_high_lift_cool_cover",
+        "safety_warnings"
+      ],
+      "source_priority_tier": 2,
+      "notes": [
+        "Older revision used as a supplement; only source printing developer percentages (12.5-vol 3.75%, 20-vol 6%, 30-vol 9%, 40-vol 12% maximum) and High-Lift / Cool Inforced / Majirouge rules.",
+        "Ounce quantities for the 1:1.5 ratio differ from the 2025 chart due to the tube size change; both versions recorded in the technical records.",
+        "Verified %PDF-1.7 header; parsed with pypdf (9 pages)."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand_name": "L'Oréal Professionnel",
+      "product_line_name": "Dia Light",
+      "source_title": "Dia Light Color Chart 2025 (printed document code: LPJUNDL01; no MM/YY revision date printed)",
+      "source_type": "official_pdf_shade_chart",
+      "source_url": "https://us.lorealprofessionnel.com/-/media/project/loreal/brand-sites/lp/americas/us/shade-charts/dialight-color-chart-2025.pdf?rev=cdb8ab6fa8ce4222b2fc86755bdc6115",
+      "publisher_domain": "us.lorealprofessionnel.com",
+      "publication_or_revision_date": null,
+      "file_type": "pdf",
+      "access_status": "public",
+      "region_or_market": "US",
+      "coverage_summary": "5-page chart for Dia Light acidic gel-crème demi: 'Zero ammonia. Zero lift. Ultra conditioning.' positioning, science panel (acid pH, no lift, cationic polymers), full shade grid with US dual codes and shade names, 2 new coral shades (10.24/10VC, 8.24/8VC), preparation (1:1.5 ratio, 1 tube 1.7 oz. + 2.6 oz. Diactivateur, 6-vol 1.8% or 9-vol 2.7%), flexible processing time 2-20 minutes, Liquifier instructions and dosing, DM5/Rubilane warning, dual coding legend, Metal Detox application and rinsing.",
+      "expected_data_types_present": [
+        "shade_codes",
+        "shade_names",
+        "dual_coding_us_codes",
+        "tone_family_legend",
+        "mixing_ratio",
+        "developer_strengths_with_percentages",
+        "processing_time_range",
+        "no_lift_claims",
+        "liquifier_usage",
+        "special_usage_warnings",
+        "application_and_rinsing_instructions"
+      ],
+      "source_priority_tier": 1,
+      "notes": [
+        "Sole source needed for Dia Light line-level technical rules; chart prints no grey-coverage instructions (recorded as a data gap).",
+        "Verified %PDF-1.7 header; parsed with pypdf (5 pages)."
+      ]
+    }
+  ],
+  "missing_source_targets": [
+    "Official Majirel product page (https://us.lorealprofessionnel.com/all-products/hair-color/majirel-permanent-creme-color) and the shade-charts hub were listed as optional fallbacks but were not fetched: the three official PDFs contained all required line-level technical content.",
+    "No official US technical guide for Dia Light grey blending/coverage was located within scope; the Dia Light 2025 chart prints no grey coverage rules."
+  ],
+  "issue_log": [
+    "All three PDFs downloaded 2026-06 via curl, %PDF header verified, parsed with python3 + pypdf; all values recorded verbatim from extracted text.",
+    "Dia Light chart prints only the document code LPJUNDL01 without a MM/YY revision date, so publication_or_revision_date is null for that source (the URL/filename labels it 2025).",
+    "Majirel charts conflict on ounce quantities for the 1:1.5 ratio (2025: 1 tube + 3 oz.; 2023: 1.7 oz. tube + 2.6 oz.) due to the 2025 tube-size change; both recorded, 2025 chart treated as current."
+  ]
+}

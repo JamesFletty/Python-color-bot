@@ -1,0 +1,156 @@
+{
+  "line_technical_records": [
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "color_type": "permanent",
+      "default_mixing_ratio": "1:1 (IGORA ROYAL core; chart 'MIXING & TIMING': IGORA ROYAL 1:1, development time 30-45 minutes)",
+      "developer_options": [
+        "IGORA ROYAL Oil Developer 3% (10 Vol.)",
+        "IGORA ROYAL Oil Developer 6% (20 Vol.)",
+        "IGORA ROYAL Oil Developer 9% (30 Vol.)",
+        "IGORA ROYAL Oil Developer 12% (40 Vol.)"
+      ],
+      "developer_strengths_if_stated": [
+        "3% / 10 Vol.",
+        "6% / 20 Vol.",
+        "9% / 30 Vol.",
+        "12% / 40 Vol."
+      ],
+      "processing_time_ranges": [
+        "IGORA ROYAL core: 30-45 minutes",
+        "IGORA ROYAL ABSOLUTES: 30-45 minutes",
+        "HIGHLIFTS Ultra Blonde (10-) and Special Blonde (12-): 30-45 minutes",
+        "One chart block reads '1:1, Development time up to 20 minutes, Recommended 3% (10 Vol.)' - its product binding (likely Pastels or Silver Whites) is ambiguous in the scrambled text layout",
+        "IGORA COLOR10 (companion line on same chart): 'in as little as 10 minutes'"
+      ],
+      "gray_coverage_rules": [
+        "All IGORA ROYAL and IGORA COLOR10 shades provide up to 50% or 100% white hair coverage.",
+        "All IGORA ROYAL ABSOLUTES shades provide up to 100% white hair coverage on more than 50% white hair without having to mix with a natural tone.",
+        "When shades with up to 70% coverage are used on more than 50% white hair, add 1 part of a Natural (-0) or Beige (-4) series in a 2:1 ratio to achieve 100% coverage. Mix 1:1 for thick and resistant hair. Example: 40g 6-65 + 20g 6-4 + 60g IGORA ROYAL Oil Developer.",
+        "Chart lists 'IGORA ROYAL 100% coverage shades:' followed by a garbled token sequence '-0 -0 -1 -4 -63' in the text layer (depth digits lost).",
+        "Developer guide: covering 100% white hair -> 6% 20 Vol.; white hair coverage with ABSOLUTES -> 9% 30 Vol.; ABSOLUTES/Natural Extra on more than 90% white hair -> 6% 20 Vol."
+      ],
+      "lift_rules": [
+        "Oil Developer usage table: coloring darker / 0 levels -> 3% 10 Vol. or 6% 20 Vol.; lifting 1-2 levels -> 6% 20 Vol.; lifting 2-3 levels -> 9% 30 Vol.; lifting up to 3 levels with Ultra Blonde (10-) and 3-4 levels with Special Blonde (12-) -> 9% 30 Vol.; lifting 3-4 levels with Ultra Blonde (10-) and 4-5 levels with Special Blonde (12-) -> 12% 40 Vol.",
+        "Footnote: '4-5 levels of lift are achievable on natural base 6 and lighter.'",
+        "Highlifts mixing: Ultra Blonde (10- Series) 1:1; Special Blonde (12- Series) 1:2; both 30-45 minutes."
+      ],
+      "tone_family_legend": [
+        "Tone direction: -0 Natural",
+        "-1 Cendré",
+        "-2 Ash",
+        "-3 Matte",
+        "-4 Beige",
+        "-5 Gold",
+        "-6 Chocolate",
+        "-7 Copper",
+        "-8 Red",
+        "-9 Violet",
+        "Depth/base shade: 1- Black, 3- Dark brown, 4- Medium brown, 5- Light brown, 6- Dark blonde, 7- Medium blonde, 8- Light blonde, 9- Extra light blonde, 10- Ultra blonde (no level 2 printed on the chart legend)"
+      ],
+      "special_usage_notes": [
+        "Numbering system (printed): number in front of the dash indicates the depth of the shade and the ideal base to choose; first number after the dash represents the primary tone direction (dominant shade); second number after the dash indicates the secondary tone direction.",
+        "Official US page (fetched June 2026): portfolio streamlined from 13 ranges to 5 sub-groups totaling 143 shades - core IGORA ROYAL plus technical lines HIGHLIFTS, FASHION LIGHTS, ABSOLUTES, SILVER WHITES.",
+        "Chart safety/usage hints: do not apply on damaged or irritated scalp; avoid pre-shampooing; no head massage shortly before or during coloring; observe correct mixing ratio and development time; rinse completely; do not use heat.",
+        "Chart also covers companion ranges on the same document: IGORA COLOR10 (1:1, as little as 10 minutes), IGORA VIBRANCE demi-permanent, IGORA VARIO BLOND PLUS/EXTRA (1:2, 30-45 minutes), CHROMA ID bonding color masks (up to 10 min; intense masks up to 20 min)."
+      ],
+      "region_or_market": "US",
+      "discontinued_status": "active (current official US line page live as of June 2026)",
+      "source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
+      "source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [
+        "Chart copyright 2021 used as publication date; official page fetched June 2026 used for current portfolio claims (143 shades, 5 sub-lines, active status).",
+        "Scrambled multi-column text layout means some mixing blocks could not be bound to a named sub-range; only explicitly labeled bindings were recorded."
+      ],
+      "data_gaps": [
+        "Per-sub-range mixing block for FASHION LIGHTS and SILVER WHITES not unambiguously recoverable (a 1:2 / 30-45 min block and a 1:1 / up to 20 min / 3% block sit adjacent to their labels but binding is uncertain).",
+        "The 10 shades needed to reconcile 133 extracted entries vs 143 claimed shades are unidentified."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA VIBRANCE",
+      "color_type": "demi-permanent",
+      "default_mixing_ratio": "1:1 on all shades (IFU: 'IGORA VIBRANCE is formulated with an easy 1:1 mixing ratio on all shades')",
+      "developer_options": [
+        "IGORA VIBRANCE Activator Gel 1.9% (6 Vol.) - gel consistency, ideal for bottle application",
+        "IGORA VIBRANCE Activator Lotion 1.9% (6 Vol.) - cream consistency, bowl & brush",
+        "IGORA VIBRANCE Activator Lotion 4% (13 Vol.) - cream consistency, bowl & brush"
+      ],
+      "developer_strengths_if_stated": [
+        "1.9% / 6 Vol.",
+        "4% / 13 Vol."
+      ],
+      "processing_time_ranges": [
+        "Mixing/usage table: development time 5-20 min",
+        "Full head application: 10-20 min",
+        "Placement or freehand application: 10-20 min",
+        "Neutralization after lightening services: develop visually for 5-20 min",
+        "Pastel toning: develop visually for 5-20 min",
+        "Gloss service (0-00 without activator): leave for 5-20 minutes",
+        "White hair blending (all listed white % bands): 20 min",
+        "Dual-System Application: IGORA ROYAL on re-growth 10-20 min, then IGORA VIBRANCE on mid-lengths/ends another 10-20 min",
+        "Official US FAQ: development time up to 20 minutes; 10-20 min for global/re-growth, 5-20 min for gloss"
+      ],
+      "gray_coverage_rules": [
+        "Up to 70% white blending with Natural Extra (-00) shades (4% / 13 Vol.).",
+        "White hair blending up to 30% with 1.9% / 6 Vol.",
+        "White blending table: 0-30% white -> Natural and Fashion shades, 1.9% / 6 Vol., 20 min; 30-50% white -> Natural and Fashion shades, 4% / 13 Vol., 20 min; 50-70% white -> mix Natural Extra shade with Fashion shade (re-growth application only), 4% / 13 Vol., 20 min; 70-100% white -> use IGORA ROYAL (permanent), 30-45 min.",
+        "Official US FAQ: Naturals and Fashion shades up to 50% white blending; Naturals Extra up to 70%."
+      ],
+      "lift_rules": [
+        "1.9% / 6 Vol.: no lift ('None').",
+        "4% / 13 Vol.: soft brightening, up to 1 level on light bases."
+      ],
+      "tone_family_legend": [
+        "-0 natural (neutral)",
+        "-1 cendré (blue/violet)",
+        "-2 ash (blue)",
+        "-3 matte (green)",
+        "-4 beige (muted gold)",
+        "-5 gold (gold)",
+        "-6 chocolate (warm brown)",
+        "-7 copper (orange)",
+        "-8 red (red)",
+        "-9 violet (violet)",
+        "Color depth: 1 black, 3 dark brown, 4 medium brown, 5 light brown, 6 dark blonde, 7 medium blonde, 8 light blonde, 9 extra light blonde"
+      ],
+      "special_usage_notes": [
+        "Numbering matched to IGORA ROYAL: number before the dash = ideal depth/base; first number after the dash = primary tone direction; second = secondary (minor) tone; -0 after the dash indicates a neutral tone for additional white blending.",
+        "Family grouping (IFU): Naturals -0/-1/-4; Naturals Extra -00; Fashion Shades -2/-5/-6/-7/-8/-9; Pastels 9.5- and 10-; Boosters and Neutralizers 0-; Clear with activator 0-00.",
+        "Longevity: Naturals/Naturals Extra/Fashion up to 25 shampoos; Pastels up to 12 shampoos for 9.5- and up to 6 shampoos for 10-; Boosters/Neutralizers up to 12 shampoos; official FAQ adds Clear 0-00 up to 4 washes.",
+        "Clear 0-00 dilution table (always keep 1:1 with activator): full intensity 60g shade; moderate dilution 45g shade + 15g 0-00; soft dilution 30g shade + 30g 0-00. Diluting a shade reduces its white blending.",
+        "Booster dosing per 60g VIBRANCE: Neutralizing Boosters - levels 1/3/4/5: soft up to 5% (3g), intense up to 10% (6g); levels 6/7: soft up to 2.5% (1.5g)...; levels 8/9 lower dosing; Fashion Boosters - levels 1/3/4/5: soft up to 15% (10g), intense up to 30% (20g); levels 6-9 lower dosing (full printed matrix in IFU page 6; activator must be increased proportionally).",
+        "Pre-pigmentation recommendations: target 8-/7- -> 0-55 Booster; 6-/5- -> 0-77 Booster; 4-/3-/1- -> 0-88 Booster; activator 1.9% / 6 Vol.; mixing ratio 1:1.",
+        "Pastel toning: pre-lighten to level 9 or lighter; toners may appear darker during development.",
+        "Shades 'harmoniously match IGORA ROYAL' for Dual-System Application (permanent on re-growth, demi on lengths)."
+      ],
+      "region_or_market": "US",
+      "discontinued_status": "active (current official US line page live as of June 2026)",
+      "source_url": "https://dm.henkel-dam.com/is/content/henkel/IGORA-VIBRANCE-Instruction-For-Use-pdf ; https://skp.media/docs/igora-vibrance-formula-book/SKPUSA-IGVI_Tentpole_Booklet.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/vibrance/tone-on-tone-coloration.html",
+      "source_document": "IGORA VIBRANCE Instruction For Use (US, (c) 2022 Henkel Corporation) plus IGORA VIBRANCE Tentpole/Influencer Booklet incl. portfolio overview and Redken Shades EQ conversion guide (SKPUSA, file dated 10/6/21) plus official US Tone-on-Tone Coloration page",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [
+        "IFU ((c) 2022) treated as the authoritative technical source; the 2021 booklet used for shade enumeration; official page (fetched June 2026) used for current longevity/coverage FAQ wording and active status.",
+        "The IFU booster-dosing matrix columns ('1, 3, 4, 5 | 6 & 7 | 8 & 9' base levels vs soft/intense) are partially scrambled in text extraction; the dosing summary preserves printed values but the exact column binding for every cell could not be fully verified."
+      ],
+      "data_gaps": [
+        "The five 10- toner shade codes referenced by the IFU ('5 NEW 10- Toners') are not enumerated in any fetched source.",
+        "No per-shade swatch names or per-shade gray-coverage percentages printed.",
+        "IFU white-blending descriptions for the family columns are scrambled in extraction; the official-page FAQ values were used where the IFU column binding was uncertain."
+      ]
+    }
+  ],
+  "issue_log": [
+    "IGORA ROYAL chart: multi-column 'MIXING & TIMING' panel extracts out of order; only mixing blocks explicitly adjacent to a printed range name (ABSOLUTES, Ultra Blonde 10-, Special Blonde 12-, IGORA ROYAL core) were bound; FASHION LIGHTS / SILVER WHITES / Pastels blocks left partially unbound.",
+    "IGORA ROYAL: chart is (c) 2021; official page claims (143 shades, 5 sub-lines) were fetched June 2026 - the chart may predate the streamlined portfolio.",
+    "IGORA VIBRANCE: booster dosing matrix and family-description columns are scrambled in PDF text extraction; values recorded verbatim but some column bindings flagged as uncertain.",
+    "No printed publication dates beyond copyright years (ROYAL chart 2021, VIBRANCE IFU 2022, booklet file slug dated 10/6/21, (c) 2020)."
+  ]
+}

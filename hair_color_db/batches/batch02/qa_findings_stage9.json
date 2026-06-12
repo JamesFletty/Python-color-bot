@@ -1,0 +1,113 @@
+{
+  "stage": 9,
+  "artifact": "qa_findings",
+  "batch": 2,
+  "completion_status": "complete",
+  "qa_findings": [
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "504N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 504N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "505N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 505N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "506N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 506N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "507N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 507N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "508N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 508N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "509N",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 509N",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "504NA",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 504NA",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "506NA",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 506NA",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "508NA",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 508NA",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "510NA",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 510NA",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "record_ref": "505M",
+      "issue_type": "duplicate_shade_code",
+      "severity": "high",
+      "details": "2 normalized records share shade_code 505M",
+      "recommended_fix": "Distinguish sub-range variants explicitly or deduplicate."
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "record_ref": "Matrix::SoColor Sync::US#Clear",
+      "issue_type": "unmapped_tone_codes",
+      "severity": "medium",
+      "details": "codes ['Clear'] have no normalized mapping",
+      "recommended_fix": "Resolve via official legend retrieval."
+    }
+  ],
+  "corrected_records_recommendations": [],
+  "unresolved_issues": [],
+  "issue_log": [],
+  "record_counts_by_line": {
+    "L'Oréal Professionnel::Majirel::US": 127,
+    "L'Oréal Professionnel::Dia Light::US": 60,
+    "Matrix::SoColor::US": 130,
+    "Matrix::SoColor Sync::US": 73
+  }
+}
