@@ -206,6 +206,9 @@ def _backfill_from_rule_value(rule_type: str, rule_value: dict) -> dict:
 
 
 def upgrade() -> None:
+    # gen_random_uuid() requires pgcrypto on fresh PostgreSQL installs.
+    op.execute("CREATE EXTENSION IF NOT EXISTS pgcrypto")
+
     # updated_at trigger function
     op.execute(
         """
@@ -307,6 +310,15 @@ def upgrade() -> None:
         ON CONFLICT (level) DO NOTHING;
         """
     )
+    op.execute(
+        """
+        UPDATE universal_color_science ucs
+        SET neutralizing_tone_id = nt.normalized_tone_id
+        FROM normalized_tone nt
+        WHERE ucs.neutralizing_tone = nt.tone_name
+          AND ucs.neutralizing_tone_id IS NULL;
+        """
+    )
 
     # B. line_technical_rule additive columns
     op.add_column("line_technical_rule", sa.Column("developer_volume", sa.Integer(), nullable=True))
@@ -351,7 +363,7 @@ def upgrade() -> None:
     op.create_check_constraint(
         "chk_ltr_developer_volume",
         "line_technical_rule",
-        "developer_volume IS NULL OR developer_volume IN (10, 20, 30, 40)",
+        "developer_volume IS NULL OR (developer_volume > 0 AND developer_volume <= 100)",
     )
     op.create_check_constraint(
         "chk_ltr_processing_time_min",
@@ -364,14 +376,11 @@ def upgrade() -> None:
         "max_lift_levels IS NULL OR max_lift_levels >= 0",
     )
     op.create_check_constraint(
-        "chk_ltr_mixing_ratio_num",
+        "chk_ltr_mixing_ratio_pair",
         "line_technical_rule",
-        "mixing_ratio_num IS NULL OR mixing_ratio_num > 0",
-    )
-    op.create_check_constraint(
-        "chk_ltr_mixing_ratio_den",
-        "line_technical_rule",
-        "mixing_ratio_den IS NULL OR mixing_ratio_den > 0",
+        "(mixing_ratio_num IS NULL AND mixing_ratio_den IS NULL) OR "
+        "(mixing_ratio_num IS NOT NULL AND mixing_ratio_den IS NOT NULL "
+        "AND mixing_ratio_num > 0 AND mixing_ratio_den > 0)",
     )
 
     # Backfill typed columns from existing JSON (safe skip on failure)
@@ -971,12 +980,6 @@ def upgrade() -> None:
             nullable=False,
         ),
         sa.Column(
-            "brand_id",
-            postgresql.UUID(as_uuid=True),
-            sa.ForeignKey("brand.brand_id", ondelete="RESTRICT"),
-            nullable=False,
-        ),
-        sa.Column(
             "line_id",
             postgresql.UUID(as_uuid=True),
             sa.ForeignKey("product_line.line_id", ondelete="RESTRICT"),
@@ -1144,8 +1147,7 @@ def downgrade() -> None:
     op.drop_index("idx_shade_intermixing_applies", table_name="shade_intermixing_rule")
     op.drop_table("shade_intermixing_rule")
 
-    op.drop_constraint("chk_ltr_mixing_ratio_den", "line_technical_rule", type_="check")
-    op.drop_constraint("chk_ltr_mixing_ratio_num", "line_technical_rule", type_="check")
+    op.drop_constraint("chk_ltr_mixing_ratio_pair", "line_technical_rule", type_="check")
     op.drop_constraint("chk_ltr_max_lift_levels", "line_technical_rule", type_="check")
     op.drop_constraint("chk_ltr_processing_time_min", "line_technical_rule", type_="check")
     op.drop_constraint("chk_ltr_developer_volume", "line_technical_rule", type_="check")

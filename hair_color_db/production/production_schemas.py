@@ -7,7 +7,7 @@ from decimal import Decimal
 from typing import Any, Optional
 from uuid import UUID
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 from .production_models import (
     ColorScienceConfidence,
@@ -97,7 +97,7 @@ class RuleCondition(BaseModel):
 
 
 class RuleActionAddStep(BaseModel):
-    zone: str
+    zone: FormulaZone
     processing_time_adjustment: Optional[str] = None
 
 
@@ -175,7 +175,12 @@ class UniversalColorScienceResponse(UniversalColorScienceBase):
 
 
 class LineTechnicalRuleTypedColumns(BaseModel):
-    developer_volume: Optional[int] = Field(None, description="10, 20, 30, or 40")
+    developer_volume: Optional[int] = Field(
+        None,
+        gt=0,
+        le=100,
+        description="Salon developer volume convention (e.g. 10 = 10 vol)",
+    )
     max_lift_levels: Optional[Decimal] = None
     gray_coverage_pct: Optional[int] = Field(None, ge=0, le=100)
     mixing_ratio_num: Optional[int] = Field(None, gt=0)
@@ -183,6 +188,15 @@ class LineTechnicalRuleTypedColumns(BaseModel):
     processing_time_min: Optional[int] = Field(None, gt=0)
     applicable_hair_type: Optional[list[str]] = None
     porosity_adjustment: Optional[dict[str, Any]] = None
+
+    @model_validator(mode="after")
+    def validate_mixing_ratio_pair(self) -> LineTechnicalRuleTypedColumns:
+        num, den = self.mixing_ratio_num, self.mixing_ratio_den
+        if (num is None) != (den is None):
+            raise ValueError(
+                "mixing_ratio_num and mixing_ratio_den must both be set or both be null"
+            )
+        return self
 
 
 class LineTechnicalRuleCreate(LineTechnicalRuleTypedColumns):
@@ -198,7 +212,7 @@ class LineTechnicalRuleUpdate(BaseModel):
     rule_value: Optional[dict[str, Any]] = None
     applies_to_sub_range_id: Optional[UUID] = None
     source_id: Optional[UUID] = None
-    developer_volume: Optional[int] = None
+    developer_volume: Optional[int] = Field(None, gt=0, le=100)
     max_lift_levels: Optional[Decimal] = None
     gray_coverage_pct: Optional[int] = Field(None, ge=0, le=100)
     mixing_ratio_num: Optional[int] = Field(None, gt=0)
@@ -206,6 +220,15 @@ class LineTechnicalRuleUpdate(BaseModel):
     processing_time_min: Optional[int] = Field(None, gt=0)
     applicable_hair_type: Optional[list[str]] = None
     porosity_adjustment: Optional[dict[str, Any]] = None
+
+    @model_validator(mode="after")
+    def validate_mixing_ratio_pair(self) -> LineTechnicalRuleUpdate:
+        num, den = self.mixing_ratio_num, self.mixing_ratio_den
+        if (num is None) != (den is None):
+            raise ValueError(
+                "mixing_ratio_num and mixing_ratio_den must both be set or both be null"
+            )
+        return self
 
 
 class LineTechnicalRuleResponse(LineTechnicalRuleTypedColumns):
@@ -270,8 +293,8 @@ class ShadeIntermixingRuleResponse(ShadeIntermixingRuleBase):
 class FormulationRuleBase(BaseModel):
     rule_name: str
     rule_priority: int = 100
-    rule_condition: dict[str, Any]
-    rule_action: dict[str, Any]
+    rule_condition: RuleCondition
+    rule_action: RuleAction
     rule_category: FormulationRuleCategory
     is_active: bool = True
     source_id: Optional[UUID] = None
@@ -293,8 +316,8 @@ class FormulationRuleCreate(FormulationRuleBase):
 class FormulationRuleUpdate(BaseModel):
     rule_name: Optional[str] = None
     rule_priority: Optional[int] = None
-    rule_condition: Optional[dict[str, Any]] = None
-    rule_action: Optional[dict[str, Any]] = None
+    rule_condition: Optional[RuleCondition] = None
+    rule_action: Optional[RuleAction] = None
     rule_category: Optional[FormulationRuleCategory] = None
     is_active: Optional[bool] = None
     source_id: Optional[UUID] = None
@@ -450,7 +473,6 @@ class HairProfileResponse(HairProfileBase):
 
 
 class FormulaBase(BaseModel):
-    brand_id: UUID
     line_id: UUID
     recommendation_type: RecommendationType
     status: FormulaStatus = FormulaStatus.DRAFT
@@ -471,7 +493,6 @@ class FormulaCreate(FormulaBase):
 
 
 class FormulaUpdate(BaseModel):
-    brand_id: Optional[UUID] = None
     line_id: Optional[UUID] = None
     recommendation_type: Optional[RecommendationType] = None
     status: Optional[FormulaStatus] = None

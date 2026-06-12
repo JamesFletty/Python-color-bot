@@ -5,6 +5,9 @@
 -- PostgreSQL 15+
 -- =============================================================================
 
+-- UUID generation: gen_random_uuid() requires pgcrypto on fresh PostgreSQL installs.
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+
 -- ---------------------------------------------------------------------------
 -- Shared trigger: maintain updated_at on row change
 -- ---------------------------------------------------------------------------
@@ -127,6 +130,14 @@ INSERT INTO universal_color_science (
     (11, NULL,             NULL,           'High-lift artificial',        'High-lift color theory (inferred)', 'inferred'),
     (12, NULL,             NULL,           'High-lift artificial / pre-lightened','High-lift color theory (inferred)', 'inferred');
 
+-- Link neutralizing_tone_id only when seed text matches a single normalized_tone.tone_name
+-- exactly (compound labels such as 'Blue/Violet' or 'Violet/Ash' are intentionally left NULL).
+UPDATE universal_color_science ucs
+SET neutralizing_tone_id = nt.normalized_tone_id
+FROM normalized_tone nt
+WHERE ucs.neutralizing_tone = nt.tone_name
+  AND ucs.neutralizing_tone_id IS NULL;
+
 -- ---------------------------------------------------------------------------
 -- B. line_technical_rule — additive typed columns (rule_value preserved)
 -- ---------------------------------------------------------------------------
@@ -155,18 +166,23 @@ ALTER TABLE line_technical_rule
     ADD CONSTRAINT chk_ltr_gray_coverage_pct
         CHECK (gray_coverage_pct IS NULL OR gray_coverage_pct BETWEEN 0 AND 100),
     ADD CONSTRAINT chk_ltr_developer_volume
-        CHECK (developer_volume IS NULL OR developer_volume IN (10, 20, 30, 40)),
+        CHECK (developer_volume IS NULL OR (developer_volume > 0 AND developer_volume <= 100)),
     ADD CONSTRAINT chk_ltr_processing_time_min
         CHECK (processing_time_min IS NULL OR processing_time_min > 0),
     ADD CONSTRAINT chk_ltr_max_lift_levels
         CHECK (max_lift_levels IS NULL OR max_lift_levels >= 0),
-    ADD CONSTRAINT chk_ltr_mixing_ratio_num
-        CHECK (mixing_ratio_num IS NULL OR mixing_ratio_num > 0),
-    ADD CONSTRAINT chk_ltr_mixing_ratio_den
-        CHECK (mixing_ratio_den IS NULL OR mixing_ratio_den > 0);
+    ADD CONSTRAINT chk_ltr_mixing_ratio_pair CHECK (
+        (mixing_ratio_num IS NULL AND mixing_ratio_den IS NULL)
+        OR (
+            mixing_ratio_num IS NOT NULL
+            AND mixing_ratio_den IS NOT NULL
+            AND mixing_ratio_num > 0
+            AND mixing_ratio_den > 0
+        )
+    );
 
 COMMENT ON COLUMN line_technical_rule.developer_volume IS
-    'Additive typed column; original heterogeneous rule_value JSON is always preserved.';
+    'Additive typed column; salon volume convention (e.g. 10 = 10 vol). Original rule_value JSON is always preserved.';
 COMMENT ON COLUMN line_technical_rule.porosity_adjustment IS
     'JSONB adjustments keyed by porosity band, e.g. {"high": {"developer_volume_delta": -10}}.';
 
@@ -501,7 +517,6 @@ CREATE TRIGGER trg_hair_profile_updated_at
 CREATE TABLE formula (
     formula_id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     consultation_id         UUID NOT NULL REFERENCES consultation(consultation_id) ON DELETE RESTRICT,
-    brand_id                UUID NOT NULL REFERENCES brand(brand_id) ON DELETE RESTRICT,
     line_id                 UUID NOT NULL REFERENCES product_line(line_id) ON DELETE RESTRICT,
     recommendation_type     recommendation_type NOT NULL,
     status                  formula_status NOT NULL DEFAULT 'draft',
@@ -514,6 +529,9 @@ CREATE TABLE formula (
     is_favorite             BOOLEAN NOT NULL DEFAULT FALSE,
     CONSTRAINT chk_formula_risk_score CHECK (risk_score BETWEEN 0 AND 1)
 );
+
+COMMENT ON TABLE formula IS
+    'Brand is derived via formula.line_id -> product_line.brand_id; brand_id is not stored to prevent line/brand drift.';
 
 CREATE INDEX idx_formula_consultation
     ON formula (consultation_id, status);

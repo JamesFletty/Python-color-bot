@@ -49,7 +49,6 @@ class Brand(Base):
     formulation_rule_brands: Mapped[list["FormulationRuleBrand"]] = relationship(
         back_populates="brand"
     )
-    formulas: Mapped[list["Formula"]] = relationship(back_populates="brand")
 
 
 class ProductLine(Base):
@@ -174,7 +173,7 @@ class LineTechnicalRule(Base):
             name="chk_ltr_gray_coverage_pct",
         ),
         CheckConstraint(
-            "developer_volume IS NULL OR developer_volume IN (10, 20, 30, 40)",
+            "developer_volume IS NULL OR (developer_volume > 0 AND developer_volume <= 100)",
             name="chk_ltr_developer_volume",
         ),
         CheckConstraint(
@@ -186,12 +185,10 @@ class LineTechnicalRule(Base):
             name="chk_ltr_max_lift_levels",
         ),
         CheckConstraint(
-            "mixing_ratio_num IS NULL OR mixing_ratio_num > 0",
-            name="chk_ltr_mixing_ratio_num",
-        ),
-        CheckConstraint(
-            "mixing_ratio_den IS NULL OR mixing_ratio_den > 0",
-            name="chk_ltr_mixing_ratio_den",
+            "(mixing_ratio_num IS NULL AND mixing_ratio_den IS NULL) OR "
+            "(mixing_ratio_num IS NOT NULL AND mixing_ratio_den IS NOT NULL "
+            "AND mixing_ratio_num > 0 AND mixing_ratio_den > 0)",
+            name="chk_ltr_mixing_ratio_pair",
         ),
     )
 
@@ -657,9 +654,6 @@ class Formula(Base):
         ForeignKey("consultation.consultation_id", ondelete="RESTRICT"),
         nullable=False,
     )
-    brand_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("brand.brand_id", ondelete="RESTRICT"), nullable=False
-    )
     line_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True),
         ForeignKey("product_line.line_id", ondelete="RESTRICT"),
@@ -687,7 +681,6 @@ class Formula(Base):
     is_favorite: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
 
     consultation: Mapped["Consultation"] = relationship(back_populates="formulas")
-    brand: Mapped["Brand"] = relationship(back_populates="formulas")
     product_line: Mapped["ProductLine"] = relationship(back_populates="formulas")
     steps: Mapped[list["FormulaStep"]] = relationship(
         back_populates="formula", cascade="all, delete-orphan"
