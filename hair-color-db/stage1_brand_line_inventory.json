@@ -1,0 +1,1435 @@
+{
+  "brand_line_inventory": [
+    {
+      "canonical_key": "Redken::Shades EQ::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "Shades EQ",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redkenpro.com",
+      "official_line_url": "https://www.redkenpro.com/haircolor/shades-eq",
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Shades ALK::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "Shades ALK",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redkenpro.com",
+      "official_line_url": "https://www.redkenpro.com/haircolor/shades-alk",
+      "notes": [
+        "Alkaline-free demi-permanent line listed in RedkenPro haircolor navigation."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "Color Gels Lacquers",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redkenpro.com",
+      "official_line_url": "https://www.redkenpro.com/haircolor/color-gels",
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Chromatics::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "Chromatics",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redkenpro.com",
+      "official_line_url": "https://www.redkenpro.com/haircolor/chromatics",
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Color Fusion::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "Color Fusion",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redkenpro.com",
+      "official_line_url": "https://www.redkenpro.com/haircolor/color-fusion",
+      "notes": [
+        "Still listed in RedkenPro navigation; discontinuation not confirmed in this pass."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Blonde IQ::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "Blonde IQ",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redkenpro.com",
+      "official_line_url": "https://www.redkenpro.com/haircolor/blonde-iq",
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Blonde Idol::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "Blonde Idol",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redkenpro.com",
+      "official_line_url": "https://www.redkenpro.com/haircolor/blonde-idol",
+      "notes": []
+    },
+    {
+      "canonical_key": "Redken::Lighteners::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "Lighteners",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.redkenpro.com",
+      "official_line_url": "https://www.redkenpro.com/haircolor/lighteners",
+      "notes": [
+        "Category hub for Redken lightening products."
+      ]
+    },
+    {
+      "canonical_key": "Wella::Koleston Perfect::US",
+      "brand_name": "Wella",
+      "parent_company": "Wella Company",
+      "product_line_name": "Koleston Perfect",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": null,
+      "notes": [
+        "Listed in Wella Professional navigation payload."
+      ]
+    },
+    {
+      "canonical_key": "Wella::Koleston Xpress::US",
+      "brand_name": "Wella",
+      "parent_company": "Wella Company",
+      "product_line_name": "Koleston Xpress",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": null,
+      "notes": [
+        "Listed in Wella Professional navigation payload."
+      ]
+    },
+    {
+      "canonical_key": "Wella::Illumina Color::US",
+      "brand_name": "Wella",
+      "parent_company": "Wella Company",
+      "product_line_name": "Illumina Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": null,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella::Color Touch::US",
+      "brand_name": "Wella",
+      "parent_company": "Wella Company",
+      "product_line_name": "Color Touch",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": null,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella::Shinefinity::US",
+      "brand_name": "Wella",
+      "parent_company": "Wella Company",
+      "product_line_name": "Shinefinity",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": null,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella::Blondor::US",
+      "brand_name": "Wella",
+      "parent_company": "Wella Company",
+      "product_line_name": "Blondor",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": null,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella::Color Fresh Create::US",
+      "brand_name": "Wella",
+      "parent_company": "Wella Company",
+      "product_line_name": "Color Fresh Create",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": null,
+      "notes": [
+        "Semi/direct creative line per Wella navigation label."
+      ]
+    },
+    {
+      "canonical_key": "Wella::Color Fresh Masks::US",
+      "brand_name": "Wella",
+      "parent_company": "Wella Company",
+      "product_line_name": "Color Fresh Masks",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": null,
+      "notes": [
+        "Semi/direct mask line per Wella navigation label."
+      ]
+    },
+    {
+      "canonical_key": "Wella::Wella Color Charm::US",
+      "brand_name": "Wella",
+      "parent_company": "Wella Company",
+      "product_line_name": "Wella Color Charm",
+      "line_category": "mixed_system",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.wella.com/professional/en-US",
+      "official_line_url": null,
+      "notes": [
+        "Present in Wella Professional navigation; may include pro/retail crossover SKUs."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA Royal::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA Royal",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora.html",
+      "notes": [
+        "Core permanent line family; includes multiple sub-ranges on IGORA hub."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA Zero Amm::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA Zero Amm",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora/zero-amm.html",
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA Vibrance::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA Vibrance",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora/vibrance.html",
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA Color10::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA Color10",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora.html",
+      "notes": [
+        "10-minute permanent service line on IGORA hub."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA Royal Absolutes::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA Royal Absolutes",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora/absolutes.html",
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA Royal Highlifts::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA Royal Highlifts",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora.html",
+      "notes": [
+        "Highlift range within IGORA Royal family."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA Royal Fashion Lights::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA Royal Fashion Lights",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora.html",
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA Royal Silver Whites::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA Royal Silver Whites",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora.html",
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA Vario Blond::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "IGORA Vario Blond",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora.html",
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::BLONDME Color::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "BLONDME Color",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/blondme-color.html",
+      "notes": [
+        "Integrated lightening/color system for blonde services."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::BLONDME Glow Toners::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "BLONDME Glow Toners",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/blondme-color.html",
+      "notes": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::Chroma ID::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "Chroma ID",
+      "line_category": "mixed_system",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color/igora.html",
+      "notes": [
+        "Bonding/customizer system referenced in Schwarzkopf color navigation."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::Goodbye Yellow::US",
+      "brand_name": "Schwarzkopf Professional",
+      "parent_company": "Henkel",
+      "product_line_name": "Goodbye Yellow",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "official_line_url": "https://www.schwarzkopf-professional.com/us/en/color.html",
+      "notes": [
+        "Neutralizing/yellow-canceling system in color navigation."
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation",
+      "product_line_name": "Topchic",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com/en-us/products/hair-color/",
+      "official_line_url": "https://www.goldwell.com/en-us/products/hair-color/permanent/topchic/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic Zero::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation",
+      "product_line_name": "Topchic Zero",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com/en-us/products/hair-color/",
+      "official_line_url": "https://www.goldwell.com/en-us/products/hair-color/permanent/topchic-zero/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Goldwell::Elumen::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation",
+      "product_line_name": "Elumen",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com/en-us/products/hair-color/",
+      "official_line_url": "https://www.goldwell.com/en-us/products/hair-color/permanent/elumen/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation",
+      "product_line_name": "Colorance",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com/en-us/products/hair-color/",
+      "official_line_url": "https://www.goldwell.com/en-us/products/hair-color/demi-permanent/colorance/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Goldwell::Light Dimensions::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation",
+      "product_line_name": "Light Dimensions",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com/en-us/products/hair-color/",
+      "official_line_url": "https://www.goldwell.com/en-us/products/hair-color/lightener/lightdimensions/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Goldwell::System::US",
+      "brand_name": "Goldwell",
+      "parent_company": "Kao Corporation",
+      "product_line_name": "System",
+      "line_category": "mixed_system",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.goldwell.com/en-us/products/hair-color/",
+      "official_line_url": "https://www.goldwell.com/en-us/products/hair-color/assisting/system/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "SoColor",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": "https://www.matrix.com/professional/haircolor/socolor",
+      "notes": [
+        "Permanent oxidative color; Matrix describes matched permanent/demi system."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "SoColor Sync",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": "https://www.matrix.com/professional/haircolor/socolor-sync",
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "Super Sync",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": "https://www.matrix.com/professional/haircolor/supersync",
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Tonal Control::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "Tonal Control",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": "https://www.matrix.com/professional/haircolor/tonal-control",
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Light Master::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "Light Master",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": "https://www.matrix.com/professional/haircolor/light-master",
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::BlondeMax::US",
+      "brand_name": "Matrix",
+      "parent_company": "L'Or\u00e9al Professionnel",
+      "product_line_name": "BlondeMax",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.matrix.com",
+      "official_line_url": "https://www.matrix.com/professional/haircolor/blonde-max",
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand_name": "Pravana",
+      "parent_company": "Wella Company",
+      "product_line_name": "ChromaSilk Creme Color",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/permanent/chromasilk-creme-color-dark-intense-brown/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk HydraGloss::US",
+      "brand_name": "Pravana",
+      "parent_company": "Wella Company",
+      "product_line_name": "ChromaSilk HydraGloss",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/demi-permanent/chromasilk-hydragloss/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Original::US",
+      "brand_name": "Pravana",
+      "parent_company": "Wella Company",
+      "product_line_name": "ChromaSilk VIVIDS Original",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/semi-permanent/chromasilk-vivids-original/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Pastels::US",
+      "brand_name": "Pravana",
+      "parent_company": "Wella Company",
+      "product_line_name": "ChromaSilk VIVIDS Pastels",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/semi-permanent/chromasilk-vivids-pastels/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Neons::US",
+      "brand_name": "Pravana",
+      "parent_company": "Wella Company",
+      "product_line_name": "ChromaSilk VIVIDS Neons",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/semi-permanent/chromasilk-vivids-neons/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand_name": "Pravana",
+      "parent_company": "Wella Company",
+      "product_line_name": "ChromaSilk VIVIDS Everlasting",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/semi-permanent/chromasilk-vivids-everlasting/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk HI LIFTS::US",
+      "brand_name": "Pravana",
+      "parent_company": "Wella Company",
+      "product_line_name": "ChromaSilk HI LIFTS",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/permanent/chromasilk-hi-lifts/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand_name": "Pravana",
+      "parent_company": "Wella Company",
+      "product_line_name": "ChromaSilk Express Tones",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/demi-permanent/chromasilk-express-tones/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Platinum Toner::US",
+      "brand_name": "Pravana",
+      "parent_company": "Wella Company",
+      "product_line_name": "ChromaSilk Platinum Toner",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/demi-permanent/chromasilk-platinum-toner/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::Pure Light::US",
+      "brand_name": "Pravana",
+      "parent_company": "Wella Company",
+      "product_line_name": "Pure Light",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": "https://www.pravana.com/products/color/lightener/pure-light/",
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::The Perfect Blonde::US",
+      "brand_name": "Pravana",
+      "parent_company": "Wella Company",
+      "product_line_name": "The Perfect Blonde",
+      "line_category": "toner",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pravana.com",
+      "official_line_url": null,
+      "notes": [
+        "Referenced on PRAVANA color category copy; dedicated line URL not resolved in this pass."
+      ]
+    },
+    {
+      "canonical_key": "Kenra::Kenra Color Permanent::US",
+      "brand_name": "Kenra",
+      "parent_company": "Henkel",
+      "product_line_name": "Kenra Color Permanent",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.kenraprofessional.com",
+      "official_line_url": "https://www.kenraprofessional.com/color-list?filter=permanent",
+      "notes": [
+        "Color-list filter=permanent on Kenra Professional site."
+      ]
+    },
+    {
+      "canonical_key": "Kenra::Kenra Demi-Permanent::US",
+      "brand_name": "Kenra",
+      "parent_company": "Henkel",
+      "product_line_name": "Kenra Demi-Permanent",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.kenraprofessional.com",
+      "official_line_url": "https://www.kenraprofessional.com/color-list?filter=demi-permanent",
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra::Kenra Simply Blonde::US",
+      "brand_name": "Kenra",
+      "parent_company": "Henkel",
+      "product_line_name": "Kenra Simply Blonde",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.kenraprofessional.com",
+      "official_line_url": "https://www.kenraprofessional.com/color-list?filter=simply-blonde",
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra::Kenra Studio Stylist Express::US",
+      "brand_name": "Kenra",
+      "parent_company": "Henkel",
+      "product_line_name": "Kenra Studio Stylist Express",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.kenraprofessional.com",
+      "official_line_url": "https://www.kenraprofessional.com/color-list?filter=studio-stylist",
+      "notes": [
+        "Kenra Color Pro page references 10-minute permanent color."
+      ]
+    },
+    {
+      "canonical_key": "Kenra::Kenra Lighteners::US",
+      "brand_name": "Kenra",
+      "parent_company": "Henkel",
+      "product_line_name": "Kenra Lighteners",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.kenraprofessional.com",
+      "official_line_url": "https://www.kenraprofessional.com/color-list?filter=lighteners",
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Or\u00e9al Professionnel::Majirel::US",
+      "brand_name": "L'Or\u00e9al Professionnel",
+      "parent_company": "L'Or\u00e9al",
+      "product_line_name": "Majirel",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": "https://us.lorealprofessionnel.com/all-products/hair-color/majirel",
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Or\u00e9al Professionnel::INOA::US",
+      "brand_name": "L'Or\u00e9al Professionnel",
+      "parent_company": "L'Or\u00e9al",
+      "product_line_name": "INOA",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": "https://us.lorealprofessionnel.com/all-products/hair-color/inoa",
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Or\u00e9al Professionnel::Dia Color::US",
+      "brand_name": "L'Or\u00e9al Professionnel",
+      "parent_company": "L'Or\u00e9al",
+      "product_line_name": "Dia Color",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": "https://us.lorealprofessionnel.com/all-products/hair-color/dia-color",
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Or\u00e9al Professionnel::Dia Light::US",
+      "brand_name": "L'Or\u00e9al Professionnel",
+      "parent_company": "L'Or\u00e9al",
+      "product_line_name": "Dia Light",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": "https://us.lorealprofessionnel.com/all-products/hair-color/dia-light",
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Or\u00e9al Professionnel::Blond Studio::US",
+      "brand_name": "L'Or\u00e9al Professionnel",
+      "parent_company": "L'Or\u00e9al",
+      "product_line_name": "Blond Studio",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://us.lorealprofessionnel.com",
+      "official_line_url": "https://us.lorealprofessionnel.com/all-products/hair-color/blond-studio",
+      "notes": []
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Permanent::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": null,
+      "product_line_name": "Permanent",
+      "line_category": "permanent",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/permanent",
+      "notes": [
+        "US purchase routed to CosmoProf per site banner; mydentitycolor.com is official brand site."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Demi-Permanent::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": null,
+      "product_line_name": "Demi-Permanent",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/demi-permanent",
+      "notes": [
+        "US purchase routed to CosmoProf per site banner; mydentitycolor.com is official brand site."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Liquid Demi::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": null,
+      "product_line_name": "Liquid Demi",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/liquid-demi-permanent",
+      "notes": [
+        "US purchase routed to CosmoProf per site banner; mydentitycolor.com is official brand site."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::X-Press Toners::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": null,
+      "product_line_name": "X-Press Toners",
+      "line_category": "toner",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/x-press-toners",
+      "notes": [
+        "US purchase routed to CosmoProf per site banner; mydentitycolor.com is official brand site."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Super Power Direct Dye::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": null,
+      "product_line_name": "Super Power Direct Dye",
+      "line_category": "direct_dye",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/direct-dyes",
+      "notes": [
+        "US purchase routed to CosmoProf per site banner; mydentitycolor.com is official brand site."
+      ]
+    },
+    {
+      "canonical_key": "Guy Tang #mydentity::Lightening::US",
+      "brand_name": "Guy Tang #mydentity",
+      "parent_company": null,
+      "product_line_name": "Lightening",
+      "line_category": "lightener",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://mydentitycolor.com",
+      "official_line_url": "https://mydentitycolor.com/lightening",
+      "notes": [
+        "US purchase routed to CosmoProf per site banner; mydentitycolor.com is official brand site."
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Demi::US",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "The Demi",
+      "line_category": "demi",
+      "apparent_status": "active",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": "https://www.paulmitchell.com/products/the-demi-color-gloss",
+      "notes": []
+    },
+    {
+      "canonical_key": "Paul Mitchell::Color XG::US",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "Color XG",
+      "line_category": "unknown",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": "https://www.paulmitchell.com/pages/professional-hair-color",
+      "notes": [
+        "Search on paulmitchell.com returns Color XG matches but no official line hub URL verified."
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::The Color::US",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "The Color",
+      "line_category": "unknown",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": "https://www.paulmitchell.com/pages/professional-hair-color",
+      "notes": [
+        "Referenced in professional color marketing; dedicated official line URL not verified on paulmitchell.com."
+      ]
+    },
+    {
+      "canonical_key": "Paul Mitchell::PM Shines::US",
+      "brand_name": "Paul Mitchell",
+      "parent_company": "John Paul Mitchell Systems",
+      "product_line_name": "PM Shines",
+      "line_category": "unknown",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.paulmitchell.com",
+      "official_line_url": "https://www.paulmitchell.com/pages/professional-hair-color",
+      "notes": [
+        "Professional demi-gloss line commonly distributed; official line URL not verified in this pass."
+      ]
+    },
+    {
+      "canonical_key": "Joico::Vero K-Pak Color::US",
+      "brand_name": "Joico",
+      "parent_company": "Kao Corporation",
+      "product_line_name": "Vero K-Pak Color",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Joico::LumiShine::US",
+      "brand_name": "Joico",
+      "parent_company": "Kao Corporation",
+      "product_line_name": "LumiShine",
+      "line_category": "demi",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Joico::Color Intensity::US",
+      "brand_name": "Joico",
+      "parent_company": "Kao Corporation",
+      "product_line_name": "Color Intensity",
+      "line_category": "direct_dye",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Joico::Blonde Life::US",
+      "brand_name": "Joico",
+      "parent_company": "Kao Corporation",
+      "product_line_name": "Blonde Life",
+      "line_category": "lightener",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.joico.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Davines::Mask with Vibrachrom::US",
+      "brand_name": "Davines",
+      "parent_company": "Davines Group",
+      "product_line_name": "Mask with Vibrachrom",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.davines.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Davines::Finest Pigments::US",
+      "brand_name": "Davines",
+      "parent_company": "Davines Group",
+      "product_line_name": "Finest Pigments",
+      "line_category": "direct_dye",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.davines.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Davines::A New Colour::US",
+      "brand_name": "Davines",
+      "parent_company": "Davines Group",
+      "product_line_name": "A New Colour",
+      "line_category": "direct_dye",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.davines.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Keune::Tinta Color::US",
+      "brand_name": "Keune",
+      "parent_company": "Keune Haircosmetics",
+      "product_line_name": "Tinta Color",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.keune.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Keune::Semi Color::US",
+      "brand_name": "Keune",
+      "parent_company": "Keune Haircosmetics",
+      "product_line_name": "Semi Color",
+      "line_category": "demi",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.keune.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Keune::You Zen::US",
+      "brand_name": "Keune",
+      "parent_company": "Keune Haircosmetics",
+      "product_line_name": "You Zen",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.keune.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Keune::So Pure Color::US",
+      "brand_name": "Keune",
+      "parent_company": "Keune Haircosmetics",
+      "product_line_name": "So Pure Color",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.keune.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Framcolor 2001::US",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi",
+      "product_line_name": "Framcolor 2001",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.framesi.us",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Eclectic::US",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi",
+      "product_line_name": "Eclectic",
+      "line_category": "direct_dye",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.framesi.us",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Framesi::Framcolor Bold::US",
+      "brand_name": "Framesi",
+      "parent_company": "Framesi",
+      "product_line_name": "Framcolor Bold",
+      "line_category": "direct_dye",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.framesi.us",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Alfaparf Milano::Evolution of the Color::US",
+      "brand_name": "Alfaparf Milano",
+      "parent_company": "Alfaparf Group",
+      "product_line_name": "Evolution of the Color",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.alfaparfmilano.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Alfaparf Milano::Color Wear::US",
+      "brand_name": "Alfaparf Milano",
+      "parent_company": "Alfaparf Group",
+      "product_line_name": "Color Wear",
+      "line_category": "demi",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.alfaparfmilano.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum::US",
+      "brand_name": "Aveda",
+      "parent_company": "Est\u00e9e Lauder Companies",
+      "product_line_name": "Full Spectrum",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.aveda.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Deep::US",
+      "brand_name": "Aveda",
+      "parent_company": "Est\u00e9e Lauder Companies",
+      "product_line_name": "Full Spectrum Deep",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.aveda.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Demi+::US",
+      "brand_name": "Aveda",
+      "parent_company": "Est\u00e9e Lauder Companies",
+      "product_line_name": "Full Spectrum Demi+",
+      "line_category": "demi",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.aveda.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Aveda::Enlighten::US",
+      "brand_name": "Aveda",
+      "parent_company": "Est\u00e9e Lauder Companies",
+      "product_line_name": "Enlighten",
+      "line_category": "lightener",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.aveda.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Rusk::Elixir::US",
+      "brand_name": "Rusk",
+      "parent_company": "Beauty Systems Group",
+      "product_line_name": "Elixir",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.ruskhair.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Rusk::In10sity::US",
+      "brand_name": "Rusk",
+      "parent_company": "Beauty Systems Group",
+      "product_line_name": "In10sity",
+      "line_category": "direct_dye",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.ruskhair.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Rusk::Deepshine::US",
+      "brand_name": "Rusk",
+      "parent_company": "Beauty Systems Group",
+      "product_line_name": "Deepshine",
+      "line_category": "demi",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.ruskhair.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Color Complete::US",
+      "brand_name": "Moroccanoil Professional",
+      "parent_company": "Moroccanoil",
+      "product_line_name": "Color Complete",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.moroccanoil.com/professional",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Calura Gloss::US",
+      "brand_name": "Moroccanoil Professional",
+      "parent_company": "Moroccanoil",
+      "product_line_name": "Calura Gloss",
+      "line_category": "toner",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.moroccanoil.com/professional",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand_name": "Pulp Riot",
+      "parent_company": "Wella Company",
+      "product_line_name": "Semi-Permanent",
+      "line_category": "direct_dye",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pulp-riot.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Pulp Riot::Faction8::US",
+      "brand_name": "Pulp Riot",
+      "parent_company": "Wella Company",
+      "product_line_name": "Faction8",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pulp-riot.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Pulp Riot::Toners::US",
+      "brand_name": "Pulp Riot",
+      "parent_company": "Wella Company",
+      "product_line_name": "Toners",
+      "line_category": "toner",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pulp-riot.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Pulp Riot::Lift::US",
+      "brand_name": "Pulp Riot",
+      "parent_company": "Wella Company",
+      "product_line_name": "Lift",
+      "line_category": "lightener",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://www.pulp-riot.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Danger Jones::Permanent Hair Color::US",
+      "brand_name": "Danger Jones",
+      "parent_company": null,
+      "product_line_name": "Permanent Hair Color",
+      "line_category": "permanent",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://dangerjones.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Danger Jones::Semi-Permanent::US",
+      "brand_name": "Danger Jones",
+      "parent_company": null,
+      "product_line_name": "Semi-Permanent",
+      "line_category": "direct_dye",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://dangerjones.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    },
+    {
+      "canonical_key": "Danger Jones::Bleach::US",
+      "brand_name": "Danger Jones",
+      "parent_company": null,
+      "product_line_name": "Bleach",
+      "line_category": "lightener",
+      "apparent_status": "unclear",
+      "region_or_market": "US",
+      "official_brand_url": "https://dangerjones.com",
+      "official_line_url": null,
+      "notes": [
+        "Official site blocked, unavailable, or line URL not verified in automated pass."
+      ]
+    }
+  ],
+  "issue_log": [
+    {
+      "item": "Joico",
+      "issue_type": "access_blocked",
+      "details": "joico.com returned HTTP 403 for professional color and sitemap URLs from research environment."
+    },
+    {
+      "item": "Aveda",
+      "issue_type": "access_blocked",
+      "details": "aveda.com hair-color paths returned HTTP 403."
+    },
+    {
+      "item": "L'Or\u00e9al Professionnel (lorealprofessionnel.com)",
+      "issue_type": "access_unavailable",
+      "details": "Primary .com domain returned empty/404; inventory used us.lorealprofessionnel.com navigation."
+    },
+    {
+      "item": "Wella",
+      "issue_type": "source_partial",
+      "details": "Dedicated hair-color landing URLs returned 404; line names extracted from embedded Next.js navigation payload on 404 template."
+    },
+    {
+      "item": "Paul Mitchell",
+      "issue_type": "line_verification_gap",
+      "details": "Consumer site confirms The Demi product; other pro lines (Color XG, The Color, PM Shines) not mapped to official line hubs."
+    },
+    {
+      "item": "Pulp Riot",
+      "issue_type": "access_blocked",
+      "details": "pulp-riot.com connection reset; pulpriot.com redirected to Facebook."
+    },
+    {
+      "item": "Danger Jones",
+      "issue_type": "access_unavailable",
+      "details": "dangerjones.com SSL/connection failures from research environment."
+    },
+    {
+      "item": "Framesi",
+      "issue_type": "source_conflict",
+      "details": "framesi.com resolved to unrelated content in one fetch; framesi.us returned minimal placeholder response."
+    },
+    {
+      "item": "Kenra color-list filters",
+      "issue_type": "client_render_gap",
+      "details": "Gatsby color-list pages did not expose shade/product JSON in static HTML; lines inferred from filter parameters and pro pages only."
+    },
+    {
+      "item": "Non-seed professional brands",
+      "issue_type": "coverage_gap",
+      "details": "Seed-brand pass complete; additional pro brands (e.g., Chi, Scruples, Milk Shake) not inventoried in this stage."
+    }
+  ],
+  "completion_status": "partial"
+}
