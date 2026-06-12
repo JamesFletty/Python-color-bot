@@ -1,6 +1,6 @@
 {
   "artifact": "tone_normalization_map",
-  "count": 353,
+  "count": 444,
   "tone_normalization_map": [
     {
       "canonical_key": "Redken::Color Gels Lacquers::US",
@@ -5426,6 +5426,1311 @@
       "mapping_rationale": "W=Warm (no printed letter legend; W inferred as Warm from NW/WN family convention — flagged)",
       "mapping_confidence": "medium",
       "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "02",
+      "manufacturer_term": "Sheer Beige",
+      "normalized_tones": [
+        "Beige"
+      ],
+      "mapping_rationale": "10.02: 'sheer beige base' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "03",
+      "manufacturer_term": "Gold Beige",
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "mapping_rationale": "inferred from Beige/Gold family wording on related shades — flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "07",
+      "manufacturer_term": "Sheer Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "10.07: 'cool violet base' / Violet (.7) family (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "08",
+      "manufacturer_term": "Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "Pearl series: 'softer silver and pink balanced hues' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "1",
+      "manufacturer_term": "Ash",
+      "normalized_tones": [
+        "Ash",
+        "Green",
+        "Cool"
+      ],
+      "mapping_rationale": "Ash Family: 'cool green base' (printed on Ash family product pages)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "11",
+      "manufacturer_term": "Intense Ash",
+      "normalized_tones": [
+        "Ash",
+        "Green",
+        "Cool"
+      ],
+      "mapping_rationale": "Intense Ash family: 'cool double green base with 200% cool green tonal value' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "12",
+      "manufacturer_term": "Ash + Beige",
+      "normalized_tones": [
+        "Ash",
+        "Beige"
+      ],
+      "mapping_rationale": "9.12: '70% Ash 30% Beige' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "13",
+      "manufacturer_term": "Ash + Gold",
+      "normalized_tones": [
+        "Ash",
+        "Gold"
+      ],
+      "mapping_rationale": "Ash family + gold tonal descriptions on related shades — partially confirmed",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "20",
+      "manufacturer_term": "Intense Beige",
+      "normalized_tones": [
+        "Beige"
+      ],
+      "mapping_rationale": "4.20 / bright beige descriptions on product pages",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "22",
+      "manufacturer_term": "Intense Beige",
+      "normalized_tones": [
+        "Beige"
+      ],
+      "mapping_rationale": "x.22 intense beige wording on product pages",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "23",
+      "manufacturer_term": "Beige + Gold",
+      "normalized_tones": [
+        "Beige",
+        "Gold"
+      ],
+      "mapping_rationale": "6.23 beige golden descriptions",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "3",
+      "manufacturer_term": "Gold",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Chocolate/Gold family pages: gold tonal value percentages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "31",
+      "manufacturer_term": "Gold + Ash",
+      "normalized_tones": [
+        "Gold",
+        "Ash"
+      ],
+      "mapping_rationale": "x.31: '70% Gold and 30% Ash' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "34",
+      "manufacturer_term": "Gold + Copper",
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "x.34: '70% Gold and 30% Copper' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "35",
+      "manufacturer_term": "Gold + Mahogany",
+      "normalized_tones": [
+        "Gold",
+        "Mahogany"
+      ],
+      "mapping_rationale": "6.35: '70% Gold and 30% Mahogany' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "37",
+      "manufacturer_term": "Gold + Violet",
+      "normalized_tones": [
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "4.37: '70% Gold and 30% Violet' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "4",
+      "manufacturer_term": "Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Copper family: 'blended orange base' / 100% copper tonal value",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "40",
+      "manufacturer_term": "Bright Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "7.40: 'bright Copper' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "43",
+      "manufacturer_term": "Copper + Gold",
+      "normalized_tones": [
+        "Copper",
+        "Gold"
+      ],
+      "mapping_rationale": "x.43: '70% copper and 30% Gold' / Copper+Gold variants (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "44",
+      "manufacturer_term": "Intense Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "7.44: '200% Copper for intense copper' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "45",
+      "manufacturer_term": "Copper + Mahogany",
+      "normalized_tones": [
+        "Copper",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Rich Copper Family: '70% Copper and 30% Mahogany' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "46",
+      "manufacturer_term": "Copper + Red",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "x.46: '70% Copper and 30% Red' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "5",
+      "manufacturer_term": "Mahogany",
+      "normalized_tones": [
+        "Mahogany",
+        "Red"
+      ],
+      "mapping_rationale": "Chocolate family blends with Mahogany percentages on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "52",
+      "manufacturer_term": "Mahogany + Beige",
+      "normalized_tones": [
+        "Mahogany",
+        "Beige"
+      ],
+      "mapping_rationale": "mahogany beige descriptions on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "56",
+      "manufacturer_term": "Mahogany + Red",
+      "normalized_tones": [
+        "Mahogany",
+        "Red"
+      ],
+      "mapping_rationale": "mahogany red descriptions on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "6",
+      "manufacturer_term": "Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Red family positioning on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "62",
+      "manufacturer_term": "Red + Beige",
+      "normalized_tones": [
+        "Red",
+        "Beige"
+      ],
+      "mapping_rationale": "x.62: '70% Red and 30% Beige' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "64",
+      "manufacturer_term": "Red + Copper",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "x.64: '70% Red and 30% Copper' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "66",
+      "manufacturer_term": "Intense Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "4.66 intense red descriptions on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "7",
+      "manufacturer_term": "Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Violet family / violet tonal descriptions on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "72",
+      "manufacturer_term": "Violet + Beige",
+      "normalized_tones": [
+        "Violet",
+        "Beige"
+      ],
+      "mapping_rationale": "10.72: '100% Violet and 30% Beige' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "77",
+      "manufacturer_term": "Deep Chroma series",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Deep Chroma Collection positioning on product pages; exact pigment split not stated per shade — flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "8",
+      "manufacturer_term": "Pearl/Mocha",
+      "normalized_tones": [
+        "Pearl",
+        "Mocha"
+      ],
+      "mapping_rationale": "Pearl series description on product pages; Mocha used for brunette mocha series — flagged ambiguous",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "91",
+      "manufacturer_term": "Metallic finish series",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "10.91: 'metallic finish on level 10 and grey hair' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "92",
+      "manufacturer_term": "Smokey Beige",
+      "normalized_tones": [
+        "Beige",
+        "Neutral"
+      ],
+      "mapping_rationale": "5.92/8.92: 'Smokey Beige' neutralizing tone (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "99",
+      "manufacturer_term": "Intense series",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "3.99 intense series — exact tone name varies; flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "After Dark Mahogany",
+      "manufacturer_term": "After Dark Mahogany",
+      "normalized_tones": [
+        "Mahogany"
+      ],
+      "mapping_rationale": "printed shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "After Dark Neutral Ash",
+      "manufacturer_term": "After Dark Neutral Ash",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "printed shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "After Dark Neutral Pearl",
+      "manufacturer_term": "After Dark Neutral Pearl",
+      "normalized_tones": [
+        "Neutral",
+        "Pearl"
+      ],
+      "mapping_rationale": "printed shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Ash",
+      "manufacturer_term": "Ash — cool/green base",
+      "normalized_tones": [
+        "Ash",
+        "Green",
+        "Cool"
+      ],
+      "mapping_rationale": "meta: 'cool/green base' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Beige",
+      "manufacturer_term": "Beige",
+      "normalized_tones": [
+        "Beige"
+      ],
+      "mapping_rationale": "shade name as printed",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Clear",
+      "manufacturer_term": "Clear",
+      "normalized_tones": [],
+      "mapping_rationale": "non-pigmented diluter",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Pearl",
+      "manufacturer_term": "Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "shade name as printed",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Rose Gold",
+      "manufacturer_term": "Rose Gold",
+      "normalized_tones": [
+        "Gold",
+        "Copper",
+        "Warm"
+      ],
+      "mapping_rationale": "shade name; Gold/Copper inferred — flagged",
+      "mapping_confidence": "high",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Smokey Silver",
+      "manufacturer_term": "Smokey Silver",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "functional name; Silver not in taxonomy",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Violet",
+      "manufacturer_term": "Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name as printed",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "All Nighter",
+      "manufacturer_term": "All Nighter",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Aquamarine",
+      "manufacturer_term": "Aquamarine",
+      "normalized_tones": [
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Bewitching Blue",
+      "manufacturer_term": "Bewitching Blue",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Black",
+      "manufacturer_term": "Black",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye black",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Blissful Blue",
+      "manufacturer_term": "Blissful Blue",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Blue",
+      "manufacturer_term": "Blue",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Blue Topaz",
+      "manufacturer_term": "Blue Topaz",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Clear Dilute",
+      "manufacturer_term": "Clear Dilute",
+      "normalized_tones": [],
+      "mapping_rationale": "diluter/clear",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Clear Pastel",
+      "manufacturer_term": "Clear Pastel",
+      "normalized_tones": [],
+      "mapping_rationale": "diluter/clear",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Crush",
+      "manufacturer_term": "Crush",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Emerald",
+      "manufacturer_term": "Emerald",
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Enchanted Pink",
+      "manufacturer_term": "Enchanted Pink",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Flame",
+      "manufacturer_term": "Flame",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Garnet",
+      "manufacturer_term": "Garnet",
+      "normalized_tones": [
+        "Red",
+        "Mahogany"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Grape",
+      "manufacturer_term": "Grape",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Green",
+      "manufacturer_term": "Green",
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Juicy",
+      "manufacturer_term": "Juicy",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Luscious Lavender",
+      "manufacturer_term": "Luscious Lavender",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Magenta",
+      "manufacturer_term": "Magenta",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Mystic Magenta",
+      "manufacturer_term": "Mystic Magenta",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Neon Blue",
+      "manufacturer_term": "Neon Blue",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Neon Green",
+      "manufacturer_term": "Neon Green",
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Neon Orange",
+      "manufacturer_term": "Neon Orange",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Neon Pink",
+      "manufacturer_term": "Neon Pink",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Neon Yellow",
+      "manufacturer_term": "Neon Yellow",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Orange",
+      "manufacturer_term": "Orange",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Pastel Potion",
+      "manufacturer_term": "Pastel Potion",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Periwinkle",
+      "manufacturer_term": "Periwinkle",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Pink",
+      "manufacturer_term": "Pink",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Poison Berry",
+      "manufacturer_term": "Poison Berry",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Pretty In Pink",
+      "manufacturer_term": "Pretty In Pink",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Purple Tourmaline",
+      "manufacturer_term": "Purple Tourmaline",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Red",
+      "manufacturer_term": "Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Sangria",
+      "manufacturer_term": "Sangria",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Scarlette Red",
+      "manufacturer_term": "Scarlette Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Silver",
+      "manufacturer_term": "Silver",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "Silver not in taxonomy",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Smokey Silver",
+      "manufacturer_term": "Smokey Silver",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "Silver not in taxonomy",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Smokey Violet",
+      "manufacturer_term": "Smokey Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Sunstone",
+      "manufacturer_term": "Sunstone",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Tempted",
+      "manufacturer_term": "Tempted",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Too Cute Coral",
+      "manufacturer_term": "Too Cute Coral",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Violet",
+      "manufacturer_term": "Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Violet Reign",
+      "manufacturer_term": "Violet Reign",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Wild Orchid",
+      "manufacturer_term": "Wild Orchid",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Yellow",
+      "manufacturer_term": "Yellow",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
       "notes": []
     }
   ],

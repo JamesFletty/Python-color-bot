@@ -13,7 +13,7 @@ built for formula generation, formula conversion, and multi-brand mapping.
 | Normalized shade records | 1,251 |
 | Manufacturer tone reference rows | 447 |
 | Tone normalization mappings | 444 |
-| Line technical records (Batch 3 add) | +5 (3 Pravana + 2 Goldwell) |
+| Line technical records | 15 |
 
 Extracted batches:
 
@@ -69,6 +69,7 @@ python3 hair_color_db/tools/build_stages_6_to_9_batch01.py
 python3 hair_color_db/tools/build_stages_6_to_9_batch02.py
 python3 hair_color_db/tools/build_batch03_stages_4_5.py
 python3 hair_color_db/tools/build_stages_6_to_9_batch03.py
+python3 hair_color_db/tools/integrate_batch03_into_stage12.py
 ```
 
 Both scripts are pure functions of the committed Stage 4–5 raw files.
