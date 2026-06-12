@@ -9,18 +9,24 @@ built for formula generation, formula conversion, and multi-brand mapping.
 |---|---|
 | Brands inventoried (Stage 1) | 20 seed brands, 133 product lines |
 | Sources cataloged (Stage 2) | 152 (Tier 1 official prioritized) |
-| Lines with shade-level extraction (Stages 4–9) | 10 lines / 5 brands |
-| Normalized shade records | 1,112 |
-| Manufacturer tone reference rows | 356 |
-| Tone normalization mappings | 353 (8 codes explicitly unresolved) |
+| Lines with shade-level extraction (Stages 4–9) | 19 lines / 9 brands |
+| Normalized shade records | 1,479 |
+| Manufacturer tone reference rows | 547 |
+| Tone normalization mappings | 544 |
+| Line technical records | 23 |
 
 Extracted batches:
 
 - **Batch 1** — Redken (Shades EQ Gloss, Color Gels Lacquers), Wella Professionals
   (Koleston Perfect, Color Touch), Schwarzkopf Professional (IGORA ROYAL, IGORA VIBRANCE)
 - **Batch 2** — Matrix (SoColor, SoColor Sync), L'Oréal Professionnel (Majirel, Dia Light)
+- **Batch 3** — Pravana (ChromaSilk Crème Color, Express Tones, VIVIDS); Goldwell
+  (Topchic, Colorance line technical only — shade palettes image-only)
+- **Batch 4** — Pravana (VIVIDS Everlasting), Pulp Riot (Semi-Permanent Paint),
+  Kenra (Permanent, Demi, Rapid Toners, Studio Stylist Express); Paul Mitchell
+  (The Demi line technical only); Kenra Creatives (line technical only)
 
-The remaining 127 inventoried lines are queued with explicit gap records
+The remaining 114 inventoried lines are queued with explicit gap records
 (`stage11_gaps/gap_risk_report.json`).
 
 ## Layout
@@ -30,7 +36,7 @@ hair_color_db/
   stage01_discovery/        Stage 1: brand & line inventory (+ per-group research files)
   stage02_sources/          Stage 2: source catalog & missing-source targets
   stage03_extraction_plan/  Stage 3: per-line extraction plan, batch definitions, blockers
-  batches/batch01, batch02/ Stages 4–9 per batch:
+  batches/batch01, batch02, batch03, batch04/ Stages 4–9 per batch:
       *_raw_shade_records.json        raw manufacturer wording (append-only layer)
       *_line_technical_records.json   line-wide rules, developer tables, tone legends
       tone_reference_stage6.json      decoded manufacturer tone notation
@@ -64,9 +70,15 @@ onto this set with per-mapping rationale.
 ```bash
 python3 hair_color_db/tools/build_stages_6_to_9_batch01.py
 python3 hair_color_db/tools/build_stages_6_to_9_batch02.py
+python3 hair_color_db/tools/build_batch03_stages_4_5.py
+python3 hair_color_db/tools/build_stages_6_to_9_batch03.py
+python3 hair_color_db/tools/integrate_batch03_into_stage12.py
+python3 hair_color_db/tools/build_batch04_stages_4_5.py
+python3 hair_color_db/tools/build_stages_6_to_9_batch04.py
+python3 hair_color_db/tools/integrate_batch04_into_stage12.py
 ```
 
-Both scripts are pure functions of the committed Stage 4–5 raw files.
+Build scripts are pure functions of the committed Stage 4–5 raw files.
 
 ## Licensing note
 

@@ -1,0 +1,63 @@
+{
+  "stage": 5,
+  "batch": 3,
+  "artifact": "line_technical_records",
+  "completion_status": "partial",
+  "line_technical_records": [
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "color_type": "permanent",
+      "default_mixing_ratio": "1:1 color:TOPCHIC Cream Developer Lotion",
+      "developer_options": [
+        "TOPCHIC Cream Developer Lotion 3% (10 vol.)",
+        "6% (20 vol.)",
+        "9% (30 vol.)",
+        "12% (40 vol.)"
+      ],
+      "developer_strengths_if_stated": "Virgin-hair deposit/lift table on Color Guide",
+      "processing_time_ranges": null,
+      "gray_coverage_rules": "N-/NA-/NN- vs Fashion shade mixing by % white (printed table)",
+      "lift_rules": "Up to 3 levels virgin hair with 12% (40 vol.)",
+      "tone_family_legend": null,
+      "special_usage_notes": "Shade palettes are JPEG swatch charts on Color Guide; codes not extractable as text.",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.goldwell.com/en-us/education/color-guide1/topchic/",
+      "source_document": "Goldwell US Color Guide — Topchic section",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": [
+        "Shade-level extraction blocked: image-only palettes on official Color Guide (no PDF/text chart cataloged)."
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "color_type": "demi-permanent",
+      "default_mixing_ratio": "See gray-coverage table (Colorance Lotion + Fashion/N-Shade)",
+      "developer_options": [
+        "Colorance Lotion"
+      ],
+      "developer_strengths_if_stated": "Colorance Lotion only",
+      "processing_time_ranges": null,
+      "gray_coverage_rules": "Fashion + N-shade by % white (printed table)",
+      "lift_rules": "Deposit only",
+      "tone_family_legend": null,
+      "special_usage_notes": "Shade palettes are JPEG swatch charts on Color Guide; codes not extractable as text.",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.goldwell.com/en-us/education/color-guide1/colorance/",
+      "source_document": "Goldwell US Color Guide — Colorance (incl. Cover Plus, Gloss Tones) section",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": [
+        "Shade-level extraction blocked: image-only palettes on official Color Guide (no PDF/text chart cataloged)."
+      ]
+    }
+  ]
+}

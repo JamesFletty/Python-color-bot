@@ -1,6 +1,6 @@
 {
   "artifact": "tone_normalization_map",
-  "count": 353,
+  "count": 544,
   "tone_normalization_map": [
     {
       "canonical_key": "Redken::Color Gels Lacquers::US",
@@ -5426,6 +5426,2750 @@
       "mapping_rationale": "W=Warm (no printed letter legend; W inferred as Warm from NW/WN family convention — flagged)",
       "mapping_confidence": "medium",
       "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "02",
+      "manufacturer_term": "Sheer Beige",
+      "normalized_tones": [
+        "Beige"
+      ],
+      "mapping_rationale": "10.02: 'sheer beige base' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "03",
+      "manufacturer_term": "Gold Beige",
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "mapping_rationale": "inferred from Beige/Gold family wording on related shades — flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "07",
+      "manufacturer_term": "Sheer Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "10.07: 'cool violet base' / Violet (.7) family (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "08",
+      "manufacturer_term": "Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "Pearl series: 'softer silver and pink balanced hues' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "1",
+      "manufacturer_term": "Ash",
+      "normalized_tones": [
+        "Ash",
+        "Green",
+        "Cool"
+      ],
+      "mapping_rationale": "Ash Family: 'cool green base' (printed on Ash family product pages)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "11",
+      "manufacturer_term": "Intense Ash",
+      "normalized_tones": [
+        "Ash",
+        "Green",
+        "Cool"
+      ],
+      "mapping_rationale": "Intense Ash family: 'cool double green base with 200% cool green tonal value' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "12",
+      "manufacturer_term": "Ash + Beige",
+      "normalized_tones": [
+        "Ash",
+        "Beige"
+      ],
+      "mapping_rationale": "9.12: '70% Ash 30% Beige' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "13",
+      "manufacturer_term": "Ash + Gold",
+      "normalized_tones": [
+        "Ash",
+        "Gold"
+      ],
+      "mapping_rationale": "Ash family + gold tonal descriptions on related shades — partially confirmed",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "20",
+      "manufacturer_term": "Intense Beige",
+      "normalized_tones": [
+        "Beige"
+      ],
+      "mapping_rationale": "4.20 / bright beige descriptions on product pages",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "22",
+      "manufacturer_term": "Intense Beige",
+      "normalized_tones": [
+        "Beige"
+      ],
+      "mapping_rationale": "x.22 intense beige wording on product pages",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "23",
+      "manufacturer_term": "Beige + Gold",
+      "normalized_tones": [
+        "Beige",
+        "Gold"
+      ],
+      "mapping_rationale": "6.23 beige golden descriptions",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "3",
+      "manufacturer_term": "Gold",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Chocolate/Gold family pages: gold tonal value percentages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "31",
+      "manufacturer_term": "Gold + Ash",
+      "normalized_tones": [
+        "Gold",
+        "Ash"
+      ],
+      "mapping_rationale": "x.31: '70% Gold and 30% Ash' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "34",
+      "manufacturer_term": "Gold + Copper",
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "x.34: '70% Gold and 30% Copper' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "35",
+      "manufacturer_term": "Gold + Mahogany",
+      "normalized_tones": [
+        "Gold",
+        "Mahogany"
+      ],
+      "mapping_rationale": "6.35: '70% Gold and 30% Mahogany' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "37",
+      "manufacturer_term": "Gold + Violet",
+      "normalized_tones": [
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "4.37: '70% Gold and 30% Violet' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "4",
+      "manufacturer_term": "Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Copper family: 'blended orange base' / 100% copper tonal value",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "40",
+      "manufacturer_term": "Bright Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "7.40: 'bright Copper' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "43",
+      "manufacturer_term": "Copper + Gold",
+      "normalized_tones": [
+        "Copper",
+        "Gold"
+      ],
+      "mapping_rationale": "x.43: '70% copper and 30% Gold' / Copper+Gold variants (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "44",
+      "manufacturer_term": "Intense Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "7.44: '200% Copper for intense copper' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "45",
+      "manufacturer_term": "Copper + Mahogany",
+      "normalized_tones": [
+        "Copper",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Rich Copper Family: '70% Copper and 30% Mahogany' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "46",
+      "manufacturer_term": "Copper + Red",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "x.46: '70% Copper and 30% Red' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "5",
+      "manufacturer_term": "Mahogany",
+      "normalized_tones": [
+        "Mahogany",
+        "Red"
+      ],
+      "mapping_rationale": "Chocolate family blends with Mahogany percentages on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "52",
+      "manufacturer_term": "Mahogany + Beige",
+      "normalized_tones": [
+        "Mahogany",
+        "Beige"
+      ],
+      "mapping_rationale": "mahogany beige descriptions on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "56",
+      "manufacturer_term": "Mahogany + Red",
+      "normalized_tones": [
+        "Mahogany",
+        "Red"
+      ],
+      "mapping_rationale": "mahogany red descriptions on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "6",
+      "manufacturer_term": "Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Red family positioning on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "62",
+      "manufacturer_term": "Red + Beige",
+      "normalized_tones": [
+        "Red",
+        "Beige"
+      ],
+      "mapping_rationale": "x.62: '70% Red and 30% Beige' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "64",
+      "manufacturer_term": "Red + Copper",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "x.64: '70% Red and 30% Copper' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "66",
+      "manufacturer_term": "Intense Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "4.66 intense red descriptions on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "7",
+      "manufacturer_term": "Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Violet family / violet tonal descriptions on product pages",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "72",
+      "manufacturer_term": "Violet + Beige",
+      "normalized_tones": [
+        "Violet",
+        "Beige"
+      ],
+      "mapping_rationale": "10.72: '100% Violet and 30% Beige' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "77",
+      "manufacturer_term": "Deep Chroma series",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Deep Chroma Collection positioning on product pages; exact pigment split not stated per shade — flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "8",
+      "manufacturer_term": "Pearl/Mocha",
+      "normalized_tones": [
+        "Pearl",
+        "Mocha"
+      ],
+      "mapping_rationale": "Pearl series description on product pages; Mocha used for brunette mocha series — flagged ambiguous",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "91",
+      "manufacturer_term": "Metallic finish series",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "10.91: 'metallic finish on level 10 and grey hair' (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "92",
+      "manufacturer_term": "Smokey Beige",
+      "normalized_tones": [
+        "Beige",
+        "Neutral"
+      ],
+      "mapping_rationale": "5.92/8.92: 'Smokey Beige' neutralizing tone (printed)",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Creme Color",
+      "manufacturer_tone_code": "99",
+      "manufacturer_term": "Intense series",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "3.99 intense series — exact tone name varies; flagged",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "After Dark Mahogany",
+      "manufacturer_term": "After Dark Mahogany",
+      "normalized_tones": [
+        "Mahogany"
+      ],
+      "mapping_rationale": "printed shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "After Dark Neutral Ash",
+      "manufacturer_term": "After Dark Neutral Ash",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "printed shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "After Dark Neutral Pearl",
+      "manufacturer_term": "After Dark Neutral Pearl",
+      "normalized_tones": [
+        "Neutral",
+        "Pearl"
+      ],
+      "mapping_rationale": "printed shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Ash",
+      "manufacturer_term": "Ash — cool/green base",
+      "normalized_tones": [
+        "Ash",
+        "Green",
+        "Cool"
+      ],
+      "mapping_rationale": "meta: 'cool/green base' (printed)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Beige",
+      "manufacturer_term": "Beige",
+      "normalized_tones": [
+        "Beige"
+      ],
+      "mapping_rationale": "shade name as printed",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Clear",
+      "manufacturer_term": "Clear",
+      "normalized_tones": [],
+      "mapping_rationale": "non-pigmented diluter",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Pearl",
+      "manufacturer_term": "Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "shade name as printed",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Rose Gold",
+      "manufacturer_term": "Rose Gold",
+      "normalized_tones": [
+        "Gold",
+        "Copper",
+        "Warm"
+      ],
+      "mapping_rationale": "shade name; Gold/Copper inferred — flagged",
+      "mapping_confidence": "high",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Smokey Silver",
+      "manufacturer_term": "Smokey Silver",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "functional name; Silver not in taxonomy",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "manufacturer_tone_code": "Violet",
+      "manufacturer_term": "Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name as printed",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "All Nighter",
+      "manufacturer_term": "All Nighter",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Aquamarine",
+      "manufacturer_term": "Aquamarine",
+      "normalized_tones": [
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Bewitching Blue",
+      "manufacturer_term": "Bewitching Blue",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Black",
+      "manufacturer_term": "Black",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye black",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Blissful Blue",
+      "manufacturer_term": "Blissful Blue",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Blue",
+      "manufacturer_term": "Blue",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Blue Topaz",
+      "manufacturer_term": "Blue Topaz",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Clear Dilute",
+      "manufacturer_term": "Clear Dilute",
+      "normalized_tones": [],
+      "mapping_rationale": "diluter/clear",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Clear Pastel",
+      "manufacturer_term": "Clear Pastel",
+      "normalized_tones": [],
+      "mapping_rationale": "diluter/clear",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Crush",
+      "manufacturer_term": "Crush",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Emerald",
+      "manufacturer_term": "Emerald",
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Enchanted Pink",
+      "manufacturer_term": "Enchanted Pink",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Flame",
+      "manufacturer_term": "Flame",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Garnet",
+      "manufacturer_term": "Garnet",
+      "normalized_tones": [
+        "Red",
+        "Mahogany"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Grape",
+      "manufacturer_term": "Grape",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Green",
+      "manufacturer_term": "Green",
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Juicy",
+      "manufacturer_term": "Juicy",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Luscious Lavender",
+      "manufacturer_term": "Luscious Lavender",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Magenta",
+      "manufacturer_term": "Magenta",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Mystic Magenta",
+      "manufacturer_term": "Mystic Magenta",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Neon Blue",
+      "manufacturer_term": "Neon Blue",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Neon Green",
+      "manufacturer_term": "Neon Green",
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Neon Orange",
+      "manufacturer_term": "Neon Orange",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Neon Pink",
+      "manufacturer_term": "Neon Pink",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Neon Yellow",
+      "manufacturer_term": "Neon Yellow",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Orange",
+      "manufacturer_term": "Orange",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Pastel Potion",
+      "manufacturer_term": "Pastel Potion",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Periwinkle",
+      "manufacturer_term": "Periwinkle",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Pink",
+      "manufacturer_term": "Pink",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Poison Berry",
+      "manufacturer_term": "Poison Berry",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Pretty In Pink",
+      "manufacturer_term": "Pretty In Pink",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Purple Tourmaline",
+      "manufacturer_term": "Purple Tourmaline",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Red",
+      "manufacturer_term": "Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Sangria",
+      "manufacturer_term": "Sangria",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Scarlette Red",
+      "manufacturer_term": "Scarlette Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Silver",
+      "manufacturer_term": "Silver",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "Silver not in taxonomy",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Smokey Silver",
+      "manufacturer_term": "Smokey Silver",
+      "normalized_tones": [
+        "Other",
+        "Cool"
+      ],
+      "mapping_rationale": "Silver not in taxonomy",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Smokey Violet",
+      "manufacturer_term": "Smokey Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Sunstone",
+      "manufacturer_term": "Sunstone",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Tempted",
+      "manufacturer_term": "Tempted",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Too Cute Coral",
+      "manufacturer_term": "Too Cute Coral",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Violet",
+      "manufacturer_term": "Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Violet Reign",
+      "manufacturer_term": "Violet Reign",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Wild Orchid",
+      "manufacturer_term": "Wild Orchid",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "direct dye shade name not mapped to standard tone family",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS",
+      "manufacturer_tone_code": "Yellow",
+      "manufacturer_term": "Yellow",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "A",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A = Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "AA",
+      "manufacturer_term": "AA",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "AA = double Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "B",
+      "manufacturer_term": "B",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "Rapid Toner B = Blue",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "BC",
+      "manufacturer_term": "BC",
+      "normalized_tones": [
+        "Brown",
+        "Copper"
+      ],
+      "mapping_rationale": "BC = Brown/Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "Bl",
+      "manufacturer_term": "Bl",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "1Bl = Blue black",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "C",
+      "manufacturer_term": "C",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "C = Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "CN",
+      "manufacturer_term": "CN",
+      "normalized_tones": [
+        "Copper",
+        "Neutral"
+      ],
+      "mapping_rationale": "CN = Copper Neutral",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "DF",
+      "manufacturer_term": "DF",
+      "normalized_tones": [
+        "Pearl",
+        "Cool"
+      ],
+      "mapping_rationale": "DF = Diamond Frost demi booster",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "G",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "G = Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "GB",
+      "manufacturer_term": "GB",
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "mapping_rationale": "GB = Gold Beige",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "N",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "N = Natural/Neutral",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "NA",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "NA = Neutral Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "NB",
+      "manufacturer_term": "NB",
+      "normalized_tones": [
+        "Neutral",
+        "Beige"
+      ],
+      "mapping_rationale": "NB = Neutral Brown/Beige",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "NUA",
+      "manufacturer_term": "NUA",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "NUA = Neutral Ultra Ash",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "PV",
+      "manufacturer_term": "PV",
+      "normalized_tones": [
+        "Pearl",
+        "Violet"
+      ],
+      "mapping_rationale": "PV = Pearl Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "R",
+      "manufacturer_term": "R",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "RB",
+      "normalized_tones": [
+        "Red",
+        "Brown"
+      ],
+      "mapping_rationale": "RB = Red Brown",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "RC",
+      "manufacturer_term": "RC",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "RC = Red Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "RR",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "RR = double Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "RV",
+      "manufacturer_term": "RV",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "RV = Red Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "SM",
+      "manufacturer_term": "SM",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "SM = Smokey Mocha",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "UA",
+      "manufacturer_term": "UA",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "UA = Ultra Ash",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "V",
+      "manufacturer_term": "V",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "V = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "VM",
+      "manufacturer_term": "VM",
+      "normalized_tones": [
+        "Violet",
+        "Mocha"
+      ],
+      "mapping_rationale": "VM = Violet Mocha",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "VR",
+      "manufacturer_term": "VR",
+      "normalized_tones": [
+        "Violet",
+        "Red"
+      ],
+      "mapping_rationale": "VR = Violet Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Demi-Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Demi-Permanent",
+      "manufacturer_tone_code": "VV",
+      "manufacturer_term": "VV",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "VV = double Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "A",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "A = Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "AA",
+      "manufacturer_term": "AA",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "AA = double Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "B",
+      "manufacturer_term": "B",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "Rapid Toner B = Blue",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "BC",
+      "manufacturer_term": "BC",
+      "normalized_tones": [
+        "Brown",
+        "Copper"
+      ],
+      "mapping_rationale": "BC = Brown/Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "Bl",
+      "manufacturer_term": "Bl",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "1Bl = Blue black",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "C",
+      "manufacturer_term": "C",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "C = Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "CN",
+      "manufacturer_term": "CN",
+      "normalized_tones": [
+        "Copper",
+        "Neutral"
+      ],
+      "mapping_rationale": "CN = Copper Neutral",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "DF",
+      "manufacturer_term": "DF",
+      "normalized_tones": [
+        "Pearl",
+        "Cool"
+      ],
+      "mapping_rationale": "DF = Diamond Frost demi booster",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "G",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "G = Gold",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "GB",
+      "manufacturer_term": "GB",
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "mapping_rationale": "GB = Gold Beige",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "N",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "N = Natural/Neutral",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "NA",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "NA = Neutral Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "NB",
+      "manufacturer_term": "NB",
+      "normalized_tones": [
+        "Neutral",
+        "Beige"
+      ],
+      "mapping_rationale": "NB = Neutral Brown/Beige",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "NUA",
+      "manufacturer_term": "NUA",
+      "normalized_tones": [
+        "Neutral",
+        "Ash"
+      ],
+      "mapping_rationale": "NUA = Neutral Ultra Ash",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "PV",
+      "manufacturer_term": "PV",
+      "normalized_tones": [
+        "Pearl",
+        "Violet"
+      ],
+      "mapping_rationale": "PV = Pearl Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "R",
+      "manufacturer_term": "R",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "R = Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "RB",
+      "normalized_tones": [
+        "Red",
+        "Brown"
+      ],
+      "mapping_rationale": "RB = Red Brown",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "RC",
+      "manufacturer_term": "RC",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "RC = Red Copper",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "RR",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "RR = double Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "RV",
+      "manufacturer_term": "RV",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "RV = Red Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "SM",
+      "manufacturer_term": "SM",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "SM = Smokey Mocha",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "UA",
+      "manufacturer_term": "UA",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "UA = Ultra Ash",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "V",
+      "manufacturer_term": "V",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "V = Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "VM",
+      "manufacturer_term": "VM",
+      "normalized_tones": [
+        "Violet",
+        "Mocha"
+      ],
+      "mapping_rationale": "VM = Violet Mocha",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "VR",
+      "manufacturer_term": "VR",
+      "normalized_tones": [
+        "Violet",
+        "Red"
+      ],
+      "mapping_rationale": "VR = Violet Red",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Permanent",
+      "manufacturer_tone_code": "VV",
+      "manufacturer_term": "VV",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "VV = double Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "B",
+      "manufacturer_term": "B",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "Rapid Toner B = Blue",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "GV",
+      "manufacturer_term": "GV",
+      "normalized_tones": [
+        "Gold",
+        "Violet"
+      ],
+      "mapping_rationale": "Rapid Toner Gold Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "GrBl",
+      "manufacturer_term": "GrBl",
+      "normalized_tones": [
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Rapid Toner Gray Blue",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "RoV",
+      "manufacturer_term": "RoV",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Rapid Toner Rose Violet",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "SA",
+      "manufacturer_term": "SA",
+      "normalized_tones": [
+        "Ash",
+        "Neutral"
+      ],
+      "mapping_rationale": "Rapid Toner Smokey Ash",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "SV",
+      "manufacturer_term": "SV",
+      "normalized_tones": [
+        "Violet",
+        "Other"
+      ],
+      "mapping_rationale": "Rapid Toner Silver Violet",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Rapid Toners::US",
+      "brand": "Kenra Professional",
+      "product_line": "Kenra Color Rapid Toners",
+      "manufacturer_tone_code": "VP",
+      "manufacturer_term": "VP",
+      "normalized_tones": [
+        "Violet",
+        "Pearl"
+      ],
+      "mapping_rationale": "Rapid Toner Violet Pearl",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "A",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "SSE A series",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "manufacturer_tone_code": "B",
+      "manufacturer_term": "B",
+      "normalized_tones": [
+        "Brown",
+        "Beige"
+      ],
+      "mapping_rationale": "SSE B series",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "G",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "SSE G series",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "N",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "SSE N series",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Kenra Professional::Studio Stylist Express::US",
+      "brand": "Kenra Professional",
+      "product_line": "Studio Stylist Express",
+      "manufacturer_tone_code": "NB",
+      "manufacturer_term": "NB",
+      "normalized_tones": [
+        "Neutral",
+        "Beige"
+      ],
+      "mapping_rationale": "SSE NB series",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Bewitching Blue",
+      "manufacturer_term": "Bewitching Blue",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "shade name contains 'blue'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Enchanted Pink",
+      "manufacturer_term": "Enchanted Pink",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name contains 'pink'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Mystic Magenta",
+      "manufacturer_term": "Mystic Magenta",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "shade name contains 'magenta'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Pastel Potion",
+      "manufacturer_term": "Pastel Potion",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Everlasting named shade",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Poison Berry",
+      "manufacturer_term": "Poison Berry",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "shade name contains 'berry'",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Scarlette Red",
+      "manufacturer_term": "Scarlette Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "shade name contains 'red'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "manufacturer_tone_code": "Violet Reign",
+      "manufacturer_term": "Violet Reign",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "shade name contains 'violet'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "ABSINTHE",
+      "manufacturer_term": "ABSINTHE",
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'absinthe'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "AQUATIC",
+      "manufacturer_term": "AQUATIC",
+      "normalized_tones": [
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'aquatic'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "ASTEROID",
+      "manufacturer_term": "ASTEROID",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "BLUE MUSE",
+      "manufacturer_term": "BLUE MUSE",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'blue'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "BLUSH",
+      "manufacturer_term": "BLUSH",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'blush'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "CANDY",
+      "manufacturer_term": "CANDY",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "CARELESS",
+      "manufacturer_term": "CARELESS",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "CLEAR",
+      "manufacturer_term": "CLEAR",
+      "normalized_tones": [],
+      "mapping_rationale": "Pulp Riot shade name contains 'clear'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "CUPID",
+      "manufacturer_term": "CUPID",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'cupid'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "DARK MATTER",
+      "manufacturer_term": "DARK MATTER",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "DEVIANT",
+      "manufacturer_term": "DEVIANT",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "EXOPLANET",
+      "manufacturer_term": "EXOPLANET",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "FICKLE",
+      "manufacturer_term": "FICKLE",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "FIREBALL",
+      "manufacturer_term": "FIREBALL",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'fireball'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "IMPETUOUS",
+      "manufacturer_term": "IMPETUOUS",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "JAM",
+      "manufacturer_term": "JAM",
+      "normalized_tones": [
+        "Red",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'jam'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "LAVA",
+      "manufacturer_term": "LAVA",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "LAVA LAMP",
+      "manufacturer_term": "LAVA LAMP",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "LEMON",
+      "manufacturer_term": "LEMON",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'lemon'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "LILAC",
+      "manufacturer_term": "LILAC",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'lilac'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "NIGHTFALL",
+      "manufacturer_term": "NIGHTFALL",
+      "normalized_tones": [
+        "Violet",
+        "Blue"
+      ],
+      "mapping_rationale": "Pulp Riot shade name contains 'nightfall'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "NOIR",
+      "manufacturer_term": "NOIR",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "NUCLEAR",
+      "manufacturer_term": "NUCLEAR",
+      "normalized_tones": [],
+      "mapping_rationale": "Pulp Riot shade name contains 'clear'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "SATIRE",
+      "manufacturer_term": "SATIRE",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "SHAG RUG",
+      "manufacturer_term": "SHAG RUG",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "SMOKE",
+      "manufacturer_term": "SMOKE",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "TRAGIC",
+      "manufacturer_term": "TRAGIC",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "VELVET",
+      "manufacturer_term": "VELVET",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "brand": "Pulp Riot",
+      "product_line": "Semi-Permanent",
+      "manufacturer_tone_code": "VOLATILE",
+      "manufacturer_term": "VOLATILE",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Pulp Riot direct-dye shade name",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
       "notes": []
     }
   ],

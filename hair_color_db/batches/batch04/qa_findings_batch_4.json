@@ -1,0 +1,21 @@
+{
+  "stage": 9,
+  "artifact": "qa_findings",
+  "batch": 4,
+  "completion_status": "complete",
+  "qa_findings": [
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "record_ref": "wall_chart_batch",
+      "issue_type": "shade_name_defaulted_to_code",
+      "severity": "low",
+      "details": "Kenra wall chart PDF text layer lists codes without companion shade display names.",
+      "recommended_fix": "Augment from swatchbook or product pages when available."
+    }
+  ],
+  "summary": {
+    "records_reviewed": 228,
+    "findings_count": 1,
+    "high_severity": 0
+  }
+}

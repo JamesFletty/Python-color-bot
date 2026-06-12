@@ -1,0 +1,33 @@
+{
+  "stage": 5,
+  "batch": 4,
+  "artifact": "line_technical_records",
+  "completion_status": "complete",
+  "line_technical_records": [
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS Everlasting::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS Everlasting",
+      "color_type": "permanent direct-dye hybrid",
+      "default_mixing_ratio": "10V or 20V only (no high-volume developer)",
+      "developer_options": [
+        "10V",
+        "20V"
+      ],
+      "developer_strengths_if_stated": "10V max deposit; 20V lighter/brighter (product pages)",
+      "processing_time_ranges": null,
+      "gray_coverage_rules": "Up to 100% gray: 25% Everlasting + 75% ChromaSilk Permanent (printed How To Use)",
+      "lift_rules": "Low-volume developer only; intermix ratios by level (25–50%)",
+      "tone_family_legend": "Named direct-dye shades (no level/tone digit system)",
+      "special_usage_notes": "Intermixable with ChromaSilk Permanent Crème and other Everlasting shades",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.pravana.com/products/color/permanent/chromasilk-vivids-everlasting/",
+      "source_document": "ChromaSilk VIVIDS Everlasting line + shade product pages",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": []
+    }
+  ]
+}
