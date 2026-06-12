@@ -1,0 +1,146 @@
+{
+  "batch": 3,
+  "stage": 5,
+  "artifact": "line_technical_records_batch_3",
+  "completion_status": "complete",
+  "line_technical_records": [
+    {
+      "canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Crème Color (Permanent)",
+      "color_type": "permanent",
+      "default_mixing_ratio": "1:1.5 (1 part ChromaSilk Creme Color : 1.5 parts ChromaSilk Creme Developer)",
+      "developer_options": [
+        "ChromaSilk Creme Developer 10V",
+        "ChromaSilk Creme Developer 20V",
+        "ChromaSilk Creme Developer 30V",
+        "ChromaSilk Creme Developer 40V"
+      ],
+      "developer_strengths_if_stated": "10V–40V per official product pages (\"creme developer 10-40V\")",
+      "processing_time_ranges": "30 minutes — up to 45 minutes (printed on product pages)",
+      "gray_coverage_rules": "Up to 100% gray coverage (printed Features on product pages)",
+      "lift_rules": null,
+      "tone_family_legend": "12 tonal families; per-family descriptions on product pages (e.g., Ash Family: cool green base)",
+      "special_usage_notes": "3 oz tube; 1:1.5 mixing ratio yields 7.5 oz working product (printed on product pages)",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.pravana.com/pro/mixing-ratio/",
+      "source_document": "PRAVANA Mixing Ratio Guide (official page)",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [
+        "Developer volume by desired result not on mixing-ratio landing page."
+      ],
+      "data_gaps": [
+        "Full digit tone legend in pro-gated Product Knowledge Guide PDF; family descriptions used from public product pages."
+      ]
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk Express Tones::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk Express Tones",
+      "color_type": "demi-permanent toner",
+      "default_mixing_ratio": "1:1.5 (1 part Express Tones : 1.5 parts ChromaSilk Zero Lift Creme Developer)",
+      "developer_options": [
+        "ChromaSilk Zero Lift Creme Developer"
+      ],
+      "developer_strengths_if_stated": "Zero Lift only (printed on product pages)",
+      "processing_time_ranges": "5 minutes or less (printed on product pages)",
+      "gray_coverage_rules": null,
+      "lift_rules": "No lift — ammonia-free toners",
+      "tone_family_legend": "Blondes and Brunettes series; bases stated per shade (e.g., Ash: cool/green base)",
+      "special_usage_notes": "Apply to damp hair; Express Tones Clear may be added (Ash product page)",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.pravana.com/products/color/demi-permanent/chromasilk-express-tones/ash/",
+      "source_document": "ChromaSilk Express Tones Ash product page",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [
+        "Line-level rules from representative Express Tones pages applied per collection."
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Pravana::ChromaSilk VIVIDS::US",
+      "brand": "Pravana",
+      "product_line": "ChromaSilk VIVIDS (Original, Neons, Pastels)",
+      "color_type": "semi-permanent direct dye",
+      "default_mixing_ratio": null,
+      "developer_options": [],
+      "developer_strengths_if_stated": null,
+      "processing_time_ranges": "20–30 minutes on several shade pages; not uniform across collection",
+      "gray_coverage_rules": "N/A — non-oxidative, no developer",
+      "lift_rules": "No lift; pre-lightening required for vivid deposit on natural hair",
+      "tone_family_legend": "Named direct dyes (no level/tone digit system)",
+      "special_usage_notes": "No developer; intermixable across VIVIDS shades",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.pravana.com/products/color/semi-permanent/chromasilk-vivids-original/",
+      "source_document": "ChromaSilk VIVIDS Original line page",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [
+        "Original, Neons, Pastels grouped under canonical VIVIDS line per Stage 1 inventory."
+      ],
+      "data_gaps": [
+        "Processing time varies by shade page."
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "color_type": "permanent",
+      "default_mixing_ratio": "1:1 color:TOPCHIC Cream Developer Lotion",
+      "developer_options": [
+        "TOPCHIC Cream Developer Lotion 3% (10 vol.)",
+        "6% (20 vol.)",
+        "9% (30 vol.)",
+        "12% (40 vol.)"
+      ],
+      "developer_strengths_if_stated": "Virgin-hair deposit/lift table on Color Guide",
+      "processing_time_ranges": null,
+      "gray_coverage_rules": "N-/NA-/NN- vs Fashion shade mixing by % white (printed table)",
+      "lift_rules": "Up to 3 levels virgin hair with 12% (40 vol.)",
+      "tone_family_legend": null,
+      "special_usage_notes": "Shade palettes are JPEG swatch charts on Color Guide; codes not extractable as text.",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.goldwell.com/en-us/education/color-guide1/topchic/",
+      "source_document": "Goldwell US Color Guide — Topchic section",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": [
+        "Shade-level extraction blocked: image-only palettes on official Color Guide (no PDF/text chart cataloged)."
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "color_type": "demi-permanent",
+      "default_mixing_ratio": "See gray-coverage table (Colorance Lotion + Fashion/N-Shade)",
+      "developer_options": [
+        "Colorance Lotion"
+      ],
+      "developer_strengths_if_stated": "Colorance Lotion only",
+      "processing_time_ranges": null,
+      "gray_coverage_rules": "Fashion + N-shade by % white (printed table)",
+      "lift_rules": "Deposit only",
+      "tone_family_legend": null,
+      "special_usage_notes": "Shade palettes are JPEG swatch charts on Color Guide; codes not extractable as text.",
+      "region_or_market": "US",
+      "discontinued_status": null,
+      "source_url": "https://www.goldwell.com/en-us/education/color-guide1/colorance/",
+      "source_document": "Goldwell US Color Guide — Colorance (incl. Cover Plus, Gloss Tones) section",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": [
+        "Shade-level extraction blocked: image-only palettes on official Color Guide (no PDF/text chart cataloged)."
+      ]
+    }
+  ]
+}
