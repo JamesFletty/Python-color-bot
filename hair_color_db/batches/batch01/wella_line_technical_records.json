@@ -1,0 +1,249 @@
+{
+  "line_technical_records": [
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "color_type": "permanent",
+      "default_mixing_ratio": "1:1 with Welloxon Perfect (Pure Naturals, Rich Naturals, Vibrant Reds, Deep Browns); 1:2 for Special Blonde; Special Mix 1:1 except 0/43 at 1:2",
+      "developer_options": [
+        "Welloxon Perfect Pastel 1.9%",
+        "Welloxon Perfect 4%",
+        "Welloxon Perfect 6%",
+        "Welloxon Perfect 9%",
+        "Welloxon Perfect 12%"
+      ],
+      "developer_strengths_if_stated": [
+        "1.9% (6 Vol) - for color balancing, blonde toning and glossing services",
+        "4% (13 Vol) - same depth or darker; deeper results on natural hair with no grey coverage required",
+        "6% (20 Vol) - 1 level of lift; coverage of grey hair; same depth or darker",
+        "9% (30 Vol) - 2 levels of lift; 3 levels with Special Blonde",
+        "12% (40 Vol) - 3 levels of lift; 4-5 levels with Special Blonde"
+      ],
+      "processing_time_ranges": [
+        "Standard shades (Pure Naturals/Rich Naturals/Vibrant Reds/Deep Browns): 30-40 min without heat; 15-25 min with heat (Climazon)",
+        "Special Blonde: 50-60 min without heat; 25-35 min with heat",
+        "Full-head application with lightening, step 1 (lengths and ends): 20 min without heat / 10 min with heat (Pure Naturals/Rich Naturals/Deep Browns)",
+        "Pastel toning: up to 15 min without heat, combing every 5 min",
+        "Color leveling on lengths and ends: 5-10 min without heat",
+        "Glossing (Welloxon Perfect Pastel 1.9%): 5-15 min",
+        "Intense Balance: apply to lengths for last 10-15 min of root development"
+      ],
+      "gray_coverage_rules": [
+        "Up to 100% coverage of grey/white hair (official factsheets and US range page)",
+        "Use 6% Welloxon Perfect for coverage of grey/white hair",
+        "30-50% grey hair: add 1/3 of a Pure Naturals shade (e.g. 15g 7/0 + 45g 7/75 + 60g 6%)",
+        "50-100% grey hair: add 1/2 of a Pure Naturals shade (e.g. 30g 7/0 + 30g 7/75 + 60g 6%)",
+        "Red shades on white hair with more than 50% white: mix 2 parts red shade to 1 part Pure Natural (older booklet)",
+        "Coloring grey hair: the addition of a Pure Naturals shade is required to give sufficient grey coverage; for resistant hair use the resistant cover shade (xx/0) as the natural shade (distributor technical guide); maximum development 40 min for grey coverage (distributor technical guide)"
+      ],
+      "lift_rules": [
+        "12% Welloxon Perfect for 3 levels of lift (standard shades)",
+        "9% Welloxon Perfect for 2 levels of lift (standard shades)",
+        "6% Welloxon Perfect for 1 level of lift",
+        "Special Blonde: 12% for 4-5 levels of lift, 9% for 3 levels of lift (1:2 mix)",
+        "Up to 100% grey coverage, up to 5 levels of lift (booklet benefit claim)"
+      ],
+      "tone_family_legend": [
+        {
+          "code": "/1",
+          "meaning": "Ash (blue/green)"
+        },
+        {
+          "code": "/2",
+          "meaning": "Matt (green)"
+        },
+        {
+          "code": "/3",
+          "meaning": "Gold (yellow)"
+        },
+        {
+          "code": "/4",
+          "meaning": "Red (warm)"
+        },
+        {
+          "code": "/5",
+          "meaning": "Mahogany (red/violet)"
+        },
+        {
+          "code": "/6",
+          "meaning": "Violet (cool)"
+        },
+        {
+          "code": "/7",
+          "meaning": "Brown (red, yellow, blue)"
+        },
+        {
+          "code": "/8",
+          "meaning": "Pearl (blue)"
+        },
+        {
+          "code": "/9",
+          "meaning": "Cendre (blue/violet)"
+        }
+      ],
+      "special_usage_notes": [
+        "Shade numbering system stated in official Technical Folder: position 1 = Depth of color; position 2 = Major tone of color; position 3 = Minor tone of color (example printed: 4/71).",
+        "Color families printed in sources: Pure Naturals, Rich Naturals, Vibrant Reds, Deep Browns, Special Blonde, Special Mix.",
+        "Special Mix shades are pure color tones; the lighter the basic shade, the less mix tone is needed (exception: levels 11 and 12 per booklet; 'Exception: Level 12/' per leaflet). Mixing ratio 1:1 for all Special Mix except 0/43 (1:2).",
+        "Pastel toning: evenly pre-lightened hair required (1/2 level lighter than final result); recommended shades 10/1 10/03 10/16 10/3 10/38 10/8 9/03 9/16 9/17 9/38 9/7; mix 1:2 with Color Touch Emulsion 1.9% or Welloxon Perfect Pastel.",
+        "Allergy Alert Test recommended 48 hours before coloring (all sources).",
+        "ME+ dye technology replaces PTD and PPD to reduce risk of developing new allergy (factsheets, US range page); Metal Purifier technology integrated (US range page, distributor guide).",
+        "After treatment: emulsify with warm water, rinse, shampoo (Invigo Color Brilliance per leaflet), then Color Service Post Color Treatment to neutralize oxidation residues."
+      ],
+      "region_or_market": "US (canonical); leaflet/booklet PDFs are official wella.com documents without an explicit market statement",
+      "discontinued_status": "Active - official US range page live as of June 2026",
+      "source_url": "https://www.wella.com/professional/m/Shadechart_LP/Wella-Professionals_Koleston-Perfect_Leaflet.pdf",
+      "source_document": "Koleston Perfect Usage Guidelines leaflet / shade chart (official wella.com PDF)",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [
+        "Line-level data aggregated from multiple official sources; primary = leaflet. Supplementary: https://www.wella.com/professional/m/_master/products/koleston_perfect/pdfs/koleston-perfect_usagebooklet.pdf; https://www.wella.com/professional/m/_master/PDF/Products/Koleston_Perfect_Fact_Sheet.pdf; https://assets.ctfassets.net/045r8o938mua/gqK2qu91DzPugE5JQwyxn/58d66f3e0d66149fc839c95f0e7f4742/WP_COL_FS.pdf; https://www.salon-services.com/on/demandware.static/-/Sites-salon-services-Library/default/dw16da43d0/1-PDF/WELLA-Koleston-Perfect-Technical-Guide.pdf; https://www.wella.com/professional/en-US/koleston-perfect",
+        "Tone legend transcribed verbatim from the official Technical Folder (usage booklet) 'Tone Numbering System' page."
+      ],
+      "data_gaps": [
+        "No publication dates printed in source PDFs.",
+        "US-specific shade availability not enumerated by any fetched US source.",
+        "Welloxon Perfect Pastel 1.9% appears in factsheets and leaflet services but exact product naming varies across documents ('Welloxon Perfect Pastel', 'Welloxon Perfect 1.9%')."
+      ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "color_type": "demi-permanent",
+      "default_mixing_ratio": "1:2 (1 part Color Touch + 2 parts Color Touch Emulsion 1.9% or 4%); Color Touch Plus 1:2 with Color Touch Plus Emulsion 4%; iNSTAMAT!C 1:1; Special Mix used within 1:2 total mix",
+      "developer_options": [
+        "Color Touch Emulsion 1.9%",
+        "Color Touch Emulsion 4%",
+        "Color Touch Plus Emulsion 4% (for Color Touch Plus only)"
+      ],
+      "developer_strengths_if_stated": [
+        "1.9% (6 vol per US store formulas) - same depth or darkening with soft regrowth; toning blondes; soft grey blending; after perm/straightening",
+        "4% - increased colour vibrancy; colouring coarse hair types; intense grey blending; up to 70% grey coverage with Plus; low lift"
+      ],
+      "processing_time_ranges": [
+        "20 min without heat; 15 min with heat (Climazon) - core Color Touch and Color Touch Plus",
+        "Blonde toning: 5-20 min, visually develop until desired result (distributor guide)",
+        "Relights: blonde shades 5-10 min without heat; red shades 15-20 min without heat (technical folder)",
+        "iNSTAMAT!C: 5-20 min depending on intensity, without heat (technical folder)",
+        "Color balancing: watch for visual development 5-15 min (technical folder)"
+      ],
+      "gray_coverage_rules": [
+        "Up to 50% grey/white coverage (core Color Touch, factsheets and technical folder)",
+        "First-time application ideal for up to 50% grey blending (leaflet)",
+        "Up to 70% grey coverage with Color Touch Plus (leaflet, factsheets, US store page, distributor guide)",
+        "Color Touch Plus: apply to dry hair for maximum intensity and coverage; for touch-ups start at the roots"
+      ],
+      "lift_rules": [
+        "Demi-permanent; positioned for same depth or darkening / toning (leaflet, distributor guide)",
+        "4% emulsion described as 'low lift' (distributor guide); no level-lift claims stated for core Color Touch in fetched sources"
+      ],
+      "tone_family_legend": [
+        {
+          "code": "/1",
+          "meaning": "Ash (blue/green)"
+        },
+        {
+          "code": "/2",
+          "meaning": "Matt (green)"
+        },
+        {
+          "code": "/3",
+          "meaning": "Gold (yellow)"
+        },
+        {
+          "code": "/4",
+          "meaning": "Red (warm)"
+        },
+        {
+          "code": "/5",
+          "meaning": "Mahogany (red/violet)"
+        },
+        {
+          "code": "/6",
+          "meaning": "Violet (cool)"
+        },
+        {
+          "code": "/7",
+          "meaning": "Brown (red, yellow, blue)"
+        },
+        {
+          "code": "/8",
+          "meaning": "Pearl (blue)"
+        },
+        {
+          "code": "/9",
+          "meaning": "Cendre (blue/violet)"
+        },
+        {
+          "code": "10/",
+          "meaning": "Lightest Blonde"
+        },
+        {
+          "code": "9/",
+          "meaning": "Very Light Blonde"
+        },
+        {
+          "code": "8/",
+          "meaning": "Light Blonde"
+        },
+        {
+          "code": "7/",
+          "meaning": "Medium Blonde"
+        },
+        {
+          "code": "6/",
+          "meaning": "Dark Blonde"
+        },
+        {
+          "code": "5/",
+          "meaning": "Light Brown"
+        },
+        {
+          "code": "4/",
+          "meaning": "Medium Brown"
+        },
+        {
+          "code": "3/",
+          "meaning": "Dark Brown"
+        },
+        {
+          "code": "2/",
+          "meaning": "Black"
+        }
+      ],
+      "special_usage_notes": [
+        "Shade numbering system stated in official Technical Folder: 1 = Depth of color, 2 = Major tone of color, 3 = Minor tone of color (example printed: 4/71). Leaflet: 'depth or base of a color from 2/ - 10/ and the tone from /0 - /9'.",
+        "Tone legend transcribed from official Color Touch Technical Folder; the distributor brochure prints slightly different wording (Ash (grey), Matte (green), Gold (yellow), Red (warm), Mahogony, Violet (cool), Brown (warm), Pearl (blue), Cendre (soft violet)); depth legend (2/ Black ... 10/ Lightest Blonde) from distributor brochure.",
+        "Special Mix uses (leaflet): Pure over natural or pre-lightened hair (20g Special Mix + 40g emulsion); Pastelization - dilute any shade with 0/00; Boost - intensify with e.g. 0/56; Correct - neutralize warmth with e.g. 0/68; reduce intensity with clear tone 0/00.",
+        "Ammonia free: Color Touch, Color Touch Sunlights (except Sunlight/0) and Color Touch Relights; Color Touch Plus is low-ammonia with MEA (US store page, distributor guide).",
+        "Upgraded formula (current generation): vegan, silicone free, mineral oil free, built-in Metal Purifier (US store page, distributor guide).",
+        "Apply to pre-shampooed, towel-dried hair from roots to ends (first-time application); Plus applied to dry hair.",
+        "Sub-ranges observed but not recorded as core shades: Color Touch Relights, Color Touch Sunlights, iNSTAMAT!C by Color Touch.",
+        "Allergy Alert Test recommended 48 hours before coloring (all sources).",
+        "Longevity claims: fades over 28 washes (US store page, current); older factsheets state up to 24 (EN) / 15 (UK) shampoos - see source_conflicts in the shade file."
+      ],
+      "region_or_market": "US (canonical; US store page fetched); leaflet/technical folder are official wella.com documents without explicit market statement; distributor brochure is UK",
+      "discontinued_status": "Active - official US store page live as of June 2026",
+      "source_url": "https://www.wella.com/professional/m/Shadechart_LP/Wella-Professionals_Color-Touch_Leaflet.pdf",
+      "source_document": "Color Touch Usage Guidelines leaflet / shade chart (official wella.com PDF)",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [
+        "Line-level data aggregated from multiple sources; primary = leaflet. Supplementary: https://www.wella.com/professional/m/_master/products/color_touch_NEW/PDFs/Wella_Color_Touch_Technical_Folder.pdf; https://www.salon-services.com/on/demandware.static/-/Sites-salon-services-Library/default/dw534f9e2b/brands/wella/color-touch/ct-digital-brochure.pdf; https://www.wella.com/professional/m/pdf/FactSheet_EN/ColorTouch/Color_Touch_Fact_Sheet.pdf; https://www.wella.com/professional/m/pdf/factsheet_uk/WELLA-Color-College_FactSheet_Color_Touch_FINAL.pdf; https://us.wella.professionalstore.com/en-US/color-touch"
+      ],
+      "data_gaps": [
+        "No publication dates printed in source PDFs.",
+        "US store page did not enumerate the full US shade roster as extractable text.",
+        "Official '77 shades' portfolio claim (wella.com jp-JP market page seen in search results) could not be reconciled with the leaflet matrix count."
+      ]
+    }
+  ],
+  "issue_log": [
+    "Koleston Perfect line rules merged from leaflet (primary), older technical folder, US factsheet, UK Contentful factsheet, distributor technical guide and official US range page; conflicts recorded in the shade file's source_conflicts.",
+    "Color Touch line rules merged from leaflet (primary), technical folder, EN/UK factsheets, distributor brochure and US store page.",
+    "Developer 'vol' equivalences for Koleston Perfect taken verbatim from the leaflet (1.9%=6 Vol, 4%=13 Vol, 6%=20 Vol, 9%=30 Vol, 12%=40 Vol); Color Touch 1.9%=6 vol from US store page formula annotations.",
+    "Tone-digit system (first digit after slash = major/primary tone, second = minor/secondary tone) is stated in both official technical folders and recorded in special_usage_notes/tone_family_legend with sources."
+  ]
+}
