@@ -1,0 +1,77 @@
+#!/usr/bin/env python3
+"""
+Deterministic formula engine for the Phase 1 SQLite hair color database.
+
+Takes a shade reference and hair condition parameters, reads line_technical_rule
+data for developer selection, mixing ratio, timing, and special notes, and returns
+a complete formula JSON with provenance, confidence, and assumptions.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sqlite3
+import sys
+from pathlib import Path
+
+from src.formula_builder import build_formula
+from src.logging_utils import configure_logging, log_transformation
+from src.paths import DEFAULT_DB_PATH
+
+
+def main(argv: list[str] | None = None) -> int:
+    """CLI entry point."""
+    parser = argparse.ArgumentParser(description="Build a hair color formula from shade + conditions.")
+    parser.add_argument("--db", type=Path, default=DEFAULT_DB_PATH, help="SQLite database path")
+    parser.add_argument(
+        "--shade",
+        type=str,
+        required=True,
+        help='Shade reference (e.g. "Wella 7/1" or "Wella Professionals::Koleston Perfect::7/1")',
+    )
+    parser.add_argument("--gray", type=float, default=None, help="Gray hair percentage")
+    parser.add_argument("--current_level", type=float, default=None, help="Client current level")
+    parser.add_argument(
+        "--line",
+        type=str,
+        default=None,
+        help="Optional product line hint when shade code is ambiguous",
+    )
+    args = parser.parse_args(argv)
+
+    if not args.db.exists():
+        print(f"Database not found: {args.db}. Run init_db.py first.", file=sys.stderr)
+        return 1
+
+    logger = configure_logging()
+    log_transformation(
+        logger,
+        "formula_request",
+        {
+            "shade": args.shade,
+            "gray_percent": args.gray,
+            "current_level": args.current_level,
+            "line_hint": args.line,
+        },
+    )
+
+    conn = sqlite3.connect(args.db)
+    try:
+        formula = build_formula(
+            conn,
+            shade_ref=args.shade,
+            gray_percent=args.gray,
+            current_level=args.current_level,
+            product_line_hint=args.line,
+            logger=logger,
+        )
+    finally:
+        conn.close()
+
+    print(json.dumps(formula, indent=2, ensure_ascii=False))
+    return 0 if formula.get("status") == "ok" else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
