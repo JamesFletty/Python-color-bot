@@ -33,7 +33,7 @@ Matrix Coil Color, Super Sync, and Tonal Control shade inventory was added in St
 
 ## Known gaps
 
-See `G_conflicts_and_gaps.json` (G004–G006) for evidence conflicts and engine action-surface alignment items.
+See `G_conflicts_and_gaps.json` (G005) for remaining inventory and workflow coverage items.
 
 ## Regenerating artifacts
 

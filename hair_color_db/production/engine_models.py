@@ -191,6 +191,10 @@ class AccumulatedActions(BaseModel):
     """Mutable action state while applying matched rules in precedence order."""
 
     developer_volume: Optional[int] = None
+    developer_locked: bool = False
+    mixing_ratio: Optional[str] = None
+    recommendation_status: Optional[RecommendationStatus] = None
+    block_reason: Optional[str] = None
     require_natural_shade_mix: bool = False
     natural_shade_ratio: float = 0.0
     processing_time_minutes: int = 35

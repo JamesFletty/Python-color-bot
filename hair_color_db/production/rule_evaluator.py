@@ -7,6 +7,7 @@ from typing import Any
 from .engine_models import (
     AccumulatedActions,
     MatchedRule,
+    RecommendationStatus,
     RuleEvaluationContext,
     RuleScopeTier,
     SuggestedFormulaStep,
@@ -19,6 +20,13 @@ _SCOPE_RANK = {
     RuleScopeTier.UNIVERSAL: 0,
     RuleScopeTier.BRAND: 1,
     RuleScopeTier.LINE: 2,
+}
+
+_STATUS_RANK = {
+    RecommendationStatus.OK: 0,
+    RecommendationStatus.CAUTION: 1,
+    RecommendationStatus.REQUIRES_CONSULTATION: 2,
+    RecommendationStatus.BLOCKED: 3,
 }
 
 
@@ -45,6 +53,8 @@ def _compare(left: Any, op: str, right: Any, context: RuleEvaluationContext) -> 
             return False
         if isinstance(left, str):
             return len(left.strip()) > 0
+        if isinstance(left, (list, tuple, set)):
+            return len(left) > 0
         return True
 
     if op == "not_exists":
@@ -76,6 +86,12 @@ def _compare(left: Any, op: str, right: Any, context: RuleEvaluationContext) -> 
         return left in right
     if op == "not_in":
         return left not in right
+    if op == "contains":
+        if isinstance(left, (list, tuple, set)):
+            return right in left
+        if isinstance(left, str):
+            return str(right) in left
+        return False
 
     raise ValueError(f"Unsupported operator: {op}")
 
@@ -161,17 +177,34 @@ def match_formulation_rules(
 def apply_rule_action(
     action: dict[str, Any], accumulated: AccumulatedActions
 ) -> None:
-    """Apply a single rule action onto accumulated state."""
-    if volume := action.get("set_developer_volume"):
-        accumulated.developer_volume = int(volume)
+    """Apply a single rule action onto accumulated state (Stage 13 action surface)."""
+    status = action.get("set_recommendation_status")
+    if status:
+        new_status = RecommendationStatus(status)
+        current = accumulated.recommendation_status or RecommendationStatus.OK
+        if _STATUS_RANK[new_status] >= _STATUS_RANK[current]:
+            accumulated.recommendation_status = new_status
+
+    if block_reason := action.get("block_reason"):
+        accumulated.block_reason = str(block_reason)
+        accumulated.hard_stops.append(str(block_reason))
+
+    if "set_developer_volume" in action:
+        volume = action.get("set_developer_volume")
+        if volume is None:
+            accumulated.developer_volume = None
+            accumulated.developer_locked = True
+        elif not accumulated.developer_locked:
+            accumulated.developer_volume = int(volume)
 
     if action.get("require_natural_shade_mix"):
         accumulated.require_natural_shade_mix = True
         accumulated.natural_shade_ratio = float(action.get("natural_shade_ratio", 0.5))
 
     if delta := action.get("adjust_developer_volume_delta"):
-        base = accumulated.developer_volume or 20
-        accumulated.developer_volume = max(10, base + int(delta))
+        if not accumulated.developer_locked:
+            base = accumulated.developer_volume or 20
+            accumulated.developer_volume = max(10, base + int(delta))
 
     if time_delta := action.get("adjust_processing_time_minutes"):
         accumulated.processing_time_minutes = max(
@@ -186,6 +219,12 @@ def apply_rule_action(
 
     if risk_inc := action.get("increase_risk_score"):
         accumulated.apply_risk_modifier({str(k): float(v) for k, v in risk_inc.items()})
+
+    if mixing_ratio := action.get("mixing_ratio"):
+        accumulated.mixing_ratio = str(mixing_ratio)
+
+    if warning := action.get("warning"):
+        accumulated.warnings.append(str(warning))
 
     if add_step := action.get("add_step"):
         zone_raw = add_step.get("zone", "all")
@@ -209,7 +248,10 @@ def evaluate_and_apply_rules(
     """Match rules, apply in precedence order, return audit trail + state."""
     matched_pairs = match_formulation_rules(rules, context)
     accumulated = AccumulatedActions()
-    matched_rules = [pair[1] for pair in matched_pairs]
-    for rule, _meta in matched_pairs:
+    matched_rules: list[MatchedRule] = []
+    for rule, meta in matched_pairs:
         apply_rule_action(rule.rule_action, accumulated)
+        matched_rules.append(meta)
+        if accumulated.recommendation_status == RecommendationStatus.BLOCKED:
+            break
     return matched_rules, accumulated

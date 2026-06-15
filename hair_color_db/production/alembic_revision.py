@@ -837,7 +837,7 @@ def upgrade() -> None:
             'matrix_socolor_resistant_gray_20vol',
             55,
             '{"all_of": [{"field": "gray_percentage", "op": ">=", "value": 50}]}'::jsonb,
-            '{"set_developer_volume": 20, "add_step": {"zone": "root", "processing_time_adjustment": "+10min"}}'::jsonb,
+            '{"set_developer_volume": 30, "add_step": {"zone": "root", "processing_time_adjustment": "+10min"}}'::jsonb,
             'gray_coverage',
             'manufacturer_stated',
             false

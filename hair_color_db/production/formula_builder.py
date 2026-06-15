@@ -24,6 +24,7 @@ from .safety_checks import (
     check_intermixing,
     check_lift_and_color_science,
     derive_recommendation_status,
+    merge_recommendation_status,
     resolve_line_technical_defaults,
 )
 
@@ -218,16 +219,22 @@ def run_engine(
             repository.load_line_technical_rules(region_id)
         )
 
-    developer_volume = int(
-        accumulated.developer_volume or line_defaults.get("developer_volume") or 20
-    )
+    developer_volume: int | None = None
+    if accumulated.developer_locked:
+        developer_volume = accumulated.developer_volume
+    else:
+        developer_volume = int(
+            accumulated.developer_volume or line_defaults.get("developer_volume") or 20
+        )
     processing_time = int(
         accumulated.processing_time_minutes or line_defaults.get("processing_time_minutes") or 35
     )
     processing_time = _parse_time_adjustment(
         processing_time, accumulated.processing_time_adjustments
     )
-    mixing_ratio = str(line_defaults.get("mixing_ratio") or "1:1")
+    mixing_ratio = str(
+        accumulated.mixing_ratio or line_defaults.get("mixing_ratio") or "1:1"
+    )
 
     intermix_blocks: list[str] = []
     intermix_warnings: list[str] = []
@@ -257,6 +264,7 @@ def run_engine(
         all_warnings,
         accumulated.triggered_workflows,
     )
+    status = merge_recommendation_status(status, accumulated.recommendation_status)
 
     steps: list[SuggestedFormulaStep] = []
     if status not in {RecommendationStatus.BLOCKED, RecommendationStatus.REQUIRES_CONSULTATION}:

@@ -4,29 +4,11 @@
   "generated": "2026-06-15",
   "conflicts_and_gaps": [
     {
-      "gap_id": "G004",
-      "gap_type": "rule_evidence_conflict",
-      "severity": "medium",
-      "details": "Matrix SoColor resistant gray developer strength: 20 vol in production DDL seed vs 30 vol in manufacturer educator materials.",
-      "affected_rules": [
-        "M_SOCOLOR_001",
-        "matrix_socolor_resistant_gray_20vol"
-      ],
-      "recommended_next_action": "Reconcile against 2023 Matrix haircolor manual and update evidence_status."
-    },
-    {
       "gap_id": "G005",
       "gap_type": "workflow_coverage",
       "severity": "low",
       "details": "Pulp Riot FACTION8 permanent line has no Stage 13 line override group; covered only by universal direct-dye rule U009 for semi-permanent.",
       "recommended_next_action": "Add FACTION8 override group when permanent formulation rules are scoped."
-    },
-    {
-      "gap_id": "G006",
-      "gap_type": "schema_alignment",
-      "severity": "medium",
-      "details": "Stage 13 rule_action keys (set_recommendation_status, block_reason) extend beyond current production engine apply_rule_action surface.",
-      "recommended_next_action": "Implement H_schema_extension_proposal actions in rule_evaluator or map at import."
     }
   ]
 }
