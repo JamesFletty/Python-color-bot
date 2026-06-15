@@ -9,10 +9,10 @@ built for formula generation, formula conversion, and multi-brand mapping.
 |---|---|
 | Brands inventoried (Stage 1) | 20 seed brands, 133 product lines |
 | Sources cataloged (Stage 2) | 152 (Tier 1 official prioritized) |
-| Lines with shade-level extraction (Stages 4–9) | 24 lines / 9 brands |
-| Normalized shade records | 1,610 |
-| Manufacturer tone reference rows | 623 |
-| Tone normalization mappings | 584 |
+| Lines with shade-level extraction (Stages 4–9) | 26 lines / 10 brands |
+| Normalized shade records | 1,828 |
+| Manufacturer tone reference rows | 698 |
+| Tone normalization mappings | 659 |
 | Line technical records | 28 |
 
 Extracted batches:
@@ -27,8 +27,9 @@ Extracted batches:
   (The Demi line technical only); Kenra Creatives (line technical only)
 - **Batch 5** — Matrix (Coil Color, Tonal Control Pre-Bonded, Super Sync Pre-Bonded)
 - **Batch 6** — Matrix (SoColor Cult Vivids, Light Master + Pre-Bonded)
+- **Batch 7** — Goldwell (Topchic permanent, Colorance demi-permanent)
 
-The remaining 109 inventoried lines are queued with explicit gap records
+The remaining 107 inventoried lines are queued with explicit gap records
 (`stage11_gaps/gap_risk_report.json`).
 
 ## Layout
@@ -38,7 +39,7 @@ hair_color_db/
   stage01_discovery/        Stage 1: brand & line inventory (+ per-group research files)
   stage02_sources/          Stage 2: source catalog & missing-source targets
   stage03_extraction_plan/  Stage 3: per-line extraction plan, batch definitions, blockers
-  batches/batch01, batch02, batch03, batch04, batch05, batch06/ Stages 4–9 per batch:
+  batches/batch01, batch02, batch03, batch04, batch05, batch06, batch07/ Stages 4–9 per batch:
       *_raw_shade_records.json        raw manufacturer wording (append-only layer)
       *_line_technical_records.json   line-wide rules, developer tables, tone legends
       tone_reference_stage6.json      decoded manufacturer tone notation
@@ -82,6 +83,8 @@ python3 hair_color_db/tools/build_matrix_supplement.py
 python3 hair_color_db/tools/integrate_matrix_supplement_into_stage12.py
 python3 hair_color_db/tools/build_matrix_batch06.py
 python3 hair_color_db/tools/integrate_matrix_batch06_into_stage12.py
+python3 hair_color_db/tools/build_goldwell_batch07.py
+python3 hair_color_db/tools/integrate_goldwell_batch07_into_stage12.py
 ```
 
 Build scripts are pure functions of the committed Stage 4–5 raw files.

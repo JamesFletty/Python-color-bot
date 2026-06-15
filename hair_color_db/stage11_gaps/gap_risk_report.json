@@ -149,15 +149,6 @@
       "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
     },
     {
-      "canonical_key": "Goldwell::Topchic::US",
-      "brand": "Goldwell",
-      "product_line": "Topchic",
-      "gap_type": "shade_extraction_blocked",
-      "severity": "high",
-      "details": "Status: line technical extracted in Batch 3; shade-level Stage 4 blocked — official Color Guide publishes palette JPEGs without extractable shade codes or companion PDF.",
-      "recommended_next_action": "Locate machine-readable shade chart/PDF or distributor catalog; OCR/image extraction only as last resort with manual QA."
-    },
-    {
       "canonical_key": "Goldwell::Topchic Zero::US",
       "brand": "Goldwell",
       "product_line": "Topchic Zero",
@@ -165,15 +156,6 @@
       "severity": "high",
       "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
       "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
-      "canonical_key": "Goldwell::Colorance::US",
-      "brand": "Goldwell",
-      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
-      "gap_type": "shade_extraction_blocked",
-      "severity": "high",
-      "details": "Status: line technical extracted in Batch 3; shade-level Stage 4 blocked — official Color Guide publishes palette JPEGs without extractable shade codes or companion PDF.",
-      "recommended_next_action": "Locate machine-readable shade chart/PDF or distributor catalog; OCR/image extraction only as last resort with manual QA."
     },
     {
       "canonical_key": "Goldwell::Elumen::US",
