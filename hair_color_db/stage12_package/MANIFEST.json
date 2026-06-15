@@ -6,18 +6,19 @@
     "brands_inventoried": 20,
     "lines_inventoried": 133,
     "sources_cataloged": 152,
-    "lines_with_shade_extraction": 22,
-    "normalized_shade_records": 1595,
-    "tone_reference_rows": 610,
-    "tone_mappings": 571,
+    "lines_with_shade_extraction": 24,
+    "normalized_shade_records": 1610,
+    "tone_reference_rows": 623,
+    "tone_mappings": 584,
     "batches_completed": [
       "batch01: Redken (Shades EQ Gloss, Color Gels Lacquers), Wella (Koleston Perfect, Color Touch), Schwarzkopf (IGORA ROYAL, IGORA VIBRANCE)",
       "batch02: Matrix (SoColor, SoColor Sync), L'Oréal Professionnel (Majirel, Dia Light)",
       "batch03: Pravana (ChromaSilk Crème Color, Express Tones, VIVIDS); Goldwell (Topchic, Colorance line technical only)",
       "batch04: Pravana (VIVIDS Everlasting), Pulp Riot (Semi-Permanent Paint), Kenra (Permanent, Demi, Rapid Toners, Studio Stylist Express); Paul Mitchell (The Demi line tech), Kenra (Creatives line tech)",
-      "batch05: Matrix (Coil Color, Tonal Control Pre-Bonded, Super Sync Pre-Bonded)"
+      "batch05: Matrix (Coil Color, Tonal Control Pre-Bonded, Super Sync Pre-Bonded)",
+      "batch06: Matrix (SoColor Cult Vivids, Light Master + Pre-Bonded)"
     ],
-    "line_technical_records": 26
+    "line_technical_records": 28
   },
   "sections": {
     "A": "A_brand_line_inventory.json",
@@ -49,6 +50,6 @@
   "notes": [
     "Confirmed vs inferred data separated via evidence_status / mapping_confidence / ambiguity_flag fields throughout.",
     "Raw manufacturer wording preserved in batches/*/ raw_shade_records files; section C is the normalized layer.",
-    "111 inventoried lines remain queued for future extraction batches (see section I gap_report)."
+    "109 inventoried lines remain queued for future extraction batches (see section I gap_report)."
   ]
 }

@@ -1,6 +1,6 @@
 {
   "artifact": "manufacturer_tone_reference",
-  "count": 610,
+  "count": 623,
   "manufacturer_tone_reference": [
     {
       "canonical_key": "Redken::Color Gels Lacquers::US",
@@ -7523,6 +7523,136 @@
       "notes_on_ambiguity": [
         "SP sheer pastel series"
       ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "DUSTY TEAL",
+      "manufacturer_term": "Dusty Teal",
+      "manufacturer_definition": "SoColor Cult vivid shade — Dusty's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "BUBBLEGUM PINK",
+      "manufacturer_term": "Bubblegum Pink",
+      "manufacturer_definition": "SoColor Cult vivid shade — Pastel's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "LAVENDER MACARON",
+      "manufacturer_term": "Lavender Macaron",
+      "manufacturer_definition": "SoColor Cult vivid shade — Pastel's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "DISCO SILVER",
+      "manufacturer_term": "Disco Silver",
+      "manufacturer_definition": "SoColor Cult vivid shade — Gray's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "BLACK",
+      "manufacturer_term": "Black",
+      "manufacturer_definition": "SoColor Cult vivid shade — Gray's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "CLEAR",
+      "manufacturer_term": "Clear",
+      "manufacturer_definition": "SoColor Cult vivid shade — Must-Have's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "RED HOT",
+      "manufacturer_term": "Red Hot",
+      "manufacturer_definition": "SoColor Cult vivid shade — Must-Have's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "LUCKY DUCK YELLOW",
+      "manufacturer_term": "Lucky Duck Yellow",
+      "manufacturer_definition": "SoColor Cult vivid shade — Must-Have's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "ADMIRAL NAVY",
+      "manufacturer_term": "Admiral Navy",
+      "manufacturer_definition": "SoColor Cult vivid shade — Must-Have's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "RETRO BLUE",
+      "manufacturer_term": "Retro Blue",
+      "manufacturer_definition": "SoColor Cult vivid shade — Must-Have's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "FLAMENCO FUCHSIA",
+      "manufacturer_term": "Flamenco Fuchsia",
+      "manufacturer_definition": "SoColor Cult vivid shade — Must-Have's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "CLOVER GREEN",
+      "manufacturer_term": "Clover Green",
+      "manufacturer_definition": "SoColor Cult vivid shade — Must-Have's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "manufacturer_tone_code": "ROYAL PURPLE",
+      "manufacturer_term": "Royal Purple",
+      "manufacturer_definition": "SoColor Cult vivid shade — Must-Have's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
     }
   ],
   "ambiguous_tone_codes": [

@@ -230,24 +230,6 @@
       "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
     },
     {
-      "canonical_key": "Matrix::Light Master::US",
-      "brand": "Matrix",
-      "product_line": "Light Master (incl. Light Master Pre-Bonded)",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "medium",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
-      "canonical_key": "Matrix::SoColor Cult::US",
-      "brand": "Matrix",
-      "product_line": "SoColor Cult (Vivids)",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "medium",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
       "canonical_key": "Joico::LumiShine Permanent Creme Color::US",
       "brand": "Joico",
       "product_line": "LumiShine Permanent Crème Color",
