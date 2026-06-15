@@ -1,0 +1,372 @@
+{
+  "stage": 13,
+  "artifact": "brand_line_overrides",
+  "generated": "2026-06-15",
+  "brand_line_overrides": [
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand_name": "Matrix",
+      "product_line_name": "SoColor",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "M_SOCOLOR_001",
+          "rule_name": "matrix_socolor_resistant_gray_20vol",
+          "rule_priority": 55,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 50
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 30,
+            "add_step": {
+              "zone": "root",
+              "processing_time_adjustment": "+10min"
+            }
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR_002",
+          "rule_name": "matrix_socolor_hd_not_mixable",
+          "rule_priority": 30,
+          "rule_category": "intermixing",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "selected_sub_ranges",
+                "op": "contains",
+                "value": "HD"
+              }
+            ]
+          },
+          "rule_action": {
+            "set_recommendation_status": "blocked",
+            "block_reason": "HD Series not mixable with other SoColor shades."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "brand_name": "Matrix",
+      "product_line_name": "SoColor Sync",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "M_SYNC_001",
+          "rule_name": "sync_gray_blend_not_full_cover",
+          "rule_priority": 50,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 80
+              }
+            ]
+          },
+          "rule_action": {
+            "set_recommendation_status": "blocked",
+            "block_reason": "SoColor Sync is for gray blending; full cover at 80%+ gray prohibited."
+          }
+        },
+        {
+          "rule_id": "M_SYNC_002",
+          "rule_name": "sync_pre_paired_with_socolor",
+          "rule_priority": 80,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "service_intent",
+                "op": "=",
+                "value": "gloss_refresh"
+              }
+            ]
+          },
+          "rule_action": {
+            "warning": "Sync is pre-paired with SoColor permanent for root-to-ends services."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Matrix::Coil Color::US",
+      "brand_name": "Matrix",
+      "product_line_name": "Coil Color",
+      "requires_stage12_inventory_addition": true,
+      "override_rules": [
+        {
+          "rule_id": "M_COIL_001",
+          "rule_name": "coil_gray_natural_ratio",
+          "rule_priority": 45,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">",
+                "value": 30
+              }
+            ]
+          },
+          "rule_action": {
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.6,
+            "warning": "Coil Color gray coverage requires elevated natural-series ratio."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand_name": "Matrix",
+      "product_line_name": "Super Sync",
+      "requires_stage12_inventory_addition": true,
+      "override_rules": [
+        {
+          "rule_id": "M_SSYNC_001",
+          "rule_name": "supersync_tint_back",
+          "rule_priority": 50,
+          "rule_category": "application",
+          "evidence_status": "inferred",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "service_intent",
+                "op": "=",
+                "value": "tone_deposit"
+              },
+              {
+                "field": "pre_lightened",
+                "op": "=",
+                "value": true
+              }
+            ]
+          },
+          "rule_action": {
+            "trigger_workflow": "WF_retouch_with_refresh",
+            "warning": "Super Sync tint-back on pre-lightened hair — monitor porosity."
+          }
+        },
+        {
+          "rule_id": "M_SSYNC_002",
+          "rule_name": "supersync_hd_mix_block",
+          "rule_priority": 30,
+          "rule_category": "intermixing",
+          "evidence_status": "inferred",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "selected_sub_ranges",
+                "op": "contains",
+                "value": "HD"
+              }
+            ]
+          },
+          "rule_action": {
+            "set_recommendation_status": "blocked",
+            "block_reason": "Super Sync HD shades cannot be intermixed with standard Sync shades."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Matrix::Tonal Control::US",
+      "brand_name": "Matrix",
+      "product_line_name": "Tonal Control Pre-Bonded",
+      "requires_stage12_inventory_addition": true,
+      "override_rules": [
+        {
+          "rule_id": "M_TC_001",
+          "rule_name": "tonal_control_prelightened_only",
+          "rule_priority": 40,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "pre_lightened",
+                "op": "!=",
+                "value": true
+              }
+            ]
+          },
+          "rule_action": {
+            "set_recommendation_status": "blocked",
+            "block_reason": "Tonal Control is for pre-lightened or highlighted hair only."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "brand_name": "Redken",
+      "product_line_name": "Color Gels Lacquers",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "R_CGL_001",
+          "rule_name": "cgl_resistant_gray_30vol",
+          "rule_priority": 55,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 50
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 30,
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "brand_name": "Redken",
+      "product_line_name": "Shades EQ Gloss",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "R_SEQ_001",
+          "rule_name": "seq_no_lift_deposit",
+          "rule_priority": 35,
+          "rule_category": "lift",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "lift_levels",
+                "op": ">",
+                "value": 0
+              }
+            ]
+          },
+          "rule_action": {
+            "set_recommendation_status": "blocked",
+            "block_reason": "Shades EQ is no-lift demi-gloss; cannot lighten natural pigment."
+          }
+        },
+        {
+          "rule_id": "R_SEQ_002",
+          "rule_name": "seq_gray_blend_processing",
+          "rule_priority": 60,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">",
+                "value": 0
+              }
+            ]
+          },
+          "rule_action": {
+            "adjust_processing_time_minutes": 5,
+            "warning": "Gray blending may require capped heat processing per chart."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand_name": "Wella Professionals",
+      "product_line_name": "Color Touch",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "W_CT_001",
+          "rule_name": "colortouch_soft_blend",
+          "rule_priority": 65,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">",
+                "value": 0
+              },
+              {
+                "field": "gray_percentage",
+                "op": "<",
+                "value": 50
+              }
+            ]
+          },
+          "rule_action": {
+            "warning": "Color Touch soft blend path for low gray; not full coverage.",
+            "set_developer_volume": 6
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand_name": "Wella Professionals",
+      "product_line_name": "Koleston Perfect",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "W_KP_001",
+          "rule_name": "koleston_lift_developer_matrix",
+          "rule_priority": 50,
+          "rule_category": "lift",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "lift_levels",
+                "op": "=",
+                "value": 1
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 20
+          }
+        },
+        {
+          "rule_id": "W_KP_002",
+          "rule_name": "koleston_high_lift_consult",
+          "rule_priority": 40,
+          "rule_category": "lift",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "lift_levels",
+                "op": ">=",
+                "value": 3
+              }
+            ]
+          },
+          "rule_action": {
+            "trigger_workflow": "pre_lightening_consultation",
+            "set_developer_volume": 30
+          }
+        }
+      ]
+    }
+  ]
+}

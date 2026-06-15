@@ -1,0 +1,294 @@
+{
+  "stage": 13,
+  "artifact": "universal_rule_library",
+  "generated": "2026-06-15",
+  "universal_rules": [
+    {
+      "rule_id": "U001",
+      "rule_name": "patch_test_fail_blocks_service",
+      "rule_priority": 10,
+      "rule_category": "safety",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "patch_test_status",
+            "op": "=",
+            "value": "failed"
+          }
+        ]
+      },
+      "rule_action": {
+        "set_recommendation_status": "blocked",
+        "block_reason": "Patch test failed; do not proceed with color service."
+      }
+    },
+    {
+      "rule_id": "U002",
+      "rule_name": "gray_coverage_high_natural_mix",
+      "rule_priority": 50,
+      "rule_category": "gray_coverage",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "gray_percentage",
+            "op": ">",
+            "value": 50
+          },
+          {
+            "field": "natural_level",
+            "op": "<=",
+            "value": 6
+          }
+        ]
+      },
+      "rule_action": {
+        "set_developer_volume": 20,
+        "require_natural_shade_mix": true,
+        "natural_shade_ratio": 0.5
+      }
+    },
+    {
+      "rule_id": "U003",
+      "rule_name": "high_porosity_reduce_developer_time",
+      "rule_priority": 60,
+      "rule_category": "porosity",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "any_of": [
+          {
+            "field": "porosity",
+            "op": ">",
+            "value": 7
+          }
+        ]
+      },
+      "rule_action": {
+        "adjust_developer_volume_delta": -10,
+        "adjust_processing_time_minutes": -5
+      }
+    },
+    {
+      "rule_id": "U004",
+      "rule_name": "lift_over_four_prelighten_consult",
+      "rule_priority": 40,
+      "rule_category": "lift",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "lift_levels",
+            "op": ">",
+            "value": 4
+          }
+        ]
+      },
+      "rule_action": {
+        "trigger_workflow": "pre_lightening_consultation",
+        "risk_modifier": {
+          "unrealistic_expectation": 0.3
+        }
+      }
+    },
+    {
+      "rule_id": "U005",
+      "rule_name": "artificial_color_lighter_correction",
+      "rule_priority": 45,
+      "rule_category": "correction",
+      "evidence_status": "inferred",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "existing_artificial_color",
+            "op": "exists",
+            "value": true
+          },
+          {
+            "field": "desired_level",
+            "op": ">",
+            "value": "existing_level"
+          }
+        ]
+      },
+      "rule_action": {
+        "trigger_workflow": "color_correction",
+        "risk_modifier": {
+          "overlap": 0.25
+        }
+      }
+    },
+    {
+      "rule_id": "U006",
+      "rule_name": "color_does_not_lift_color",
+      "rule_priority": 35,
+      "rule_category": "color_science",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "existing_artificial_color",
+            "op": "exists",
+            "value": true
+          },
+          {
+            "field": "lift_levels",
+            "op": ">",
+            "value": 0
+          },
+          {
+            "field": "pre_lightened",
+            "op": "!=",
+            "value": true
+          }
+        ]
+      },
+      "rule_action": {
+        "set_recommendation_status": "requires_consultation",
+        "warning": "Permanent color cannot reliably lift artificial color; pre-lighten or corrective path required.",
+        "trigger_workflow": "color_correction"
+      }
+    },
+    {
+      "rule_id": "U007",
+      "rule_name": "fine_texture_high_lift_breakage_risk",
+      "rule_priority": 70,
+      "rule_category": "lift",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "texture",
+            "op": "=",
+            "value": "fine"
+          },
+          {
+            "field": "lift_levels",
+            "op": ">=",
+            "value": 3
+          }
+        ]
+      },
+      "rule_action": {
+        "increase_risk_score": {
+          "breakage": 0.35
+        }
+      }
+    },
+    {
+      "rule_id": "U008",
+      "rule_name": "underlying_pigment_neutralization_warning",
+      "rule_priority": 55,
+      "rule_category": "color_science",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "lift_levels",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      },
+      "rule_action": {
+        "warning": "Lift exposes underlying warm pigment; select complementary neutralizing tone.",
+        "lookup": "underlying_pigment_default_map"
+      }
+    },
+    {
+      "rule_id": "U009",
+      "rule_name": "direct_dye_no_developer",
+      "rule_priority": 25,
+      "rule_category": "product_type",
+      "evidence_status": "manufacturer_stated",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "line_category",
+            "op": "=",
+            "value": "direct_dye"
+          }
+        ]
+      },
+      "rule_action": {
+        "set_developer_volume": null,
+        "mixing_ratio": "direct_application",
+        "warning": "Direct dye / semi-permanent — no developer mixed."
+      }
+    },
+    {
+      "rule_id": "U010",
+      "rule_name": "refresh_restricted_high_porosity",
+      "rule_priority": 65,
+      "rule_category": "porosity",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "service_intent",
+            "op": "=",
+            "value": "gloss_refresh"
+          },
+          {
+            "field": "porosity",
+            "op": ">",
+            "value": 7
+          }
+        ]
+      },
+      "rule_action": {
+        "set_recommendation_status": "caution",
+        "adjust_processing_time_minutes": -5,
+        "warning": "High porosity — shorten refresh time; monitor absorption."
+      }
+    },
+    {
+      "rule_id": "U011",
+      "rule_name": "overlap_application_risk",
+      "rule_priority": 75,
+      "rule_category": "application",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "service_intent",
+            "op": "in",
+            "value": [
+              "gray_coverage",
+              "lift_and_tone"
+            ]
+          },
+          {
+            "field": "existing_artificial_color",
+            "op": "exists",
+            "value": true
+          }
+        ]
+      },
+      "rule_action": {
+        "risk_modifier": {
+          "overlap": 0.2
+        }
+      }
+    },
+    {
+      "rule_id": "U012",
+      "rule_name": "universal_default_developer",
+      "rule_priority": 200,
+      "rule_category": "developer",
+      "evidence_status": "inferred",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "service_intent",
+            "op": "exists",
+            "value": true
+          }
+        ]
+      },
+      "rule_action": {
+        "set_developer_volume": 10
+      }
+    }
+  ]
+}

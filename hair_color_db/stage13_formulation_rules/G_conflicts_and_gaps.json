@@ -1,0 +1,56 @@
+{
+  "stage": 13,
+  "artifact": "conflicts_and_gaps",
+  "generated": "2026-06-15",
+  "conflicts_and_gaps": [
+    {
+      "gap_id": "G001",
+      "gap_type": "inventory_missing",
+      "canonical_key": "Matrix::Coil Color::US",
+      "severity": "high",
+      "details": "Coil Color referenced in Matrix 2023 manual but no normalized shade records in Stage 12 section C.",
+      "recommended_next_action": "Add Coil Color to Stage 12 inventory and extract shades before activating line overrides."
+    },
+    {
+      "gap_id": "G002",
+      "gap_type": "inventory_missing",
+      "canonical_key": "Matrix::Super Sync::US",
+      "severity": "high",
+      "details": "Super Sync listed in matrix.com navigation without dedicated product page or shade extraction.",
+      "recommended_next_action": "Catalog official Super Sync sources and add normalized shades to Stage 12."
+    },
+    {
+      "gap_id": "G003",
+      "gap_type": "inventory_missing",
+      "canonical_key": "Matrix::Tonal Control::US",
+      "severity": "medium",
+      "details": "Tonal Control Pre-Bonded lacks normalized shade records in Stage 12 section C.",
+      "recommended_next_action": "Extract Tonal Control shades and line technical rules in a future batch."
+    },
+    {
+      "gap_id": "G004",
+      "gap_type": "rule_evidence_conflict",
+      "severity": "medium",
+      "details": "Matrix SoColor resistant gray developer strength: 20 vol in production DDL seed vs 30 vol in manufacturer educator materials.",
+      "affected_rules": [
+        "M_SOCOLOR_001",
+        "matrix_socolor_resistant_gray_20vol"
+      ],
+      "recommended_next_action": "Reconcile against 2023 Matrix haircolor manual and update evidence_status."
+    },
+    {
+      "gap_id": "G005",
+      "gap_type": "workflow_coverage",
+      "severity": "low",
+      "details": "Pulp Riot FACTION8 permanent line has no Stage 13 line override group; covered only by universal direct-dye rule U009 for semi-permanent.",
+      "recommended_next_action": "Add FACTION8 override group when permanent formulation rules are scoped."
+    },
+    {
+      "gap_id": "G006",
+      "gap_type": "schema_alignment",
+      "severity": "medium",
+      "details": "Stage 13 rule_action keys (set_recommendation_status, block_reason) extend beyond current production engine apply_rule_action surface.",
+      "recommended_next_action": "Implement H_schema_extension_proposal actions in rule_evaluator or map at import."
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "stage": 13,
+  "artifact": "formulation_ontology",
+  "generated": "2026-06-15",
+  "completion_status": "complete",
+  "entities": [
+    {
+      "entity_id": "consultation",
+      "description": "Client session capturing hair history, goals, and safety gates.",
+      "fields": [
+        "consultation_id",
+        "client_id",
+        "patch_test_status",
+        "patch_test_date",
+        "allergy_notes"
+      ]
+    },
+    {
+      "entity_id": "hair_state",
+      "description": "Observed and declared hair condition at service time.",
+      "fields": [
+        "natural_level",
+        "existing_level",
+        "existing_artificial_color",
+        "porosity",
+        "elasticity",
+        "gray_percentage",
+        "texture",
+        "pre_lightened",
+        "previous_direct_dye"
+      ]
+    },
+    {
+      "entity_id": "service_intent",
+      "description": "High-level service classification driving workflow and rule templates.",
+      "fields": [
+        "service_intent",
+        "desired_result",
+        "desired_level",
+        "desired_tone"
+      ]
+    },
+    {
+      "entity_id": "formula_step",
+      "description": "Ordered application step with shade, developer, ratio, and timing.",
+      "fields": [
+        "step_order",
+        "zone",
+        "shade_code",
+        "sub_range_name",
+        "developer_volume",
+        "mixing_ratio",
+        "processing_time_minutes",
+        "special_instructions"
+      ]
+    },
+    {
+      "entity_id": "formulation_rule",
+      "description": "Deterministic if/then rule with scope tier universal, brand, or line.",
+      "fields": [
+        "rule_id",
+        "rule_name",
+        "rule_priority",
+        "rule_condition",
+        "rule_action",
+        "rule_category",
+        "scope_level"
+      ]
+    },
+    {
+      "entity_id": "risk_assessment",
+      "description": "Draft risk row with probability, severity, and mitigation.",
+      "fields": [
+        "risk_type",
+        "probability",
+        "severity",
+        "contributing_factors",
+        "mitigation"
+      ]
+    }
+  ],
+  "enums": {
+    "service_intent": [
+      "tone_deposit",
+      "gray_coverage",
+      "lift_and_tone",
+      "correction",
+      "gloss_refresh"
+    ],
+    "recommendation_status": [
+      "ok",
+      "caution",
+      "blocked",
+      "requires_consultation"
+    ],
+    "formula_zone": [
+      "root",
+      "mid",
+      "end",
+      "all"
+    ],
+    "hair_texture": [
+      "fine",
+      "medium",
+      "coarse"
+    ],
+    "porosity_scale": {
+      "min": 1,
+      "max": 10,
+      "labels": {
+        "1-3": "low",
+        "4-6": "medium",
+        "7-10": "high"
+      }
+    },
+    "patch_test_status": [
+      "not_required",
+      "pending",
+      "passed",
+      "failed",
+      "waived_documented"
+    ],
+    "evidence_status": [
+      "manufacturer_stated",
+      "educator_reported",
+      "inferred",
+      "conflicting",
+      "missing"
+    ],
+    "rule_scope_level": [
+      "universal",
+      "brand",
+      "line"
+    ]
+  },
+  "developer_profiles": [
+    {
+      "profile_id": "DEV_10VOL",
+      "volume": 10,
+      "percent_peroxide": 3.0,
+      "typical_use": "Deposit-only, gloss refresh, same-level tone."
+    },
+    {
+      "profile_id": "DEV_20VOL",
+      "volume": 20,
+      "percent_peroxide": 6.0,
+      "typical_use": "1-2 levels lift, gray coverage on resistant hair."
+    },
+    {
+      "profile_id": "DEV_30VOL",
+      "volume": 30,
+      "percent_peroxide": 9.0,
+      "typical_use": "2-3 levels lift on virgin or pre-lightened hair."
+    },
+    {
+      "profile_id": "DEV_40VOL",
+      "volume": 40,
+      "percent_peroxide": 12.0,
+      "typical_use": "High lift; requires consultation and strand test."
+    },
+    {
+      "profile_id": "DEV_ACIDIC_DEMI",
+      "volume": null,
+      "percent_peroxide": 1.9,
+      "typical_use": "Acidic demi developers (SEQ, Color Touch) — no lift."
+    },
+    {
+      "profile_id": "DEV_NONE",
+      "volume": null,
+      "percent_peroxide": 0.0,
+      "typical_use": "Direct dye / semi-permanent — no developer."
+    }
+  ],
+  "underlying_pigment_default_map": [
+    {
+      "level": 1,
+      "underlying_pigment": "Blue-violet",
+      "exposure_stage": "Darkest"
+    },
+    {
+      "level": 2,
+      "underlying_pigment": "Blue-violet",
+      "exposure_stage": "Very dark"
+    },
+    {
+      "level": 3,
+      "underlying_pigment": "Blue-violet",
+      "exposure_stage": "Dark"
+    },
+    {
+      "level": 4,
+      "underlying_pigment": "Red-violet",
+      "exposure_stage": "Medium dark"
+    },
+    {
+      "level": 5,
+      "underlying_pigment": "Red-orange",
+      "exposure_stage": "Medium"
+    },
+    {
+      "level": 6,
+      "underlying_pigment": "Orange",
+      "exposure_stage": "Mid lift"
+    },
+    {
+      "level": 7,
+      "underlying_pigment": "Orange-yellow",
+      "exposure_stage": "Lifted"
+    },
+    {
+      "level": 8,
+      "underlying_pigment": "Yellow-orange",
+      "exposure_stage": "Light"
+    },
+    {
+      "level": 9,
+      "underlying_pigment": "Yellow",
+      "exposure_stage": "High lift"
+    },
+    {
+      "level": 10,
+      "underlying_pigment": "Pale yellow",
+      "exposure_stage": "Pale stage"
+    }
+  ],
+  "complementary_color_pairs": [
+    {
+      "warm_tone": "orange",
+      "neutralizing_tone": "blue",
+      "wheel_position": "direct complement"
+    },
+    {
+      "warm_tone": "yellow",
+      "neutralizing_tone": "violet",
+      "wheel_position": "direct complement"
+    },
+    {
+      "warm_tone": "red",
+      "neutralizing_tone": "green",
+      "wheel_position": "direct complement"
+    },
+    {
+      "warm_tone": "red-orange",
+      "neutralizing_tone": "blue-green",
+      "wheel_position": "split complement"
+    },
+    {
+      "warm_tone": "gold",
+      "neutralizing_tone": "violet-ash",
+      "wheel_position": "hair-color practice"
+    },
+    {
+      "warm_tone": "copper",
+      "neutralizing_tone": "ash-blue",
+      "wheel_position": "hair-color practice"
+    },
+    {
+      "warm_tone": "brass",
+      "neutralizing_tone": "ash-violet",
+      "wheel_position": "hair-color practice"
+    }
+  ]
+}

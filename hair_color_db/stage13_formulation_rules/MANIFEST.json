@@ -1,0 +1,35 @@
+{
+  "package": "stage13_formulation_rules",
+  "stage": 13,
+  "generated": "2026-06-15",
+  "completion_status": "complete",
+  "counts": {
+    "universal_rules": 12,
+    "service_workflows": 9,
+    "brand_line_overrides": 9,
+    "validation_cases": 14,
+    "conflicts_and_gaps": 6,
+    "dormant_override_groups": 3
+  },
+  "sections": {
+    "A": "A_formulation_ontology.json",
+    "B": "B_universal_rule_library.json",
+    "C": "C_service_workflows.json",
+    "D": "D_brand_line_overrides.json",
+    "E": "E_decision_order.json",
+    "F": "F_validation_cases.json",
+    "G": "G_conflicts_and_gaps.json",
+    "H": "H_schema_extension_proposal.json",
+    "I": "I_integration_notes.md"
+  },
+  "stage12_dependencies": [
+    "A_brand_line_inventory.json",
+    "C_normalized_shade_records.json",
+    "D_line_technical_records.json"
+  ],
+  "notes": [
+    "Override groups with requires_stage12_inventory_addition=true remain dormant until canonical_key appears in Stage 12 section C.",
+    "Validation cases VC002, VC014–VC018, VC020–VC022 reserved for future batches.",
+    "14 validation cases referenced across package sections F and MANIFEST."
+  ]
+}

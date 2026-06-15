@@ -1,0 +1,61 @@
+{
+  "stage": 13,
+  "artifact": "schema_extension_proposal",
+  "generated": "2026-06-15",
+  "completion_status": "proposed",
+  "design_basis": "Stage 13 JSON package must load into production formulation_rule, service_workflow, and validation_case tables without losing scope tiers or evidence metadata.",
+  "schema_extension_proposal": {
+    "new_tables": [
+      {
+        "table": "service_workflow",
+        "columns": [
+          "workflow_id VARCHAR PK",
+          "name VARCHAR",
+          "service_intent VARCHAR",
+          "steps JSONB",
+          "default_zones JSONB",
+          "applicable_line_categories JSONB"
+        ]
+      },
+      {
+        "table": "validation_case",
+        "columns": [
+          "case_id VARCHAR PK",
+          "description TEXT",
+          "canonical_key VARCHAR NULL",
+          "input JSONB",
+          "expected JSONB",
+          "last_run_at TIMESTAMPTZ NULL",
+          "last_run_status VARCHAR NULL"
+        ]
+      },
+      {
+        "table": "formulation_rule_evidence",
+        "columns": [
+          "rule_id UUID FK formulation_rule",
+          "source_id UUID FK source_document NULL",
+          "evidence_status VARCHAR",
+          "notes TEXT NULL"
+        ]
+      }
+    ],
+    "altered_tables": [
+      {
+        "table": "formulation_rule",
+        "add_columns": [
+          "package_rule_id VARCHAR NULL",
+          "scope_level VARCHAR DEFAULT 'universal'",
+          "canonical_key VARCHAR NULL",
+          "is_dormant BOOL DEFAULT FALSE"
+        ],
+        "rationale": "Preserve Stage 13 rule_id strings (U001, M_SYNC_001) and dormant state for requires_stage12_inventory_addition groups."
+      }
+    ],
+    "import_mapping": {
+      "universal_rules": "formulation_rule with empty brand/line joins",
+      "brand_line_overrides": "formulation_rule + formulation_rule_line via canonical_key → line_region_id",
+      "service_workflows": "service_workflow",
+      "validation_cases": "validation_case"
+    }
+  }
+}
