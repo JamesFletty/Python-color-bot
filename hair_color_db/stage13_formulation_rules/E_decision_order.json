@@ -1,0 +1,95 @@
+{
+  "stage": 13,
+  "artifact": "decision_order",
+  "generated": "2026-06-15",
+  "evaluation_phases": [
+    {
+      "phase": 1,
+      "name": "safety_gates",
+      "description": "Hard stops before any formula assembly.",
+      "rule_sources": [
+        "universal_rules"
+      ],
+      "filter": {
+        "rule_category": [
+          "safety"
+        ]
+      },
+      "stop_on": [
+        "blocked"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "service_workflow_selection",
+      "description": "Map service_intent and hair state to workflow template.",
+      "rule_sources": [
+        "service_workflows"
+      ],
+      "inputs": [
+        "service_intent",
+        "line_category",
+        "pre_lightened"
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "universal_rules",
+      "description": "Apply universal formulation rules in ascending rule_priority.",
+      "rule_sources": [
+        "universal_rules"
+      ],
+      "scope_level": "universal",
+      "sort_by": [
+        "rule_priority"
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "line_overrides",
+      "description": "Apply active brand_line_overrides for canonical_key.",
+      "rule_sources": [
+        "brand_line_overrides"
+      ],
+      "scope_level": "line",
+      "sort_by": [
+        "rule_priority"
+      ],
+      "activation": "active_override_groups()"
+    },
+    {
+      "phase": 5,
+      "name": "intermixing_and_color_science",
+      "description": "Check shade_intermixing_rule and universal_color_science.",
+      "rule_sources": [
+        "stage12_intermixing",
+        "underlying_pigment_default_map"
+      ]
+    },
+    {
+      "phase": 6,
+      "name": "line_technical_defaults",
+      "description": "Fill developer, ratio, and timing from Stage 12 line technical records.",
+      "rule_sources": [
+        "stage12_line_technical"
+      ],
+      "only_fill_gaps": true
+    },
+    {
+      "phase": 7,
+      "name": "recommendation_status",
+      "description": "Derive final status from accumulated actions, risks, and blocks.",
+      "outputs": [
+        "recommendation_status",
+        "suggested_formula",
+        "warnings"
+      ]
+    }
+  ],
+  "conflict_resolution": {
+    "scalar_fields": "later phase and higher scope tier wins",
+    "risk_modifiers": "accumulate (sum per risk key)",
+    "workflows": "append; color_correction suppresses auto-formula",
+    "blocks": "any blocked status is terminal"
+  }
+}

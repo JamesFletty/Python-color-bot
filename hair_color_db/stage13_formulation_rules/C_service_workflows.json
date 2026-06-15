@@ -1,0 +1,162 @@
+{
+  "stage": 13,
+  "artifact": "service_workflows",
+  "generated": "2026-06-15",
+  "service_workflows": [
+    {
+      "workflow_id": "WF_virgin_permanent",
+      "name": "Virgin permanent color",
+      "service_intent": "lift_and_tone",
+      "steps": [
+        "Assess natural level and desired lift.",
+        "Select permanent line shade + developer per lift delta.",
+        "Apply root-to-ends or zone-specific per manufacturer guidance."
+      ],
+      "default_zones": [
+        "root",
+        "mid",
+        "end"
+      ],
+      "applicable_line_categories": [
+        "permanent"
+      ]
+    },
+    {
+      "workflow_id": "WF_virgin_demipermanent",
+      "name": "Virgin demi-permanent deposit",
+      "service_intent": "tone_deposit",
+      "steps": [
+        "Confirm no lift required.",
+        "Select demi shade at or darker than natural level.",
+        "Process per line technical rules."
+      ],
+      "default_zones": [
+        "all"
+      ],
+      "applicable_line_categories": [
+        "demi"
+      ]
+    },
+    {
+      "workflow_id": "WF_retouch_root",
+      "name": "Root retouch",
+      "service_intent": "gray_coverage",
+      "steps": [
+        "Apply permanent color to new growth at root zone.",
+        "Feather mid-shaft if overlap risk is low.",
+        "Refresh ends only when porosity and condition allow."
+      ],
+      "default_zones": [
+        "root"
+      ],
+      "applicable_line_categories": [
+        "permanent"
+      ]
+    },
+    {
+      "workflow_id": "WF_retouch_with_refresh",
+      "name": "Retouch with ends refresh",
+      "service_intent": "gloss_refresh",
+      "steps": [
+        "Permanent or demi at root per coverage need.",
+        "Demi/gloss refresh on mid-lengths and ends.",
+        "Stagger processing times when porosity differs by zone."
+      ],
+      "default_zones": [
+        "root",
+        "mid",
+        "end"
+      ],
+      "applicable_line_categories": [
+        "permanent",
+        "demi"
+      ]
+    },
+    {
+      "workflow_id": "WF_gray_coverage",
+      "name": "Gray coverage blend or full cover",
+      "service_intent": "gray_coverage",
+      "steps": [
+        "Classify gray percentage and resistant vs porous.",
+        "Add natural-series mix when gray > 50%.",
+        "Select developer strength per line override rules."
+      ],
+      "default_zones": [
+        "root",
+        "mid",
+        "end"
+      ],
+      "applicable_line_categories": [
+        "permanent",
+        "demi"
+      ]
+    },
+    {
+      "workflow_id": "WF_lift_and_tone",
+      "name": "Lift and tone (single process)",
+      "service_intent": "lift_and_tone",
+      "steps": [
+        "Calculate lift delta from natural or existing level.",
+        "Apply lift-appropriate developer and processing time.",
+        "Neutralize exposed underlying pigment with selected tone."
+      ],
+      "default_zones": [
+        "all"
+      ],
+      "applicable_line_categories": [
+        "permanent"
+      ]
+    },
+    {
+      "workflow_id": "WF_prelighten_then_tone",
+      "name": "Pre-lighten then tone",
+      "service_intent": "lift_and_tone",
+      "steps": [
+        "Consult when lift > 4 levels or on previously colored hair.",
+        "Lighten to target underlying stage with lightener.",
+        "Tone with demi or permanent per line capability."
+      ],
+      "default_zones": [
+        "all"
+      ],
+      "applicable_line_categories": [
+        "permanent",
+        "demi",
+        "lightener"
+      ]
+    },
+    {
+      "workflow_id": "WF_color_correction",
+      "name": "Color correction",
+      "service_intent": "correction",
+      "steps": [
+        "Document existing artificial color and history.",
+        "Select removal, fill, or repigmentation strategy.",
+        "No auto-formula; stylist-led multi-appointment plan."
+      ],
+      "default_zones": [],
+      "applicable_line_categories": [
+        "permanent",
+        "demi",
+        "lightener"
+      ]
+    },
+    {
+      "workflow_id": "WF_corrective_safe",
+      "name": "Corrective safe path",
+      "service_intent": "correction",
+      "steps": [
+        "Strand test mandatory.",
+        "Lowest-risk demi or direct deposit to stabilize.",
+        "Escalate to full correction only after assessment."
+      ],
+      "default_zones": [
+        "all"
+      ],
+      "applicable_line_categories": [
+        "demi",
+        "direct_dye"
+      ]
+    }
+  ]
+}

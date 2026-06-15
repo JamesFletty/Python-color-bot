@@ -207,6 +207,7 @@ def build_formula(
     gray_percent: float | None = None,
     current_level: float | None = None,
     product_line_hint: str | None = None,
+    intake: dict[str, Any] | None = None,
     logger: Any | None = None,
 ) -> dict[str, Any]:
     """Build a complete formula JSON document for a shade and hair conditions."""
@@ -351,5 +352,36 @@ def build_formula(
                 "developer": developer_selection["developer"],
             },
         )
+
+    if intake is not None:
+        from hair_color_db.stage13_formulation_rules.resolver import resolve_formulation_rules
+
+        stage13_intake = dict(intake)
+        stage13_intake.setdefault("gray_percentage", gray_percent or 0)
+        stage13_intake.setdefault("natural_level", current_level)
+        stage13_intake.setdefault("desired_level", target_level)
+        stage13_result = resolve_formulation_rules(
+            stage13_intake,
+            canonical_key=str(shade["canonical_key"]),
+        )
+        formula["formulation_rules"] = stage13_result.to_dict()
+
+        if stage13_result.recommendation_status == "blocked":
+            formula["status"] = "blocked"
+        elif stage13_result.recommendation_status == "requires_consultation":
+            formula["status"] = "requires_consultation"
+        elif stage13_result.recommendation_status == "caution":
+            formula["status"] = "caution"
+
+        if stage13_result.developer_volume is not None and formula["formula"]["developer"]:
+            formula["formula"]["stage13_developer_volume"] = stage13_result.developer_volume
+        if stage13_result.mixing_ratio:
+            formula["formula"]["stage13_mixing_ratio"] = stage13_result.mixing_ratio
+        if stage13_result.natural_shade_ratio is not None:
+            formula["formula"]["natural_shade_ratio"] = stage13_result.natural_shade_ratio
+
+        formula["warnings"] = list(formula.get("warnings", [])) + stage13_result.warnings
+        if stage13_result.block_reason:
+            formula["block_reason"] = stage13_result.block_reason
 
     return formula

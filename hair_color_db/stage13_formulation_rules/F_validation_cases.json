@@ -1,0 +1,257 @@
+{
+  "stage": 13,
+  "artifact": "validation_cases",
+  "generated": "2026-06-15",
+  "validation_cases": [
+    {
+      "case_id": "VC001_safety_patch_test_fail",
+      "description": "Failed patch test must block all color services.",
+      "canonical_key": null,
+      "input": {
+        "patch_test_status": "failed",
+        "service_intent": "gray_coverage",
+        "natural_level": 5,
+        "gray_percentage": 40
+      },
+      "expected": {
+        "recommendation_status": "blocked",
+        "matched_rules": [
+          "U001"
+        ]
+      }
+    },
+    {
+      "case_id": "VC003_retouch_with_refresh",
+      "description": "Root retouch with demi refresh on ends.",
+      "canonical_key": "Matrix::SoColor::US",
+      "input": {
+        "service_intent": "gloss_refresh",
+        "natural_level": 6,
+        "existing_level": 6,
+        "gray_percentage": 25,
+        "porosity": 5,
+        "workflow": "WF_retouch_with_refresh"
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "triggered_workflow": "WF_retouch_with_refresh",
+        "formula_zones": [
+          "root",
+          "mid",
+          "end"
+        ]
+      }
+    },
+    {
+      "case_id": "VC004_virgin_lift_permanent",
+      "description": "Virgin hair permanent lift within single-process limits.",
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "input": {
+        "service_intent": "lift_and_tone",
+        "natural_level": 5,
+        "desired_level": 6,
+        "gray_percentage": 0,
+        "porosity": 4
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "matched_rules": [
+          "W_KP_001",
+          "U012"
+        ],
+        "developer_volume": 20
+      }
+    },
+    {
+      "case_id": "VC005_prelightened_tonal_control",
+      "description": "Tonal Control on pre-lightened hair — dormant line overrides skipped until Stage 12 inventory.",
+      "canonical_key": "Matrix::Tonal Control::US",
+      "input": {
+        "service_intent": "tone_deposit",
+        "pre_lightened": true,
+        "existing_level": 9,
+        "desired_level": 9,
+        "porosity": 6
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "dormant_line": true,
+        "requires_stage12_inventory_addition": true
+      }
+    },
+    {
+      "case_id": "VC006_gray_blend_matrix_sync",
+      "description": "SoColor Sync gray blend at moderate gray percentage.",
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "input": {
+        "service_intent": "gloss_refresh",
+        "gray_percentage": 45,
+        "natural_level": 6
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "matched_rules": [
+          "M_SYNC_002",
+          "U012"
+        ]
+      }
+    },
+    {
+      "case_id": "VC007_supersync_tint_back",
+      "description": "Super Sync tint-back — dormant line; universal porosity rule still applies.",
+      "canonical_key": "Matrix::Super Sync::US",
+      "input": {
+        "service_intent": "tone_deposit",
+        "pre_lightened": true,
+        "porosity": 8,
+        "existing_level": 8
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "matched_rules": [
+          "U003"
+        ],
+        "dormant_line": true,
+        "requires_stage12_inventory_addition": true
+      }
+    },
+    {
+      "case_id": "VC008_refresh_restricted_high_porosity",
+      "description": "Gloss refresh on high porosity triggers caution and time reduction.",
+      "canonical_key": "Redken::Shades EQ Gloss::US",
+      "input": {
+        "service_intent": "gloss_refresh",
+        "porosity": 8,
+        "existing_level": 7
+      },
+      "expected": {
+        "recommendation_status": "caution",
+        "matched_rules": [
+          "U010"
+        ]
+      }
+    },
+    {
+      "case_id": "VC009_coil_gray_ratio",
+      "description": "Coil Color gray ratio — dormant until Stage 12 inventory; universal gray rule may apply.",
+      "canonical_key": "Matrix::Coil Color::US",
+      "input": {
+        "service_intent": "gray_coverage",
+        "gray_percentage": 55,
+        "texture": "coarse",
+        "natural_level": 6
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "matched_rules": [
+          "U002"
+        ],
+        "dormant_line": true,
+        "requires_stage12_inventory_addition": true
+      }
+    },
+    {
+      "case_id": "VC010_direct_dye_no_developer",
+      "description": "Direct dye line must not assign developer.",
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "input": {
+        "service_intent": "tone_deposit",
+        "line_category": "direct_dye"
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "matched_rules": [
+          "U009"
+        ],
+        "developer_volume": null
+      }
+    },
+    {
+      "case_id": "VC011_sync_full_gray_cover_prohibited",
+      "description": "SoColor Sync blocks full gray cover at high gray percentage.",
+      "canonical_key": "Matrix::SoColor Sync::US",
+      "input": {
+        "service_intent": "gray_coverage",
+        "gray_percentage": 85
+      },
+      "expected": {
+        "recommendation_status": "blocked",
+        "matched_rules": [
+          "M_SYNC_001"
+        ]
+      }
+    },
+    {
+      "case_id": "VC012_supersync_hd_mix_block",
+      "description": "Super Sync HD mix block — dormant line override inactive without Stage 12 inventory.",
+      "canonical_key": "Matrix::Super Sync::US",
+      "input": {
+        "selected_sub_ranges": [
+          "HD",
+          "Standard"
+        ],
+        "service_intent": "tone_deposit"
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "matched_rules": [
+          "U012"
+        ],
+        "dormant_line": true,
+        "requires_stage12_inventory_addition": true
+      }
+    },
+    {
+      "case_id": "VC013_color_does_not_lift_color",
+      "description": "Lift on previously colored non-prelightened hair requires correction.",
+      "canonical_key": "Redken::Color Gels Lacquers::US",
+      "input": {
+        "service_intent": "lift_and_tone",
+        "existing_artificial_color": "permanent level 5",
+        "existing_level": 5,
+        "desired_level": 7,
+        "pre_lightened": false
+      },
+      "expected": {
+        "recommendation_status": "requires_consultation",
+        "matched_rules": [
+          "U006"
+        ],
+        "triggered_workflow": "color_correction"
+      }
+    },
+    {
+      "case_id": "VC019_wella_colortouch_soft_blend",
+      "description": "Color Touch soft blend for low gray percentage.",
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "input": {
+        "service_intent": "gray_coverage",
+        "gray_percentage": 25,
+        "natural_level": 6
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "matched_rules": [
+          "W_CT_001"
+        ]
+      }
+    },
+    {
+      "case_id": "VC023_pulpriot_direct_dye",
+      "description": "Pulp Riot semi-permanent direct application without developer.",
+      "canonical_key": "Pulp Riot::Semi-Permanent::US",
+      "input": {
+        "service_intent": "tone_deposit",
+        "line_category": "direct_dye",
+        "previous_direct_dye": false
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "matched_rules": [
+          "U009"
+        ],
+        "mixing_ratio": "direct_application"
+      }
+    }
+  ]
+}

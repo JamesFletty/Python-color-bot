@@ -38,6 +38,26 @@ def main(argv: list[str] | None = None) -> int:
         default=None,
         help="Optional product line hint when shade code is ambiguous",
     )
+    parser.add_argument(
+        "--service-intent",
+        type=str,
+        default="tone_deposit",
+        help="Service intent for Stage 13 rule resolution (e.g. gray_coverage, lift_and_tone)",
+    )
+    parser.add_argument(
+        "--desired-level",
+        type=float,
+        default=None,
+        help="Desired result level for lift / Stage 13 rules",
+    )
+    parser.add_argument(
+        "--patch-test-status",
+        type=str,
+        default="passed",
+        choices=["passed", "failed", "declined", "unknown"],
+        help="Patch test status for Stage 13 safety gate",
+    )
+    parser.add_argument("--porosity", type=int, default=5, help="Porosity scale 1-10 for Stage 13 rules")
     args = parser.parse_args(argv)
 
     if not args.db.exists():
@@ -56,6 +76,14 @@ def main(argv: list[str] | None = None) -> int:
         },
     )
 
+    intake = {
+        "service_intent": args.service_intent,
+        "patch_test_status": args.patch_test_status,
+        "porosity": args.porosity,
+    }
+    if args.desired_level is not None:
+        intake["desired_level"] = args.desired_level
+
     conn = sqlite3.connect(args.db)
     try:
         formula = build_formula(
@@ -64,13 +92,15 @@ def main(argv: list[str] | None = None) -> int:
             gray_percent=args.gray,
             current_level=args.current_level,
             product_line_hint=args.line,
+            intake=intake,
             logger=logger,
         )
     finally:
         conn.close()
 
     print(json.dumps(formula, indent=2, ensure_ascii=False))
-    return 0 if formula.get("status") == "ok" else 1
+    terminal_statuses = {"ok", "caution"}
+    return 0 if formula.get("status") in terminal_statuses else 1
 
 
 if __name__ == "__main__":
