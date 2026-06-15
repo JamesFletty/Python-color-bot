@@ -1,7 +1,7 @@
 {
   "stage": 11,
   "artifact": "gap_risk_report",
-  "generated": "2026-06-12",
+  "generated": "2026-06-15",
   "completion_status": "complete",
   "gap_report": [
     {
@@ -230,15 +230,6 @@
       "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
     },
     {
-      "canonical_key": "Matrix::Tonal Control::US",
-      "brand": "Matrix",
-      "product_line": "Tonal Control Pre-Bonded",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "medium",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
       "canonical_key": "Matrix::Light Master::US",
       "brand": "Matrix",
       "product_line": "Light Master (incl. Light Master Pre-Bonded)",
@@ -254,15 +245,6 @@
       "gap_type": "shade_extraction_not_started",
       "severity": "medium",
       "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
-      "canonical_key": "Matrix::Super Sync::US",
-      "brand": "Matrix",
-      "product_line": "Super Sync",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "medium",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: unclear.",
       "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
     },
     {

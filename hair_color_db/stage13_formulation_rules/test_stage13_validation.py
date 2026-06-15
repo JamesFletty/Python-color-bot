@@ -64,24 +64,20 @@ class Stage13ValidationCaseTests(unittest.TestCase):
                 self._assert_case(case)
 
 
-class Stage13DormantLineTests(unittest.TestCase):
-    """Dormant overrides apply only when include_dormant=True."""
+class Stage13ActiveLineTests(unittest.TestCase):
+    """Line overrides activate once Stage 12 shade inventory exists."""
 
-    def test_supersync_hd_block_when_dormant_included(self) -> None:
+    def test_supersync_hd_block_with_active_inventory(self) -> None:
         intake = {
             "selected_sub_ranges": ["HD", "Standard"],
             "service_intent": "tone_deposit",
         }
-        dormant = resolve_formulation_rules(
+        result = resolve_formulation_rules(
             intake, canonical_key="Matrix::Super Sync::US", include_dormant=False
         )
-        active = resolve_formulation_rules(
-            intake, canonical_key="Matrix::Super Sync::US", include_dormant=True
-        )
-        self.assertTrue(dormant.dormant_line)
-        self.assertEqual(dormant.recommendation_status, "ok")
-        self.assertEqual(active.recommendation_status, "blocked")
-        self.assertIn("M_SSYNC_002", active.matched_rules)
+        self.assertFalse(result.dormant_line)
+        self.assertEqual(result.recommendation_status, "blocked")
+        self.assertIn("M_SSYNC_002", result.matched_rules)
 
 
 if __name__ == "__main__":

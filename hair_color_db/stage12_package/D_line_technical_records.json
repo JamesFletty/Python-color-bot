@@ -1,6 +1,6 @@
 {
   "artifact": "line_technical_records",
-  "count": 23,
+  "count": 26,
   "line_technical_records": [
     {
       "canonical_key": "Redken::Shades EQ Gloss::US",
@@ -1486,6 +1486,133 @@
       ],
       "data_gaps": [
         "Shade swatches on official page are image-only; only 14 numeric codes found in HTML metadata — full shade-level Stage 4 deferred"
+      ]
+    },
+    {
+      "canonical_key": "Matrix::Coil Color::US",
+      "brand": "Matrix",
+      "product_line": "Coil Color",
+      "color_type": "permanent",
+      "default_mixing_ratio": "1:1 (Coil Color + Coil Color Developer)",
+      "developer_options": [
+        "Coil Color Developer 20 Volume",
+        "Coil Color Developer 30 Volume"
+      ],
+      "developer_strengths_if_stated": [
+        "20 + 30 volume, 1:1 mixing ratio (manual p.39)"
+      ],
+      "processing_time_ranges": [
+        "35 minutes room temperature (manual p.39)"
+      ],
+      "gray_coverage_rules": [
+        "Gray ratio tables in Coil Color Technique Guide (Stage 13 reference)"
+      ],
+      "lift_rules": [
+        "Ammonia-free permanent; visible reflect on dark bases; not positioned as high-lift line"
+      ],
+      "tone_family_legend": [],
+      "special_usage_notes": [
+        "Apply to clean dry hair; rinse with Total Results A Curl Can Dream.",
+        "On overly porous hair, mist Instacure on mids+ends before first application only."
+      ],
+      "region_or_market": "US",
+      "discontinued_status": "Active per 2023 Matrix manual",
+      "source_url": "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8",
+      "source_document": "2023 Matrix Manual Haircolor (official PDF, 82 pages)",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": [
+        "Coil Color gray ratio table lives in separate technique guide PDF."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::Tonal Control::US",
+      "brand": "Matrix",
+      "product_line": "Tonal Control Pre-Bonded",
+      "color_type": "demi_acidic",
+      "default_mixing_ratio": "1:1 (Tonal Control + 10 Volume (3%) Matrix Cream Developer)",
+      "developer_options": [
+        "10 Volume (3%) Matrix Cream Developer"
+      ],
+      "developer_strengths_if_stated": [
+        "10 Vol only; no lift (manual p.44-45)"
+      ],
+      "processing_time_ranges": [
+        "20 minutes room temperature (manual p.44)"
+      ],
+      "gray_coverage_rules": [
+        "Gray blending on pre-lightened hair; not full coverage line"
+      ],
+      "lift_rules": [
+        "No base shift; acidic gel toner for post-lightening control"
+      ],
+      "tone_family_legend": [],
+      "special_usage_notes": [
+        "Apply to dry or damp towel-dried hair.",
+        "Totally Transparent dilutes deposit ~1 level when mixed equally."
+      ],
+      "region_or_market": "US",
+      "discontinued_status": "Active per 2023 Matrix manual",
+      "source_url": "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8",
+      "source_document": "2023 Matrix Manual Haircolor (official PDF, 82 pages)",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "color_type": "demi_alkaline",
+      "default_mixing_ratio": "1:1 (Super Sync + 10 Volume (3%) Matrix Cream Developer)",
+      "developer_options": [
+        "10 Volume (3%) Matrix Cream Developer"
+      ],
+      "developer_strengths_if_stated": [
+        "10 Vol; up to 1 level lift (product positioning on chart)"
+      ],
+      "processing_time_ranges": [
+        "20 minutes room temperature on clean 80%+ dry hair (chart footer)"
+      ],
+      "gray_coverage_rules": [
+        "NN/NNG families up to 75% gray; N and warm neutrals up to 50% per chart callouts"
+      ],
+      "lift_rules": [
+        "Up to 1 level lift; alkaline demi-permanent"
+      ],
+      "tone_family_legend": [
+        {
+          "code": ".1",
+          "meaning": "Ash"
+        },
+        {
+          "code": ".3",
+          "meaning": "Gold"
+        },
+        {
+          "code": ".6",
+          "meaning": "Red"
+        },
+        {
+          "code": ".9",
+          "meaning": "Pearl"
+        }
+      ],
+      "special_usage_notes": [
+        "HD shades may only be mixed with Super Sync Clear.",
+        "SoBoost mixed 3:1 with Super Sync for intensifying/neutralizing boost."
+      ],
+      "region_or_market": "US",
+      "discontinued_status": "June 2026 launch per shade chart",
+      "source_url": "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/shade-chart-pdfs/super-sync-shade-chart-85x11.pdf?rev=e9af1a88840b4145ad5d4a624d441151",
+      "source_document": "Matrix Super Sync Pre-Bonded shade chart (official PDF, 85x11)",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": [
+        "Shade names not printed on chart; codes only."
       ]
     }
   ],

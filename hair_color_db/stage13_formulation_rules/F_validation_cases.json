@@ -64,7 +64,7 @@
     },
     {
       "case_id": "VC005_prelightened_tonal_control",
-      "description": "Tonal Control on pre-lightened hair — dormant line overrides skipped until Stage 12 inventory.",
+      "description": "Tonal Control on pre-lightened hair succeeds.",
       "canonical_key": "Matrix::Tonal Control::US",
       "input": {
         "service_intent": "tone_deposit",
@@ -74,9 +74,7 @@
         "porosity": 6
       },
       "expected": {
-        "recommendation_status": "ok",
-        "dormant_line": true,
-        "requires_stage12_inventory_addition": true
+        "recommendation_status": "ok"
       }
     },
     {
@@ -98,7 +96,7 @@
     },
     {
       "case_id": "VC007_supersync_tint_back",
-      "description": "Super Sync tint-back — dormant line; universal porosity rule still applies.",
+      "description": "Super Sync tint-back on pre-lightened porous hair.",
       "canonical_key": "Matrix::Super Sync::US",
       "input": {
         "service_intent": "tone_deposit",
@@ -109,10 +107,9 @@
       "expected": {
         "recommendation_status": "ok",
         "matched_rules": [
+          "M_SSYNC_001",
           "U003"
-        ],
-        "dormant_line": true,
-        "requires_stage12_inventory_addition": true
+        ]
       }
     },
     {
@@ -133,21 +130,19 @@
     },
     {
       "case_id": "VC009_coil_gray_ratio",
-      "description": "Coil Color gray ratio — dormant until Stage 12 inventory; universal gray rule may apply.",
+      "description": "Coil Color requires elevated natural mix for gray.",
       "canonical_key": "Matrix::Coil Color::US",
       "input": {
         "service_intent": "gray_coverage",
-        "gray_percentage": 55,
-        "texture": "coarse",
-        "natural_level": 6
+        "gray_percentage": 50,
+        "texture": "coarse"
       },
       "expected": {
         "recommendation_status": "ok",
         "matched_rules": [
-          "U002"
+          "M_COIL_001"
         ],
-        "dormant_line": true,
-        "requires_stage12_inventory_addition": true
+        "natural_shade_ratio": 0.6
       }
     },
     {
@@ -183,7 +178,7 @@
     },
     {
       "case_id": "VC012_supersync_hd_mix_block",
-      "description": "Super Sync HD mix block — dormant line override inactive without Stage 12 inventory.",
+      "description": "Super Sync HD intermixing with standard shades is blocked.",
       "canonical_key": "Matrix::Super Sync::US",
       "input": {
         "selected_sub_ranges": [
@@ -193,12 +188,10 @@
         "service_intent": "tone_deposit"
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "blocked",
         "matched_rules": [
-          "U012"
-        ],
-        "dormant_line": true,
-        "requires_stage12_inventory_addition": true
+          "M_SSYNC_002"
+        ]
       }
     },
     {
