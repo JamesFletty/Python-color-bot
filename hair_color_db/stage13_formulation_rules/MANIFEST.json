@@ -6,8 +6,8 @@
   "counts": {
     "universal_rules": 15,
     "service_workflows": 9,
-    "brand_line_overrides": 9,
-    "validation_cases": 17,
+    "brand_line_overrides": 14,
+    "validation_cases": 20,
     "conflicts_and_gaps": 1,
     "dormant_override_groups": 0
   },

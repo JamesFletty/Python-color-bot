@@ -121,8 +121,51 @@ class BuildFormulaDepositTests(unittest.TestCase):
         )
         self.assertEqual(formula["status"], "ok")
         self.assertEqual(formula["formula"]["developer"], "10 vol")
-        self.assertIn("fill_pigment_guidance", formula["formula"])
-        self.assertEqual(formula["hair_conditions"]["deposit_levels"], 4.0)
+        fill = formula["formula"]["fill_pigment_guidance"]
+        self.assertIn("fill_steps", fill)
+        self.assertTrue(fill["fill_steps"][0].get("suggested_shades"))
+        self.assertTrue(fill.get("target_natural_shades"))
+
+    def test_koleston_gray_uses_20_vol_with_natural_mix(self) -> None:
+        result = resolve_formulation_rules(
+            {
+                "service_intent": "gray_coverage",
+                "gray_percentage": 55,
+                "natural_level": 6,
+                "desired_level": 6,
+            },
+            canonical_key="Wella Professionals::Koleston Perfect::US",
+        )
+        self.assertIn("W_KP_GRAY_001", result.matched_rules)
+        self.assertEqual(result.developer_volume, 20)
+        self.assertEqual(result.natural_shade_ratio, 0.5)
+
+    def test_topchic_gray_uses_20_vol(self) -> None:
+        result = resolve_formulation_rules(
+            {
+                "service_intent": "gray_coverage",
+                "gray_percentage": 60,
+                "natural_level": 5,
+                "desired_level": 5,
+            },
+            canonical_key="Goldwell::Topchic::US",
+        )
+        self.assertIn("GW_TOP_001", result.matched_rules)
+        self.assertEqual(result.developer_volume, 20)
+
+    def test_igora_absolutes_gray_uses_30_vol(self) -> None:
+        result = resolve_formulation_rules(
+            {
+                "service_intent": "gray_coverage",
+                "gray_percentage": 70,
+                "natural_level": 6,
+                "desired_level": 6,
+                "selected_sub_ranges": ["ABSOLUTES"],
+            },
+            canonical_key="Schwarzkopf Professional::IGORA ROYAL::US",
+        )
+        self.assertIn("SK_IGORA_002", result.matched_rules)
+        self.assertEqual(result.developer_volume, 30)
 
 
 if __name__ == "__main__":

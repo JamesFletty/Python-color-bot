@@ -299,6 +299,64 @@
         "developer_volume": 10,
         "triggered_workflow": "repigmentation_fill"
       }
+    },
+    {
+      "case_id": "VC027_koleston_gray_20vol",
+      "description": "Koleston Perfect grey coverage uses 20 vol with natural mix.",
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "input": {
+        "service_intent": "gray_coverage",
+        "gray_percentage": 55,
+        "natural_level": 6,
+        "desired_level": 6
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "matched_rules": [
+          "W_KP_GRAY_001"
+        ],
+        "developer_volume": 20,
+        "natural_shade_ratio": 0.5
+      }
+    },
+    {
+      "case_id": "VC028_topchic_gray_20vol",
+      "description": "Goldwell Topchic grey coverage at 50%+ uses 20 vol.",
+      "canonical_key": "Goldwell::Topchic::US",
+      "input": {
+        "service_intent": "gray_coverage",
+        "gray_percentage": 60,
+        "natural_level": 5,
+        "desired_level": 5
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "matched_rules": [
+          "GW_TOP_001"
+        ],
+        "developer_volume": 20
+      }
+    },
+    {
+      "case_id": "VC029_igora_absolutes_30vol",
+      "description": "IGORA ABSOLUTES white-hair coverage uses 30 vol.",
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "input": {
+        "service_intent": "gray_coverage",
+        "gray_percentage": 70,
+        "natural_level": 6,
+        "desired_level": 6,
+        "selected_sub_ranges": [
+          "ABSOLUTES"
+        ]
+      },
+      "expected": {
+        "recommendation_status": "ok",
+        "matched_rules": [
+          "SK_IGORA_002"
+        ],
+        "developer_volume": 30
+      }
     }
   ]
 }

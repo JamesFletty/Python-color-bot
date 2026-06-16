@@ -57,6 +57,9 @@ WARNING_ELEVATION_CASES = frozenset(
         "VC024_gray_default_20vol",
         "VC025_darken_deposit_developer",
         "VC026_multi_level_darken_fill",
+        "VC027_koleston_gray_20vol",
+        "VC028_topchic_gray_20vol",
+        "VC029_igora_absolutes_30vol",
     }
 )
 

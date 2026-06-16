@@ -482,6 +482,15 @@ def build_formula(
             heuristic_developer=developer_selection["developer"],
         )
 
+        if stage13_result.fill_pigment_guidance:
+            from src.fill_shade_lookup import enrich_fill_guidance_with_inventory
+
+            formula["formula"]["fill_pigment_guidance"] = enrich_fill_guidance_with_inventory(
+                conn,
+                str(shade["canonical_key"]),
+                stage13_result.fill_pigment_guidance,
+            )
+
         formula["warnings"] = list(formula.get("warnings", [])) + stage13_result.warnings
         if stage13_result.block_reason:
             formula["block_reason"] = stage13_result.block_reason

@@ -13,6 +13,9 @@ selection from line technical rules is used only when Stage 13 rules do not set 
 
 Three-part shade references ``Brand::Line::ShadeCode`` resolve the middle segment as
 the product line hint (e.g. ``Matrix::SoColor::5N`` targets SoColor Pre-Bonded).
+
+Multi-level darkening responses include ``fill_pigment_guidance`` with inventory-backed
+``suggested_shades`` per warm fill level plus ``target_natural_shades`` at the target depth.
 """
 
 from __future__ import annotations

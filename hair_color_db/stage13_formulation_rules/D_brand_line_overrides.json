@@ -51,6 +51,58 @@
             "set_recommendation_status": "blocked",
             "block_reason": "HD Series not mixable with other SoColor shades."
           }
+        },
+        {
+          "rule_id": "M_SOCOLOR_003",
+          "rule_name": "matrix_socolor_extra_coverage_gray_20vol",
+          "rule_priority": 56,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 50
+              },
+              {
+                "field": "selected_sub_ranges",
+                "op": "contains",
+                "value": "Extra Coverage"
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 20,
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.5,
+            "warning": "Extra Coverage collection: 20 vol per manufacturer chart for resistant gray."
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR_004",
+          "rule_name": "matrix_socolor_dreamage_gray_20vol",
+          "rule_priority": 56,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 50
+              },
+              {
+                "field": "selected_sub_ranges",
+                "op": "contains",
+                "value": "DreamAge"
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 20,
+            "warning": "DreamAge gray coverage: 20 vol per line technical chart."
+          }
         }
       ]
     },
@@ -404,6 +456,278 @@
           "rule_action": {
             "trigger_workflow": "pre_lightening_consultation",
             "set_developer_volume": 30
+          }
+        },
+        {
+          "rule_id": "W_KP_GRAY_001",
+          "rule_name": "koleston_gray_coverage_20vol",
+          "rule_priority": 55,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">",
+                "value": 0
+              },
+              {
+                "field": "deposit_levels",
+                "op": "=",
+                "value": 0
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 20,
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.33,
+            "warning": "Grey coverage: 6% (20 vol) Welloxon; add Pure Naturals (xx/0) per grey percentage chart."
+          }
+        },
+        {
+          "rule_id": "W_KP_GRAY_002",
+          "rule_name": "koleston_gray_high_natural_ratio",
+          "rule_priority": 56,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 50
+              }
+            ]
+          },
+          "rule_action": {
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.5,
+            "adjust_processing_time_minutes": 5,
+            "warning": "50%+ grey: use 1/2 Pure Naturals; resistant hair use xx/0; max 40 min."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand_name": "Goldwell",
+      "product_line_name": "Topchic",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "GW_TOP_001",
+          "rule_name": "topchic_gray_coverage_20vol",
+          "rule_priority": 55,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 50
+              },
+              {
+                "field": "deposit_levels",
+                "op": "=",
+                "value": 0
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 20,
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.33,
+            "warning": "Topchic gray: mix N-/NA-/NN- with fashion shade per white-hair percentage table."
+          }
+        },
+        {
+          "rule_id": "GW_TOP_002",
+          "rule_name": "topchic_gray_high_natural_mix",
+          "rule_priority": 56,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 70
+              }
+            ]
+          },
+          "rule_action": {
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.5,
+            "warning": "High white hair: increase N-series proportion per Topchic Color Guide."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand_name": "Schwarzkopf Professional",
+      "product_line_name": "IGORA ROYAL",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "SK_IGORA_001",
+          "rule_name": "igora_royal_gray_20vol",
+          "rule_priority": 55,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 50
+              },
+              {
+                "field": "deposit_levels",
+                "op": "=",
+                "value": 0
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 20,
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.33,
+            "warning": "100% white hair coverage: 6% (20 vol) Oil Developer; add Natural (-0) or Beige (-4) at 2:1 when >50% white."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_002",
+          "rule_name": "igora_absolutes_gray_30vol",
+          "rule_priority": 56,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 50
+              },
+              {
+                "field": "selected_sub_ranges",
+                "op": "contains",
+                "value": "ABSOLUTES"
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 30,
+            "warning": "IGORA ABSOLUTES white-hair coverage: 9% (30 vol) per manufacturer chart."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand_name": "L'Oréal Professionnel",
+      "product_line_name": "Majirel",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "LP_MAJ_001",
+          "rule_name": "majirel_gray_coverage_20vol",
+          "rule_priority": 55,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 50
+              },
+              {
+                "field": "deposit_levels",
+                "op": "=",
+                "value": 0
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 20,
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.5,
+            "warning": "Over 50% white: 1/2 target + 1/2 Natural (.N) or Gold (.3) on same level per Majirel chart."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Kenra Professional::Kenra Color Permanent::US",
+      "brand_name": "Kenra Professional",
+      "product_line_name": "Kenra Color Permanent",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "KENRA_001",
+          "rule_name": "kenra_gray_coverage_20vol",
+          "rule_priority": 55,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 50
+              },
+              {
+                "field": "deposit_levels",
+                "op": "=",
+                "value": 0
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 20,
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.33,
+            "adjust_processing_time_minutes": 5,
+            "warning": "Gray coverage: incorporate Natural (N) series per Kenra workbook chart; up to 40 min."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand_name": "Goldwell",
+      "product_line_name": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "GW_COL_001",
+          "rule_name": "colorance_fashion_natural_blend",
+          "rule_priority": 60,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">",
+                "value": 0
+              },
+              {
+                "field": "gray_percentage",
+                "op": "<=",
+                "value": 50
+              }
+            ]
+          },
+          "rule_action": {
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.5,
+            "set_developer_volume": null,
+            "mixing_ratio": "2:1",
+            "warning": "Colorance demi: Fashion + N-shade mix; Cover Plus NN for higher gray."
           }
         }
       ]
