@@ -13,15 +13,9 @@ Stage 13 packages deterministic formulation rules as versioned JSON artifacts (s
 5. **Decision order** — `E_decision_order.json` defines evaluation phases
 6. **Production engine** — `run_engine()` in `formula_builder.py`
 
-## Dormant override groups
+## Line override activation
 
-Three override groups ship with `requires_stage12_inventory_addition: true`:
-
-- `Matrix::Coil Color::US`
-- `Matrix::Super Sync::US`
-- `Matrix::Tonal Control::US`
-
-`loaders.active_override_groups()` excludes these until the canonical key has normalized shade records in Stage 12 section C.
+Matrix Coil Color, Super Sync, and Tonal Control shade inventory was added in Stage 12 batch05 (section C). Their line override groups in `D_brand_line_overrides.json` are active via `active_override_groups()` in `loaders.py`.
 
 ## Validation cases
 
@@ -39,7 +33,7 @@ Three override groups ship with `requires_stage12_inventory_addition: true`:
 
 ## Known gaps
 
-See `G_conflicts_and_gaps.json` (G001–G006) for inventory gaps, evidence conflicts, and engine action-surface alignment items.
+See `G_conflicts_and_gaps.json` (G004–G006) for evidence conflicts and engine action-surface alignment items.
 
 ## Regenerating artifacts
 

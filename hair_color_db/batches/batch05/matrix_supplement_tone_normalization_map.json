@@ -1,0 +1,381 @@
+{
+  "artifact": "tone_normalization_map",
+  "batch": "matrix_supplement",
+  "count": 27,
+  "tone_normalization_map": [
+    {
+      "canonical_key": "Matrix::Coil Color::US",
+      "brand": "Matrix",
+      "product_line": "Coil Color",
+      "manufacturer_tone_code": "R",
+      "manufacturer_term": "Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "digit legend '.6 Red'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Coil Color::US",
+      "brand": "Matrix",
+      "product_line": "Coil Color",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "digit legend '.1 Ash'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Coil Color::US",
+      "brand": "Matrix",
+      "product_line": "Coil Color",
+      "manufacturer_tone_code": "W",
+      "manufacturer_term": "Warm",
+      "normalized_tones": [
+        "Warm"
+      ],
+      "mapping_rationale": "WN/W family convention",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Coil Color::US",
+      "brand": "Matrix",
+      "product_line": "Coil Color",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "Neutral",
+      "normalized_tones": [
+        "Neutral"
+      ],
+      "mapping_rationale": "digit legend '.0 Neutral'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Coil Color::US",
+      "brand": "Matrix",
+      "product_line": "Coil Color",
+      "manufacturer_tone_code": "M",
+      "manufacturer_term": "Mocha",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "ambiguous vs Mahogany",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Tonal Control::US",
+      "brand": "Matrix",
+      "product_line": "Tonal Control Pre-Bonded",
+      "manufacturer_tone_code": "V",
+      "manufacturer_term": "Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "digit legend '.2 Violet'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Tonal Control::US",
+      "brand": "Matrix",
+      "product_line": "Tonal Control Pre-Bonded",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "digit legend '.1 Ash'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Tonal Control::US",
+      "brand": "Matrix",
+      "product_line": "Tonal Control Pre-Bonded",
+      "manufacturer_tone_code": "J",
+      "manufacturer_term": "Jade",
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "digit legend '.7 Jade'",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Tonal Control::US",
+      "brand": "Matrix",
+      "product_line": "Tonal Control Pre-Bonded",
+      "manufacturer_tone_code": "Totally Transparent",
+      "manufacturer_term": "Totally Transparent",
+      "normalized_tones": [],
+      "mapping_rationale": "clear acidic toner",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "digit legend '.1 Ash'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "T",
+      "manufacturer_term": "Titanium/Ash",
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "mapping_rationale": "6T on Super Sync chart",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "Gold",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "digit legend '.3 Gold'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "SP-A",
+      "manufacturer_term": "Sheer Pastel Ash",
+      "normalized_tones": [
+        "Ash"
+      ],
+      "mapping_rationale": "SP series + digit legend '.1 Ash'",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "P",
+      "manufacturer_term": "Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "digit legend '.9 Pearl'",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "SP-P",
+      "manufacturer_term": "Sheer Pastel Pearl",
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "mapping_rationale": "SP series + digit legend '.9 Pearl'",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "V",
+      "manufacturer_term": "Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "digit legend '.2 Violet'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "SP-V",
+      "manufacturer_term": "Sheer Pastel Violet",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "SP series + digit legend '.2 Violet'",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "CLEAR",
+      "manufacturer_term": "Clear",
+      "normalized_tones": [],
+      "mapping_rationale": "non-pigmented clear",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "HD-RR",
+      "manufacturer_term": "HD Red Reflect",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "HD series pure reflect",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "HD-RV",
+      "manufacturer_term": "HD Red Violet",
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "HD series pure reflect",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "RED",
+      "manufacturer_term": "Red booster",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "printed word RED",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "BLUE",
+      "manufacturer_term": "Blue booster",
+      "normalized_tones": [
+        "Blue"
+      ],
+      "mapping_rationale": "printed word BLUE",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "Neutral",
+      "normalized_tones": [
+        "Neutral"
+      ],
+      "mapping_rationale": "digit legend '.0 Neutral'",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "SP-N",
+      "manufacturer_term": "Sheer Pastel Neutral",
+      "normalized_tones": [
+        "Neutral"
+      ],
+      "mapping_rationale": "SP series + digit legend '.0 Neutral'",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "M",
+      "manufacturer_term": "Mocha",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "ambiguous vs Mahogany",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "SP-M",
+      "manufacturer_term": "Sheer Pastel Mocha",
+      "normalized_tones": [
+        "Mocha"
+      ],
+      "mapping_rationale": "SP series + ambiguous vs Mahogany",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    },
+    {
+      "canonical_key": "Matrix::Super Sync::US",
+      "brand": "Matrix",
+      "product_line": "Super Sync Pre-Bonded",
+      "manufacturer_tone_code": "SP-AG",
+      "manufacturer_term": "Sheer Pastel AG",
+      "normalized_tones": [],
+      "mapping_rationale": "SP sheer pastel series",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": true,
+      "notes": []
+    }
+  ]
+}

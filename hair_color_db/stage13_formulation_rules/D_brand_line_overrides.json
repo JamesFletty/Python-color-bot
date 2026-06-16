@@ -105,7 +105,7 @@
       "canonical_key": "Matrix::Coil Color::US",
       "brand_name": "Matrix",
       "product_line_name": "Coil Color",
-      "requires_stage12_inventory_addition": true,
+      "requires_stage12_inventory_addition": false,
       "override_rules": [
         {
           "rule_id": "M_COIL_001",
@@ -134,7 +134,7 @@
       "canonical_key": "Matrix::Super Sync::US",
       "brand_name": "Matrix",
       "product_line_name": "Super Sync",
-      "requires_stage12_inventory_addition": true,
+      "requires_stage12_inventory_addition": false,
       "override_rules": [
         {
           "rule_id": "M_SSYNC_001",
@@ -187,7 +187,7 @@
       "canonical_key": "Matrix::Tonal Control::US",
       "brand_name": "Matrix",
       "product_line_name": "Tonal Control Pre-Bonded",
-      "requires_stage12_inventory_addition": true,
+      "requires_stage12_inventory_addition": false,
       "override_rules": [
         {
           "rule_id": "M_TC_001",

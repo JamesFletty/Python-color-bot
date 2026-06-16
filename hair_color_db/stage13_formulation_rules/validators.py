@@ -136,13 +136,8 @@ def validate_validation_case_references(report: ValidationReport) -> None:
 
 
 def validate_dormant_override_flags(report: ValidationReport) -> None:
-    """Dormant groups must not have Stage 12 shade inventory yet."""
+    """Groups flagged for inventory addition should not retain the flag once shades exist."""
     shade_keys = stage12_canonical_keys_with_shades()
-    dormant_expected = {
-        "Matrix::Coil Color::US",
-        "Matrix::Super Sync::US",
-        "Matrix::Tonal Control::US",
-    }
     for group in load_line_overrides():
         if group.get("requires_stage12_inventory_addition"):
             key = group["canonical_key"]
@@ -153,7 +148,7 @@ def validate_dormant_override_flags(report: ValidationReport) -> None:
                     f"{key} marked dormant but has Stage 12 shades — consider clearing flag",
                     "D",
                 )
-            elif key not in dormant_expected:
+            else:
                 report.add(
                     "warning",
                     "unexpected_dormant_line",

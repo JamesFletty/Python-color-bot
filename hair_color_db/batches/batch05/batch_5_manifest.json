@@ -1,0 +1,14 @@
+{
+  "batch": 5,
+  "label": "matrix_supplement",
+  "lines_added": [
+    "Matrix::Coil Color::US",
+    "Matrix::Tonal Control::US",
+    "Matrix::Super Sync::US"
+  ],
+  "shade_count": 116,
+  "sources": [
+    "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8",
+    "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/shade-chart-pdfs/super-sync-shade-chart-85x11.pdf?rev=e9af1a88840b4145ad5d4a624d441151"
+  ]
+}

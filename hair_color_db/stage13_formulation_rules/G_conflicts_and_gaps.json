@@ -4,30 +4,6 @@
   "generated": "2026-06-15",
   "conflicts_and_gaps": [
     {
-      "gap_id": "G001",
-      "gap_type": "inventory_missing",
-      "canonical_key": "Matrix::Coil Color::US",
-      "severity": "high",
-      "details": "Coil Color referenced in Matrix 2023 manual but no normalized shade records in Stage 12 section C.",
-      "recommended_next_action": "Add Coil Color to Stage 12 inventory and extract shades before activating line overrides."
-    },
-    {
-      "gap_id": "G002",
-      "gap_type": "inventory_missing",
-      "canonical_key": "Matrix::Super Sync::US",
-      "severity": "high",
-      "details": "Super Sync listed in matrix.com navigation without dedicated product page or shade extraction.",
-      "recommended_next_action": "Catalog official Super Sync sources and add normalized shades to Stage 12."
-    },
-    {
-      "gap_id": "G003",
-      "gap_type": "inventory_missing",
-      "canonical_key": "Matrix::Tonal Control::US",
-      "severity": "medium",
-      "details": "Tonal Control Pre-Bonded lacks normalized shade records in Stage 12 section C.",
-      "recommended_next_action": "Extract Tonal Control shades and line technical rules in a future batch."
-    },
-    {
       "gap_id": "G004",
       "gap_type": "rule_evidence_conflict",
       "severity": "medium",
