@@ -6,7 +6,13 @@ import unittest
 import uuid
 from decimal import Decimal
 
-from .engine_models import EngineInput, RecommendationStatus, SelectedShade, ServiceIntent
+from .engine_models import (
+    AccumulatedActions,
+    EngineInput,
+    RecommendationStatus,
+    SelectedShade,
+    ServiceIntent,
+)
 from .formula_builder import run_engine
 from .production_models import FormulaZone, HairTexture, RecommendationType
 from .repositories import (
@@ -22,7 +28,12 @@ from .repositories import (
     InMemoryEngineRepository,
     build_seed_repository,
 )
-from .rule_evaluator import evaluate_condition, RuleEvaluationContext
+from .rule_evaluator import (
+    apply_rule_action,
+    evaluate_and_apply_rules,
+    evaluate_condition,
+    RuleEvaluationContext,
+)
 
 
 def _base_input(**overrides) -> EngineInput:
@@ -336,6 +347,80 @@ class EngineGoldenPathTests(unittest.TestCase):
         )
         overlap = [r for r in result.risk_assessments if r.risk_type.value == "overlap"]
         self.assertTrue(overlap or result.matched_rules)
+
+
+class RuleEvaluatorStage13ActionTests(unittest.TestCase):
+    def test_blocked_status_stops_further_rules(self) -> None:
+        repo = build_seed_repository()
+        block_rule = FormulationRuleRecord(
+            rule_id=uuid.uuid4(),
+            rule_name="test_patch_fail_block",
+            rule_priority=5,
+            rule_condition={"all_of": [{"field": "patch_test_status", "op": "=", "value": "failed"}]},
+            rule_action={
+                "set_recommendation_status": "blocked",
+                "block_reason": "Patch test failed; do not proceed with color service.",
+            },
+            rule_category="safety",
+        )
+        later_rule = FormulationRuleRecord(
+            rule_id=uuid.uuid4(),
+            rule_name="should_not_apply_after_block",
+            rule_priority=200,
+            rule_condition={"all_of": [{"field": "service_intent", "op": "exists", "value": True}]},
+            rule_action={"set_developer_volume": 10},
+            rule_category="developer",
+        )
+        repo.formulation_rules.extend([block_rule, later_rule])
+        ctx = RuleEvaluationContext.from_input(
+            _base_input(),
+            brand_id=None,
+        )
+        ctx = ctx.model_copy(update={"patch_test_status": "failed"})
+        matched, accumulated = evaluate_and_apply_rules(repo.formulation_rules, ctx)
+        self.assertEqual(accumulated.recommendation_status, RecommendationStatus.BLOCKED)
+        self.assertIn("Patch test failed", accumulated.block_reason or "")
+        self.assertEqual(len(matched), 1)
+        self.assertEqual(matched[0].rule_name, "test_patch_fail_block")
+
+    def test_contains_operator_on_extra_context_field(self) -> None:
+        ctx = RuleEvaluationContext.from_input(_base_input(), brand_id=None)
+        ctx = ctx.model_copy(update={"selected_sub_ranges": ["HD", "Normal"]})
+        ok, _ = evaluate_condition(
+            {"all_of": [{"field": "selected_sub_ranges", "op": "contains", "value": "HD"}]},
+            ctx,
+        )
+        self.assertTrue(ok)
+
+    def test_mixing_ratio_and_developer_lock_from_rule(self) -> None:
+        accumulated = AccumulatedActions()
+        apply_rule_action(
+            {"set_developer_volume": None, "mixing_ratio": "direct_application"},
+            accumulated,
+        )
+        self.assertTrue(accumulated.developer_locked)
+        self.assertIsNone(accumulated.developer_volume)
+        self.assertEqual(accumulated.mixing_ratio, "direct_application")
+
+    def test_rule_warning_accumulates(self) -> None:
+        accumulated = AccumulatedActions()
+        apply_rule_action({"warning": "Underlying pigment may appear warm."}, accumulated)
+        self.assertIn("Underlying pigment", accumulated.warnings[0])
+
+    def test_blocked_rule_via_engine_output(self) -> None:
+        repo = build_seed_repository()
+        repo.formulation_rules.append(
+            FormulationRuleRecord(
+                rule_id=uuid.uuid4(),
+                rule_name="test_consultation_rule",
+                rule_priority=15,
+                rule_condition={"all_of": [{"field": "porosity", "op": ">", "value": 9}]},
+                rule_action={"set_recommendation_status": "requires_consultation"},
+                rule_category="porosity",
+            )
+        )
+        result = run_engine(_base_input(porosity=10), repo)
+        self.assertEqual(result.recommendation_status, RecommendationStatus.REQUIRES_CONSULTATION)
 
 
 if __name__ == "__main__":

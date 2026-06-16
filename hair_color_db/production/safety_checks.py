@@ -208,3 +208,23 @@ def derive_recommendation_status(
     if warnings:
         return RecommendationStatus.CAUTION
     return RecommendationStatus.OK
+
+
+_STATUS_RANK = {
+    RecommendationStatus.OK: 0,
+    RecommendationStatus.CAUTION: 1,
+    RecommendationStatus.REQUIRES_CONSULTATION: 2,
+    RecommendationStatus.BLOCKED: 3,
+}
+
+
+def merge_recommendation_status(
+    derived: RecommendationStatus,
+    rule_status: RecommendationStatus | None,
+) -> RecommendationStatus:
+    """Take the more severe of safety-derived and rule-declared status."""
+    if rule_status is None:
+        return derived
+    if _STATUS_RANK[rule_status] >= _STATUS_RANK[derived]:
+        return rule_status
+    return derived
