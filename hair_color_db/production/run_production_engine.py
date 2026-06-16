@@ -9,7 +9,11 @@ import uuid
 from typing import Any
 
 from hair_color_db.production.bootstrap import bootstrap_database
-from hair_color_db.production.catalog_lookup import DEFAULT_SUB_RANGE, resolve_catalog_reference
+from hair_color_db.production.catalog_lookup import (
+    DEFAULT_SUB_RANGE,
+    resolve_catalog_reference,
+    resolve_from_shade_reference,
+)
 from hair_color_db.production.db import create_session_factory, require_database_url
 from hair_color_db.production.engine_models import EngineInput, SelectedShade, ServiceIntent
 from hair_color_db.production.formula_builder import run_engine
@@ -113,11 +117,25 @@ def main(argv: list[str] | None = None) -> int:
         help="Apply migrations and import Stage 12/13 before running",
     )
     parser.add_argument(
+        "--shade-ref",
+        default=None,
+        help="Shade reference (e.g. 'Wella Professionals::Koleston Perfect::7/1')",
+    )
+    parser.add_argument(
+        "--line-hint",
+        default=None,
+        help="Product line hint when using --shade-ref without :: line segment",
+    )
+    parser.add_argument(
         "--canonical-key",
         default="Matrix::SoColor::US",
-        help="Brand::Line::Region canonical key",
+        help="Brand::Line::Region canonical key (ignored when --shade-ref is set)",
     )
-    parser.add_argument("--shade-code", default="5NN", help="Target shade code")
+    parser.add_argument(
+        "--shade-code",
+        default="5NN",
+        help="Target shade code (ignored when --shade-ref is set)",
+    )
     parser.add_argument(
         "--sub-range",
         default=None,
@@ -167,11 +185,19 @@ def main(argv: list[str] | None = None) -> int:
             bootstrap_database(session, database_url=args.database_url)
             session.commit()
 
-        catalog = resolve_catalog_reference(
-            session,
-            canonical_key=args.canonical_key,
-            shade_code=args.shade_code,
-            sub_range_name=args.sub_range or DEFAULT_SUB_RANGE,
+        catalog = (
+            resolve_from_shade_reference(
+                session,
+                args.shade_ref,
+                product_line_hint=args.line_hint,
+            )
+            if args.shade_ref
+            else resolve_catalog_reference(
+                session,
+                canonical_key=args.canonical_key,
+                shade_code=args.shade_code,
+                sub_range_name=args.sub_range or DEFAULT_SUB_RANGE,
+            )
         )
         engine_input = build_engine_input_from_args(args, catalog)
         context_overrides: dict[str, object] = {}

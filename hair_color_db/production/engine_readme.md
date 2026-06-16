@@ -117,7 +117,7 @@ Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code
 ## Assumptions
 
 - `formula` stores `line_id` only; brand derived at read time.
-- Shade selection is supplied on input (`selected_shades`); the engine does not search the shade catalog.
+- Shade selection can be supplied via `--shade-ref` lookup or explicit catalog IDs on input.
 - Quantity grams are placeholders (60g default) until a future gram-age module exists.
 - Research tables are read-only through repositories.
 
@@ -158,6 +158,8 @@ python3 -m unittest hair_color_db.production.test_pg_e2e -v
 | `catalog_lookup.py` | Resolve brand/line/region/shade UUIDs from imported catalog |
 | `persist.py` | Write `persistence_payload` → `formula` / `formula_step` / `risk_assessment` |
 | `run_production_engine.py` | CLI: run `SqlAlchemyEngineRepository` + optional persist |
+| `shade_matching.py` | PostgreSQL shade search/ranking and reference lookup |
+| `query_production_engine.py` | CLI: level/tone shade search against PostgreSQL |
 
 Typical local workflow:
 
@@ -177,6 +179,27 @@ python3 -m hair_color_db.production.run_production_engine \
 
 Import CLIs (`import_stage12_research`, `import_stage13_rules`) and `migrate.py` all read
 `DATABASE_URL` or accept `--database-url`.
+
+### Shade search / matching (PostgreSQL)
+
+Port of the Phase 1 SQLite `query_engine.py` / `src/matching.py` scoring against
+imported research tables:
+
+```bash
+python3 -m hair_color_db.production.query_production_engine \
+  --level 7 --tones Ash --brand "Wella"
+```
+
+Reference lookup (permanent line preference, brand/line hints):
+
+```bash
+python3 -m hair_color_db.production.run_production_engine \
+  --shade-ref "Wella Professionals::Koleston Perfect::7/1" \
+  --gray-percentage 30
+```
+
+Stage 12 import now populates `shade_tone_code` links so normalized tones resolve via
+`shade → tone_code_reference → tone_normalization → normalized_tone`.
 
 ### Cross-engine validation (Stage C)
 
