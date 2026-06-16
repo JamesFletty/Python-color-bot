@@ -1,0 +1,12 @@
+{
+  "batch": 6,
+  "label": "matrix_cult_lightmaster",
+  "lines_added": [
+    "Matrix::SoColor Cult::US",
+    "Matrix::Light Master::US"
+  ],
+  "shade_count": 15,
+  "sources": [
+    "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8"
+  ]
+}

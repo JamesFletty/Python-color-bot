@@ -1,6 +1,6 @@
 {
   "artifact": "line_technical_records",
-  "count": 26,
+  "count": 28,
   "line_technical_records": [
     {
       "canonical_key": "Redken::Shades EQ Gloss::US",
@@ -1613,6 +1613,85 @@
       "assumptions": [],
       "data_gaps": [
         "Shade names not printed on chart; codes only."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor Cult::US",
+      "brand": "Matrix",
+      "product_line": "SoColor Cult (Vivids)",
+      "color_type": "direct_dye",
+      "default_mixing_ratio": "Direct application — no developer required",
+      "developer_options": [],
+      "developer_strengths_if_stated": [
+        "No developer needed (manual p.64-66)"
+      ],
+      "processing_time_ranges": [
+        "Up to 30 minutes (manual p.66)"
+      ],
+      "gray_coverage_rules": [
+        "Not a gray coverage line; direct dye deposit on level 8-10"
+      ],
+      "lift_rules": [
+        "No lift; semi-permanent direct dye"
+      ],
+      "tone_family_legend": [],
+      "special_usage_notes": [
+        "Virgin and pre-lightened hair; starting level 8-10.",
+        "Lasts up to 20 washes; acidic formula; vegan.",
+        "SoColor Cult is not Pre-Bonded (manual FAQ p.36).",
+        "13 mixable shades; palette mixing recommendations on manual p.65."
+      ],
+      "region_or_market": "US",
+      "discontinued_status": "Active per 2023 Matrix manual",
+      "source_url": "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8",
+      "source_document": "2023 Matrix Manual Haircolor (official PDF, 82 pages)",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [],
+      "data_gaps": [
+        "Shade names only on palette chart; no numeric SKU codes in manual."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::Light Master::US",
+      "brand": "Matrix",
+      "product_line": "Light Master (incl. Light Master Pre-Bonded)",
+      "color_type": "lightener",
+      "default_mixing_ratio": "Classic off-scalp 1:1.5–1:2; Pre-Bonded off-scalp 1:1.5–1:2; on-scalp 1:2 (manual pp.70-71)",
+      "developer_options": [
+        "Matrix Cream Developer 10 Volume",
+        "Matrix Cream Developer 20 Volume",
+        "Matrix Cream Developer 30 Volume",
+        "Matrix Cream Developer 40 Volume (off-scalp maximum)"
+      ],
+      "developer_strengths_if_stated": [
+        "Off-scalp up to 40 volume; on-scalp up to 30 volume (manual pp.70-71)"
+      ],
+      "processing_time_ranges": [
+        "Up to 50 minutes; do not use heat; do not cover hair or gather in a bun for on-scalp (manual pp.70-71)"
+      ],
+      "gray_coverage_rules": [],
+      "lift_rules": [
+        "Light Master classic: up to 8 levels of lift.",
+        "Light Master Pre-Bonded: up to 8 levels with citric acid + glycine bonder (manual pp.70-71)."
+      ],
+      "tone_family_legend": [],
+      "special_usage_notes": [
+        "Classic technique powder lightener for foil and lightening techniques.",
+        "Pre-Bonded variant pre-mixed with bonder; no separate additive required.",
+        "On-scalp application permitted per manual in-depth usage notes (p.72 footnote)."
+      ],
+      "region_or_market": "US",
+      "discontinued_status": "Active per 2023 Matrix manual",
+      "source_url": "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8",
+      "source_document": "2023 Matrix Manual Haircolor (official PDF, 82 pages)",
+      "source_confidence": "high",
+      "evidence_status": "confirmed",
+      "assumptions": [
+        "High Riser Pre-Bonded documented separately in manual; not part of this canonical line."
+      ],
+      "data_gaps": [
+        "Powder lighteners have no tone-code palette; inventory recorded as product SKUs."
       ]
     }
   ],
