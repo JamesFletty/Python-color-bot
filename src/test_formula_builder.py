@@ -76,11 +76,10 @@ class BuildFormulaStage13Tests(unittest.TestCase):
     def test_matrix_extra_coverage_gray_uses_20_vol(self) -> None:
         formula = build_formula(
             self.conn,
-            shade_ref="Matrix::SoColor::504NA",
+            shade_ref="Matrix::SoColor::504N",
             gray_percent=60.0,
             intake={
                 "service_intent": "gray_coverage",
-                "selected_sub_ranges": ["Extra Coverage"],
                 "patch_test_status": "passed",
                 "porosity": 5,
                 "natural_level": 5,

@@ -82,6 +82,25 @@ class EngineGoldenPathTests(unittest.TestCase):
         self.assertIn("gray_coverage_high_natural_mix", names)
         self.assertTrue(any("natural" in (s.special_instructions or "").lower() for s in result.suggested_formula))
 
+    def test_auto_sub_range_from_selected_shade_name(self) -> None:
+        result = run_engine(
+            _base_input(
+                gray_percentage=60,
+                service_intent=ServiceIntent.GRAY_COVERAGE,
+                selected_shades=[
+                    SelectedShade(
+                        shade_id=uuid.uuid4(),
+                        shade_code="504N",
+                        sub_range_name="Extra Coverage",
+                        zone=FormulaZone.ALL,
+                    )
+                ],
+            ),
+            self.repo,
+        )
+        names = {r.rule_name for r in result.matched_rules}
+        self.assertIn("matrix_socolor_extra_coverage_gray_20vol", names)
+
     def test_high_porosity_reduces_developer_and_time(self) -> None:
         result = run_engine(
             _base_input(porosity=8, service_intent=ServiceIntent.LIFT_AND_TONE),
