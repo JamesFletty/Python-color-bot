@@ -5,6 +5,12 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any
 
+from hair_color_db.formulation_rules.evaluator import (
+    apply_core_rule_action,
+    evaluate_condition,
+    is_blocked_status,
+)
+
 from .loaders import (
     flatten_line_override_rules,
     load_decision_order,
@@ -101,14 +107,6 @@ class ResolverResult:
         }
 
 
-_STATUS_RANK = {
-    "ok": 0,
-    "caution": 1,
-    "requires_consultation": 2,
-    "blocked": 3,
-}
-
-
 def build_context_from_intake(intake: dict[str, Any], canonical_key: str | None = None) -> ResolverContext:
     """Build resolver context from validation case input or CLI intake."""
     natural = intake.get("natural_level")
@@ -142,71 +140,6 @@ def build_context_from_intake(intake: dict[str, Any], canonical_key: str | None 
         deposit_levels=deposit,
         level_delta=level_delta,
     )
-
-
-def _resolve_field(context: ResolverContext, field_name: str) -> Any:
-    return context.as_dict().get(field_name)
-
-
-def _compare(left: Any, op: str, right: Any, context: ResolverContext) -> bool:
-    if op in {"exists", "is_not_null"}:
-        if left is None:
-            return False
-        if isinstance(left, str):
-            return len(left.strip()) > 0
-        if isinstance(left, (list, tuple, set)):
-            return len(left) > 0
-        return True
-
-    if left is None:
-        return False
-
-    if isinstance(right, str) and right in {"existing_level", "natural_level", "desired_level"}:
-        right = _resolve_field(context, right)
-
-    if op == "=":
-        return left == right
-    if op == "!=":
-        return left != right
-    if op == ">":
-        return left > right
-    if op == ">=":
-        return left >= right
-    if op == "<":
-        return left < right
-    if op == "<=":
-        return left <= right
-    if op == "in":
-        return left in right
-    if op == "not_in":
-        return left not in right
-    if op == "contains":
-        if isinstance(left, (list, tuple, set)):
-            return right in left
-        if isinstance(left, str):
-            return str(right) in left
-        return False
-
-    raise ValueError(f"Unsupported operator: {op}")
-
-
-def evaluate_condition(condition: dict[str, Any], context: ResolverContext) -> bool:
-    """Evaluate rule_condition with all_of / any_of groups."""
-    all_of = condition.get("all_of") or []
-    any_of = condition.get("any_of") or []
-
-    if all_of:
-        for pred in all_of:
-            left = _resolve_field(context, pred["field"])
-            if not _compare(left, pred["op"], pred.get("value"), context):
-                return False
-    if any_of:
-        if not any(
-            _compare(_resolve_field(context, pred["field"]), pred["op"], pred.get("value"), context)
-            for pred in any_of
-        ):
-            return False
-    return True
 
 
 def _is_dormant_canonical_key(canonical_key: str | None) -> bool:
@@ -243,44 +176,10 @@ def _collect_applicable_rules(canonical_key: str | None, *, include_dormant: boo
 
 def _apply_action(result: ResolverResult, action: dict[str, Any], rule_id: str) -> None:
     result.actions.append({"rule_id": rule_id, **action})
-
-    status = action.get("set_recommendation_status")
-    if status:
-        if _STATUS_RANK.get(status, 0) >= _STATUS_RANK.get(result.recommendation_status, 0):
-            result.recommendation_status = status
-        if status == "blocked":
-            result.manual_review = True
-        if status == "requires_consultation":
-            result.manual_review = True
-
-    if action.get("block_reason"):
-        result.block_reason = str(action["block_reason"])
-
-    if action.get("trigger_workflow"):
-        result.triggered_workflow = str(action["trigger_workflow"])
-
-    if "set_developer_volume" in action:
-        volume = action.get("set_developer_volume")
-        if volume is None:
-            result.developer_volume = None
-            result._developer_locked = True
-        elif not result._developer_locked:
-            result.developer_volume = volume
-
-    if action.get("mixing_ratio"):
-        result.mixing_ratio = str(action["mixing_ratio"])
-
-    if action.get("require_natural_shade_mix"):
-        ratio = action.get("natural_shade_ratio")
-        if ratio is not None:
-            result.natural_shade_ratio = float(ratio)
+    apply_core_rule_action(action, result)
 
     if action.get("require_fill_pigment"):
         result._require_fill_pigment = True
-
-    warning = action.get("warning")
-    if warning:
-        result.warnings.append(str(warning))
 
 
 def resolve_formulation_rules(
@@ -306,12 +205,12 @@ def resolve_formulation_rules(
             result.formula_zones = ["root", "mid", "end"]
 
     rules = _collect_applicable_rules(context.canonical_key, include_dormant=include_dormant)
-    decision = load_decision_order()
     scope_rank = {"universal": 0, "brand": 1, "line": 2, "service": 3}
 
     matched: list[tuple[int, int, dict[str, Any]]] = []
     for rule in rules:
-        if not evaluate_condition(rule.get("rule_condition", {}), context):
+        ok, _ = evaluate_condition(rule.get("rule_condition", {}), context)
+        if not ok:
             continue
         scope = rule.get("scope_level", "universal")
         matched.append((scope_rank.get(scope, 99), int(rule.get("rule_priority", 100)), rule))
@@ -322,7 +221,7 @@ def resolve_formulation_rules(
         rule_id = rule["rule_id"]
         result.matched_rules.append(rule_id)
         _apply_action(result, rule.get("rule_action", {}), rule_id)
-        if result.recommendation_status == "blocked":
+        if is_blocked_status(result.recommendation_status):
             break
 
     if result._require_fill_pigment or context.deposit_levels >= 2:
