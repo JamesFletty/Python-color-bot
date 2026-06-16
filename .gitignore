@@ -9,5 +9,6 @@ __pycache__/
 .ruff_cache/
 .env
 .env.*
+!.env.example
 hair_color.db
 hair_color_db_verification_report.json

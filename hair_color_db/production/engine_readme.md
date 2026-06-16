@@ -123,7 +123,7 @@ Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code
 
 ## Known limitations
 
-- No SQL persistence write in `run_engine()` — returns `persistence_payload` for caller to commit.
+- `run_engine()` does not persist — use `persist.persist_engine_output()` or `run_production_engine --persist`.
 - Single primary line per recommendation (no multi-line formulas).
 - `developer_override` intermixing rules are modeled but not yet applied to developer selection.
 - JSON `rule_value` fallback parsing is intentionally narrow (developer volume, mixing ratio string).
@@ -131,13 +131,52 @@ Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code
 ## Running tests
 
 ```bash
-pip install pydantic sqlalchemy
+pip install -r requirements.txt
 python3 -m unittest hair_color_db.production.test_engine -v
 python3 -m unittest hair_color_db.production.test_import_stage13_rules -v
 python3 -m unittest hair_color_db.production.test_import_stage12_research -v
 python3 -m unittest hair_color_db.production.test_cross_engine_validation -v
 python3 hair_color_db/stage13_formulation_rules/test_stage13_validation.py
 ```
+
+PostgreSQL end-to-end (requires `DATABASE_URL`):
+
+```bash
+docker compose up -d
+export DATABASE_URL=postgresql+psycopg2://haircolor:haircolor@localhost:5432/haircolor
+python3 -m hair_color_db.production.bootstrap
+python3 -m unittest hair_color_db.production.test_pg_e2e -v
+```
+
+## PostgreSQL end-to-end wiring
+
+| Module | Role |
+|---|---|
+| `db.py` | Central `DATABASE_URL` resolution, engine + session factory |
+| `migrate.py` | Apply `research_baseline` + `op001_production_layer` SQL migrations |
+| `bootstrap.py` | Migrate + Stage 12 import + Stage 13 import (one command) |
+| `catalog_lookup.py` | Resolve brand/line/region/shade UUIDs from imported catalog |
+| `persist.py` | Write `persistence_payload` → `formula` / `formula_step` / `risk_assessment` |
+| `run_production_engine.py` | CLI: run `SqlAlchemyEngineRepository` + optional persist |
+
+Typical local workflow:
+
+```bash
+cp .env.example .env
+docker compose up -d
+export DATABASE_URL=postgresql+psycopg2://haircolor:haircolor@localhost:5432/haircolor
+python3 -m hair_color_db.production.bootstrap
+python3 -m hair_color_db.production.run_production_engine \
+  --bootstrap \
+  --canonical-key "Matrix::SoColor::US" \
+  --shade-code 5NN \
+  --gray-percentage 60 \
+  --service-intent gray_coverage \
+  --persist
+```
+
+Import CLIs (`import_stage12_research`, `import_stage13_rules`) and `migrate.py` all read
+`DATABASE_URL` or accept `--database-url`.
 
 ### Cross-engine validation (Stage C)
 
