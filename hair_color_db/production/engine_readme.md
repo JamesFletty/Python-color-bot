@@ -11,7 +11,9 @@ Execution layer that consumes the operational production schema and produces aud
 | `rule_evaluator.py` | Condition evaluation, rule matching, action application |
 | `safety_checks.py` | Intermixing, color science, line technical defaults, risk drafts |
 | `formula_builder.py` | Step assembly, `run_engine()` orchestrator, persistence payloads |
-| `test_engine.py` | 17 golden-path and edge-case unit tests |
+| `import_stage13_rules.py` | Stage 13 JSON → PostgreSQL import (formulation rules, workflows, validation cases) |
+| `test_engine.py` | 22 golden-path and edge-case unit tests |
+| `test_import_stage13_rules.py` | Stage 13 import pipeline regression tests |
 
 ## Execution order
 
@@ -83,6 +85,19 @@ from hair_color_db.production.repositories import SqlAlchemyEngineRepository
 repo = SqlAlchemyEngineRepository(session)
 result = run_engine(engine_input, repo, line_region_id=region_id)
 ```
+
+### Stage 13 rule import
+
+After applying `alembic_revision_op002_stage13.py` (or the matching section of
+`production_operational_schema.sql`), load the Stage 13 package into PostgreSQL:
+
+```bash
+export DATABASE_URL=postgresql+psycopg2://user:pass@host/db
+python3 -m hair_color_db.production.import_stage13_rules
+```
+
+The import is idempotent (upserts on `package_rule_id`, `workflow_id`, `case_id`).
+`build_seed_repository()` uses the same import logic for in-memory tests.
 
 ## Assumptions
 

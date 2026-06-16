@@ -234,6 +234,11 @@ class FormulationRuleCategory(str, enum.Enum):
     CORRECTION = "correction"
     DEVELOPER = "developer"
     PROCESSING = "processing"
+    SAFETY = "safety"
+    COLOR_SCIENCE = "color_science"
+    PRODUCT_TYPE = "product_type"
+    APPLICATION = "application"
+    INTERMIXING = "intermixing"
 
 
 class ConsultationStatus(str, enum.Enum):
@@ -464,6 +469,10 @@ class FormulationRule(Base):
         nullable=False,
     )
     test_coverage: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+    package_rule_id: Mapped[Optional[str]] = mapped_column(String, nullable=True, unique=True)
+    scope_level: Mapped[str] = mapped_column(String, nullable=False, default="universal")
+    canonical_key: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    is_dormant: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
 
     brand_links: Mapped[list["FormulationRuleBrand"]] = relationship(
         back_populates="formulation_rule", cascade="all, delete-orphan"
@@ -528,6 +537,46 @@ class FormulationRuleLine(Base):
     product_line: Mapped["ProductLine"] = relationship(
         back_populates="formulation_rule_lines"
     )
+
+
+class ServiceWorkflow(Base):
+    __tablename__ = "service_workflow"
+
+    workflow_id: Mapped[str] = mapped_column(String, primary_key=True)
+    name: Mapped[str] = mapped_column(String, nullable=False)
+    service_intent: Mapped[str] = mapped_column(String, nullable=False)
+    steps: Mapped[list[Any]] = mapped_column(JSONB, nullable=False)
+    default_zones: Mapped[list[Any]] = mapped_column(JSONB, nullable=False)
+    applicable_line_categories: Mapped[list[Any]] = mapped_column(JSONB, nullable=False)
+
+
+class ValidationCase(Base):
+    __tablename__ = "validation_case"
+
+    case_id: Mapped[str] = mapped_column(String, primary_key=True)
+    description: Mapped[str] = mapped_column(Text, nullable=False)
+    canonical_key: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    input: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
+    expected: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
+    last_run_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
+    last_run_status: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+
+
+class FormulationRuleEvidence(Base):
+    __tablename__ = "formulation_rule_evidence"
+
+    rule_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("formulation_rule.rule_id", ondelete="CASCADE"),
+        primary_key=True,
+    )
+    source_id: Mapped[Optional[uuid.UUID]] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("source_document.source_id", ondelete="SET NULL"),
+        nullable=True,
+    )
+    evidence_status: Mapped[str] = mapped_column(String, nullable=False)
+    notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
 
 
 # ---------------------------------------------------------------------------

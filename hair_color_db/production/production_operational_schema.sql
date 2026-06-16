@@ -53,7 +53,12 @@ CREATE TYPE formulation_rule_category AS ENUM (
     'porosity',
     'correction',
     'developer',
-    'processing'
+    'processing',
+    'safety',
+    'color_science',
+    'product_type',
+    'application',
+    'intermixing'
 );
 
 CREATE TYPE consultation_status AS ENUM (
@@ -245,7 +250,11 @@ CREATE TABLE formulation_rule (
     updated_at          TIMESTAMPTZ NOT NULL DEFAULT now(),
     source_id           UUID NULL REFERENCES source_document(source_id) ON DELETE SET NULL,
     evidence_status     intermix_evidence_status NOT NULL,
-    test_coverage       BOOLEAN NOT NULL DEFAULT FALSE
+    test_coverage       BOOLEAN NOT NULL DEFAULT FALSE,
+    package_rule_id     VARCHAR NULL UNIQUE,
+    scope_level         VARCHAR NOT NULL DEFAULT 'universal',
+    canonical_key       VARCHAR NULL,
+    is_dormant          BOOLEAN NOT NULL DEFAULT FALSE
 );
 
 CREATE TABLE formulation_rule_brand (
@@ -272,9 +281,41 @@ CREATE TRIGGER trg_formulation_rule_updated_at
 
 COMMENT ON TABLE formulation_rule IS
     'Deterministic engine rules. No brand rows = universal; brand rows without line rows = all lines in those brands; '
-    'line rows = listed lines only. Applicability via formulation_rule_brand / formulation_rule_line join tables.';
+    'line rows = listed lines only. Applicability via formulation_rule_brand / formulation_rule_line join tables. '
+    'Stage 13 package rules are loaded via import_stage13_rules.py (package_rule_id preserves U001, M_SOCOLOR_001, etc.).';
 
--- Seed formulation rules (universal + Matrix SoColor line-scoped example)
+-- ---------------------------------------------------------------------------
+-- D2. Stage 13 service workflows, validation cases, rule evidence
+-- ---------------------------------------------------------------------------
+CREATE TABLE service_workflow (
+    workflow_id                 VARCHAR PRIMARY KEY,
+    name                        VARCHAR NOT NULL,
+    service_intent              VARCHAR NOT NULL,
+    steps                       JSONB NOT NULL,
+    default_zones               JSONB NOT NULL,
+    applicable_line_categories  JSONB NOT NULL
+);
+
+CREATE TABLE validation_case (
+    case_id             VARCHAR PRIMARY KEY,
+    description         TEXT NOT NULL,
+    canonical_key       VARCHAR NULL,
+    input               JSONB NOT NULL,
+    expected            JSONB NOT NULL,
+    last_run_at         TIMESTAMPTZ NULL,
+    last_run_status     VARCHAR NULL
+);
+
+CREATE TABLE formulation_rule_evidence (
+    rule_id             UUID NOT NULL REFERENCES formulation_rule(rule_id) ON DELETE CASCADE,
+    source_id           UUID NULL REFERENCES source_document(source_id) ON DELETE SET NULL,
+    evidence_status     VARCHAR NOT NULL,
+    notes               TEXT NULL,
+    PRIMARY KEY (rule_id)
+);
+
+-- Legacy hand-maintained formulation rule seeds (superseded by import_stage13_rules.py).
+-- Kept for environments that apply this SQL before running the import script.
 INSERT INTO formulation_rule (
     rule_name, rule_priority, rule_condition, rule_action,
     rule_category, evidence_status, test_coverage

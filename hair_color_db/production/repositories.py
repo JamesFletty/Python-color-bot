@@ -10,6 +10,7 @@ from uuid import UUID
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
+from .import_stage13_rules import LineScope, build_formulation_rules_from_stage13
 from .production_models import (
     FormulationRule,
     FormulationRuleBrand,
@@ -31,6 +32,7 @@ class FormulationRuleRecord:
     rule_category: str
     brand_ids: list[UUID] = field(default_factory=list)
     line_ids: list[UUID] = field(default_factory=list)
+    scope_level: str = "universal"
 
 
 @dataclass
@@ -119,6 +121,10 @@ class InMemoryEngineRepository:
     ) -> list[FormulationRuleRecord]:
         applicable: list[FormulationRuleRecord] = []
         for rule in self.formulation_rules:
+            if rule.scope_level == "line":
+                if rule.line_ids and line_id in rule.line_ids:
+                    applicable.append(rule)
+                continue
             if rule.line_ids:
                 if line_id in rule.line_ids:
                     applicable.append(rule)
@@ -167,7 +173,12 @@ class SqlAlchemyEngineRepository:
         for rule in rules:
             brand_ids = [link.brand_id for link in rule.brand_links]
             line_ids = [link.line_id for link in rule.line_links]
-            if line_ids:
+            if rule.scope_level == "line":
+                if line_ids and line_id in line_ids:
+                    pass
+                else:
+                    continue
+            elif line_ids:
                 if line_id not in line_ids:
                     continue
             elif brand_ids:
@@ -183,6 +194,7 @@ class SqlAlchemyEngineRepository:
                     rule_category=rule.rule_category.value,
                     brand_ids=brand_ids,
                     line_ids=line_ids,
+                    scope_level=rule.scope_level,
                 )
             )
         return records
@@ -257,7 +269,7 @@ class SqlAlchemyEngineRepository:
 
 
 def build_seed_repository() -> InMemoryEngineRepository:
-    """Repository preloaded with formulation-rule seeds matching production DDL."""
+    """Repository preloaded from Stage 13 import logic + Matrix intermixing fixtures."""
     matrix_brand = uuid.UUID("00000000-0000-4000-8000-000000000001")
     matrix_line = uuid.UUID("00000000-0000-4000-8000-000000000010")
     matrix_region = uuid.UUID("00000000-0000-4000-8000-000000000100")
@@ -268,97 +280,11 @@ def build_seed_repository() -> InMemoryEngineRepository:
     ten_min_sub = uuid.UUID("00000000-0000-4000-8000-000000000205")
     normal_sub = uuid.UUID("00000000-0000-4000-8000-000000000206")
 
-    rules = [
-        FormulationRuleRecord(
-            rule_id=uuid.uuid4(),
-            rule_name="gray_coverage_high_natural_mix",
-            rule_priority=50,
-            rule_condition={
-                "all_of": [
-                    {"field": "gray_percentage", "op": ">", "value": 50},
-                    {"field": "natural_level", "op": "<=", "value": 6},
-                ]
-            },
-            rule_action={
-                "set_developer_volume": 20,
-                "require_natural_shade_mix": True,
-                "natural_shade_ratio": 0.5,
-            },
-            rule_category="gray_coverage",
-        ),
-        FormulationRuleRecord(
-            rule_id=uuid.uuid4(),
-            rule_name="high_porosity_reduce_developer_time",
-            rule_priority=60,
-            rule_condition={"any_of": [{"field": "porosity", "op": ">", "value": 7}]},
-            rule_action={
-                "adjust_developer_volume_delta": -10,
-                "adjust_processing_time_minutes": -5,
-            },
-            rule_category="porosity",
-        ),
-        FormulationRuleRecord(
-            rule_id=uuid.uuid4(),
-            rule_name="lift_over_four_prelighten_consult",
-            rule_priority=40,
-            rule_condition={"all_of": [{"field": "lift_levels", "op": ">", "value": 4}]},
-            rule_action={
-                "trigger_workflow": "pre_lightening_consultation",
-                "risk_modifier": {"unrealistic_expectation": 0.3},
-            },
-            rule_category="lift",
-        ),
-        FormulationRuleRecord(
-            rule_id=uuid.uuid4(),
-            rule_name="artificial_color_lighter_correction",
-            rule_priority=45,
-            rule_condition={
-                "all_of": [
-                    {"field": "existing_artificial_color", "op": "exists", "value": True},
-                    {"field": "desired_level", "op": ">", "value": "existing_level"},
-                ]
-            },
-            rule_action={
-                "trigger_workflow": "color_correction",
-                "risk_modifier": {"overlap": 0.25},
-            },
-            rule_category="correction",
-        ),
-        FormulationRuleRecord(
-            rule_id=uuid.uuid4(),
-            rule_name="fine_texture_high_lift_breakage_risk",
-            rule_priority=70,
-            rule_condition={
-                "all_of": [
-                    {"field": "texture", "op": "=", "value": "fine"},
-                    {"field": "lift_levels", "op": ">=", "value": 3},
-                ]
-            },
-            rule_action={"increase_risk_score": {"breakage": 0.35}},
-            rule_category="lift",
-        ),
-        FormulationRuleRecord(
-            rule_id=uuid.uuid4(),
-            rule_name="matrix_socolor_resistant_gray_20vol",
-            rule_priority=55,
-            rule_condition={"all_of": [{"field": "gray_percentage", "op": ">=", "value": 50}]},
-            rule_action={
-                "set_developer_volume": 30,
-                "add_step": {"zone": "root", "processing_time_adjustment": "+10min"},
-            },
-            rule_category="gray_coverage",
-            brand_ids=[matrix_brand],
-            line_ids=[matrix_line],
-        ),
-        FormulationRuleRecord(
-            rule_id=uuid.uuid4(),
-            rule_name="universal_default_developer",
-            rule_priority=200,
-            rule_condition={"all_of": [{"field": "service_intent", "op": "exists", "value": True}]},
-            rule_action={"set_developer_volume": 10},
-            rule_category="developer",
-        ),
-    ]
+    rules = build_formulation_rules_from_stage13(
+        line_mapping={
+            "Matrix::SoColor::US": LineScope(brand_id=matrix_brand, line_id=matrix_line),
+        }
+    )
 
     intermixing = [
         IntermixingRuleRecord(
