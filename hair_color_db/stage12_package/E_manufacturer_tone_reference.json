@@ -1,6 +1,6 @@
 {
   "artifact": "manufacturer_tone_reference",
-  "count": 623,
+  "count": 698,
   "manufacturer_tone_reference": [
     {
       "canonical_key": "Redken::Color Gels Lacquers::US",
@@ -7651,6 +7651,828 @@
       "manufacturer_tone_code": "ROYAL PURPLE",
       "manufacturer_term": "Royal Purple",
       "manufacturer_definition": "SoColor Cult vivid shade — Must-Have's",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "Ash",
+      "manufacturer_definition": "A ashes",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "Natural",
+      "manufacturer_definition": "N naturals",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "Natural Ash",
+      "manufacturer_definition": "N/NA column family",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "NN",
+      "manufacturer_term": "Natural Natural",
+      "manufacturer_definition": "NN extra-coverage naturals",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "VV",
+      "manufacturer_term": "Violet Violet",
+      "manufacturer_definition": "Mix shade VV",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "B",
+      "manufacturer_term": "Brown",
+      "manufacturer_definition": "B browns",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "BP",
+      "manufacturer_term": "Beige Pearl",
+      "manufacturer_definition": "BP column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "BP column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "Gold",
+      "manufacturer_definition": "G golds",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "R",
+      "manufacturer_term": "Red",
+      "manufacturer_definition": "R reds",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "V",
+      "manufacturer_term": "Violet",
+      "manufacturer_definition": "V violets",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "BG",
+      "manufacturer_term": "Brown Gold",
+      "manufacturer_definition": "BG column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "BG column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "BM",
+      "manufacturer_term": "Brown Mahogany",
+      "manufacturer_definition": "BM column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "BM column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "GB",
+      "manufacturer_term": "Gold Beige",
+      "manufacturer_definition": "printed GB column",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "K",
+      "manufacturer_term": "Copper",
+      "manufacturer_definition": "K coppers",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "Red Brown",
+      "manufacturer_definition": "RB column header",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "Red Red",
+      "manufacturer_definition": "Mix shade RR",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "RS",
+      "manufacturer_term": "Red Sand",
+      "manufacturer_definition": "5RS family",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "5RS family"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "VA",
+      "manufacturer_term": "Violet Ash",
+      "manufacturer_definition": "VA column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "VA column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "BS",
+      "manufacturer_term": "Brown Sand",
+      "manufacturer_definition": "BS column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "BS column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "KG",
+      "manufacturer_term": "Copper Gold",
+      "manufacturer_definition": "KG column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "KG column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "KR",
+      "manufacturer_term": "Copper Red",
+      "manufacturer_definition": "KR column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "KR column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "KS",
+      "manufacturer_term": "Copper Sand",
+      "manufacturer_definition": "KS column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "KS column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "MB",
+      "manufacturer_term": "Mocha Brown",
+      "manufacturer_definition": "MB column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "MB column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "RV",
+      "manufacturer_term": "Red Violet",
+      "manufacturer_definition": "6RV family",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "6RV family"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "SB",
+      "manufacturer_term": "Sand Beige",
+      "manufacturer_definition": "SB column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "SB column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "BN",
+      "manufacturer_term": "Brown Natural",
+      "manufacturer_definition": "BN column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "BN column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "OO",
+      "manufacturer_term": "Orange",
+      "manufacturer_definition": "OO Max family",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "OO Max family"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "PK",
+      "manufacturer_term": "Pearl Copper",
+      "manufacturer_definition": "7PK family",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "7PK family"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "RO",
+      "manufacturer_term": "Red Orange",
+      "manufacturer_definition": "RO Max family",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "BA",
+      "manufacturer_term": "Beige Ash",
+      "manufacturer_definition": "BA column header",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "KN",
+      "manufacturer_term": "Copper Natural",
+      "manufacturer_definition": "KN column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "KN column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "OR",
+      "manufacturer_term": "Orange",
+      "manufacturer_definition": "OR Max family",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "GN",
+      "manufacturer_term": "Gold Natural",
+      "manufacturer_definition": "GN column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "GN column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "P",
+      "manufacturer_term": "Pearl",
+      "manufacturer_definition": "P pearls",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "SV",
+      "manufacturer_term": "Silver Violet",
+      "manufacturer_definition": "11SV HiBlondes family",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "11SV HiBlondes family"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "A-Mix",
+      "manufacturer_term": "Ash Mix",
+      "manufacturer_definition": "Topchic cool mix additive",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "GG",
+      "manufacturer_term": "Gold Gold",
+      "manufacturer_definition": "Mix shade GG",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "KK",
+      "manufacturer_term": "Copper Copper",
+      "manufacturer_definition": "Mix shade KK",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "Mix shade KK"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Topchic::US",
+      "brand": "Goldwell",
+      "product_line": "Topchic",
+      "manufacturer_tone_code": "P-Mix",
+      "manufacturer_term": "Pearl Mix",
+      "manufacturer_definition": "Cool mix additive",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "A",
+      "manufacturer_term": "Ash",
+      "manufacturer_definition": "A ashes",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "N",
+      "manufacturer_term": "Natural",
+      "manufacturer_definition": "N naturals",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "NA",
+      "manufacturer_term": "Natural Ash",
+      "manufacturer_definition": "N/NA column family",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "NN",
+      "manufacturer_term": "Natural Natural",
+      "manufacturer_definition": "NN extra-coverage naturals",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "B",
+      "manufacturer_term": "Brown",
+      "manufacturer_definition": "B browns",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "BP",
+      "manufacturer_term": "Beige Pearl",
+      "manufacturer_definition": "BP column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "BP column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "G",
+      "manufacturer_term": "Gold",
+      "manufacturer_definition": "G golds",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "BG",
+      "manufacturer_term": "Brown Gold",
+      "manufacturer_definition": "BG column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "BG column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "BM",
+      "manufacturer_term": "Brown Mahogany",
+      "manufacturer_definition": "BM column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "BM column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "GB",
+      "manufacturer_term": "Gold Beige",
+      "manufacturer_definition": "printed GB column",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "K",
+      "manufacturer_term": "Copper",
+      "manufacturer_definition": "K coppers",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "MB",
+      "manufacturer_term": "Mocha Brown",
+      "manufacturer_definition": "MB column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "MB column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "RB",
+      "manufacturer_term": "Red Brown",
+      "manufacturer_definition": "RB column header",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "VA",
+      "manufacturer_term": "Violet Ash",
+      "manufacturer_definition": "VA column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "VA column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "BS",
+      "manufacturer_term": "Brown Sand",
+      "manufacturer_definition": "BS column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "BS column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "KG",
+      "manufacturer_term": "Copper Gold",
+      "manufacturer_definition": "KG column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "KG column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "KR",
+      "manufacturer_term": "Copper Red",
+      "manufacturer_definition": "KR column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "KR column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "KS",
+      "manufacturer_term": "Copper Sand",
+      "manufacturer_definition": "KS column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "KS column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "SB",
+      "manufacturer_term": "Sand Beige",
+      "manufacturer_definition": "SB column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "SB column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "BN",
+      "manufacturer_term": "Brown Natural",
+      "manufacturer_definition": "BN column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "BN column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "OO",
+      "manufacturer_term": "Orange",
+      "manufacturer_definition": "OO Max family",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "OO Max family"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "RO",
+      "manufacturer_term": "Red Orange",
+      "manufacturer_definition": "RO Max family",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "BA",
+      "manufacturer_term": "Beige Ash",
+      "manufacturer_definition": "BA column header",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "CA",
+      "manufacturer_term": "Cover Plus Ash",
+      "manufacturer_definition": "8CA Colorance Cover Plus family",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "8CA Colorance Cover Plus family"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "KN",
+      "manufacturer_term": "Copper Natural",
+      "manufacturer_definition": "KN column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "KN column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "OR",
+      "manufacturer_term": "Orange",
+      "manufacturer_definition": "OR Max family",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "GN",
+      "manufacturer_term": "Gold Natural",
+      "manufacturer_definition": "GN column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "GN column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "BB",
+      "manufacturer_term": "Beige Brown",
+      "manufacturer_definition": "BB column header",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "BB column header"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "P",
+      "manufacturer_term": "Pearl",
+      "manufacturer_definition": "P pearls",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "V",
+      "manufacturer_term": "Violet",
+      "manufacturer_definition": "V violets",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "CLEAR",
+      "manufacturer_term": "Clear",
+      "manufacturer_definition": "Colorance Clear diluter",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "GG",
+      "manufacturer_term": "Gold Gold",
+      "manufacturer_definition": "Mix shade GG",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "KK",
+      "manufacturer_term": "Copper Copper",
+      "manufacturer_definition": "Mix shade KK",
+      "confidence": "medium",
+      "notes_on_ambiguity": [
+        "Mix shade KK"
+      ]
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "P-Mix",
+      "manufacturer_term": "Pearl Mix",
+      "manufacturer_definition": "Cool mix additive",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "RR",
+      "manufacturer_term": "Red Red",
+      "manufacturer_definition": "Mix shade RR",
+      "confidence": "high",
+      "notes_on_ambiguity": []
+    },
+    {
+      "canonical_key": "Goldwell::Colorance::US",
+      "brand": "Goldwell",
+      "product_line": "Colorance (incl. Cover Plus, Gloss Tones)",
+      "manufacturer_tone_code": "VV",
+      "manufacturer_term": "Violet Violet",
+      "manufacturer_definition": "Mix shade VV",
       "confidence": "high",
       "notes_on_ambiguity": []
     }
