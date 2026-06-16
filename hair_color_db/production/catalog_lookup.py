@@ -14,6 +14,7 @@ from .import_stage12_research import (
     _region_id,
     find_shade_id,
 )
+from .shade_matching import lookup_shade_by_reference
 
 
 @dataclass(frozen=True)
@@ -68,4 +69,32 @@ def resolve_catalog_reference(
         line_region_id=line_region_id,
         shade_id=shade_id,
         sub_range_name=sub_range_name,
+    )
+
+
+def resolve_from_shade_reference(
+    session: Session,
+    shade_ref: str,
+    *,
+    product_line_hint: str | None = None,
+) -> CatalogReference:
+    """Resolve a free-form shade reference via search/lookup."""
+    row = lookup_shade_by_reference(
+        session,
+        shade_ref,
+        product_line_hint=product_line_hint,
+    )
+    if row is None:
+        raise LookupError(f"Shade reference not found: {shade_ref!r}")
+
+    brand_name = str(row["brand"])
+    line_name = str(row["product_line"])
+    return CatalogReference(
+        canonical_key=str(row["canonical_key"]),
+        shade_code=str(row["shade_code"]),
+        brand_id=_brand_id(brand_name),
+        line_id=row["line_id"],
+        line_region_id=row["line_region_id"],
+        shade_id=row["shade_id"],
+        sub_range_name=str(row.get("sub_range") or DEFAULT_SUB_RANGE),
     )

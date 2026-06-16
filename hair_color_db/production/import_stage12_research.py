@@ -33,6 +33,7 @@ from .production_models import (
     ProductLineRegion,
     Shade,
     ShadeRaw,
+    ShadeToneCode,
     SourceDocument,
     SubRange,
     ToneCodeReference,
@@ -217,6 +218,82 @@ def upsert_source_from_record(session: Session, record: dict[str, Any]) -> uuid.
     return sid
 
 
+def _link_shade_tones(
+    session: Session,
+    *,
+    shade_id: uuid.UUID,
+    canonical_key: str,
+    shade_code: str,
+    line_region_id: uuid.UUID,
+    manufacturer_tone_codes: list[Any],
+    normalized_tones: list[Any],
+) -> None:
+    """Rebuild shade → tone code links for search/matching queries."""
+    session.execute(delete(ShadeToneCode).where(ShadeToneCode.shade_id == shade_id))
+
+    position = 1
+    linked_codes: set[str] = set()
+
+    for raw_code in manufacturer_tone_codes:
+        code = str(raw_code).strip()
+        if not code or code in linked_codes:
+            continue
+        linked_codes.add(code)
+        tone_code_id = _tone_code_id(canonical_key, code)
+        session.merge(
+            ToneCodeReference(
+                tone_code_id=tone_code_id,
+                line_region_id=line_region_id,
+                manufacturer_tone_code=code,
+            )
+        )
+        session.merge(
+            ShadeToneCode(
+                shade_id=shade_id,
+                tone_code_id=tone_code_id,
+                position=position,
+            )
+        )
+        position += 1
+
+    for tone_name in normalized_tones:
+        if tone_name not in VALID_TONES:
+            continue
+        synthetic_code = f"__direct__:{shade_code}::{tone_name}"
+        if synthetic_code in linked_codes:
+            continue
+        linked_codes.add(synthetic_code)
+        tone_code_id = _tone_code_id(canonical_key, synthetic_code)
+        normalized_tone_id = _normalized_tone_id(str(tone_name))
+        session.merge(
+            NormalizedTone(
+                normalized_tone_id=normalized_tone_id,
+                tone_name=str(tone_name),
+            )
+        )
+        session.merge(
+            ToneCodeReference(
+                tone_code_id=tone_code_id,
+                line_region_id=line_region_id,
+                manufacturer_tone_code=synthetic_code,
+            )
+        )
+        session.merge(
+            ToneNormalization(
+                tone_code_id=tone_code_id,
+                normalized_tone_id=normalized_tone_id,
+            )
+        )
+        session.merge(
+            ShadeToneCode(
+                shade_id=shade_id,
+                tone_code_id=tone_code_id,
+                position=position,
+            )
+        )
+        position += 1
+
+
 def import_normalized_shade(
     session: Session,
     record: dict[str, Any],
@@ -300,6 +377,16 @@ def import_normalized_shade(
             processing_time_inherited=False,
             is_active=True,
         )
+    )
+
+    _link_shade_tones(
+        session,
+        shade_id=shade_id,
+        canonical_key=canonical_key,
+        shade_code=shade_code,
+        line_region_id=line_region_id,
+        manufacturer_tone_codes=record.get("manufacturer_tone_codes") or [],
+        normalized_tones=record.get("normalized_tones") or [],
     )
 
     for tone_name in record.get("normalized_tones") or []:
