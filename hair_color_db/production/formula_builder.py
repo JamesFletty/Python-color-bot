@@ -193,6 +193,7 @@ def run_engine(
     repository: EngineRepository,
     *,
     line_region_id: Optional[uuid.UUID] = None,
+    context_overrides: Optional[dict[str, object]] = None,
 ) -> EngineOutput:
     """
     Execute the deterministic formula engine end-to-end.
@@ -209,6 +210,8 @@ def run_engine(
     brand_id = engine_input.brand_id or repository.get_brand_id_for_line(engine_input.line_id)
     region_id = line_region_id or engine_input.line_region_id
     context = RuleEvaluationContext.from_input(engine_input, brand_id)
+    if context_overrides:
+        context = context.model_copy(update=context_overrides)
 
     formulation_rules = repository.load_active_formulation_rules(brand_id, engine_input.line_id)
     matched_rules, accumulated = evaluate_and_apply_rules(formulation_rules, context)

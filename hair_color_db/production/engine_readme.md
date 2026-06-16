@@ -13,7 +13,8 @@ Execution layer that consumes the operational production schema and produces aud
 | `formula_builder.py` | Step assembly, `run_engine()` orchestrator, persistence payloads |
 | `import_stage13_rules.py` | Stage 13 JSON → PostgreSQL import (formulation rules, workflows, validation cases) |
 | `test_engine.py` | 22 golden-path and edge-case unit tests |
-| `test_import_stage13_rules.py` | Stage 13 import pipeline regression tests |
+| `cross_engine_validation.py` | Stage 13 resolver vs production `run_engine()` comparison helpers |
+| `test_cross_engine_validation.py` | 14-case cross-engine validation suite |
 
 ## Execution order
 
@@ -118,4 +119,19 @@ The import is idempotent (upserts on `package_rule_id`, `workflow_id`, `case_id`
 ```bash
 pip install pydantic sqlalchemy
 python3 -m unittest hair_color_db.production.test_engine -v
+python3 -m unittest hair_color_db.production.test_import_stage13_rules -v
+python3 -m unittest hair_color_db.production.test_cross_engine_validation -v
+python3 hair_color_db/stage13_formulation_rules/test_stage13_validation.py
 ```
+
+### Cross-engine validation (Stage C)
+
+`test_cross_engine_validation.py` runs each case in `F_validation_cases.json` through:
+
+1. Stage 13 `resolve_formulation_rules()`
+2. Production `run_engine()` with equivalent `EngineInput` and `context_overrides`
+
+**Documented divergence:** six cases (`VC006`, `VC007`, `VC009`, `VC010`, `VC019`, `VC023`) produce
+`caution` in production because `derive_recommendation_status()` elevates rule warnings, while
+Stage 13 leaves status `ok` when a rule only emits a `warning` action. Formulation-layer
+`matched_rules`, `developer_volume`, and `block_reason` still align.
