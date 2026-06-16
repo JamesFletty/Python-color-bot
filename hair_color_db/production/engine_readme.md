@@ -14,7 +14,8 @@ Execution layer that consumes the operational production schema and produces aud
 | `import_stage13_rules.py` | Stage 13 JSON → PostgreSQL import (formulation rules, workflows, validation cases) |
 | `test_engine.py` | 22 golden-path and edge-case unit tests |
 | `cross_engine_validation.py` | Stage 13 resolver vs production `run_engine()` comparison helpers |
-| `test_cross_engine_validation.py` | 14-case cross-engine validation suite |
+| `import_stage12_research.py` | Stage 12 JSON → PostgreSQL research tables (shades, tones, line technical) |
+| `test_import_stage12_research.py` | Stage 12 import regression + engine e2e with catalog UUIDs |
 
 ## Execution order
 
@@ -100,6 +101,19 @@ python3 -m hair_color_db.production.import_stage13_rules
 The import is idempotent (upserts on `package_rule_id`, `workflow_id`, `case_id`).
 `build_seed_repository()` uses the same import logic for in-memory tests.
 
+### Stage 12 research import
+
+After applying `alembic_revision_research_baseline.py` (or `research_baseline_schema.sql`):
+
+```bash
+export DATABASE_URL=postgresql+psycopg2://user:pass@host/db
+python3 -m hair_color_db.production.import_stage12_research
+```
+
+Loads 1,828 shades, 659 tone mappings, and line technical rules from `stage12_package/`.
+Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code).
+`SqlAlchemyEngineRepository` reads imported research rows for line technical rules and shades.
+
 ## Assumptions
 
 - `formula` stores `line_id` only; brand derived at read time.
@@ -120,6 +134,7 @@ The import is idempotent (upserts on `package_rule_id`, `workflow_id`, `case_id`
 pip install pydantic sqlalchemy
 python3 -m unittest hair_color_db.production.test_engine -v
 python3 -m unittest hair_color_db.production.test_import_stage13_rules -v
+python3 -m unittest hair_color_db.production.test_import_stage12_research -v
 python3 -m unittest hair_color_db.production.test_cross_engine_validation -v
 python3 hair_color_db/stage13_formulation_rules/test_stage13_validation.py
 ```
