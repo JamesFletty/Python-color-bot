@@ -10,6 +10,73 @@ from typing import Any
 from src.logging_utils import log_transformation
 from src.matching import fetch_line_rules, lookup_shade_by_reference
 
+_VOLUME_OPTION_PATTERNS: dict[int, tuple[str, ...]] = {
+    10: (r"10\s*vol", r"3\s*%"),
+    20: (r"20\s*vol", r"6\s*%"),
+    30: (r"30\s*vol", r"9\s*%"),
+    40: (r"40\s*vol", r"12\s*%"),
+}
+
+
+def _option_is_multi_volume_chart(text: str) -> bool:
+    """Return True when an option lists multiple developer volumes (line chart text)."""
+    return len(re.findall(r"\d+\s*vol", text, re.IGNORECASE)) > 1
+
+
+def format_developer_volume(
+    volume: int,
+    developer_options: list[str] | None = None,
+) -> str:
+    """Map a Stage 13 developer volume to a salon-facing developer label."""
+    if developer_options:
+        for option in developer_options:
+            if _option_is_multi_volume_chart(option):
+                continue
+            option_lower = option.lower()
+            for pattern in _VOLUME_OPTION_PATTERNS.get(volume, ()):
+                if re.search(pattern, option_lower, re.IGNORECASE):
+                    return option
+            if re.search(rf"\b{volume}\s*vol\b", option_lower, re.IGNORECASE):
+                return option
+    return f"{volume} vol"
+
+
+def apply_stage13_formulation_overlay(
+    formula: dict[str, Any],
+    stage13_result: Any,
+    *,
+    developer_options: list[str] | None,
+    heuristic_developer: str | None,
+) -> None:
+    """Promote Stage 13 rule outputs into primary formula fields when rules apply."""
+    formula_block = formula.setdefault("formula", {})
+    assumptions = formula.setdefault("assumptions", [])
+
+    if stage13_result.developer_volume is not None:
+        rule_developer = format_developer_volume(
+            int(stage13_result.developer_volume),
+            developer_options=developer_options,
+        )
+        formula_block["developer"] = rule_developer
+        formula_block["developer_rationale"] = [
+            (
+                f"Stage 13 rule(s) {', '.join(stage13_result.matched_rules)} "
+                f"set developer to {stage13_result.developer_volume} vol."
+            )
+        ]
+        if heuristic_developer and heuristic_developer != rule_developer:
+            assumptions.append(
+                "Heuristic developer selection overridden by Stage 13 formulation rule match."
+            )
+    elif stage13_result.matched_rules and heuristic_developer is None:
+        formula_block["developer"] = None
+
+    if stage13_result.mixing_ratio:
+        formula_block["mixing_ratio"] = stage13_result.mixing_ratio
+
+    if stage13_result.natural_shade_ratio is not None:
+        formula_block["natural_shade_ratio"] = stage13_result.natural_shade_ratio
+
 
 def _first_rule_value(rules: dict[str, Any], rule_type: str) -> Any:
     """Return the first stored value for a rule type."""
@@ -373,15 +440,27 @@ def build_formula(
         elif stage13_result.recommendation_status == "caution":
             formula["status"] = "caution"
 
-        if stage13_result.developer_volume is not None and formula["formula"]["developer"]:
-            formula["formula"]["stage13_developer_volume"] = stage13_result.developer_volume
-        if stage13_result.mixing_ratio:
-            formula["formula"]["stage13_mixing_ratio"] = stage13_result.mixing_ratio
-        if stage13_result.natural_shade_ratio is not None:
-            formula["formula"]["natural_shade_ratio"] = stage13_result.natural_shade_ratio
+        apply_stage13_formulation_overlay(
+            formula,
+            stage13_result,
+            developer_options=developer_options if isinstance(developer_options, list) else None,
+            heuristic_developer=developer_selection["developer"],
+        )
 
         formula["warnings"] = list(formula.get("warnings", [])) + stage13_result.warnings
         if stage13_result.block_reason:
             formula["block_reason"] = stage13_result.block_reason
+
+        if logger is not None and stage13_result.developer_volume is not None:
+            log_transformation(
+                logger,
+                "stage13_developer_applied",
+                {
+                    "shade_ref": shade_ref,
+                    "developer_volume": stage13_result.developer_volume,
+                    "developer": formula["formula"]["developer"],
+                    "matched_rules": stage13_result.matched_rules,
+                },
+            )
 
     return formula

@@ -200,27 +200,28 @@ def fetch_shade_candidates(
     return matches
 
 
-def parse_shade_reference(shade_ref: str) -> tuple[str | None, str]:
+def parse_shade_reference(shade_ref: str) -> tuple[str | None, str | None, str]:
     """
     Parse a shade reference like 'Wella 7/1' or 'Wella Professionals::Koleston Perfect::7/1'.
 
-    Returns (brand_hint, shade_code).
+    Returns (brand_hint, product_line_hint, shade_code).
+    Three-part ``Brand::Line::ShadeCode`` references include the middle segment as the line hint.
     """
     cleaned = shade_ref.strip()
     if "::" in cleaned:
         parts = [part.strip() for part in cleaned.split("::") if part.strip()]
+        if len(parts) >= 3:
+            return parts[0], parts[1], parts[-1]
         if len(parts) >= 2:
-            brand_hint = parts[0]
-            shade_code = parts[-1]
-            return brand_hint, shade_code
+            return parts[0], None, parts[-1]
 
     tokens = cleaned.split()
     if len(tokens) >= 2:
         shade_code = tokens[-1]
         brand_hint = " ".join(tokens[:-1])
-        return brand_hint, shade_code
+        return brand_hint, None, shade_code
 
-    return None, cleaned
+    return None, None, cleaned
 
 
 def _is_permanent_color_type(color_type: str | None) -> bool:
@@ -241,7 +242,8 @@ def lookup_shade_by_reference(
 ) -> dict[str, Any] | None:
     """Resolve a shade reference to a single best-matching shade row."""
     conn.row_factory = sqlite3.Row
-    brand_hint, shade_code = parse_shade_reference(shade_ref)
+    brand_hint, line_hint_from_ref, shade_code = parse_shade_reference(shade_ref)
+    effective_line_hint = product_line_hint or line_hint_from_ref
     cursor = conn.cursor()
     cursor.execute(
         """
@@ -274,14 +276,15 @@ def lookup_shade_by_reference(
         if not filtered:
             filtered = rows
 
-    if product_line_hint:
+    if effective_line_hint:
         line_filtered = [
             row
             for row in filtered
-            if product_line_hint.lower() in str(row["product_line"]).lower()
+            if effective_line_hint.lower() in str(row["product_line"]).lower()
         ]
-        if line_filtered:
-            filtered = line_filtered
+        if not line_filtered:
+            return None
+        filtered = line_filtered
 
     # Prefer permanent lines when multiple matches remain (e.g. Wella 7/1).
     permanent = [

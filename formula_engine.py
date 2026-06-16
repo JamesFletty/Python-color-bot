@@ -3,8 +3,16 @@
 Deterministic formula engine for the Phase 1 SQLite hair color database.
 
 Takes a shade reference and hair condition parameters, reads line_technical_rule
-data for developer selection, mixing ratio, timing, and special notes, and returns
-a complete formula JSON with provenance, confidence, and assumptions.
+data for mixing ratio, timing, and special notes, and returns a complete formula JSON
+with provenance, confidence, and assumptions.
+
+When Stage 13 intake fields are supplied (``--service-intent``, ``--gray``, etc.),
+formulation rules from ``hair_color_db/stage13_formulation_rules`` drive the primary
+``formula.developer`` and ``formula.mixing_ratio`` outputs. Heuristic developer
+selection from line technical rules is used only when Stage 13 rules do not set volume.
+
+Three-part shade references ``Brand::Line::ShadeCode`` resolve the middle segment as
+the product line hint (e.g. ``Matrix::SoColor::5N`` targets SoColor Pre-Bonded).
 """
 
 from __future__ import annotations
