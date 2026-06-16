@@ -279,6 +279,25 @@ def run_engine(
             accumulated.require_natural_shade_mix,
             accumulated.natural_shade_ratio,
         )
+        if accumulated.fill_pigment_guidance:
+            fill = accumulated.fill_pigment_guidance
+            tone_summary = ", ".join(
+                step["underlying_pigment"] for step in fill.get("fill_steps", [])
+            )
+            fill_step = SuggestedFormulaStep(
+                step_order=0,
+                zone=FormulaZone.ALL,
+                processing_time_minutes=max(15, processing_time - 5),
+                special_instructions=(
+                    f"Pre-fill / repigmentation: deposit warm tones ({tone_summary}) "
+                    f"before target level {fill.get('target_level')} formula. "
+                    f"Suggested fill ratio ~{int(float(fill.get('suggested_fill_ratio', 0.3)) * 100)}%."
+                ),
+                is_optional=False,
+            )
+            steps = [fill_step, *steps]
+            for idx, step in enumerate(steps, start=1):
+                steps[idx - 1] = step.model_copy(update={"step_order": idx})
         for idx, extra in enumerate(accumulated.extra_steps, start=len(steps) + 1):
             steps.append(extra.model_copy(update={"step_order": idx}))
 
@@ -293,6 +312,12 @@ def run_engine(
     if accumulated.require_natural_shade_mix:
         explanation_parts.append(
             f"Natural shade mix required ({accumulated.natural_shade_ratio:.0%})."
+        )
+    if accumulated.fill_pigment_guidance:
+        fill = accumulated.fill_pigment_guidance
+        explanation_parts.append(
+            f"Fill/repigmentation required ({fill.get('deposit_levels')} levels): "
+            f"warm pigments at levels {[s['level'] for s in fill.get('fill_steps', [])]}."
         )
     if accumulated.triggered_workflows:
         explanation_parts.append(f"Workflows: {', '.join(accumulated.triggered_workflows)}.")

@@ -25,14 +25,14 @@ class Stage13ImportRowTests(unittest.TestCase):
     def test_universal_rule_count(self) -> None:
         rows = build_stage13_import_rows()
         universal = [r for r in rows if r.scope_level == "universal"]
-        self.assertEqual(len(universal), 12)
-        self.assertEqual(len(load_universal_rules()), 12)
+        self.assertEqual(len(universal), 15)
+        self.assertEqual(len(load_universal_rules()), 15)
 
     def test_line_override_groups_and_rules(self) -> None:
         rows = build_stage13_import_rows()
         line_rows = [r for r in rows if r.scope_level == "line"]
         self.assertEqual(len(load_line_overrides()), 9)
-        self.assertEqual(len(line_rows), 14)
+        self.assertEqual(len(line_rows), 16)
 
     def test_matrix_socolor_resistant_gray_imports_30_vol(self) -> None:
         rows = build_stage13_import_rows()
@@ -101,7 +101,7 @@ class Stage13ImportRowTests(unittest.TestCase):
         )
 
     def test_validation_case_and_workflow_counts(self) -> None:
-        self.assertEqual(len(load_validation_cases()), 14)
+        self.assertEqual(len(load_validation_cases()), 17)
         self.assertEqual(len(load_service_workflows()), 9)
 
     def test_inactive_dormant_rules_excluded_from_engine_records(self) -> None:

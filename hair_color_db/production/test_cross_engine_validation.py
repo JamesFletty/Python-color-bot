@@ -22,7 +22,7 @@ class CrossEngineValidationTests(unittest.TestCase):
         cls.cases = load_validation_cases()
 
     def test_packaged_case_count(self) -> None:
-        self.assertEqual(len(self.cases), 14)
+        self.assertEqual(len(self.cases), 17)
 
     def test_cross_engine_validation_cases(self) -> None:
         hard_pass = 0
@@ -48,9 +48,9 @@ class CrossEngineValidationTests(unittest.TestCase):
                 else:
                     hard_pass += 1
 
-        self.assertEqual(hard_pass + warning_elevation, 14)
+        self.assertEqual(hard_pass + warning_elevation, 17)
         self.assertGreaterEqual(hard_pass, 8)
-        self.assertGreaterEqual(warning_elevation, 3)
+        self.assertGreaterEqual(warning_elevation, 5)
 
     def test_vc001_patch_test_fail_blocks_production(self) -> None:
         case = next(c for c in self.cases if c["case_id"] == "VC001_safety_patch_test_fail")

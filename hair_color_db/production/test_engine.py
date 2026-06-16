@@ -380,8 +380,9 @@ class RuleEvaluatorStage13ActionTests(unittest.TestCase):
         matched, accumulated = evaluate_and_apply_rules(repo.formulation_rules, ctx)
         self.assertEqual(accumulated.recommendation_status, RecommendationStatus.BLOCKED)
         self.assertIn("Patch test failed", accumulated.block_reason or "")
-        self.assertEqual(len(matched), 1)
-        self.assertEqual(matched[0].rule_name, "test_patch_fail_block")
+        matched_names = [rule.rule_name for rule in matched]
+        self.assertIn("test_patch_fail_block", matched_names)
+        self.assertNotIn("should_not_apply_after_block", matched_names)
 
     def test_contains_operator_on_extra_context_field(self) -> None:
         ctx = RuleEvaluationContext.from_input(_base_input(), brand_id=None)

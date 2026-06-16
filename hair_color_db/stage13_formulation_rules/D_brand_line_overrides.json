@@ -285,6 +285,26 @@
             "adjust_processing_time_minutes": 5,
             "warning": "Gray blending may require capped heat processing per chart."
           }
+        },
+        {
+          "rule_id": "R_SEQ_003",
+          "rule_name": "seq_darken_acidic_deposit_dev",
+          "rule_priority": 54,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "deposit_levels",
+                "op": ">=",
+                "value": 1
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 5,
+            "warning": "Shades EQ acidic demi — deposit-only at 5 vol equivalent; no lift when darkening."
+          }
         }
       ]
     },
@@ -317,6 +337,26 @@
           "rule_action": {
             "warning": "Color Touch soft blend path for low gray; not full coverage.",
             "set_developer_volume": 6
+          }
+        },
+        {
+          "rule_id": "W_CT_002",
+          "rule_name": "colortouch_darken_deposit_dev",
+          "rule_priority": 54,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "deposit_levels",
+                "op": ">=",
+                "value": 1
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 6,
+            "warning": "Color Touch demi deposit when darkening — 6 vol (1.9%) processing solution."
           }
         }
       ]

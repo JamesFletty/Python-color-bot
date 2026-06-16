@@ -77,6 +77,13 @@ def apply_stage13_formulation_overlay(
     if stage13_result.natural_shade_ratio is not None:
         formula_block["natural_shade_ratio"] = stage13_result.natural_shade_ratio
 
+    if getattr(stage13_result, "fill_pigment_guidance", None):
+        formula_block["fill_pigment_guidance"] = stage13_result.fill_pigment_guidance
+
+    deposit_levels = getattr(stage13_result, "deposit_levels", 0)
+    if deposit_levels:
+        formula.setdefault("hair_conditions", {})["deposit_levels"] = deposit_levels
+
 
 def _first_rule_value(rules: dict[str, Any], rule_type: str) -> Any:
     """Return the first stored value for a rule type."""
@@ -309,12 +316,28 @@ def build_formula(
             developer_strengths = value
             break
 
+    starting_level = current_level
+    desired_level = target_level
+    natural_level = current_level
+    existing_level = None
+    if intake is not None:
+        natural_level = intake.get("natural_level", current_level)
+        existing_level = intake.get("existing_level")
+        if existing_level is not None:
+            starting_level = existing_level
+        elif natural_level is not None:
+            starting_level = natural_level
+        if intake.get("desired_level") is not None:
+            desired_level = float(intake["desired_level"])
+        elif target_level is not None:
+            desired_level = target_level
+
     developer_selection = select_developer(
         developer_options=developer_options,
         developer_strengths=developer_strengths,
         gray_percent=gray_percent,
-        current_level=current_level,
-        target_level=target_level,
+        current_level=starting_level,
+        target_level=desired_level,
     )
     processing = select_processing_time(_first_rule_value(rules, "processing_time"), gray_percent)
     gray_guidance = select_gray_coverage_adjustment(
@@ -383,11 +406,19 @@ def build_formula(
         },
         "hair_conditions": {
             "gray_percent": gray_percent,
-            "current_level": current_level,
+            "natural_level": natural_level,
+            "existing_level": existing_level,
+            "current_level": starting_level,
             "target_level": target_level,
+            "desired_level": desired_level,
             "lift_delta": (
-                target_level - current_level
-                if target_level is not None and current_level is not None
+                desired_level - starting_level
+                if desired_level is not None and starting_level is not None
+                else None
+            ),
+            "deposit_levels": (
+                max(0.0, starting_level - desired_level)
+                if desired_level is not None and starting_level is not None
                 else None
             ),
         },
@@ -425,8 +456,12 @@ def build_formula(
 
         stage13_intake = dict(intake)
         stage13_intake.setdefault("gray_percentage", gray_percent or 0)
-        stage13_intake.setdefault("natural_level", current_level)
-        stage13_intake.setdefault("desired_level", target_level)
+        if natural_level is not None:
+            stage13_intake.setdefault("natural_level", int(natural_level))
+        if existing_level is not None:
+            stage13_intake.setdefault("existing_level", int(existing_level))
+        if desired_level is not None:
+            stage13_intake.setdefault("desired_level", int(desired_level))
         stage13_result = resolve_formulation_rules(
             stage13_intake,
             canonical_key=str(shade["canonical_key"]),

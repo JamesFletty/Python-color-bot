@@ -4,11 +4,11 @@
   "generated": "2026-06-15",
   "completion_status": "complete",
   "counts": {
-    "universal_rules": 12,
+    "universal_rules": 15,
     "service_workflows": 9,
     "brand_line_overrides": 9,
-    "validation_cases": 14,
-    "conflicts_and_gaps": 3,
+    "validation_cases": 17,
+    "conflicts_and_gaps": 1,
     "dormant_override_groups": 0
   },
   "sections": {
@@ -30,6 +30,6 @@
   "notes": [
     "Override groups with requires_stage12_inventory_addition=true remain dormant until canonical_key appears in Stage 12 section C (none currently flagged).",
     "Validation cases VC002, VC014–VC018, VC020–VC022 reserved for future batches.",
-    "14 validation cases referenced across package sections F and MANIFEST."
+    "17 validation cases referenced across package sections F and MANIFEST."
   ]
 }

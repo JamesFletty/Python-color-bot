@@ -39,7 +39,13 @@ def main(argv: list[str] | None = None) -> int:
         help='Shade reference (e.g. "Wella 7/1" or "Wella Professionals::Koleston Perfect::7/1")',
     )
     parser.add_argument("--gray", type=float, default=None, help="Gray hair percentage")
-    parser.add_argument("--current_level", type=float, default=None, help="Client current level")
+    parser.add_argument("--current_level", type=float, default=None, help="Client natural/base level")
+    parser.add_argument(
+        "--existing-level",
+        type=float,
+        default=None,
+        help="Client current colored level (when different from natural)",
+    )
     parser.add_argument(
         "--line",
         type=str,
@@ -89,6 +95,10 @@ def main(argv: list[str] | None = None) -> int:
         "patch_test_status": args.patch_test_status,
         "porosity": args.porosity,
     }
+    if args.current_level is not None:
+        intake["natural_level"] = args.current_level
+    if args.existing_level is not None:
+        intake["existing_level"] = args.existing_level
     if args.desired_level is not None:
         intake["desired_level"] = args.desired_level
 

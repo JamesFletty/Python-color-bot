@@ -54,6 +54,9 @@ WARNING_ELEVATION_CASES = frozenset(
         "VC010_direct_dye_no_developer",
         "VC019_wella_colortouch_soft_blend",
         "VC023_pulpriot_direct_dye",
+        "VC024_gray_default_20vol",
+        "VC025_darken_deposit_developer",
+        "VC026_multi_level_darken_fill",
     }
 )
 

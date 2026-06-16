@@ -159,14 +159,18 @@ class RuleEvaluationContext(BaseModel):
     desired_level: Optional[int] = None
     service_intent: str
     lift_levels: int = 0
+    deposit_levels: int = 0
+    level_delta: int = 0
 
     model_config = ConfigDict(extra="allow")
 
     @classmethod
     def from_input(cls, engine_input: EngineInput, brand_id: UUID | None) -> RuleEvaluationContext:
-        existing = engine_input.existing_level or engine_input.natural_level
-        desired = engine_input.desired_level or existing
-        lift = max(0, desired - existing)
+        existing = engine_input.existing_level if engine_input.existing_level is not None else engine_input.natural_level
+        desired = engine_input.desired_level if engine_input.desired_level is not None else existing
+        level_delta = desired - existing
+        lift = max(0, level_delta)
+        deposit = max(0, -level_delta)
         return cls(
             consultation_id=engine_input.consultation_id,
             line_id=engine_input.line_id,
@@ -184,6 +188,8 @@ class RuleEvaluationContext(BaseModel):
             desired_level=engine_input.desired_level,
             service_intent=engine_input.service_intent.value,
             lift_levels=lift,
+            deposit_levels=deposit,
+            level_delta=level_delta,
         )
 
 
@@ -204,6 +210,9 @@ class AccumulatedActions(BaseModel):
     triggered_workflows: list[str] = Field(default_factory=list)
     hard_stops: list[str] = Field(default_factory=list)
     warnings: list[str] = Field(default_factory=list)
+    require_fill_pigment: bool = False
+    fill_pigment_guidance: dict[str, Any] | None = None
+    deposit_levels: int = 0
 
     def apply_risk_modifier(self, modifiers: dict[str, float]) -> None:
         for key, delta in modifiers.items():
