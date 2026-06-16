@@ -73,6 +73,24 @@ class BuildFormulaStage13Tests(unittest.TestCase):
         self.assertNotIn("stage13_developer_volume", formula["formula"])
         self.assertIn("M_SOCOLOR_001", formula["formulation_rules"]["matched_rules"])
 
+    def test_matrix_extra_coverage_gray_uses_20_vol(self) -> None:
+        formula = build_formula(
+            self.conn,
+            shade_ref="Matrix::SoColor::504NA",
+            gray_percent=60.0,
+            intake={
+                "service_intent": "gray_coverage",
+                "selected_sub_ranges": ["Extra Coverage"],
+                "patch_test_status": "passed",
+                "porosity": 5,
+                "natural_level": 5,
+                "desired_level": 5,
+            },
+        )
+        self.assertEqual(formula["status"], "ok")
+        self.assertEqual(formula["formulation_rules"]["developer_volume"], 20)
+        self.assertIn("M_SOCOLOR_003", formula["formulation_rules"]["matched_rules"])
+
     def test_heuristic_developer_used_without_stage13_intake(self) -> None:
         formula = build_formula(
             self.conn,

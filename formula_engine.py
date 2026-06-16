@@ -16,6 +16,9 @@ the product line hint (e.g. ``Matrix::SoColor::5N`` targets SoColor Pre-Bonded).
 
 Multi-level darkening responses include ``fill_pigment_guidance`` with inventory-backed
 ``suggested_shades`` per warm fill level plus ``target_natural_shades`` at the target depth.
+
+Use ``--sub-range`` to activate line collection rules (e.g. ``Extra Coverage``, ``DreamAge``,
+``ABSOLUTES``, ``HD``) for gray developer and intermixing checks.
 """
 
 from __future__ import annotations
@@ -29,6 +32,19 @@ from pathlib import Path
 from src.formula_builder import build_formula
 from src.logging_utils import configure_logging, log_transformation
 from src.paths import DEFAULT_DB_PATH
+
+
+def _parse_sub_ranges(raw_values: list[str] | None) -> list[str]:
+    """Expand comma-separated ``--sub-range`` values into a flat list."""
+    if not raw_values:
+        return []
+    parsed: list[str] = []
+    for value in raw_values:
+        for part in value.split(","):
+            cleaned = part.strip()
+            if cleaned:
+                parsed.append(cleaned)
+    return parsed
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -75,6 +91,16 @@ def main(argv: list[str] | None = None) -> int:
         help="Patch test status for Stage 13 safety gate",
     )
     parser.add_argument("--porosity", type=int, default=5, help="Porosity scale 1-10 for Stage 13 rules")
+    parser.add_argument(
+        "--sub-range",
+        action="append",
+        default=None,
+        metavar="COLLECTION",
+        help=(
+            "Product sub-range / collection for Stage 13 line rules (repeatable or comma-separated). "
+            "Examples: 'Extra Coverage', DreamAge, ABSOLUTES, HD"
+        ),
+    )
     args = parser.parse_args(argv)
 
     if not args.db.exists():
@@ -90,6 +116,7 @@ def main(argv: list[str] | None = None) -> int:
             "gray_percent": args.gray,
             "current_level": args.current_level,
             "line_hint": args.line,
+            "sub_ranges": _parse_sub_ranges(args.sub_range),
         },
     )
 
@@ -98,6 +125,9 @@ def main(argv: list[str] | None = None) -> int:
         "patch_test_status": args.patch_test_status,
         "porosity": args.porosity,
     }
+    sub_ranges = _parse_sub_ranges(args.sub_range)
+    if sub_ranges:
+        intake["selected_sub_ranges"] = sub_ranges
     if args.current_level is not None:
         intake["natural_level"] = args.current_level
     if args.existing_level is not None:
