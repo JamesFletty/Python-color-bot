@@ -11,7 +11,11 @@ Execution layer that consumes the operational production schema and produces aud
 | `rule_evaluator.py` | Condition evaluation, rule matching, action application |
 | `safety_checks.py` | Intermixing, color science, line technical defaults, risk drafts |
 | `formula_builder.py` | Step assembly, `run_engine()` orchestrator, persistence payloads |
-| `test_engine.py` | 17 golden-path and edge-case unit tests |
+| `import_stage13_rules.py` | Stage 13 JSON → PostgreSQL import (formulation rules, workflows, validation cases) |
+| `test_engine.py` | 22 golden-path and edge-case unit tests |
+| `cross_engine_validation.py` | Stage 13 resolver vs production `run_engine()` comparison helpers |
+| `import_stage12_research.py` | Stage 12 JSON → PostgreSQL research tables (shades, tones, line technical) |
+| `test_import_stage12_research.py` | Stage 12 import regression + engine e2e with catalog UUIDs |
 
 ## Execution order
 
@@ -84,6 +88,32 @@ repo = SqlAlchemyEngineRepository(session)
 result = run_engine(engine_input, repo, line_region_id=region_id)
 ```
 
+### Stage 13 rule import
+
+After applying `alembic_revision_op002_stage13.py` (or the matching section of
+`production_operational_schema.sql`), load the Stage 13 package into PostgreSQL:
+
+```bash
+export DATABASE_URL=postgresql+psycopg2://user:pass@host/db
+python3 -m hair_color_db.production.import_stage13_rules
+```
+
+The import is idempotent (upserts on `package_rule_id`, `workflow_id`, `case_id`).
+`build_seed_repository()` uses the same import logic for in-memory tests.
+
+### Stage 12 research import
+
+After applying `alembic_revision_research_baseline.py` (or `research_baseline_schema.sql`):
+
+```bash
+export DATABASE_URL=postgresql+psycopg2://user:pass@host/db
+python3 -m hair_color_db.production.import_stage12_research
+```
+
+Loads 1,828 shades, 659 tone mappings, and line technical rules from `stage12_package/`.
+Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code).
+`SqlAlchemyEngineRepository` reads imported research rows for line technical rules and shades.
+
 ## Assumptions
 
 - `formula` stores `line_id` only; brand derived at read time.
@@ -103,4 +133,20 @@ result = run_engine(engine_input, repo, line_region_id=region_id)
 ```bash
 pip install pydantic sqlalchemy
 python3 -m unittest hair_color_db.production.test_engine -v
+python3 -m unittest hair_color_db.production.test_import_stage13_rules -v
+python3 -m unittest hair_color_db.production.test_import_stage12_research -v
+python3 -m unittest hair_color_db.production.test_cross_engine_validation -v
+python3 hair_color_db/stage13_formulation_rules/test_stage13_validation.py
 ```
+
+### Cross-engine validation (Stage C)
+
+`test_cross_engine_validation.py` runs each case in `F_validation_cases.json` through:
+
+1. Stage 13 `resolve_formulation_rules()`
+2. Production `run_engine()` with equivalent `EngineInput` and `context_overrides`
+
+**Documented divergence:** six cases (`VC006`, `VC007`, `VC009`, `VC010`, `VC019`, `VC023`) produce
+`caution` in production because `derive_recommendation_status()` elevates rule warnings, while
+Stage 13 leaves status `ok` when a rule only emits a `warning` action. Formulation-layer
+`matched_rules`, `developer_volume`, and `block_reason` still align.

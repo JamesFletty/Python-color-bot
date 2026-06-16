@@ -17,6 +17,7 @@ from .loaders import (
     load_universal_rules,
     stage12_canonical_keys_with_shades,
 )
+from .pigment_fill import compute_fill_guidance
 
 
 @dataclass
@@ -38,6 +39,8 @@ class ResolverContext:
     selected_sub_ranges: list[str] | None = None
     workflow: str | None = None
     lift_levels: float = 0
+    deposit_levels: float = 0
+    level_delta: float = 0
 
     def as_dict(self) -> dict[str, Any]:
         """Flat dict for field lookups."""
@@ -57,6 +60,8 @@ class ResolverContext:
             "selected_sub_ranges": self.selected_sub_ranges or [],
             "workflow": self.workflow,
             "lift_levels": self.lift_levels,
+            "deposit_levels": self.deposit_levels,
+            "level_delta": self.level_delta,
         }
 
 
@@ -77,7 +82,10 @@ class ResolverResult:
     manual_review: bool = False
     block_reason: str | None = None
     formula_zones: list[str] | None = None
+    fill_pigment_guidance: dict[str, Any] | None = None
+    deposit_levels: float = 0
     _developer_locked: bool = field(default=False, repr=False)
+    _require_fill_pigment: bool = field(default=False, repr=False)
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -94,6 +102,8 @@ class ResolverResult:
             "manual_review": self.manual_review,
             "block_reason": self.block_reason,
             "formula_zones": self.formula_zones,
+            "deposit_levels": self.deposit_levels,
+            "fill_pigment_guidance": self.fill_pigment_guidance,
         }
 
 
@@ -104,8 +114,12 @@ def build_context_from_intake(intake: dict[str, Any], canonical_key: str | None 
     desired = intake.get("desired_level")
     base = existing if existing is not None else natural
     lift = 0.0
+    deposit = 0.0
+    level_delta = 0.0
     if base is not None and desired is not None:
-        lift = max(0.0, float(desired) - float(base))
+        level_delta = float(desired) - float(base)
+        lift = max(0.0, level_delta)
+        deposit = max(0.0, -level_delta)
 
     return ResolverContext(
         canonical_key=canonical_key or intake.get("canonical_key"),
@@ -123,6 +137,8 @@ def build_context_from_intake(intake: dict[str, Any], canonical_key: str | None 
         selected_sub_ranges=intake.get("selected_sub_ranges"),
         workflow=intake.get("workflow"),
         lift_levels=lift,
+        deposit_levels=deposit,
+        level_delta=level_delta,
     )
 
 
@@ -162,6 +178,9 @@ def _apply_action(result: ResolverResult, action: dict[str, Any], rule_id: str) 
     result.actions.append({"rule_id": rule_id, **action})
     apply_core_rule_action(action, result)
 
+    if action.get("require_fill_pigment"):
+        result._require_fill_pigment = True
+
 
 def resolve_formulation_rules(
     intake: dict[str, Any],
@@ -177,6 +196,7 @@ def resolve_formulation_rules(
     """
     context = build_context_from_intake(intake, canonical_key=canonical_key)
     result = ResolverResult(canonical_key=context.canonical_key)
+    result.deposit_levels = context.deposit_levels
     result.dormant_line = _is_dormant_canonical_key(context.canonical_key)
 
     if context.workflow:
@@ -203,6 +223,15 @@ def resolve_formulation_rules(
         _apply_action(result, rule.get("rule_action", {}), rule_id)
         if is_blocked_status(result.recommendation_status):
             break
+
+    if result._require_fill_pigment or context.deposit_levels >= 2:
+        base = context.existing_level if context.existing_level is not None else context.natural_level
+        desired = context.desired_level
+        if base is not None and desired is not None and int(base) > int(desired):
+            result.fill_pigment_guidance = compute_fill_guidance(
+                starting_level=int(base),
+                target_level=int(desired),
+            )
 
     if result.dormant_line and not include_dormant:
         result.warnings.append(

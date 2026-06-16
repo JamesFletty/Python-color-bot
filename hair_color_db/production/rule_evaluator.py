@@ -11,6 +11,7 @@ from hair_color_db.formulation_rules.evaluator import (
     is_blocked_status,
     resolve_context_field,
 )
+from hair_color_db.stage13_formulation_rules.pigment_fill import compute_fill_guidance
 
 from .engine_models import (
     AccumulatedActions,
@@ -115,6 +116,9 @@ def apply_rule_action(
     if risk_inc := action.get("increase_risk_score"):
         accumulated.apply_risk_modifier({str(k): float(v) for k, v in risk_inc.items()})
 
+    if action.get("require_fill_pigment"):
+        accumulated.require_fill_pigment = True
+
     if add_step := action.get("add_step"):
         zone_raw = add_step.get("zone", "all")
         zone = FormulaZone(zone_raw) if isinstance(zone_raw, str) else zone_raw
@@ -137,12 +141,23 @@ def evaluate_and_apply_rules(
     """Match rules, apply in precedence order, return audit trail + state."""
     matched_pairs = match_formulation_rules(rules, context)
     accumulated = AccumulatedActions()
+    accumulated.deposit_levels = int(context.deposit_levels)
     matched_rules: list[MatchedRule] = []
     for rule, meta in matched_pairs:
         apply_rule_action(rule.rule_action, accumulated)
         matched_rules.append(meta)
         if is_blocked_status(accumulated.recommendation_status):
             break
+
+    if accumulated.require_fill_pigment or context.deposit_levels >= 2:
+        base = context.existing_level if context.existing_level is not None else context.natural_level
+        desired = context.desired_level
+        if desired is not None and base is not None and base > desired:
+            accumulated.fill_pigment_guidance = compute_fill_guidance(
+                starting_level=int(base),
+                target_level=int(desired),
+            )
+
     return matched_rules, accumulated
 
 

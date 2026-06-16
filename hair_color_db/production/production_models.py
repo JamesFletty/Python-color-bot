@@ -44,11 +44,14 @@ class Brand(Base):
     __tablename__ = "brand"
 
     brand_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True)
-    brand_name: Mapped[str] = mapped_column(String, nullable=False)
+    brand_name: Mapped[str] = mapped_column(String, nullable=False, unique=True)
+    parent_company: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    official_brand_url: Mapped[Optional[str]] = mapped_column(String, nullable=True)
 
     formulation_rule_brands: Mapped[list["FormulationRuleBrand"]] = relationship(
         back_populates="brand"
     )
+    product_lines: Mapped[list["ProductLine"]] = relationship(back_populates="brand")
 
 
 class ProductLine(Base):
@@ -58,11 +61,22 @@ class ProductLine(Base):
     brand_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), ForeignKey("brand.brand_id"), nullable=False
     )
+    product_line_name: Mapped[str] = mapped_column(String, nullable=False)
+    line_category: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    code_grammar: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    apparent_status: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    official_line_url: Mapped[Optional[str]] = mapped_column(String, nullable=True)
 
+    brand: Mapped["Brand"] = relationship(back_populates="product_lines")
     formulation_rule_lines: Mapped[list["FormulationRuleLine"]] = relationship(
         back_populates="product_line"
     )
     formulas: Mapped[list["Formula"]] = relationship(back_populates="product_line")
+    regions: Mapped[list["ProductLineRegion"]] = relationship(back_populates="product_line")
+
+    __table_args__ = (
+        UniqueConstraint("brand_id", "product_line_name", name="uq_product_line_brand_name"),
+    )
 
 
 class ProductLineRegion(Base):
@@ -74,10 +88,16 @@ class ProductLineRegion(Base):
     line_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), ForeignKey("product_line.line_id"), nullable=False
     )
+    region_or_market: Mapped[str] = mapped_column(String, nullable=False)
+    canonical_key: Mapped[str] = mapped_column(String, nullable=False, unique=True)
+    discontinued_status: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    notes: Mapped[Optional[dict[str, Any]]] = mapped_column(JSONB, nullable=True)
 
+    product_line: Mapped["ProductLine"] = relationship(back_populates="regions")
     intermixing_rules: Mapped[list["ShadeIntermixingRule"]] = relationship(
         back_populates="line_region"
     )
+    sub_ranges: Mapped[list["SubRange"]] = relationship(back_populates="line_region")
 
 
 class SubRange(Base):
@@ -88,12 +108,89 @@ class SubRange(Base):
         UUID(as_uuid=True), ForeignKey("product_line_region.line_region_id"), nullable=False
     )
     sub_range_name: Mapped[str] = mapped_column(String, nullable=False)
+    notes: Mapped[Optional[dict[str, Any]]] = mapped_column(JSONB, nullable=True)
+
+    line_region: Mapped["ProductLineRegion"] = relationship(back_populates="sub_ranges")
+
+    __table_args__ = (
+        UniqueConstraint("line_region_id", "sub_range_name", name="uq_sub_range_line_name"),
+    )
+
+
+class IngestionRun(Base):
+    __tablename__ = "ingestion_run"
+
+    ingestion_run_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True)
+    batch_label: Mapped[str] = mapped_column(String, nullable=False, unique=True)
+    started_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), nullable=False
+    )
+    finished_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
+    tooling_version: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+
+
+class SourceDocument(Base):
+    __tablename__ = "source_document"
+
+    source_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True)
+    source_title: Mapped[str] = mapped_column(String, nullable=False)
+    source_type: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    source_url: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    publisher_domain: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    publication_or_revision_date: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    file_type: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    access_status: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    source_priority_tier: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    region_or_market: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    retrieved_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
+    content_hash: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+
+
+class ShadeRaw(Base):
+    __tablename__ = "shade_raw"
+
+    shade_raw_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True)
+    line_region_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("product_line_region.line_region_id"), nullable=False
+    )
+    sub_range_id: Mapped[Optional[uuid.UUID]] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("sub_range.sub_range_id"), nullable=True
+    )
+    shade_code_raw: Mapped[str] = mapped_column(String, nullable=False)
+    shade_name_raw: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    level_raw: Mapped[Optional[Decimal]] = mapped_column(Numeric, nullable=True)
+    tone_codes_raw: Mapped[Optional[list[Any]]] = mapped_column(JSONB, nullable=True)
+    tone_descriptions_raw: Mapped[Optional[list[Any]]] = mapped_column(JSONB, nullable=True)
+    gray_coverage_claim_raw: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    lift_capability_raw: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    mixing_ratio_raw: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    developer_recommendations_raw: Mapped[Optional[list[Any]]] = mapped_column(JSONB, nullable=True)
+    processing_time_raw: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    special_usage_notes_raw: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    official_swatch_image_exists: Mapped[Optional[bool]] = mapped_column(Boolean, nullable=True)
+    source_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("source_document.source_id"), nullable=False
+    )
+    source_confidence: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    evidence_status: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    assumptions: Mapped[Optional[list[Any]]] = mapped_column(JSONB, nullable=True)
+    data_gaps: Mapped[Optional[list[Any]]] = mapped_column(JSONB, nullable=True)
+    extracted_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), nullable=False
+    )
+    ingestion_run_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("ingestion_run.ingestion_run_id"), nullable=False
+    )
 
 
 class Shade(Base):
     __tablename__ = "shade"
 
     shade_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True)
+    shade_raw_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("shade_raw.shade_raw_id"), nullable=False
+    )
     line_region_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), ForeignKey("product_line_region.line_region_id"), nullable=False
     )
@@ -101,8 +198,21 @@ class Shade(Base):
         UUID(as_uuid=True), ForeignKey("sub_range.sub_range_id"), nullable=True
     )
     shade_code: Mapped[str] = mapped_column(String, nullable=False)
+    shade_name: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    level: Mapped[Optional[Decimal]] = mapped_column(Numeric, nullable=True)
+    color_type: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    gray_coverage_claim: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    lift_levels: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    mixing_ratio: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    mixing_ratio_inherited: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+    processing_time_minutes: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    processing_time_inherited: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
 
     __table_args__ = (
+        UniqueConstraint(
+            "line_region_id", "sub_range_id", "shade_code", name="uq_shade_region_subrange_code"
+        ),
         Index("idx_shade_lookup", "line_region_id", "sub_range_id", "shade_code"),
     )
 
@@ -119,13 +229,58 @@ class NormalizedTone(Base):
     normalized_tone_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), primary_key=True
     )
-    tone_name: Mapped[str] = mapped_column(String, nullable=False)
+    tone_name: Mapped[str] = mapped_column(String, nullable=False, unique=True)
 
 
-class SourceDocument(Base):
-    __tablename__ = "source_document"
+class ToneCodeReference(Base):
+    __tablename__ = "tone_code_reference"
 
-    source_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True)
+    tone_code_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True)
+    line_region_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("product_line_region.line_region_id"), nullable=False
+    )
+    manufacturer_tone_code: Mapped[str] = mapped_column(String, nullable=False)
+    manufacturer_term: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    manufacturer_definition: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    confidence: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    notes_on_ambiguity: Mapped[Optional[list[Any]]] = mapped_column(JSONB, nullable=True)
+    source_id: Mapped[Optional[uuid.UUID]] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("source_document.source_id"), nullable=True
+    )
+
+    __table_args__ = (
+        UniqueConstraint(
+            "line_region_id",
+            "manufacturer_tone_code",
+            name="uq_tone_code_region_code",
+        ),
+    )
+
+
+class ToneNormalization(Base):
+    __tablename__ = "tone_normalization"
+
+    tone_code_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("tone_code_reference.tone_code_id"), primary_key=True
+    )
+    normalized_tone_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("normalized_tone.normalized_tone_id"), primary_key=True
+    )
+    mapping_rationale: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    mapping_confidence: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    ambiguity_flag: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+
+
+class ShadeToneCode(Base):
+    __tablename__ = "shade_tone_code"
+
+    shade_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("shade.shade_id"), primary_key=True
+    )
+    tone_code_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("tone_code_reference.tone_code_id"), primary_key=True
+    )
+    position: Mapped[int] = mapped_column(Integer, nullable=False)
 
 
 class LineTechnicalRule(Base):
@@ -145,6 +300,8 @@ class LineTechnicalRule(Base):
     source_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), ForeignKey("source_document.source_id"), nullable=False
     )
+    source_confidence: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    evidence_status: Mapped[Optional[str]] = mapped_column(String, nullable=True)
 
     developer_volume: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     max_lift_levels: Mapped[Optional[Decimal]] = mapped_column(Numeric(2, 1), nullable=True)
@@ -234,6 +391,11 @@ class FormulationRuleCategory(str, enum.Enum):
     CORRECTION = "correction"
     DEVELOPER = "developer"
     PROCESSING = "processing"
+    SAFETY = "safety"
+    COLOR_SCIENCE = "color_science"
+    PRODUCT_TYPE = "product_type"
+    APPLICATION = "application"
+    INTERMIXING = "intermixing"
 
 
 class ConsultationStatus(str, enum.Enum):
@@ -464,6 +626,10 @@ class FormulationRule(Base):
         nullable=False,
     )
     test_coverage: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+    package_rule_id: Mapped[Optional[str]] = mapped_column(String, nullable=True, unique=True)
+    scope_level: Mapped[str] = mapped_column(String, nullable=False, default="universal")
+    canonical_key: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    is_dormant: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
 
     brand_links: Mapped[list["FormulationRuleBrand"]] = relationship(
         back_populates="formulation_rule", cascade="all, delete-orphan"
@@ -528,6 +694,46 @@ class FormulationRuleLine(Base):
     product_line: Mapped["ProductLine"] = relationship(
         back_populates="formulation_rule_lines"
     )
+
+
+class ServiceWorkflow(Base):
+    __tablename__ = "service_workflow"
+
+    workflow_id: Mapped[str] = mapped_column(String, primary_key=True)
+    name: Mapped[str] = mapped_column(String, nullable=False)
+    service_intent: Mapped[str] = mapped_column(String, nullable=False)
+    steps: Mapped[list[Any]] = mapped_column(JSONB, nullable=False)
+    default_zones: Mapped[list[Any]] = mapped_column(JSONB, nullable=False)
+    applicable_line_categories: Mapped[list[Any]] = mapped_column(JSONB, nullable=False)
+
+
+class ValidationCase(Base):
+    __tablename__ = "validation_case"
+
+    case_id: Mapped[str] = mapped_column(String, primary_key=True)
+    description: Mapped[str] = mapped_column(Text, nullable=False)
+    canonical_key: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    input: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
+    expected: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
+    last_run_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
+    last_run_status: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+
+
+class FormulationRuleEvidence(Base):
+    __tablename__ = "formulation_rule_evidence"
+
+    rule_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("formulation_rule.rule_id", ondelete="CASCADE"),
+        primary_key=True,
+    )
+    source_id: Mapped[Optional[uuid.UUID]] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("source_document.source_id", ondelete="SET NULL"),
+        nullable=True,
+    )
+    evidence_status: Mapped[str] = mapped_column(String, nullable=False)
+    notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
 
 
 # ---------------------------------------------------------------------------

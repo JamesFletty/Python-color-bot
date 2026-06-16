@@ -274,7 +274,7 @@
     {
       "rule_id": "U012",
       "rule_name": "universal_default_developer",
-      "rule_priority": 200,
+      "rule_priority": 1,
       "rule_category": "developer",
       "evidence_status": "inferred",
       "rule_condition": {
@@ -288,6 +288,72 @@
       },
       "rule_action": {
         "set_developer_volume": 10
+      }
+    },
+    {
+      "rule_id": "U013",
+      "rule_name": "gray_coverage_default_20vol",
+      "rule_priority": 48,
+      "rule_category": "gray_coverage",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "gray_percentage",
+            "op": ">=",
+            "value": 50
+          },
+          {
+            "field": "deposit_levels",
+            "op": "=",
+            "value": 0
+          }
+        ]
+      },
+      "rule_action": {
+        "set_developer_volume": 20,
+        "warning": "Gray coverage 50%+ — default 20 vol unless a line-specific override applies."
+      }
+    },
+    {
+      "rule_id": "U014",
+      "rule_name": "darken_deposit_only_developer",
+      "rule_priority": 52,
+      "rule_category": "deposit",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "deposit_levels",
+            "op": ">=",
+            "value": 1
+          }
+        ]
+      },
+      "rule_action": {
+        "set_developer_volume": 10,
+        "warning": "Darkening service — deposit-only developer (10 vol permanent; demi lines may use 5–6 vol)."
+      }
+    },
+    {
+      "rule_id": "U015",
+      "rule_name": "multi_level_darken_fill_pigment",
+      "rule_priority": 36,
+      "rule_category": "deposit",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "deposit_levels",
+            "op": ">=",
+            "value": 2
+          }
+        ]
+      },
+      "rule_action": {
+        "require_fill_pigment": true,
+        "trigger_workflow": "repigmentation_fill",
+        "warning": "Multi-level darkening requires warm fill pigments (yellow → orange → red-orange) before final base + tone."
       }
     }
   ]
