@@ -492,8 +492,7 @@ def main(argv: list[str] | None = None) -> int:
     import os
     import sys
 
-    from sqlalchemy import create_engine
-    from sqlalchemy.orm import sessionmaker
+    from .db import create_session_factory, require_database_url
 
     parser = argparse.ArgumentParser(description="Import Stage 12 research package into PostgreSQL")
     parser.add_argument(
@@ -503,12 +502,11 @@ def main(argv: list[str] | None = None) -> int:
     )
     args = parser.parse_args(argv)
 
-    if not args.database_url:
+    if not require_database_url(args.database_url):
         print("DATABASE_URL or --database-url is required", file=sys.stderr)
         return 1
 
-    engine = create_engine(args.database_url)
-    SessionLocal = sessionmaker(bind=engine)
+    SessionLocal = create_session_factory(database_url=args.database_url)
     with SessionLocal() as session:
         summary = import_stage12_research(session)
         report = validate_import_counts(session)
