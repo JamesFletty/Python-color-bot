@@ -355,6 +355,73 @@
         "trigger_workflow": "repigmentation_fill",
         "warning": "Multi-level darkening requires warm fill pigments (yellow → orange → red-orange) before final base + tone."
       }
+    },
+    {
+      "rule_id": "U016",
+      "rule_name": "lift_one_to_two_developer_20vol",
+      "rule_priority": 51,
+      "rule_category": "developer",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "lift_levels",
+            "op": ">=",
+            "value": 1
+          },
+          {
+            "field": "lift_levels",
+            "op": "<=",
+            "value": 2
+          }
+        ]
+      },
+      "rule_action": {
+        "set_developer_volume": 20
+      }
+    },
+    {
+      "rule_id": "U017",
+      "rule_name": "lift_three_developer_30vol",
+      "rule_priority": 51,
+      "rule_category": "developer",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "lift_levels",
+            "op": ">",
+            "value": 2
+          },
+          {
+            "field": "lift_levels",
+            "op": "<=",
+            "value": 3
+          }
+        ]
+      },
+      "rule_action": {
+        "set_developer_volume": 30
+      }
+    },
+    {
+      "rule_id": "U018",
+      "rule_name": "lift_four_developer_40vol",
+      "rule_priority": 51,
+      "rule_category": "developer",
+      "evidence_status": "educator_reported",
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "lift_levels",
+            "op": ">",
+            "value": 3
+          }
+        ]
+      },
+      "rule_action": {
+        "set_developer_volume": 40
+      }
     }
   ]
 }

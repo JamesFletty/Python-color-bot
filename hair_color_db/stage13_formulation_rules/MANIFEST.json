@@ -4,7 +4,7 @@
   "generated": "2026-06-15",
   "completion_status": "complete",
   "counts": {
-    "universal_rules": 15,
+    "universal_rules": 18,
     "service_workflows": 9,
     "brand_line_overrides": 14,
     "validation_cases": 20,

@@ -64,6 +64,45 @@ class Stage13ValidationCaseTests(unittest.TestCase):
                 self._assert_case(case)
 
 
+class Stage13LiftDeveloperEscalationTests(unittest.TestCase):
+    """Universal lift -> developer escalation applies even without a line rule."""
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        clear_caches()
+
+    def _developer_for_lift(self, base: int, desired: int, canonical_key=None) -> int | None:
+        intake = {
+            "service_intent": "lift_and_tone",
+            "natural_level": base,
+            "existing_level": base,
+            "desired_level": desired,
+            "gray_percentage": 0,
+            "porosity": 5,
+        }
+        return resolve_formulation_rules(intake, canonical_key=canonical_key).developer_volume
+
+    def test_one_level_lift_uses_20vol(self) -> None:
+        self.assertEqual(self._developer_for_lift(5, 6), 20)
+
+    def test_two_level_lift_uses_20vol(self) -> None:
+        self.assertEqual(self._developer_for_lift(5, 7), 20)
+
+    def test_three_level_lift_uses_30vol(self) -> None:
+        # Brand without a line-specific lift rule still escalates past deposit 10 vol.
+        self.assertEqual(
+            self._developer_for_lift(3, 6, canonical_key="L'Oréal Professionnel::Majirel::US"),
+            30,
+        )
+
+    def test_four_level_lift_uses_40vol(self) -> None:
+        self.assertEqual(self._developer_for_lift(3, 7), 40)
+
+    def test_no_lift_keeps_deposit_default(self) -> None:
+        # Same level (no lift) must not escalate beyond the universal 10 vol default.
+        self.assertEqual(self._developer_for_lift(6, 6), 10)
+
+
 class Stage13ActiveLineTests(unittest.TestCase):
     """Line overrides activate once Stage 12 shade inventory exists."""
 
