@@ -52,6 +52,7 @@ def build_engine_input_from_args(args: Any, catalog: Any) -> EngineInput:
             SelectedShade(
                 shade_id=catalog.shade_id,
                 shade_code=catalog.shade_code,
+                sub_range_name=catalog.sub_range_name,
                 zone=FormulaZone.ALL,
             )
         ],
@@ -139,7 +140,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--sub-range",
         default=None,
-        help="Sub-range name for catalog lookup (default: line default sub-range)",
+        help="Override sub-range / collection (default: inferred from shade record)",
     )
     parser.add_argument("--natural-level", type=int, default=5)
     parser.add_argument("--existing-level", type=int, default=None)

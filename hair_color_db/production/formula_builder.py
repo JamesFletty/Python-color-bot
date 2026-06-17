@@ -19,6 +19,7 @@ from .engine_models import (
 from .production_models import FormulaStatus, FormulaZone
 from .repositories import EngineRepository
 from .rule_evaluator import evaluate_and_apply_rules
+from src.sub_range_intake import sub_range_labels_from_selected_shades
 from .safety_checks import (
     build_risk_assessments,
     check_intermixing,
@@ -210,8 +211,13 @@ def run_engine(
     brand_id = engine_input.brand_id or repository.get_brand_id_for_line(engine_input.line_id)
     region_id = line_region_id or engine_input.line_region_id
     context = RuleEvaluationContext.from_input(engine_input, brand_id)
-    if context_overrides:
-        context = context.model_copy(update=context_overrides)
+    overrides = dict(context_overrides or {})
+    if "selected_sub_ranges" not in overrides:
+        labels = sub_range_labels_from_selected_shades(engine_input.selected_shades)
+        if labels:
+            overrides["selected_sub_ranges"] = labels
+    if overrides:
+        context = context.model_copy(update=overrides)
 
     formulation_rules = repository.load_active_formulation_rules(brand_id, engine_input.line_id)
     matched_rules, accumulated = evaluate_and_apply_rules(formulation_rules, context)

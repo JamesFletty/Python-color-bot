@@ -453,8 +453,10 @@ def build_formula(
 
     if intake is not None:
         from hair_color_db.stage13_formulation_rules.resolver import resolve_formulation_rules
+        from src.sub_range_intake import merge_intake_sub_ranges
 
-        stage13_intake = dict(intake)
+        stage13_intake = merge_intake_sub_ranges(intake, shade_sub_range=shade.get("sub_range"))
+        assert stage13_intake is not None
         stage13_intake.setdefault("gray_percentage", gray_percent or 0)
         if natural_level is not None:
             stage13_intake.setdefault("natural_level", int(natural_level))

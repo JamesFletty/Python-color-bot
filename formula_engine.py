@@ -17,8 +17,9 @@ the product line hint (e.g. ``Matrix::SoColor::5N`` targets SoColor Pre-Bonded).
 Multi-level darkening responses include ``fill_pigment_guidance`` with inventory-backed
 ``suggested_shades`` per warm fill level plus ``target_natural_shades`` at the target depth.
 
-Use ``--sub-range`` to activate line collection rules (e.g. ``Extra Coverage``, ``DreamAge``,
-``ABSOLUTES``, ``HD``) for gray developer and intermixing checks.
+Use ``--sub-range`` to override collection rules when the resolved shade record does not
+carry the intended sub-range (e.g. ``Extra Coverage``, ``DreamAge``, ``ABSOLUTES``, ``HD``).
+When omitted, ``sub_range`` from the matched shade record is applied automatically.
 """
 
 from __future__ import annotations
@@ -98,6 +99,7 @@ def main(argv: list[str] | None = None) -> int:
         metavar="COLLECTION",
         help=(
             "Product sub-range / collection for Stage 13 line rules (repeatable or comma-separated). "
+            "When omitted, inferred from the matched shade record. "
             "Examples: 'Extra Coverage', DreamAge, ABSOLUTES, HD"
         ),
     )

@@ -198,6 +198,9 @@ python3 -m hair_color_db.production.run_production_engine \
   --gray-percentage 30
 ```
 
+`sub_range` / collection on the resolved shade record is applied automatically as
+`selected_sub_ranges` for Stage 13 rules unless `--sub-range` overrides it.
+
 Stage 12 import now populates `shade_tone_code` links so normalized tones resolve via
 `shade → tone_code_reference → tone_normalization → normalized_tone`.
 
