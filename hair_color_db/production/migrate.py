@@ -13,6 +13,9 @@ from .db import create_db_engine, resolve_database_url
 
 _PRODUCTION_DIR = Path(__file__).resolve().parent
 
+# A PostgreSQL dollar-quote tag: ``$$`` or ``$identifier$``.
+_DOLLAR_QUOTE_TAG = re.compile(r"\$(?:[A-Za-z_][A-Za-z0-9_]*)?\$")
+
 MIGRATIONS: tuple[tuple[str, Path], ...] = (
     ("research_baseline", _PRODUCTION_DIR / "research_baseline_schema.sql"),
     ("op001_production_layer", _PRODUCTION_DIR / "production_operational_schema.sql"),
@@ -20,9 +23,85 @@ MIGRATIONS: tuple[tuple[str, Path], ...] = (
 
 
 def _statements(sql: str) -> list[str]:
-    cleaned = re.sub(r"--[^\n]*", "", sql)
-    parts = [part.strip() for part in cleaned.split(";")]
-    return [part for part in parts if part]
+    """Split a SQL script into individual statements.
+
+    Splits on ``;`` only at the top level. Single-quoted string literals and
+    PostgreSQL dollar-quoted bodies (``$$ ... ; ... $$`` / ``$tag$ ... $tag$``)
+    are treated as opaque so semicolons inside them do not split a statement.
+    Line (``-- ...``) and block (``/* ... */``) comments are stripped.
+    """
+    statements: list[str] = []
+    buf: list[str] = []
+    i = 0
+    n = len(sql)
+    in_single = False
+    dollar_tag: str | None = None
+
+    def flush() -> None:
+        statement = "".join(buf).strip()
+        if statement:
+            statements.append(statement)
+        buf.clear()
+
+    while i < n:
+        ch = sql[i]
+
+        if dollar_tag is not None:
+            if sql.startswith(dollar_tag, i):
+                buf.append(dollar_tag)
+                i += len(dollar_tag)
+                dollar_tag = None
+            else:
+                buf.append(ch)
+                i += 1
+            continue
+
+        if in_single:
+            buf.append(ch)
+            i += 1
+            if ch == "'":
+                if i < n and sql[i] == "'":  # escaped '' inside a string literal
+                    buf.append("'")
+                    i += 1
+                else:
+                    in_single = False
+            continue
+
+        if sql.startswith("--", i):
+            newline = sql.find("\n", i)
+            i = n if newline == -1 else newline
+            continue
+
+        if sql.startswith("/*", i):
+            end = sql.find("*/", i + 2)
+            i = n if end == -1 else end + 2
+            buf.append(" ")
+            continue
+
+        if ch == "'":
+            in_single = True
+            buf.append(ch)
+            i += 1
+            continue
+
+        if ch == "$":
+            match = _DOLLAR_QUOTE_TAG.match(sql, i)
+            if match:
+                dollar_tag = match.group(0)
+                buf.append(dollar_tag)
+                i += len(dollar_tag)
+                continue
+
+        if ch == ";":
+            flush()
+            i += 1
+            continue
+
+        buf.append(ch)
+        i += 1
+
+    flush()
+    return statements
 
 
 def _ensure_migration_table(connection: Connection) -> None:
