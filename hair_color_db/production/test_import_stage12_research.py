@@ -90,7 +90,9 @@ class Stage12ImportIntegrationTests(unittest.TestCase):
         cls.Session = sessionmaker(bind=cls.engine)
         with cls.Session() as session:
             cls.summary = import_stage12_research(session)
-            cls.report = validate_import_counts(session)
+            cls.report = validate_import_counts(
+                session, tone_mappings_imported=cls.summary.tone_mappings
+            )
             session.commit()
 
     def test_import_produces_expected_shade_count(self) -> None:
@@ -108,8 +110,8 @@ class Stage12ImportIntegrationTests(unittest.TestCase):
             session.commit()
         self.assertEqual(report["shade_count"], EXPECTED_SHADE_COUNT)
 
-    def test_matrix_socolor_5nn_deterministic_shade_id(self) -> None:
-        shade_id = _shade_id("Matrix::SoColor::US", DEFAULT_SUB_RANGE, "5NN")
+    def test_matrix_socolor_5n_deterministic_shade_id(self) -> None:
+        shade_id = _shade_id("Matrix::SoColor::US", DEFAULT_SUB_RANGE, "5N")
         with self.Session() as session:
             from sqlalchemy import select
 
