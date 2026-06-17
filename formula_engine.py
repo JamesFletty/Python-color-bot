@@ -26,30 +26,21 @@ from __future__ import annotations
 
 import argparse
 import json
-import sqlite3
 import sys
 from pathlib import Path
 
-from src.formula_builder import build_formula
-from src.logging_utils import configure_logging, log_transformation
-from src.paths import DEFAULT_DB_PATH
-
-
-def _parse_sub_ranges(raw_values: list[str] | None) -> list[str]:
-    """Expand comma-separated ``--sub-range`` values into a flat list."""
-    if not raw_values:
-        return []
-    parsed: list[str] = []
-    for value in raw_values:
-        for part in value.split(","):
-            cleaned = part.strip()
-            if cleaned:
-                parsed.append(cleaned)
-    return parsed
+from src.formula_engine_service import (
+    FormulaEngineRequest,
+    TERMINAL_STATUSES,
+    parse_sub_ranges,
+    run_formula_engine,
+)
 
 
 def main(argv: list[str] | None = None) -> int:
     """CLI entry point."""
+    from src.paths import DEFAULT_DB_PATH
+
     parser = argparse.ArgumentParser(description="Build a hair color formula from shade + conditions.")
     parser.add_argument("--db", type=Path, default=DEFAULT_DB_PATH, help="SQLite database path")
     parser.add_argument(
@@ -105,55 +96,28 @@ def main(argv: list[str] | None = None) -> int:
     )
     args = parser.parse_args(argv)
 
-    if not args.db.exists():
-        print(f"Database not found: {args.db}. Run init_db.py first.", file=sys.stderr)
-        return 1
-
-    logger = configure_logging()
-    log_transformation(
-        logger,
-        "formula_request",
-        {
-            "shade": args.shade,
-            "gray_percent": args.gray,
-            "current_level": args.current_level,
-            "line_hint": args.line,
-            "sub_ranges": _parse_sub_ranges(args.sub_range),
-        },
+    request = FormulaEngineRequest(
+        shade=args.shade,
+        gray=args.gray,
+        current_level=args.current_level,
+        existing_level=args.existing_level,
+        line=args.line,
+        service_intent=args.service_intent,
+        desired_level=args.desired_level,
+        patch_test_status=args.patch_test_status,
+        porosity=args.porosity,
+        sub_ranges=parse_sub_ranges(args.sub_range),
+        db_path=args.db,
     )
 
-    intake = {
-        "service_intent": args.service_intent,
-        "patch_test_status": args.patch_test_status,
-        "porosity": args.porosity,
-    }
-    sub_ranges = _parse_sub_ranges(args.sub_range)
-    if sub_ranges:
-        intake["selected_sub_ranges"] = sub_ranges
-    if args.current_level is not None:
-        intake["natural_level"] = args.current_level
-    if args.existing_level is not None:
-        intake["existing_level"] = args.existing_level
-    if args.desired_level is not None:
-        intake["desired_level"] = args.desired_level
-
-    conn = sqlite3.connect(args.db)
     try:
-        formula = build_formula(
-            conn,
-            shade_ref=args.shade,
-            gray_percent=args.gray,
-            current_level=args.current_level,
-            product_line_hint=args.line,
-            intake=intake,
-            logger=logger,
-        )
-    finally:
-        conn.close()
+        formula = run_formula_engine(request)
+    except FileNotFoundError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
 
     print(json.dumps(formula, indent=2, ensure_ascii=False))
-    terminal_statuses = {"ok", "caution"}
-    return 0 if formula.get("status") in terminal_statuses else 1
+    return 0 if formula.get("status") in TERMINAL_STATUSES else 1
 
 
 if __name__ == "__main__":
