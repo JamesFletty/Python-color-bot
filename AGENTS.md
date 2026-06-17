@@ -43,12 +43,14 @@ existing docs.
   (user/pass/db all `haircolor`). `docker` requires `sudo`.
 - Export the connection string before bootstrap/CLIs/tests:
   `export DATABASE_URL=postgresql+psycopg2://haircolor:haircolor@localhost:5432/haircolor`.
-
-- KNOWN PRE-EXISTING BUG (blocks the PostgreSQL track): `hair_color_db/production/migrate.py`
-  `_statements()` splits SQL on every `;`, which breaks the dollar-quoted `set_updated_at()`
-  function body in `production_operational_schema.sql`. As a result
-  `python3 -m hair_color_db.production.bootstrap` (and the `test_pg_*` e2e tests, which call it)
-  fail with `unterminated dollar-quoted string`. This is an application-code defect, not an
-  environment problem; the Postgres service itself is healthy. The production engine *logic* is
-  fully exercised by the in-memory test suite (`test_engine`, `test_import_*`,
-  `test_cross_engine_validation`) which does not touch Postgres.
+- Bootstrap (idempotent): `python3 -m hair_color_db.production.bootstrap` runs
+  migrate → Stage 12 research import → Stage 13 rules import. Expect `status: ok`,
+  1,828 shades, and exit code 0. The `test_pg_*` and `test_import_stage12_research`
+  integration tests self-skip unless `DATABASE_URL` is set, and each re-bootstraps in
+  `setUpClass` (so they take ~1–3 min total; the import re-runs are idempotent).
+- To re-bootstrap from a clean slate, reset the schema first:
+  `sudo docker exec workspace-postgres-1 psql -U haircolor -d haircolor -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public; GRANT ALL ON SCHEMA public TO haircolor;"`
+- Non-obvious: `stage12_report.tone_mapping_count` is the count of source tone-map
+  entries (659); the normalized `tone_normalization` table holds many more rows
+  (surfaced as `tone_normalization_link_count`), because each entry expands into one
+  row per (tone_code, normalized_tone) plus synthetic links added during shade import.
