@@ -39,6 +39,24 @@ class FormatDeveloperVolumeTests(unittest.TestCase):
     def test_falls_back_to_volume_label(self) -> None:
         self.assertEqual(format_developer_volume(20, None), "20 vol")
 
+    def test_does_not_match_decimal_substring_of_other_volume(self) -> None:
+        # "1.9%" must not satisfy the 30 vol (9%) pattern; the real 9% option wins.
+        options = [
+            "Welloxon Perfect Pastel 1.9%",
+            "Welloxon Perfect 4%",
+            "Welloxon Perfect 6%",
+            "Welloxon Perfect 9%",
+            "Welloxon Perfect 12%",
+        ]
+        self.assertEqual(format_developer_volume(30, options), "Welloxon Perfect 9%")
+
+    def test_falls_back_to_label_when_only_decimal_decoy_present(self) -> None:
+        # No genuine 9%/30 vol option -> fall back rather than mislabel "Pastel 1.9%".
+        self.assertEqual(
+            format_developer_volume(30, ["Welloxon Perfect Pastel 1.9%"]),
+            "30 vol",
+        )
+
 
 @unittest.skipUnless(DEFAULT_DB_PATH.exists(), "SQLite database not initialized")
 class BuildFormulaStage13Tests(unittest.TestCase):

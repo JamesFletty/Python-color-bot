@@ -10,11 +10,14 @@ from typing import Any
 from src.logging_utils import log_transformation
 from src.matching import fetch_line_rules, lookup_shade_by_reference
 
+# Numbers are anchored with a leading no-digit/no-decimal lookbehind and a trailing
+# no-digit/no-decimal lookahead so a developer volume never matches a substring of a
+# different number (e.g. 30 vol -> "9%" must not match the "9%" inside "Pastel 1.9%").
 _VOLUME_OPTION_PATTERNS: dict[int, tuple[str, ...]] = {
-    10: (r"10\s*vol", r"3\s*%"),
-    20: (r"20\s*vol", r"6\s*%"),
-    30: (r"30\s*vol", r"9\s*%"),
-    40: (r"40\s*vol", r"12\s*%"),
+    10: (r"(?<![\d.])10(?![\d.])\s*vol", r"(?<![\d.])3(?![\d.])\s*%"),
+    20: (r"(?<![\d.])20(?![\d.])\s*vol", r"(?<![\d.])6(?![\d.])\s*%"),
+    30: (r"(?<![\d.])30(?![\d.])\s*vol", r"(?<![\d.])9(?![\d.])\s*%"),
+    40: (r"(?<![\d.])40(?![\d.])\s*vol", r"(?<![\d.])12(?![\d.])\s*%"),
 }
 
 
