@@ -53,6 +53,7 @@ CREATE TYPE formulation_rule_category AS ENUM (
     'porosity',
     'correction',
     'developer',
+    'deposit',
     'processing',
     'safety',
     'color_science',
@@ -314,67 +315,12 @@ CREATE TABLE formulation_rule_evidence (
     PRIMARY KEY (rule_id)
 );
 
--- Legacy hand-maintained formulation rule seeds (superseded by import_stage13_rules.py).
--- Kept for environments that apply this SQL before running the import script.
-INSERT INTO formulation_rule (
-    rule_name, rule_priority, rule_condition, rule_action,
-    rule_category, evidence_status, test_coverage
-) VALUES
-(
-    'gray_coverage_high_natural_mix', 50,
-    '{"all_of": [{"field": "gray_percentage", "op": ">", "value": 50}, {"field": "natural_level", "op": "<=", "value": 6}]}'::jsonb,
-    '{"set_developer_volume": 20, "require_natural_shade_mix": true, "natural_shade_ratio": 0.5}'::jsonb,
-    'gray_coverage', 'educator_reported', TRUE
-),
-(
-    'high_porosity_reduce_developer_time', 60,
-    '{"any_of": [{"field": "porosity", "op": ">", "value": 7}]}'::jsonb,
-    '{"adjust_developer_volume_delta": -10, "adjust_processing_time_minutes": -5}'::jsonb,
-    'porosity', 'educator_reported', FALSE
-),
-(
-    'lift_over_four_prelighten_consult', 40,
-    '{"all_of": [{"field": "lift_levels", "op": ">", "value": 4}]}'::jsonb,
-    '{"trigger_workflow": "pre_lightening_consultation", "risk_modifier": {"unrealistic_expectation": 0.3}}'::jsonb,
-    'lift', 'educator_reported', FALSE
-),
-(
-    'artificial_color_lighter_correction', 45,
-    '{"all_of": [{"field": "existing_artificial_color", "op": "is_not_null", "value": true}, {"field": "desired_level", "op": ">", "value": "existing_level"}]}'::jsonb,
-    '{"trigger_workflow": "color_correction", "risk_modifier": {"overlap": 0.25}}'::jsonb,
-    'correction', 'inferred', FALSE
-),
-(
-    'fine_texture_high_lift_breakage_risk', 70,
-    '{"all_of": [{"field": "texture", "op": "=", "value": "fine"}, {"field": "lift_levels", "op": ">=", "value": 3}]}'::jsonb,
-    '{"increase_risk_score": {"breakage": 0.35}}'::jsonb,
-    'lift', 'educator_reported', FALSE
-),
-(
-    'matrix_socolor_resistant_gray_20vol', 55,
-    '{"all_of": [{"field": "gray_percentage", "op": ">=", "value": 50}]}'::jsonb,
-    '{"set_developer_volume": 30, "add_step": {"zone": "root", "processing_time_adjustment": "+10min"}}'::jsonb,
-    'gray_coverage', 'manufacturer_stated', FALSE
-)
-ON CONFLICT (rule_name) DO NOTHING;
-
-INSERT INTO formulation_rule_brand (rule_id, brand_id)
-SELECT fr.rule_id, b.brand_id
-FROM formulation_rule fr
-CROSS JOIN brand b
-WHERE fr.rule_name = 'matrix_socolor_resistant_gray_20vol'
-  AND b.brand_name = 'Matrix'
-ON CONFLICT DO NOTHING;
-
-INSERT INTO formulation_rule_line (rule_id, line_id)
-SELECT fr.rule_id, pl.line_id
-FROM formulation_rule fr
-JOIN brand b ON b.brand_name = 'Matrix'
-JOIN product_line pl ON pl.brand_id = b.brand_id
-WHERE fr.rule_name = 'matrix_socolor_resistant_gray_20vol'
-  AND pl.product_line_name ILIKE '%SoColor%'
-  AND pl.product_line_name NOT ILIKE '%Sync%'
-ON CONFLICT DO NOTHING;
+-- NOTE: Legacy hand-maintained formulation_rule seeds were removed. They are
+-- fully superseded by import_stage13_rules.py (run via bootstrap.py), which owns
+-- formulation_rule rows with deterministic rule_ids and the matching brand/line
+-- scope associations. The old VALUES seeds inserted rows with random rule_ids and
+-- no package_rule_id, which collided with the importer on the rule_name UNIQUE
+-- constraint and blocked the bootstrap.
 
 -- Seed Matrix SoColor intermixing rules (requires research sub_range rows)
 INSERT INTO shade_intermixing_rule (
