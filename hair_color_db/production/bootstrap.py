@@ -51,7 +51,9 @@ def bootstrap_database(
             "tone_mappings": result.tone_mappings,
             "line_technical_rules": result.line_technical_rules,
         }
-        stage12_report = validate_import_counts(session)
+        stage12_report = validate_import_counts(
+            session, tone_mappings_imported=result.tone_mappings
+        )
 
     stage13_summary: dict[str, object] = {}
     if not skip_stage13:

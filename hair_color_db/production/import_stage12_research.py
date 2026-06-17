@@ -107,6 +107,28 @@ def _shade_raw_id(canonical_key: str, sub_range_name: str, shade_code: str) -> u
     )
 
 
+def _coerce_minutes(value: Any) -> int | None:
+    """Coerce a research processing-time value to an INT for the typed column.
+
+    Integers pass through; range / free-text values such as ``"30-45"`` yield the
+    leading integer (the original string is preserved on ``shade_raw`` via
+    ``processing_time_raw``); values without a leading integer become NULL.
+    """
+    if value is None or isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value
+    if isinstance(value, float):
+        return int(value)
+    digits = ""
+    for char in str(value).strip():
+        if char.isdigit():
+            digits += char
+        elif digits:
+            break
+    return int(digits) if digits else None
+
+
 def _source_id(source_url: str | None, fallback: str) -> uuid.UUID:
     return deterministic_id(f"source:{source_url or fallback}")
 
@@ -373,7 +395,7 @@ def import_normalized_shade(
             lift_levels=record.get("lift_levels"),
             mixing_ratio=record.get("mixing_ratio"),
             mixing_ratio_inherited=mixing_inherited,
-            processing_time_minutes=record.get("processing_time_minutes"),
+            processing_time_minutes=_coerce_minutes(record.get("processing_time_minutes")),
             processing_time_inherited=False,
             is_active=True,
         )
@@ -509,17 +531,31 @@ def import_line_technical_records(session: Session) -> int:
     return inserted
 
 
-def validate_import_counts(session: Session) -> dict[str, Any]:
+def validate_import_counts(
+    session: Session, *, tone_mappings_imported: int | None = None
+) -> dict[str, Any]:
     shade_count = session.scalar(select(func.count()).select_from(Shade)) or 0
-    tone_count = session.scalar(select(func.count()).select_from(ToneNormalization)) or 0
+    tone_link_count = session.scalar(select(func.count()).select_from(ToneNormalization)) or 0
     rule_count = session.scalar(select(func.count()).select_from(LineTechnicalRule)) or 0
     brand_count = session.scalar(select(func.count()).select_from(Brand)) or 0
     line_count = session.scalar(select(func.count()).select_from(ProductLine)) or 0
     region_count = session.scalar(select(func.count()).select_from(ProductLineRegion)) or 0
 
+    # ``tone_mapping_count`` is the number of source tone-map entries imported
+    # (matches EXPECTED_TONE_MAPPING_COUNT). The production schema normalizes each
+    # entry into one row per (tone_code, normalized_tone) and shade ingestion adds
+    # further synthetic links, so the ToneNormalization table holds many more rows;
+    # that raw figure is surfaced separately as ``tone_normalization_link_count``.
+    tone_mapping_count = (
+        int(tone_mappings_imported)
+        if tone_mappings_imported is not None
+        else int(tone_link_count)
+    )
+
     return {
         "shade_count": int(shade_count),
-        "tone_mapping_count": int(tone_count),
+        "tone_mapping_count": tone_mapping_count,
+        "tone_normalization_link_count": int(tone_link_count),
         "line_technical_rule_count": int(rule_count),
         "brand_count": int(brand_count),
         "product_line_count": int(line_count),
@@ -527,7 +563,7 @@ def validate_import_counts(session: Session) -> dict[str, Any]:
         "expected_shade_count": EXPECTED_SHADE_COUNT,
         "expected_tone_mapping_count": EXPECTED_TONE_MAPPING_COUNT,
         "shade_count_ok": int(shade_count) == EXPECTED_SHADE_COUNT,
-        "tone_mapping_count_ok": int(tone_count) == EXPECTED_TONE_MAPPING_COUNT,
+        "tone_mapping_count_ok": tone_mapping_count == EXPECTED_TONE_MAPPING_COUNT,
     }
 
 
@@ -544,7 +580,7 @@ def import_stage12_research(session: Session) -> Stage12ImportSummary:
     line_rules = import_line_technical_records(session)
     session.flush()
 
-    counts = validate_import_counts(session)
+    counts = validate_import_counts(session, tone_mappings_imported=tone_mappings)
     return Stage12ImportSummary(
         shades=counts["shade_count"],
         tone_mappings=tone_mappings,
@@ -596,7 +632,7 @@ def main(argv: list[str] | None = None) -> int:
     SessionLocal = create_session_factory(database_url=args.database_url)
     with SessionLocal() as session:
         summary = import_stage12_research(session)
-        report = validate_import_counts(session)
+        report = validate_import_counts(session, tone_mappings_imported=summary.tone_mappings)
         session.commit()
         print(
             f"Imported {summary.shades} shades, {summary.tone_mappings} tone mappings, "
