@@ -25,8 +25,8 @@ class Stage13ImportRowTests(unittest.TestCase):
     def test_universal_rule_count(self) -> None:
         rows = build_stage13_import_rows()
         universal = [r for r in rows if r.scope_level == "universal"]
-        self.assertEqual(len(universal), 15)
-        self.assertEqual(len(load_universal_rules()), 15)
+        self.assertEqual(len(universal), 18)
+        self.assertEqual(len(load_universal_rules()), 18)
 
     def test_line_override_groups_and_rules(self) -> None:
         rows = build_stage13_import_rows()

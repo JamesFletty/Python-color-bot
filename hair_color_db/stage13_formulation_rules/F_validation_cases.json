@@ -87,7 +87,7 @@
         "natural_level": 6
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "M_SYNC_002",
           "U012"
@@ -105,7 +105,7 @@
         "existing_level": 8
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "M_SSYNC_001",
           "U003"
@@ -138,7 +138,7 @@
         "texture": "coarse"
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "M_COIL_001"
         ],
@@ -154,7 +154,7 @@
         "line_category": "direct_dye"
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "U009"
         ],
@@ -223,7 +223,7 @@
         "natural_level": 6
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "W_CT_001"
         ]
@@ -239,7 +239,7 @@
         "previous_direct_dye": false
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "U009"
         ],
@@ -257,7 +257,7 @@
         "desired_level": 6
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "U013"
         ],
@@ -274,7 +274,7 @@
         "desired_level": 7
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "U014"
         ],
@@ -291,7 +291,7 @@
         "desired_level": 5
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "U015",
           "U014"
@@ -311,7 +311,7 @@
         "desired_level": 6
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "W_KP_GRAY_001"
         ],
@@ -330,7 +330,7 @@
         "desired_level": 5
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "GW_TOP_001"
         ],
@@ -351,7 +351,7 @@
         ]
       },
       "expected": {
-        "recommendation_status": "ok",
+        "recommendation_status": "caution",
         "matched_rules": [
           "SK_IGORA_002"
         ],
