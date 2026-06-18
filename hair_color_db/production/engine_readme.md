@@ -211,7 +211,7 @@ Stage 12 import now populates `shade_tone_code` links so normalized tones resolv
 1. Stage 13 `resolve_formulation_rules()`
 2. Production `run_engine()` with equivalent `EngineInput` and `context_overrides`
 
-**Documented divergence:** six cases (`VC006`, `VC007`, `VC009`, `VC010`, `VC019`, `VC023`) produce
-`caution` in production because `derive_recommendation_status()` elevates rule warnings, while
-Stage 13 leaves status `ok` when a rule only emits a `warning` action. Formulation-layer
-`matched_rules`, `developer_volume`, and `block_reason` still align.
+Warning-only rule actions intentionally resolve to `caution` in both engines. The Stage 13
+resolver and production `derive_recommendation_status()` therefore share the same status
+semantics for validation cases while still comparing `matched_rules`, `developer_volume`,
+and `block_reason`.

@@ -154,14 +154,18 @@ def apply_core_rule_action(
     if "set_developer_volume" in action:
         volume = action.get("set_developer_volume")
         developer_locked = getattr(target, "developer_locked", getattr(target, "_developer_locked", False))
+        lock_developer = bool(action.get("lock_developer_volume"))
         if volume is None:
             target.developer_volume = None
+            lock_developer = True
+        elif not developer_locked:
+            target.developer_volume = int(volume)
+
+        if lock_developer:
             if hasattr(target, "developer_locked"):
                 target.developer_locked = True
             if hasattr(target, "_developer_locked"):
                 target._developer_locked = True
-        elif not developer_locked:
-            target.developer_volume = int(volume)
 
     if action.get("require_natural_shade_mix"):
         if hasattr(target, "require_natural_shade_mix"):
