@@ -50,6 +50,11 @@ existing docs.
   `setUpClass` (so they take ~1–3 min total; the import re-runs are idempotent).
 - To re-bootstrap from a clean slate, reset the schema first:
   `sudo docker exec workspace-postgres-1 psql -U haircolor -d haircolor -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public; GRANT ALL ON SCHEMA public TO haircolor;"`
+- Non-obvious: Matrix SoColor intermixing rules are seeded by
+  `import_stage12_research.import_intermixing_rules` (SQL in `seed_intermixing_rules.sql`),
+  NOT by the migration — they are `INSERT … SELECT` against research tables and must run
+  after the Stage 12 import. Only sub-ranges present in the data seed rows (currently
+  `DreamAge` + `Pre-Bonded 10 min`).
 - Non-obvious: `stage12_report.tone_mapping_count` is the count of source tone-map
   entries (659); the normalized `tone_normalization` table holds many more rows
   (surfaced as `tone_normalization_link_count`), because each entry expands into one
