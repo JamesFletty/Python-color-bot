@@ -50,6 +50,7 @@ def bootstrap_database(
             "shades": result.shades,
             "tone_mappings": result.tone_mappings,
             "line_technical_rules": result.line_technical_rules,
+            "intermixing_rules": result.intermixing_rules,
         }
         stage12_report = validate_import_counts(
             session, tone_mappings_imported=result.tone_mappings

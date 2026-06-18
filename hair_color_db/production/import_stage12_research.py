@@ -10,7 +10,7 @@ from decimal import Decimal
 from pathlib import Path
 from typing import Any
 
-from sqlalchemy import delete, func, select
+from sqlalchemy import delete, func, select, text
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.orm import Session
 
@@ -24,6 +24,7 @@ from src.paths import (
 )
 from src.schema import RULE_TYPE_FIELD_MAP
 
+from .migrate import _statements
 from .production_models import (
     Brand,
     IngestionRun,
@@ -32,6 +33,7 @@ from .production_models import (
     ProductLine,
     ProductLineRegion,
     Shade,
+    ShadeIntermixingRule,
     ShadeRaw,
     ShadeToneCode,
     SourceDocument,
@@ -39,6 +41,9 @@ from .production_models import (
     ToneCodeReference,
     ToneNormalization,
 )
+
+_PRODUCTION_DIR = Path(__file__).resolve().parent
+INTERMIXING_SEED_SQL = _PRODUCTION_DIR / "seed_intermixing_rules.sql"
 
 STAGE12_BATCH_LABEL = "stage12_package_v1"
 RESEARCH_NAMESPACE = uuid.UUID("6ba7b811-9dad-11d1-80b4-00c04fd430c8")
@@ -71,6 +76,7 @@ class Stage12ImportSummary:
     shades: int = 0
     tone_mappings: int = 0
     line_technical_rules: int = 0
+    intermixing_rules: int = 0
     brands: int = 0
     lines: int = 0
     regions: int = 0
@@ -567,6 +573,21 @@ def validate_import_counts(
     }
 
 
+def import_intermixing_rules(session: Session) -> int:
+    """Seed shade_intermixing_rule from packaged SQL (after research data exists).
+
+    The seeds are ``INSERT ... SELECT`` against brand/product_line/sub_range/
+    source_document, so they must run after the research import. The SQL clears
+    existing Matrix SoColor (US) rules first, making this idempotent. Returns the
+    number of intermixing rules present afterward.
+    """
+    sql = INTERMIXING_SEED_SQL.read_text(encoding="utf-8")
+    for statement in _statements(sql):
+        session.execute(text(statement))
+    session.flush()
+    return session.scalar(select(func.count()).select_from(ShadeIntermixingRule)) or 0
+
+
 def import_stage12_research(session: Session) -> Stage12ImportSummary:
     """Load Stage 12 package JSON into PostgreSQL research tables (idempotent)."""
     ingestion_run_id = ensure_ingestion_run(session)
@@ -578,6 +599,7 @@ def import_stage12_research(session: Session) -> Stage12ImportSummary:
 
     tone_mappings = import_tone_normalization_map(session)
     line_rules = import_line_technical_records(session)
+    intermixing_rules = import_intermixing_rules(session)
     session.flush()
 
     counts = validate_import_counts(session, tone_mappings_imported=tone_mappings)
@@ -585,6 +607,7 @@ def import_stage12_research(session: Session) -> Stage12ImportSummary:
         shades=counts["shade_count"],
         tone_mappings=tone_mappings,
         line_technical_rules=line_rules,
+        intermixing_rules=intermixing_rules,
         brands=counts["brand_count"],
         lines=counts["product_line_count"],
         regions=counts["product_line_region_count"],

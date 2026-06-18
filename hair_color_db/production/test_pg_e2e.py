@@ -13,8 +13,14 @@ from hair_color_db.production.catalog_lookup import resolve_catalog_reference
 from hair_color_db.production.db import create_db_engine, create_session_factory
 from hair_color_db.production.engine_models import EngineInput, SelectedShade, ServiceIntent
 from hair_color_db.production.formula_builder import run_engine
+from hair_color_db.production.import_stage12_research import DEFAULT_SUB_RANGE, _sub_range_id
 from hair_color_db.production.persist import persist_engine_output
-from hair_color_db.production.production_models import Formula, FormulaStep, HairTexture
+from hair_color_db.production.production_models import (
+    Formula,
+    FormulaStep,
+    HairTexture,
+    ShadeIntermixingRule,
+)
 from hair_color_db.production.repositories import SqlAlchemyEngineRepository
 from hair_color_db.production.run_production_engine import run_production_engine
 from src.paths import EXPECTED_SHADE_COUNT
@@ -36,6 +42,62 @@ class PostgreSqlEndToEndTests(unittest.TestCase):
         self.assertEqual(report["shade_count"], EXPECTED_SHADE_COUNT)
         self.assertTrue(report["shade_count_ok"])
         self.assertGreater(self.bootstrap.stage13.get("universal_rules", 0), 0)
+
+    def test_intermixing_rules_loaded(self) -> None:
+        # Seeds are INSERT...SELECT against research tables, so they only populate
+        # after the Stage 12 import runs (regression for the migration-time no-op).
+        with self.Session() as session:
+            count = session.scalar(select(func.count()).select_from(ShadeIntermixingRule)) or 0
+        self.assertGreater(count, 0)
+
+    def test_intermixing_blocks_incompatible_sub_ranges(self) -> None:
+        canonical = "Matrix::SoColor::US"
+        with self.Session() as session:
+            ten_min = resolve_catalog_reference(
+                session,
+                canonical_key=canonical,
+                shade_code="504N",
+                sub_range_name="Pre-Bonded 10 min",
+            )
+            standard = resolve_catalog_reference(
+                session,
+                canonical_key=canonical,
+                shade_code="5N",
+                sub_range_name=DEFAULT_SUB_RANGE,
+            )
+            result = run_engine(
+                EngineInput(
+                    consultation_id=uuid.uuid4(),
+                    line_id=ten_min.line_id,
+                    brand_id=ten_min.brand_id,
+                    line_region_id=ten_min.line_region_id,
+                    natural_level=5,
+                    existing_level=5,
+                    porosity=5,
+                    elasticity=6,
+                    gray_percentage=20,
+                    texture=HairTexture.MEDIUM,
+                    desired_result="deposit",
+                    desired_level=5,
+                    service_intent=ServiceIntent.TONE_DEPOSIT,
+                    selected_shades=[
+                        SelectedShade(
+                            shade_id=ten_min.shade_id,
+                            shade_code="504N",
+                            sub_range_id=_sub_range_id(canonical, "Pre-Bonded 10 min"),
+                        ),
+                        SelectedShade(
+                            shade_id=standard.shade_id,
+                            shade_code="5N",
+                            sub_range_id=_sub_range_id(canonical, DEFAULT_SUB_RANGE),
+                        ),
+                    ],
+                ),
+                SqlAlchemyEngineRepository(session),
+                line_region_id=ten_min.line_region_id,
+            )
+        self.assertEqual(result.recommendation_status.value, "blocked")
+        self.assertTrue(any("10 min" in reason for reason in result.blocked_by))
 
     def test_sqlalchemy_repository_runs_engine(self) -> None:
         with self.Session() as session:
