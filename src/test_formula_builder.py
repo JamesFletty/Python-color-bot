@@ -5,7 +5,12 @@ from __future__ import annotations
 import sqlite3
 import unittest
 
-from src.formula_builder import apply_stage13_formulation_overlay, build_formula, format_developer_volume
+from src.formula_builder import (
+    apply_stage13_formulation_overlay,
+    build_formula,
+    format_developer_volume,
+    select_developer,
+)
 from src.matching import lookup_shade_by_reference, parse_shade_reference
 from src.paths import DEFAULT_DB_PATH
 
@@ -56,6 +61,38 @@ class FormatDeveloperVolumeTests(unittest.TestCase):
             format_developer_volume(30, ["Welloxon Perfect Pastel 1.9%"]),
             "30 vol",
         )
+
+
+class SelectDeveloperTests(unittest.TestCase):
+    WELLA_OPTIONS = [
+        "Welloxon Perfect Pastel 1.9%",
+        "Welloxon Perfect 4%",
+        "Welloxon Perfect 6%",
+        "Welloxon Perfect 9%",
+        "Welloxon Perfect 12%",
+    ]
+
+    def _select(self, current_level, target_level, gray_percent=None):
+        return select_developer(
+            developer_options=self.WELLA_OPTIONS,
+            developer_strengths=None,
+            gray_percent=gray_percent,
+            current_level=current_level,
+            target_level=target_level,
+        )["developer"]
+
+    def test_two_level_lift_picks_9pct_not_pastel_decimal_substring(self) -> None:
+        # "1.9%" must not satisfy the 9% (30 vol) lift band.
+        self.assertEqual(self._select(current_level=5, target_level=7), "Welloxon Perfect 9%")
+
+    def test_three_plus_level_lift_picks_12pct(self) -> None:
+        self.assertEqual(self._select(current_level=4, target_level=8), "Welloxon Perfect 12%")
+
+    def test_one_level_lift_picks_6pct(self) -> None:
+        self.assertEqual(self._select(current_level=6, target_level=7), "Welloxon Perfect 6%")
+
+    def test_no_lift_picks_4pct(self) -> None:
+        self.assertEqual(self._select(current_level=7, target_level=7), "Welloxon Perfect 4%")
 
 
 @unittest.skipUnless(DEFAULT_DB_PATH.exists(), "SQLite database not initialized")

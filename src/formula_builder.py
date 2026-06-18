@@ -26,6 +26,16 @@ def _option_is_multi_volume_chart(text: str) -> bool:
     return len(re.findall(r"\d+\s*vol", text, re.IGNORECASE)) > 1
 
 
+def _percent_in_option(option: str, percent: str) -> bool:
+    """Match a whole-number percentage, not a digit substring (e.g. 9% != 1.9%)."""
+    return bool(re.search(rf"(?<![\d.]){re.escape(percent)}\s*%", option, re.IGNORECASE))
+
+
+def _vol_in_option(option: str, volume: int) -> bool:
+    """Match a whole-number developer volume, not a digit substring (e.g. 20 != 120)."""
+    return bool(re.search(rf"(?<![\d.]){volume}(?![\d.])\s*vol", option, re.IGNORECASE))
+
+
 def format_developer_volume(
     volume: int,
     developer_options: list[str] | None = None,
@@ -154,7 +164,7 @@ def select_developer(
                 if "coverage" in lower or "cover" in lower:
                     if gray_percent >= 30:
                         for option in options:
-                            if "6%" in option or "20 vol" in option.lower():
+                            if _percent_in_option(option, "6") or _vol_in_option(option, 20):
                                 selected = option
                                 rationale.append(
                                     f"Gray coverage {gray_percent}% maps to 6% developer per line rule: {rule_text}"
@@ -166,7 +176,7 @@ def select_developer(
     if selected is None and lift_delta is not None:
         if lift_delta <= 0:
             for option in options:
-                if "4%" in option or "13 vol" in option.lower():
+                if _percent_in_option(option, "4") or _vol_in_option(option, 13):
                     selected = option
                     rationale.append(
                         "No lift required; selected 4% developer per lift rule for same depth or darker."
@@ -174,7 +184,7 @@ def select_developer(
                     break
         elif lift_delta <= 1:
             for option in options:
-                if "6%" in option or "20 vol" in option.lower():
+                if _percent_in_option(option, "6") or _vol_in_option(option, 20):
                     selected = option
                     rationale.append(
                         f"Lift delta {lift_delta} level(s) maps to 6% developer per line lift rules."
@@ -182,7 +192,7 @@ def select_developer(
                     break
         elif lift_delta <= 2:
             for option in options:
-                if "9%" in option or "30 vol" in option.lower():
+                if _percent_in_option(option, "9") or _vol_in_option(option, 30):
                     selected = option
                     rationale.append(
                         f"Lift delta {lift_delta} level(s) maps to 9% developer per line lift rules."
@@ -190,7 +200,7 @@ def select_developer(
                     break
         else:
             for option in options:
-                if "12%" in option or "40 vol" in option.lower():
+                if _percent_in_option(option, "12") or _vol_in_option(option, 40):
                     selected = option
                     rationale.append(
                         f"Lift delta {lift_delta} level(s) maps to 12% developer per line lift rules."
