@@ -58,7 +58,7 @@ class Stage13ValidationCaseTests(unittest.TestCase):
 
     def test_all_packaged_validation_cases(self) -> None:
         cases = load_validation_cases()
-        self.assertEqual(len(cases), 20)
+        self.assertEqual(len(cases), 21)
         for case in cases:
             with self.subTest(case_id=case["case_id"]):
                 self._assert_case(case)

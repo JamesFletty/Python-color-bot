@@ -19,15 +19,14 @@ Matrix Coil Color, Super Sync, and Tonal Control shade inventory was added in St
 
 ## Validation cases
 
-`F_validation_cases.json` contains 20 validation cases (VC001, VC003–VC013, VC019, VC023–VC029). Run against the engine after importing rules to confirm:
+`F_validation_cases.json` contains 21 golden-path cases, including `VC023_pulpriot_faction8_full_white_gray` for the Stage 5 FACTION8 expansion. Run against the engine after importing rules to confirm:
 
 - Safety gates (patch test)
 - Gray blend vs full cover boundaries
 - Direct dye / no-developer paths
 - Intermixing blocks (HD, Sync)
 - Pre-lightened-only lines (Tonal Control)
-- Warning-only actions resolving to `caution` consistently in Stage 13 and production
-- Deposit/fill and lift developer precedence rules (U013–U018)
+- FACTION8 permanent gray-coverage Natural-series support
 
 ## Schema extension
 
@@ -35,7 +34,7 @@ Matrix Coil Color, Super Sync, and Tonal Control shade inventory was added in St
 
 ## Known gaps
 
-See `G_conflicts_and_gaps.json` (G005) for remaining inventory and workflow coverage items.
+See `G_conflicts_and_gaps.json` (G005) for historical FACTION8 resolution notes; exhaustive shade-chart extraction remains a Stage 12 data-backlog item.
 
 ## Regenerating artifacts
 

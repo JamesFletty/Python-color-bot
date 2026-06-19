@@ -357,6 +357,28 @@
         ],
         "developer_volume": 30
       }
+    },
+    {
+      "case_id": "VC023_pulpriot_faction8_full_white_gray",
+      "description": "Pulp Riot FACTION8 optimal full-white gray coverage uses Natural-series support.",
+      "canonical_key": "Pulp Riot::FACTION8::US",
+      "input": {
+        "service_intent": "gray_coverage",
+        "natural_level": 6,
+        "desired_level": 6,
+        "gray_percentage": 100,
+        "selected_sub_ranges": [
+          "Standard"
+        ]
+      },
+      "expected": {
+        "recommendation_status": "caution",
+        "matched_rules": [
+          "PR_F8_001"
+        ],
+        "developer_volume": 20,
+        "natural_shade_ratio": 0.5
+      }
     }
   ]
 }

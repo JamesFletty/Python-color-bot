@@ -10,7 +10,7 @@ built for formula generation, formula conversion, and multi-brand mapping.
 | Brands inventoried (Stage 1) | 20 seed brands, 133 product lines |
 | Sources cataloged (Stage 2) | 152 (Tier 1 official prioritized) |
 | Lines with shade-level extraction (Stages 4–9) | 26 lines / 10 brands |
-| Normalized shade records | 1,828 |
+| Normalized shade records | 1,840 |
 | Manufacturer tone reference rows | 698 |
 | Tone normalization mappings | 659 |
 | Line technical records | 28 |
