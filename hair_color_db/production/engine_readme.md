@@ -110,9 +110,22 @@ export DATABASE_URL=postgresql+psycopg2://user:pass@host/db
 python3 -m hair_color_db.production.import_stage12_research
 ```
 
-Loads 1,828 shades, 659 tone mappings, and line technical rules from `stage12_package/`.
+Loads 1,840 shades, 659 tone mappings, and line technical rules from `stage12_package/`.
 Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code).
 `SqlAlchemyEngineRepository` reads imported research rows for line technical rules and shades.
+
+
+## API request context
+
+The production FastAPI path accepts trusted upstream identity headers:
+
+- `X-Stylist-Id` — required for consultation lifecycle status updates.
+- `X-Client-Id` — optional client context persisted on consultation rows.
+- `X-Salon-Id` — optional salon context persisted on consultation rows.
+
+Formula requests may also supply `stylist_id`, `client_id`, and `salon_id` in the JSON body; explicit body values take precedence over headers. The current layer is request-context plumbing only, not a complete authentication/RBAC implementation.
+
+The baseline lifecycle endpoint is `POST /v1/production/consultations/{consultation_id}/status` with `{"status":"draft|in_progress|completed|cancelled"}`.
 
 ## Assumptions
 
@@ -123,7 +136,7 @@ Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code
 
 ## Known limitations
 
-- The FastAPI service exposes PostgreSQL output with `ENGINE_BACKEND=postgres` and versioned `/v1/production/*` routes; deeper auth/approval workflows are still pending.
+- The FastAPI service can expose PostgreSQL output with `ENGINE_BACKEND=postgres`; versioned public response contracts are still pending.
 - `run_engine()` does not persist — use `persist.persist_engine_output()` or `run_production_engine --persist`.
 - Single primary line per recommendation (no multi-line formulas).
 - JSON `rule_value` fallback parsing is intentionally narrow (developer volume, mixing ratio string).

@@ -146,8 +146,6 @@ class EngineOutput(BaseModel):
     triggered_workflows: list[str] = Field(default_factory=list)
     formula_zones: Optional[list[str]] = None
     fill_pigment_guidance: Optional[dict[str, Any]] = None
-    quantity_rationale: Optional[str] = None
-    audit_trail: list[dict[str, Any]] = Field(default_factory=list)
 
 
 class RuleEvaluationContext(BaseModel):

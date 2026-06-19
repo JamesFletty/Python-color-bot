@@ -5,13 +5,16 @@ from __future__ import annotations
 import os
 import uuid
 from pathlib import Path
+from typing import Any
 
-from fastapi import FastAPI, HTTPException
+from collections.abc import Awaitable, Callable
+
+from fastapi import FastAPI, HTTPException, Request, Response
 from fastapi.responses import JSONResponse
 from sqlalchemy import func, select, text
 from sqlalchemy.exc import SQLAlchemyError
 
-from api.schemas import FormulaRequest, HealthResponse, ProductionFormulaResponse
+from api.schemas import FormulaRequest, HealthResponse
 from hair_color_db.production.catalog_lookup import DEFAULT_SUB_RANGE, resolve_from_shade_reference
 from hair_color_db.production.db import create_session_factory, require_database_url
 from hair_color_db.production.engine_models import EngineInput, SelectedShade, ServiceIntent
@@ -112,11 +115,7 @@ def health() -> HealthResponse:
     )
 
 
-def _production_health() -> HealthResponse:
-    return _pg_health()
-
-
-def _production_formula(body: FormulaRequest) -> ProductionFormulaResponse:
+def _production_formula(body: FormulaRequest) -> dict[str, Any]:
     database_url = require_database_url()
     if not database_url:
         raise HTTPException(status_code=503, detail="DATABASE_URL is required for PostgreSQL backend")
@@ -133,7 +132,7 @@ def _production_formula(body: FormulaRequest) -> ProductionFormulaResponse:
                 body.sub_ranges[0] if body.sub_ranges else catalog.sub_range_name or DEFAULT_SUB_RANGE
             )
             engine_input = EngineInput(
-                consultation_id=body.consultation_id or uuid.uuid4(),
+                consultation_id=uuid.uuid4(),
                 line_id=catalog.line_id,
                 brand_id=catalog.brand_id,
                 line_region_id=catalog.line_region_id,
@@ -147,7 +146,6 @@ def _production_formula(body: FormulaRequest) -> ProductionFormulaResponse:
                 desired_level=int(body.desired_level) if body.desired_level is not None else None,
                 service_intent=ServiceIntent(body.service_intent),
                 recommendation_type=RecommendationType(body.recommendation_type),
-                hair_length=body.hair_length,
                 selected_shades=[
                     SelectedShade(
                         shade_id=catalog.shade_id,
@@ -159,15 +157,13 @@ def _production_formula(body: FormulaRequest) -> ProductionFormulaResponse:
             context_overrides: dict[str, object] = {}
             if body.sub_ranges:
                 context_overrides["selected_sub_ranges"] = list(body.sub_ranges)
-            result = run_production_engine(
+            return run_production_engine(
                 session,
                 engine_input,
                 line_region_id=catalog.line_region_id,
                 context_overrides=context_overrides or None,
                 persist=body.persist,
-                stylist_id=body.stylist_id,
             )
-            return ProductionFormulaResponse.model_validate(result)
     except LookupError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:
@@ -177,7 +173,7 @@ def _production_formula(body: FormulaRequest) -> ProductionFormulaResponse:
 
 
 @app.post("/formula")
-def build_formula_endpoint(body: FormulaRequest):
+def build_formula_endpoint(body: FormulaRequest, request: Request):
     """Build a formula from shade reference and hair condition parameters."""
     if _engine_backend() in {"postgres", "postgresql", "pg", "production"}:
         return _production_formula(body)
@@ -198,9 +194,52 @@ def production_health() -> HealthResponse:
 
 
 @app.post("/v1/production/formula", response_model=ProductionFormulaResponse)
-def build_production_formula_endpoint(body: FormulaRequest) -> ProductionFormulaResponse:
+def build_production_formula_endpoint(
+    body: FormulaRequest, request: Request
+) -> ProductionFormulaResponse:
     """Versioned PostgreSQL formula contract."""
-    return _production_formula(body)
+    return _production_formula(body, _request_auth_context(request))
+
+
+def _update_consultation_status(
+    consultation_id: uuid.UUID,
+    body: ConsultationStatusUpdate,
+    auth_context: dict[str, uuid.UUID | None],
+) -> ConsultationResponse:
+    stylist_id = auth_context.get("stylist_id")
+    if stylist_id is None:
+        raise HTTPException(status_code=401, detail="X-Stylist-Id is required")
+    database_url = require_database_url()
+    if not database_url:
+        raise HTTPException(status_code=503, detail="DATABASE_URL is required for PostgreSQL backend")
+    try:
+        SessionLocal = create_session_factory(database_url=database_url)
+        with SessionLocal() as session:
+            consultation = update_consultation_status(
+                session,
+                consultation_id=consultation_id,
+                stylist_id=stylist_id,
+                client_id=auth_context.get("client_id"),
+                salon_id=auth_context.get("salon_id"),
+                status=ConsultationStatus(body.status),
+            )
+            session.commit()
+            return ConsultationResponse.model_validate(consultation_payload(consultation))
+    except SQLAlchemyError as exc:
+        raise HTTPException(status_code=503, detail="PostgreSQL backend unavailable") from exc
+
+
+@app.post(
+    "/v1/production/consultations/{consultation_id}/status",
+    response_model=ConsultationResponse,
+)
+def update_production_consultation_status(
+    consultation_id: uuid.UUID,
+    body: ConsultationStatusUpdate,
+    request: Request,
+) -> ConsultationResponse:
+    """Create/update consultation identity context and lifecycle status."""
+    return _update_consultation_status(consultation_id, body, _request_auth_context(request))
 
 
 if __name__ == "__main__":

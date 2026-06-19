@@ -210,7 +210,7 @@
           },
           "rule_action": {
             "trigger_workflow": "WF_retouch_with_refresh",
-            "warning": "Super Sync tint-back on pre-lightened hair — monitor porosity."
+            "warning": "Super Sync tint-back on pre-lightened hair \u2014 monitor porosity."
           }
         },
         {
@@ -355,7 +355,7 @@
           },
           "rule_action": {
             "set_developer_volume": 5,
-            "warning": "Shades EQ acidic demi — deposit-only at 5 vol equivalent; no lift when darkening."
+            "warning": "Shades EQ acidic demi \u2014 deposit-only at 5 vol equivalent; no lift when darkening."
           }
         }
       ]
@@ -408,7 +408,7 @@
           },
           "rule_action": {
             "set_developer_volume": 6,
-            "warning": "Color Touch demi deposit when darkening — 6 vol (1.9%) processing solution."
+            "warning": "Color Touch demi deposit when darkening \u2014 6 vol (1.9%) processing solution."
           }
         }
       ]
@@ -626,8 +626,8 @@
       ]
     },
     {
-      "canonical_key": "L'Oréal Professionnel::Majirel::US",
-      "brand_name": "L'Oréal Professionnel",
+      "canonical_key": "L'Or\u00e9al Professionnel::Majirel::US",
+      "brand_name": "L'Or\u00e9al Professionnel",
       "product_line_name": "Majirel",
       "requires_stage12_inventory_addition": false,
       "override_rules": [
@@ -728,6 +728,62 @@
             "set_developer_volume": null,
             "mixing_ratio": "2:1",
             "warning": "Colorance demi: Fashion + N-shade mix; Cover Plus NN for higher gray."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Pulp Riot::FACTION8::US",
+      "brand_name": "Pulp Riot",
+      "product_line_name": "FACTION8",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "PR_F8_001",
+          "rule_name": "faction8_optimal_full_white_natural_mix",
+          "rule_priority": 55,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "gray_percentage",
+                "op": ">=",
+                "value": 95
+              },
+              {
+                "field": "deposit_levels",
+                "op": "=",
+                "value": 0
+              }
+            ]
+          },
+          "rule_action": {
+            "set_developer_volume": 20,
+            "require_natural_shade_mix": true,
+            "natural_shade_ratio": 0.5,
+            "warning": "FACTION8 100% white-hair coverage guidance: add 1/4 to 1/2 Natural series; use Double Natural (-00) for intense coverage."
+          }
+        },
+        {
+          "rule_id": "PR_F8_002",
+          "rule_name": "faction8_high_lift_ratio_and_guardrail",
+          "rule_priority": 40,
+          "rule_category": "lift",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "selected_sub_ranges",
+                "op": "contains",
+                "value": "High Lift"
+              }
+            ]
+          },
+          "rule_action": {
+            "mixing_ratio": "1:2",
+            "set_developer_volume": 40,
+            "warning": "FACTION8 High Lift: process 45-55 minutes, use on levels 5+, and do not mix High Lift colors with other target shades."
           }
         }
       ]
