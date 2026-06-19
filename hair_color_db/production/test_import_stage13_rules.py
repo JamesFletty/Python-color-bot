@@ -31,8 +31,8 @@ class Stage13ImportRowTests(unittest.TestCase):
     def test_line_override_groups_and_rules(self) -> None:
         rows = build_stage13_import_rows()
         line_rows = [r for r in rows if r.scope_level == "line"]
-        self.assertEqual(len(load_line_overrides()), 14)
-        self.assertEqual(len(line_rows), 27)
+        self.assertEqual(len(load_line_overrides()), 15)
+        self.assertEqual(len(line_rows), 29)
 
     def test_matrix_socolor_resistant_gray_imports_30_vol(self) -> None:
         rows = build_stage13_import_rows()
@@ -101,7 +101,7 @@ class Stage13ImportRowTests(unittest.TestCase):
         )
 
     def test_validation_case_and_workflow_counts(self) -> None:
-        self.assertEqual(len(load_validation_cases()), 20)
+        self.assertEqual(len(load_validation_cases()), 21)
         self.assertEqual(len(load_service_workflows()), 9)
 
     def test_inactive_dormant_rules_excluded_from_engine_records(self) -> None:

@@ -19,7 +19,7 @@ existing docs.
 
 - The SQLite DB (`hair_color.db`) is git-ignored and is NOT created by the update script.
   Build it before running the API or the SQLite-track e2e tests: `python3 init_db.py`
-  (writes `hair_color.db` + `hair_color_db_verification_report.json`; expects 1,828 shades).
+  (writes `hair_color.db` + `hair_color_db_verification_report.json`; expects 1,840 shades).
 - Run the API in dev mode: `python3 -m uvicorn api.main:app --host 0.0.0.0 --port 8000`
   (the `uvicorn` console script lands in `~/.local/bin`, which is not on `PATH`; invoke via
   `python3 -m uvicorn`). Swagger UI is at `/docs`; health at `/health`; build a formula via
