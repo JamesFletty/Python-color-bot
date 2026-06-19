@@ -5,6 +5,7 @@ from __future__ import annotations
 import os
 import uuid
 from pathlib import Path
+from typing import Any
 
 from collections.abc import Awaitable, Callable
 
@@ -13,17 +14,7 @@ from fastapi.responses import JSONResponse
 from sqlalchemy import func, select, text
 from sqlalchemy.exc import SQLAlchemyError
 
-from api.schemas import (
-    ConsultationResponse,
-    ConsultationStatusUpdate,
-    FormulaRequest,
-    HealthResponse,
-    ProductionFormulaResponse,
-)
-from hair_color_db.production.consultation_service import (
-    consultation_payload,
-    update_consultation_status,
-)
+from api.schemas import FormulaRequest, HealthResponse
 from hair_color_db.production.catalog_lookup import DEFAULT_SUB_RANGE, resolve_from_shade_reference
 from hair_color_db.production.db import create_session_factory, require_database_url
 from hair_color_db.production.engine_models import EngineInput, SelectedShade, ServiceIntent
@@ -32,7 +23,6 @@ from hair_color_db.production.production_models import (
     HairTexture,
     RecommendationType,
     Shade,
-    ConsultationStatus,
 )
 from hair_color_db.production.run_production_engine import run_production_engine
 from src.formula_engine_service import http_status_for_formula, run_formula_engine
@@ -52,30 +42,6 @@ def _db_path() -> Path:
 
 def _engine_backend() -> str:
     return os.environ.get("ENGINE_BACKEND", "sqlite").strip().lower()
-
-
-def _uuid_or_none(raw: str | None) -> uuid.UUID | None:
-    return uuid.UUID(raw) if raw else None
-
-
-def _request_auth_context(request: Request) -> dict[str, uuid.UUID | None]:
-    return request.state.auth_context
-
-
-@app.middleware("http")
-async def request_context_middleware(
-    request: Request, call_next: Callable[[Request], Awaitable[Response]]
-) -> Response:
-    """Attach external salon/stylist/client context from trusted upstream headers."""
-    try:
-        request.state.auth_context = {
-            "stylist_id": _uuid_or_none(request.headers.get("X-Stylist-Id")),
-            "salon_id": _uuid_or_none(request.headers.get("X-Salon-Id")),
-            "client_id": _uuid_or_none(request.headers.get("X-Client-Id")),
-        }
-    except ValueError:
-        return JSONResponse(status_code=400, content={"detail": "Context headers must be UUIDs"})
-    return await call_next(request)
 
 
 def _pg_health() -> HealthResponse:
@@ -149,23 +115,12 @@ def health() -> HealthResponse:
     )
 
 
-def _production_health() -> HealthResponse:
-    return _pg_health()
-
-
-def _production_formula(
-    body: FormulaRequest,
-    auth_context: dict[str, uuid.UUID | None] | None = None,
-) -> ProductionFormulaResponse:
+def _production_formula(body: FormulaRequest) -> dict[str, Any]:
     database_url = require_database_url()
     if not database_url:
         raise HTTPException(status_code=503, detail="DATABASE_URL is required for PostgreSQL backend")
 
     try:
-        auth = auth_context or {}
-        stylist_id = body.stylist_id or auth.get("stylist_id")
-        client_id = body.client_id or auth.get("client_id")
-        salon_id = body.salon_id or auth.get("salon_id")
         SessionLocal = create_session_factory(database_url=database_url)
         with SessionLocal() as session:
             catalog = resolve_from_shade_reference(
@@ -177,7 +132,7 @@ def _production_formula(
                 body.sub_ranges[0] if body.sub_ranges else catalog.sub_range_name or DEFAULT_SUB_RANGE
             )
             engine_input = EngineInput(
-                consultation_id=body.consultation_id or uuid.uuid4(),
+                consultation_id=uuid.uuid4(),
                 line_id=catalog.line_id,
                 brand_id=catalog.brand_id,
                 line_region_id=catalog.line_region_id,
@@ -191,7 +146,6 @@ def _production_formula(
                 desired_level=int(body.desired_level) if body.desired_level is not None else None,
                 service_intent=ServiceIntent(body.service_intent),
                 recommendation_type=RecommendationType(body.recommendation_type),
-                hair_length=body.hair_length,
                 selected_shades=[
                     SelectedShade(
                         shade_id=catalog.shade_id,
@@ -203,17 +157,13 @@ def _production_formula(
             context_overrides: dict[str, object] = {}
             if body.sub_ranges:
                 context_overrides["selected_sub_ranges"] = list(body.sub_ranges)
-            result = run_production_engine(
+            return run_production_engine(
                 session,
                 engine_input,
                 line_region_id=catalog.line_region_id,
                 context_overrides=context_overrides or None,
                 persist=body.persist,
-                stylist_id=stylist_id,
-                client_id=client_id,
-                salon_id=salon_id,
             )
-            return ProductionFormulaResponse.model_validate(result)
     except LookupError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:
@@ -226,7 +176,7 @@ def _production_formula(
 def build_formula_endpoint(body: FormulaRequest, request: Request):
     """Build a formula from shade reference and hair condition parameters."""
     if _engine_backend() in {"postgres", "postgresql", "pg", "production"}:
-        return _production_formula(body, _request_auth_context(request))
+        return _production_formula(body)
 
     try:
         formula = run_formula_engine(body.to_engine_request(db_path=_db_path()))

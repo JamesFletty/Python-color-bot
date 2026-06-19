@@ -46,7 +46,6 @@ jobs:
             hair_color_db/production/formula_builder.py \
             hair_color_db/production/migrate.py \
             hair_color_db/production/pg_test_utils.py \
-            hair_color_db/production/quantity.py \
             hair_color_db/production/repositories.py \
             hair_color_db/production/run_production_engine.py \
             hair_color_db/production/safety_checks.py \

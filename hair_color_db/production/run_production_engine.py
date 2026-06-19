@@ -109,8 +109,6 @@ def run_production_engine(
         "triggered_workflows": output.triggered_workflows,
         "formula_zones": output.formula_zones,
         "fill_pigment_guidance": output.fill_pigment_guidance,
-        "quantity_rationale": output.quantity_rationale,
-        "audit_trail": output.audit_trail,
         "formula_id": str(formula_id) if formula_id else None,
         "persisted": formula_id is not None,
     }

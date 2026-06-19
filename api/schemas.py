@@ -23,11 +23,6 @@ class FormulaRequest(BaseModel):
     desired_result: str = "formula recommendation"
     recommendation_type: Literal["safest", "fastest", "gray_coverage", "fashion"] = "safest"
     persist: bool = False
-    consultation_id: UUID | None = None
-    client_id: UUID | None = None
-    stylist_id: UUID | None = None
-    salon_id: UUID | None = None
-    hair_length: Literal["short", "medium", "long", "extra_long"] = "medium"
     sub_ranges: list[str] | None = Field(
         None,
         description="Override Stage 13 collection rules; omitted values infer from shade record",
@@ -65,35 +60,3 @@ class HealthResponse(BaseModel):
     stage12_ready: bool | None = None
     stage13_rule_count: int | None = None
     stage13_ready: bool | None = None
-
-
-class ProductionFormulaResponse(BaseModel):
-    """Versioned PostgreSQL formula response contract."""
-
-    recommendation_status: Literal["ok", "caution", "blocked", "requires_consultation"]
-    matched_rules: list[UUID] = Field(default_factory=list)
-    matched_rule_names: list[str] = Field(default_factory=list)
-    developer_volume: int | None = None
-    warnings: list[str] = Field(default_factory=list)
-    blocked_by: list[str] = Field(default_factory=list)
-    explanation_summary: str
-    suggested_formula_steps: int
-    triggered_workflows: list[str] = Field(default_factory=list)
-    formula_zones: list[str] | None = None
-    fill_pigment_guidance: dict[str, Any] | None = None
-    quantity_rationale: str | None = None
-    audit_trail: list[dict[str, Any]] = Field(default_factory=list)
-    formula_id: UUID | None = None
-    persisted: bool
-
-
-class ConsultationStatusUpdate(BaseModel):
-    status: Literal["draft", "in_progress", "completed", "cancelled"]
-
-
-class ConsultationResponse(BaseModel):
-    consultation_id: UUID
-    client_id: UUID | None = None
-    stylist_id: UUID
-    salon_id: UUID | None = None
-    status: Literal["draft", "in_progress", "completed", "cancelled"]

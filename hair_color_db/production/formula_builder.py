@@ -372,10 +372,4 @@ def run_engine(
         triggered_workflows=accumulated.triggered_workflows,
         formula_zones=formula_zones,
         fill_pigment_guidance=accumulated.fill_pigment_guidance,
-        quantity_rationale=quantity_rationale(engine_input),
-        audit_trail=[
-            rule.model_dump(mode="json")
-            for rule in matched_rules
-            if rule.evidence_status or rule.evidence_notes
-        ],
     )

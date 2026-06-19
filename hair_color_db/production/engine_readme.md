@@ -110,7 +110,7 @@ export DATABASE_URL=postgresql+psycopg2://user:pass@host/db
 python3 -m hair_color_db.production.import_stage12_research
 ```
 
-Loads 1,828 shades, 659 tone mappings, and line technical rules from `stage12_package/`.
+Loads 1,840 shades, 659 tone mappings, and line technical rules from `stage12_package/`.
 Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code).
 `SqlAlchemyEngineRepository` reads imported research rows for line technical rules and shades.
 
@@ -136,7 +136,7 @@ The baseline lifecycle endpoint is `POST /v1/production/consultations/{consultat
 
 ## Known limitations
 
-- The FastAPI service exposes PostgreSQL output with `ENGINE_BACKEND=postgres` and versioned `/v1/production/*` routes; deeper auth/approval workflows are still pending.
+- The FastAPI service can expose PostgreSQL output with `ENGINE_BACKEND=postgres`; versioned public response contracts are still pending.
 - `run_engine()` does not persist — use `persist.persist_engine_output()` or `run_production_engine --persist`.
 - Single primary line per recommendation (no multi-line formulas).
 - JSON `rule_value` fallback parsing is intentionally narrow (developer volume, mixing ratio string).

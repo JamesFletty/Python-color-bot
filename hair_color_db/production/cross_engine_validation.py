@@ -47,6 +47,10 @@ CONTEXT_EXTRA_FIELDS = frozenset(
 # Warning-only rule actions now intentionally elevate both engines to `caution`.
 WARNING_ELEVATION_CASES = frozenset()
 
+# Resolver-only expectations not surfaced by run_engine().
+RESOLVER_ONLY_EXPECTATIONS = frozenset({"formula_zones"})
+
+
 @dataclass
 class CrossEngineComparison:
     case_id: str

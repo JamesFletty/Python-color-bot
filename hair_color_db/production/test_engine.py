@@ -254,35 +254,6 @@ class EngineGoldenPathTests(unittest.TestCase):
         self.assertEqual(result.suggested_formula[0].developer_volume, 10)
         self.assertTrue(any("10 vol" in warning for warning in result.warnings))
 
-    def test_quantity_plan_uses_hair_length(self) -> None:
-        short = run_engine(_base_input(hair_length="short"), self.repo)
-        long = run_engine(_base_input(hair_length="long"), self.repo)
-
-        self.assertEqual(short.suggested_formula[0].quantity_grams, 40)
-        self.assertEqual(long.suggested_formula[0].quantity_grams, 90)
-        self.assertIn("long hair", long.quantity_rationale or "")
-
-    def test_matched_rule_evidence_surfaces_in_audit_trail(self) -> None:
-        repo = build_seed_repository()
-        repo.formulation_rules.append(
-            FormulationRuleRecord(
-                rule_id=uuid.uuid4(),
-                rule_name="test_evidence_rule",
-                rule_priority=1,
-                rule_condition={"all_of": [{"field": "gray_percentage", "op": ">=", "value": 30}]},
-                rule_action={"warning": "Evidence-backed caution."},
-                rule_category="gray_coverage",
-                evidence_status="verified",
-                evidence_notes="Imported from Stage 13 package (TEST_EVIDENCE)",
-            )
-        )
-
-        result = run_engine(_base_input(gray_percentage=30), repo)
-
-        self.assertTrue(result.audit_trail)
-        self.assertEqual(result.audit_trail[0]["evidence_status"], "verified")
-        self.assertIn("TEST_EVIDENCE", result.audit_trail[0]["evidence_notes"])
-
     def test_ten_min_internal_only_blocks_other_subrange(self) -> None:
         result = run_engine(
             _base_input(
