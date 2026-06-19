@@ -5,11 +5,8 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
-from alembic import command
-from alembic.config import Config
-from alembic.runtime.migration import MigrationContext
-from alembic.script import ScriptDirectory
 from sqlalchemy import text
 from sqlalchemy.engine import Connection, Engine
 
@@ -171,6 +168,10 @@ def apply_pending_migrations(
     database_url: str | None = None,
 ) -> list[str]:
     """Apply all pending migrations through Alembic. Returns applied head revisions."""
+    from alembic import command
+    from alembic.runtime.migration import MigrationContext
+    from alembic.script import ScriptDirectory
+
     db_engine = engine or create_db_engine(database_url)
     alembic_config = _alembic_config(database_url=database_url)
     head_revision = ScriptDirectory.from_config(alembic_config).get_current_head()
@@ -190,8 +191,10 @@ def apply_pending_migrations(
     return [after or head_revision]
 
 
-def _alembic_config(database_url: str | None = None) -> Config:
+def _alembic_config(database_url: str | None = None) -> Any:
     """Build an Alembic config pointed at this repository's migration project."""
+    from alembic.config import Config
+
     config = Config(str(_ALEMBIC_INI))
     config.set_main_option("script_location", str(_REPO_ROOT / "alembic"))
     if database_url:

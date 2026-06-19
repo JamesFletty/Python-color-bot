@@ -14,11 +14,11 @@ The project has two runnable stacks that share Stage 13 JSON rules but use diffe
 | Stack | Status | Entry points |
 |-------|--------|--------------|
 | **Phase 1 SQLite** | **Operational** | `init_db.py`, `query_engine.py`, `formula_engine.py`, `api/main.py` (FastAPI) |
-| **Production PostgreSQL** | **CLI + tests operational; no HTTP service** | `bootstrap.py`, `run_production_engine.py`, `query_production_engine.py` |
+| **Production PostgreSQL** | **CLI + FastAPI backend switch + tests operational; v1 contract baseline in progress** | `bootstrap.py`, `run_production_engine.py`, `query_production_engine.py`, `api/main.py` with `ENGINE_BACKEND=postgres`, `/v1/production/*` |
 
 **Core engine behavior is implemented:** Stage 13 rule resolution, deposit/fill guidance, gray developer defaults, brand line overrides, cross-engine validation, auto sub-range from shade records, inventory-backed fill shade lookup on both SQLite and PostgreSQL engine outputs, and PostgreSQL shade search/matching.
 
-**Primary gaps:** rule/data coverage for unextracted lines (103+), broader static-analysis coverage, full auth middleware, formal API response-contract versioning, and exposing all PostgreSQL parity fields through a stable HTTP contract.
+**Primary gaps:** rule/data coverage for unextracted lines (103+), broader static-analysis coverage, full auth middleware, and hardening the baseline PostgreSQL v1 HTTP response contract.
 
 ---
 
@@ -183,15 +183,17 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R1.1 — Production HTTP API
 
-**Status:** Baseline complete. The FastAPI app can run against SQLite or PostgreSQL with `ENGINE_BACKEND=sqlite|postgres`; PostgreSQL mode uses `run_production_engine()` and reports database/import readiness through `/health`.
+**Status:** Baseline complete. The FastAPI app can run against SQLite or PostgreSQL with `ENGINE_BACKEND=sqlite|postgres`; PostgreSQL mode uses `run_production_engine()` and reports database/import readiness through `/health`. Versioned PostgreSQL routes now exist at `/v1/production/health` and `/v1/production/formula`.
 
 **Scope:**
 - `POST /formula` is backed by `run_production_engine` + `SqlAlchemyEngineRepository` when `ENGINE_BACKEND=postgres`
-- `api/schemas.py` now carries the extra production fields needed by PostgreSQL (`elasticity`, `texture`, `desired_result`, `recommendation_type`, `persist`)
+- `POST /v1/production/formula` returns the explicit `ProductionFormulaResponse` contract
+- `api/schemas.py` now carries the extra production fields needed by PostgreSQL (`elasticity`, `texture`, `desired_result`, `recommendation_type`, `persist`, consultation/stylist IDs, `hair_length`)
 - `/health` checks `DATABASE_URL`, DB connectivity, Stage 12 shade count, and active Stage 13 formulation rules
 
 **Acceptance criteria:**
 - PG-backed API returns the same production-engine payload shape and developer volume source as `run_production_engine.py`
+- Versioned contract tests assert `/v1/production/formula` response fields and `/v1/production/health` readiness fields
 - Health endpoint reports PG connectivity and import readiness (shade count ≥ 1828, active Stage 13 rules > 0)
 
 **Depends on:** PostgreSQL bootstrap (done)
@@ -222,10 +224,10 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R1.4 — Unified API routing (SQLite vs PostgreSQL)
 
-**Status:** Baseline complete via `ENGINE_BACKEND=sqlite|postgres`. The same `/health` and `/formula` routes dispatch to the selected backend.
+**Status:** Baseline complete via `ENGINE_BACKEND=sqlite|postgres` plus explicit PostgreSQL v1 routes. The same `/health` and `/formula` routes dispatch to the selected backend, while `/v1/production/health` and `/v1/production/formula` provide a stable production-specific surface.
 
 **Scope:**
-- Optional future versioned routers (`/v1/sqlite/*`, `/v1/production/*`) if both backends must be served simultaneously
+- Optional future SQLite v1 routes if both backends must be served simultaneously without `ENGINE_BACKEND`
 - OpenAPI polish for backend-specific readiness details and persistence behavior
 
 **Acceptance criteria:**

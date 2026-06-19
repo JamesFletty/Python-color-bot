@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Literal
+from typing import Any, Literal
 from uuid import UUID
 
 from pydantic import BaseModel, Field
@@ -63,3 +63,23 @@ class HealthResponse(BaseModel):
     stage12_ready: bool | None = None
     stage13_rule_count: int | None = None
     stage13_ready: bool | None = None
+
+
+class ProductionFormulaResponse(BaseModel):
+    """Versioned PostgreSQL formula response contract."""
+
+    recommendation_status: Literal["ok", "caution", "blocked", "requires_consultation"]
+    matched_rules: list[UUID] = Field(default_factory=list)
+    matched_rule_names: list[str] = Field(default_factory=list)
+    developer_volume: int | None = None
+    warnings: list[str] = Field(default_factory=list)
+    blocked_by: list[str] = Field(default_factory=list)
+    explanation_summary: str
+    suggested_formula_steps: int
+    triggered_workflows: list[str] = Field(default_factory=list)
+    formula_zones: list[str] | None = None
+    fill_pigment_guidance: dict[str, Any] | None = None
+    quantity_rationale: str | None = None
+    audit_trail: list[dict[str, Any]] = Field(default_factory=list)
+    formula_id: UUID | None = None
+    persisted: bool

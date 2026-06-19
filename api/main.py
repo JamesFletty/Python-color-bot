@@ -5,14 +5,13 @@ from __future__ import annotations
 import os
 import uuid
 from pathlib import Path
-from typing import Any
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 from sqlalchemy import func, select, text
 from sqlalchemy.exc import SQLAlchemyError
 
-from api.schemas import FormulaRequest, HealthResponse
+from api.schemas import FormulaRequest, HealthResponse, ProductionFormulaResponse
 from hair_color_db.production.catalog_lookup import DEFAULT_SUB_RANGE, resolve_from_shade_reference
 from hair_color_db.production.db import create_session_factory, require_database_url
 from hair_color_db.production.engine_models import EngineInput, SelectedShade, ServiceIntent
@@ -113,7 +112,11 @@ def health() -> HealthResponse:
     )
 
 
-def _production_formula(body: FormulaRequest) -> dict[str, Any]:
+def _production_health() -> HealthResponse:
+    return _pg_health()
+
+
+def _production_formula(body: FormulaRequest) -> ProductionFormulaResponse:
     database_url = require_database_url()
     if not database_url:
         raise HTTPException(status_code=503, detail="DATABASE_URL is required for PostgreSQL backend")
@@ -156,7 +159,7 @@ def _production_formula(body: FormulaRequest) -> dict[str, Any]:
             context_overrides: dict[str, object] = {}
             if body.sub_ranges:
                 context_overrides["selected_sub_ranges"] = list(body.sub_ranges)
-            return run_production_engine(
+            result = run_production_engine(
                 session,
                 engine_input,
                 line_region_id=catalog.line_region_id,
@@ -164,6 +167,7 @@ def _production_formula(body: FormulaRequest) -> dict[str, Any]:
                 persist=body.persist,
                 stylist_id=body.stylist_id,
             )
+            return ProductionFormulaResponse.model_validate(result)
     except LookupError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:
@@ -185,6 +189,18 @@ def build_formula_endpoint(body: FormulaRequest):
 
     status_code = http_status_for_formula(formula)
     return JSONResponse(status_code=status_code, content=formula)
+
+
+@app.get("/v1/production/health", response_model=HealthResponse)
+def production_health() -> HealthResponse:
+    """Versioned PostgreSQL readiness contract."""
+    return _production_health()
+
+
+@app.post("/v1/production/formula", response_model=ProductionFormulaResponse)
+def build_production_formula_endpoint(body: FormulaRequest) -> ProductionFormulaResponse:
+    """Versioned PostgreSQL formula contract."""
+    return _production_formula(body)
 
 
 if __name__ == "__main__":
