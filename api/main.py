@@ -7,7 +7,9 @@ import uuid
 from pathlib import Path
 from typing import Any
 
-from fastapi import FastAPI, HTTPException
+from collections.abc import Awaitable, Callable
+
+from fastapi import FastAPI, HTTPException, Request, Response
 from fastapi.responses import JSONResponse
 from sqlalchemy import func, select, text
 from sqlalchemy.exc import SQLAlchemyError
@@ -171,7 +173,7 @@ def _production_formula(body: FormulaRequest) -> dict[str, Any]:
 
 
 @app.post("/formula")
-def build_formula_endpoint(body: FormulaRequest):
+def build_formula_endpoint(body: FormulaRequest, request: Request):
     """Build a formula from shade reference and hair condition parameters."""
     if _engine_backend() in {"postgres", "postgresql", "pg", "production"}:
         return _production_formula(body)
@@ -183,6 +185,61 @@ def build_formula_endpoint(body: FormulaRequest):
 
     status_code = http_status_for_formula(formula)
     return JSONResponse(status_code=status_code, content=formula)
+
+
+@app.get("/v1/production/health", response_model=HealthResponse)
+def production_health() -> HealthResponse:
+    """Versioned PostgreSQL readiness contract."""
+    return _production_health()
+
+
+@app.post("/v1/production/formula", response_model=ProductionFormulaResponse)
+def build_production_formula_endpoint(
+    body: FormulaRequest, request: Request
+) -> ProductionFormulaResponse:
+    """Versioned PostgreSQL formula contract."""
+    return _production_formula(body, _request_auth_context(request))
+
+
+def _update_consultation_status(
+    consultation_id: uuid.UUID,
+    body: ConsultationStatusUpdate,
+    auth_context: dict[str, uuid.UUID | None],
+) -> ConsultationResponse:
+    stylist_id = auth_context.get("stylist_id")
+    if stylist_id is None:
+        raise HTTPException(status_code=401, detail="X-Stylist-Id is required")
+    database_url = require_database_url()
+    if not database_url:
+        raise HTTPException(status_code=503, detail="DATABASE_URL is required for PostgreSQL backend")
+    try:
+        SessionLocal = create_session_factory(database_url=database_url)
+        with SessionLocal() as session:
+            consultation = update_consultation_status(
+                session,
+                consultation_id=consultation_id,
+                stylist_id=stylist_id,
+                client_id=auth_context.get("client_id"),
+                salon_id=auth_context.get("salon_id"),
+                status=ConsultationStatus(body.status),
+            )
+            session.commit()
+            return ConsultationResponse.model_validate(consultation_payload(consultation))
+    except SQLAlchemyError as exc:
+        raise HTTPException(status_code=503, detail="PostgreSQL backend unavailable") from exc
+
+
+@app.post(
+    "/v1/production/consultations/{consultation_id}/status",
+    response_model=ConsultationResponse,
+)
+def update_production_consultation_status(
+    consultation_id: uuid.UUID,
+    body: ConsultationStatusUpdate,
+    request: Request,
+) -> ConsultationResponse:
+    """Create/update consultation identity context and lifecycle status."""
+    return _update_consultation_status(consultation_id, body, _request_auth_context(request))
 
 
 if __name__ == "__main__":

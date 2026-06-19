@@ -34,6 +34,8 @@ class FormulationRuleRecord:
     brand_ids: list[UUID] = field(default_factory=list)
     line_ids: list[UUID] = field(default_factory=list)
     scope_level: str = "universal"
+    evidence_status: str | None = None
+    evidence_notes: str | None = None
 
 
 @dataclass
@@ -205,6 +207,15 @@ class SqlAlchemyEngineRepository:
                     brand_ids=brand_ids,
                     line_ids=line_ids,
                     scope_level=rule.scope_level,
+                    evidence_status=rule.evidence_status.value,
+                    evidence_notes=(
+                        "; ".join(
+                            evidence.notes
+                            for evidence in getattr(rule, "evidence_links", [])
+                            if evidence.notes
+                        )
+                        or None
+                    ),
                 )
             )
         return records

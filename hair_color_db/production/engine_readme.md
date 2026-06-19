@@ -114,11 +114,24 @@ Loads 1,840 shades, 659 tone mappings, and line technical rules from `stage12_pa
 Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code).
 `SqlAlchemyEngineRepository` reads imported research rows for line technical rules and shades.
 
+
+## API request context
+
+The production FastAPI path accepts trusted upstream identity headers:
+
+- `X-Stylist-Id` — required for consultation lifecycle status updates.
+- `X-Client-Id` — optional client context persisted on consultation rows.
+- `X-Salon-Id` — optional salon context persisted on consultation rows.
+
+Formula requests may also supply `stylist_id`, `client_id`, and `salon_id` in the JSON body; explicit body values take precedence over headers. The current layer is request-context plumbing only, not a complete authentication/RBAC implementation.
+
+The baseline lifecycle endpoint is `POST /v1/production/consultations/{consultation_id}/status` with `{"status":"draft|in_progress|completed|cancelled"}`.
+
 ## Assumptions
 
 - `formula` stores `line_id` only; brand derived at read time.
 - Shade selection can be supplied via `--shade-ref` lookup or explicit catalog IDs on input.
-- Quantity grams are placeholders (60g default) until a future gram-age module exists.
+- Quantity grams are planned from `hair_length` (`short`, `medium`, `long`, `extra_long`) and surfaced with a quantity rationale.
 - Research tables are read-only through repositories.
 
 ## Known limitations

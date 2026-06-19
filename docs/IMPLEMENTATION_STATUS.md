@@ -14,7 +14,7 @@ The project has two runnable stacks that share Stage 13 JSON rules but use diffe
 | Stack | Status | Entry points |
 |-------|--------|--------------|
 | **Phase 1 SQLite** | **Operational** | `init_db.py`, `query_engine.py`, `formula_engine.py`, `api/main.py` (FastAPI) |
-| **Production PostgreSQL** | **CLI + tests operational; no HTTP service** | `bootstrap.py`, `run_production_engine.py`, `query_production_engine.py` |
+| **Production PostgreSQL** | **CLI + FastAPI backend switch + tests operational; v1 contract baseline in progress** | `bootstrap.py`, `run_production_engine.py`, `query_production_engine.py`, `api/main.py` with `ENGINE_BACKEND=postgres`, `/v1/production/*` |
 
 **Core engine behavior is implemented:** Stage 13 rule resolution, deposit/fill guidance, gray developer defaults, brand line overrides, cross-engine validation, auto sub-range from shade records, inventory-backed fill shade lookup on both SQLite and PostgreSQL engine outputs, and PostgreSQL shade search/matching.
 
@@ -323,19 +323,19 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R3.3 — Gram-age / quantity module
 
-**Status:** 60g placeholders everywhere (`engine_readme.md`)
+**Status:** Baseline complete for production engine output. `quantity.py` assigns grams from `hair_length` instead of fixed placeholders and `EngineOutput.quantity_rationale` explains the plan.
 
-**Scope:** Replace fixed `quantity_grams` with hair-length or stylist-input-driven defaults
+**Scope:** Continue refining quantity plans with stylist-supplied density/length, bowl loss, and zone-specific ratios.
 
-**Acceptance criteria:** Formula steps include documented quantity rationale; tests for at least short/medium/long hair
+**Acceptance criteria:** Formula steps include documented quantity rationale; tests cover short/long quantity differences.
 
 ---
 
 #### R3.4 — Consultation / auth layer
 
-**Status:** `persist.py` creates stub consultations with `SYSTEM_STYLIST_ID`
+**Status:** Partial baseline complete. API/CLI callers can pass `consultation_id`, `stylist_id`, `client_id`, and `salon_id` through the PostgreSQL formula path. FastAPI now captures trusted request-context headers (`X-Stylist-Id`, `X-Client-Id`, `X-Salon-Id`), formula persistence stores that consultation ownership context, and `/v1/production/consultations/{consultation_id}/status` provides a first lifecycle transition endpoint.
 
-**Scope:** Auth middleware, real stylist/salon IDs, consultation lifecycle before formula persist
+**Scope:** Replace trusted-header context with real authentication/authorization, add richer consultation create/read/list workflows, and enforce salon/client ownership on reads and writes.
 
 **Depends on:** R1.1 production API
 
@@ -343,9 +343,9 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R3.5 — Schema extension H — evidence tables
 
-**Status:** Proposed in `H_schema_extension_proposal.json`; partial (workflows + validation_case imported; `formulation_rule_evidence` not wired)
+**Status:** Partial baseline complete. Stage 13 rule evidence rows are imported and matched-rule evidence now surfaces in production `audit_trail`.
 
-**Scope:** Import evidence links from Stage 13 package; expose in rule audit trail
+**Scope:** Link evidence to source documents in API responses and persist audit snapshots alongside formulas.
 
 ---
 

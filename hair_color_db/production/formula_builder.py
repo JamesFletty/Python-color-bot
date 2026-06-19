@@ -17,6 +17,7 @@ from .engine_models import (
     SuggestedFormulaStep,
 )
 from .production_models import FormulaStatus, FormulaZone
+from .quantity import apply_quantity_plan, quantity_rationale
 from .repositories import EngineRepository
 from .rule_evaluator import evaluate_and_apply_rules
 from src.sub_range_intake import sub_range_labels_from_selected_shades
@@ -322,6 +323,7 @@ def run_engine(
                 steps[idx - 1] = step.model_copy(update={"step_order": idx})
         for idx, extra in enumerate(accumulated.extra_steps, start=len(steps) + 1):
             steps.append(extra.model_copy(update={"step_order": idx}))
+        steps = apply_quantity_plan(steps, engine_input)
 
     risk_assessments = build_risk_assessments(accumulated, context)
     base_risk = sum(float(r.probability) for r in risk_assessments) / max(len(risk_assessments), 1)
@@ -330,6 +332,7 @@ def run_engine(
     explanation_parts = [
         f"Matched {len(matched_rules)} formulation rule(s).",
         f"Developer {developer_volume} vol, {processing_time} min processing.",
+        quantity_rationale(engine_input),
     ]
     if accumulated.require_natural_shade_mix:
         explanation_parts.append(

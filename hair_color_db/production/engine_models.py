@@ -73,6 +73,10 @@ class EngineInput(BaseModel):
     selected_shades: list[SelectedShade] = Field(default_factory=list)
     developer_id: Optional[UUID] = None
     recommendation_type: RecommendationType = RecommendationType.SAFEST
+    hair_length: Optional[str] = Field(
+        None,
+        description="Salon quantity planning hint: short, medium, long, or extra_long.",
+    )
 
     model_config = ConfigDict(use_enum_values=False)
 
@@ -86,6 +90,8 @@ class MatchedRule(BaseModel):
     rule_category: str
     scope_tier: RuleScopeTier
     reason: str
+    evidence_status: Optional[str] = None
+    evidence_notes: Optional[str] = None
 
 
 class SuggestedFormulaStep(BaseModel):

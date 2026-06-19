@@ -56,6 +56,7 @@ def build_engine_input_from_args(args: Any, catalog: Any) -> EngineInput:
                 zone=FormulaZone.ALL,
             )
         ],
+        hair_length=args.hair_length,
     )
 
 
@@ -66,6 +67,9 @@ def run_production_engine(
     line_region_id: uuid.UUID | None = None,
     context_overrides: dict[str, object] | None = None,
     persist: bool = False,
+    stylist_id: uuid.UUID | None = None,
+    client_id: uuid.UUID | None = None,
+    salon_id: uuid.UUID | None = None,
 ) -> dict[str, object]:
     """Execute the engine and optionally persist the formula."""
     repo = SqlAlchemyEngineRepository(session)
@@ -79,7 +83,14 @@ def run_production_engine(
 
     formula_id = None
     if persist:
-        formula_id = persist_engine_output(session, engine_input, output)
+        persist_kwargs: dict[str, uuid.UUID] = {}
+        if stylist_id is not None:
+            persist_kwargs["stylist_id"] = stylist_id
+        if client_id is not None:
+            persist_kwargs["client_id"] = client_id
+        if salon_id is not None:
+            persist_kwargs["salon_id"] = salon_id
+        formula_id = persist_engine_output(session, engine_input, output, **persist_kwargs)
         if formula_id is not None:
             session.commit()
 
@@ -173,6 +184,27 @@ def main(argv: list[str] | None = None) -> int:
         help="Existing consultation UUID (created automatically when persisting)",
     )
     parser.add_argument(
+        "--stylist-id",
+        default=None,
+        help="External stylist/user UUID used when persisting consultation context",
+    )
+    parser.add_argument(
+        "--client-id",
+        default=None,
+        help="External client UUID used when persisting consultation context",
+    )
+    parser.add_argument(
+        "--salon-id",
+        default=None,
+        help="External salon UUID used when persisting consultation context",
+    )
+    parser.add_argument(
+        "--hair-length",
+        default="medium",
+        choices=["short", "medium", "long", "extra_long"],
+        help="Hair length used for quantity gram planning",
+    )
+    parser.add_argument(
         "--persist",
         action="store_true",
         help="Write formula / steps / risk rows when status is ok",
@@ -214,6 +246,9 @@ def main(argv: list[str] | None = None) -> int:
             line_region_id=catalog.line_region_id,
             context_overrides=context_overrides or None,
             persist=args.persist,
+            stylist_id=uuid.UUID(args.stylist_id) if args.stylist_id else None,
+            client_id=uuid.UUID(args.client_id) if args.client_id else None,
+            salon_id=uuid.UUID(args.salon_id) if args.salon_id else None,
         )
         print(json.dumps(result, indent=2, default=str))
     return 0

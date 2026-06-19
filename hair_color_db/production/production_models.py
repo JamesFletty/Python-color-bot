@@ -638,6 +638,10 @@ class FormulationRule(Base):
         back_populates="formulation_rule", cascade="all, delete-orphan"
     )
     source: Mapped[Optional["SourceDocument"]] = relationship()
+    evidence_links: Mapped[list["FormulationRuleEvidence"]] = relationship(
+        back_populates="formulation_rule",
+        cascade="all, delete-orphan",
+    )
 
     __table_args__ = (
         Index(
@@ -734,6 +738,7 @@ class FormulationRuleEvidence(Base):
     )
     evidence_status: Mapped[str] = mapped_column(String, nullable=False)
     notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    formulation_rule: Mapped["FormulationRule"] = relationship(back_populates="evidence_links")
 
 
 # ---------------------------------------------------------------------------
