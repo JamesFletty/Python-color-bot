@@ -135,7 +135,7 @@ class BuildFormulaDepositTests(unittest.TestCase):
                 "porosity": 5,
             },
         )
-        self.assertEqual(formula["status"], "ok")
+        self.assertEqual(formula["status"], "caution")
         self.assertEqual(formula["formula"]["developer"], "10 vol")
         fill = formula["formula"]["fill_pigment_guidance"]
         self.assertIn("fill_steps", fill)

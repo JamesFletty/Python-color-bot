@@ -301,10 +301,8 @@ def build_seed_repository() -> InMemoryEngineRepository:
     matrix_region = uuid.UUID("00000000-0000-4000-8000-000000000100")
     hd_sub = uuid.UUID("00000000-0000-4000-8000-000000000201")
     ultra_sub = uuid.UUID("00000000-0000-4000-8000-000000000202")
-    blended_sub = uuid.UUID("00000000-0000-4000-8000-000000000203")
     dreamage_sub = uuid.UUID("00000000-0000-4000-8000-000000000204")
     ten_min_sub = uuid.UUID("00000000-0000-4000-8000-000000000205")
-    normal_sub = uuid.UUID("00000000-0000-4000-8000-000000000206")
 
     rules = build_formulation_rules_from_stage13(
         line_mapping={

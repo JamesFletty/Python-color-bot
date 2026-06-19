@@ -120,7 +120,7 @@ flowchart TB
 | PostgreSQL shade search/matching | #17 | `shade_matching.py`, `query_production_engine.py`, `--shade-ref` |
 | Auto sub-range from shade record | #18 | `src/sub_range_intake.py`; no manual `--sub-range` for collection shades |
 | FastAPI over SQLite engine | #19 | `api/main.py`, `src/formula_engine_service.py` |
-| CI + PG test baseline | Recent | `.github/workflows/ci.yml`, `pyproject.toml`, `pg_test_utils.py` |
+| CI + PG test hardening | Recent | Split lint/type, SQLite, and PostgreSQL jobs; failure log artifacts; expanded focused lint/type gates |
 | Cross-engine warning status alignment | Recent | warning-only actions resolve to `caution` in both Stage 13 and production |
 
 ### SQLite CLI capabilities
@@ -288,13 +288,12 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R3.1 — CI test pipeline
 
-**Status:** Baseline complete. `.github/workflows/ci.yml` runs on push and pull requests with Python 3.12, a `postgres:15` service, SQLite catalog initialization, `ruff`, focused `mypy`, unit suites, and PostgreSQL integration tests.
+**Status:** Hardened baseline complete. `.github/workflows/ci.yml` runs separate lint/type, SQLite, and PostgreSQL jobs on push and pull requests. PostgreSQL integration still uses a `postgres:15` service, and each job uploads captured logs on failure.
 
 **Remaining hardening:**
-- Split lint/type, SQLite, and PostgreSQL checks into separate jobs for clearer failure reporting.
-- Expand `ruff` beyond correctness-only rules after cleanup.
-- Expand mypy targets beyond focused engine modules once current type debt is addressed.
-- Add CI artifacts/log upload and an optional README badge.
+- Continue expanding `ruff` beyond the current correctness + unused-local gate after cleanup.
+- Expand mypy targets beyond focused API/engine modules once current type debt is addressed.
+- Add an optional README badge once workflow naming stabilizes.
 
 ---
 
