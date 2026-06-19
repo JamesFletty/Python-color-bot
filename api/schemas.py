@@ -17,6 +17,11 @@ class FormulaRequest(BaseModel):
     desired_level: float | None = Field(None, ge=1, le=12)
     patch_test_status: Literal["passed", "failed", "declined", "unknown"] = "passed"
     porosity: int = Field(5, ge=1, le=10)
+    elasticity: int = Field(6, ge=1, le=10)
+    texture: Literal["fine", "medium", "coarse"] = "medium"
+    desired_result: str = "formula recommendation"
+    recommendation_type: Literal["safest", "fastest", "gray_coverage", "fashion"] = "safest"
+    persist: bool = False
     sub_ranges: list[str] | None = Field(
         None,
         description="Override Stage 13 collection rules; omitted values infer from shade record",
@@ -45,5 +50,12 @@ class FormulaRequest(BaseModel):
 
 class HealthResponse(BaseModel):
     status: str
+    backend: str = "sqlite"
     database_path: str
     database_ready: bool
+    database_url_configured: bool | None = None
+    pg_db_connected: bool | None = None
+    stage12_shade_count: int | None = None
+    stage12_ready: bool | None = None
+    stage13_rule_count: int | None = None
+    stage13_ready: bool | None = None

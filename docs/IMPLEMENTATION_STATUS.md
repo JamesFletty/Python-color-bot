@@ -183,20 +183,20 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R1.1 — Production HTTP API
 
-**Status:** Not started (FastAPI exists only for SQLite Phase 1)
+**Status:** Baseline complete. The FastAPI app can run against SQLite or PostgreSQL with `ENGINE_BACKEND=sqlite|postgres`; PostgreSQL mode uses `run_production_engine()` and reports database/import readiness through `/health`.
 
 **Scope:**
-- Add `POST /formula` (and optionally `POST /query/shades`) backed by `run_production_engine` + `SqlAlchemyEngineRepository`
-- Reuse or extend `api/schemas.py`; support `DATABASE_URL` bootstrap health check
-- Optional `--persist` / consultation UUID for formula writes
+- `POST /formula` is backed by `run_production_engine` + `SqlAlchemyEngineRepository` when `ENGINE_BACKEND=postgres`
+- `api/schemas.py` now carries the extra production fields needed by PostgreSQL (`elasticity`, `texture`, `desired_result`, `recommendation_type`, `persist`)
+- `/health` checks `DATABASE_URL`, DB connectivity, Stage 12 shade count, and active Stage 13 formulation rules
 
 **Acceptance criteria:**
-- `curl` against PG-backed API returns same developer volume as `run_production_engine.py` CLI for VC024–VC029 cases
-- Health endpoint reports PG connectivity and import readiness (shade count ≥ 1828)
+- PG-backed API returns the same production-engine payload shape and developer volume source as `run_production_engine.py`
+- Health endpoint reports PG connectivity and import readiness (shade count ≥ 1828, active Stage 13 rules > 0)
 
 **Depends on:** PostgreSQL bootstrap (done)
 
-**Files:** `api/main.py`, new `api/production_routes.py` or env switch `ENGINE_BACKEND=sqlite|postgres`
+**Files:** `api/main.py`, `api/schemas.py`, `api/test_production_api.py`
 
 ---
 
@@ -204,7 +204,7 @@ These unblock a single production deployment path with behavior matching the SQL
 
 **Status:** Complete for engine output. Production `run_engine()` now enriches computed fill guidance with PostgreSQL inventory-backed `suggested_shades` and `target_natural_shades`; PG e2e coverage exercises a 9→5 Matrix darkening case.
 
-**Remaining product work:** Expose the enriched guidance through the future PostgreSQL HTTP API and keep SQLite/PG parity cases in CI.
+**Remaining product work:** Keep SQLite/PG parity cases in CI and decide how much of the enriched guidance should be considered stable public API.
 
 ---
 
@@ -222,15 +222,15 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R1.4 — Unified API routing (SQLite vs PostgreSQL)
 
-**Status:** Two separate CLIs + one SQLite FastAPI app
+**Status:** Baseline complete via `ENGINE_BACKEND=sqlite|postgres`. The same `/health` and `/formula` routes dispatch to the selected backend.
 
 **Scope:**
-- Single FastAPI app with `ENGINE_BACKEND` env or separate routers `/v1/sqlite/*` and `/v1/production/*`
-- Shared request schema where fields overlap
+- Optional future versioned routers (`/v1/sqlite/*`, `/v1/production/*`) if both backends must be served simultaneously
+- OpenAPI polish for backend-specific readiness details and persistence behavior
 
 **Acceptance criteria:**
 - One `uvicorn` process can serve either backend via configuration
-- OpenAPI docs describe backend requirements
+- Health response identifies the active backend and reports backend-specific readiness
 
 **Depends on:** R1.1
 
@@ -377,13 +377,12 @@ Not blocking engine runtime for **currently extracted** 30 lines, but limits bra
 For a **production MVP** (salon-facing API on PostgreSQL with parity to SQLite CLI):
 
 ```
-1. R1.1  Production HTTP API               ← deployable PostgreSQL-backed surface
-2. R1.4  Unified API routing               ← one service, backend selected by config
-3. R3.2  Alembic project                   ← ops maturity
-4. R3.1  CI/static-analysis expansion      ← broaden beyond the baseline gate
-5. R3.3  Gram-age module                   ← professional quantity rationale
-6. R3.4  Consultation/auth layer           ← production workflow ownership
-7. T4    Data/rule expansion               ← broader brand and line coverage
+1. R3.2  Alembic project                   ← ops maturity for the PG-backed service
+2. R3.1  CI/static-analysis expansion      ← broaden beyond the baseline gate
+3. R3.3  Gram-age module                   ← professional quantity rationale
+4. R3.4  Consultation/auth layer           ← production workflow ownership
+5. API v1 response contract                ← freeze public PG response fields
+6. T4    Data/rule expansion               ← broader brand and line coverage
 ```
 
 For **coverage expansion** (parallel track):

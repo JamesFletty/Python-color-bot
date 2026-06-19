@@ -45,7 +45,7 @@ jobs:
         run: ruff check .
 
       - name: Type check focused engine modules
-        run: mypy hair_color_db/formulation_rules/evaluator.py hair_color_db/stage13_formulation_rules/resolver.py hair_color_db/production/migrate.py hair_color_db/production/pg_test_utils.py hair_color_db/production/fill_shade_lookup.py hair_color_db/production/formula_builder.py hair_color_db/production/repositories.py hair_color_db/production/safety_checks.py hair_color_db/production/engine_models.py
+        run: mypy api/main.py api/schemas.py hair_color_db/formulation_rules/evaluator.py hair_color_db/stage13_formulation_rules/resolver.py hair_color_db/production/migrate.py hair_color_db/production/pg_test_utils.py hair_color_db/production/fill_shade_lookup.py hair_color_db/production/formula_builder.py hair_color_db/production/repositories.py hair_color_db/production/safety_checks.py hair_color_db/production/engine_models.py
 
       - name: Build SQLite catalog for parity tests
         run: python init_db.py
@@ -53,6 +53,7 @@ jobs:
       - name: Run unit and PostgreSQL tests
         run: >-
           python -m unittest
+          api.test_production_api
           api.test_api
           src.test_fill_shade_lookup
           src.test_formula_builder

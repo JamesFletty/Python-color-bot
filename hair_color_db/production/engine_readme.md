@@ -123,7 +123,7 @@ Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code
 
 ## Known limitations
 
-- PostgreSQL-backed fill guidance is enriched in engine output, but no production HTTP API exposes it yet.
+- The FastAPI service can expose PostgreSQL output with `ENGINE_BACKEND=postgres`; versioned public response contracts are still pending.
 - `run_engine()` does not persist — use `persist.persist_engine_output()` or `run_production_engine --persist`.
 - Single primary line per recommendation (no multi-line formulas).
 - JSON `rule_value` fallback parsing is intentionally narrow (developer volume, mixing ratio string).
