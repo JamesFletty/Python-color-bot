@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 import unittest
+from pathlib import Path
 
-from .migrate import _statements
+from .migrate import _alembic_config, _statements
 
 
 class MigrationStatementTests(unittest.TestCase):
@@ -41,6 +42,17 @@ class MigrationStatementTests(unittest.TestCase):
         self.assertEqual(len(statements), 2)
         self.assertIn("'semi;colon'", statements[0])
         self.assertIn('"weird;identifier"', statements[1])
+
+    def test_alembic_config_points_to_packaged_project(self) -> None:
+        config = _alembic_config(database_url="postgresql+psycopg2://example/example")
+        script_location = Path(config.get_main_option("script_location"))
+
+        self.assertEqual(script_location.name, "alembic")
+        self.assertTrue((script_location / "env.py").exists())
+        self.assertEqual(
+            config.get_main_option("sqlalchemy.url"),
+            "postgresql+psycopg2://example/example",
+        )
 
 
 if __name__ == "__main__":

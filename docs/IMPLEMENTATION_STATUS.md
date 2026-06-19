@@ -18,7 +18,7 @@ The project has two runnable stacks that share Stage 13 JSON rules but use diffe
 
 **Core engine behavior is implemented:** Stage 13 rule resolution, deposit/fill guidance, gray developer defaults, brand line overrides, cross-engine validation, auto sub-range from shade records, inventory-backed fill shade lookup on both SQLite and PostgreSQL engine outputs, and PostgreSQL shade search/matching.
 
-**Primary gaps:** production HTTP API, rule/data coverage for unextracted lines (103+), Alembic migration project, broader static-analysis coverage, gram-age/consultation productization, and exposing the PostgreSQL parity output through an HTTP surface.
+**Primary gaps:** rule/data coverage for unextracted lines (103+), broader static-analysis coverage, gram-age/consultation productization, formal API response-contract versioning, and exposing all PostgreSQL parity fields through a stable HTTP contract.
 
 ---
 
@@ -299,15 +299,18 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R3.2 — Alembic project (replace manual migration runner)
 
-**Status:** Revision modules exist as copy-paste artifacts; `migrate.py` runs SQL files with `schema_migration` table
+**Status:** Complete baseline. A real Alembic project now exists (`alembic.ini`, `alembic/env.py`, `alembic/versions/*`) and `bootstrap.py` reaches migrations through `migrate.apply_pending_migrations()`, which delegates to `alembic upgrade head`.
 
 **Scope:**
-- Add `alembic.ini`, `alembic/env.py` pointing at existing revisions
-- Keep `bootstrap.py` calling Alembic upgrade head
+- Current revisions execute the packaged research and production SQL migrations in order.
+- `migrate.py` keeps the CLI/high-level compatibility surface while using Alembic as the operational migration path.
+- Fresh DB bootstrap in CI continues to call `bootstrap.py`, so tests exercise the same migration path production uses.
 
-**Acceptance criteria:** Fresh DB via `alembic upgrade head` equivalent to current `migrate.py` + seeds
+**Acceptance criteria:** Fresh DB via `alembic upgrade head` is equivalent to the previous SQL-runner path plus seeds.
 
-**Files:** `hair_color_db/production/alembic_revision*.py`, new `alembic/` directory
+**Remaining hardening:** Convert SQL-backed revisions into fully declarative Alembic operations before adding downgrade support.
+
+**Files:** `alembic.ini`, `alembic/env.py`, `alembic/versions/*`, `hair_color_db/production/migrate.py`
 
 ---
 
@@ -376,12 +379,11 @@ Not blocking engine runtime for **currently extracted** 30 lines, but limits bra
 For a **production MVP** (salon-facing API on PostgreSQL with parity to SQLite CLI):
 
 ```
-1. R3.2  Alembic project                   ← ops maturity for the PG-backed service
-2. R3.1  CI/static-analysis expansion      ← broaden beyond the baseline gate
-3. R3.3  Gram-age module                   ← professional quantity rationale
-4. R3.4  Consultation/auth layer           ← production workflow ownership
-5. API v1 response contract                ← freeze public PG response fields
-6. T4    Data/rule expansion               ← broader brand and line coverage
+1. R3.3  Gram-age module                   ← professional quantity rationale
+2. R3.4  Consultation/auth layer           ← production workflow ownership
+3. API v1 response contract                ← freeze public PG response fields
+4. R3.1+ Static-analysis expansion         ← continue widening lint/type gates
+5. T4    Data/rule expansion               ← broader brand and line coverage
 ```
 
 For **coverage expansion** (parallel track):

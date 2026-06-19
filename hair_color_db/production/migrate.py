@@ -6,12 +6,18 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
+from alembic import command
+from alembic.config import Config
+from alembic.runtime.migration import MigrationContext
+from alembic.script import ScriptDirectory
 from sqlalchemy import text
 from sqlalchemy.engine import Connection, Engine
 
 from .db import create_db_engine, resolve_database_url
 
 _PRODUCTION_DIR = Path(__file__).resolve().parent
+_REPO_ROOT = _PRODUCTION_DIR.parents[1]
+_ALEMBIC_INI = _REPO_ROOT / "alembic.ini"
 
 MIGRATIONS: tuple[tuple[str, Path], ...] = (
     ("research_baseline", _PRODUCTION_DIR / "research_baseline_schema.sql"),
@@ -164,14 +170,33 @@ def apply_pending_migrations(
     *,
     database_url: str | None = None,
 ) -> list[str]:
-    """Apply all pending migrations in order. Returns newly applied revision ids."""
+    """Apply all pending migrations through Alembic. Returns applied head revisions."""
     db_engine = engine or create_db_engine(database_url)
-    applied_now: list[str] = []
-    with db_engine.begin() as connection:
-        for revision_id, sql_path in MIGRATIONS:
-            if apply_migration(connection, revision_id, sql_path):
-                applied_now.append(revision_id)
-    return applied_now
+    alembic_config = _alembic_config(database_url=database_url)
+    head_revision = ScriptDirectory.from_config(alembic_config).get_current_head()
+
+    with db_engine.connect() as connection:
+        before = MigrationContext.configure(connection).get_current_revision()
+        alembic_config.attributes["connection"] = connection
+        command.upgrade(alembic_config, "head")
+        after = MigrationContext.configure(connection).get_current_revision()
+
+    if before == after:
+        return []
+    if before is None and after == head_revision:
+        return [revision for revision, _ in MIGRATIONS]
+    if before == MIGRATIONS[0][0] and after == head_revision:
+        return [MIGRATIONS[1][0]]
+    return [after or head_revision]
+
+
+def _alembic_config(database_url: str | None = None) -> Config:
+    """Build an Alembic config pointed at this repository's migration project."""
+    config = Config(str(_ALEMBIC_INI))
+    config.set_main_option("script_location", str(_REPO_ROOT / "alembic"))
+    if database_url:
+        config.set_main_option("sqlalchemy.url", database_url)
+    return config
 
 
 @dataclass(frozen=True)
