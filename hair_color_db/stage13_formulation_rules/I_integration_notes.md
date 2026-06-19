@@ -8,7 +8,7 @@ Stage 13 packages deterministic formulation rules as versioned JSON artifacts (s
 
 1. **Stage 12** — `A_brand_line_inventory.json`, `C_normalized_shade_records.json`, `D_line_technical_records.json`
 2. **Stage 13 ontology** — `A_formulation_ontology.json` (entities, enums, developer profiles, pigment map)
-3. **Universal rules** — `B_universal_rule_library.json` (U001–U012)
+3. **Universal rules** — `B_universal_rule_library.json` (U001–U018)
 4. **Line overrides** — `D_brand_line_overrides.json` via `active_override_groups()` in `loaders.py`
 5. **Decision order** — `E_decision_order.json` defines evaluation phases
 6. **Production engine** — `run_engine()` in `formula_builder.py`

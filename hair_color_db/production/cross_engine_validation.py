@@ -288,5 +288,12 @@ def compare_validation_case(
                 f"triggered_workflow: expected={expected_wf} production={prod_wfs}"
             )
 
+    if "formula_zones" in expected:
+        expected_zones = list(expected["formula_zones"])
+        if production.formula_zones != expected_zones:
+            divergences.append(
+                f"formula_zones: expected={expected_zones} production={production.formula_zones}"
+            )
+
     comparison.divergences = divergences
     return comparison

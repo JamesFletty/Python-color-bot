@@ -37,7 +37,7 @@ class FormulaApiTests(unittest.TestCase):
         )
         self.assertEqual(response.status_code, 200)
         payload = response.json()
-        self.assertEqual(payload["status"], "ok")
+        self.assertEqual(payload["status"], "caution")
         self.assertIn("30", payload["formula"]["developer"])
         self.assertEqual(payload["formulation_rules"]["developer_volume"], 30)
 

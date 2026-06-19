@@ -2,12 +2,10 @@
 
 from __future__ import annotations
 
-import os
 import sqlite3
 import unittest
 
-from hair_color_db.production.bootstrap import bootstrap_database
-from hair_color_db.production.db import create_db_engine, create_session_factory
+from hair_color_db.production.pg_test_utils import get_postgres_test_context
 from hair_color_db.production.production_models import ShadeToneCode
 from hair_color_db.production.shade_matching import fetch_shade_candidates, lookup_shade_by_reference
 from src.matching import ShadeQuery, fetch_shade_candidates as sqlite_fetch
@@ -17,17 +15,11 @@ from src.paths import DEFAULT_DB_PATH
 class ShadeMatchingParityTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        if not os.environ.get("DATABASE_URL"):
-            raise unittest.SkipTest("DATABASE_URL not set; PostgreSQL shade matching skipped")
         if not DEFAULT_DB_PATH.exists():
             raise unittest.SkipTest("SQLite database not initialized")
 
-        cls.pg_engine = create_db_engine()
-        cls.Session = create_session_factory(cls.pg_engine)
-        with cls.Session() as session:
-            bootstrap_database(session, engine=cls.pg_engine)
-            session.commit()
-
+        context = get_postgres_test_context()
+        cls.Session = context.Session
         cls.sqlite_conn = sqlite3.connect(DEFAULT_DB_PATH)
 
     @classmethod

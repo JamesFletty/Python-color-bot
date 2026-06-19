@@ -65,7 +65,7 @@ class BuildFormulaStage13Tests(unittest.TestCase):
                 "porosity": 5,
             },
         )
-        self.assertEqual(formula["status"], "ok")
+        self.assertEqual(formula["status"], "caution")
         self.assertEqual(formula["shade"]["product_line"], "SoColor Pre-Bonded")
         self.assertEqual(formula["shade"]["canonical_key"], "Matrix::SoColor::US")
         self.assertEqual(formula["formulation_rules"]["developer_volume"], 30)
@@ -86,7 +86,7 @@ class BuildFormulaStage13Tests(unittest.TestCase):
                 "desired_level": 5,
             },
         )
-        self.assertEqual(formula["status"], "ok")
+        self.assertEqual(formula["status"], "caution")
         self.assertEqual(formula["formulation_rules"]["developer_volume"], 20)
         self.assertIn("M_SOCOLOR_003", formula["formulation_rules"]["matched_rules"])
 

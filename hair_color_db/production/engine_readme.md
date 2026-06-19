@@ -123,9 +123,9 @@ Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code
 
 ## Known limitations
 
+- The FastAPI service can expose PostgreSQL output with `ENGINE_BACKEND=postgres`; versioned public response contracts are still pending.
 - `run_engine()` does not persist — use `persist.persist_engine_output()` or `run_production_engine --persist`.
 - Single primary line per recommendation (no multi-line formulas).
-- `developer_override` intermixing rules are modeled but not yet applied to developer selection.
 - JSON `rule_value` fallback parsing is intentionally narrow (developer volume, mixing ratio string).
 
 ## Running tests
@@ -153,8 +153,8 @@ python3 -m unittest hair_color_db.production.test_pg_e2e -v
 | Module | Role |
 |---|---|
 | `db.py` | Central `DATABASE_URL` resolution, engine + session factory |
-| `migrate.py` | Apply `research_baseline` + `op001_production_layer` SQL migrations |
-| `bootstrap.py` | Migrate + Stage 12 import + Stage 13 import (one command) |
+| `migrate.py` | Compatibility CLI that delegates schema upgrades to Alembic |
+| `bootstrap.py` | Alembic upgrade + Stage 12 import + Stage 13 import (one command) |
 | `catalog_lookup.py` | Resolve brand/line/region/shade UUIDs from imported catalog |
 | `persist.py` | Write `persistence_payload` → `formula` / `formula_step` / `risk_assessment` |
 | `run_production_engine.py` | CLI: run `SqlAlchemyEngineRepository` + optional persist |
@@ -177,7 +177,7 @@ python3 -m hair_color_db.production.run_production_engine \
   --persist
 ```
 
-Import CLIs (`import_stage12_research`, `import_stage13_rules`) and `migrate.py` all read
+Import CLIs (`import_stage12_research`, `import_stage13_rules`), `bootstrap.py`, and `migrate.py` all read
 `DATABASE_URL` or accept `--database-url`.
 
 ### Shade search / matching (PostgreSQL)

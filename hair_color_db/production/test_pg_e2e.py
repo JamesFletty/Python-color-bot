@@ -2,19 +2,16 @@
 
 from __future__ import annotations
 
-import os
 import unittest
 import uuid
 
 from sqlalchemy import func, select
 
-from hair_color_db.production.bootstrap import bootstrap_database
 from hair_color_db.production.catalog_lookup import resolve_catalog_reference
-from hair_color_db.production.db import create_db_engine, create_session_factory
 from hair_color_db.production.engine_models import EngineInput, SelectedShade, ServiceIntent
 from hair_color_db.production.formula_builder import run_engine
-from hair_color_db.production.persist import persist_engine_output
 from hair_color_db.production.production_models import Formula, FormulaStep, HairTexture
+from hair_color_db.production.pg_test_utils import get_postgres_test_context
 from hair_color_db.production.repositories import SqlAlchemyEngineRepository
 from hair_color_db.production.run_production_engine import run_production_engine
 from src.paths import EXPECTED_SHADE_COUNT
@@ -23,13 +20,9 @@ from src.paths import EXPECTED_SHADE_COUNT
 class PostgreSqlEndToEndTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        if not os.environ.get("DATABASE_URL"):
-            raise unittest.SkipTest("DATABASE_URL not set; PostgreSQL e2e skipped")
-        cls.engine = create_db_engine()
-        cls.Session = create_session_factory(cls.engine)
-        with cls.Session() as session:
-            cls.bootstrap = bootstrap_database(session, engine=cls.engine)
-            session.commit()
+        context = get_postgres_test_context()
+        cls.Session = context.Session
+        cls.bootstrap = context.bootstrap
 
     def test_bootstrap_imports_full_catalog(self) -> None:
         report = self.bootstrap.stage12_report
@@ -72,6 +65,47 @@ class PostgreSqlEndToEndTests(unittest.TestCase):
         self.assertIn(result.recommendation_status.value, {"ok", "caution"})
         self.assertGreater(len(result.matched_rules), 0)
         self.assertGreater(len(result.suggested_formula), 0)
+
+
+    def test_fill_guidance_enriched_with_postgres_inventory(self) -> None:
+        with self.Session() as session:
+            catalog = resolve_catalog_reference(
+                session,
+                canonical_key="Matrix::SoColor::US",
+                shade_code="5N",
+            )
+            result = run_engine(
+                EngineInput(
+                    consultation_id=uuid.uuid4(),
+                    line_id=catalog.line_id,
+                    brand_id=catalog.brand_id,
+                    line_region_id=catalog.line_region_id,
+                    natural_level=5,
+                    existing_level=9,
+                    porosity=5,
+                    elasticity=6,
+                    gray_percentage=0,
+                    texture=HairTexture.MEDIUM,
+                    desired_result="multi-level brunette fill",
+                    desired_level=5,
+                    service_intent=ServiceIntent.TONE_DEPOSIT,
+                    selected_shades=[
+                        SelectedShade(
+                            shade_id=catalog.shade_id,
+                            shade_code=catalog.shade_code,
+                        )
+                    ],
+                ),
+                SqlAlchemyEngineRepository(session),
+                line_region_id=catalog.line_region_id,
+            )
+
+        guidance = result.fill_pigment_guidance
+        self.assertIsNotNone(guidance)
+        assert guidance is not None
+        self.assertTrue(guidance.get("target_natural_shades"))
+        first_step = guidance["fill_steps"][0]
+        self.assertTrue(first_step.get("suggested_shades"))
 
     def test_persist_formula_round_trip(self) -> None:
         consultation_id = uuid.uuid4()
