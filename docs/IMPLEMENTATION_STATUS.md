@@ -18,7 +18,7 @@ The project has two runnable stacks that share Stage 13 JSON rules but use diffe
 
 **Core engine behavior is implemented:** Stage 13 rule resolution, deposit/fill guidance, gray developer defaults, brand line overrides, cross-engine validation, auto sub-range from shade records, inventory-backed fill shade lookup (SQLite only), and PostgreSQL shade search/matching.
 
-**Primary gaps:** production HTTP API, PostgreSQL fill-shade enrichment parity, cross-engine status alignment (12 accepted divergences), rule/data coverage for unextracted lines (103+), and platform hardening (CI, Alembic project, gram-age module).
+**Primary gaps:** production HTTP API, PostgreSQL fill-shade enrichment parity, cross-engine status alignment (12 accepted divergences), rule/data coverage for unextracted lines (102+), and platform hardening (CI, Alembic project, gram-age module).
 
 ---
 
@@ -27,8 +27,8 @@ The project has two runnable stacks that share Stage 13 JSON rules but use diffe
 ```mermaid
 flowchart TB
     subgraph Artifacts["Versioned JSON"]
-        S12[stage12_package<br/>1828 shades]
-        S13[stage13_formulation_rules<br/>15 universal + 14 line overrides]
+        S12[stage12_package<br/>1840 shades]
+        S13[stage13_formulation_rules<br/>18 universal + 15 line overrides]
     end
 
     subgraph SQLite["Phase 1 — SQLite"]
@@ -82,21 +82,21 @@ flowchart TB
 
 | Item | Status | Evidence |
 |------|--------|----------|
-| 30 lines with shade extraction | Done | `stage12_package/MANIFEST.json` |
-| 1,828 normalized shade records | Done | `C_normalized_shade_records.json`, `init_db.py` verification |
+| 31 lines with shade extraction | Done | `stage12_package/MANIFEST.json` |
+| 1,840 normalized shade records | Done | `C_normalized_shade_records.json`, `init_db.py` verification |
 | 659 tone normalization mappings | Done | `F_tone_normalization_map.json` |
-| 28 line technical records | Done | `D_line_technical_records.json` |
-| Batches 01–07 integrated | Done | `hair_color_db/batches/batch01` … `batch07` |
+| 29 line technical records | Done | `D_line_technical_records.json` |
+| Batches 01–08 integrated | Done | `hair_color_db/batches/batch01` … `batch07`, Stage 5 FACTION8 records in `stage12_package/` |
 | Gap / licensing reports | Done | `stage11_gaps/`, `stage12_package/I_gap_risk_licensing_report.json` |
 
 ### Stage 13 — Formulation rules
 
 | Item | Status | Evidence |
 |------|--------|----------|
-| 15 universal rules (U001–U015) | Done | `B_universal_rule_library.json` |
-| 14 active line override groups | Done | `D_brand_line_overrides.json` |
+| 18 universal rules (U001–U018) | Done | `B_universal_rule_library.json` |
+| 15 active line override groups | Done | `D_brand_line_overrides.json` |
 | 9 service workflows | Done | `C_service_workflows.json` |
-| 20 validation cases (VC001–VC029 subset) | Done | `F_validation_cases.json` |
+| 21 validation cases (VC001–VC029 subset) | Done | `F_validation_cases.json` |
 | Deterministic resolver | Done | `resolver.py` |
 | Deposit/fill rules (U013–U015) | Done | gray 20 vol, deposit 10 vol, fill pigment |
 | Brand gray overrides (Koleston, Topchic, IGORA, Majirel, Kenra, Colorance, Matrix collections) | Done | `D_brand_line_overrides.json` |
@@ -190,7 +190,7 @@ These unblock a single production deployment path with behavior matching the SQL
 
 **Acceptance criteria:**
 - `curl` against PG-backed API returns same developer volume as `run_production_engine.py` CLI for VC024–VC029 cases
-- Health endpoint reports PG connectivity and import readiness (shade count ≥ 1828)
+- Health endpoint reports PG connectivity and import readiness (shade count ≥ 1840)
 
 **Depends on:** PostgreSQL bootstrap (done)
 
@@ -233,7 +233,7 @@ These unblock a single production deployment path with behavior matching the SQL
 
 **Acceptance criteria:**
 - `test_cross_engine_validation` passes without `WARNING_ELEVATION_CASES` exemption list, **or** explicit policy documented in `I_integration_notes.md`
-- All 20 validation cases have matching `recommendation_status` across engines
+- All 21 validation cases have matching `recommendation_status` across engines
 
 **Files:** `hair_color_db/production/safety_checks.py`, `hair_color_db/stage13_formulation_rules/resolver.py`, `cross_engine_validation.py`
 
@@ -259,19 +259,19 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R2.1 — G005: Pulp Riot FACTION8 line override
 
-**Status:** Open (`G_conflicts_and_gaps.json`)
+**Status:** Closed for representative Stage 5 FACTION8 coverage; exhaustive shade-chart expansion remains a data-backlog item.
 
-**Gap:** Permanent FACTION8 line has no Stage 13 override group; only semi-permanent covered by U009.
+**Gap addressed:** Permanent FACTION8 now has representative Stage 12 shade/technical data and an active Stage 13 override group for gray-coverage and High Lift guardrails.
 
 **Scope:**
-- Add override group to `D_brand_line_overrides.json` when permanent formulation rules are scoped
-- Requires FACTION8 shade inventory in Stage 12 (currently in Stage 11 gap queue)
+- Added override group to `D_brand_line_overrides.json`
+- Added representative FACTION8 shade inventory and line technical record in Stage 12
 
 **Acceptance criteria:**
-- New validation case VC0xx for FACTION8 permanent service path
-- Override group active (not dormant) once shades exist in section C
+- Validation case `VC023_pulpriot_faction8_full_white_gray` covers the permanent gray-coverage path
+- Override group active (not dormant) because FACTION8 shades now exist in section C
 
-**Depends on:** Stage 12 extraction for Pulp Riot FACTION8 (Tier 4)
+**Depends on:** Complete shade-chart expansion remains in Tier 4 for exhaustive coverage
 
 **Files:** `D_brand_line_overrides.json`, `F_validation_cases.json`, `emit_artifacts.py`
 
@@ -371,17 +371,17 @@ These unblock a single production deployment path with behavior matching the SQL
 
 ### Tier 4 — Data acquisition backlog
 
-Not blocking engine runtime for **currently extracted** 30 lines, but limits brand coverage and dormant override activation.
+Not blocking engine runtime for **currently extracted** 31 lines, but limits brand coverage and dormant override activation.
 
 | Metric | Count | Source |
 |--------|-------|--------|
 | Lines inventoried | 133 | Stage 1 |
-| Lines with shade extraction | 30 | Stage 12 MANIFEST |
-| Lines queued (gaps) | 103+ | `stage11_gaps/gap_risk_report.json` |
-| Formulation gaps | 1 (G005) | `G_conflicts_and_gaps.json` |
+| Lines with shade extraction | 31 | Stage 12 MANIFEST |
+| Lines queued (gaps) | 102+ | `stage11_gaps/gap_risk_report.json` |
+| Formulation gaps | 0 active G005 blockers; gap artifact retained for historical tracking | `G_conflicts_and_gaps.json` |
 
 **High-value extraction targets** (examples from gap reports):
-- Pulp Riot FACTION8, Liquid Demi, Lighteners
+- Pulp Riot FACTION8 exhaustive shade-chart expansion, Liquid Demi, Lighteners
 - Redken Color Fusion, Shades EQ Cream
 - Wella Illumina, Blondor lighteners
 - Schwarzkopf IGORA variants beyond ROYAL/VIBRANCE
@@ -394,10 +394,10 @@ Not blocking engine runtime for **currently extracted** 30 lines, but limits bra
 
 | Item | Location | Fix |
 |------|----------|-----|
-| Stale shade count in init header | `init_db.py` | Update 1,479 → 1,828 |
+| Stale shade count in init header | `init_db.py` | Update 1,479 → 1,840 |
 | Warning divergence count | `engine_readme.md` | 6 → 12 cases or link to `WARNING_ELEVATION_CASES` |
-| I_integration_notes case count | says 14 cases | Update to 20 |
-| Root README line count | says 26 lines | MANIFEST says 30 with extraction |
+| I_integration_notes case count | says 14 cases | Update to 21 |
+| Root README line count | says 26 lines | MANIFEST says 31 with extraction |
 | Stage 13 universal rule range in I_integration_notes | U001–U012 | U001–U015 |
 
 ---
@@ -419,7 +419,7 @@ For a **production MVP** (salon-facing API on PostgreSQL with parity to SQLite C
 For **coverage expansion** (parallel track):
 
 ```
-T4 batches → R2.1 G005 / FACTION8 → R2.3 new validation cases
+T4 batches → FACTION8 exhaustive shade-chart expansion / next priority lines → R2.3 new validation cases
 ```
 
 ---

@@ -5,10 +5,10 @@
   "conflicts_and_gaps": [
     {
       "gap_id": "G005",
-      "gap_type": "workflow_coverage",
-      "severity": "low",
-      "details": "Pulp Riot FACTION8 permanent line has no Stage 13 line override group; covered only by universal direct-dye rule U009 for semi-permanent.",
-      "recommended_next_action": "Add FACTION8 override group when permanent formulation rules are scoped."
+      "gap_type": "historical_resolution",
+      "severity": "info",
+      "details": "G005 representative coverage resolved: Pulp Riot FACTION8 now has active Stage 12 representative shade/technical data and Stage 13 line overrides. Exhaustive shade-chart expansion remains in the Stage 12 data backlog.",
+      "recommended_next_action": "Continue Stage 5 coverage expansion with exhaustive FACTION8 shade-chart extraction or next priority lines (Redken Color Fusion, Wella Illumina/Blondor, Schwarzkopf IGORA variants)."
     }
   ]
 }

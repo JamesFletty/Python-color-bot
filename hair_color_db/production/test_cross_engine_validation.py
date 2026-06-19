@@ -21,7 +21,7 @@ class CrossEngineValidationTests(unittest.TestCase):
         cls.cases = load_validation_cases()
 
     def test_packaged_case_count(self) -> None:
-        self.assertEqual(len(self.cases), 20)
+        self.assertEqual(len(self.cases), 21)
 
     def test_cross_engine_validation_cases(self) -> None:
         for case in self.cases:
