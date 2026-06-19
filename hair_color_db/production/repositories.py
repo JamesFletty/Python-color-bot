@@ -17,6 +17,7 @@ from .production_models import (
     FormulationRuleLine,
     LineTechnicalRule,
     ProductLine,
+    ProductLineRegion,
     ShadeIntermixingRule,
     UniversalColorScience,
 )
@@ -94,6 +95,10 @@ class EngineRepository(Protocol):
 
     def load_universal_color_science(self) -> list[UniversalColorScienceRecord]: ...
 
+    def enrich_fill_guidance(
+        self, line_region_id: UUID | None, fill_guidance: dict[str, Any] | None
+    ) -> dict[str, Any] | None: ...
+
 
 class InMemoryEngineRepository:
     """In-memory repository for unit tests and offline evaluation."""
@@ -151,6 +156,11 @@ class InMemoryEngineRepository:
 
     def load_universal_color_science(self) -> list[UniversalColorScienceRecord]:
         return list(self.color_science)
+
+    def enrich_fill_guidance(
+        self, line_region_id: UUID | None, fill_guidance: dict[str, Any] | None
+    ) -> dict[str, Any] | None:
+        return fill_guidance
 
 
 class SqlAlchemyEngineRepository:
@@ -266,6 +276,22 @@ class SqlAlchemyEngineRepository:
             )
             for row in rows
         ]
+
+    def enrich_fill_guidance(
+        self, line_region_id: UUID | None, fill_guidance: dict[str, Any] | None
+    ) -> dict[str, Any] | None:
+        if line_region_id is None or not fill_guidance:
+            return fill_guidance
+        region = self.session.get(ProductLineRegion, line_region_id)
+        if region is None:
+            return fill_guidance
+        from .fill_shade_lookup import enrich_fill_guidance_with_inventory
+
+        return enrich_fill_guidance_with_inventory(
+            self.session,
+            region.canonical_key,
+            fill_guidance,
+        )
 
 
 def build_seed_repository() -> InMemoryEngineRepository:

@@ -138,6 +138,8 @@ class EngineOutput(BaseModel):
     explanation_summary: str
     persistence_payload: Optional[PersistencePayload] = None
     triggered_workflows: list[str] = Field(default_factory=list)
+    formula_zones: Optional[list[str]] = None
+    fill_pigment_guidance: Optional[dict[str, Any]] = None
 
 
 class RuleEvaluationContext(BaseModel):

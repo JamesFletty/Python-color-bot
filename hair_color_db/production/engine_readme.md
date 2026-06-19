@@ -123,9 +123,9 @@ Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code
 
 ## Known limitations
 
+- PostgreSQL-backed fill guidance is enriched in engine output, but no production HTTP API exposes it yet.
 - `run_engine()` does not persist — use `persist.persist_engine_output()` or `run_production_engine --persist`.
 - Single primary line per recommendation (no multi-line formulas).
-- `developer_override` intermixing rules are modeled but not yet applied to developer selection.
 - JSON `rule_value` fallback parsing is intentionally narrow (developer volume, mixing ratio string).
 
 ## Running tests
@@ -211,7 +211,7 @@ Stage 12 import now populates `shade_tone_code` links so normalized tones resolv
 1. Stage 13 `resolve_formulation_rules()`
 2. Production `run_engine()` with equivalent `EngineInput` and `context_overrides`
 
-**Documented divergence:** six cases (`VC006`, `VC007`, `VC009`, `VC010`, `VC019`, `VC023`) produce
-`caution` in production because `derive_recommendation_status()` elevates rule warnings, while
-Stage 13 leaves status `ok` when a rule only emits a `warning` action. Formulation-layer
-`matched_rules`, `developer_volume`, and `block_reason` still align.
+Warning-only rule actions intentionally resolve to `caution` in both engines. The Stage 13
+resolver and production `derive_recommendation_status()` therefore share the same status
+semantics for validation cases while still comparing `matched_rules`, `developer_volume`,
+and `block_reason`.

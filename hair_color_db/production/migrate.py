@@ -20,9 +20,100 @@ MIGRATIONS: tuple[tuple[str, Path], ...] = (
 
 
 def _statements(sql: str) -> list[str]:
-    cleaned = re.sub(r"--[^\n]*", "", sql)
-    parts = [part.strip() for part in cleaned.split(";")]
-    return [part for part in parts if part]
+    """Split SQL migration text into executable statements.
+
+    PostgreSQL migration files may contain semicolons inside single-quoted
+    strings, double-quoted identifiers, comments, or dollar-quoted function
+    bodies. A simple ``sql.split(";")`` corrupts dollar-quoted PL/pgSQL
+    blocks, so this scanner only splits on top-level semicolons.
+    """
+    statements: list[str] = []
+    current: list[str] = []
+    index = 0
+    quote: str | None = None
+    dollar_tag: str | None = None
+    line_comment = False
+    block_comment = False
+
+    while index < len(sql):
+        char = sql[index]
+        next_char = sql[index + 1] if index + 1 < len(sql) else ""
+
+        if line_comment:
+            if char == "\n":
+                line_comment = False
+                current.append(char)
+            index += 1
+            continue
+
+        if block_comment:
+            if char == "*" and next_char == "/":
+                block_comment = False
+                index += 2
+            else:
+                index += 1
+            continue
+
+        if dollar_tag is not None:
+            if sql.startswith(dollar_tag, index):
+                current.append(dollar_tag)
+                index += len(dollar_tag)
+                dollar_tag = None
+            else:
+                current.append(char)
+                index += 1
+            continue
+
+        if quote is not None:
+            current.append(char)
+            if char == quote:
+                if next_char == quote:
+                    current.append(next_char)
+                    index += 2
+                    continue
+                quote = None
+            index += 1
+            continue
+
+        if char == "-" and next_char == "-":
+            line_comment = True
+            index += 2
+            continue
+
+        if char == "/" and next_char == "*":
+            block_comment = True
+            index += 2
+            continue
+
+        if char in {"'", '"'}:
+            quote = char
+            current.append(char)
+            index += 1
+            continue
+
+        if char == "$":
+            match = re.match(r"\$[A-Za-z_][A-Za-z0-9_]*\$|\$\$", sql[index:])
+            if match:
+                dollar_tag = match.group(0)
+                current.append(dollar_tag)
+                index += len(dollar_tag)
+                continue
+
+        if char == ";":
+            statement = "".join(current).strip()
+            if statement:
+                statements.append(statement)
+            current = []
+            index += 1
+            continue
+
+        current.append(char)
+        index += 1
+
+    statement = "".join(current).strip()
+    if statement:
+        statements.append(statement)
+    return statements
 
 
 def _ensure_migration_table(connection: Connection) -> None:

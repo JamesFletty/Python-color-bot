@@ -95,6 +95,9 @@ def run_production_engine(
         "blocked_by": output.blocked_by,
         "explanation_summary": output.explanation_summary,
         "suggested_formula_steps": len(output.suggested_formula),
+        "triggered_workflows": output.triggered_workflows,
+        "formula_zones": output.formula_zones,
+        "fill_pigment_guidance": output.fill_pigment_guidance,
         "formula_id": str(formula_id) if formula_id else None,
         "persisted": formula_id is not None,
     }

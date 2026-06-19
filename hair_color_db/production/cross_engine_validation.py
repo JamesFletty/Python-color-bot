@@ -44,28 +44,8 @@ CONTEXT_EXTRA_FIELDS = frozenset(
     }
 )
 
-# Cases where production elevates rule warnings to `caution` via derive_recommendation_status
-# while Stage 13 leaves status `ok` when only a warning action fired.
-WARNING_ELEVATION_CASES = frozenset(
-    {
-        "VC006_gray_blend_matrix_sync",
-        "VC007_supersync_tint_back",
-        "VC009_coil_gray_ratio",
-        "VC010_direct_dye_no_developer",
-        "VC019_wella_colortouch_soft_blend",
-        "VC023_pulpriot_direct_dye",
-        "VC024_gray_default_20vol",
-        "VC025_darken_deposit_developer",
-        "VC026_multi_level_darken_fill",
-        "VC027_koleston_gray_20vol",
-        "VC028_topchic_gray_20vol",
-        "VC029_igora_absolutes_30vol",
-    }
-)
-
-# Resolver-only expectations not surfaced by run_engine().
-RESOLVER_ONLY_EXPECTATIONS = frozenset({"formula_zones"})
-
+# Warning-only rule actions now intentionally elevate both engines to `caution`.
+WARNING_ELEVATION_CASES = frozenset()
 
 @dataclass
 class CrossEngineComparison:
@@ -243,17 +223,14 @@ def compare_validation_case(
 
     expected_status = str(expected.get("recommendation_status", "ok"))
     actual_status = production.recommendation_status.value
-    if case_id in WARNING_ELEVATION_CASES:
-        if expected_status == "ok" and actual_status == "caution":
-            divergences.append("warning_elevates_to_caution: accepted production behavior")
-        elif expected_status != actual_status:
-            divergences.append(
-                f"recommendation_status: stage13={stage13.recommendation_status} "
-                f"production={actual_status}"
-            )
-    elif expected_status != actual_status:
+    if stage13.recommendation_status != actual_status:
         divergences.append(
             f"recommendation_status: stage13={stage13.recommendation_status} "
+            f"production={actual_status}"
+        )
+    elif expected_status != actual_status:
+        divergences.append(
+            f"recommendation_status: expected={expected_status} "
             f"production={actual_status}"
         )
 
@@ -305,6 +282,13 @@ def compare_validation_case(
         if expected_wf not in prod_wfs and stage13.triggered_workflow != expected_wf:
             divergences.append(
                 f"triggered_workflow: expected={expected_wf} production={prod_wfs}"
+            )
+
+    if "formula_zones" in expected:
+        expected_zones = list(expected["formula_zones"])
+        if production.formula_zones != expected_zones:
+            divergences.append(
+                f"formula_zones: expected={expected_zones} production={production.formula_zones}"
             )
 
     comparison.divergences = divergences

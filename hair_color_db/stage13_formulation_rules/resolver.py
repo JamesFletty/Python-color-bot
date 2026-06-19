@@ -238,4 +238,7 @@ def resolve_formulation_rules(
             f"Line overrides dormant for {context.canonical_key} until Stage 12 shade inventory exists."
         )
 
+    if result.warnings and result.recommendation_status == "ok":
+        result.recommendation_status = "caution"
+
     return result

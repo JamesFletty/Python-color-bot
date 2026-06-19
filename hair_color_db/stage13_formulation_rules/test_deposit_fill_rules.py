@@ -57,6 +57,22 @@ class DepositFillRuleTests(unittest.TestCase):
         self.assertIn("M_SOCOLOR_001", result.matched_rules)
         self.assertEqual(result.developer_volume, 30)
 
+
+    def test_multi_level_lift_developer_takes_precedence_over_line_gray_default(self) -> None:
+        result = resolve_formulation_rules(
+            {
+                "service_intent": "lift_and_tone",
+                "gray_percentage": 60,
+                "natural_level": 5,
+                "desired_level": 8,
+            },
+            canonical_key="Wella Professionals::Koleston Perfect::US",
+        )
+        self.assertIn("U018", result.matched_rules)
+        self.assertIn("W_KP_GRAY_001", result.matched_rules)
+        self.assertEqual(result.developer_volume, 40)
+        self.assertEqual(result.recommendation_status, "caution")
+
     def test_darken_one_level_uses_deposit_10_vol(self) -> None:
         result = resolve_formulation_rules(
             {
