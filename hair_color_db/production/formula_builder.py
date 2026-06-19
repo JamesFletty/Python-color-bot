@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import uuid
 from decimal import Decimal
-from typing import Optional
+from typing import Any, Optional, cast
 
 from .engine_models import (
     EngineInput,
@@ -17,6 +17,7 @@ from .engine_models import (
     SuggestedFormulaStep,
 )
 from .production_models import FormulaStatus, FormulaZone
+from .quantity import apply_quantity_plan, quantity_rationale
 from .repositories import EngineRepository
 from .rule_evaluator import evaluate_and_apply_rules
 from src.sub_range_intake import sub_range_labels_from_selected_shades
@@ -101,13 +102,14 @@ def _build_steps_for_intent(
                 ),
             )
         )
-        if mid_shade or end_shade:
+        pull_through_shade = mid_shade or end_shade
+        if pull_through_shade:
             steps.append(
                 SuggestedFormulaStep(
                     step_order=2,
                     zone=FormulaZone.MID,
-                    shade_id=(mid_shade or end_shade).shade_id if (mid_shade or end_shade) else None,
-                    shade_code=(mid_shade or end_shade).shade_code if (mid_shade or end_shade) else None,
+                    shade_id=pull_through_shade.shade_id,
+                    shade_code=pull_through_shade.shade_code,
                     developer_id=engine_input.developer_id,
                     developer_volume=developer_volume,
                     mixing_ratio=mixing_ratio,
@@ -222,6 +224,14 @@ def run_engine(
     formulation_rules = repository.load_active_formulation_rules(brand_id, engine_input.line_id)
     matched_rules, accumulated = evaluate_and_apply_rules(formulation_rules, context)
 
+    requested_workflow = getattr(context, "workflow", None)
+    if requested_workflow and requested_workflow not in accumulated.triggered_workflows:
+        accumulated.triggered_workflows.append(str(requested_workflow))
+
+    formula_zones: list[str] | None = None
+    if "WF_retouch_with_refresh" in accumulated.triggered_workflows:
+        formula_zones = ["root", "mid", "end"]
+
     line_defaults: dict[str, object] = {}
     if region_id:
         line_defaults = resolve_line_technical_defaults(
@@ -232,12 +242,12 @@ def run_engine(
     if accumulated.developer_locked:
         developer_volume = accumulated.developer_volume
     else:
-        developer_volume = int(
-            accumulated.developer_volume or line_defaults.get("developer_volume") or 20
-        )
-    processing_time = int(
+        developer_default = accumulated.developer_volume or line_defaults.get("developer_volume") or 20
+        developer_volume = int(cast(Any, developer_default))
+    processing_default = (
         accumulated.processing_time_minutes or line_defaults.get("processing_time_minutes") or 35
     )
+    processing_time = int(cast(Any, processing_default))
     processing_time = _parse_time_adjustment(
         processing_time, accumulated.processing_time_adjustments
     )
@@ -247,11 +257,14 @@ def run_engine(
 
     intermix_blocks: list[str] = []
     intermix_warnings: list[str] = []
+    intermix_developer_override: int | None = None
     if region_id:
-        intermix_blocks, intermix_warnings = check_intermixing(
+        intermix_blocks, intermix_warnings, intermix_developer_override = check_intermixing(
             engine_input.selected_shades,
             repository.load_intermixing_rules(region_id),
         )
+    if intermix_developer_override is not None and not accumulated.developer_locked:
+        developer_volume = intermix_developer_override
 
     science_consultations, science_warnings = check_lift_and_color_science(
         context,
@@ -286,6 +299,10 @@ def run_engine(
             accumulated.natural_shade_ratio,
         )
         if accumulated.fill_pigment_guidance:
+            accumulated.fill_pigment_guidance = repository.enrich_fill_guidance(
+                region_id,
+                accumulated.fill_pigment_guidance,
+            )
             fill = accumulated.fill_pigment_guidance
             tone_summary = ", ".join(
                 step["underlying_pigment"] for step in fill.get("fill_steps", [])
@@ -306,6 +323,7 @@ def run_engine(
                 steps[idx - 1] = step.model_copy(update={"step_order": idx})
         for idx, extra in enumerate(accumulated.extra_steps, start=len(steps) + 1):
             steps.append(extra.model_copy(update={"step_order": idx}))
+        steps = apply_quantity_plan(steps, engine_input)
 
     risk_assessments = build_risk_assessments(accumulated, context)
     base_risk = sum(float(r.probability) for r in risk_assessments) / max(len(risk_assessments), 1)
@@ -314,6 +332,7 @@ def run_engine(
     explanation_parts = [
         f"Matched {len(matched_rules)} formulation rule(s).",
         f"Developer {developer_volume} vol, {processing_time} min processing.",
+        quantity_rationale(engine_input),
     ]
     if accumulated.require_natural_shade_mix:
         explanation_parts.append(
@@ -351,4 +370,12 @@ def run_engine(
         explanation_summary=explanation,
         persistence_payload=persistence,
         triggered_workflows=accumulated.triggered_workflows,
+        formula_zones=formula_zones,
+        fill_pigment_guidance=accumulated.fill_pigment_guidance,
+        quantity_rationale=quantity_rationale(engine_input),
+        audit_trail=[
+            rule.model_dump(mode="json")
+            for rule in matched_rules
+            if rule.evidence_status or rule.evidence_notes
+        ],
     )

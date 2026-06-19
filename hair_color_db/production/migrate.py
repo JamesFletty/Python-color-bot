@@ -5,6 +5,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 from sqlalchemy import text
 from sqlalchemy.engine import Connection, Engine
@@ -12,6 +13,8 @@ from sqlalchemy.engine import Connection, Engine
 from .db import create_db_engine, resolve_database_url
 
 _PRODUCTION_DIR = Path(__file__).resolve().parent
+_REPO_ROOT = _PRODUCTION_DIR.parents[1]
+_ALEMBIC_INI = _REPO_ROOT / "alembic.ini"
 
 MIGRATIONS: tuple[tuple[str, Path], ...] = (
     ("research_baseline", _PRODUCTION_DIR / "research_baseline_schema.sql"),
@@ -20,9 +23,100 @@ MIGRATIONS: tuple[tuple[str, Path], ...] = (
 
 
 def _statements(sql: str) -> list[str]:
-    cleaned = re.sub(r"--[^\n]*", "", sql)
-    parts = [part.strip() for part in cleaned.split(";")]
-    return [part for part in parts if part]
+    """Split SQL migration text into executable statements.
+
+    PostgreSQL migration files may contain semicolons inside single-quoted
+    strings, double-quoted identifiers, comments, or dollar-quoted function
+    bodies. A simple ``sql.split(";")`` corrupts dollar-quoted PL/pgSQL
+    blocks, so this scanner only splits on top-level semicolons.
+    """
+    statements: list[str] = []
+    current: list[str] = []
+    index = 0
+    quote: str | None = None
+    dollar_tag: str | None = None
+    line_comment = False
+    block_comment = False
+
+    while index < len(sql):
+        char = sql[index]
+        next_char = sql[index + 1] if index + 1 < len(sql) else ""
+
+        if line_comment:
+            if char == "\n":
+                line_comment = False
+                current.append(char)
+            index += 1
+            continue
+
+        if block_comment:
+            if char == "*" and next_char == "/":
+                block_comment = False
+                index += 2
+            else:
+                index += 1
+            continue
+
+        if dollar_tag is not None:
+            if sql.startswith(dollar_tag, index):
+                current.append(dollar_tag)
+                index += len(dollar_tag)
+                dollar_tag = None
+            else:
+                current.append(char)
+                index += 1
+            continue
+
+        if quote is not None:
+            current.append(char)
+            if char == quote:
+                if next_char == quote:
+                    current.append(next_char)
+                    index += 2
+                    continue
+                quote = None
+            index += 1
+            continue
+
+        if char == "-" and next_char == "-":
+            line_comment = True
+            index += 2
+            continue
+
+        if char == "/" and next_char == "*":
+            block_comment = True
+            index += 2
+            continue
+
+        if char in {"'", '"'}:
+            quote = char
+            current.append(char)
+            index += 1
+            continue
+
+        if char == "$":
+            match = re.match(r"\$[A-Za-z_][A-Za-z0-9_]*\$|\$\$", sql[index:])
+            if match:
+                dollar_tag = match.group(0)
+                current.append(dollar_tag)
+                index += len(dollar_tag)
+                continue
+
+        if char == ";":
+            statement = "".join(current).strip()
+            if statement:
+                statements.append(statement)
+            current = []
+            index += 1
+            continue
+
+        current.append(char)
+        index += 1
+
+    statement = "".join(current).strip()
+    if statement:
+        statements.append(statement)
+    return statements
 
 
 def _ensure_migration_table(connection: Connection) -> None:
@@ -73,14 +167,39 @@ def apply_pending_migrations(
     *,
     database_url: str | None = None,
 ) -> list[str]:
-    """Apply all pending migrations in order. Returns newly applied revision ids."""
+    """Apply all pending migrations through Alembic. Returns applied head revisions."""
+    from alembic import command
+    from alembic.runtime.migration import MigrationContext
+    from alembic.script import ScriptDirectory
+
     db_engine = engine or create_db_engine(database_url)
-    applied_now: list[str] = []
-    with db_engine.begin() as connection:
-        for revision_id, sql_path in MIGRATIONS:
-            if apply_migration(connection, revision_id, sql_path):
-                applied_now.append(revision_id)
-    return applied_now
+    alembic_config = _alembic_config(database_url=database_url)
+    head_revision = ScriptDirectory.from_config(alembic_config).get_current_head()
+
+    with db_engine.connect() as connection:
+        before = MigrationContext.configure(connection).get_current_revision()
+        alembic_config.attributes["connection"] = connection
+        command.upgrade(alembic_config, "head")
+        after = MigrationContext.configure(connection).get_current_revision()
+
+    if before == after:
+        return []
+    if before is None and after == head_revision:
+        return [revision for revision, _ in MIGRATIONS]
+    if before == MIGRATIONS[0][0] and after == head_revision:
+        return [MIGRATIONS[1][0]]
+    return [after or head_revision]
+
+
+def _alembic_config(database_url: str | None = None) -> Any:
+    """Build an Alembic config pointed at this repository's migration project."""
+    from alembic.config import Config
+
+    config = Config(str(_ALEMBIC_INI))
+    config.set_main_option("script_location", str(_REPO_ROOT / "alembic"))
+    if database_url:
+        config.set_main_option("sqlalchemy.url", database_url)
+    return config
 
 
 @dataclass(frozen=True)

@@ -25,6 +25,7 @@ from .repositories import (
     TEN_MIN_SUB_RANGE_ID,
     ULTRA_BLONDE_SUB_RANGE_ID,
     FormulationRuleRecord,
+    IntermixingRuleRecord,
     InMemoryEngineRepository,
     build_seed_repository,
 )
@@ -214,6 +215,73 @@ class EngineGoldenPathTests(unittest.TestCase):
         )
         self.assertIn(result.recommendation_status, {RecommendationStatus.CAUTION, RecommendationStatus.OK})
         self.assertTrue(any("DreamAge" in w for w in result.warnings))
+
+
+    def test_developer_override_intermixing_adjusts_developer(self) -> None:
+        repo = build_seed_repository()
+        repo.intermixing_rules.append(
+            IntermixingRuleRecord(
+                rule_id=uuid.uuid4(),
+                line_region_id=MATRIX_REGION_ID,
+                applies_to_sub_range_id=BLENDED_SUB_RANGE_ID,
+                compatible_sub_range_id=NORMAL_SUB_RANGE_ID,
+                shade_id=None,
+                compatible_shade_id=None,
+                rule_scope="cross_sub_range",
+                restriction_type="developer_override",
+                restriction_note="When Blended and standard shades are intermixed, use 10 vol developer.",
+            )
+        )
+
+        result = run_engine(
+            _base_input(
+                selected_shades=[
+                    SelectedShade(
+                        shade_id=uuid.uuid4(),
+                        shade_code="5G",
+                        sub_range_id=BLENDED_SUB_RANGE_ID,
+                    ),
+                    SelectedShade(
+                        shade_id=uuid.uuid4(),
+                        shade_code="5NN",
+                        sub_range_id=NORMAL_SUB_RANGE_ID,
+                    ),
+                ],
+            ),
+            repo,
+        )
+
+        self.assertEqual(result.suggested_formula[0].developer_volume, 10)
+        self.assertTrue(any("10 vol" in warning for warning in result.warnings))
+
+    def test_quantity_plan_uses_hair_length(self) -> None:
+        short = run_engine(_base_input(hair_length="short"), self.repo)
+        long = run_engine(_base_input(hair_length="long"), self.repo)
+
+        self.assertEqual(short.suggested_formula[0].quantity_grams, 40)
+        self.assertEqual(long.suggested_formula[0].quantity_grams, 90)
+        self.assertIn("long hair", long.quantity_rationale or "")
+
+    def test_matched_rule_evidence_surfaces_in_audit_trail(self) -> None:
+        repo = build_seed_repository()
+        repo.formulation_rules.append(
+            FormulationRuleRecord(
+                rule_id=uuid.uuid4(),
+                rule_name="test_evidence_rule",
+                rule_priority=1,
+                rule_condition={"all_of": [{"field": "gray_percentage", "op": ">=", "value": 30}]},
+                rule_action={"warning": "Evidence-backed caution."},
+                rule_category="gray_coverage",
+                evidence_status="verified",
+                evidence_notes="Imported from Stage 13 package (TEST_EVIDENCE)",
+            )
+        )
+
+        result = run_engine(_base_input(gray_percentage=30), repo)
+
+        self.assertTrue(result.audit_trail)
+        self.assertEqual(result.audit_trail[0]["evidence_status"], "verified")
+        self.assertIn("TEST_EVIDENCE", result.audit_trail[0]["evidence_notes"])
 
     def test_ten_min_internal_only_blocks_other_subrange(self) -> None:
         result = run_engine(

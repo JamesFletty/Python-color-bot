@@ -59,7 +59,7 @@ class SubRangeAutoDetectIntegrationTests(unittest.TestCase):
                 "desired_level": 5,
             },
         )
-        self.assertEqual(formula["status"], "ok")
+        self.assertEqual(formula["status"], "caution")
         self.assertEqual(formula["shade"]["sub_range"], "Extra Coverage")
         self.assertEqual(formula["formulation_rules"]["developer_volume"], 20)
         self.assertIn("M_SOCOLOR_003", formula["formulation_rules"]["matched_rules"])

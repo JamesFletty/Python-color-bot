@@ -31,14 +31,24 @@ def ensure_consultation(
     consultation_id: uuid.UUID,
     *,
     stylist_id: uuid.UUID = SYSTEM_STYLIST_ID,
+    client_id: uuid.UUID | None = None,
+    salon_id: uuid.UUID | None = None,
 ) -> Consultation:
     """Create a draft consultation row when missing (required for formula FK)."""
     existing = session.get(Consultation, consultation_id)
     if existing:
+        if client_id is not None:
+            existing.client_id = client_id
+        if salon_id is not None:
+            existing.salon_id = salon_id
+        if stylist_id != SYSTEM_STYLIST_ID:
+            existing.stylist_id = stylist_id
         return existing
     consultation = Consultation(
         consultation_id=consultation_id,
+        client_id=client_id,
         stylist_id=stylist_id,
+        salon_id=salon_id,
         status=ConsultationStatus.DRAFT,
     )
     session.add(consultation)
@@ -52,9 +62,17 @@ def persist_formula_payload(
     *,
     consultation_id: uuid.UUID,
     stylist_id: uuid.UUID = SYSTEM_STYLIST_ID,
+    client_id: uuid.UUID | None = None,
+    salon_id: uuid.UUID | None = None,
 ) -> uuid.UUID:
     """Write formula, steps, and risk assessments from a persistence payload."""
-    ensure_consultation(session, consultation_id, stylist_id=stylist_id)
+    ensure_consultation(
+        session,
+        consultation_id,
+        stylist_id=stylist_id,
+        client_id=client_id,
+        salon_id=salon_id,
+    )
 
     formula_data = dict(payload.formula)
     formula_data["consultation_id"] = consultation_id
@@ -115,6 +133,8 @@ def persist_engine_output(
     output: EngineOutput,
     *,
     stylist_id: uuid.UUID = SYSTEM_STYLIST_ID,
+    client_id: uuid.UUID | None = None,
+    salon_id: uuid.UUID | None = None,
 ) -> Optional[uuid.UUID]:
     """Persist formula rows when the engine produced a persistence payload."""
     if output.persistence_payload is None:
@@ -124,4 +144,6 @@ def persist_engine_output(
         output.persistence_payload,
         consultation_id=engine_input.consultation_id,
         stylist_id=stylist_id,
+        client_id=client_id,
+        salon_id=salon_id,
     )

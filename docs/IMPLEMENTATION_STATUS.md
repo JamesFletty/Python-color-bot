@@ -1,7 +1,7 @@
 # Hair Color Formula Engine — Implementation Status
 
-**Last updated:** 2026-06-17  
-**Baseline commit:** `main` @ `c4e46c9` (PR #19 — FastAPI wrapper merged)
+**Last updated:** 2026-06-19  
+**Baseline commit:** current branch after CI/status-alignment documentation pass
 
 This document evaluates what is **done**, what is **partial**, and what **remains** to reach a production-ready salon formula recommendation service. It supersedes informal backlog notes from the integration conversation.
 
@@ -14,11 +14,11 @@ The project has two runnable stacks that share Stage 13 JSON rules but use diffe
 | Stack | Status | Entry points |
 |-------|--------|--------------|
 | **Phase 1 SQLite** | **Operational** | `init_db.py`, `query_engine.py`, `formula_engine.py`, `api/main.py` (FastAPI) |
-| **Production PostgreSQL** | **CLI + tests operational; no HTTP service** | `bootstrap.py`, `run_production_engine.py`, `query_production_engine.py` |
+| **Production PostgreSQL** | **CLI + FastAPI backend switch + tests operational; v1 contract baseline in progress** | `bootstrap.py`, `run_production_engine.py`, `query_production_engine.py`, `api/main.py` with `ENGINE_BACKEND=postgres`, `/v1/production/*` |
 
-**Core engine behavior is implemented:** Stage 13 rule resolution, deposit/fill guidance, gray developer defaults, brand line overrides, cross-engine validation, auto sub-range from shade records, inventory-backed fill shade lookup (SQLite only), and PostgreSQL shade search/matching.
+**Core engine behavior is implemented:** Stage 13 rule resolution, deposit/fill guidance, gray developer defaults, brand line overrides, cross-engine validation, auto sub-range from shade records, inventory-backed fill shade lookup on both SQLite and PostgreSQL engine outputs, and PostgreSQL shade search/matching.
 
-**Primary gaps:** production HTTP API, PostgreSQL fill-shade enrichment parity, cross-engine status alignment (12 accepted divergences), rule/data coverage for unextracted lines (103+), and platform hardening (CI, Alembic project, gram-age module).
+**Primary gaps:** rule/data coverage for unextracted lines (103+), broader static-analysis coverage, production-grade auth/RBAC beyond trusted request-context headers, and deeper consultation workflow endpoints beyond the baseline status transition API.
 
 ---
 
@@ -28,7 +28,7 @@ The project has two runnable stacks that share Stage 13 JSON rules but use diffe
 flowchart TB
     subgraph Artifacts["Versioned JSON"]
         S12[stage12_package<br/>1828 shades]
-        S13[stage13_formulation_rules<br/>15 universal + 14 line overrides]
+        S13[stage13_formulation_rules<br/>18 universal + 14 line overrides]
     end
 
     subgraph SQLite["Phase 1 — SQLite"]
@@ -93,12 +93,12 @@ flowchart TB
 
 | Item | Status | Evidence |
 |------|--------|----------|
-| 15 universal rules (U001–U015) | Done | `B_universal_rule_library.json` |
+| 18 universal rules (U001–U018) | Done | `B_universal_rule_library.json`, `MANIFEST.json` |
 | 14 active line override groups | Done | `D_brand_line_overrides.json` |
 | 9 service workflows | Done | `C_service_workflows.json` |
 | 20 validation cases (VC001–VC029 subset) | Done | `F_validation_cases.json` |
 | Deterministic resolver | Done | `resolver.py` |
-| Deposit/fill rules (U013–U015) | Done | gray 20 vol, deposit 10 vol, fill pigment |
+| Deposit/fill and lift precedence rules (U013–U018) | Done | gray 20 vol, deposit 10 vol, fill pigment, 20/30/40 lift developer locks |
 | Brand gray overrides (Koleston, Topchic, IGORA, Majirel, Kenra, Colorance, Matrix collections) | Done | `D_brand_line_overrides.json` |
 | Shared rule evaluator | Done | `hair_color_db/formulation_rules/evaluator.py` (PR #14) |
 | Package build / emit | Done | `build.py`, `emit_artifacts.py` |
@@ -112,7 +112,7 @@ flowchart TB
 | **D** | Stage 12 → PostgreSQL import | `import_stage12_research.py` |
 | **E** | SQLite CLI convergence | `src/formula_builder.py`, `formula_engine.py`, Stage 13 overlay on primary `developer` |
 
-### Post-integration features (PRs #16–#19)
+### Post-integration features (PRs #16–#19 + recent stabilization)
 
 | Feature | PR | Notes |
 |---------|-----|-------|
@@ -120,6 +120,8 @@ flowchart TB
 | PostgreSQL shade search/matching | #17 | `shade_matching.py`, `query_production_engine.py`, `--shade-ref` |
 | Auto sub-range from shade record | #18 | `src/sub_range_intake.py`; no manual `--sub-range` for collection shades |
 | FastAPI over SQLite engine | #19 | `api/main.py`, `src/formula_engine_service.py` |
+| CI + PG test hardening | Recent | Split lint/type, SQLite, and PostgreSQL jobs; failure log artifacts; expanded focused lint/type gates |
+| Cross-engine warning status alignment | Recent | warning-only actions resolve to `caution` in both Stage 13 and production |
 
 ### SQLite CLI capabilities
 
@@ -134,7 +136,7 @@ flowchart TB
 - `run_engine()` with repository injection (in-memory + SQLAlchemy)
 - Intermixing, color science, line technical defaults, risk assessments
 - `persistence_payload` + `persist.py` writer for formula/steps/risks
-- Fill pigment step in output (no inventory enrichment on PG path)
+- Fill pigment step in output with PostgreSQL inventory enrichment
 - Auto `selected_sub_ranges` from `SelectedShade.sub_range_name`
 
 ---
@@ -181,75 +183,56 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R1.1 — Production HTTP API
 
-**Status:** Not started (FastAPI exists only for SQLite Phase 1)
+**Status:** Baseline complete. The FastAPI app can run against SQLite or PostgreSQL with `ENGINE_BACKEND=sqlite|postgres`; PostgreSQL mode uses `run_production_engine()` and reports database/import readiness through `/health`. Versioned PostgreSQL routes now exist at `/v1/production/health` and `/v1/production/formula`.
 
 **Scope:**
-- Add `POST /formula` (and optionally `POST /query/shades`) backed by `run_production_engine` + `SqlAlchemyEngineRepository`
-- Reuse or extend `api/schemas.py`; support `DATABASE_URL` bootstrap health check
-- Optional `--persist` / consultation UUID for formula writes
+- `POST /formula` is backed by `run_production_engine` + `SqlAlchemyEngineRepository` when `ENGINE_BACKEND=postgres`
+- `POST /v1/production/formula` returns the explicit `ProductionFormulaResponse` contract
+- `api/schemas.py` now carries the extra production fields needed by PostgreSQL (`elasticity`, `texture`, `desired_result`, `recommendation_type`, `persist`, consultation/stylist IDs, `hair_length`)
+- `/health` checks `DATABASE_URL`, DB connectivity, Stage 12 shade count, and active Stage 13 formulation rules
 
 **Acceptance criteria:**
-- `curl` against PG-backed API returns same developer volume as `run_production_engine.py` CLI for VC024–VC029 cases
-- Health endpoint reports PG connectivity and import readiness (shade count ≥ 1828)
+- PG-backed API returns the same production-engine payload shape and developer volume source as `run_production_engine.py`
+- Versioned contract tests assert `/v1/production/formula` response fields and `/v1/production/health` readiness fields
+- Health endpoint reports PG connectivity and import readiness (shade count ≥ 1828, active Stage 13 rules > 0)
 
 **Depends on:** PostgreSQL bootstrap (done)
 
-**Files:** `api/main.py`, new `api/production_routes.py` or env switch `ENGINE_BACKEND=sqlite|postgres`
+**Files:** `api/main.py`, `api/schemas.py`, `api/test_production_api.py`
 
 ---
 
 #### R1.2 — PostgreSQL fill shade inventory enrichment
 
-**Status:** SQLite only (`src/fill_shade_lookup.py`)
+**Status:** Complete for engine output. Production `run_engine()` now enriches computed fill guidance with PostgreSQL inventory-backed `suggested_shades` and `target_natural_shades`; PG e2e coverage exercises a 9→5 Matrix darkening case.
 
-**Gap:** Production `run_engine()` emits `fill_pigment_guidance` and a fill step, but does not populate `suggested_shades` / `target_natural_shades` from catalog.
-
-**Scope:**
-- Port `lookup_fill_shades_for_level` / `lookup_natural_shades_at_level` to query PostgreSQL `shade` + tone joins (reuse `shade_matching.py` patterns)
-- Call enrichment after rule evaluation in production `formula_builder.py` (mirror `src/formula_builder.py`)
-
-**Acceptance criteria:**
-- Multi-level darken case (e.g. 9→5 Matrix) returns inventory-backed shade codes in PG path matching SQLite output
-- Test in `test_pg_e2e.py` or new `test_pg_fill_shade_lookup.py`
-
-**Depends on:** Stage 12 import (done)
-
-**Files:** `src/fill_shade_lookup.py` (extract shared query interface), `hair_color_db/production/fill_shade_lookup.py`, `hair_color_db/production/formula_builder.py`
+**Remaining product work:** Keep SQLite/PG parity cases in CI and decide how much of the enriched guidance should be considered stable public API.
 
 ---
 
 #### R1.3 — Cross-engine warning → status alignment
 
-**Status:** 12 cases documented as accepted divergence (`WARNING_ELEVATION_CASES` in `cross_engine_validation.py`)
+**Status:** Complete. Warning-only rule actions now resolve to `caution` in both engines; `test_cross_engine_validation` no longer carries a warning-elevation exemption list.
 
-**Issue:** Production `derive_recommendation_status()` elevates rule `warning` actions to `caution`; Stage 13 resolver leaves `ok` when only a warning fired.
+**Current policy:** Stage 13 and production both treat emitted formulation warnings as formula-safe cautions. Hard stops and consultation gates still take precedence over caution.
 
-**Affected cases:** VC006, VC007, VC009, VC010, VC019, VC023, VC024–VC029
+**Regression coverage:** All 20 packaged validation cases compare `recommendation_status`, matched rules, developer volume, and block/workflow fields through `test_cross_engine_validation.py`.
 
-**Options (pick one):**
-1. **Align production** — only elevate warnings that Stage 13 also treats as caution
-2. **Align Stage 13** — resolver applies same status merge as production
-3. **Document-only** — update `engine_readme.md` (currently says 6 cases; code has 12) and keep divergence
-
-**Acceptance criteria:**
-- `test_cross_engine_validation` passes without `WARNING_ELEVATION_CASES` exemption list, **or** explicit policy documented in `I_integration_notes.md`
-- All 20 validation cases have matching `recommendation_status` across engines
-
-**Files:** `hair_color_db/production/safety_checks.py`, `hair_color_db/stage13_formulation_rules/resolver.py`, `cross_engine_validation.py`
+**Next action:** Keep this item closed unless a new, named divergence is introduced with an explicit design note and validation case.
 
 ---
 
 #### R1.4 — Unified API routing (SQLite vs PostgreSQL)
 
-**Status:** Two separate CLIs + one SQLite FastAPI app
+**Status:** Baseline complete via `ENGINE_BACKEND=sqlite|postgres` plus explicit PostgreSQL v1 routes. The same `/health` and `/formula` routes dispatch to the selected backend, while `/v1/production/health` and `/v1/production/formula` provide a stable production-specific surface.
 
 **Scope:**
-- Single FastAPI app with `ENGINE_BACKEND` env or separate routers `/v1/sqlite/*` and `/v1/production/*`
-- Shared request schema where fields overlap
+- Optional future SQLite v1 routes if both backends must be served simultaneously without `ENGINE_BACKEND`
+- OpenAPI polish for backend-specific readiness details and persistence behavior
 
 **Acceptance criteria:**
 - One `uvicorn` process can serve either backend via configuration
-- OpenAPI docs describe backend requirements
+- Health response identifies the active backend and reports backend-specific readiness
 
 **Depends on:** R1.1
 
@@ -279,16 +262,9 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R2.2 — Apply `developer_override` intermixing rules
 
-**Status:** Modeled in schema; not applied to developer selection (`engine_readme.md` known limitation)
+**Status:** Complete for developer-volume overrides. Intermixing rules with `restriction_type=developer_override` can now adjust developer selection when their restriction note specifies a salon volume such as `10 vol`, unless a formulation rule has explicitly locked developer volume.
 
-**Scope:**
-- Extend `check_intermixing` or post-rule pass to adjust developer volume/ratio when intermixing rule `restriction_type=developer_override`
-
-**Acceptance criteria:**
-- Unit test with seeded intermixing rule changes developer output
-- Documented in `engine_readme.md`
-
-**Files:** `hair_color_db/production/safety_checks.py`, `repositories.py` seed fixtures
+**Remaining product work:** Add real imported `developer_override` data when manufacturer line charts require it; current coverage uses seeded/unit fixtures.
 
 ---
 
@@ -304,11 +280,9 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R2.4 — `formula_zones` in production output
 
-**Status:** Resolver sets `formula_zones` for workflows like `WF_retouch_with_refresh`; production engine does not surface (`RESOLVER_ONLY_EXPECTATIONS`)
+**Status:** Complete for engine output. Production `EngineOutput` now surfaces workflow formula zones for `WF_retouch_with_refresh`, and cross-engine validation compares those zones directly.
 
-**Scope:** Map workflow-triggered zones into `EngineOutput` or `SuggestedFormulaStep.zone` assignments
-
-**Acceptance criteria:** Cross-engine test removes `formula_zones` from resolver-only set for retouch workflow case
+**Remaining product work:** Decide whether future API responses should expose zones as top-level metadata only, step zoning only, or both.
 
 ---
 
@@ -316,46 +290,47 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R3.1 — CI test pipeline
 
-**Status:** No `.github/workflows`
+**Status:** Hardened baseline complete. `.github/workflows/ci.yml` runs separate lint/type, SQLite, and PostgreSQL jobs on push and pull requests. PostgreSQL integration still uses a `postgres:15` service, and each job uploads captured logs on failure.
 
-**Scope:**
-- Job 1: `pip install -r requirements.txt && python3 init_db.py && unittest` (SQLite suites)
-- Job 2 (optional): Postgres service container, `bootstrap`, PG e2e tests
-- Job 3: `python3 hair_color_db/stage13_formulation_rules/build.py` + validation tests
-
-**Acceptance criteria:** PR checks run on push; badge in README optional
+**Remaining hardening:**
+- Continue expanding `ruff` beyond the current correctness + unused-local gate after cleanup.
+- Expand mypy targets beyond focused API/engine modules once current type debt is addressed.
+- Add an optional README badge once workflow naming stabilizes.
 
 ---
 
 #### R3.2 — Alembic project (replace manual migration runner)
 
-**Status:** Revision modules exist as copy-paste artifacts; `migrate.py` runs SQL files with `schema_migration` table
+**Status:** Complete baseline. A real Alembic project now exists (`alembic.ini`, `alembic/env.py`, `alembic/versions/*`) and `bootstrap.py` reaches migrations through `migrate.apply_pending_migrations()`, which delegates to `alembic upgrade head`.
 
 **Scope:**
-- Add `alembic.ini`, `alembic/env.py` pointing at existing revisions
-- Keep `bootstrap.py` calling Alembic upgrade head
+- Current revisions execute the packaged research and production SQL migrations in order.
+- `migrate.py` keeps the CLI/high-level compatibility surface while using Alembic as the operational migration path.
+- Fresh DB bootstrap in CI continues to call `bootstrap.py`, so tests exercise the same migration path production uses.
 
-**Acceptance criteria:** Fresh DB via `alembic upgrade head` equivalent to current `migrate.py` + seeds
+**Acceptance criteria:** Fresh DB via `alembic upgrade head` is equivalent to the previous SQL-runner path plus seeds.
 
-**Files:** `hair_color_db/production/alembic_revision*.py`, new `alembic/` directory
+**Remaining hardening:** Convert SQL-backed revisions into fully declarative Alembic operations before adding downgrade support.
+
+**Files:** `alembic.ini`, `alembic/env.py`, `alembic/versions/*`, `hair_color_db/production/migrate.py`
 
 ---
 
 #### R3.3 — Gram-age / quantity module
 
-**Status:** 60g placeholders everywhere (`engine_readme.md`)
+**Status:** Baseline complete for production engine output. `quantity.py` assigns grams from `hair_length` instead of fixed placeholders and `EngineOutput.quantity_rationale` explains the plan.
 
-**Scope:** Replace fixed `quantity_grams` with hair-length or stylist-input-driven defaults
+**Scope:** Continue refining quantity plans with stylist-supplied density/length, bowl loss, and zone-specific ratios.
 
-**Acceptance criteria:** Formula steps include documented quantity rationale; tests for at least short/medium/long hair
+**Acceptance criteria:** Formula steps include documented quantity rationale; tests cover short/long quantity differences.
 
 ---
 
 #### R3.4 — Consultation / auth layer
 
-**Status:** `persist.py` creates stub consultations with `SYSTEM_STYLIST_ID`
+**Status:** Partial baseline complete. API/CLI callers can pass `consultation_id`, `stylist_id`, `client_id`, and `salon_id` through the PostgreSQL formula path. FastAPI now captures trusted request-context headers (`X-Stylist-Id`, `X-Client-Id`, `X-Salon-Id`), formula persistence stores that consultation ownership context, and `/v1/production/consultations/{consultation_id}/status` provides a first lifecycle transition endpoint.
 
-**Scope:** Auth middleware, real stylist/salon IDs, consultation lifecycle before formula persist
+**Scope:** Replace trusted-header context with real authentication/authorization, add richer consultation create/read/list workflows, and enforce salon/client ownership on reads and writes.
 
 **Depends on:** R1.1 production API
 
@@ -363,9 +338,9 @@ These unblock a single production deployment path with behavior matching the SQL
 
 #### R3.5 — Schema extension H — evidence tables
 
-**Status:** Proposed in `H_schema_extension_proposal.json`; partial (workflows + validation_case imported; `formulation_rule_evidence` not wired)
+**Status:** Partial baseline complete. Stage 13 rule evidence rows are imported and matched-rule evidence now surfaces in production `audit_trail`.
 
-**Scope:** Import evidence links from Stage 13 package; expose in rule audit trail
+**Scope:** Link evidence to source documents in API responses and persist audit snapshots alongside formulas.
 
 ---
 
@@ -395,10 +370,9 @@ Not blocking engine runtime for **currently extracted** 30 lines, but limits bra
 | Item | Location | Fix |
 |------|----------|-----|
 | Stale shade count in init header | `init_db.py` | Update 1,479 → 1,828 |
-| Warning divergence count | `engine_readme.md` | 6 → 12 cases or link to `WARNING_ELEVATION_CASES` |
-| I_integration_notes case count | says 14 cases | Update to 20 |
-| Root README line count | says 26 lines | MANIFEST says 30 with extraction |
-| Stage 13 universal rule range in I_integration_notes | U001–U012 | U001–U015 |
+| I_integration_notes case count | keep in sync with MANIFEST | 20 validation cases |
+| Stage 13 universal rule range in I_integration_notes | keep in sync with MANIFEST | U001–U018 |
+| Static-analysis scope | `pyproject.toml` / CI | expand ruff and mypy coverage incrementally |
 
 ---
 
@@ -407,13 +381,11 @@ Not blocking engine runtime for **currently extracted** 30 lines, but limits bra
 For a **production MVP** (salon-facing API on PostgreSQL with parity to SQLite CLI):
 
 ```
-1. R1.2  PG fill shade enrichment          ← closes largest behavior gap
-2. R1.3  Cross-engine status alignment     ← single rule semantics
-3. R1.1  Production HTTP API             ← deployable surface
-4. R1.4  Unified API routing               ← one service, two backends optional
-5. R3.1  CI pipeline                       ← regression safety
-6. R2.2  developer_override intermixing    ← edge-case correctness
-7. R3.2  Alembic project                   ← ops maturity
+1. R3.3  Gram-age module                   ← professional quantity rationale
+2. R3.4  Consultation/auth hardening       ← replace trusted headers with RBAC
+3. Consultation workflow expansion         ← create/read/list/audit lifecycle
+4. R3.1+ Static-analysis expansion         ← continue widening lint/type gates
+5. T4    Data/rule expansion               ← broader brand and line coverage
 ```
 
 For **coverage expansion** (parallel track):

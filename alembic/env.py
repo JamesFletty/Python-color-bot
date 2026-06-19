@@ -1,0 +1,68 @@
+"""Alembic environment for the PostgreSQL production schema."""
+
+from __future__ import annotations
+
+import os
+from logging.config import fileConfig
+
+from alembic import context
+from sqlalchemy import engine_from_config, pool
+
+from hair_color_db.production.production_models import Base
+
+config = context.config
+
+if config.config_file_name is not None:
+    fileConfig(config.config_file_name)
+
+target_metadata = Base.metadata
+
+
+def _database_url() -> str:
+    url = os.environ.get("DATABASE_URL") or config.get_main_option("sqlalchemy.url")
+    if not url or url == "driver://user:pass@localhost/dbname":
+        raise RuntimeError("DATABASE_URL is required for Alembic migrations")
+    return url
+
+
+def run_migrations_offline() -> None:
+    """Run migrations in offline mode."""
+    context.configure(
+        url=_database_url(),
+        target_metadata=target_metadata,
+        literal_binds=True,
+        dialect_opts={"paramstyle": "named"},
+    )
+
+    with context.begin_transaction():
+        context.run_migrations()
+
+
+def run_migrations_online() -> None:
+    """Run migrations in online mode."""
+    existing_connection = config.attributes.get("connection")
+    if existing_connection is not None:
+        context.configure(connection=existing_connection, target_metadata=target_metadata)
+        with context.begin_transaction():
+            context.run_migrations()
+        return
+
+    section = config.get_section(config.config_ini_section, {})
+    section["sqlalchemy.url"] = _database_url()
+    connectable = engine_from_config(
+        section,
+        prefix="sqlalchemy.",
+        poolclass=pool.NullPool,
+    )
+
+    with connectable.connect() as connection:
+        context.configure(connection=connection, target_metadata=target_metadata)
+
+        with context.begin_transaction():
+            context.run_migrations()
+
+
+if context.is_offline_mode():
+    run_migrations_offline()
+else:
+    run_migrations_online()
