@@ -1,0 +1,170 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint-type:
+    name: Lint and type check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt ruff mypy
+
+      - name: Lint
+        run: |
+          set -o pipefail
+          mkdir -p test-logs
+          ruff check . 2>&1 | tee test-logs/ruff.log
+
+      - name: Type check focused modules
+        run: |
+          set -o pipefail
+          mkdir -p test-logs
+          mypy \
+            api/main.py \
+            api/schemas.py \
+            hair_color_db/formulation_rules/evaluator.py \
+            hair_color_db/stage13_formulation_rules/resolver.py \
+            hair_color_db/production/catalog_lookup.py \
+            hair_color_db/production/db.py \
+            hair_color_db/production/engine_models.py \
+            hair_color_db/production/fill_shade_lookup.py \
+            hair_color_db/production/formula_builder.py \
+            hair_color_db/production/migrate.py \
+            hair_color_db/production/pg_test_utils.py \
+            hair_color_db/production/quantity.py \
+            hair_color_db/production/repositories.py \
+            hair_color_db/production/run_production_engine.py \
+            hair_color_db/production/safety_checks.py \
+            2>&1 | tee test-logs/mypy.log
+
+      - name: Upload lint/type logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lint-type-logs
+          path: test-logs/
+
+  sqlite-tests:
+    name: SQLite and in-memory tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Build SQLite catalog
+        run: |
+          set -o pipefail
+          mkdir -p test-logs
+          python init_db.py 2>&1 | tee test-logs/init_db.log
+
+      - name: Run SQLite and in-memory tests
+        run: |
+          set -o pipefail
+          mkdir -p test-logs
+          python -m unittest \
+            api.test_production_api \
+            api.test_api \
+            src.test_fill_shade_lookup \
+            src.test_formula_builder \
+            src.test_sub_range_intake \
+            hair_color_db.stage13_formulation_rules.test_stage13_validation \
+            hair_color_db.stage13_formulation_rules.test_deposit_fill_rules \
+            hair_color_db.production.test_engine \
+            hair_color_db.production.test_migrate \
+            hair_color_db.production.test_import_stage12_research \
+            hair_color_db.production.test_import_stage13_rules \
+            hair_color_db.production.test_cross_engine_validation \
+            -v 2>&1 | tee test-logs/sqlite-tests.log
+
+      - name: Upload SQLite logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sqlite-test-logs
+          path: test-logs/
+
+  postgres-tests:
+    name: PostgreSQL integration tests
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: haircolor
+          POSTGRES_PASSWORD: haircolor
+          POSTGRES_DB: haircolor
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U haircolor -d haircolor"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      DATABASE_URL: postgresql+psycopg2://haircolor:haircolor@localhost:5432/haircolor
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Build SQLite catalog for parity tests
+        run: |
+          set -o pipefail
+          mkdir -p test-logs
+          python init_db.py 2>&1 | tee test-logs/init_db.log
+
+      - name: Run PostgreSQL integration tests
+        run: |
+          set -o pipefail
+          mkdir -p test-logs
+          python -m unittest \
+            hair_color_db.production.test_pg_e2e \
+            hair_color_db.production.test_pg_shade_matching \
+            -v 2>&1 | tee test-logs/postgres-tests.log
+
+      - name: Upload PostgreSQL logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: postgres-test-logs
+          path: test-logs/

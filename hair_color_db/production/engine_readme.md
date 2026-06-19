@@ -118,14 +118,14 @@ Shade UUIDs are deterministic (`uuid5` on canonical key + sub-range + shade code
 
 - `formula` stores `line_id` only; brand derived at read time.
 - Shade selection can be supplied via `--shade-ref` lookup or explicit catalog IDs on input.
-- Quantity grams are placeholders (60g default) until a future gram-age module exists.
+- Quantity grams are planned from `hair_length` (`short`, `medium`, `long`, `extra_long`) and surfaced with a quantity rationale.
 - Research tables are read-only through repositories.
 
 ## Known limitations
 
+- The FastAPI service can expose PostgreSQL output with `ENGINE_BACKEND=postgres`; versioned public response contracts are still pending.
 - `run_engine()` does not persist — use `persist.persist_engine_output()` or `run_production_engine --persist`.
 - Single primary line per recommendation (no multi-line formulas).
-- `developer_override` intermixing rules are modeled but not yet applied to developer selection.
 - JSON `rule_value` fallback parsing is intentionally narrow (developer volume, mixing ratio string).
 
 ## Running tests
@@ -153,8 +153,8 @@ python3 -m unittest hair_color_db.production.test_pg_e2e -v
 | Module | Role |
 |---|---|
 | `db.py` | Central `DATABASE_URL` resolution, engine + session factory |
-| `migrate.py` | Apply `research_baseline` + `op001_production_layer` SQL migrations |
-| `bootstrap.py` | Migrate + Stage 12 import + Stage 13 import (one command) |
+| `migrate.py` | Compatibility CLI that delegates schema upgrades to Alembic |
+| `bootstrap.py` | Alembic upgrade + Stage 12 import + Stage 13 import (one command) |
 | `catalog_lookup.py` | Resolve brand/line/region/shade UUIDs from imported catalog |
 | `persist.py` | Write `persistence_payload` → `formula` / `formula_step` / `risk_assessment` |
 | `run_production_engine.py` | CLI: run `SqlAlchemyEngineRepository` + optional persist |
@@ -177,7 +177,7 @@ python3 -m hair_color_db.production.run_production_engine \
   --persist
 ```
 
-Import CLIs (`import_stage12_research`, `import_stage13_rules`) and `migrate.py` all read
+Import CLIs (`import_stage12_research`, `import_stage13_rules`), `bootstrap.py`, and `migrate.py` all read
 `DATABASE_URL` or accept `--database-url`.
 
 ### Shade search / matching (PostgreSQL)
@@ -211,7 +211,7 @@ Stage 12 import now populates `shade_tone_code` links so normalized tones resolv
 1. Stage 13 `resolve_formulation_rules()`
 2. Production `run_engine()` with equivalent `EngineInput` and `context_overrides`
 
-**Documented divergence:** six cases (`VC006`, `VC007`, `VC009`, `VC010`, `VC019`, `VC023`) produce
-`caution` in production because `derive_recommendation_status()` elevates rule warnings, while
-Stage 13 leaves status `ok` when a rule only emits a `warning` action. Formulation-layer
-`matched_rules`, `developer_volume`, and `block_reason` still align.
+Warning-only rule actions intentionally resolve to `caution` in both engines. The Stage 13
+resolver and production `derive_recommendation_status()` therefore share the same status
+semantics for validation cases while still comparing `matched_rules`, `developer_volume`,
+and `block_reason`.

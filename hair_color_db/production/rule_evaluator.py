@@ -85,6 +85,8 @@ def match_formulation_rules(
                     rule_category=rule.rule_category,
                     scope_tier=tier,
                     reason=reason,
+                    evidence_status=rule.evidence_status,
+                    evidence_notes=rule.evidence_notes,
                 ),
             )
         )

@@ -88,7 +88,6 @@ def resolve_from_shade_reference(
         raise LookupError(f"Shade reference not found: {shade_ref!r}")
 
     brand_name = str(row["brand"])
-    line_name = str(row["product_line"])
     return CatalogReference(
         canonical_key=str(row["canonical_key"]),
         shade_code=str(row["shade_code"]),

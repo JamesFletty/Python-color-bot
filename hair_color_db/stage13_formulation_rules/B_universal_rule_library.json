@@ -355,6 +355,75 @@
         "trigger_workflow": "repigmentation_fill",
         "warning": "Multi-level darkening requires warm fill pigments (yellow → orange → red-orange) before final base + tone."
       }
+    },
+    {
+      "rule_id": "U016",
+      "rule_name": "lift_one_level_developer_20vol",
+      "rule_category": "developer_selection",
+      "rule_priority": 45,
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "lift_levels",
+            "op": "=",
+            "value": 1
+          }
+        ]
+      },
+      "rule_action": {
+        "set_developer_volume": 20,
+        "lock_developer_volume": true
+      },
+      "evidence_refs": [
+        "universal_lift_developer_matrix"
+      ],
+      "notes": "Universal lift precedence rule; locks developer so later line-scoped gray defaults cannot lower lift strength."
+    },
+    {
+      "rule_id": "U017",
+      "rule_name": "lift_two_levels_developer_30vol",
+      "rule_category": "developer_selection",
+      "rule_priority": 46,
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "lift_levels",
+            "op": "=",
+            "value": 2
+          }
+        ]
+      },
+      "rule_action": {
+        "set_developer_volume": 30,
+        "lock_developer_volume": true
+      },
+      "evidence_refs": [
+        "universal_lift_developer_matrix"
+      ],
+      "notes": "Universal lift precedence rule; locks developer so later line-scoped gray defaults cannot lower lift strength."
+    },
+    {
+      "rule_id": "U018",
+      "rule_name": "lift_three_plus_levels_developer_40vol",
+      "rule_category": "developer_selection",
+      "rule_priority": 47,
+      "rule_condition": {
+        "all_of": [
+          {
+            "field": "lift_levels",
+            "op": ">=",
+            "value": 3
+          }
+        ]
+      },
+      "rule_action": {
+        "set_developer_volume": 40,
+        "lock_developer_volume": true
+      },
+      "evidence_refs": [
+        "universal_lift_developer_matrix"
+      ],
+      "notes": "Universal lift precedence rule; locks developer so later line-scoped gray defaults cannot lower lift strength."
     }
   ]
 }

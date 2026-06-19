@@ -17,6 +17,7 @@ from .production_models import (
     FormulationRuleLine,
     LineTechnicalRule,
     ProductLine,
+    ProductLineRegion,
     ShadeIntermixingRule,
     UniversalColorScience,
 )
@@ -33,6 +34,8 @@ class FormulationRuleRecord:
     brand_ids: list[UUID] = field(default_factory=list)
     line_ids: list[UUID] = field(default_factory=list)
     scope_level: str = "universal"
+    evidence_status: str | None = None
+    evidence_notes: str | None = None
 
 
 @dataclass
@@ -94,6 +97,10 @@ class EngineRepository(Protocol):
 
     def load_universal_color_science(self) -> list[UniversalColorScienceRecord]: ...
 
+    def enrich_fill_guidance(
+        self, line_region_id: UUID | None, fill_guidance: dict[str, Any] | None
+    ) -> dict[str, Any] | None: ...
+
 
 class InMemoryEngineRepository:
     """In-memory repository for unit tests and offline evaluation."""
@@ -152,6 +159,11 @@ class InMemoryEngineRepository:
     def load_universal_color_science(self) -> list[UniversalColorScienceRecord]:
         return list(self.color_science)
 
+    def enrich_fill_guidance(
+        self, line_region_id: UUID | None, fill_guidance: dict[str, Any] | None
+    ) -> dict[str, Any] | None:
+        return fill_guidance
+
 
 class SqlAlchemyEngineRepository:
     """SQLAlchemy-backed repository for production persistence."""
@@ -195,6 +207,15 @@ class SqlAlchemyEngineRepository:
                     brand_ids=brand_ids,
                     line_ids=line_ids,
                     scope_level=rule.scope_level,
+                    evidence_status=rule.evidence_status.value,
+                    evidence_notes=(
+                        "; ".join(
+                            evidence.notes
+                            for evidence in getattr(rule, "evidence_links", [])
+                            if evidence.notes
+                        )
+                        or None
+                    ),
                 )
             )
         return records
@@ -267,6 +288,22 @@ class SqlAlchemyEngineRepository:
             for row in rows
         ]
 
+    def enrich_fill_guidance(
+        self, line_region_id: UUID | None, fill_guidance: dict[str, Any] | None
+    ) -> dict[str, Any] | None:
+        if line_region_id is None or not fill_guidance:
+            return fill_guidance
+        region = self.session.get(ProductLineRegion, line_region_id)
+        if region is None:
+            return fill_guidance
+        from .fill_shade_lookup import enrich_fill_guidance_with_inventory
+
+        return enrich_fill_guidance_with_inventory(
+            self.session,
+            region.canonical_key,
+            fill_guidance,
+        )
+
 
 def build_seed_repository() -> InMemoryEngineRepository:
     """Repository preloaded from Stage 13 import logic + Matrix intermixing fixtures."""
@@ -275,10 +312,8 @@ def build_seed_repository() -> InMemoryEngineRepository:
     matrix_region = uuid.UUID("00000000-0000-4000-8000-000000000100")
     hd_sub = uuid.UUID("00000000-0000-4000-8000-000000000201")
     ultra_sub = uuid.UUID("00000000-0000-4000-8000-000000000202")
-    blended_sub = uuid.UUID("00000000-0000-4000-8000-000000000203")
     dreamage_sub = uuid.UUID("00000000-0000-4000-8000-000000000204")
     ten_min_sub = uuid.UUID("00000000-0000-4000-8000-000000000205")
-    normal_sub = uuid.UUID("00000000-0000-4000-8000-000000000206")
 
     rules = build_formulation_rules_from_stage13(
         line_mapping={

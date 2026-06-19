@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from decimal import Decimal
 from typing import Iterable
 from uuid import UUID
@@ -22,20 +23,42 @@ from .repositories import (
 )
 
 
+def _developer_volume_from_note(note: str) -> int | None:
+    match = re.search(r"\b(5|6|10|20|30|40)\s*(?:vol|volume)\b", note, re.IGNORECASE)
+    return int(match.group(1)) if match else None
+
+
+def _apply_intermix_restriction(
+    rule: IntermixingRuleRecord,
+    blocks: list[str],
+    warnings: list[str],
+    developer_override: int | None,
+) -> int | None:
+    if rule.restriction_type == "not_mixable":
+        blocks.append(rule.restriction_note)
+    elif rule.restriction_type == "developer_override":
+        warnings.append(rule.restriction_note)
+        developer_override = _developer_volume_from_note(rule.restriction_note) or developer_override
+    else:
+        warnings.append(rule.restriction_note)
+    return developer_override
+
+
 def check_intermixing(
     shades: list[SelectedShade],
     rules: list[IntermixingRuleRecord],
-) -> tuple[list[str], list[str]]:
+) -> tuple[list[str], list[str], int | None]:
     """
     Enforce shade_intermixing_rule before finalizing steps.
 
-    Returns (hard_blocks, warnings).
+    Returns (hard_blocks, warnings, developer_override_volume).
     """
     if len(shades) < 2:
-        return [], []
+        return [], [], None
 
     blocks: list[str] = []
     warnings: list[str] = []
+    developer_override: int | None = None
     sub_ranges = {s.sub_range_id for s in shades if s.sub_range_id}
 
     for rule in rules:
@@ -54,41 +77,36 @@ def check_intermixing(
 
         if rule.rule_scope == "sub_range_isolated_from_line":
             if len(sub_ranges) > 1:
-                msg = rule.restriction_note
-                if rule.restriction_type == "not_mixable":
-                    blocks.append(msg)
-                else:
-                    warnings.append(msg)
+                developer_override = _apply_intermix_restriction(
+                    rule, blocks, warnings, developer_override
+                )
 
         elif rule.rule_scope == "sub_range_internal_only":
             if sub_ranges != {applies}:
-                msg = rule.restriction_note
-                if rule.restriction_type == "not_mixable":
-                    blocks.append(msg)
-                else:
-                    warnings.append(msg)
+                developer_override = _apply_intermix_restriction(
+                    rule, blocks, warnings, developer_override
+                )
 
         elif rule.rule_scope == "cross_sub_range":
             compat = rule.compatible_sub_range_id
             if compat and applies in sub_ranges and compat in sub_ranges:
-                if rule.restriction_type == "caution":
-                    warnings.append(rule.restriction_note)
+                developer_override = _apply_intermix_restriction(
+                    rule, blocks, warnings, developer_override
+                )
             elif compat is None and len(sub_ranges) > 1:
-                if rule.restriction_type == "caution":
-                    warnings.append(rule.restriction_note)
-                elif rule.restriction_type == "not_mixable":
-                    blocks.append(rule.restriction_note)
+                developer_override = _apply_intermix_restriction(
+                    rule, blocks, warnings, developer_override
+                )
 
         elif rule.rule_scope == "shade_pair":
             shade_ids = {s.shade_id for s in shades}
             if rule.shade_id in shade_ids and rule.compatible_shade_id:
                 if rule.compatible_shade_id not in shade_ids:
-                    if rule.restriction_type == "not_mixable":
-                        blocks.append(rule.restriction_note)
-                    else:
-                        warnings.append(rule.restriction_note)
+                    developer_override = _apply_intermix_restriction(
+                        rule, blocks, warnings, developer_override
+                    )
 
-    return blocks, warnings
+    return blocks, warnings, developer_override
 
 
 def check_lift_and_color_science(
