@@ -60,3 +60,28 @@ class HealthResponse(BaseModel):
     stage12_ready: bool | None = None
     stage13_rule_count: int | None = None
     stage13_ready: bool | None = None
+
+
+# ── AI layer schemas ─────────────────────────────────────────────────────────
+
+class AIFormulaRequest(BaseModel):
+    user_input: str = Field(..., description="Natural-language description of client and desired result")
+    color_line: str = Field(..., description="Target product line name (e.g. 'Koleston Perfect')")
+    line_id: int = Field(..., description="Product line ID from /api/brands")
+    canonical_key: str = Field(..., description="Canonical key for the line")
+
+
+class AITranslateRequest(BaseModel):
+    source_formula: str = Field(..., description="Existing formula to translate (free text)")
+    source_line: str | None = Field(None, description="Source product line name (optional if in formula)")
+    target_line: str = Field(..., description="Target product line name")
+    target_line_id: int = Field(..., description="Target line ID")
+    target_canonical_key: str = Field(..., description="Canonical key for target line")
+
+
+class AIFormulaResponse(BaseModel):
+    formula: dict[str, Any]
+    ai_explanation: str
+    structured_request: dict[str, Any]
+    translation_notes: str | None = None
+    status: str = "ok"

@@ -10,11 +10,12 @@ from typing import Any
 from collections.abc import Awaitable, Callable
 
 from fastapi import FastAPI, HTTPException, Request, Response
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 from sqlalchemy import func, select, text
 from sqlalchemy.exc import SQLAlchemyError
 
-from api.schemas import FormulaRequest, HealthResponse
+from api.schemas import FormulaRequest, HealthResponse, AIFormulaRequest, AITranslateRequest, AIFormulaResponse
 from hair_color_db.production.catalog_lookup import DEFAULT_SUB_RANGE, resolve_from_shade_reference
 from hair_color_db.production.consultation_service import (
     consultation_payload,
@@ -43,8 +44,11 @@ ConsultationStatusUpdate = ConsultationUpdate
 app = FastAPI(
     title="Hair Color Formula Engine",
     description="HTTP wrapper over the SQLite and PostgreSQL formula engines.",
-    version="0.1.0",
+    version="0.2.0",
 )
+
+# ── Static frontend ───────────────────────────────────────────────────────────
+_FRONTEND_DIST = Path(__file__).parent.parent / "static" / "dist"
 
 
 def _db_path() -> Path:
@@ -131,6 +135,133 @@ def _pg_health() -> HealthResponse:
 def _production_health() -> HealthResponse:
     return _pg_health()
 
+
+# ── Catalog routes ────────────────────────────────────────────────────────────
+
+@app.get("/api/brands")
+def get_brands():
+    """Return all brands and their product lines."""
+    from api.catalog import get_brands_and_lines
+    return get_brands_and_lines()
+
+
+@app.get("/api/shades")
+def get_shades(line_id: int | None = None, q: str | None = None, limit: int = 40):
+    """Search shades by line and/or query string."""
+    from api.catalog import search_shades
+    return search_shades(line_id=line_id, query=q, limit=min(limit, 100))
+
+
+# ── AI routes ─────────────────────────────────────────────────────────────────
+
+@app.post("/api/ai/formula", response_model=AIFormulaResponse)
+async def ai_formula(body: AIFormulaRequest):
+    """Parse natural-language input → formula engine → AI explanation."""
+    from api.ai_service import parse_formula_request, explain_formula
+
+    # Step 1: AI parses input into structured engine params
+    try:
+        parsed = await parse_formula_request(
+            user_input=body.user_input,
+            color_line=body.color_line,
+            canonical_key=body.canonical_key,
+        )
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"AI parsing failed: {exc}") from exc
+
+    # Step 2: Run formula engine with parsed params
+    try:
+        req = FormulaRequest(
+            shade=parsed.get("shade", body.color_line),
+            gray=parsed.get("gray"),
+            current_level=parsed.get("current_level"),
+            line=parsed.get("line", body.color_line),
+            service_intent=parsed.get("service_intent", "tone_deposit"),
+            desired_level=parsed.get("desired_level"),
+            texture=parsed.get("texture", "medium"),
+            porosity=int(parsed.get("porosity", 5)),
+            elasticity=int(parsed.get("elasticity", 6)),
+        )
+        formula = run_formula_engine(req.to_engine_request(db_path=_db_path()))
+    except Exception as exc:
+        raise HTTPException(status_code=422, detail=f"Formula engine error: {exc}") from exc
+
+    # Step 3: AI explains the result
+    try:
+        explanation = await explain_formula(
+            formula_result=formula,
+            user_input=body.user_input,
+            color_line=body.color_line,
+            mode="formula",
+        )
+    except Exception as exc:
+        explanation = f"Formula computed successfully. (AI explanation unavailable: {exc})"
+
+    return AIFormulaResponse(
+        formula=formula,
+        ai_explanation=explanation,
+        structured_request=parsed,
+        status="ok",
+    )
+
+
+@app.post("/api/ai/translate", response_model=AIFormulaResponse)
+async def ai_translate(body: AITranslateRequest):
+    """Translate a formula from one color line to another with AI."""
+    from api.ai_service import translate_formula, explain_formula
+
+    # Step 1: AI translates formula to target line params
+    try:
+        parsed = await translate_formula(
+            source_formula=body.source_formula,
+            source_line=body.source_line,
+            target_line=body.target_line,
+            target_canonical_key=body.target_canonical_key,
+        )
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"AI translation failed: {exc}") from exc
+
+    translation_notes = parsed.pop("translation_notes", None)
+
+    # Step 2: Run formula engine with translated params
+    try:
+        req = FormulaRequest(
+            shade=parsed.get("shade", body.target_line),
+            gray=parsed.get("gray", 0),
+            current_level=parsed.get("current_level"),
+            line=parsed.get("line", body.target_line),
+            service_intent=parsed.get("service_intent", "tone_deposit"),
+            desired_level=parsed.get("desired_level"),
+            texture=parsed.get("texture", "medium"),
+            porosity=int(parsed.get("porosity", 5)),
+            elasticity=int(parsed.get("elasticity", 6)),
+        )
+        formula = run_formula_engine(req.to_engine_request(db_path=_db_path()))
+    except Exception as exc:
+        raise HTTPException(status_code=422, detail=f"Formula engine error: {exc}") from exc
+
+    # Step 3: AI explains the translation
+    try:
+        explanation = await explain_formula(
+            formula_result=formula,
+            user_input=body.source_formula,
+            color_line=body.target_line,
+            mode="translate",
+            translation_notes=translation_notes,
+        )
+    except Exception as exc:
+        explanation = f"Formula translated. (AI explanation unavailable: {exc})"
+
+    return AIFormulaResponse(
+        formula=formula,
+        ai_explanation=explanation,
+        structured_request=parsed,
+        translation_notes=translation_notes,
+        status="ok",
+    )
+
+
+# ── Legacy engine routes ──────────────────────────────────────────────────────
 
 @app.get("/health", response_model=HealthResponse)
 def health() -> HealthResponse:
@@ -270,6 +401,27 @@ def update_production_consultation_status(
 ) -> ConsultationResponse:
     """Create/update consultation identity context and lifecycle status."""
     return _update_consultation_status(consultation_id, body, _request_auth_context(request))
+
+
+# ── SPA catch-all — serve frontend for any non-API, non-asset path ────────────
+if _FRONTEND_DIST.exists():
+    app.mount("/assets", StaticFiles(directory=str(_FRONTEND_DIST / "assets")), name="assets")
+
+    @app.get("/{full_path:path}", include_in_schema=False)
+    def spa_fallback(full_path: str):
+        index = _FRONTEND_DIST / "index.html"
+        if index.exists():
+            return FileResponse(str(index))
+        return JSONResponse({"detail": "Frontend not built yet"}, status_code=503)
+else:
+    @app.get("/", include_in_schema=False)
+    def root():
+        return JSONResponse({
+            "app": "ColorSynth Formula Engine",
+            "status": "api_only",
+            "note": "Frontend not built. Run: cd frontend && pnpm install && pnpm build",
+            "docs": "/docs",
+        })
 
 
 if __name__ == "__main__":
