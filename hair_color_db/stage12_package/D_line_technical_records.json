@@ -1,17 +1,20 @@
 {
   "artifact": "line_technical_records",
-  "count": 29,
+  "count": 36,
   "line_technical_records": [
     {
       "canonical_key": "Redken::Shades EQ Gloss::US",
       "brand": "Redken",
       "product_line": "Shades EQ Gloss",
-      "color_type": "demi (acidic, ammonia-free, no-lift demi-permanent liquid gloss; 'the haircolor that thinks it's a conditioner')",
-      "default_mixing_ratio": "1:1 (equal parts color : developer), as printed on the official US 2022 chart and the salon-services UK chart",
+      "color_type": "demi",
+      "default_mixing_ratio": [
+        "redken_shades_eq_mix_process: \"1:1\""
+      ],
       "developer_options": [
         "Shades EQ Gloss Processing Solution (official US 2022 chart: 'Use only with Shades EQ Gloss Processing Solution or Processing Solution for Precision Application')",
         "Shades EQ Processing Solution for Precision Application (official US 2022 chart)",
-        "Gloss to Gel Processing Solution / Gloss to Gel Developer - transforms Shades EQ into a gel texture for precision application (salon-services UK chart)"
+        "Gloss to Gel Processing Solution / Gloss to Gel Developer - transforms Shades EQ into a gel texture for precision application (salon-services UK chart)",
+        "redken_shades_eq_mix_process: {\"mixing_ratio\": \"1:1\", \"developer\": \"Shades EQ Processing Solution or Gloss to Gel Processing Solution\", \"max_lift_levels\": 0, \"processing_time_min\": 20}"
       ],
       "developer_strengths_if_stated": [
         "Gloss to Gel Developer described as '2% hydrogen peroxide specifically formulated to maintain an acidic pH' on the salon-services.com product listing (search extract, not from the fetched official chart)"
@@ -21,7 +24,8 @@
         "Gray blending, resistant hair, more vibrant results: process 15 minutes with plastic cap under a pre-heated warm dryer, then remove cap and cool 5 minutes at room temperature (official US 2022 chart)",
         "Resistant gray: 20 minutes with plastic cap under pre-heated warm dryer, then additional 20 minutes at room temperature (official Redken AU chart, 2013)",
         "20 minutes, up to 40 minutes for gray hair (official Redken AU chart, 2013, mixing table)",
-        "Lighter color deposit / porous hair: process for the full recommended time at room temperature using 000 Crystal Clear in the formula or 09/010 level shades (official US 2022 chart)"
+        "Lighter color deposit / porous hair: process for the full recommended time at room temperature using 000 Crystal Clear in the formula or 09/010 level shades (official US 2022 chart)",
+        "redken_shades_eq_mix_process: 20"
       ],
       "gray_coverage_rules": [
         "Gray blending option per the official US 2022 processing table (15 minutes capped under pre-heated warm dryer + 5 minutes cool).",
@@ -117,25 +121,27 @@
       "region_or_market": "US",
       "discontinued_status": "Active - line listed on redkenpro.com and on the official shade-chart hub as of June 2026.",
       "source_url": "https://www.redkenpro.com/-/media/project/loreal/brand-sites/redken/americas/us_us/shade-chart-pdfs/redken-2022-shades-eq-bonder-inside-reanimation-wave-1-mini-shade-chart-na.pdf",
-      "source_document": "Official Redken 2022 Shades EQ Bonder Inside mini shade chart NA (redkenpro.com PDF, copyright 2021); supplemented by salon-services.com UK A5 booklet Shades EQ chart (https://www.salon-services.com/on/demandware.static/-/Sites-salon-services-Library/default/dwae838b2f/410508%20Redken%20A5%20Booklet%20Shades%20EQ%20Chart.pdf), official Redken AU Shades EQ mini chart 2013 (https://www.redken.com.au/-/media/project/loreal/brand-sites/redken/apac/au/shade-chart-pdfs/seq_gloss_minichart_u1149800.pdf), and redkenpro.com shade-chart hub page",
+      "source_document": "Redken mixing and processing charts (1034804579-2025-Product-Guide-Avec-Compression.pdf pp. 55-68)",
       "source_confidence": "high",
-      "evidence_status": "confirmed",
+      "evidence_status": "manufacturer_stated",
       "assumptions": [
         "Tone-family legend codes/meanings were read from the official Redken Australia mini chart (2013), the only fetched source that prints code-to-family-name pairings explicitly; family codes are consistent with the US chart shade codes.",
-        "Dilution table and 48-hour allergy test wording were read from the UK distributor (salon-services.com) chart, not a US official document."
+        "Dilution table and 48-hour allergy test wording were read from the UK distributor (salon-services.com) chart, not a US official document.",
+        "Aggregated from normalized seed package technical_rules (batch09)"
       ],
       "data_gaps": [
         "US official tone-family legend pairings could not be extracted for codes NA, NW, P, M, VB, AG, GI, NCh, VV, CR, ABn, VRo, AA, A, RR (column alignment lost in PDF text extraction).",
         "No parseable official chart newer than the 2022 chart (copyright 2021) was obtained; shades launched 2023-2026 may be missing.",
         "Developer strengths for Shades EQ Gloss Processing Solution not stated in fetched official sources.",
         "1001 Blondes subset chart PDF could not be fetched (bot-challenge page)."
-      ]
+      ],
+      "source_type": "manufacturer_pdf"
     },
     {
       "canonical_key": "Redken::Color Gels Lacquers::US",
       "brand": "Redken",
       "product_line": "Color Gels Lacquers",
-      "color_type": "permanent (high saturation permanent liquid lacquer; low ammonia)",
+      "color_type": "permanent",
       "default_mixing_ratio": "1:1 (color : developer), per the Mixing & Processing table on both official 2020 charts",
       "developer_options": [
         "Pro-Oxide Cream Developer 10 volume",
@@ -162,7 +168,8 @@
         "To maintain the most control when covering gray, select a formula no more than two levels lighter than the natural hair.",
         "Coverage proportion table - Cooling families (GN, AB, NA) mixed with ABn, N or NN; Warming families (GB, NG, RO) mixed with NW, WG, CB or RB: up to 25% gray = 0 + 2 oz (cooling) or 1/2 oz + 1 1/2 oz (warming); 25-50% = 1/2 oz + 1 1/2 oz or 3/4 oz + 1 1/4 oz; 50-75% = 1 oz + 1 oz (both); 75-100% = 1 1/2 oz + 1/2 oz (both). (Official 2020 mini chart, oz with ml equivalents.)",
         "Determine the client's natural level using the Natural Warm (NW) family swatches in the swatch book (formulation guidelines).",
-        "Use 20 volume Pro-Oxide Cream Developer for standard lift / gray coverage."
+        "Use 20 volume Pro-Oxide Cream Developer for standard lift / gray coverage.",
+        "redken_cgl_carminr_r5_intermix_restriction: {\"condition\": {\"line\": \"Color Gels Lacquers\", \"families\": [\"R5\", \"CarminR\"]}, \"action\": {\"intermix_restriction\": \"use_alone_or_only_with_R5_or_CarminR\", \"warning\": \"Mixing outside the range can cause unpredictable results\"}}"
       ],
       "lift_rules": [
         "10 volume: up to 1 level of lift (minimal lift)",
@@ -255,27 +262,35 @@
       "region_or_market": "US",
       "discontinued_status": "Active - line listed on redkenpro.com product page as of June 2026.",
       "source_url": "https://www.redkenpro.com/education/-/media/project/loreal/brand%20sites/redken/americas/us_us/education/shade%20charts/color%20gels%20mini%20shade%20chart%202020.pdf",
-      "source_document": "Official Redken Color Gels Lacquers mini shade chart 2020 (https://www.redkenpro.com/education/-/media/project/loreal/brand%20sites/redken/americas/us_us/education/shade%20charts/color%20gels%20mini%20shade%20chart%202020.pdf) and full-size shade chart 2020 (https://www.redkenpro.com/education/-/media/project/loreal/brand%20sites/redken/americas/us_us/education/shade%20charts/color%20gels%20full%20size%20shade%20chart%202020.pdf), both redkenpro.com /education/ media PDFs ('All rights reserved. 2020'); plus official product page (https://www.redkenpro.com/products/haircolor/color-gels-lacquers) and the Color Gels Lacquers professional service page on redkenpro.com",
+      "source_document": "Redken mixing and processing charts (1034804579-2025-Product-Guide-Avec-Compression.pdf pp. 55-68)",
       "source_confidence": "high",
-      "evidence_status": "confirmed",
-      "assumptions": [],
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch09)"
+      ],
       "data_gaps": [
         "Charts are dated 2020; shades or rules introduced after 2020 (if any) are not captured.",
         "Which specific shades carry Rubilane, R5 or Carmin'R dye technology could not be mapped from extracted PDF text (visual icons only).",
         "The exact 37-shade list of 1:1 Shades EQ Gloss refresh matches was not enumerated in fetched sources."
-      ]
+      ],
+      "source_type": "manufacturer_pdf"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "color_type": "permanent",
-      "default_mixing_ratio": "1:1 (IGORA ROYAL core; chart 'MIXING & TIMING': IGORA ROYAL 1:1, development time 30-45 minutes)",
+      "default_mixing_ratio": [
+        "igora_royal_standard_mix_process: \"1:1\"",
+        "igora_fashion_lights_off_scalp_only: \"1:1\""
+      ],
       "developer_options": [
         "IGORA ROYAL Oil Developer 3% (10 Vol.)",
         "IGORA ROYAL Oil Developer 6% (20 Vol.)",
         "IGORA ROYAL Oil Developer 9% (30 Vol.)",
-        "IGORA ROYAL Oil Developer 12% (40 Vol.)"
+        "IGORA ROYAL Oil Developer 12% (40 Vol.)",
+        "igora_royal_standard_mix_process: {\"mixing_ratio\": \"1:1\", \"developer_volumes\": [10, 20, 30], \"processing_time_min\": [30, 45], \"apply_to\": \"dry_unwashed_hair\"}",
+        "igora_fashion_lights_off_scalp_only: {\"mixing_ratio\": \"1:1\", \"developer_volume\": 40, \"processing_time_min\": [30, 45], \"max_lift_levels\": 5, \"application\": \"off_scalp_only\", \"starting_level_max\": 6}"
       ],
       "developer_strengths_if_stated": [
         "3% / 10 Vol.",
@@ -288,23 +303,29 @@
         "IGORA ROYAL ABSOLUTES: 30-45 minutes",
         "HIGHLIFTS Ultra Blonde (10-) and Special Blonde (12-): 30-45 minutes",
         "One chart block reads '1:1, Development time up to 20 minutes, Recommended 3% (10 Vol.)' - its product binding (likely Pastels or Silver Whites) is ambiguous in the scrambled text layout",
-        "IGORA COLOR10 (companion line on same chart): 'in as little as 10 minutes'"
+        "IGORA COLOR10 (companion line on same chart): 'in as little as 10 minutes'",
+        "igora_royal_standard_mix_process: [30, 45]",
+        "igora_fashion_lights_off_scalp_only: [30, 45]"
       ],
       "gray_coverage_rules": [
         "All IGORA ROYAL and IGORA COLOR10 shades provide up to 50% or 100% white hair coverage.",
         "All IGORA ROYAL ABSOLUTES shades provide up to 100% white hair coverage on more than 50% white hair without having to mix with a natural tone.",
         "When shades with up to 70% coverage are used on more than 50% white hair, add 1 part of a Natural (-0) or Beige (-4) series in a 2:1 ratio to achieve 100% coverage. Mix 1:1 for thick and resistant hair. Example: 40g 6-65 + 20g 6-4 + 60g IGORA ROYAL Oil Developer.",
         "Chart lists 'IGORA ROYAL 100% coverage shades:' followed by a garbled token sequence '-0 -0 -1 -4 -63' in the text layer (depth digits lost).",
-        "Developer guide: covering 100% white hair -> 6% 20 Vol.; white hair coverage with ABSOLUTES -> 9% 30 Vol.; ABSOLUTES/Natural Extra on more than 90% white hair -> 6% 20 Vol."
+        "Developer guide: covering 100% white hair -> 6% 20 Vol.; white hair coverage with ABSOLUTES -> 9% 30 Vol.; ABSOLUTES/Natural Extra on more than 90% white hair -> 6% 20 Vol.",
+        "igora_fashion_gray_mix_rule: {\"condition\": {\"shade_families\": [\"-11\", \"-12\", \"-13\", \"-5\", \"-55\", \"-57\", \"-6\", \"-63\", \"-65\", \"-68\", \"-7\", \"-77\", \"-88\", \"-98\", \"-99\"], \"gray_pct_min\": 50}, \"action\": {\"mix_with_natural\": \"2:1 fashion:natural\", \"resistant_hair_mix\": \"1:1 fashion:natural\"}}",
+        "igora_neutralizer_amounts_by_level: {\"condition\": {\"shades\": [\"0-11\", \"0-22\", \"0-33\"]}, \"action\": {\"additive_max_pct_by_level\": {\"8-9\": 5, \"6-7\": 15, \"1-5\": 25}, \"developer_increase_proportionally\": true}}"
       ],
       "lift_rules": [
         "Oil Developer usage table: coloring darker / 0 levels -> 3% 10 Vol. or 6% 20 Vol.; lifting 1-2 levels -> 6% 20 Vol.; lifting 2-3 levels -> 9% 30 Vol.; lifting up to 3 levels with Ultra Blonde (10-) and 3-4 levels with Special Blonde (12-) -> 9% 30 Vol.; lifting 3-4 levels with Ultra Blonde (10-) and 4-5 levels with Special Blonde (12-) -> 12% 40 Vol.",
         "Footnote: '4-5 levels of lift are achievable on natural base 6 and lighter.'",
-        "Highlifts mixing: Ultra Blonde (10- Series) 1:1; Special Blonde (12- Series) 1:2; both 30-45 minutes."
+        "Highlifts mixing: Ultra Blonde (10- Series) 1:1; Special Blonde (12- Series) 1:2; both 30-45 minutes.",
+        "igora_royal_10_series_highlift: {\"mixing_ratio\": \"1:1\", \"developer_options\": [{\"volume\": 30, \"max_lift_levels\": 3}, {\"volume\": 40, \"max_lift_levels\": 4}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}",
+        "igora_royal_12_series_highlift: {\"mixing_ratio\": \"1:2\", \"developer_options\": [{\"volume\": 30, \"max_lift_levels\": 4}, {\"volume\": 40, \"max_lift_levels\": 5}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}"
       ],
       "tone_family_legend": [
         "Tone direction: -0 Natural",
-        "-1 Cendr\u00e9",
+        "-1 Cendré",
         "-2 Ash",
         "-3 Matte",
         "-4 Beige",
@@ -324,17 +345,19 @@
       "region_or_market": "US",
       "discontinued_status": "active (current official US line page live as of June 2026)",
       "source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
+      "source_document": "IGORA ROYAL technical instructions (445122692-schwarzkopf-quick-starter-guide.pdf pp. 7-10)",
       "source_confidence": "high",
-      "evidence_status": "confirmed",
+      "evidence_status": "manufacturer_stated",
       "assumptions": [
         "Chart copyright 2021 used as publication date; official page fetched June 2026 used for current portfolio claims (143 shades, 5 sub-lines, active status).",
-        "Scrambled multi-column text layout means some mixing blocks could not be bound to a named sub-range; only explicitly labeled bindings were recorded."
+        "Scrambled multi-column text layout means some mixing blocks could not be bound to a named sub-range; only explicitly labeled bindings were recorded.",
+        "Aggregated from normalized seed package technical_rules (batch09)"
       ],
       "data_gaps": [
         "Per-sub-range mixing block for FASHION LIGHTS and SILVER WHITES not unambiguously recoverable (a 1:2 / 30-45 min block and a 1:1 / up to 20 min / 3% block sit adjacent to their labels but binding is uncertain).",
         "The 10 shades needed to reconcile 133 extracted entries vs 143 claimed shades are unidentified."
-      ]
+      ],
+      "source_type": "manufacturer_pdf"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
@@ -374,7 +397,7 @@
       ],
       "tone_family_legend": [
         "-0 natural (neutral)",
-        "-1 cendr\u00e9 (blue/violet)",
+        "-1 cendré (blue/violet)",
         "-2 ash (blue)",
         "-3 matte (green)",
         "-4 beige (muted gold)",
@@ -651,13 +674,13 @@
       ]
     },
     {
-      "canonical_key": "L'Or\u00e9al Professionnel::Majirel::US",
-      "brand": "L'Or\u00e9al Professionnel",
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "color_type": "permanent",
       "default_mixing_ratio": "1:1.5",
       "developer_options": [
-        "Majicr\u00e8me Developer"
+        "Majicrème Developer"
       ],
       "developer_strengths_if_stated": [
         "12.5-vol (3.75%)",
@@ -666,23 +689,23 @@
         "40-vol (12%) maximum"
       ],
       "processing_time_ranges": [
-        "35 minutes (Majirel / Majirel Cool Cover / Majirel Cool Inforced / Majirouge \u2014 printed as 'Development time: 35 minutes')",
-        "50 minutes (Majirel High-Lift only \u2014 printed as 'Development time: 50 minutes' on 07/23 chart)"
+        "35 minutes (Majirel / Majirel Cool Cover / Majirel Cool Inforced / Majirouge — printed as 'Development time: 35 minutes')",
+        "50 minutes (Majirel High-Lift only — printed as 'Development time: 50 minutes' on 07/23 chart)"
       ],
       "gray_coverage_rules": [
         "100% grey coverage claim (2025 chart: 'Same 100% grey coverage'; 2023 chart: '100% grey coverage').",
         "Under 50% white: Choose the client's desired Majirel shade.",
-        "Over 50% white, warm target shade: \u00bd tube of the desired shade + \u00bd tube of the corresponding level Gold shade (.3/G).",
-        "Over 50% white, cool target shade: \u00bd tube of the desired shade + \u00bd tube of the corresponding level Natural shade (N) (2023 chart prints '-/N').",
+        "Over 50% white, warm target shade: ½ tube of the desired shade + ½ tube of the corresponding level Gold shade (.3/G).",
+        "Over 50% white, cool target shade: ½ tube of the desired shade + ½ tube of the corresponding level Natural shade (N) (2023 chart prints '-/N').",
         "2023 chart (P2634200): 6.03, 7.03 and 8.03 give 'Complete coverage without mixing'.",
         "Majirel Cool Cover, Level 3-5: For up to 100% coverage of white hair, apply target shade without mixing.",
-        "Majirel Cool Cover, Level 6 & above: For up to 100% natural coverage of white hair, apply target shade; for up to 100% opaque coverage of white hair apply \u00bd target shade + \u00bd natural shade on the same level.",
-        "Majirel High-Lift (2023 chart): grey blending only \u2014 up to 30% white, apply target shade + 30-vol Majicr\u00e8me Developer; 'Majirel High-Lift is not designed for white coverage.'"
+        "Majirel Cool Cover, Level 6 & above: For up to 100% natural coverage of white hair, apply target shade; for up to 100% opaque coverage of white hair apply ½ target shade + ½ natural shade on the same level.",
+        "Majirel High-Lift (2023 chart): grey blending only — up to 30% white, apply target shade + 30-vol Majicrème Developer; 'Majirel High-Lift is not designed for white coverage.'"
       ],
       "lift_rules": [
         "20-Vol: up to 2 levels of lift.",
         "30-Vol: up to 3 levels of lift.",
-        "Majirel High-Lift (2023 chart, 1:2 ratio): 30-vol up to 3 levels (maximum neutralization); 40-vol up to 4\u00bd levels (maximum lift)."
+        "Majirel High-Lift (2023 chart, 1:2 ratio): 30-vol up to 3 levels (maximum neutralization); 40-vol up to 4½ levels (maximum lift)."
       ],
       "tone_family_legend": [
         {
@@ -723,19 +746,19 @@
         }
       ],
       "special_usage_notes": [
-        "Mixing guideline as printed (2025 chart): '1 to 1.5 mixing ratio. 1 tube + 3 oz. Majicr\u00e8me Developer. Measure 3 oz. of Majicr\u00e8me Developer 12.5-vol., 20-vol., or 30-vol. depending on the desired intensity of the result.'",
-        "Mixing guideline as printed (2023 chart, P2634200): '1 : 1.5 mixing ratio: 1.7 oz. tube + 2.6 oz. Majicr\u00e8me Developer.'",
-        "2023 chart safety panel: 'USE EXCLUSIVELY WITH MAJICR\u00c8ME DEVELOPERS, 12.5-VOL (3.75%), 20-VOL. (6%), 30-VOL (9%), 40-VOL (12%) MAXIMUM.'",
-        "Carmilane\u2122, Rubilane\u2122 & DM5 WARNING (2025 chart): these shades must be used alone and must not be used in combination with any other shade from a different technology family (e.g. Carmilane\u2122 5.60 can be mixed with Carmilane\u2122 6.66). 2023 chart extends the same warning to Lumax (Carmilane\u2122 5.60/5RRR cannot be mixed with Lumax 6.60/6RRR).",
+        "Mixing guideline as printed (2025 chart): '1 to 1.5 mixing ratio. 1 tube + 3 oz. Majicrème Developer. Measure 3 oz. of Majicrème Developer 12.5-vol., 20-vol., or 30-vol. depending on the desired intensity of the result.'",
+        "Mixing guideline as printed (2023 chart, P2634200): '1 : 1.5 mixing ratio: 1.7 oz. tube + 2.6 oz. Majicrème Developer.'",
+        "2023 chart safety panel: 'USE EXCLUSIVELY WITH MAJICRÈME DEVELOPERS, 12.5-VOL (3.75%), 20-VOL. (6%), 30-VOL (9%), 40-VOL (12%) MAXIMUM.'",
+        "Carmilane™, Rubilane™ & DM5 WARNING (2025 chart): these shades must be used alone and must not be used in combination with any other shade from a different technology family (e.g. Carmilane™ 5.60 can be mixed with Carmilane™ 6.66). 2023 chart extends the same warning to Lumax (Carmilane™ 5.60/5RRR cannot be mixed with Lumax 6.60/6RRR).",
         "Majirel Boosters (2025 chart): Blue, Violet, Green, Copper, Clear; mixed as '.25 Majirel Booster + Majirel Shade + Developer', development time 35 minutes. 'If the violet booster is used with a level 8 and up, be cautious and use a very small amount.'",
         "Majirel Clear (2023 chart): break the base; subdue the intensity of tone; create a lighter shade; dilute another shade for color-matching/refreshing on mid-lengths and ends; create pastel shades with mixers, Carmilane, Rubilane, Lumax, or DM5 shades.",
         "Mix shades (2023 chart): Cool Mix .10 Blue Mix, .70 Green Mix, .20 Violet Mix; Warm Mix .40 Copper Mix, .60 Red Mix; plus 901S/NB and 900S/NN.",
         "Cool Cover reflect labels as printed on 2023 chart: .11/BB 'Ash+', .1/B 'Ash', .2/V 'Violet', .0/N 'Neutral', .13/BG 'Beige' (Cool Cover section only; the main dual-coding legend on both charts prints .1 as 'blue').",
         "Level legend (both charts): 10 pale blonde, 9 very light blonde, 8 light blonde, 7 blonde, 6 dark blonde, 5 light brown, 4 brown, 3 dark brown, 2 darkest brown, 1 black.",
-        "Dual coding example as printed: '5GV = 5.32 \u2014 Level of color / Primary tone of color / Secondary tone of color'.",
+        "Dual coding example as printed: '5GV = 5.32 — Level of color / Primary tone of color / Secondary tone of color'.",
         "Mocha (.8/M) placement note (2023 chart): '.8 LEVELS 4, 5, & 6' and '.8 LEVELS 7 & 8' printed against the color wheel.",
         "2025 chart 'Improved' formula claims: odor trapping technology for reduced ammonia odor; larger 2 oz. tube; same 100% grey coverage; same 1 to 1.5 mixing ratio and 35-minute processing time.",
-        "Rinsing (2025 chart): emulsify with warm water, rinse, shampoo twice with L'Or\u00e9al Professionnel Post-Color Shampoo. Rinsing (2023 chart): rinse and shampoo with Metal Detox Shampoo, follow with Metal Detox mask.",
+        "Rinsing (2025 chart): emulsify with warm water, rinse, shampoo twice with L'Oréal Professionnel Post-Color Shampoo. Rinsing (2023 chart): rinse and shampoo with Metal Detox Shampoo, follow with Metal Detox mask.",
         "Allergy warning printed on 2023 chart: skin allergy test 48 hours before each use; wear gloves; do not use on clients with prior reactions or sensitive/itchy/damaged scalp."
       ],
       "region_or_market": "US",
@@ -753,10 +776,10 @@
       ]
     },
     {
-      "canonical_key": "L'Or\u00e9al Professionnel::Dia Light::US",
-      "brand": "L'Or\u00e9al Professionnel",
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
-      "color_type": "demi-permanent (printed: 'Acidic gel-cr\u00e8me demi')",
+      "color_type": "demi-permanent (printed: 'Acidic gel-crème demi')",
       "default_mixing_ratio": "1:1.5",
       "developer_options": [
         "Diactivateur Developer"
@@ -812,13 +835,13 @@
         }
       ],
       "special_usage_notes": [
-        "Preparation as printed: '1 : 1.5 mixing ratio \u2014 1 tube (1.7 oz.) to 2.6 oz. Diactivateur developer. Measure 2.6 oz. of 6-vol. (1.8%) or 9-vol. (2.7%) Diactivateur Developer, depending on the desired intensity of the result.'",
+        "Preparation as printed: '1 : 1.5 mixing ratio — 1 tube (1.7 oz.) to 2.6 oz. Diactivateur developer. Measure 2.6 oz. of 6-vol. (1.8%) or 9-vol. (2.7%) Diactivateur Developer, depending on the desired intensity of the result.'",
         "Application: on dry hair, spray Metal Detox Pre-Treatment on each section and apply Dia Light formula with a brush or a bottle on regrowth, mid-lengths or ends; on wet hair, after shampooing with Metal Detox Shampoo, apply with a brush or bottle on pre-lightened hair.",
         "Dia Light Liquifier: best for fast bottle application and toning all over; Step 1 mix Dia Light shade + Diactivateur developer at 1:1.5; Step 2 add Liquifier (half dose .2 oz., full dose .4 oz.); 'Liquifier only to be used with Dia Light + Diactivateur developer. Liquifier is not a developer.' Uses: fast application, ultimate customization, adjust color intensity (increase transparency and shine).",
-        "Dia DM5 & Rubilane\u2122 WARNING: 'It is imperative that DM5 & Rubilane\u2122 shades be used alone. They must not be used in combination with any other shade.'",
-        "Claims printed: '+30% more conditioning* (*vs. uncolored hair)'; conditions hair after lightening and color services; gel-cr\u00e8me consistency for controlled, precision application; cationic polymers have a resurfacing effect on the cuticle.",
+        "Dia DM5 & Rubilane™ WARNING: 'It is imperative that DM5 & Rubilane™ shades be used alone. They must not be used in combination with any other shade.'",
+        "Claims printed: '+30% more conditioning* (*vs. uncolored hair)'; conditions hair after lightening and color services; gel-crème consistency for controlled, precision application; cationic polymers have a resurfacing effect on the cuticle.",
         "Mocha composition as printed: 'Mocha .8/M Contains: Violet .2/V, Blue .1/B, Gold .3/G'.",
-        "Dual coding example as printed: '5GV = 5.32 \u2014 Level of color / Primary tone of color / Secondary tone of color'.",
+        "Dual coding example as printed: '5GV = 5.32 — Level of color / Primary tone of color / Secondary tone of color'.",
         "Level legend: 10 pale blonde, 9 very light blonde, 8 light blonde, 7 blonde, 6 dark blonde, 5 light brown, 4 brown, 3 dark brown, 2 darkest brown, 1 black.",
         "Rinsing: when development time is complete, add a little warm water and gently emulsify; rinse thoroughly and shampoo with Metal Detox Shampoo; follow with Metal Detox mask.",
         "2 NEW coral shades flagged on the 2025 chart: 10.24/10VC and 8.24/8VC."
@@ -1149,7 +1172,7 @@
     {
       "canonical_key": "Pravana::ChromaSilk Creme Color::US",
       "brand": "Pravana",
-      "product_line": "ChromaSilk Cr\u00e8me Color (Permanent)",
+      "product_line": "ChromaSilk Crème Color (Permanent)",
       "color_type": "permanent",
       "default_mixing_ratio": "1:1.5 (1 part ChromaSilk Creme Color : 1.5 parts ChromaSilk Creme Developer)",
       "developer_options": [
@@ -1158,8 +1181,8 @@
         "ChromaSilk Creme Developer 30V",
         "ChromaSilk Creme Developer 40V"
       ],
-      "developer_strengths_if_stated": "10V\u201340V per official product pages (\"creme developer 10-40V\")",
-      "processing_time_ranges": "30 minutes \u2014 up to 45 minutes (printed on product pages)",
+      "developer_strengths_if_stated": "10V–40V per official product pages (\"creme developer 10-40V\")",
+      "processing_time_ranges": "30 minutes — up to 45 minutes (printed on product pages)",
       "gray_coverage_rules": "Up to 100% gray coverage (printed Features on product pages)",
       "lift_rules": null,
       "tone_family_legend": "12 tonal families; per-family descriptions on product pages (e.g., Ash Family: cool green base)",
@@ -1189,7 +1212,7 @@
       "developer_strengths_if_stated": "Zero Lift only (printed on product pages)",
       "processing_time_ranges": "5 minutes or less (printed on product pages)",
       "gray_coverage_rules": null,
-      "lift_rules": "No lift \u2014 ammonia-free toners",
+      "lift_rules": "No lift — ammonia-free toners",
       "tone_family_legend": "Blondes and Brunettes series; bases stated per shade (e.g., Ash: cool/green base)",
       "special_usage_notes": "Apply to damp hair; Express Tones Clear may be added (Ash product page)",
       "region_or_market": "US",
@@ -1211,8 +1234,8 @@
       "default_mixing_ratio": null,
       "developer_options": [],
       "developer_strengths_if_stated": null,
-      "processing_time_ranges": "20\u201330 minutes on several shade pages; not uniform across collection",
-      "gray_coverage_rules": "N/A \u2014 non-oxidative, no developer",
+      "processing_time_ranges": "20–30 minutes on several shade pages; not uniform across collection",
+      "gray_coverage_rules": "N/A — non-oxidative, no developer",
       "lift_rules": "No lift; pre-lightening required for vivid deposit on natural hair",
       "tone_family_legend": "Named direct dyes (no level/tone digit system)",
       "special_usage_notes": "No developer; intermixable across VIVIDS shades",
@@ -1307,9 +1330,9 @@
       "developer_strengths_if_stated": "10V max deposit; 20V lighter/brighter (product pages)",
       "processing_time_ranges": null,
       "gray_coverage_rules": "Up to 100% gray: 25% Everlasting + 75% ChromaSilk Permanent (printed How To Use)",
-      "lift_rules": "Low-volume developer only; intermix ratios by level (25\u201350%)",
+      "lift_rules": "Low-volume developer only; intermix ratios by level (25–50%)",
       "tone_family_legend": "Named direct-dye shades (no level/tone digit system)",
-      "special_usage_notes": "Intermixable with ChromaSilk Permanent Cr\u00e8me and other Everlasting shades",
+      "special_usage_notes": "Intermixable with ChromaSilk Permanent Crème and other Everlasting shades",
       "region_or_market": "US",
       "discontinued_status": null,
       "source_url": "https://www.pravana.com/products/color/permanent/chromasilk-vivids-everlasting/",
@@ -1328,7 +1351,7 @@
       "developer_options": [],
       "developer_strengths_if_stated": null,
       "processing_time_ranges": null,
-      "gray_coverage_rules": "N/A \u2014 non-oxidative",
+      "gray_coverage_rules": "N/A — non-oxidative",
       "lift_rules": "No lift; pre-lightening required for vivid deposit",
       "tone_family_legend": "Named shades across OG Semis, Cosmic, Neon Electric, NeoPop, Impulse, 70s collections",
       "special_usage_notes": "44+ intermixable shades; no developer (official line page)",
@@ -1357,10 +1380,10 @@
         "30V",
         "40V"
       ],
-      "developer_strengths_if_stated": "10V deposit/gray; 20V\u201340V lift per workbook chart",
+      "developer_strengths_if_stated": "10V deposit/gray; 20V–40V lift per workbook chart",
       "processing_time_ranges": "30 minutes; up to 40 minutes for gray coverage",
       "gray_coverage_rules": "Incorporate Natural (N) series per % gray (workbook 5-step chart)",
-      "lift_rules": "Up to 3\u20134 levels depending on developer (workbook)",
+      "lift_rules": "Up to 3–4 levels depending on developer (workbook)",
       "tone_family_legend": "Level + dominant/secondary reflection letters (workbook shade identifier)",
       "special_usage_notes": "Balancing Complex 5; low ammonia",
       "region_or_market": "US",
@@ -1408,7 +1431,7 @@
       "developer_strengths_if_stated": "9 Volume",
       "processing_time_ranges": "5 minutes or less",
       "gray_coverage_rules": null,
-      "lift_rules": "No lift \u2014 toning cremes",
+      "lift_rules": "No lift — toning cremes",
       "tone_family_legend": "7 intermixable shades: B, SA, SV, VP, GrBl, GV, RoV",
       "special_usage_notes": "Ammonia-free rapid toners",
       "region_or_market": "US",
@@ -1425,13 +1448,13 @@
       "brand": "Kenra Professional",
       "product_line": "Studio Stylist Express",
       "color_type": "permanent express",
-      "default_mixing_ratio": "1:1 with Kenra Color Developer 10V\u201330V",
+      "default_mixing_ratio": "1:1 with Kenra Color Developer 10V–30V",
       "developer_options": [
         "10V",
         "20V",
         "30V"
       ],
-      "developer_strengths_if_stated": "10V\u201330V",
+      "developer_strengths_if_stated": "10V–30V",
       "processing_time_ranges": "10 minutes or less (5 minutes for gray blending)",
       "gray_coverage_rules": "N/NB series up to 100% gray in 10 minutes",
       "lift_rules": "Lifts and deposits",
@@ -1480,7 +1503,7 @@
         "Cream Developer 10 volume"
       ],
       "developer_strengths_if_stated": "10 volume",
-      "processing_time_ranges": "5\u201320 minutes",
+      "processing_time_ranges": "5–20 minutes",
       "gray_coverage_rules": "Blending/refining; not positioned for resistant gray coverage",
       "lift_rules": "No-lift demi-permanent",
       "tone_family_legend": "65+ shades incl. Flash Toners, Muted Metallics, Clear (official TH product page)",
@@ -1495,7 +1518,7 @@
         "US paulmitchell.com lacks public shade chart; international official page used"
       ],
       "data_gaps": [
-        "Shade swatches on official page are image-only; only 14 numeric codes found in HTML metadata \u2014 full shade-level Stage 4 deferred"
+        "Shade swatches on official page are image-only; only 14 numeric codes found in HTML metadata — full shade-level Stage 4 deferred"
       ]
     },
     {
@@ -1630,7 +1653,7 @@
       "brand": "Matrix",
       "product_line": "SoColor Cult (Vivids)",
       "color_type": "direct_dye",
-      "default_mixing_ratio": "Direct application \u2014 no developer required",
+      "default_mixing_ratio": "Direct application — no developer required",
       "developer_options": [],
       "developer_strengths_if_stated": [
         "No developer needed (manual p.64-66)"
@@ -1667,7 +1690,7 @@
       "brand": "Matrix",
       "product_line": "Light Master (incl. Light Master Pre-Bonded)",
       "color_type": "lightener",
-      "default_mixing_ratio": "Classic off-scalp 1:1.5\u20131:2; Pre-Bonded off-scalp 1:1.5\u20131:2; on-scalp 1:2 (manual pp.70-71)",
+      "default_mixing_ratio": "Classic off-scalp 1:1.5–1:2; Pre-Bonded off-scalp 1:1.5–1:2; on-scalp 1:2 (manual pp.70-71)",
       "developer_options": [
         "Matrix Cream Developer 10 Volume",
         "Matrix Cream Developer 20 Volume",
@@ -1731,6 +1754,179 @@
       "data_gaps": [
         "Full official shade chart extraction and peroxide volume chart still pending."
       ]
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Color Calypso::US",
+      "brand": "Moroccanoil Professional",
+      "product_line": "Color Calypso",
+      "color_type": "demi",
+      "source_document": "Moroccanoil usage guidelines (900375675-Moroccanoil-Color-Manual-Final-1.pdf pp. 28-44)",
+      "source_type": "manufacturer_pdf",
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch09)"
+      ],
+      "data_gaps": [],
+      "default_mixing_ratio": [
+        "moroccanoil_calypso_gloss_mix_process: \"1:1\"",
+        "moroccanoil_calypso_cream_mix_process: \"1:2\""
+      ],
+      "developer_options": [
+        "moroccanoil_calypso_gloss_mix_process: {\"mixing_ratio\": \"1:1\", \"developer\": \"Color Calypso Demi-Permanent Gloss Activator\", \"processing_time_min_without_heat\": 20, \"processing_time_min_with_heat\": 15, \"gray_blending_pct_max\": 60}",
+        "moroccanoil_calypso_cream_mix_process: {\"mixing_ratio\": \"1:2\", \"developer_volumes\": [5, 15], \"processing_time_min_without_heat\": 25, \"processing_time_min_with_heat\": 20, \"gray_blending_pct_max\": 60}"
+      ]
+    },
+    {
+      "canonical_key": "Moroccanoil Professional::Color Rhapsody::US",
+      "brand": "Moroccanoil Professional",
+      "product_line": "Color Rhapsody",
+      "color_type": "permanent",
+      "source_document": "Moroccanoil usage guidelines (900375675-Moroccanoil-Color-Manual-Final-1.pdf pp. 28-44)",
+      "source_type": "manufacturer_pdf",
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch09)"
+      ],
+      "data_gaps": [],
+      "default_mixing_ratio": [
+        "moroccanoil_rhapsody_perm_mix_process: \"1:1\""
+      ],
+      "developer_options": [
+        "moroccanoil_rhapsody_perm_mix_process: {\"mixing_ratio\": \"1:1\", \"developer_volumes\": [5, 10, 20, 30, 40], \"processing_time_min_without_heat\": [35, 45], \"processing_time_min_with_heat\": [15, 25], \"gray_coverage_pct_max\": 100}"
+      ],
+      "lift_rules": [
+        "moroccanoil_rhapsody_high_lift: {\"mixing_ratio\": \"1:2\", \"developer_options\": [{\"volume\": 30, \"max_lift_levels\": 4, \"processing_time_min\": 50}, {\"volume\": 40, \"max_lift_levels\": 5, \"processing_time_min\": 60}], \"heat\": false}"
+      ],
+      "gray_coverage_rules": [
+        "moroccanoil_rhapsody_ultimates_resistant_gray: {\"condition\": {\"line\": \"Color Rhapsody Ultimates Permanent Cream Color\", \"gray_pct_min\": 50}, \"action\": {\"use_alone\": true, \"mixing_ratio\": \"1:1\", \"developer_volume_recommended\": 20, \"gray_coverage_pct\": 100, \"processing_time_min\": [35, 45]}}",
+        "moroccanoil_rhapsody_gray_natural_ratio: {\"condition\": {\"line\": \"Color Rhapsody Permanent Cream Color\", \"gray_pct_min\": 25}, \"action\": {\"ratios\": [{\"gray_pct\": \"25-50\", \"natural_to_desired\": \"1:2\"}, {\"gray_pct\": \"50-100\", \"natural_to_desired\": \"1:1\"}, {\"gray_pct\": \"red_above_50\", \"natural_to_desired_red\": \"1:2\"}], \"developer_volume_recommended\": 20}}"
+      ]
+    },
+    {
+      "canonical_key": "Redken::Color Fusion::US",
+      "brand": "Redken",
+      "product_line": "Color Fusion",
+      "color_type": "permanent",
+      "source_document": "Redken mixing and processing charts (1034804579-2025-Product-Guide-Avec-Compression.pdf pp. 55-68)",
+      "source_type": "manufacturer_pdf",
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch09)"
+      ],
+      "data_gaps": [],
+      "default_mixing_ratio": [
+        "redken_color_fusion_mix_process: \"1:1\""
+      ],
+      "developer_options": [
+        "redken_color_fusion_mix_process: {\"mixing_ratio\": \"1:1\", \"developer_volumes\": [10, 20, 30, 40], \"processing_time_min\": [35, 45], \"heat\": false}"
+      ],
+      "processing_time_ranges": [
+        "redken_color_fusion_mix_process: [35, 45]"
+      ],
+      "lift_rules": [
+        "redken_color_fusion_extra_lift: {\"mixing_ratio\": \"1:2\", \"developer_by_family\": {\"Violet\": 40, \"Light Neutral\": 40, \"Blue\": 40, \"Titanium\": [30, 40]}, \"max_lift_levels\": 5, \"processing_time_min\": [35, 45], \"intermix_only_with_same_subline\": true}"
+      ]
+    },
+    {
+      "canonical_key": "Redken::Cover Fusion::US",
+      "brand": "Redken",
+      "product_line": "Cover Fusion",
+      "color_type": "permanent",
+      "source_document": "Redken mixing and processing charts (1034804579-2025-Product-Guide-Avec-Compression.pdf pp. 55-68)",
+      "source_type": "manufacturer_pdf",
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch09)"
+      ],
+      "data_gaps": [],
+      "gray_coverage_rules": [
+        "redken_cover_fusion_50_plus_gray: {\"condition\": {\"line\": \"Cover Fusion\", \"gray_pct_min\": 50}, \"action\": {\"mixing_ratio\": \"1:1\", \"developer_volume\": 20, \"processing_time_min\": 35, \"resistant_hair_processing_time_min\": 45, \"max_lift_levels\": 2, \"heat\": false}}"
+      ]
+    },
+    {
+      "canonical_key": "Redken::Color Gels Oils::US",
+      "brand": "Redken",
+      "product_line": "Color Gels Oils",
+      "color_type": "permanent",
+      "source_document": "Redken mixing and processing charts (1034804579-2025-Product-Guide-Avec-Compression.pdf pp. 55-68)",
+      "source_type": "manufacturer_pdf",
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch09)"
+      ],
+      "data_gaps": [],
+      "default_mixing_ratio": [
+        "redken_color_gels_oils_mix_process: \"1:1\""
+      ],
+      "developer_options": [
+        "redken_color_gels_oils_mix_process: {\"mixing_ratio\": \"1:1\", \"developer_options\": [{\"volume\": 10, \"max_lift_levels\": 1, \"processing_time_min\": 20}, {\"volume\": 20, \"max_lift_levels\": 2, \"processing_time_min\": 30}, {\"volume\": 30, \"max_lift_levels\": 3, \"processing_time_min\": 40}, {\"volume\": 40, \"max_lift_levels\": 3, \"processing_time_min\": 45}], \"heat\": false}"
+      ]
+    },
+    {
+      "canonical_key": "Redken::Color Gels 10 Minute::US",
+      "brand": "Redken",
+      "product_line": "Color Gels 10 Minute",
+      "color_type": "permanent",
+      "source_document": "Redken mixing and processing charts (1034804579-2025-Product-Guide-Avec-Compression.pdf pp. 55-68)",
+      "source_type": "manufacturer_pdf",
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch09)"
+      ],
+      "data_gaps": [],
+      "default_mixing_ratio": [
+        "redken_color_gels_10_minute: \"1:1\""
+      ],
+      "developer_options": [
+        "redken_color_gels_10_minute: {\"mixing_ratio\": \"1:1\", \"developer_options\": [{\"volume\": 20, \"usage\": \"minimal_lift_gray_coverage\"}, {\"volume\": 30, \"usage\": \"minimal_lift_gray_blending\"}], \"processing_time_min\": [10, 15], \"heat\": false}"
+      ],
+      "processing_time_ranges": [
+        "redken_color_gels_10_minute: [10, 15]"
+      ]
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Permanent::US",
+      "brand": "Aveda",
+      "product_line": "Full Spectrum Permanent",
+      "color_type": "permanent",
+      "source_document": "Aveda Full Spectrum formulation guidelines (452808418-Full-Spectrum-Color.pdf pp. 1-2)",
+      "source_type": "manufacturer_pdf",
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch09)"
+      ],
+      "data_gaps": [],
+      "default_mixing_ratio": [
+        "aveda_natural_intense_mix_process: \"1:1\""
+      ],
+      "developer_options": [
+        "aveda_natural_intense_mix_process: {\"mixing_ratio\": \"1:1\", \"developer_by_lift\": [{\"lift_levels\": 4, \"developer_volume\": 40, \"processing_time_min\": 45}, {\"lift_levels\": 3, \"developer_volume\": 30, \"processing_time_min\": 40}, {\"lift_levels\": 2, \"developer_volume\": 20, \"processing_time_min\": 30}, {\"lift_levels\": 1, \"developer_volume\": 10, \"processing_time_min\": 20}, {\"lift_levels\": \"0-1\", \"developer_volume\": 5, \"processing_time_min\": 20}]}"
+      ],
+      "lift_rules": [
+        "aveda_extra_lift_pastel_blonde: {\"mixing_ratio\": \"1:2\", \"developer_by_lift\": [{\"lift_levels\": 5, \"developer_volume\": 40, \"processing_time_min\": 45}, {\"lift_levels\": 4, \"developer_volume\": 30, \"processing_time_min\": 30}], \"max_lift_levels\": 5}"
+      ],
+      "gray_coverage_rules": [
+        "aveda_nrp_complementary_tone: {\"condition\": {\"line\": \"Full Spectrum\", \"uses_natural_remaining_pigment\": true}, \"action\": {\"neutralize\": \"choose tone opposite NRP\", \"intensify\": \"choose tones same as NRP\", \"level_map\": {\"10\": {\"nrp\": \"Pale Yellow\", \"complement\": \"Violet\"}, \"9\": {\"nrp\": \"Yellow\", \"complement\": \"Violet\"}, \"8\": {\"nrp\": \"Yellow/Orange\", \"complement\": \"Blue/Violet\"}, \"7\": {\"nrp\": \"Orange\", \"complement\": \"Blue\"}, \"6\": {\"nrp\": \"Red/Orange\", \"complement\": \"Blue/Green\"}, \"5\": {\"nrp\": \"Red\", \"complement\": \"Green\"}}}}",
+        "aveda_precoloration_target_level_formula_matrix: {\"condition\": {\"condition\": \"desired shade is 3 or more levels darker than previously colored hair\", \"line\": \"Full Spectrum\", \"service\": \"precoloration\"}, \"action\": {\"processing_time_min\": [15, 20], \"recolor_after\": \"apply desired Full Spectrum Permanent shade with 20 volume developer for 30 minutes\", \"target_level_formulas\": {\"1\": {\"same_as_level_3\": true}, \"10\": \"N/A\", \"2\": {\"same_as_level_3\": true}, \"3\": {\"intense_copper_red_vr\": \"10g 3N + 30g ØN + 16g Dark R/O/Dark R/R/Dark R/V\", \"light_copper_dark_copper_red_vr\": \"20g 3N + 20g ØN + 16g Dark R/O/Dark R/R/Dark R/V\", \"natural_ash_gold\": \"20g 3N + 20g ØN + 4g Dark Y/O + 4g Dark R/O\"}, \"4\": {\"intense_copper_red_vr\": \"10g 4N + 30g ØN + 12g Dark R/O/Dark R/R/Dark R/V\", \"light_copper_dark_copper_red_vr\": \"20g 4N + 20g ØN + 12g Dark R/O/Dark R/R/Dark R/V\", \"natural_ash_gold\": \"20g 4N + 20g ØN + 3g Dark Y/O + 3g Dark R/O\"}, \"5\": {\"intense_copper_red_vr\": \"10g 5N + 30g ØN + 8g Dark R/O/Dark R/R/Dark R/V\", \"light_copper_dark_copper_red_vr\": \"20g 5N + 20g ØN + 8g Dark R/O/Dark R/R/Dark R/V\", \"natural_ash_gold\": \"20g 5N + 20g ØN + 2g Dark Y/O + 2g Dark R/O\"}, \"6\": {\"intense_copper_red_vr\": \"10g 6N + 30g ØN + 4g Dark R/O/Dark R/R/Dark R/V\", \"light_copper_dark_copper_red_vr\": \"20g 6N + 20g ØN + 4g Dark R/O/Dark R/R/Dark R/V\", \"natural_ash_gold\": \"20g 6N + 20g ØN + 1g Dark Y/O + 1g Dark R/O\"}, \"7\": {\"intense_copper_red_vr\": \"10g 7N + 30g ØN + 16g Light O/R\", \"light_copper_dark_copper_red_vr\": \"20g 7N + 20g ØN + 8g Light O/R\", \"natural_ash_gold\": \"20g 7N + 20g ØN + 8g Light Y/O\"}, \"8\": {\"intense_copper_red_vr\": \"10g 8N + 30g ØN + 12g Light O/R\", \"light_copper_dark_copper_red_vr\": \"20g 8N + 20g ØN + 6g Light O/R\", \"natural_ash_gold\": \"20g 8N + 20g ØN + 6g Light Y/O\"}, \"9\": {\"intense_copper_red_vr\": \"10g 9N + 30g ØN + 8g Light O/R\", \"light_copper_dark_copper_red_vr\": \"20g 9N + 20g ØN + 4g Light O/R\", \"natural_ash_gold\": \"20g 9N + 20g ØN + 4g Light Y/O\"}}, \"use_product\": \"Full Spectrum Deposit-Only Color Treatment + Universal ØN\"}}"
+      ],
+      "special_usage_notes": [
+        "aveda_pure_tone_standard_amount_by_desired_level: {\"condition\": {\"formula_intent\": \"standard_customized_natural_result\", \"line\": \"Full Spectrum Permanent Hair Color\", \"series\": \"natural\"}, \"action\": {\"developer_ml\": 40, \"developer_ratio\": \"1:1\", \"levels_not_recommended_for_customization\": [1, 2], \"natural_series_shade_g\": 40, \"pure_tone_amount_by_desired_level\": {\"10\": 2, \"3\": 8, \"4\": 6, \"5\": 4, \"6\": 2, \"7\": 8, \"8\": 6, \"9\": 4}}}",
+        "aveda_light_vs_dark_pure_tone_selection_by_level: {\"condition\": {\"line\": \"Full Spectrum Permanent Hair Color\", \"uses_pure_tone\": true}, \"action\": {\"dark_pure_tones\": [\"Dark N/N\", \"Dark B/V\", \"Dark B/G\", \"Dark Y/O\", \"Dark R/O\", \"Dark V/R\"], \"dark_pure_tones_for_levels\": [3, 4, 5, 6], \"light_pure_tones\": [\"Light N/N\", \"Light V/B\", \"Light B/B\", \"Light Y/O\", \"Light O/R\"], \"light_pure_tones_for_levels\": [7, 8, 9, 10], \"not_recommended_levels\": [1, 2], \"red_family_can_use_red_pure_pigment_at_levels\": [3, 4, 5, 6]}}",
+        "aveda_natural_series_customization_matrix: {\"condition\": {\"formula_component_model\": \"natural shade + pure tone\", \"line\": \"Full Spectrum Permanent Hair Color\", \"series\": \"natural\"}, \"action\": {\"formulas\": [{\"base\": \"10Natural\", \"base_g\": 40, \"level\": 10, \"modifier_g\": 2, \"modifiers_by_family\": {\"ash\": \"Light V/B\", \"copper\": \"Light O/R\", \"gold\": \"Light Y/O\", \"intense_ash\": \"Light B/B\", \"natural/natural\": \"Light N/N\"}}, {\"base\": \"9Natural\", \"base_g\": 40, \"level\": 9, \"modifier_g\": 4, \"modifiers_by_family\": {\"ash\": \"Light V/B\", \"copper\": \"Light O/R\", \"gold\": \"Light Y/O\", \"intense_ash\": \"Light B/B\", \"natural/natural\": \"Light N/N\"}}, {\"base\": \"8Natural\", \"base_g\": 40, \"level\": 8, \"modifier_g\": 6, \"modifiers_by_family\": {\"ash\": \"Light V/B\", \"copper\": \"Light O/R\", \"gold\": \"Light Y/O\", \"intense_ash\": \"Light B/B\", \"natural/natural\": \"Light N/N\"}}, {\"base\": \"7Natural\", \"base_g\": 40, \"level\": 7, \"modifier_g\": 8, \"modifiers_by_family\": {\"ash\": \"Light V/B\", \"copper\": \"Light O/R\", \"gold\": \"Light Y/O\", \"intense_ash\": \"Light B/B\", \"natural/natural\": \"Light N/N\"}}, {\"base\": \"6Natural\", \"base_g\": 40, \"level\": 6, \"modifier_g\": 2, \"modifiers_by_family\": {\"ash\": \"Dark B/V\", \"copper\": \"Dark R/O\", \"gold\": \"Dark Y/O\", \"intense_ash\": \"Dark B/G\", \"natural/natural\": \"Dark N/N\", \"red\": \"Red Pure Pigment\", \"violet_red\": \"Dark V/R\"}}, {\"base\": \"5Natural\", \"base_g\": 40, \"level\": 5, \"modifier_g\": 4, \"modifiers_by_family\": {\"ash\": \"Dark B/V\", \"copper\": \"Dark R/O\", \"gold\": \"Dark Y/O\", \"intense_ash\": \"Dark B/G\", \"natural/natural\": \"Dark N/N\", \"red\": \"Red Pure Pigment\", \"violet_red\": \"Dark V/R\"}}, {\"base\": \"4Natural\", \"base_g\": 40, \"level\": 4, \"modifier_g\": 6, \"modifiers_by_family\": {\"ash\": \"Dark B/V\", \"copper\": \"Dark R/O\", \"gold\": \"Dark Y/O\", \"intense_ash\": \"Dark B/G\", \"natural/natural\": \"Dark N/N\", \"red\": \"Red Pure Pigment\", \"violet_red\": \"Dark V/R\"}}, {\"base\": \"3Natural\", \"base_g\": 40, \"level\": 3, \"modifier_g\": 8, \"modifiers_by_family\": {\"ash\": \"Dark B/V\", \"copper\": \"Dark R/O\", \"gold\": \"Dark Y/O\", \"intense_ash\": \"Dark B/G\", \"natural/natural\": \"Dark N/N\", \"red\": \"Red Pure Pigment\", \"violet_red\": \"Dark V/R\"}}], \"levels_not_recommended_for_customization\": [1, 2], \"mixing_ratio\": \"1:1\"}}",
+        "aveda_intense_series_customization_matrix: {\"condition\": {\"formula_component_model\": \"natural shade + intense base + pure tone or red pure pigment\", \"line\": \"Full Spectrum Permanent Hair Color\", \"series\": \"intense\"}, \"action\": {\"developer_ml\": 40, \"developer_ratio\": \"1:1\", \"intense_base_g\": 30, \"levels_not_recommended_for_customization\": [1, 2], \"modifier_amount_by_level\": {\"10\": 4, \"3\": 16, \"4\": 12, \"5\": 8, \"6\": 4, \"7\": 16, \"8\": 12, \"9\": 8}, \"modifier_by_family\": {\"intense_copper\": {\"levels_3_to_6\": \"Dark R/O\", \"levels_7_to_10\": \"Light O/R\"}, \"intense_red\": {\"levels_3_to_6\": \"Red Pure Pigment\"}, \"intense_violet_red\": {\"levels_3_to_6\": \"Dark V/R\"}}, \"natural_series_shade_g\": 10}}",
+        "aveda_pure_pigment_usage_rules: {\"condition\": {\"line\": \"Full Spectrum Permanent Hair Color\", \"modifier_type\": \"pure_pigment\"}, \"action\": {\"levels_7_to_10_warning\": \"pure pigments are not recommended for natural-looking results because dye concentration is high\", \"natural_series_levels_3_to_6_add_tonality\": \"replace pure tones with pure pigments at up to double amount recommended for level\", \"natural_series_levels_3_to_6_intensify\": \"use pure tone at recommended amount and add up to equal amount of pure pigment\", \"pure_primary_secondary_on_prelightened_hair\": {\"developer_volume\": 5, \"mixing_ratio\": \"1:1\", \"processing_time_min\": [10, 20]}}}",
+        "aveda_vibrancy_guide: {\"condition\": {\"line\": \"Full Spectrum Permanent Hair Color\", \"service\": \"customized_result_vibrancy\"}, \"action\": {\"bright\": {\"intense_base_g\": 20, \"natural_series_g\": 20, \"pure_tone_amount\": \"double_for_level\"}, \"intense\": {\"intense_base_g\": 30, \"natural_series_g\": 10, \"pure_tone_amount\": \"double_for_level\"}, \"soft\": {\"natural_series_g\": 40, \"pure_tone_amount\": \"50_percent_less_than_level_standard\"}, \"standard\": {\"natural_series_g\": 40, \"pure_tone_amount\": \"recommended_for_level\"}, \"strong\": {\"natural_series_g\": 40, \"pure_tone_amount\": \"50_percent_more_than_level_standard\"}}}",
+        "aveda_universal_on_customization_guide: {\"condition\": {\"base_component\": \"Universal ØN\", \"line\": \"Full Spectrum Permanent Hair Color\"}, \"action\": {\"categories\": {\"soft_color_refreshing_or_glossing\": {\"natural_series_g\": 0, \"pure_tone_g_range\": [0, 8], \"universal_on_g\": 40}, \"standard_toning_prelightened_or_toning_down\": {\"natural_series_g\": 20, \"pure_tone_g_range\": [0, 8], \"universal_on_g\": 20}, \"strong_clear_tone\": {\"natural_series_g\": 0, \"pure_tone_g_range\": [10, 20], \"universal_on_g\": 40}}, \"developer_volume\": 5}}",
+        "aveda_extra_lift_pastel_blonde_intensity_guide: {\"condition\": {\"line\": \"Full Spectrum Permanent Hair Color\", \"series\": \"extra_lift_pastel_blonde\"}, \"action\": {\"mixing_ratio\": \"1:2\", \"soft\": {\"extra_lifting_creme_g\": 40, \"pastel_tone_g\": 2}, \"standard\": {\"extra_lifting_creme_g\": 40, \"pastel_tone_g\": 4}, \"standard_developer_ml\": 80, \"standard_formulas\": {\"extra_light_ash_blonde\": \"40g ELC + 4g Pastel Blue\", \"extra_light_golden_blonde\": \"40g ELC + 4g Pastel Y/O\", \"extra_light_platinum_blonde\": \"40g ELC + 4g Pastel Violet\"}, \"standard_total_mixture_ml\": 124, \"strong\": {\"extra_lifting_creme_g\": 40, \"pastel_tone_g\": 8}}}",
+        "aveda_color_balancing_guide: {\"condition\": {\"line\": \"Full Spectrum Permanent Hair Color\", \"service\": \"color_balance_or_gloss\"}, \"action\": {\"clear_gloss\": {\"universal_on_g\": 40}, \"color_balance\": {\"natural_series_g\": 40, \"pure_tone_amount\": \"standard_for_level\"}, \"extreme_gloss\": {\"pure_tone_or_pure_pigment_g\": 20, \"universal_on_g\": 20}, \"natural_tonal_gloss\": {\"natural_series_g\": 20, \"pure_tone_amount\": \"standard_for_level\", \"universal_on_g\": 20}, \"pure_on_prelightened_pale_yellow\": {\"pure_pigment_g\": 20}, \"tonal_gloss\": {\"pure_tone_g\": 8, \"universal_on_g\": 40}}}"
+      ]
     }
   ],
   "issue_log": [
@@ -1749,7 +1945,7 @@
     "Tone-digit system (first digit after slash = major/primary tone, second = minor/secondary tone) is stated in both official technical folders and recorded in special_usage_notes/tone_family_legend with sources.",
     "Majirel 2025 chart (LPSEPMAJ03) and 2023 chart (P2634200) print the 1:1.5 mixing ratio with different ounce quantities (1 tube + 3 oz. vs 1.7 oz. tube + 2.6 oz.); this reflects the 2025 'larger 2oz tube' change and both are recorded verbatim, with the 2025 chart treated as current.",
     "The reflect-digit legend on these US charts prints .1 as 'blue' (dual code B), not 'Ash'; 'Ash'/'Ash+' wording appears only as Cool Cover section labels on the 2023 chart (.1/B Ash, .11/BB Ash+). Recorded exactly as printed rather than normalizing to 'Ash'.",
-    "The 40-vol (12%) Majicr\u00e8me option and the Majirel High-Lift 1:2 ratio / 50-minute / 40-vol up-to-4\u00bd-levels rules appear only on the 2023 chart (P2634200); the 2025 chart (LPSEPMAJ03) does not mention 40-vol or High-Lift. Both recorded with their source documents identified.",
+    "The 40-vol (12%) Majicrème option and the Majirel High-Lift 1:2 ratio / 50-minute / 40-vol up-to-4½-levels rules appear only on the 2023 chart (P2634200); the 2025 chart (LPSEPMAJ03) does not mention 40-vol or High-Lift. Both recorded with their source documents identified.",
     "pypdf text extraction of the 2023 Majirel chart shows apparent typos in the shade grid (e.g. '5.35/7GRv' and '4.35/7GRv' on the 2025 chart rows for levels 5 and 4); these affect shade-grid cells only, not the line-level technical rules recorded here.",
     "Official product page and shade-charts hub were not fetched: the three PDFs contained all required line-level technical content, so no additional sources were used.",
     "All line-level technical data transcribed from the official 2023 Matrix Manual Haircolor PDF (matrix.com, US/USMX media path).",

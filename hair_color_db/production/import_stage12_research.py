@@ -303,7 +303,7 @@ def import_normalized_shade(
     """Append shade_raw (idempotent key) and rebuild shade row deterministically."""
     canonical_key = str(record["canonical_key"])
     shade_code = str(record["shade_code"])
-    sub_range_name = infer_sub_range(record) or DEFAULT_SUB_RANGE
+    sub_range_name = record.get("sub_range") or infer_sub_range(record) or DEFAULT_SUB_RANGE
 
     _, _, line_region_id = upsert_brand_line_region(
         session,

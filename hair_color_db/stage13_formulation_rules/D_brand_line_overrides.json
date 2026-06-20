@@ -210,7 +210,7 @@
           },
           "rule_action": {
             "trigger_workflow": "WF_retouch_with_refresh",
-            "warning": "Super Sync tint-back on pre-lightened hair \u2014 monitor porosity."
+            "warning": "Super Sync tint-back on pre-lightened hair — monitor porosity."
           }
         },
         {
@@ -355,7 +355,7 @@
           },
           "rule_action": {
             "set_developer_volume": 5,
-            "warning": "Shades EQ acidic demi \u2014 deposit-only at 5 vol equivalent; no lift when darkening."
+            "warning": "Shades EQ acidic demi — deposit-only at 5 vol equivalent; no lift when darkening."
           }
         }
       ]
@@ -408,7 +408,7 @@
           },
           "rule_action": {
             "set_developer_volume": 6,
-            "warning": "Color Touch demi deposit when darkening \u2014 6 vol (1.9%) processing solution."
+            "warning": "Color Touch demi deposit when darkening — 6 vol (1.9%) processing solution."
           }
         }
       ]
@@ -626,8 +626,8 @@
       ]
     },
     {
-      "canonical_key": "L'Or\u00e9al Professionnel::Majirel::US",
-      "brand_name": "L'Or\u00e9al Professionnel",
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand_name": "L'Oréal Professionnel",
       "product_line_name": "Majirel",
       "requires_stage12_inventory_addition": false,
       "override_rules": [
@@ -784,6 +784,827 @@
             "mixing_ratio": "1:2",
             "set_developer_volume": 40,
             "warning": "FACTION8 High Lift: process 45-55 minutes, use on levels 5+, and do not mix High Lift colors with other target shades."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "Aveda::Full Spectrum Permanent::US",
+      "brand_name": "Aveda",
+      "product_line_name": "Full Spectrum Permanent",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "AV_FS_001",
+          "rule_name": "aveda_natural_intense_mix_process",
+          "rule_priority": 46,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum"
+              },
+              {
+                "field": "seed_series",
+                "op": "=",
+                "value": [
+                  "natural",
+                  "intense"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_natural_intense_mix_process",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:1",
+              "developer_by_lift": [
+                {
+                  "lift_levels": 4,
+                  "developer_volume": 40,
+                  "processing_time_min": 45
+                },
+                {
+                  "lift_levels": 3,
+                  "developer_volume": 30,
+                  "processing_time_min": 40
+                },
+                {
+                  "lift_levels": 2,
+                  "developer_volume": 20,
+                  "processing_time_min": 30
+                },
+                {
+                  "lift_levels": 1,
+                  "developer_volume": 10,
+                  "processing_time_min": 20
+                },
+                {
+                  "lift_levels": "0-1",
+                  "developer_volume": 5,
+                  "processing_time_min": 20
+                }
+              ]
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_natural_intense_mix_process"
+          }
+        },
+        {
+          "rule_id": "AV_FS_002",
+          "rule_name": "aveda_extra_lift_pastel_blonde",
+          "rule_priority": 47,
+          "rule_category": "lift",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum"
+              },
+              {
+                "field": "seed_series",
+                "op": "=",
+                "value": "extra lift pastel blonde"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_extra_lift_pastel_blonde",
+            "seed_rule_category": "lift",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:2",
+              "developer_by_lift": [
+                {
+                  "lift_levels": 5,
+                  "developer_volume": 40,
+                  "processing_time_min": 45
+                },
+                {
+                  "lift_levels": 4,
+                  "developer_volume": 30,
+                  "processing_time_min": 30
+                }
+              ],
+              "max_lift_levels": 5
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_extra_lift_pastel_blonde"
+          }
+        },
+        {
+          "rule_id": "AV_FS_003",
+          "rule_name": "aveda_nrp_complementary_tone",
+          "rule_priority": 48,
+          "rule_category": "color_science",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum"
+              },
+              {
+                "field": "seed_uses_natural_remaining_pigment",
+                "op": "=",
+                "value": true
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_nrp_complementary_tone",
+            "seed_rule_category": "color_science",
+            "manufacturer_rule_action": {
+              "neutralize": "choose tone opposite NRP",
+              "intensify": "choose tones same as NRP",
+              "level_map": {
+                "10": {
+                  "nrp": "Pale Yellow",
+                  "complement": "Violet"
+                },
+                "9": {
+                  "nrp": "Yellow",
+                  "complement": "Violet"
+                },
+                "8": {
+                  "nrp": "Yellow/Orange",
+                  "complement": "Blue/Violet"
+                },
+                "7": {
+                  "nrp": "Orange",
+                  "complement": "Blue"
+                },
+                "6": {
+                  "nrp": "Red/Orange",
+                  "complement": "Blue/Green"
+                },
+                "5": {
+                  "nrp": "Red",
+                  "complement": "Green"
+                }
+              }
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_nrp_complementary_tone"
+          }
+        },
+        {
+          "rule_id": "AV_FS_004",
+          "rule_name": "aveda_pure_tone_standard_amount_by_desired_level",
+          "rule_priority": 49,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_formula_intent",
+                "op": "=",
+                "value": "standard_customized_natural_result"
+              },
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum Permanent Hair Color"
+              },
+              {
+                "field": "seed_series",
+                "op": "=",
+                "value": "natural"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_pure_tone_standard_amount_by_desired_level",
+            "seed_rule_category": "formulation",
+            "manufacturer_rule_action": {
+              "developer_ml": 40,
+              "developer_ratio": "1:1",
+              "levels_not_recommended_for_customization": [
+                1,
+                2
+              ],
+              "natural_series_shade_g": 40,
+              "pure_tone_amount_by_desired_level": {
+                "10": 2,
+                "3": 8,
+                "4": 6,
+                "5": 4,
+                "6": 2,
+                "7": 8,
+                "8": 6,
+                "9": 4
+              }
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_pure_tone_standard_amount_by_desired_level"
+          }
+        },
+        {
+          "rule_id": "AV_FS_005",
+          "rule_name": "aveda_light_vs_dark_pure_tone_selection_by_level",
+          "rule_priority": 50,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum Permanent Hair Color"
+              },
+              {
+                "field": "seed_uses_pure_tone",
+                "op": "=",
+                "value": true
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_light_vs_dark_pure_tone_selection_by_level",
+            "seed_rule_category": "formulation",
+            "manufacturer_rule_action": {
+              "dark_pure_tones": [
+                "Dark N/N",
+                "Dark B/V",
+                "Dark B/G",
+                "Dark Y/O",
+                "Dark R/O",
+                "Dark V/R"
+              ],
+              "dark_pure_tones_for_levels": [
+                3,
+                4,
+                5,
+                6
+              ],
+              "light_pure_tones": [
+                "Light N/N",
+                "Light V/B",
+                "Light B/B",
+                "Light Y/O",
+                "Light O/R"
+              ],
+              "light_pure_tones_for_levels": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "not_recommended_levels": [
+                1,
+                2
+              ],
+              "red_family_can_use_red_pure_pigment_at_levels": [
+                3,
+                4,
+                5,
+                6
+              ]
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_light_vs_dark_pure_tone_selection_by_level"
+          }
+        },
+        {
+          "rule_id": "AV_FS_006",
+          "rule_name": "aveda_natural_series_customization_matrix",
+          "rule_priority": 51,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_formula_component_model",
+                "op": "=",
+                "value": "natural shade + pure tone"
+              },
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum Permanent Hair Color"
+              },
+              {
+                "field": "seed_series",
+                "op": "=",
+                "value": "natural"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_natural_series_customization_matrix",
+            "seed_rule_category": "formulation",
+            "manufacturer_rule_action": {
+              "formulas": [
+                {
+                  "base": "10Natural",
+                  "base_g": 40,
+                  "level": 10,
+                  "modifier_g": 2,
+                  "modifiers_by_family": {
+                    "ash": "Light V/B",
+                    "copper": "Light O/R",
+                    "gold": "Light Y/O",
+                    "intense_ash": "Light B/B",
+                    "natural/natural": "Light N/N"
+                  }
+                },
+                {
+                  "base": "9Natural",
+                  "base_g": 40,
+                  "level": 9,
+                  "modifier_g": 4,
+                  "modifiers_by_family": {
+                    "ash": "Light V/B",
+                    "copper": "Light O/R",
+                    "gold": "Light Y/O",
+                    "intense_ash": "Light B/B",
+                    "natural/natural": "Light N/N"
+                  }
+                },
+                {
+                  "base": "8Natural",
+                  "base_g": 40,
+                  "level": 8,
+                  "modifier_g": 6,
+                  "modifiers_by_family": {
+                    "ash": "Light V/B",
+                    "copper": "Light O/R",
+                    "gold": "Light Y/O",
+                    "intense_ash": "Light B/B",
+                    "natural/natural": "Light N/N"
+                  }
+                },
+                {
+                  "base": "7Natural",
+                  "base_g": 40,
+                  "level": 7,
+                  "modifier_g": 8,
+                  "modifiers_by_family": {
+                    "ash": "Light V/B",
+                    "copper": "Light O/R",
+                    "gold": "Light Y/O",
+                    "intense_ash": "Light B/B",
+                    "natural/natural": "Light N/N"
+                  }
+                },
+                {
+                  "base": "6Natural",
+                  "base_g": 40,
+                  "level": 6,
+                  "modifier_g": 2,
+                  "modifiers_by_family": {
+                    "ash": "Dark B/V",
+                    "copper": "Dark R/O",
+                    "gold": "Dark Y/O",
+                    "intense_ash": "Dark B/G",
+                    "natural/natural": "Dark N/N",
+                    "red": "Red Pure Pigment",
+                    "violet_red": "Dark V/R"
+                  }
+                },
+                {
+                  "base": "5Natural",
+                  "base_g": 40,
+                  "level": 5,
+                  "modifier_g": 4,
+                  "modifiers_by_family": {
+                    "ash": "Dark B/V",
+                    "copper": "Dark R/O",
+                    "gold": "Dark Y/O",
+                    "intense_ash": "Dark B/G",
+                    "natural/natural": "Dark N/N",
+                    "red": "Red Pure Pigment",
+                    "violet_red": "Dark V/R"
+                  }
+                },
+                {
+                  "base": "4Natural",
+                  "base_g": 40,
+                  "level": 4,
+                  "modifier_g": 6,
+                  "modifiers_by_family": {
+                    "ash": "Dark B/V",
+                    "copper": "Dark R/O",
+                    "gold": "Dark Y/O",
+                    "intense_ash": "Dark B/G",
+                    "natural/natural": "Dark N/N",
+                    "red": "Red Pure Pigment",
+                    "violet_red": "Dark V/R"
+                  }
+                },
+                {
+                  "base": "3Natural",
+                  "base_g": 40,
+                  "level": 3,
+                  "modifier_g": 8,
+                  "modifiers_by_family": {
+                    "ash": "Dark B/V",
+                    "copper": "Dark R/O",
+                    "gold": "Dark Y/O",
+                    "intense_ash": "Dark B/G",
+                    "natural/natural": "Dark N/N",
+                    "red": "Red Pure Pigment",
+                    "violet_red": "Dark V/R"
+                  }
+                }
+              ],
+              "levels_not_recommended_for_customization": [
+                1,
+                2
+              ],
+              "mixing_ratio": "1:1"
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_natural_series_customization_matrix"
+          }
+        },
+        {
+          "rule_id": "AV_FS_007",
+          "rule_name": "aveda_intense_series_customization_matrix",
+          "rule_priority": 52,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_formula_component_model",
+                "op": "=",
+                "value": "natural shade + intense base + pure tone or red pure pigment"
+              },
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum Permanent Hair Color"
+              },
+              {
+                "field": "seed_series",
+                "op": "=",
+                "value": "intense"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_intense_series_customization_matrix",
+            "seed_rule_category": "formulation",
+            "manufacturer_rule_action": {
+              "developer_ml": 40,
+              "developer_ratio": "1:1",
+              "intense_base_g": 30,
+              "levels_not_recommended_for_customization": [
+                1,
+                2
+              ],
+              "modifier_amount_by_level": {
+                "10": 4,
+                "3": 16,
+                "4": 12,
+                "5": 8,
+                "6": 4,
+                "7": 16,
+                "8": 12,
+                "9": 8
+              },
+              "modifier_by_family": {
+                "intense_copper": {
+                  "levels_3_to_6": "Dark R/O",
+                  "levels_7_to_10": "Light O/R"
+                },
+                "intense_red": {
+                  "levels_3_to_6": "Red Pure Pigment"
+                },
+                "intense_violet_red": {
+                  "levels_3_to_6": "Dark V/R"
+                }
+              },
+              "natural_series_shade_g": 10
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_intense_series_customization_matrix"
+          }
+        },
+        {
+          "rule_id": "AV_FS_008",
+          "rule_name": "aveda_pure_pigment_usage_rules",
+          "rule_priority": 53,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum Permanent Hair Color"
+              },
+              {
+                "field": "seed_modifier_type",
+                "op": "=",
+                "value": "pure_pigment"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_pure_pigment_usage_rules",
+            "seed_rule_category": "formulation",
+            "manufacturer_rule_action": {
+              "levels_7_to_10_warning": "pure pigments are not recommended for natural-looking results because dye concentration is high",
+              "natural_series_levels_3_to_6_add_tonality": "replace pure tones with pure pigments at up to double amount recommended for level",
+              "natural_series_levels_3_to_6_intensify": "use pure tone at recommended amount and add up to equal amount of pure pigment",
+              "pure_primary_secondary_on_prelightened_hair": {
+                "developer_volume": 5,
+                "mixing_ratio": "1:1",
+                "processing_time_min": [
+                  10,
+                  20
+                ]
+              }
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_pure_pigment_usage_rules"
+          }
+        },
+        {
+          "rule_id": "AV_FS_009",
+          "rule_name": "aveda_vibrancy_guide",
+          "rule_priority": 54,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum Permanent Hair Color"
+              },
+              {
+                "field": "seed_service",
+                "op": "=",
+                "value": "customized_result_vibrancy"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_vibrancy_guide",
+            "seed_rule_category": "formulation",
+            "manufacturer_rule_action": {
+              "bright": {
+                "intense_base_g": 20,
+                "natural_series_g": 20,
+                "pure_tone_amount": "double_for_level"
+              },
+              "intense": {
+                "intense_base_g": 30,
+                "natural_series_g": 10,
+                "pure_tone_amount": "double_for_level"
+              },
+              "soft": {
+                "natural_series_g": 40,
+                "pure_tone_amount": "50_percent_less_than_level_standard"
+              },
+              "standard": {
+                "natural_series_g": 40,
+                "pure_tone_amount": "recommended_for_level"
+              },
+              "strong": {
+                "natural_series_g": 40,
+                "pure_tone_amount": "50_percent_more_than_level_standard"
+              }
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_vibrancy_guide"
+          }
+        },
+        {
+          "rule_id": "AV_FS_010",
+          "rule_name": "aveda_universal_on_customization_guide",
+          "rule_priority": 55,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_base_component",
+                "op": "=",
+                "value": "Universal ØN"
+              },
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum Permanent Hair Color"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_universal_on_customization_guide",
+            "seed_rule_category": "formulation",
+            "manufacturer_rule_action": {
+              "categories": {
+                "soft_color_refreshing_or_glossing": {
+                  "natural_series_g": 0,
+                  "pure_tone_g_range": [
+                    0,
+                    8
+                  ],
+                  "universal_on_g": 40
+                },
+                "standard_toning_prelightened_or_toning_down": {
+                  "natural_series_g": 20,
+                  "pure_tone_g_range": [
+                    0,
+                    8
+                  ],
+                  "universal_on_g": 20
+                },
+                "strong_clear_tone": {
+                  "natural_series_g": 0,
+                  "pure_tone_g_range": [
+                    10,
+                    20
+                  ],
+                  "universal_on_g": 40
+                }
+              },
+              "developer_volume": 5
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_universal_on_customization_guide"
+          }
+        },
+        {
+          "rule_id": "AV_FS_011",
+          "rule_name": "aveda_extra_lift_pastel_blonde_intensity_guide",
+          "rule_priority": 56,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum Permanent Hair Color"
+              },
+              {
+                "field": "seed_series",
+                "op": "=",
+                "value": "extra_lift_pastel_blonde"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_extra_lift_pastel_blonde_intensity_guide",
+            "seed_rule_category": "formulation",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:2",
+              "soft": {
+                "extra_lifting_creme_g": 40,
+                "pastel_tone_g": 2
+              },
+              "standard": {
+                "extra_lifting_creme_g": 40,
+                "pastel_tone_g": 4
+              },
+              "standard_developer_ml": 80,
+              "standard_formulas": {
+                "extra_light_ash_blonde": "40g ELC + 4g Pastel Blue",
+                "extra_light_golden_blonde": "40g ELC + 4g Pastel Y/O",
+                "extra_light_platinum_blonde": "40g ELC + 4g Pastel Violet"
+              },
+              "standard_total_mixture_ml": 124,
+              "strong": {
+                "extra_lifting_creme_g": 40,
+                "pastel_tone_g": 8
+              }
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_extra_lift_pastel_blonde_intensity_guide"
+          }
+        },
+        {
+          "rule_id": "AV_FS_012",
+          "rule_name": "aveda_color_balancing_guide",
+          "rule_priority": 57,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum Permanent Hair Color"
+              },
+              {
+                "field": "seed_service",
+                "op": "=",
+                "value": "color_balance_or_gloss"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_color_balancing_guide",
+            "seed_rule_category": "formulation",
+            "manufacturer_rule_action": {
+              "clear_gloss": {
+                "universal_on_g": 40
+              },
+              "color_balance": {
+                "natural_series_g": 40,
+                "pure_tone_amount": "standard_for_level"
+              },
+              "extreme_gloss": {
+                "pure_tone_or_pure_pigment_g": 20,
+                "universal_on_g": 20
+              },
+              "natural_tonal_gloss": {
+                "natural_series_g": 20,
+                "pure_tone_amount": "standard_for_level",
+                "universal_on_g": 20
+              },
+              "pure_on_prelightened_pale_yellow": {
+                "pure_pigment_g": 20
+              },
+              "tonal_gloss": {
+                "pure_tone_g": 8,
+                "universal_on_g": 40
+              }
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_color_balancing_guide"
+          }
+        },
+        {
+          "rule_id": "AV_FS_013",
+          "rule_name": "aveda_precoloration_target_level_formula_matrix",
+          "rule_priority": 58,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_condition",
+                "op": "=",
+                "value": "desired shade is 3 or more levels darker than previously colored hair"
+              },
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Full Spectrum"
+              },
+              {
+                "field": "seed_service",
+                "op": "=",
+                "value": "precoloration"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "aveda_precoloration_target_level_formula_matrix",
+            "seed_rule_category": "correction",
+            "manufacturer_rule_action": {
+              "processing_time_min": [
+                15,
+                20
+              ],
+              "recolor_after": "apply desired Full Spectrum Permanent shade with 20 volume developer for 30 minutes",
+              "target_level_formulas": {
+                "1": {
+                  "same_as_level_3": true
+                },
+                "10": "N/A",
+                "2": {
+                  "same_as_level_3": true
+                },
+                "3": {
+                  "intense_copper_red_vr": "10g 3N + 30g ØN + 16g Dark R/O/Dark R/R/Dark R/V",
+                  "light_copper_dark_copper_red_vr": "20g 3N + 20g ØN + 16g Dark R/O/Dark R/R/Dark R/V",
+                  "natural_ash_gold": "20g 3N + 20g ØN + 4g Dark Y/O + 4g Dark R/O"
+                },
+                "4": {
+                  "intense_copper_red_vr": "10g 4N + 30g ØN + 12g Dark R/O/Dark R/R/Dark R/V",
+                  "light_copper_dark_copper_red_vr": "20g 4N + 20g ØN + 12g Dark R/O/Dark R/R/Dark R/V",
+                  "natural_ash_gold": "20g 4N + 20g ØN + 3g Dark Y/O + 3g Dark R/O"
+                },
+                "5": {
+                  "intense_copper_red_vr": "10g 5N + 30g ØN + 8g Dark R/O/Dark R/R/Dark R/V",
+                  "light_copper_dark_copper_red_vr": "20g 5N + 20g ØN + 8g Dark R/O/Dark R/R/Dark R/V",
+                  "natural_ash_gold": "20g 5N + 20g ØN + 2g Dark Y/O + 2g Dark R/O"
+                },
+                "6": {
+                  "intense_copper_red_vr": "10g 6N + 30g ØN + 4g Dark R/O/Dark R/R/Dark R/V",
+                  "light_copper_dark_copper_red_vr": "20g 6N + 20g ØN + 4g Dark R/O/Dark R/R/Dark R/V",
+                  "natural_ash_gold": "20g 6N + 20g ØN + 1g Dark Y/O + 1g Dark R/O"
+                },
+                "7": {
+                  "intense_copper_red_vr": "10g 7N + 30g ØN + 16g Light O/R",
+                  "light_copper_dark_copper_red_vr": "20g 7N + 20g ØN + 8g Light O/R",
+                  "natural_ash_gold": "20g 7N + 20g ØN + 8g Light Y/O"
+                },
+                "8": {
+                  "intense_copper_red_vr": "10g 8N + 30g ØN + 12g Light O/R",
+                  "light_copper_dark_copper_red_vr": "20g 8N + 20g ØN + 6g Light O/R",
+                  "natural_ash_gold": "20g 8N + 20g ØN + 6g Light Y/O"
+                },
+                "9": {
+                  "intense_copper_red_vr": "10g 9N + 30g ØN + 8g Light O/R",
+                  "light_copper_dark_copper_red_vr": "20g 9N + 20g ØN + 4g Light O/R",
+                  "natural_ash_gold": "20g 9N + 20g ØN + 4g Light Y/O"
+                }
+              },
+              "use_product": "Full Spectrum Deposit-Only Color Treatment + Universal ØN"
+            },
+            "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_precoloration_target_level_formula_matrix"
           }
         }
       ]

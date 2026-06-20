@@ -6,7 +6,7 @@
   "counts": {
     "universal_rules": 18,
     "service_workflows": 9,
-    "brand_line_overrides": 15,
+    "brand_line_overrides": 16,
     "validation_cases": 21,
     "conflicts_and_gaps": 1,
     "dormant_override_groups": 0
@@ -29,7 +29,7 @@
   ],
   "notes": [
     "Override groups with requires_stage12_inventory_addition=true remain dormant until canonical_key appears in Stage 12 section C (none currently flagged).",
-    "Validation cases VC002, VC014\u2013VC018, VC020\u2013VC022 reserved; VC023 added for FACTION8 reserved for future batches.",
+    "Validation cases VC002, VC014–VC018, VC020–VC022 reserved; VC023 added for FACTION8 reserved for future batches.",
     "21 validation cases referenced across package sections F and MANIFEST."
   ]
 }

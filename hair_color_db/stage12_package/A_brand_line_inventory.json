@@ -1910,6 +1910,48 @@
       "notes": [
         "Verified on official page: dust-free violet powder lightener, lifts up to 8 levels, 1:1 to 1:3 mixing with #mydentity developer."
       ]
+    },
+    {
+      "canonical_key": "Redken::Cover Fusion::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal USA",
+      "product_line_name": "Cover Fusion",
+      "color_type": "permanent",
+      "region_or_market": "US",
+      "discontinued_status": "Active per Redken 2025 Product Guide extract (batch09)",
+      "official_brand_url": "https://www.redken.com/professional/haircolor",
+      "official_line_url": "https://www.redkenpro.com/",
+      "notes": [
+        "Low-ammonia permanent cream color; shade chart and mixing rules from 1034804579-2025-Product-Guide-Avec-Compression.pdf (batch09 seed package)."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Color Gels Oils::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal USA",
+      "product_line_name": "Color Gels Oils",
+      "color_type": "permanent",
+      "region_or_market": "US",
+      "discontinued_status": "Active per Redken 2025 Product Guide extract (batch09)",
+      "official_brand_url": "https://www.redken.com/professional/haircolor",
+      "official_line_url": "https://www.redkenpro.com/",
+      "notes": [
+        "Permanent oil-based gel color; extracted from Redken 2025 Product Guide (batch09 seed package)."
+      ]
+    },
+    {
+      "canonical_key": "Redken::Color Gels 10 Minute::US",
+      "brand_name": "Redken",
+      "parent_company": "L'Oréal USA",
+      "product_line_name": "Color Gels 10 Minute",
+      "color_type": "permanent",
+      "region_or_market": "US",
+      "discontinued_status": "Active per Redken 2025 Product Guide extract (batch09)",
+      "official_brand_url": "https://www.redken.com/professional/haircolor",
+      "official_line_url": "https://www.redkenpro.com/",
+      "notes": [
+        "10-minute permanent gel color line; extracted from Redken 2025 Product Guide (batch09 seed package)."
+      ]
     }
   ],
   "issue_log": [
