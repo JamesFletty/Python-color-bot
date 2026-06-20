@@ -32,7 +32,7 @@ class Stage13ImportRowTests(unittest.TestCase):
         rows = build_stage13_import_rows()
         line_rows = [r for r in rows if r.scope_level == "line"]
         self.assertEqual(len(load_line_overrides()), 18)
-        self.assertEqual(len(line_rows), 63)
+        self.assertEqual(len(line_rows), 125)
 
     def test_matrix_socolor_resistant_gray_imports_30_vol(self) -> None:
         rows = build_stage13_import_rows()

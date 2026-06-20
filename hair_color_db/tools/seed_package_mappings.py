@@ -38,6 +38,29 @@ LINE_MAP: dict[tuple[str, str], dict[str, str]] = {
         "color_type": "permanent",
         "sub_range": "Specialties",
     },
+    ("Schwarzkopf Professional", "IGORA ROYAL Pastels"): {
+        "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+        "product_line": "IGORA ROYAL",
+        "color_type": "permanent",
+        "sub_range": "Pastels",
+    },
+    ("Schwarzkopf Professional", "IGORA ROYAL Creative Mixtones"): {
+        "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+        "product_line": "IGORA ROYAL",
+        "color_type": "additive",
+        "sub_range": "Creative Mixtones",
+    },
+    ("Schwarzkopf Professional", "IGORA ROYAL Extracts"): {
+        "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+        "product_line": "IGORA ROYAL",
+        "color_type": "additive",
+        "sub_range": "Extracts",
+    },
+    ("Schwarzkopf Professional", "IGORA ROYAL"): {
+        "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+        "product_line": "IGORA ROYAL",
+        "color_type": "permanent",
+    },
     ("Redken", "Shades EQ Gloss / Bonder Inside"): {
         "canonical_key": "Redken::Shades EQ Gloss::US",
         "product_line": "Shades EQ Gloss",
@@ -205,6 +228,29 @@ TECH_LINE_MAP: dict[tuple[str, str | None], dict[str, str]] = {
         "product_line": "Tonal Control",
         "color_type": "demi",
         "sub_range": "Pre-Bonded",
+    },
+    ("Schwarzkopf Professional", "IGORA ROYAL"): {
+        "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+        "product_line": "IGORA ROYAL",
+        "color_type": "permanent",
+    },
+    ("Schwarzkopf Professional", "IGORA ROYAL Pastels"): {
+        "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+        "product_line": "IGORA ROYAL",
+        "color_type": "permanent",
+        "sub_range": "Pastels",
+    },
+    ("Schwarzkopf Professional", "IGORA ROYAL Creative Mixtones"): {
+        "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+        "product_line": "IGORA ROYAL",
+        "color_type": "additive",
+        "sub_range": "Creative Mixtones",
+    },
+    ("Schwarzkopf Professional", "IGORA ROYAL Extracts"): {
+        "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+        "product_line": "IGORA ROYAL",
+        "color_type": "additive",
+        "sub_range": "Extracts",
     },
 }
 

@@ -1,0 +1,4318 @@
+{
+  "artifact": "normalized_shade_records",
+  "batch": 11,
+  "count": 111,
+  "package_version": "v5_schwarzkopf_igora",
+  "normalized_shade_records": [
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9-0",
+      "shade_name": "natural neutral",
+      "level": 9.0,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "8-0",
+      "shade_name": "natural neutral",
+      "level": 8.0,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "7-0",
+      "shade_name": "natural neutral",
+      "level": 7.0,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-0",
+      "shade_name": "natural neutral",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-0",
+      "shade_name": "natural neutral",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "4-0",
+      "shade_name": "natural neutral",
+      "level": 4.0,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "3-0",
+      "shade_name": "natural neutral",
+      "level": 3.0,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "1-0",
+      "shade_name": "natural neutral",
+      "level": 1.0,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9-00",
+      "shade_name": "natural extra",
+      "level": 9.0,
+      "manufacturer_tone_codes": [
+        "00"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "8-00",
+      "shade_name": "natural extra",
+      "level": 8.0,
+      "manufacturer_tone_codes": [
+        "00"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "7-00",
+      "shade_name": "natural extra",
+      "level": 7.0,
+      "manufacturer_tone_codes": [
+        "00"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-00",
+      "shade_name": "natural extra",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "00"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-00",
+      "shade_name": "natural extra",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "00"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Nature Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Nature Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9-1",
+      "shade_name": "cendré blue/violet",
+      "level": 9.0,
+      "manufacturer_tone_codes": [
+        "1"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Cendré",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Cendré'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "8-1",
+      "shade_name": "cendré blue/violet",
+      "level": 8.0,
+      "manufacturer_tone_codes": [
+        "1"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Cendré",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Cendré'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "7-1",
+      "shade_name": "cendré blue/violet",
+      "level": 7.0,
+      "manufacturer_tone_codes": [
+        "1"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Cendré",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Cendré'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-1",
+      "shade_name": "cendré blue/violet",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "1"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Cendré",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Cendré'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-1",
+      "shade_name": "cendré blue/violet",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "1"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Cendré",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Cendré'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "1-1",
+      "shade_name": "cendré blue/violet",
+      "level": 1.0,
+      "manufacturer_tone_codes": [
+        "1"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Cendré",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Cendré'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "8-11",
+      "shade_name": "intense cendré",
+      "level": 8.0,
+      "manufacturer_tone_codes": [
+        "11"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Pearl"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Cendré Plus",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Cendré Plus'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-12",
+      "shade_name": "cendré ash",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "12"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Pearl"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Cendré Plus",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Cendré Plus'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "4-13",
+      "shade_name": "cendré matt",
+      "level": 4.0,
+      "manufacturer_tone_codes": [
+        "13"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Pearl"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Cendré Plus",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Cendré Plus'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9-4",
+      "shade_name": "beige muted gold",
+      "level": 9.0,
+      "manufacturer_tone_codes": [
+        "4"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Beige",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Beige",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Beige'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "8-4",
+      "shade_name": "beige muted gold",
+      "level": 8.0,
+      "manufacturer_tone_codes": [
+        "4"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Beige",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Beige",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Beige'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "7-4",
+      "shade_name": "beige muted gold",
+      "level": 7.0,
+      "manufacturer_tone_codes": [
+        "4"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Beige",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Beige",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Beige'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-4",
+      "shade_name": "beige muted gold",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "4"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Beige",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Beige",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Beige'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-4",
+      "shade_name": "beige muted gold",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "4"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Beige",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Beige",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Beige'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9-55",
+      "shade_name": "intense gold",
+      "level": 9.0,
+      "manufacturer_tone_codes": [
+        "55"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Gold/Gold Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Gold/Gold Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "8-55",
+      "shade_name": "intense gold",
+      "level": 8.0,
+      "manufacturer_tone_codes": [
+        "55"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Gold/Gold Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Gold/Gold Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "7-55",
+      "shade_name": "intense gold",
+      "level": 7.0,
+      "manufacturer_tone_codes": [
+        "55"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Gold/Gold Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Gold/Gold Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-5",
+      "shade_name": "gold",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "5"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Gold/Gold Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Gold/Gold Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-5",
+      "shade_name": "gold",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "5"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Gold/Gold Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Gold/Gold Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "4-5",
+      "shade_name": "gold",
+      "level": 4.0,
+      "manufacturer_tone_codes": [
+        "5"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Gold/Gold Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Gold/Gold Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "7-57",
+      "shade_name": "gold copper",
+      "level": 7.0,
+      "manufacturer_tone_codes": [
+        "57"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Gold Copper",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Gold Copper'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-57",
+      "shade_name": "gold copper",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "57"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Gold Copper",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Gold Copper'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-6",
+      "shade_name": "chocolate warm brown",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "6"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-6",
+      "shade_name": "chocolate warm brown",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "6"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "4-6",
+      "shade_name": "chocolate warm brown",
+      "level": 4.0,
+      "manufacturer_tone_codes": [
+        "6"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-63",
+      "shade_name": "chocolate matt",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "63"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Matt",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Matt'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-63",
+      "shade_name": "chocolate matt",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "63"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Matt",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Matt'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "4-63",
+      "shade_name": "chocolate matt",
+      "level": 4.0,
+      "manufacturer_tone_codes": [
+        "63"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Matt",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Matt'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9-65",
+      "shade_name": "chocolate gold",
+      "level": 9.0,
+      "manufacturer_tone_codes": [
+        "65"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Gold",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Gold'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "8-65",
+      "shade_name": "chocolate gold",
+      "level": 8.0,
+      "manufacturer_tone_codes": [
+        "65"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Gold",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Gold'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "7-65",
+      "shade_name": "chocolate gold",
+      "level": 7.0,
+      "manufacturer_tone_codes": [
+        "65"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Gold",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Gold'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-65",
+      "shade_name": "chocolate gold",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "65"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Gold",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Gold'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-65",
+      "shade_name": "chocolate gold",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "65"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Gold",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Gold'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "4-65",
+      "shade_name": "chocolate gold",
+      "level": 4.0,
+      "manufacturer_tone_codes": [
+        "65"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Gold",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Gold'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "3-65",
+      "shade_name": "chocolate gold",
+      "level": 3.0,
+      "manufacturer_tone_codes": [
+        "65"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Gold",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Gold'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-68",
+      "shade_name": "chocolate red",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "68"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Red",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Red'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-68",
+      "shade_name": "chocolate red",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "68"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Red",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Red'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "4-68",
+      "shade_name": "chocolate red",
+      "level": 4.0,
+      "manufacturer_tone_codes": [
+        "68"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Red",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Red'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "3-68",
+      "shade_name": "chocolate red",
+      "level": 3.0,
+      "manufacturer_tone_codes": [
+        "68"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Chocolate Red",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Chocolate Red'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9-7",
+      "shade_name": "copper orange",
+      "level": 9.0,
+      "manufacturer_tone_codes": [
+        "7"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Copper/Copper Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Copper/Copper Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "8-77",
+      "shade_name": "intense copper",
+      "level": 8.0,
+      "manufacturer_tone_codes": [
+        "77"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Copper/Copper Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Copper/Copper Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "7-77",
+      "shade_name": "intense copper",
+      "level": 7.0,
+      "manufacturer_tone_codes": [
+        "77"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Copper/Copper Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Copper/Copper Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-77",
+      "shade_name": "intense copper",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "77"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Copper/Copper Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Copper/Copper Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-7",
+      "shade_name": "copper orange",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "7"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Copper/Copper Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Copper/Copper Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-88",
+      "shade_name": "intense red",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "88"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Red Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Red Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-88",
+      "shade_name": "intense red",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "88"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Red Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Red Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "4-88",
+      "shade_name": "intense red",
+      "level": 4.0,
+      "manufacturer_tone_codes": [
+        "88"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Red Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Red Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9-98",
+      "shade_name": "violet red",
+      "level": 9.0,
+      "manufacturer_tone_codes": [
+        "98"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Violet",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Violet Red/Violet Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Violet Red/Violet Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-99",
+      "shade_name": "intense violet",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "99"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Violet",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Violet Red/Violet Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Violet Red/Violet Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "4-99",
+      "shade_name": "intense violet",
+      "level": 4.0,
+      "manufacturer_tone_codes": [
+        "99"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Violet",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Violet Red/Violet Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Violet Red/Violet Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-99",
+      "shade_name": "intense violet",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "99"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Violet",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Violet Red/Violet Extra",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Core'",
+        "Seed sub_range='Violet Red/Violet Extra'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "12-0",
+      "shade_name": "natural neutral",
+      "level": 12.0,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlift",
+      "sub_range": "Highlift 12-series",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Highlifts'",
+        "Seed sub_range='Highlift 12-series'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "12-1",
+      "shade_name": "cendré blue/violet",
+      "level": 12.0,
+      "manufacturer_tone_codes": [
+        "1"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlift",
+      "sub_range": "Highlift 12-series",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Highlifts'",
+        "Seed sub_range='Highlift 12-series'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "12-11",
+      "shade_name": "intense cendré",
+      "level": 12.0,
+      "manufacturer_tone_codes": [
+        "11"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Pearl"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlift",
+      "sub_range": "Highlift 12-series",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Highlifts'",
+        "Seed sub_range='Highlift 12-series'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "12-19",
+      "shade_name": "12-19",
+      "level": 12.0,
+      "manufacturer_tone_codes": [
+        "19"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlift",
+      "sub_range": "Highlift 12-series",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Highlifts'",
+        "Seed sub_range='Highlift 12-series'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "12-2",
+      "shade_name": "ash blue",
+      "level": 12.0,
+      "manufacturer_tone_codes": [
+        "2"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlift",
+      "sub_range": "Highlift 12-series",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Highlifts'",
+        "Seed sub_range='Highlift 12-series'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "12-4",
+      "shade_name": "beige muted gold",
+      "level": 12.0,
+      "manufacturer_tone_codes": [
+        "4"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Beige",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlift",
+      "sub_range": "Highlift 12-series",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Highlifts'",
+        "Seed sub_range='Highlift 12-series'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "10-0",
+      "shade_name": "natural neutral",
+      "level": 10.0,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlift",
+      "sub_range": "Highlift 10-series",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Highlifts'",
+        "Seed sub_range='Highlift 10-series'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "10-1",
+      "shade_name": "cendré blue/violet",
+      "level": 10.0,
+      "manufacturer_tone_codes": [
+        "1"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlift",
+      "sub_range": "Highlift 10-series",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Highlifts'",
+        "Seed sub_range='Highlift 10-series'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "10-4",
+      "shade_name": "beige muted gold",
+      "level": 10.0,
+      "manufacturer_tone_codes": [
+        "4"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Beige",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlift",
+      "sub_range": "Highlift 10-series",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Highlifts'",
+        "Seed sub_range='Highlift 10-series'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "0-55",
+      "shade_name": "intense gold",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "55"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "color_type": "additive",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=modifier",
+      "sub_range": "Creative Boosters",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Creative Mixtones'",
+        "Seed sub_range='Creative Boosters'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "0-77",
+      "shade_name": "intense copper",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "77"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "additive",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=modifier",
+      "sub_range": "Creative Boosters",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Creative Mixtones'",
+        "Seed sub_range='Creative Boosters'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "0-88",
+      "shade_name": "intense red",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "88"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "additive",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=modifier",
+      "sub_range": "Creative Boosters",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Creative Mixtones'",
+        "Seed sub_range='Creative Boosters'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "0-89",
+      "shade_name": "red violet/magenta",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "89"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Neutral",
+        "Other"
+      ],
+      "color_type": "additive",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=modifier",
+      "sub_range": "Creative Boosters",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Creative Mixtones'",
+        "Seed sub_range='Creative Boosters'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "0-99",
+      "shade_name": "intense violet",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "99"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Violet",
+        "Cool"
+      ],
+      "color_type": "additive",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=modifier",
+      "sub_range": "Creative Boosters",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Creative Mixtones'",
+        "Seed sub_range='Creative Boosters'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "E-0",
+      "shade_name": "natural neutral",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "additive",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=modifier",
+      "sub_range": "Extracts",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Extracts'",
+        "Seed sub_range='Extracts'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "E-1",
+      "shade_name": "cendré blue/violet",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "1"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "color_type": "additive",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=modifier",
+      "sub_range": "Extracts",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Extracts'",
+        "Seed sub_range='Extracts'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "D-0",
+      "shade_name": "natural neutral",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "0"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "additive",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=modifier",
+      "sub_range": "Extracts",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Extracts'",
+        "Seed sub_range='Extracts'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "0-11",
+      "shade_name": "intense cendré",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "11"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Pearl"
+      ],
+      "color_type": "additive",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=modifier",
+      "sub_range": "Neutralizers",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Creative Mixtones'",
+        "Seed sub_range='Neutralizers'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "0-22",
+      "shade_name": "anti-orange ash",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "22"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Neutral",
+        "Other"
+      ],
+      "color_type": "additive",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=modifier",
+      "sub_range": "Neutralizers",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Creative Mixtones'",
+        "Seed sub_range='Neutralizers'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "0-33",
+      "shade_name": "anti-red matt",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "33"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Neutral",
+        "Other"
+      ],
+      "color_type": "additive",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=modifier",
+      "sub_range": "Neutralizers",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Creative Mixtones'",
+        "Seed sub_range='Neutralizers'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9.5-1",
+      "shade_name": "cendré blue/violet",
+      "level": 9.5,
+      "manufacturer_tone_codes": [
+        "1"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=pastel",
+      "sub_range": "Pastels",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Pastels'",
+        "Seed sub_range='Pastels'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9.5-22",
+      "shade_name": "anti-orange ash",
+      "level": 9.5,
+      "manufacturer_tone_codes": [
+        "22"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=pastel",
+      "sub_range": "Pastels",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Pastels'",
+        "Seed sub_range='Pastels'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9.5-4",
+      "shade_name": "beige muted gold",
+      "level": 9.5,
+      "manufacturer_tone_codes": [
+        "4"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Beige",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=pastel",
+      "sub_range": "Pastels",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Pastels'",
+        "Seed sub_range='Pastels'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9.5-49",
+      "shade_name": "9.5-49",
+      "level": 9.5,
+      "manufacturer_tone_codes": [
+        "49"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=pastel",
+      "sub_range": "Pastels",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Pastels'",
+        "Seed sub_range='Pastels'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9.5-18",
+      "shade_name": "9.5-18",
+      "level": 9.5,
+      "manufacturer_tone_codes": [
+        "18"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=pastel",
+      "sub_range": "Pastels",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Pastels'",
+        "Seed sub_range='Pastels'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9.5-17",
+      "shade_name": "9.5-17",
+      "level": 9.5,
+      "manufacturer_tone_codes": [
+        "17"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=pastel",
+      "sub_range": "Pastels",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Pastels'",
+        "Seed sub_range='Pastels'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9-40",
+      "shade_name": "9-40",
+      "level": 9.0,
+      "manufacturer_tone_codes": [
+        "40"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Beige Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Beige Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9-50",
+      "shade_name": "9-50",
+      "level": 9.0,
+      "manufacturer_tone_codes": [
+        "50"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Gold Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Gold Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "8-50",
+      "shade_name": "8-50",
+      "level": 8.0,
+      "manufacturer_tone_codes": [
+        "50"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Gold Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Gold Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "7-50",
+      "shade_name": "7-50",
+      "level": 7.0,
+      "manufacturer_tone_codes": [
+        "50"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Gold Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Gold Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-50",
+      "shade_name": "5-50",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "50"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Gold Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Gold Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "9-60",
+      "shade_name": "9-60",
+      "level": 9.0,
+      "manufacturer_tone_codes": [
+        "60"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Chocolate Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Chocolate Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "7-60",
+      "shade_name": "7-60",
+      "level": 7.0,
+      "manufacturer_tone_codes": [
+        "60"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Chocolate Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Chocolate Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-60",
+      "shade_name": "6-60",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "60"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Chocolate Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Chocolate Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-60",
+      "shade_name": "5-60",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "60"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Chocolate Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Chocolate Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "4-60",
+      "shade_name": "4-60",
+      "level": 4.0,
+      "manufacturer_tone_codes": [
+        "60"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Chocolate Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Chocolate Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "7-70",
+      "shade_name": "7-70",
+      "level": 7.0,
+      "manufacturer_tone_codes": [
+        "70"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Copper Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Copper Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-70",
+      "shade_name": "6-70",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "70"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Copper Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Copper Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "6-80",
+      "shade_name": "6-80",
+      "level": 6.0,
+      "manufacturer_tone_codes": [
+        "80"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Red/Violet Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Red/Violet Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "5-80",
+      "shade_name": "5-80",
+      "level": 5.0,
+      "manufacturer_tone_codes": [
+        "80"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Red/Violet Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Red/Violet Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "4-90",
+      "shade_name": "4-90",
+      "level": 4.0,
+      "manufacturer_tone_codes": [
+        "90"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Other"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=permanent",
+      "sub_range": "Absolutes Red/Violet Natural",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Absolutes'",
+        "Seed sub_range='Absolutes Red/Violet Natural'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "L-00",
+      "shade_name": "natural extra",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "00"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlight_color",
+      "sub_range": "Fashion Lights",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Fashion Lights'",
+        "Seed sub_range='Fashion Lights'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "L-44",
+      "shade_name": "L-44",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "44"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlight_color",
+      "sub_range": "Fashion Lights",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Fashion Lights'",
+        "Seed sub_range='Fashion Lights'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "L-57",
+      "shade_name": "gold copper",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "57"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlight_color",
+      "sub_range": "Fashion Lights",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Fashion Lights'",
+        "Seed sub_range='Fashion Lights'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "L-77",
+      "shade_name": "intense copper",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "77"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlight_color",
+      "sub_range": "Fashion Lights",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Fashion Lights'",
+        "Seed sub_range='Fashion Lights'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "L-88",
+      "shade_name": "intense red",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "88"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Red",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlight_color",
+      "sub_range": "Fashion Lights",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Fashion Lights'",
+        "Seed sub_range='Fashion Lights'"
+      ],
+      "data_gaps": []
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "shade_code": "L-89",
+      "shade_name": "red violet/magenta",
+      "level": null,
+      "manufacturer_tone_codes": [
+        "89"
+      ],
+      "manufacturer_tone_descriptions": [],
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "color_type": "permanent",
+      "gray_coverage_claim": null,
+      "lift_levels": null,
+      "mixing_ratio": null,
+      "developer_options": null,
+      "processing_time_minutes": null,
+      "special_usage_notes": "shade_category=highlight_color",
+      "sub_range": "Fashion Lights",
+      "official_swatch_image_exists": null,
+      "region_or_market": "US",
+      "discontinued_status": "Active per manufacturer PDF extract (batch11)",
+      "source_url": null,
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "source_type": "manufacturer_pdf",
+      "source_publication_date": null,
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Converted from v5 Schwarzkopf IGORA ROYAL CSV seed package (batch11)",
+        "Seed product_line='IGORA ROYAL Fashion Lights'",
+        "Seed sub_range='Fashion Lights'"
+      ],
+      "data_gaps": []
+    }
+  ]
+}

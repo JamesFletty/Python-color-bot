@@ -669,12 +669,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "0",
-      "manufacturer_term": null,
+      "manufacturer_term": "0",
       "normalized_tones": [
         "Natural",
         "Neutral"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural (neutral)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -684,12 +684,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "00",
-      "manufacturer_term": null,
+      "manufacturer_term": "00",
       "normalized_tones": [
         "Natural",
         "Neutral"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 0 = Natural (neutral); secondary 0 = Natural (neutral)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -717,13 +717,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "1",
-      "manufacturer_term": null,
+      "manufacturer_term": "1",
       "normalized_tones": [
         "Ash",
-        "Blue",
-        "Violet"
+        "Cool"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -751,13 +750,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "11",
-      "manufacturer_term": null,
+      "manufacturer_term": "11",
       "normalized_tones": [
         "Ash",
-        "Blue",
-        "Violet"
+        "Pearl"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 1 = Cendré (blue/violet)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -767,13 +765,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "12",
-      "manufacturer_term": null,
+      "manufacturer_term": "12",
       "normalized_tones": [
         "Ash",
-        "Blue",
-        "Violet"
+        "Pearl"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 2 = Ash (blue)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -783,14 +780,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "13",
-      "manufacturer_term": null,
+      "manufacturer_term": "13",
       "normalized_tones": [
         "Ash",
-        "Blue",
-        "Violet",
-        "Green"
+        "Pearl"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 3 = Matte (green)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -858,13 +853,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "19",
-      "manufacturer_term": null,
+      "manufacturer_term": "19",
       "normalized_tones": [
-        "Ash",
-        "Blue",
-        "Violet"
+        "Gold",
+        "Warm"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 1 = Cendré (blue/violet); secondary 9 = Violet",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -874,12 +868,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "2",
-      "manufacturer_term": null,
+      "manufacturer_term": "2",
       "normalized_tones": [
-        "Ash",
-        "Blue"
+        "Gold",
+        "Warm"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Ash (blue)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -905,12 +899,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "22",
-      "manufacturer_term": null,
+      "manufacturer_term": "22",
       "normalized_tones": [
-        "Ash",
-        "Blue"
+        "Neutral",
+        "Other"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 2 = Ash (blue); secondary 2 = Ash (blue)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -937,11 +931,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "33",
-      "manufacturer_term": null,
+      "manufacturer_term": "33",
       "normalized_tones": [
-        "Green"
+        "Neutral",
+        "Other"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 3 = Matte (green); secondary 3 = Matte (green)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -951,12 +946,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "4",
-      "manufacturer_term": null,
+      "manufacturer_term": "4",
       "normalized_tones": [
         "Beige",
-        "Gold"
+        "Warm"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -966,14 +961,11 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "40",
-      "manufacturer_term": null,
+      "manufacturer_term": "40",
       "normalized_tones": [
-        "Beige",
-        "Gold",
-        "Natural",
-        "Neutral"
+        "Other"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 0 = Natural (neutral)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1077,13 +1069,11 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "49",
-      "manufacturer_term": null,
+      "manufacturer_term": "49",
       "normalized_tones": [
-        "Beige",
-        "Gold",
-        "Violet"
+        "Other"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 4 = Beige (muted gold); secondary 9 = Violet",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1093,11 +1083,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "5",
-      "manufacturer_term": null,
+      "manufacturer_term": "5",
       "normalized_tones": [
-        "Gold"
+        "Mahogany",
+        "Warm"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1107,13 +1098,11 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "50",
-      "manufacturer_term": null,
+      "manufacturer_term": "50",
       "normalized_tones": [
-        "Gold",
-        "Natural",
-        "Neutral"
+        "Other"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold; secondary 0 = Natural (neutral)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1123,11 +1112,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "55",
-      "manufacturer_term": null,
+      "manufacturer_term": "55",
       "normalized_tones": [
-        "Gold"
+        "Mahogany",
+        "Warm"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold; secondary 5 = Gold",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1157,12 +1147,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "57",
-      "manufacturer_term": null,
+      "manufacturer_term": "57",
       "normalized_tones": [
-        "Gold",
-        "Copper"
+        "Mahogany",
+        "Warm"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 5 = Gold; secondary 7 = Copper (orange)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1172,12 +1162,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "6",
-      "manufacturer_term": null,
+      "manufacturer_term": "6",
       "normalized_tones": [
-        "Brown",
-        "Warm"
+        "Red",
+        "Copper"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1187,14 +1177,11 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "60",
-      "manufacturer_term": null,
+      "manufacturer_term": "60",
       "normalized_tones": [
-        "Brown",
-        "Warm",
-        "Natural",
-        "Neutral"
+        "Other"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 0 = Natural (neutral)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1204,13 +1191,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "63",
-      "manufacturer_term": null,
+      "manufacturer_term": "63",
       "normalized_tones": [
-        "Brown",
-        "Warm",
-        "Green"
+        "Red",
+        "Copper"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 3 = Matte (green)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1220,13 +1206,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "65",
-      "manufacturer_term": null,
+      "manufacturer_term": "65",
       "normalized_tones": [
-        "Brown",
-        "Warm",
-        "Gold"
+        "Red",
+        "Copper"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 5 = Gold",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1236,13 +1221,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "68",
-      "manufacturer_term": null,
+      "manufacturer_term": "68",
       "normalized_tones": [
-        "Brown",
-        "Warm",
-        "Red"
+        "Red",
+        "Copper"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 6 = Chocolate (warm brown); secondary 8 = Red",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1252,11 +1236,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "7",
-      "manufacturer_term": null,
+      "manufacturer_term": "7",
       "normalized_tones": [
-        "Copper"
+        "Red",
+        "Warm"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Copper (orange)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1266,13 +1251,11 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "70",
-      "manufacturer_term": null,
+      "manufacturer_term": "70",
       "normalized_tones": [
-        "Copper",
-        "Natural",
-        "Neutral"
+        "Other"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Copper (orange); secondary 0 = Natural (neutral)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1303,11 +1286,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "77",
-      "manufacturer_term": null,
+      "manufacturer_term": "77",
       "normalized_tones": [
-        "Copper"
+        "Red",
+        "Warm"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 7 = Copper (orange); secondary 7 = Copper (orange)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1317,13 +1301,11 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "80",
-      "manufacturer_term": null,
+      "manufacturer_term": "80",
       "normalized_tones": [
-        "Red",
-        "Natural",
-        "Neutral"
+        "Other"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Red; secondary 0 = Natural (neutral)",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1333,11 +1315,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "88",
-      "manufacturer_term": null,
+      "manufacturer_term": "88",
       "normalized_tones": [
-        "Red"
+        "Red",
+        "Warm"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Red; secondary 8 = Red",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1347,12 +1330,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "89",
-      "manufacturer_term": null,
+      "manufacturer_term": "89",
       "normalized_tones": [
-        "Red",
-        "Violet"
+        "Neutral",
+        "Other"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 8 = Red; secondary 9 = Violet",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1362,12 +1345,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "98",
-      "manufacturer_term": null,
+      "manufacturer_term": "98",
       "normalized_tones": [
         "Violet",
-        "Red"
+        "Cool"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Violet; secondary 8 = Red",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
@@ -1377,11 +1360,12 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "99",
-      "manufacturer_term": null,
+      "manufacturer_term": "99",
       "normalized_tones": [
-        "Violet"
+        "Violet",
+        "Cool"
       ],
-      "mapping_rationale": "Per-digit decode via printed line legend: primary 9 = Violet; secondary 9 = Violet",
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []

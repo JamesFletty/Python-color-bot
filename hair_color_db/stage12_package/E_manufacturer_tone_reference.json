@@ -615,24 +615,18 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "0",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 0 = Natural (neutral)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "0",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "00",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 0 = Natural (neutral); secondary 0 = Natural (neutral)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "00",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
@@ -651,12 +645,9 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "1",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 1 = Cendré (blue/violet)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "1",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
@@ -675,36 +666,27 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "11",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 1 = Cendré (blue/violet); secondary 1 = Cendré (blue/violet)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "11",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "12",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 1 = Cendré (blue/violet); secondary 2 = Ash (blue)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "12",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "13",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 1 = Cendré (blue/violet); secondary 3 = Matte (green)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "13",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
@@ -749,24 +731,18 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "19",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 1 = Cendré (blue/violet); secondary 9 = Violet",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "19",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "2",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 2 = Ash (blue)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "2",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
@@ -785,12 +761,9 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "22",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 2 = Ash (blue); secondary 2 = Ash (blue)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "22",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
@@ -809,36 +782,27 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "33",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 3 = Matte (green); secondary 3 = Matte (green)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "33",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "4",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 4 = Beige (muted gold)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "4",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "40",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 4 = Beige (muted gold); secondary 0 = Natural (neutral)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "40",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
@@ -911,48 +875,36 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "49",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 4 = Beige (muted gold); secondary 9 = Violet",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "49",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "5",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 5 = Gold",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "5",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "50",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 5 = Gold; secondary 0 = Natural (neutral)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "50",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "55",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 5 = Gold; secondary 5 = Gold",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "55",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
@@ -973,96 +925,72 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "57",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 5 = Gold; secondary 7 = Copper (orange)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "57",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "6",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 6 = Chocolate (warm brown)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "6",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "60",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 6 = Chocolate (warm brown); secondary 0 = Natural (neutral)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "60",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "63",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 6 = Chocolate (warm brown); secondary 3 = Matte (green)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "63",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "65",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 6 = Chocolate (warm brown); secondary 5 = Gold",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "65",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "68",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 6 = Chocolate (warm brown); secondary 8 = Red",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "68",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "7",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 7 = Copper (orange)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "7",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "70",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 7 = Copper (orange); secondary 0 = Natural (neutral)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "70",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
@@ -1083,72 +1011,54 @@
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "77",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 7 = Copper (orange); secondary 7 = Copper (orange)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "77",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "80",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 8 = Red; secondary 0 = Natural (neutral)",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "80",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "88",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 8 = Red; secondary 8 = Red",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "88",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "89",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 8 = Red; secondary 9 = Violet",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "89",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "98",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 9 = Violet; secondary 8 = Red",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "98",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
       "brand": "Schwarzkopf Professional",
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "99",
-      "manufacturer_term": null,
-      "manufacturer_definition": "primary 9 = Violet; secondary 9 = Violet",
-      "evidence_source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "evidence_source_document": "IGORA Paper Swatch Chart (US edition, (c) 2021 Henkel Corporation, IDH# 2705423) plus official US IGORA ROYAL line page",
-      "confidence": "high",
-      "notes_on_ambiguity": []
+      "manufacturer_term": "99",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
+      "evidence_status": "manufacturer_stated"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
@@ -8482,7 +8392,7 @@
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "18",
       "manufacturer_term": "18",
-      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide.pdf pp. 4-5)",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
       "evidence_status": "manufacturer_stated"
     },
     {
@@ -8491,7 +8401,7 @@
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "17",
       "manufacturer_term": "17",
-      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide.pdf pp. 4-5)",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
       "evidence_status": "manufacturer_stated"
     },
     {
@@ -8500,7 +8410,7 @@
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "90",
       "manufacturer_term": "90",
-      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide.pdf pp. 4-5)",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
       "evidence_status": "manufacturer_stated"
     },
     {
@@ -8509,7 +8419,7 @@
       "product_line": "IGORA ROYAL",
       "manufacturer_tone_code": "44",
       "manufacturer_term": "44",
-      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide.pdf pp. 4-5)",
+      "source_document": "IGORA ROYAL assortment shade chart (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 4-5)",
       "evidence_status": "manufacturer_stated"
     },
     {

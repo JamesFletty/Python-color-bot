@@ -3756,6 +3756,31 @@
       "notes": [
         "366028726-Loreal-Professionnel-Dia-Color-Chart.pdf; batch10 seed package."
       ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand_name": "Schwarzkopf Professional",
+      "product_line_name": "IGORA ROYAL",
+      "source_title": "IGORA ROYAL quick-starter guide (shade chart, recreation formulas, technical)",
+      "source_type": "manufacturer_pdf",
+      "source_url": null,
+      "publisher_domain": "schwarzkopf-professional.com",
+      "publication_or_revision_date": null,
+      "file_type": "pdf",
+      "access_status": "available_uploaded_pdf",
+      "region_or_market": "US",
+      "coverage_summary": "Quick-starter assortment pages 4-5, previous-shade recreation cheat sheet page 6, technical pages 7-10.",
+      "expected_data_types_present": [
+        "shade_codes",
+        "mixing_rules",
+        "gray_coverage",
+        "lift_rules",
+        "formula_recreation"
+      ],
+      "source_priority_tier": 1,
+      "notes": [
+        "445122692-schwarzkopf-quick-starter-guide(1).pdf; batch11 v5 CSV seed package."
+      ]
     }
   ],
   "missing_source_targets": [

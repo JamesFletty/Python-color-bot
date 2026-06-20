@@ -282,7 +282,9 @@
       "color_type": "permanent",
       "default_mixing_ratio": [
         "igora_royal_standard_mix_process: \"1:1\"",
-        "igora_fashion_lights_off_scalp_only: \"1:1\""
+        "igora_fashion_lights_off_scalp_only: \"1:1\"",
+        "igora_royal_natural_standard_use: \"1:1\"",
+        "igora_royal_fashion_lights: \"1:1\""
       ],
       "developer_options": [
         "IGORA ROYAL Oil Developer 3% (10 Vol.)",
@@ -290,7 +292,12 @@
         "IGORA ROYAL Oil Developer 9% (30 Vol.)",
         "IGORA ROYAL Oil Developer 12% (40 Vol.)",
         "igora_royal_standard_mix_process: {\"mixing_ratio\": \"1:1\", \"developer_volumes\": [10, 20, 30], \"processing_time_min\": [30, 45], \"apply_to\": \"dry_unwashed_hair\"}",
-        "igora_fashion_lights_off_scalp_only: {\"mixing_ratio\": \"1:1\", \"developer_volume\": 40, \"processing_time_min\": [30, 45], \"max_lift_levels\": 5, \"application\": \"off_scalp_only\", \"starting_level_max\": 6}"
+        "igora_fashion_lights_off_scalp_only: {\"mixing_ratio\": \"1:1\", \"developer_volume\": 40, \"processing_time_min\": [30, 45], \"max_lift_levels\": 5, \"application\": \"off_scalp_only\", \"starting_level_max\": 6}",
+        "igora_royal_natural_standard_use: {\"white_hair_coverage_pct\": 100, \"mixing_ratio\": \"1:1\", \"developer_volumes\": [10, 20, 30], \"processing_time_min\": [30, 45], \"notes\": \"Natural shades cover up to level 9.\"}",
+        "igora_royal_fashion_lights: {\"usage\": \"lift and color in one step\", \"max_lift_levels\": 5, \"mixing_ratio\": \"1:1\", \"developer_volume\": 40, \"processing_time_min\": [30, 45], \"application\": \"off_scalp_only\", \"starting_base\": \"6 and darker; dark or colored bases\"}",
+        "igora_royal_virgin_application: {\"apply_to\": \"dry_unwashed_hair\", \"steps\": [\"apply first on mid-lengths and ends in fine sections leaving 1/2 inch regrowth out\", \"develop 10 minutes or 15 minutes for Fashion Shades\", \"apply to regrowth\", \"develop 30-45 minutes\"]}",
+        "igora_royal_regrowth_application: {\"apply_to\": \"dry_unwashed_hair\", \"steps\": [\"apply color only to regrowth area first in fine sections\", \"develop 15-20 minutes\", \"apply IGORA ROYAL or IGORA VIBRANCE demi-permanent color to mid-lengths and ends\", \"develop 10-15 minutes\"]}",
+        "igora_royal_dual_application: {\"description\": \"Permanent IGORA ROYAL for regrowth with IGORA VIBRANCE non-ammonia demi-permanent color for mid-lengths and ends.\", \"steps\": [\"apply permanent IGORA ROYAL to regrowth first\", \"develop 15-20 minutes depending on mids/ends product\", \"apply IGORA VIBRANCE to mid-lengths and ends\", \"development time depends on desired intensity and instructions\"]}"
       ],
       "developer_strengths_if_stated": [
         "3% / 10 Vol.",
@@ -305,7 +312,9 @@
         "One chart block reads '1:1, Development time up to 20 minutes, Recommended 3% (10 Vol.)' - its product binding (likely Pastels or Silver Whites) is ambiguous in the scrambled text layout",
         "IGORA COLOR10 (companion line on same chart): 'in as little as 10 minutes'",
         "igora_royal_standard_mix_process: [30, 45]",
-        "igora_fashion_lights_off_scalp_only: [30, 45]"
+        "igora_fashion_lights_off_scalp_only: [30, 45]",
+        "igora_royal_natural_standard_use: [30, 45]",
+        "igora_royal_fashion_lights: [30, 45]"
       ],
       "gray_coverage_rules": [
         "All IGORA ROYAL and IGORA COLOR10 shades provide up to 50% or 100% white hair coverage.",
@@ -314,14 +323,22 @@
         "Chart lists 'IGORA ROYAL 100% coverage shades:' followed by a garbled token sequence '-0 -0 -1 -4 -63' in the text layer (depth digits lost).",
         "Developer guide: covering 100% white hair -> 6% 20 Vol.; white hair coverage with ABSOLUTES -> 9% 30 Vol.; ABSOLUTES/Natural Extra on more than 90% white hair -> 6% 20 Vol.",
         "igora_fashion_gray_mix_rule: {\"condition\": {\"shade_families\": [\"-11\", \"-12\", \"-13\", \"-5\", \"-55\", \"-57\", \"-6\", \"-63\", \"-65\", \"-68\", \"-7\", \"-77\", \"-88\", \"-98\", \"-99\"], \"gray_pct_min\": 50}, \"action\": {\"mix_with_natural\": \"2:1 fashion:natural\", \"resistant_hair_mix\": \"1:1 fashion:natural\"}}",
-        "igora_neutralizer_amounts_by_level: {\"condition\": {\"shades\": [\"0-11\", \"0-22\", \"0-33\"]}, \"action\": {\"additive_max_pct_by_level\": {\"8-9\": 5, \"6-7\": 15, \"1-5\": 25}, \"developer_increase_proportionally\": true}}"
+        "igora_neutralizer_amounts_by_level: {\"condition\": {\"shades\": [\"0-11\", \"0-22\", \"0-33\"]}, \"action\": {\"additive_max_pct_by_level\": {\"8-9\": 5, \"6-7\": 15, \"1-5\": 25}, \"developer_increase_proportionally\": true}}",
+        "igora_royal_nature_extra_resistant_hair: {\"condition\": {\"sub_range\": \"Nature Extra\", \"tone_code\": \"00\"}, \"action\": {\"white_hair_coverage_pct\": 100, \"mixing_ratio\": \"1:1\", \"default_developer_volume\": 30, \"processing_time_min\": [30, 45], \"tip\": \"For pure color deposit on more than 90% white hair use 20 vol.\"}}",
+        "igora_royal_fashion_gray_blending_mix_natural: {\"condition\": {\"sub_ranges\": [\"Cendré Plus\", \"Gold/Gold Extra\", \"Gold Copper\", \"Chocolate\", \"Chocolate Gold\", \"Chocolate Red\", \"Copper/Copper Extra\", \"Red Extra\", \"Violet Red/Violet Extra\"], \"gray_pct_range\": [50, 100]}, \"action\": {\"white_hair_coverage_pct\": 70, \"mixing_ratio\": \"1:1\", \"coverage_formula\": \"2 parts Fashion Shade : 1 part Natural Shade for 50-100% white hair; fashion shade alone up to 50%; mix 1:1 with natural shade on thick/resistant hair\", \"developer_volumes\": [10, 20, 30], \"processing_time_min\": [30, 45]}}",
+        "igora_royal_neutralizer_amount_by_level: {\"condition\": {\"modifier_codes\": [\"0-11\", \"0-22\", \"0-33\"]}, \"action\": {\"amount_by_level\": [{\"levels\": [8, 9], \"max_pct_of_color_cream\": 5}, {\"levels\": [6, 7], \"max_pct_of_color_cream\": 15}, {\"levels\": [1, 2, 3, 4, 5], \"max_pct_of_color_cream\": 25}], \"neutralizes\": {\"0-11\": \"yellow\", \"0-22\": \"orange\", \"0-33\": \"red\"}, \"increase_developer_proportionally\": true}}",
+        "igora_royal_absolutes_mature_hair: {\"condition\": {\"line\": \"IGORA ROYAL Absolutes\", \"tone_codes\": [\"40\", \"50\", \"60\", \"70\", \"80\", \"90\"]}, \"action\": {\"white_hair_coverage_pct\": 100, \"mixing_ratio\": \"1:1\", \"developer_volume\": 30, \"processing_time_min\": [30, 45], \"tip\": \"For pure color deposit on more than 90% white hair use 20 vol.\"}}"
       ],
       "lift_rules": [
         "Oil Developer usage table: coloring darker / 0 levels -> 3% 10 Vol. or 6% 20 Vol.; lifting 1-2 levels -> 6% 20 Vol.; lifting 2-3 levels -> 9% 30 Vol.; lifting up to 3 levels with Ultra Blonde (10-) and 3-4 levels with Special Blonde (12-) -> 9% 30 Vol.; lifting 3-4 levels with Ultra Blonde (10-) and 4-5 levels with Special Blonde (12-) -> 12% 40 Vol.",
         "Footnote: '4-5 levels of lift are achievable on natural base 6 and lighter.'",
         "Highlifts mixing: Ultra Blonde (10- Series) 1:1; Special Blonde (12- Series) 1:2; both 30-45 minutes.",
         "igora_royal_10_series_highlift: {\"mixing_ratio\": \"1:1\", \"developer_options\": [{\"volume\": 30, \"max_lift_levels\": 3}, {\"volume\": 40, \"max_lift_levels\": 4}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}",
-        "igora_royal_12_series_highlift: {\"mixing_ratio\": \"1:2\", \"developer_options\": [{\"volume\": 30, \"max_lift_levels\": 4}, {\"volume\": 40, \"max_lift_levels\": 5}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}"
+        "igora_royal_12_series_highlift: {\"mixing_ratio\": \"1:2\", \"developer_options\": [{\"volume\": 30, \"max_lift_levels\": 4}, {\"volume\": 40, \"max_lift_levels\": 5}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}",
+        "igora_royal_10_series_ultra_blonde: {\"max_lift_levels\": 4, \"mixing_ratio\": \"1:1\", \"developer_options\": [{\"volume\": 30, \"lift_levels\": 3}, {\"volume\": 40, \"lift_levels\": 4}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}",
+        "igora_royal_12_series_special_blonde: {\"max_lift_levels\": 5, \"mixing_ratio\": \"1:2\", \"developer_options\": [{\"volume\": 30, \"lift_levels\": 4}, {\"volume\": 40, \"lift_levels\": 5}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}",
+        "igora_royal_e0_lightening_additive: {\"additional_lift_levels\": 1, \"mixing_ratio\": \"2:1 shade:E-0\", \"developer_volumes\": [10, 20, 30], \"processing_time_min\": [30, 45], \"hair_state\": \"virgin_hair\"}",
+        "igora_royal_e0_lightening_extract_pure: {\"max_lift_levels\": 4, \"mixing_ratio\": \"1:1\", \"developer_volume\": 40, \"processing_time_min\": [30, 45], \"hair_state\": \"virgin_hair\"}"
       ],
       "tone_family_legend": [
         "Tone direction: -0 Natural",
@@ -340,18 +357,28 @@
         "Numbering system (printed): number in front of the dash indicates the depth of the shade and the ideal base to choose; first number after the dash represents the primary tone direction (dominant shade); second number after the dash indicates the secondary tone direction.",
         "Official US page (fetched June 2026): portfolio streamlined from 13 ranges to 5 sub-groups totaling 143 shades - core IGORA ROYAL plus technical lines HIGHLIFTS, FASHION LIGHTS, ABSOLUTES, SILVER WHITES.",
         "Chart safety/usage hints: do not apply on damaged or irritated scalp; avoid pre-shampooing; no head massage shortly before or during coloring; observe correct mixing ratio and development time; rinse completely; do not use heat.",
-        "Chart also covers companion ranges on the same document: IGORA COLOR10 (1:1, as little as 10 minutes), IGORA VIBRANCE demi-permanent, IGORA VARIO BLOND PLUS/EXTRA (1:2, 30-45 minutes), CHROMA ID bonding color masks (up to 10 min; intense masks up to 20 min)."
+        "Chart also covers companion ranges on the same document: IGORA COLOR10 (1:1, as little as 10 minutes), IGORA VIBRANCE demi-permanent, IGORA VARIO BLOND PLUS/EXTRA (1:2, 30-45 minutes), CHROMA ID bonding color masks (up to 10 min; intense masks up to 20 min).",
+        "igora_royal_95_series_pastel_toning: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL Pastels\", \"rule_category\": \"toning\", \"rule_name\": \"igora_royal_95_series_pastel_toning\", \"rule_condition\": {\"sub_range\": \"Pastels\", \"target_level_min\": 9, \"hair_state\": \"pre_lightened_pale_yellow\"}, \"rule_action\": {\"mixing_ratio\": \"1:1\", \"developer_volume\": 10, \"processing_time_min\": [5, 30], \"process_visually\": true, \"usage\": [\"personalization\", \"white refining\", \"neutralization after lightening\"]}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_booster_amount: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL Creative Mixtones\", \"rule_category\": \"tone\", \"rule_name\": \"igora_royal_booster_amount\", \"rule_condition\": {\"modifier_codes\": [\"0-55\", \"0-77\", \"0-88\", \"0-89\", \"0-99\"]}, \"rule_action\": {\"max_pct_of_color_cream\": 50, \"usage\": \"boost fashion tone directions on all levels\", \"increase_developer_proportionally\": true, \"warning\": \"type and amount of mixtone influence target depth\"}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_d0_diluter: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL Extracts\", \"rule_category\": \"tone\", \"rule_name\": \"igora_royal_d0_diluter\", \"rule_condition\": {\"modifier_code\": \"D-0\"}, \"rule_action\": {\"max_pct_of_color_cream\": 50, \"usage\": [\"reduce pigment concentration\", \"create soft pastel tones\"], \"developer_volume\": 10, \"processing_time_min\": [5, 30], \"can_be_used_with_10vol_for_shine_on_light_bases\": true, \"mixing_ratio_when_pure\": \"1:1\"}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_e1_extra_cendre_additive_by_base: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL Extracts\", \"rule_category\": \"tone\", \"rule_name\": \"igora_royal_e1_extra_cendre_additive_by_base\", \"rule_condition\": {\"modifier_code\": \"E-1\", \"usage\": \"mixed_with_target_shade\"}, \"rule_action\": {\"mixing_ratio_by_base\": [{\"base_levels\": [8, 7], \"ratio\": \"2:1 shade:E-1\"}, {\"base_levels\": [6, 5], \"ratio\": \"1:1 shade:E-1\"}, {\"base_levels\": [1, 2, 3, 4], \"ratio\": \"1:2 shade:E-1\"}], \"processing_time_min\": [30, 45], \"usage_note\": \"extra cool tone direction\"}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_e1_extra_cendre_pure: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL Extracts\", \"rule_category\": \"tone\", \"rule_name\": \"igora_royal_e1_extra_cendre_pure\", \"rule_condition\": {\"modifier_code\": \"E-1\", \"usage\": \"used_pure\"}, \"rule_action\": {\"mixing_ratio\": \"1:1\", \"developer_volume\": 10, \"processing_time_min\": [30, 45], \"usage\": \"extra deposit of cool pigments\"}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_developer_10_vol_usage: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL\", \"rule_category\": \"developer\", \"rule_name\": \"igora_royal_developer_10_vol_usage\", \"rule_condition\": {\"developer_volume\": 10}, \"rule_action\": {\"recommended_uses\": [\"coloring darker\", \"covering 100% white hair depending on texture\", \"color deposit on pre-lightened hair\", \"pastel shades\"]}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_developer_20_vol_usage: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL\", \"rule_category\": \"developer\", \"rule_name\": \"igora_royal_developer_20_vol_usage\", \"rule_condition\": {\"developer_volume\": 20}, \"rule_action\": {\"recommended_uses\": [\"tone-on-tone\", \"white hair coverage\", \"lifting 1-2 levels\", \"can achieve 2 levels on fine hair\", \"Absolutes deposit >90% white hair\"]}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_developer_30_vol_usage: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL\", \"rule_category\": \"developer\", \"rule_name\": \"igora_royal_developer_30_vol_usage\", \"rule_condition\": {\"developer_volume\": 30}, \"rule_action\": {\"recommended_uses\": [\"lifting 2-3 levels\", \"-00 series\", \"Absolutes gray coverage\", \"10-series up to 3 levels\", \"12-series 3-4 levels\"]}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_developer_40_vol_usage: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL\", \"rule_category\": \"developer\", \"rule_name\": \"igora_royal_developer_40_vol_usage\", \"rule_condition\": {\"developer_volume\": 40}, \"rule_action\": {\"recommended_uses\": [\"Fashion Lights\", \"10-series 3-4 levels\", \"12-series 4-5 levels\"]}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}"
       ],
       "region_or_market": "US",
       "discontinued_status": "active (current official US line page live as of June 2026)",
       "source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "source_document": "IGORA ROYAL technical instructions (445122692-schwarzkopf-quick-starter-guide.pdf pp. 7-10)",
+      "source_document": "IGORA ROYAL technical instructions, developer usage, application methods (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 7-10)",
       "source_confidence": "high",
       "evidence_status": "manufacturer_stated",
       "assumptions": [
         "Chart copyright 2021 used as publication date; official page fetched June 2026 used for current portfolio claims (143 shades, 5 sub-lines, active status).",
         "Scrambled multi-column text layout means some mixing blocks could not be bound to a named sub-range; only explicitly labeled bindings were recorded.",
-        "Aggregated from normalized seed package technical_rules (batch09)"
+        "Aggregated from normalized seed package technical_rules (batch09)",
+        "Aggregated from normalized seed package technical_rules (batch11)"
       ],
       "data_gaps": [
         "Per-sub-range mixing block for FASHION LIGHTS and SILVER WHITES not unambiguously recoverable (a 1:2 / 30-45 min block and a 1:1 / up to 20 min / 3% block sit adjacent to their labels but binding is uncertain).",
