@@ -16,18 +16,29 @@ from sqlalchemy.exc import SQLAlchemyError
 
 from api.schemas import FormulaRequest, HealthResponse
 from hair_color_db.production.catalog_lookup import DEFAULT_SUB_RANGE, resolve_from_shade_reference
+from hair_color_db.production.consultation_service import (
+    consultation_payload,
+    update_consultation_status,
+)
 from hair_color_db.production.db import create_session_factory, require_database_url
 from hair_color_db.production.engine_models import EngineInput, SelectedShade, ServiceIntent
 from hair_color_db.production.production_models import (
+    ConsultationStatus,
     FormulationRule,
     HairTexture,
     RecommendationType,
     Shade,
 )
+from hair_color_db.production.production_schemas import (
+    ConsultationResponse,
+    ConsultationUpdate,
+)
 from hair_color_db.production.run_production_engine import run_production_engine
 from src.formula_engine_service import http_status_for_formula, run_formula_engine
 from src.paths import DEFAULT_DB_PATH
 from src.paths import EXPECTED_SHADE_COUNT
+
+ConsultationStatusUpdate = ConsultationUpdate
 
 app = FastAPI(
     title="Hair Color Formula Engine",
@@ -42,6 +53,23 @@ def _db_path() -> Path:
 
 def _engine_backend() -> str:
     return os.environ.get("ENGINE_BACKEND", "sqlite").strip().lower()
+
+
+def _request_auth_context(request: Request) -> dict[str, uuid.UUID | None]:
+    def _parse_uuid(header: str) -> uuid.UUID | None:
+        val = request.headers.get(header)
+        if val:
+            try:
+                return uuid.UUID(val)
+            except ValueError:
+                pass
+        return None
+
+    return {
+        "stylist_id": _parse_uuid("X-Stylist-Id"),
+        "client_id": _parse_uuid("X-Client-Id"),
+        "salon_id": _parse_uuid("X-Salon-Id"),
+    }
 
 
 def _pg_health() -> HealthResponse:
@@ -100,6 +128,10 @@ def _pg_health() -> HealthResponse:
     )
 
 
+def _production_health() -> HealthResponse:
+    return _pg_health()
+
+
 @app.get("/health", response_model=HealthResponse)
 def health() -> HealthResponse:
     if _engine_backend() in {"postgres", "postgresql", "pg", "production"}:
@@ -115,7 +147,7 @@ def health() -> HealthResponse:
     )
 
 
-def _production_formula(body: FormulaRequest) -> dict[str, Any]:
+def _production_formula(body: FormulaRequest, auth_context: dict | None = None) -> dict[str, Any]:
     database_url = require_database_url()
     if not database_url:
         raise HTTPException(status_code=503, detail="DATABASE_URL is required for PostgreSQL backend")
@@ -193,10 +225,8 @@ def production_health() -> HealthResponse:
     return _production_health()
 
 
-@app.post("/v1/production/formula", response_model=ProductionFormulaResponse)
-def build_production_formula_endpoint(
-    body: FormulaRequest, request: Request
-) -> ProductionFormulaResponse:
+@app.post("/v1/production/formula")
+def build_production_formula_endpoint(body: FormulaRequest, request: Request):
     """Versioned PostgreSQL formula contract."""
     return _production_formula(body, _request_auth_context(request))
 
