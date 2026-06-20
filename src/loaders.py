@@ -173,7 +173,7 @@ def load_shades(
                 record["canonical_key"],
                 record["shade_code"],
                 record.get("shade_name"),
-                infer_sub_range(record),
+                (record.get("sub_range") or infer_sub_range(record) or ""),
                 parse_level(record.get("level")),
                 record.get("color_type"),
                 record.get("gray_coverage_claim"),

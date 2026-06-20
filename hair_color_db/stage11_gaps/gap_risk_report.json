@@ -5,15 +5,6 @@
   "completion_status": "complete",
   "gap_report": [
     {
-      "canonical_key": "Redken::Color Fusion::US",
-      "brand": "Redken",
-      "product_line": "Color Fusion",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "high",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
       "canonical_key": "Redken::Flash Lift Bonder Inside::global",
       "brand": "Redken",
       "product_line": "Flash Lift / Flash Lift Bonder Inside",
@@ -671,15 +662,6 @@
       "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
     },
     {
-      "canonical_key": "Aveda::Full Spectrum Permanent::US",
-      "brand": "Aveda",
-      "product_line": "Full Spectrum Permanent",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "high",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
       "canonical_key": "Aveda::Full Spectrum Deep::US",
       "brand": "Aveda",
       "product_line": "Full Spectrum Deep",
@@ -848,33 +830,6 @@
       "gap_type": "shade_extraction_not_started",
       "severity": "medium",
       "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged, no_official_line_page_located. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
-      "canonical_key": "Moroccanoil Professional::Color Rhapsody::US",
-      "brand": "Moroccanoil Professional",
-      "product_line": "Color Rhapsody Permanent Cream Color",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "high",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
-      "canonical_key": "Moroccanoil Professional::Color Calypso::US",
-      "brand": "Moroccanoil Professional",
-      "product_line": "Color Calypso Demi-Permanent (Gloss & Cream)",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "high",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
-      "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
-    },
-    {
-      "canonical_key": "Moroccanoil Professional::Color Infusion::US",
-      "brand": "Moroccanoil Professional",
-      "product_line": "Color Infusion Pure Color Mixer",
-      "gap_type": "shade_extraction_not_started",
-      "severity": "medium",
-      "details": "Status: not extracted in Batches 1-2. Blockers: shade_chart_source_not_yet_cataloged. Apparent line status: active.",
       "recommended_next_action": "Run Stage 2 deep-source pass + Stages 4-9 in a future batch; prioritize permanent/demi lines of major brands."
     },
     {

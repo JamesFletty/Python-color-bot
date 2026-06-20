@@ -1,26 +1,27 @@
 {
   "package": "professional_hair_color_database_v0.2",
-  "generated": "2026-06-15",
+  "generated": "2026-06-20",
   "completion_status": "partial",
   "coverage": {
     "brands_inventoried": 20,
     "lines_inventoried": 133,
     "sources_cataloged": 153,
     "lines_with_shade_extraction": 31,
-    "normalized_shade_records": 1840,
-    "tone_reference_rows": 698,
-    "tone_mappings": 659,
+    "normalized_shade_records": 2258,
+    "tone_reference_rows": 813,
+    "tone_mappings": 777,
     "batches_completed": [
       "batch01: Redken (Shades EQ Gloss, Color Gels Lacquers), Wella (Koleston Perfect, Color Touch), Schwarzkopf (IGORA ROYAL, IGORA VIBRANCE)",
-      "batch02: Matrix (SoColor, SoColor Sync), L'Or\u00e9al Professionnel (Majirel, Dia Light)",
-      "batch03: Pravana (ChromaSilk Cr\u00e8me Color, Express Tones, VIVIDS); Goldwell (Topchic, Colorance line technical only)",
+      "batch02: Matrix (SoColor, SoColor Sync), L'Oréal Professionnel (Majirel, Dia Light)",
+      "batch03: Pravana (ChromaSilk Crème Color, Express Tones, VIVIDS); Goldwell (Topchic, Colorance line technical only)",
       "batch04: Pravana (VIVIDS Everlasting), Pulp Riot (Semi-Permanent Paint), Kenra (Permanent, Demi, Rapid Toners, Studio Stylist Express); Paul Mitchell (The Demi line tech), Kenra (Creatives line tech)",
       "batch05: Matrix (Coil Color, Tonal Control Pre-Bonded, Super Sync Pre-Bonded)",
       "batch06: Matrix (SoColor Cult Vivids, Light Master + Pre-Bonded)",
       "batch07: Goldwell (Topchic permanent, Colorance demi-permanent)",
-      "batch08: Pulp Riot (FACTION8 representative permanent shade/technical coverage)"
+      "batch08: Pulp Riot (FACTION8 representative permanent shade/technical coverage)",
+      "batch09: Aveda Full Spectrum Permanent (natural/pure-tone system), Moroccanoil Color Rhapsody/Calypso/Infusion, Redken Color Fusion/Cover Fusion/Color Gels Oils/10 Minute, Schwarzkopf IGORA ROYAL quick-starter supplement"
     ],
-    "line_technical_records": 29
+    "line_technical_records": 36
   },
   "sections": {
     "A": "A_brand_line_inventory.json",
