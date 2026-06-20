@@ -157,7 +157,7 @@ def get_shades(line_id: int | None = None, q: str | None = None, limit: int = 40
 @app.post("/api/ai/formula", response_model=AIFormulaResponse)
 async def ai_formula(body: AIFormulaRequest):
     """Parse natural-language input → formula engine → AI explanation."""
-    from api.ai_service import parse_formula_request, explain_formula
+    from api.ai_service import AIConfigurationError, explain_formula, parse_formula_request
 
     # Step 1: AI parses input into structured engine params
     try:
@@ -166,6 +166,8 @@ async def ai_formula(body: AIFormulaRequest):
             color_line=body.color_line,
             canonical_key=body.canonical_key,
         )
+    except AIConfigurationError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"AI parsing failed: {exc}") from exc
 
@@ -208,7 +210,7 @@ async def ai_formula(body: AIFormulaRequest):
 @app.post("/api/ai/translate", response_model=AIFormulaResponse)
 async def ai_translate(body: AITranslateRequest):
     """Translate a formula from one color line to another with AI."""
-    from api.ai_service import translate_formula, explain_formula
+    from api.ai_service import AIConfigurationError, explain_formula, translate_formula
 
     # Step 1: AI translates formula to target line params
     try:
@@ -218,6 +220,8 @@ async def ai_translate(body: AITranslateRequest):
             target_line=body.target_line,
             target_canonical_key=body.target_canonical_key,
         )
+    except AIConfigurationError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"AI translation failed: {exc}") from exc
 

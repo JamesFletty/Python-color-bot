@@ -1,19 +1,33 @@
-"""xAI (Grok) integration for formula parsing and explanation."""
+"""LLM integration for formula parsing and explanation.
+
+Supports Azure OpenAI (preferred when configured), direct OpenAI, and xAI Grok.
+All providers use the OpenAI-compatible Python SDK; formula computation remains
+deterministic in the engine layer.
+"""
 
 from __future__ import annotations
 
 import json
 import os
-from typing import Any
+from dataclasses import dataclass
+from typing import Any, Literal
 
-from openai import AsyncOpenAI
+from openai import AsyncAzureOpenAI, AsyncOpenAI
+
+AIProvider = Literal["azure", "openai", "xai"]
 
 
-def _client() -> AsyncOpenAI:
-    return AsyncOpenAI(
-        api_key=os.environ["XAI_API_KEY"],
-        base_url="https://api.x.ai/v1",
-    )
+class AIConfigurationError(RuntimeError):
+    """Raised when no AI provider is configured or required settings are missing."""
+
+
+@dataclass(frozen=True)
+class AISettings:
+    provider: AIProvider
+    parse_model: str
+    translate_model: str
+    endpoint: str | None = None
+    api_version: str | None = None
 
 
 _PARSE_SYSTEM = """\
@@ -52,12 +66,108 @@ Match level number exactly. Match tone family as closely as possible.
 Return ONLY valid compact JSON. No markdown, no explanation outside the translation_notes field."""
 
 
+def _env(name: str, default: str | None = None) -> str | None:
+    value = os.environ.get(name)
+    if value is None:
+        return default
+    cleaned = value.strip()
+    return cleaned or default
+
+
+def resolve_ai_provider() -> AIProvider:
+    """Pick the active AI provider from AI_PROVIDER or available credentials."""
+    explicit = (_env("AI_PROVIDER") or "").lower()
+    if explicit in {"azure", "openai", "xai"}:
+        return explicit  # type: ignore[return-value]
+    if _env("AZURE_OPENAI_ENDPOINT") and _env("AZURE_OPENAI_API_KEY"):
+        return "azure"
+    if _env("OPENAI_API_KEY"):
+        return "openai"
+    if _env("XAI_API_KEY"):
+        return "xai"
+    raise AIConfigurationError(
+        "No AI provider configured. Set Azure OpenAI credentials "
+        "(AZURE_OPENAI_ENDPOINT + AZURE_OPENAI_API_KEY), OPENAI_API_KEY, or XAI_API_KEY."
+    )
+
+
+def get_ai_settings() -> AISettings:
+    """Return resolved provider settings for status endpoints and tests."""
+    provider = resolve_ai_provider()
+    if provider == "azure":
+        endpoint = _env("AZURE_OPENAI_ENDPOINT")
+        api_key = _env("AZURE_OPENAI_API_KEY")
+        if not endpoint or not api_key:
+            raise AIConfigurationError(
+                "Azure OpenAI requires AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_API_KEY."
+            )
+        chat_deployment = (
+            _env("AZURE_OPENAI_CHAT_DEPLOYMENT")
+            or _env("AZURE_OPENAI_DEPLOYMENT")
+            or "gpt-4o-mini"
+        )
+        translate_deployment = (
+            _env("AZURE_OPENAI_TRANSLATE_DEPLOYMENT")
+            or _env("AZURE_OPENAI_CHAT_DEPLOYMENT")
+            or _env("AZURE_OPENAI_DEPLOYMENT")
+            or "gpt-4o"
+        )
+        return AISettings(
+            provider="azure",
+            parse_model=chat_deployment,
+            translate_model=translate_deployment,
+            endpoint=endpoint,
+            api_version=_env("AZURE_OPENAI_API_VERSION", "2024-10-21"),
+        )
+    if provider == "openai":
+        if not _env("OPENAI_API_KEY"):
+            raise AIConfigurationError("OpenAI requires OPENAI_API_KEY.")
+        chat_model = _env("OPENAI_CHAT_MODEL", "gpt-4o-mini")
+        translate_model = _env("OPENAI_TRANSLATE_MODEL") or _env("OPENAI_CHAT_MODEL", "gpt-4o")
+        return AISettings(
+            provider="openai",
+            parse_model=chat_model,
+            translate_model=translate_model,
+            endpoint=_env("OPENAI_BASE_URL", "https://api.openai.com/v1"),
+        )
+    if not _env("XAI_API_KEY"):
+        raise AIConfigurationError("xAI requires XAI_API_KEY.")
+    return AISettings(
+        provider="xai",
+        parse_model=_env("XAI_CHAT_MODEL", "grok-3-mini"),
+        translate_model=_env("XAI_TRANSLATE_MODEL", "grok-3"),
+        endpoint="https://api.x.ai/v1",
+    )
+
+
+def _client():
+    settings = get_ai_settings()
+    if settings.provider == "azure":
+        assert settings.endpoint is not None
+        assert settings.api_version is not None
+        return AsyncAzureOpenAI(
+            api_key=_env("AZURE_OPENAI_API_KEY"),
+            azure_endpoint=settings.endpoint,
+            api_version=settings.api_version,
+        )
+    if settings.provider == "openai":
+        return AsyncOpenAI(
+            api_key=_env("OPENAI_API_KEY"),
+            base_url=settings.endpoint,
+        )
+    return AsyncOpenAI(
+        api_key=_env("XAI_API_KEY"),
+        base_url=settings.endpoint,
+    )
+
+
 async def parse_formula_request(
     user_input: str,
     color_line: str,
     canonical_key: str,
 ) -> dict[str, Any]:
     """Parse natural-language stylist input into structured engine parameters."""
+    settings = get_ai_settings()
     prompt = (
         f"The stylist is working with: {color_line}\n\n"
         f"Stylist input:\n{user_input}\n\n"
@@ -67,7 +177,7 @@ async def parse_formula_request(
         f'"porosity":<1-10 default 5>,"elasticity":<1-10 default 6>,"line":"{color_line}"}}'
     )
     resp = await _client().chat.completions.create(
-        model="grok-3-mini",
+        model=settings.parse_model,
         messages=[
             {"role": "system", "content": _PARSE_SYSTEM},
             {"role": "user", "content": prompt},
@@ -86,6 +196,7 @@ async def explain_formula(
     translation_notes: str | None = None,
 ) -> str:
     """Generate a concise professional explanation of the formula."""
+    settings = get_ai_settings()
     if mode == "translate":
         context = (
             f"A stylist wants to translate this formula into {color_line}:\n{user_input}\n\n"
@@ -104,7 +215,7 @@ async def explain_formula(
         "Be direct and specific. Professional salon language. No bullet points."
     )
     resp = await _client().chat.completions.create(
-        model="grok-3-mini",
+        model=settings.parse_model,
         messages=[
             {
                 "role": "system",
@@ -127,6 +238,7 @@ async def translate_formula(
     target_canonical_key: str,
 ) -> dict[str, Any]:
     """Translate a formula from one color line to another."""
+    settings = get_ai_settings()
     source_ctx = f"Source line: {source_line}" if source_line else "Source line: (infer from formula)"
     prompt = (
         f"Source formula:\n{source_formula}\n\n"
@@ -140,7 +252,7 @@ async def translate_formula(
         f'"translation_notes":"<explain the tone/level mapping>"}}'
     )
     resp = await _client().chat.completions.create(
-        model="grok-3",
+        model=settings.translate_model,
         messages=[
             {"role": "system", "content": _TRANSLATE_SYSTEM},
             {"role": "user", "content": prompt},

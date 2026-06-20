@@ -13,5 +13,8 @@ description: The XAI_API_KEY secret is set but the team account has no credits, 
 - The secret `XAI_API_KEY` is correctly stored in Replit secrets
 - The base URL `https://api.x.ai/v1` and OpenAI-compatible SDK setup is correct
 - Credits can be added at: https://console.x.ai/
-- Alternatively, switch `api/ai_service.py` to use `OPENAI_API_KEY` with base_url `https://api.openai.com/v1` if the user provides an OpenAI key
-- No code changes needed once credits are added — the key and SDK setup are correct
+- `api/ai_service.py` now supports Azure OpenAI (preferred), direct OpenAI, and xAI.
+- For Azure: set `AZURE_OPENAI_ENDPOINT`, `AZURE_OPENAI_API_KEY`, and deployment names
+  (`AZURE_OPENAI_CHAT_DEPLOYMENT`, `AZURE_OPENAI_TRANSLATE_DEPLOYMENT`).
+- For OpenAI: set `OPENAI_API_KEY` (optional `AI_PROVIDER=openai`).
+- xAI still works when credits are added and `XAI_API_KEY` is set.
