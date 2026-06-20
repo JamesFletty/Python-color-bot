@@ -103,6 +103,194 @@
             "set_developer_volume": 20,
             "warning": "DreamAge gray coverage: 20 vol per line technical chart."
           }
+        },
+        {
+          "rule_id": "M_SOCOLOR_001_1",
+          "rule_name": "matrix_hair_diversity_underlying_pigment_levels",
+          "rule_priority": 46,
+          "rule_category": "color_science",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_brand",
+                "op": "=",
+                "value": "Matrix"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_hair_diversity_underlying_pigment_levels",
+            "seed_rule_category": "color_science",
+            "manufacturer_rule_action": {
+              "levels": {
+                "1": "dark red brown",
+                "2": "red brown",
+                "3": "dark red",
+                "4": "red",
+                "5": "red orange",
+                "6": "dark orange",
+                "7": "orange",
+                "8": "dark yellow",
+                "9": "yellow",
+                "10": "pale yellow",
+                "11": "palest yellow"
+              },
+              "diameters": [
+                "fine",
+                "medium",
+                "coarse"
+              ],
+              "patterns": [
+                "1A",
+                "1B",
+                "1C",
+                "2A",
+                "2B",
+                "2C",
+                "3A",
+                "3B",
+                "3C",
+                "4A",
+                "4B",
+                "4C"
+              ]
+            },
+            "warning": "Apply per manufacturer chart: matrix_hair_diversity_underlying_pigment_levels"
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR_002_1",
+          "rule_name": "matrix_developer_lift_rule_by_volume",
+          "rule_priority": 47,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_brand",
+                "op": "=",
+                "value": "Matrix"
+              },
+              {
+                "field": "seed_service",
+                "op": "=",
+                "value": "lightening/lift deposit"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_developer_lift_rule_by_volume",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "10_volume": "up to 1 level",
+              "20_volume": "up to 2 levels",
+              "30_volume": "up to 3 levels",
+              "40_volume": "up to 4 levels",
+              "general_rule": "when lifting beyond one level, every 10 Volume achieves up to one level of lift"
+            },
+            "warning": "Apply per manufacturer chart: matrix_developer_lift_rule_by_volume"
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR_003_1",
+          "rule_name": "matrix_socolor_standard_usage",
+          "rule_priority": 48,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "SoColor Pre-Bonded"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_socolor_standard_usage",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:1",
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "process_45_when": [
+                "lifting more than 1 level",
+                "depositing on gray",
+                "maximum deposit"
+              ],
+              "application": "clean dry hair"
+            },
+            "warning": "Apply per manufacturer chart: matrix_socolor_standard_usage"
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR_004_1",
+          "rule_name": "matrix_socolor_refresh_restrictions",
+          "rule_priority": 49,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "SoColor Pre-Bonded"
+              },
+              {
+                "field": "seed_service",
+                "op": "=",
+                "value": "retouch_refresh"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_socolor_refresh_restrictions",
+            "seed_rule_category": "intermixing",
+            "manufacturer_rule_action": {
+              "do_not_refresh_with_socolor_if": [
+                "base formula uses 20 volume or higher",
+                "high porosity",
+                "Extra Coverage series",
+                "DreamAge series",
+                "UL series",
+                "maximum neutralization needed"
+              ]
+            },
+            "warning": "Apply per manufacturer chart: matrix_socolor_refresh_restrictions"
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR_005",
+          "rule_name": "matrix_socolor_lift_by_palette",
+          "rule_priority": 50,
+          "rule_category": "lift",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "SoColor Pre-Bonded"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_socolor_lift_by_palette",
+            "seed_rule_category": "lift",
+            "manufacturer_rule_action": {
+              "extra_coverage": "up to 2 levels",
+              "blended": "up to 4 levels",
+              "reflect": "up to 4 levels",
+              "ultra_blondes": "up to 5 levels",
+              "hd_reds": "up to 4 levels",
+              "power_cools": "up to 4 levels",
+              "dream_age": "up to 2 levels"
+            },
+            "warning": "Apply per manufacturer chart: matrix_socolor_lift_by_palette"
+          }
         }
       ]
     },
@@ -150,6 +338,70 @@
           "rule_action": {
             "warning": "Sync is pre-paired with SoColor permanent for root-to-ends services."
           }
+        },
+        {
+          "rule_id": "M_SOCOLOR__001",
+          "rule_name": "matrix_socolor_sync_usage",
+          "rule_priority": 46,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "SoColor Sync Pre-Bonded"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_socolor_sync_usage",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:1",
+              "developer": "10 Volume Matrix Cream Developer",
+              "processing_time_min": 20,
+              "application": "clean dry hair",
+              "porous_hair": "lightly mist Instacure on mids and ends before blending through"
+            },
+            "warning": "Apply per manufacturer chart: matrix_socolor_sync_usage"
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR__002",
+          "rule_name": "matrix_clear_dilution_rule",
+          "rule_priority": 47,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": [
+                  "SoColor Sync Pre-Bonded",
+                  "Tonal Control Pre-Bonded"
+                ]
+              },
+              {
+                "field": "seed_modifier",
+                "op": "=",
+                "value": [
+                  "Clear",
+                  "Totally Transparent"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_clear_dilution_rule",
+            "seed_rule_category": "intermixing",
+            "manufacturer_rule_action": {
+              "effect": "adding equal amount of Clear/Totally Transparent lessens color deposit by approximately one level",
+              "processing_time_min": "up to 20"
+            },
+            "warning": "Apply per manufacturer chart: matrix_clear_dilution_rule"
+          }
         }
       ]
     },
@@ -178,6 +430,37 @@
             "require_natural_shade_mix": true,
             "natural_shade_ratio": 0.6,
             "warning": "Coil Color gray coverage requires elevated natural-series ratio."
+          }
+        },
+        {
+          "rule_id": "M_COIL_COL_001",
+          "rule_name": "matrix_coil_color_usage",
+          "rule_priority": 46,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Coil Color"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_coil_color_usage",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:1",
+              "developer_options": [
+                "20 volume",
+                "30 volume"
+              ],
+              "processing_time_min": 35,
+              "application": "clean dry hair",
+              "porous_hair": "lightly mist Instacure on mids and ends before first pull-through only"
+            },
+            "warning": "Apply per manufacturer chart: matrix_coil_color_usage"
           }
         }
       ]
@@ -259,6 +542,34 @@
           "rule_action": {
             "set_recommendation_status": "blocked",
             "block_reason": "Tonal Control is for pre-lightened or highlighted hair only."
+          }
+        },
+        {
+          "rule_id": "M_TONAL_CO_001",
+          "rule_name": "matrix_tonal_control_usage",
+          "rule_priority": 46,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Tonal Control Pre-Bonded"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_tonal_control_usage",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:1",
+              "developer": "10 Volume Matrix Cream Developer",
+              "processing_time_min": 20,
+              "application": "dry or damp towel-dried hair",
+              "no_base_shift": true
+            },
+            "warning": "Apply per manufacturer chart: matrix_tonal_control_usage"
           }
         }
       ]
@@ -410,6 +721,152 @@
             "set_developer_volume": 6,
             "warning": "Color Touch demi deposit when darkening — 6 vol (1.9%) processing solution."
           }
+        },
+        {
+          "rule_id": "W_COLOR_TO_001",
+          "rule_name": "wella_color_touch_standard_emulsion",
+          "rule_priority": 46,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Color Touch"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_color_touch_standard_emulsion",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "emulsion_options": [
+                "1.9%",
+                "4%"
+              ],
+              "mixing_ratio": "1:2 color:emulsion"
+            },
+            "warning": "Apply per manufacturer chart: wella_color_touch_standard_emulsion"
+          }
+        },
+        {
+          "rule_id": "W_COLOR_TO_002",
+          "rule_name": "wella_color_touch_plus_requires_4_percent",
+          "rule_priority": 47,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Color Touch Plus"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_color_touch_plus_requires_4_percent",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "required_emulsion": "Color Touch Plus 4% Emulsion"
+            },
+            "warning": "Apply per manufacturer chart: wella_color_touch_plus_requires_4_percent"
+          }
+        },
+        {
+          "rule_id": "W_COLOR_TO_003",
+          "rule_name": "wella_color_touch_special_mix_ratio",
+          "rule_priority": 48,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Color Touch Special Mix"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_color_touch_special_mix_ratio",
+            "seed_rule_category": "intermixing",
+            "manufacturer_rule_action": {
+              "add_intensity_example": "20g Color Touch shade + 10g Special Mix + 60g Color Touch Emulsion",
+              "emphasis_ratio": "1:2 Special Mix:Emulsion",
+              "clear_reduces_intensity": "10/0 clear tone may reduce color intensity"
+            },
+            "warning": "Apply per manufacturer chart: wella_color_touch_special_mix_ratio"
+          }
+        },
+        {
+          "rule_id": "W_COLOR_TO_004",
+          "rule_name": "wella_color_touch_relights_touch_of_gloss",
+          "rule_priority": 49,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Color Touch Relights"
+              },
+              {
+                "field": "seed_service",
+                "op": "=",
+                "value": "touch_of_gloss"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_color_touch_relights_touch_of_gloss",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "formula": "1 part /00 + 3 parts 1.9% Color Touch Emulsion",
+              "processing_time_min": 5,
+              "application": "pre-shampooed hair"
+            },
+            "warning": "Apply per manufacturer chart: wella_color_touch_relights_touch_of_gloss"
+          }
+        },
+        {
+          "rule_id": "W_COLOR_TO_005",
+          "rule_name": "wella_color_touch_instamatic_processing_and_neutralization",
+          "rule_priority": 50,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Color Touch Instamatic"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_color_touch_instamatic_processing_and_neutralization",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "developer_options": [
+                "1.9%",
+                "4%"
+              ],
+              "processing_time_min": [
+                5,
+                20
+              ],
+              "neutralization_examples": {
+                "orange": "Ocean Storm",
+                "yellow": "Muted Mauve",
+                "red": "Jaded Mint"
+              },
+              "color_id_ratio": "10:10:1 Instamatic:Emulsion:Color.id"
+            },
+            "warning": "Apply per manufacturer chart: wella_color_touch_instamatic_processing_and_neutralization"
+          }
         }
       ]
     },
@@ -505,6 +962,126 @@
             "natural_shade_ratio": 0.5,
             "adjust_processing_time_minutes": 5,
             "warning": "50%+ grey: use 1/2 Pure Naturals; resistant hair use xx/0; max 40 min."
+          }
+        },
+        {
+          "rule_id": "W_KOLESTON_001",
+          "rule_name": "wella_kp_white_hair_pure_naturals_addition",
+          "rule_priority": 46,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Koleston Perfect ME+"
+              },
+              {
+                "field": "seed_white_hair_percentage",
+                "op": "=",
+                "value": ">=30"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_kp_white_hair_pure_naturals_addition",
+            "seed_rule_category": "gray_coverage",
+            "manufacturer_rule_action": {
+              "white_hair_30_50": "add 1/3 Pure Naturals shade",
+              "white_hair_50_100": "add 1/2 Pure Naturals shade",
+              "red_shades_over_50_white": "add 1/3 Pure Naturals shade"
+            },
+            "warning": "Apply per manufacturer chart: wella_kp_white_hair_pure_naturals_addition"
+          }
+        },
+        {
+          "rule_id": "W_KOLESTON_002",
+          "rule_name": "wella_kp_standard_processing_times",
+          "rule_priority": 47,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Koleston Perfect ME+"
+              },
+              {
+                "field": "seed_sub_ranges",
+                "op": "=",
+                "value": [
+                  "Pure Naturals",
+                  "Vibrant Reds",
+                  "Deep Browns",
+                  "Special Blondes"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_kp_standard_processing_times",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "standard_without_heat_min": [
+                30,
+                40
+              ],
+              "standard_with_heat_min": [
+                15,
+                25
+              ],
+              "special_blondes_without_heat_min": [
+                50,
+                60
+              ],
+              "special_blondes_with_heat_min": [
+                25,
+                35
+              ],
+              "pure_soft_balance_after_development_min": [
+                5,
+                10
+              ]
+            },
+            "warning": "Apply per manufacturer chart: wella_kp_standard_processing_times"
+          }
+        },
+        {
+          "rule_id": "W_KOLESTON_003",
+          "rule_name": "wella_kp_numbering_and_tone_system",
+          "rule_priority": 48,
+          "rule_category": "color_science",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Koleston Perfect ME+"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_kp_numbering_and_tone_system",
+            "seed_rule_category": "color_science",
+            "manufacturer_rule_action": {
+              "depth_range": "2/ through 10/",
+              "tone_map": {
+                "/0": "natural",
+                "/1": "ash blue/green",
+                "/2": "matt green",
+                "/3": "gold yellow",
+                "/4": "red warm",
+                "/5": "mahogany red/violet",
+                "/6": "violet cool",
+                "/7": "brown red/yellow/blue",
+                "/8": "pearl blue",
+                "/9": "cendre blue/violet"
+              }
+            },
+            "warning": "Apply per manufacturer chart: wella_kp_numbering_and_tone_system"
           }
         }
       ]
@@ -1605,6 +2182,162 @@
               "use_product": "Full Spectrum Deposit-Only Color Treatment + Universal ØN"
             },
             "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_precoloration_target_level_formula_matrix"
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand_name": "L'Oréal Professionnel",
+      "product_line_name": "Dia Light",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "LP_DIA_LIGH_001",
+          "rule_name": "loreal_dia_standard_preparation",
+          "rule_priority": 46,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": [
+                  "Dia Light",
+                  "Dia Richesse"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "loreal_dia_standard_preparation",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "haircolor_amount_oz": 1.7,
+              "diactivateur_amount_oz": 2.6,
+              "diactivateur_options": [
+                "6-vol 1.8%",
+                "9-vol 2.7%",
+                "15-vol 4.5%"
+              ],
+              "processing_time_min": [
+                2,
+                20
+              ],
+              "application": "dry unwashed hair",
+              "metallic_tools": false
+            },
+            "warning": "Apply per manufacturer chart: loreal_dia_standard_preparation"
+          }
+        },
+        {
+          "rule_id": "LP_DIA_LIGH_002",
+          "rule_name": "loreal_dia_light_zero_lift_acidic",
+          "rule_priority": 47,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Dia Light"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "loreal_dia_light_zero_lift_acidic",
+            "seed_rule_category": "product_type",
+            "manufacturer_rule_action": {
+              "lift_levels": 0,
+              "technology": "gentle acid demi-permanent gel-crème without ammonia",
+              "best_for": [
+                "color-treated hair",
+                "sensitized hair",
+                "correction",
+                "personalization"
+              ]
+            },
+            "warning": "Apply per manufacturer chart: loreal_dia_light_zero_lift_acidic"
+          }
+        },
+        {
+          "rule_id": "LP_DIA_LIGH_003",
+          "rule_name": "loreal_dia_refreshing_technique",
+          "rule_priority": 48,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": [
+                  "Dia Light",
+                  "Dia Richesse"
+                ]
+              },
+              {
+                "field": "seed_service",
+                "op": "=",
+                "value": "color_refreshing"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "loreal_dia_refreshing_technique",
+            "seed_rule_category": "application",
+            "manufacturer_rule_action": {
+              "use_matching_dia_light_if": [
+                "INOA regrowth",
+                "LUO regrowth"
+              ],
+              "use_dia_richesse_if": [
+                "Majirel regrowth"
+              ],
+              "apply_to": "faded mid-lengths and ends 20 minutes before end of permanent color development",
+              "diactivateur_options": {
+                "minimum_fading": "warm lighter target shade with 6-vol",
+                "moderate_fading": "warm target shade same level with 6-vol",
+                "maximum_fading": "warm target shade same level with 9-vol"
+              }
+            },
+            "warning": "Apply per manufacturer chart: loreal_dia_refreshing_technique"
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand_name": "L'Oréal Professionnel",
+      "product_line_name": "Dia Richesse",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "LP_DIA_RICH_001",
+          "rule_name": "loreal_dia_richesse_coverage_lift",
+          "rule_priority": 46,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Dia Richesse"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "loreal_dia_richesse_coverage_lift",
+            "seed_rule_category": "gray_coverage",
+            "manufacturer_rule_action": {
+              "white_hair_coverage_pct": "up to 70",
+              "lift_levels": "up to 1.5",
+              "technology": "advanced alkaline demi-permanent crème without ammonia"
+            },
+            "warning": "Apply per manufacturer chart: loreal_dia_richesse_coverage_lift"
           }
         }
       ]

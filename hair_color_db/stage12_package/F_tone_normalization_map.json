@@ -1,6 +1,6 @@
 {
   "artifact": "tone_normalization_map",
-  "count": 777,
+  "count": 950,
   "tone_normalization_map": [
     {
       "canonical_key": "Redken::Color Gels Lacquers::US",
@@ -11501,6 +11501,2448 @@
       ],
       "mapping_rationale": "Inferred from seed package tone_code / shade_category",
       "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "0",
+      "manufacturer_term": "0",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "07",
+      "manufacturer_term": "07",
+      "normalized_tones": [
+        "Natural",
+        "Brown"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "03",
+      "manufacturer_term": "03",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "04",
+      "manufacturer_term": "04",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "8",
+      "manufacturer_term": "8",
+      "normalized_tones": [
+        "Mocha",
+        "Warm"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "3",
+      "manufacturer_term": "3",
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "1",
+      "manufacturer_term": "1",
+      "normalized_tones": [
+        "Ash",
+        "Cool"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "2",
+      "manufacturer_term": "2",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "97",
+      "manufacturer_term": "97",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "17",
+      "manufacturer_term": "17",
+      "normalized_tones": [
+        "Brown",
+        "Cool"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "18",
+      "manufacturer_term": "18",
+      "normalized_tones": [
+        "Mocha",
+        "Warm"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "31",
+      "manufacturer_term": "31",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "96",
+      "manufacturer_term": "96",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "16",
+      "manufacturer_term": "16",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "81",
+      "manufacturer_term": "81",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "38",
+      "manufacturer_term": "38",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "86",
+      "manufacturer_term": "86",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "95",
+      "manufacturer_term": "95",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "71",
+      "manufacturer_term": "71",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "75",
+      "manufacturer_term": "75",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "77",
+      "manufacturer_term": "77",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "7",
+      "manufacturer_term": "7",
+      "normalized_tones": [
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "74",
+      "manufacturer_term": "74",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "41",
+      "manufacturer_term": "41",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "43",
+      "manufacturer_term": "43",
+      "normalized_tones": [
+        "Beige",
+        "Gold"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "5",
+      "manufacturer_term": "5",
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "34",
+      "manufacturer_term": "34",
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "45",
+      "manufacturer_term": "45",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "47",
+      "manufacturer_term": "47",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "55",
+      "manufacturer_term": "55",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "66",
+      "manufacturer_term": "66",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "44",
+      "manufacturer_term": "44",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "65",
+      "manufacturer_term": "65",
+      "normalized_tones": [
+        "Red",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "46",
+      "manufacturer_term": "46",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "11",
+      "manufacturer_term": "11",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "22",
+      "manufacturer_term": "22",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "61",
+      "manufacturer_term": "61",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "89",
+      "manufacturer_term": "89",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "28",
+      "manufacturer_term": "28",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "30",
+      "manufacturer_term": "30",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "33",
+      "manufacturer_term": "33",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand": "Wella Professionals",
+      "product_line": "Koleston Perfect",
+      "manufacturer_tone_code": "88",
+      "manufacturer_term": "88",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "06",
+      "manufacturer_term": "06",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "07",
+      "manufacturer_term": "07",
+      "normalized_tones": [
+        "Natural",
+        "Brown"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "04",
+      "manufacturer_term": "04",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "03",
+      "manufacturer_term": "03",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "0",
+      "manufacturer_term": "0",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "34",
+      "manufacturer_term": "34",
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "45",
+      "manufacturer_term": "45",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "56",
+      "manufacturer_term": "56",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "68",
+      "manufacturer_term": "68",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "88",
+      "manufacturer_term": "88",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "43",
+      "manufacturer_term": "43",
+      "normalized_tones": [
+        "Beige",
+        "Gold"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "47",
+      "manufacturer_term": "47",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "450",
+      "manufacturer_term": "450",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand": "Wella Professionals",
+      "product_line": "Color Touch",
+      "manufacturer_tone_code": "880",
+      "manufacturer_term": "880",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "7",
+      "manufacturer_term": "7",
+      "normalized_tones": [
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "8",
+      "manufacturer_term": "8",
+      "normalized_tones": [
+        "Mocha",
+        "Warm"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "6",
+      "manufacturer_term": "6",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "5",
+      "manufacturer_term": "5",
+      "normalized_tones": [
+        "Mahogany",
+        "Warm"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "32",
+      "manufacturer_term": "32",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "3/8g",
+      "manufacturer_term": "3/8g",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "30/7ggg",
+      "manufacturer_term": "30/7ggg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "40/6CCC",
+      "manufacturer_term": "40/6CCC",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "45/6Crv",
+      "manufacturer_term": "45/6Crv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "3/6g",
+      "manufacturer_term": "3/6g",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "5/5rv",
+      "manufacturer_term": "5/5rv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "54/5rvC",
+      "manufacturer_term": "54/5rvC",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "3/5g",
+      "manufacturer_term": "3/5g",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "5/4rv",
+      "manufacturer_term": "5/4rv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "62/4rv",
+      "manufacturer_term": "62/4rv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "31/9gB",
+      "manufacturer_term": "31/9gB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "9n",
+      "manufacturer_term": "9n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "31/8gB",
+      "manufacturer_term": "31/8gB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "8n",
+      "manufacturer_term": "8n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "31/7gB",
+      "manufacturer_term": "31/7gB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "32/7gv",
+      "manufacturer_term": "32/7gv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "35/7grv",
+      "manufacturer_term": "35/7grv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "7n",
+      "manufacturer_term": "7n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "34/6gC",
+      "manufacturer_term": "34/6gC",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "35/6grv",
+      "manufacturer_term": "35/6grv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "42/6Cv",
+      "manufacturer_term": "42/6Cv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "53/6rvg",
+      "manufacturer_term": "53/6rvg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "6n",
+      "manufacturer_term": "6n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "31/5gB",
+      "manufacturer_term": "31/5gB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "35/5grv",
+      "manufacturer_term": "35/5grv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "42/5Cv",
+      "manufacturer_term": "42/5Cv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "5n",
+      "manufacturer_term": "5n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "4n",
+      "manufacturer_term": "4n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "00/3nn",
+      "manufacturer_term": "00/3nn",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "3n",
+      "manufacturer_term": "3n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "00/1nn",
+      "manufacturer_term": "00/1nn",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "1n",
+      "manufacturer_term": "1n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "32/5gv",
+      "manufacturer_term": "32/5gv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "31/9gB",
+      "manufacturer_term": "31/9gB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "9n",
+      "manufacturer_term": "9n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "31/8gB",
+      "manufacturer_term": "31/8gB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "8n",
+      "manufacturer_term": "8n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "31/7gB",
+      "manufacturer_term": "31/7gB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "32/7gv",
+      "manufacturer_term": "32/7gv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "35/7grv",
+      "manufacturer_term": "35/7grv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "7n",
+      "manufacturer_term": "7n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "34/6gC",
+      "manufacturer_term": "34/6gC",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "35/6grv",
+      "manufacturer_term": "35/6grv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "42/6Cv",
+      "manufacturer_term": "42/6Cv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "53/6rvg",
+      "manufacturer_term": "53/6rvg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "6n",
+      "manufacturer_term": "6n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "31/5gB",
+      "manufacturer_term": "31/5gB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "35/5grv",
+      "manufacturer_term": "35/5grv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "42/5Cv",
+      "manufacturer_term": "42/5Cv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "5n",
+      "manufacturer_term": "5n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "4n",
+      "manufacturer_term": "4n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "00/3nn",
+      "manufacturer_term": "00/3nn",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "3n",
+      "manufacturer_term": "3n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "00/1nn",
+      "manufacturer_term": "00/1nn",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "1n",
+      "manufacturer_term": "1n",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "13/9Bg",
+      "manufacturer_term": "13/9Bg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "13/8Bg",
+      "manufacturer_term": "13/8Bg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "13/7Bg",
+      "manufacturer_term": "13/7Bg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "14/7BC",
+      "manufacturer_term": "14/7BC",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "23/7vg",
+      "manufacturer_term": "23/7vg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "24/7vC",
+      "manufacturer_term": "24/7vC",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "12/6Bv",
+      "manufacturer_term": "12/6Bv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "13/6Bg",
+      "manufacturer_term": "13/6Bg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "23/6vg",
+      "manufacturer_term": "23/6vg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "24/6vC",
+      "manufacturer_term": "24/6vC",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "12/5Bv",
+      "manufacturer_term": "12/5Bv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "13/5Bg",
+      "manufacturer_term": "13/5Bg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "15/5Brv",
+      "manufacturer_term": "15/5Brv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "25/5vrv",
+      "manufacturer_term": "25/5vrv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "15/4Brv",
+      "manufacturer_term": "15/4Brv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "32/5gv",
+      "manufacturer_term": "32/5gv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "11/9BB",
+      "manufacturer_term": "11/9BB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "02/8nv",
+      "manufacturer_term": "02/8nv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "01/7nB",
+      "manufacturer_term": "01/7nB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "02/6nv",
+      "manufacturer_term": "02/6nv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "01/6nB",
+      "manufacturer_term": "01/6nB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "52/5rvv",
+      "manufacturer_term": "52/5rvv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "01/5nB",
+      "manufacturer_term": "01/5nB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "20/4vvv",
+      "manufacturer_term": "20/4vvv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "26/4vr",
+      "manufacturer_term": "26/4vr",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "01/4nB",
+      "manufacturer_term": "01/4nB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "10",
+      "manufacturer_term": "10",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "03/9ng",
+      "manufacturer_term": "03/9ng",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "3/9g",
+      "manufacturer_term": "3/9g",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "3/8g",
+      "manufacturer_term": "3/8g",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "34/8gC",
+      "manufacturer_term": "34/8gC",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "40/7CCC",
+      "manufacturer_term": "40/7CCC",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "43/7Cg",
+      "manufacturer_term": "43/7Cg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "3/6g",
+      "manufacturer_term": "3/6g",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "66/5rr",
+      "manufacturer_term": "66/5rr",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "65/4rrv",
+      "manufacturer_term": "65/4rrv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "32/10gv",
+      "manufacturer_term": "32/10gv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "12/10Bv",
+      "manufacturer_term": "12/10Bv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "13/10Bg",
+      "manufacturer_term": "13/10Bg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "02/9nv",
+      "manufacturer_term": "02/9nv",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "01/9nB",
+      "manufacturer_term": "01/9nB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "07/5ngr",
+      "manufacturer_term": "07/5ngr",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "3/9g",
+      "manufacturer_term": "3/9g",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "43/7cg",
+      "manufacturer_term": "43/7cg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "34/6gc",
+      "manufacturer_term": "34/6gc",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "12/10bV",
+      "manufacturer_term": "12/10bV",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "02/9NV",
+      "manufacturer_term": "02/9NV",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "11/9bb",
+      "manufacturer_term": "11/9bb",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "01/7Nb",
+      "manufacturer_term": "01/7Nb",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "13/10bg",
+      "manufacturer_term": "13/10bg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "13/6bg",
+      "manufacturer_term": "13/6bg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "40/7ccc",
+      "manufacturer_term": "40/7ccc",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "02/8NV",
+      "manufacturer_term": "02/8NV",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "34/8gc",
+      "manufacturer_term": "34/8gc",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "01/9Nb",
+      "manufacturer_term": "01/9Nb",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "03/9Ng",
+      "manufacturer_term": "03/9Ng",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
+      "ambiguity_flag": false,
+      "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "13/9bg",
+      "manufacturer_term": "13/9bg",
+      "normalized_tones": [
+        "Other"
+      ],
+      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_confidence": "medium",
       "ambiguity_flag": false,
       "notes": []
     }

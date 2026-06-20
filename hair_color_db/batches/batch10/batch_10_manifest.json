@@ -1,0 +1,14 @@
+{
+  "batch": 10,
+  "package_version": "v4_wella_matrix_loreal_expansion",
+  "revision": "Expanded normalized seed package with Wella Koleston Perfect ME+, Wella Color Touch system, Matrix 2023 manual rules/shades, and L’Oréal Dia Light/Dia Richesse. Dense chart/OCR captures flagged as parsed_review_required where table structure was degraded by source extraction.",
+  "shade_records": 383,
+  "tone_mappings": 174,
+  "line_technical_records": 8,
+  "brands": [
+    "L'Oréal Professionnel",
+    "Matrix",
+    "Wella Professionals"
+  ],
+  "notes": "Aveda Full Spectrum expanded with natural bases, light/dark pure tones, pure pigments, pastel tones, customization matrices, vibrancy guide, Universal ØN guide, color balancing, and precoloration rules."
+}
