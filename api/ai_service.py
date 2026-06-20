@@ -1,8 +1,7 @@
 """LLM integration for formula parsing and explanation.
 
-Supports Azure OpenAI (preferred when configured), direct OpenAI, and xAI Grok.
-All providers use the OpenAI-compatible Python SDK; formula computation remains
-deterministic in the engine layer.
+Supports Azure OpenAI (preferred when configured), direct OpenAI, xAI Grok, and an
+offline mock provider for local testing without API keys.
 """
 
 from __future__ import annotations
@@ -14,7 +13,7 @@ from typing import Any, Literal
 
 from openai import AsyncAzureOpenAI, AsyncOpenAI
 
-AIProvider = Literal["azure", "openai", "xai"]
+AIProvider = Literal["azure", "openai", "xai", "mock"]
 
 
 class AIConfigurationError(RuntimeError):
@@ -77,7 +76,7 @@ def _env(name: str, default: str | None = None) -> str | None:
 def resolve_ai_provider() -> AIProvider:
     """Pick the active AI provider from AI_PROVIDER or available credentials."""
     explicit = (_env("AI_PROVIDER") or "").lower()
-    if explicit in {"azure", "openai", "xai"}:
+    if explicit in {"azure", "openai", "xai", "mock"}:
         return explicit  # type: ignore[return-value]
     if _env("AZURE_OPENAI_ENDPOINT") and _env("AZURE_OPENAI_API_KEY"):
         return "azure"
@@ -85,15 +84,18 @@ def resolve_ai_provider() -> AIProvider:
         return "openai"
     if _env("XAI_API_KEY"):
         return "xai"
-    raise AIConfigurationError(
-        "No AI provider configured. Set Azure OpenAI credentials "
-        "(AZURE_OPENAI_ENDPOINT + AZURE_OPENAI_API_KEY), OPENAI_API_KEY, or XAI_API_KEY."
-    )
+    return "mock"
 
 
 def get_ai_settings() -> AISettings:
     """Return resolved provider settings for status endpoints and tests."""
     provider = resolve_ai_provider()
+    if provider == "mock":
+        return AISettings(
+            provider="mock",
+            parse_model="offline-mock",
+            translate_model="offline-mock",
+        )
     if provider == "azure":
         endpoint = _env("AZURE_OPENAI_ENDPOINT")
         api_key = _env("AZURE_OPENAI_API_KEY")
@@ -168,6 +170,10 @@ async def parse_formula_request(
 ) -> dict[str, Any]:
     """Parse natural-language stylist input into structured engine parameters."""
     settings = get_ai_settings()
+    if settings.provider == "mock":
+        from api.ai_mock import mock_parse_formula_request
+
+        return mock_parse_formula_request(user_input, color_line, canonical_key)
     prompt = (
         f"The stylist is working with: {color_line}\n\n"
         f"Stylist input:\n{user_input}\n\n"
@@ -197,6 +203,16 @@ async def explain_formula(
 ) -> str:
     """Generate a concise professional explanation of the formula."""
     settings = get_ai_settings()
+    if settings.provider == "mock":
+        from api.ai_mock import mock_explain_formula
+
+        return mock_explain_formula(
+            formula_result,
+            user_input,
+            color_line,
+            mode=mode,
+            translation_notes=translation_notes,
+        )
     if mode == "translate":
         context = (
             f"A stylist wants to translate this formula into {color_line}:\n{user_input}\n\n"
@@ -239,6 +255,15 @@ async def translate_formula(
 ) -> dict[str, Any]:
     """Translate a formula from one color line to another."""
     settings = get_ai_settings()
+    if settings.provider == "mock":
+        from api.ai_mock import mock_translate_formula
+
+        return mock_translate_formula(
+            source_formula,
+            source_line,
+            target_line,
+            target_canonical_key,
+        )
     source_ctx = f"Source line: {source_line}" if source_line else "Source line: (infer from formula)"
     prompt = (
         f"Source formula:\n{source_formula}\n\n"

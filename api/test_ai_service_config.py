@@ -78,9 +78,17 @@ class TestAIProviderResolution(unittest.TestCase):
             self.assertEqual(settings.parse_model, "gpt-4o-mini")
 
     def test_raises_when_no_provider_configured(self) -> None:
-        with patch.dict(os.environ, self._env, clear=False):
+        env = self._patch_env({"AI_PROVIDER": "azure"})
+        with patch.dict(os.environ, env, clear=False):
             with self.assertRaises(AIConfigurationError):
-                resolve_ai_provider()
+                get_ai_settings()
+
+    def test_explicit_mock_provider(self) -> None:
+        env = self._patch_env({"AI_PROVIDER": "mock"})
+        with patch.dict(os.environ, env, clear=False):
+            settings = get_ai_settings()
+            self.assertEqual(settings.provider, "mock")
+            self.assertEqual(settings.parse_model, "offline-mock")
 
 
 if __name__ == "__main__":

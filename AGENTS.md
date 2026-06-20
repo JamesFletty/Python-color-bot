@@ -25,10 +25,11 @@ existing docs.
   `python3 -m uvicorn`). Swagger UI is at `/docs`; health at `/health`; build a formula via
   `POST /formula` (e.g. `{"shade":"Matrix::SoColor::5N","gray":60,"service_intent":"gray_coverage"}`).
 - AI routes (`POST /api/ai/formula`, `POST /api/ai/translate`) require an LLM provider.
-  Azure OpenAI is preferred when `AZURE_OPENAI_ENDPOINT` + `AZURE_OPENAI_API_KEY` are set
-  (deploy `gpt-4o-mini` for parse/explain and `gpt-4o` for translate, or override via
-  `AZURE_OPENAI_CHAT_DEPLOYMENT` / `AZURE_OPENAI_TRANSLATE_DEPLOYMENT`). Alternatives:
-  `OPENAI_API_KEY` or `XAI_API_KEY`. Set `AI_PROVIDER=azure|openai|xai` to force a provider.
+  With **no API keys configured**, the app uses an **offline mock AI** automatically
+  (`AI_PROVIDER=mock`) so local `/api/ai/*` testing works without external services.
+  For production, set Azure OpenAI credentials (`AZURE_OPENAI_ENDPOINT` +
+  `AZURE_OPENAI_API_KEY`, plus deployment names) or `OPENAI_API_KEY` / `XAI_API_KEY`.
+  Set `AI_PROVIDER=azure|openai|xai|mock` to force a provider.
 
 ### Running tests
 

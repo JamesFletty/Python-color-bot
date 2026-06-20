@@ -157,7 +157,7 @@ def get_shades(line_id: int | None = None, q: str | None = None, limit: int = 40
 @app.post("/api/ai/formula", response_model=AIFormulaResponse)
 async def ai_formula(body: AIFormulaRequest):
     """Parse natural-language input → formula engine → AI explanation."""
-    from api.ai_service import AIConfigurationError, explain_formula, parse_formula_request
+    from api.ai_service import AIConfigurationError, explain_formula, get_ai_settings, parse_formula_request
 
     # Step 1: AI parses input into structured engine params
     try:
@@ -203,6 +203,7 @@ async def ai_formula(body: AIFormulaRequest):
         formula=formula,
         ai_explanation=explanation,
         structured_request=parsed,
+        ai_provider=get_ai_settings().provider,
         status="ok",
     )
 
@@ -210,7 +211,7 @@ async def ai_formula(body: AIFormulaRequest):
 @app.post("/api/ai/translate", response_model=AIFormulaResponse)
 async def ai_translate(body: AITranslateRequest):
     """Translate a formula from one color line to another with AI."""
-    from api.ai_service import AIConfigurationError, explain_formula, translate_formula
+    from api.ai_service import AIConfigurationError, explain_formula, get_ai_settings, translate_formula
 
     # Step 1: AI translates formula to target line params
     try:
@@ -261,6 +262,7 @@ async def ai_translate(body: AITranslateRequest):
         ai_explanation=explanation,
         structured_request=parsed,
         translation_notes=translation_notes,
+        ai_provider=get_ai_settings().provider,
         status="ok",
     )
 

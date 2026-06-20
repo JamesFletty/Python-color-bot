@@ -84,4 +84,5 @@ class AIFormulaResponse(BaseModel):
     ai_explanation: str
     structured_request: dict[str, Any]
     translation_notes: str | None = None
+    ai_provider: str | None = None
     status: str = "ok"
