@@ -113,6 +113,16 @@ export default function ResultPanel({ result, loading, error, mode }: Props) {
   }
 
   const formula = result.formula as Record<string, unknown>;
+  const engineFailed = result.status === "error" || formula.status === "error";
+  const engineError =
+    typeof formula.error === "string"
+      ? formula.error
+      : engineFailed
+        ? "The formula engine could not complete this request."
+        : null;
+  const structured = result.structured_request as Record<string, unknown> | undefined;
+  const groundingNote =
+    typeof structured?.grounding_note === "string" ? structured.grounding_note : null;
 
   const topKeys = ["shade", "shade_code", "shade_name", "color_line", "line", "product_line", "brand"];
   const devKeys = ["developer", "developer_strength", "developer_volume", "developer_options", "mixing_ratio", "ratio"];
@@ -140,21 +150,59 @@ export default function ResultPanel({ result, loading, error, mode }: Props) {
 
   return (
     <div className="h-full overflow-y-auto space-y-4 pr-1">
+      {engineFailed && (
+        <div className="bg-red-950/30 border border-red-900/50 rounded-lg p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <AlertTriangle size={14} className="text-red-400" />
+            <span className="text-xs font-semibold text-red-400 mono uppercase tracking-widest">
+              Engine Error
+            </span>
+          </div>
+          <p className="text-sm text-red-300 leading-relaxed">{engineError}</p>
+          {structured?.shade != null && (
+            <p className="mt-2 text-xs text-[var(--muted)] mono">
+              AI translated to shade: {String(structured.shade)}
+            </p>
+          )}
+        </div>
+      )}
+
+      {structured && Object.keys(structured).length > 0 && (
+        <details className="group bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
+          <summary className="cursor-pointer text-xs text-[var(--muted)] hover:text-[var(--text)] transition-colors mono select-none">
+            ▶ structured engine input (AI → deterministic engine)
+          </summary>
+          <pre className="mt-3 text-xs mono text-[var(--muted)] overflow-x-auto whitespace-pre-wrap">
+            {JSON.stringify(structured, null, 2)}
+          </pre>
+        </details>
+      )}
+
       {/* AI Explanation */}
-      <div className="bg-[var(--surface)] border border-[var(--teal)]/20 rounded-lg p-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--teal)]/5 to-transparent pointer-events-none" />
+      <div
+        className={`bg-[var(--surface)] border rounded-lg p-4 relative overflow-hidden ${
+          engineFailed ? "border-[var(--border)]" : "border-[var(--teal)]/20"
+        }`}
+      >
+        {!engineFailed && (
+          <div className="absolute inset-0 bg-gradient-to-br from-[var(--teal)]/5 to-transparent pointer-events-none" />
+        )}
         <div className="flex items-center gap-2 mb-3">
-          <Sparkles size={14} className="text-[var(--teal)]" />
-          <span className="text-xs font-semibold text-[var(--teal)] mono uppercase tracking-widest">
-            AI Recommendation
+          <Sparkles size={14} className={engineFailed ? "text-[var(--muted)]" : "text-[var(--teal)]"} />
+          <span
+            className={`text-xs font-semibold mono uppercase tracking-widest ${
+              engineFailed ? "text-[var(--muted)]" : "text-[var(--teal)]"
+            }`}
+          >
+            {engineFailed ? "AI Notes" : "AI Recommendation"}
           </span>
         </div>
-        <p className="text-sm text-[var(--text)] leading-relaxed">
+        <p className={`text-sm leading-relaxed ${engineFailed ? "text-[var(--muted)]" : "text-[var(--text)]"}`}>
           {result.ai_explanation}
         </p>
-        {result.translation_notes && (
+        {(result.translation_notes || groundingNote) && (
           <div className="mt-3 pt-3 border-t border-[var(--border)] text-xs text-[var(--muted)] italic">
-            {result.translation_notes}
+            {result.translation_notes || groundingNote}
           </div>
         )}
       </div>
