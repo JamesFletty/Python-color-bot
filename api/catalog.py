@@ -3,12 +3,35 @@
 from __future__ import annotations
 
 import sqlite3
+import threading
 from typing import Any
 
 from src.paths import DEFAULT_DB_PATH
 
+_BUILD_LOCK = threading.Lock()
+
+
+def _ensure_database() -> None:
+    """Build the SQLite catalog on demand if it has not been created yet.
+
+    The ``hair_color.db`` file is git-ignored and is not present on a fresh
+    checkout or deploy, which previously caused catalog endpoints to return a
+    500. Building it lazily keeps the API self-healing.
+    """
+    if DEFAULT_DB_PATH.exists():
+        return
+    with _BUILD_LOCK:
+        # Re-check inside the lock in case another request just built it.
+        if DEFAULT_DB_PATH.exists():
+            return
+        from init_db import build_database
+        from src.logging_utils import configure_logging
+
+        build_database(DEFAULT_DB_PATH, configure_logging())
+
 
 def _connect() -> sqlite3.Connection:
+    _ensure_database()
     conn = sqlite3.connect(DEFAULT_DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
