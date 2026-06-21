@@ -111,6 +111,25 @@ DDL_STATEMENTS: tuple[str, ...] = (
     "CREATE INDEX IF NOT EXISTS idx_shade_line_id ON shade(line_id)",
     "CREATE INDEX IF NOT EXISTS idx_tone_norm_canonical ON tone_normalization(canonical_key)",
     "CREATE INDEX IF NOT EXISTS idx_ltr_line_type ON line_technical_rule(line_id, rule_type)",
+    """
+    CREATE TABLE IF NOT EXISTS cross_line_conversion (
+        conversion_id TEXT PRIMARY KEY,
+        source_canonical_key TEXT NOT NULL,
+        source_shade_code TEXT NOT NULL,
+        target_canonical_key TEXT NOT NULL,
+        strategy TEXT NOT NULL CHECK (strategy IN ('fixed', 'tone_level_match')),
+        target_shade_code TEXT,
+        normalized_tones TEXT,
+        level_from TEXT NOT NULL DEFAULT 'source_shade',
+        component_role TEXT NOT NULL DEFAULT 'base',
+        mapping_confidence TEXT,
+        source_document TEXT,
+        notes TEXT,
+        UNIQUE(source_canonical_key, source_shade_code, target_canonical_key)
+    )
+    """,
+    "CREATE INDEX IF NOT EXISTS idx_clc_source ON cross_line_conversion(source_canonical_key, source_shade_code)",
+    "CREATE INDEX IF NOT EXISTS idx_clc_target ON cross_line_conversion(target_canonical_key)",
 )
 
 RULE_TYPE_FIELD_MAP: dict[str, str] = {

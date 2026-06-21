@@ -10,6 +10,7 @@ from typing import Any
 
 from src.logging_utils import log_transformation
 from src.paths import (
+    CROSS_LINE_JSON,
     EXPECTED_SHADE_COUNT,
     EXPECTED_TONE_MAPPING_COUNT,
     LINE_TECH_JSON,
@@ -352,6 +353,62 @@ def load_line_technical_rules(
     return inserted
 
 
+def load_cross_line_conversions(
+    conn: sqlite3.Connection,
+    logger: logging.Logger,
+    conversion_path: Path = CROSS_LINE_JSON,
+) -> int:
+    """Load explicit cross-line conversion rules into SQLite."""
+    if not conversion_path.exists():
+        log_transformation(
+            logger,
+            "load_cross_line_conversions_skipped",
+            {"reason": "file_missing", "path": str(conversion_path)},
+        )
+        return 0
+
+    payload = load_json(conversion_path)
+    entries = payload.get("conversion_entries", [])
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM cross_line_conversion")
+    inserted = 0
+
+    for entry in entries:
+        cursor.execute(
+            """
+            INSERT OR REPLACE INTO cross_line_conversion (
+                conversion_id, source_canonical_key, source_shade_code,
+                target_canonical_key, strategy, target_shade_code,
+                normalized_tones, level_from, component_role,
+                mapping_confidence, source_document, notes
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                entry["conversion_id"],
+                entry["source_canonical_key"],
+                entry["source_shade_code"],
+                entry["target_canonical_key"],
+                entry["strategy"],
+                entry.get("target_shade_code"),
+                json_dumps(entry.get("normalized_tones")),
+                entry.get("level_from", "source_shade"),
+                entry.get("component_role", "base"),
+                entry.get("mapping_confidence"),
+                entry.get("source_document"),
+                entry.get("notes"),
+            ),
+        )
+        inserted += 1
+
+    conn.commit()
+    log_transformation(
+        logger,
+        "load_cross_line_conversions_complete",
+        {"source": str(conversion_path), "entries_loaded": inserted},
+    )
+    return inserted
+
+
 def validate_counts(conn: sqlite3.Connection) -> dict[str, Any]:
     """Validate loaded row counts against expected package totals."""
     cursor = conn.cursor()
@@ -365,6 +422,8 @@ def validate_counts(conn: sqlite3.Connection) -> dict[str, Any]:
     line_count = int(cursor.fetchone()[0])
     cursor.execute("SELECT COUNT(*) FROM brand")
     brand_count = int(cursor.fetchone()[0])
+    cursor.execute("SELECT COUNT(*) FROM cross_line_conversion")
+    conversion_count = int(cursor.fetchone()[0])
 
     return {
         "shade_count": shade_count,
@@ -372,6 +431,7 @@ def validate_counts(conn: sqlite3.Connection) -> dict[str, Any]:
         "line_technical_rule_count": rule_count,
         "product_line_count": line_count,
         "brand_count": brand_count,
+        "cross_line_conversion_count": conversion_count,
         "expected_shade_count": EXPECTED_SHADE_COUNT,
         "expected_tone_mapping_count": EXPECTED_TONE_MAPPING_COUNT,
         "shade_count_ok": shade_count == EXPECTED_SHADE_COUNT,

@@ -87,6 +87,18 @@ def get_line_by_id(line_id: str) -> dict[str, Any] | None:
         }
 
 
+def resolve_canonical_key(line_name: str | None) -> str | None:
+    """Resolve a product line display name to its canonical key."""
+    if not line_name:
+        return None
+    needle = line_name.strip().lower()
+    for brand in get_brands_and_lines():
+        for line in brand["lines"]:
+            if line["name"].strip().lower() == needle:
+                return line["key"]
+    return None
+
+
 def search_shades(
     line_id: str | None = None,
     query: str | None = None,
