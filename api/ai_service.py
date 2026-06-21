@@ -30,40 +30,49 @@ class AISettings:
 
 
 _PARSE_SYSTEM = """\
-You are an expert professional hair colorist and formula specialist.
+You convert stylist natural language into structured JSON for a deterministic formula engine.
+You do NOT recommend products, write salon advice, or invent shade codes.
 
-Hair level scale: 1 (black) → 12 (lightest blonde).
+Your ONLY job: extract engine parameters from stylist input.
 
-service_intent values:
-- "tone_deposit"   → depositing tone, same or darker level, no lift
-- "lift_deposit"   → lifting 1–3 levels while depositing color
-- "gray_coverage"  → client has gray/white hair that needs coverage
-- "corrective"     → fixing a previous color mistake
-- "fashion"        → vivid, non-natural fashion colors
+Output fields:
+- shade: exact shade code from the CATALOG list provided (required)
+- current_level: client starting level 1-12 if stated
+- desired_level: target level 1-12 if stated
+- gray: 0-100 gray percentage if stated
+- texture: fine | medium | coarse (default medium)
+- service_intent: tone_deposit | lift_deposit | gray_coverage | corrective | fashion
+- porosity: 1-10 (default 5)
+- elasticity: 1-10 (default 6)
+- line: product line name (echo the line given)
 
-Infer service_intent from context clues (gray percentage > 0 → likely gray_coverage, etc.).
+Rules:
+- shade MUST be copied exactly from the catalog list — never invent codes like 6N on Majirel (use 6.0, 6.46, etc.)
+- If input is a multi-shade formula (e.g. 40g 6n + 2g dark y/o + 2g dark r/o), pick the blended equivalent
+  shade from catalog that preserves warmth/coolness — do NOT drop warm boosters
+- Redken Shades EQ: G=Gold (NOT Natural), N=Natural, CB=Copper Brown (warm), P=Pearl, V=Violet
+- Parse shorthand: 7g=07G gold, 6cb=06CB, 9p=09P pearl, 10v=010V violet
 
-Return ONLY valid compact JSON. No markdown fences, no explanation text."""
+Return ONLY valid compact JSON. No markdown. No explanation text."""
 
 _TRANSLATE_SYSTEM = """\
-You are an expert professional hair colorist specializing in cross-brand formula translation.
+You convert a source hair-color formula into structured JSON for a deterministic formula engine.
+You do NOT write salon recommendations — only structured translation data.
 
-Tone mapping reference (approximate equivalents across systems):
-- Natural/Neutral:   Wella /0  | Redken N   | Schwarzkopf -0  | Matrix N
-- Ash/Cool:          Wella /1  | Redken A   | Schwarzkopf -1  | Matrix A
-- Iridescent:        Wella /2  | Redken I   | Schwarzkopf -2
-- Gold:              Wella /3  | Redken G   | Schwarzkopf -3  | Matrix G
-- Gold Iridescent:   Redken GI  | L'Oréal Dia Light 9.03/9.31 (gold + pearl reflect) | NOT the same as I
-- Red:               Wella /4  | Redken R   | Schwarzkopf -4  | Matrix R
-- Mahogany:          Wella /5  | Redken RO  | Schwarzkopf -5  | Matrix M
-- Violet:            Wella /6  | Redken V   | Schwarzkopf -6  | Matrix V
-- Brown:             Wella /7  | Redken B   | Schwarzkopf -7  | Matrix B
-- Pearl:             Wella /8  | Redken P   | Schwarzkopf -8
-- Warm Brown:        Wella /7  | Redken NW  | Matrix W
+Your ONLY job: map source formula components to a valid target-line shade code + engine fields.
 
-Match level number exactly. Match tone family as closely as possible.
+CRITICAL RULES:
+1. shade MUST be copied exactly from TARGET CATALOG — never invent codes (no 9-66, no 6N on Majirel).
+   - Majirel: 6.0, 6.46, 6.64 (digit notation)
+   - IGORA VIBRANCE: 9-1, 9-65, 6-46 (hyphen notation)
+2. Preserve warmth/coolness. Warm source (G, CB, Y/O, R/O, copper, gold) → warm target.
+   NEVER say warm tones are "not required" or "not needed".
+3. Map EACH source component in translation_notes (grams + shade + tone family).
+4. Redken Shades EQ: G=Gold, N=Natural, CB=Copper Brown (warm), P=Pearl, V=Violet, GI=Gold Iridescent
+5. Aveda boosters: Dark Y/O=warm gold/copper, Dark R/O=copper/red
 
-Return ONLY valid compact JSON. No markdown, no explanation outside the translation_notes field."""
+Return ONLY valid compact JSON with fields:
+shade, current_level, gray, texture, service_intent, desired_level, porosity, elasticity, line, translation_notes"""
 
 
 from api.backend import env, is_production_environment
@@ -186,20 +195,51 @@ async def parse_formula_request(
     user_input: str,
     color_line: str,
     canonical_key: str,
+    *,
+    line_id: str | None = None,
 ) -> dict[str, Any]:
     """Parse natural-language stylist input into structured engine parameters."""
+    from api.ai_translate_support import build_parse_context, ground_structured_result
+
+    context = None
+    if line_id:
+        context = build_parse_context(user_input, line_id=line_id, color_line=color_line)
+
     settings = get_ai_settings()
     if settings.provider == "mock":
         from api.ai_mock import mock_parse_formula_request
 
-        return mock_parse_formula_request(user_input, color_line, canonical_key)
+        parsed = mock_parse_formula_request(user_input, color_line, canonical_key)
+        if context and line_id:
+            parsed = ground_structured_result(
+                parsed, line_id=line_id, product_line=color_line, context=context
+            )
+        return parsed
+
+    catalog_block = ""
+    source_block = ""
+    deterministic_hint = ""
+    if context:
+        if context.get("source_summary"):
+            source_block = f"Parsed formula hints:\n{context['source_summary']}\n\n"
+        catalog_block = f"CATALOG (shade MUST be from this list):\n{context['catalog_text']}\n\n"
+        det = context.get("deterministic_pick")
+        if det:
+            deterministic_hint = (
+                f"Tone-engine suggestion: {det['code']} "
+                f"(level {det.get('level')}, tones {det.get('normalized_tones')})\n\n"
+            )
+
     prompt = (
-        f"The stylist is working with: {color_line}\n\n"
+        f"Product line: {color_line} (canonical: {canonical_key})\n\n"
         f"Stylist input:\n{user_input}\n\n"
-        f"Return JSON with ALL applicable fields:\n"
-        f'{{"shade":"<code for {color_line}>","current_level":<1-12>,"gray":<0-100>,'
-        f'"texture":"fine|medium|coarse","service_intent":"...","desired_level":<1-12>,'
-        f'"porosity":<1-10 default 5>,"elasticity":<1-10 default 6>,"line":"{color_line}"}}'
+        f"{source_block}"
+        f"{catalog_block}"
+        f"{deterministic_hint}"
+        f"Return JSON engine parameters only:\n"
+        f'{{"shade":"<from CATALOG>","current_level":<1-12|null>,"gray":<0-100>,'
+        f'"texture":"fine|medium|coarse","service_intent":"tone_deposit|lift_deposit|gray_coverage|corrective|fashion",'
+        f'"desired_level":<1-12|null>,"porosity":5,"elasticity":6,"line":"{color_line}"}}'
     )
     resp = await _client().chat.completions.create(
         model=settings.parse_model,
@@ -210,7 +250,12 @@ async def parse_formula_request(
         response_format={"type": "json_object"},
         temperature=0.1,
     )
-    return json.loads(resp.choices[0].message.content)
+    parsed = json.loads(resp.choices[0].message.content)
+    if context and line_id:
+        parsed = ground_structured_result(
+            parsed, line_id=line_id, product_line=color_line, context=context
+        )
+    return parsed
 
 
 async def explain_formula(
@@ -221,6 +266,17 @@ async def explain_formula(
     translation_notes: str | None = None,
 ) -> str:
     """Generate a concise professional explanation of the formula."""
+    if formula_result.get("status") == "error":
+        error = formula_result.get("error", "Unknown engine error")
+        grounded = translation_notes or ""
+        return (
+            f"The deterministic formula engine could not complete this recommendation: {error}. "
+            f"The AI translation suggested a shade that is not in the {color_line} catalog, or the "
+            f"database is missing that shade. "
+            f"{'Parsed source: ' + grounded + '. ' if grounded else ''}"
+            f"Expand 'raw engine output' below for details. Re-run after selecting a valid catalog shade."
+        )
+
     settings = get_ai_settings()
     if settings.provider == "mock":
         from api.ai_mock import mock_explain_formula
@@ -242,11 +298,14 @@ async def explain_formula(
 
     prompt = (
         f"{context}"
-        f"Formula engine output:\n{json.dumps(formula_result, indent=2)}\n\n"
+        f"Formula engine output (AUTHORITATIVE — base explanation only on this data):\n"
+        f"{json.dumps(formula_result, indent=2)}\n\n"
         "Write a 3–5 sentence professional explanation covering:\n"
         "1. Specific products selected and the clinical reason\n"
         "2. Developer strength and mix ratio rationale\n"
         "3. Expected result and any key application notes\n\n"
+        "Use ONLY shades and developer details present in the engine output. "
+        "If engine output lacks a field, say it is unavailable — do not invent. "
         "Be direct and specific. Professional salon language. No bullet points."
     )
     resp = await _client().chat.completions.create(
@@ -256,7 +315,8 @@ async def explain_formula(
                 "role": "system",
                 "content": (
                     "You are a senior hair color educator explaining formulas to stylists. "
-                    "Be concise, specific, and professional."
+                    "The formula engine JSON is authoritative. Never contradict it or invent "
+                    "shade codes not present in the engine output."
                 ),
             },
             {"role": "user", "content": prompt},
@@ -271,29 +331,70 @@ async def translate_formula(
     source_line: str | None,
     target_line: str,
     target_canonical_key: str,
+    *,
+    target_line_id: str | None = None,
 ) -> dict[str, Any]:
     """Translate a formula from one color line to another."""
+    from api.ai_translate_support import build_translation_context, ground_translation_result
+
+    context = None
+    if target_line_id:
+        context = build_translation_context(
+            source_formula,
+            source_line,
+            target_line_id=target_line_id,
+            target_line=target_line,
+        )
+
     settings = get_ai_settings()
     if settings.provider == "mock":
         from api.ai_mock import mock_translate_formula
 
-        return mock_translate_formula(
+        parsed = mock_translate_formula(
             source_formula,
             source_line,
             target_line,
             target_canonical_key,
         )
+        if context:
+            parsed["translation_notes"] = (
+                f"{context['source_summary']}. {parsed.get('translation_notes', '')}"
+            ).strip()
+            parsed = ground_translation_result(
+                parsed,
+                line_id=target_line_id or "",
+                product_line=target_line,
+                context=context,
+            )
+        return parsed
+
     source_ctx = f"Source line: {source_line}" if source_line else "Source line: (infer from formula)"
+    catalog_block = ""
+    source_block = ""
+    deterministic_hint = ""
+    if context:
+        source_block = f"Parsed source analysis:\n{context['source_summary']}\n\n"
+        catalog_block = f"TARGET CATALOG (pick shade code exactly from this list):\n{context['catalog_text']}\n\n"
+        det = context.get("deterministic_pick")
+        if det:
+            deterministic_hint = (
+                f"Suggested catalog match from tone engine: {det['code']} "
+                f"(level {det.get('level')}, tones {det.get('normalized_tones')})\n\n"
+            )
+
     prompt = (
         f"Source formula:\n{source_formula}\n\n"
         f"{source_ctx}\n"
+        f"{source_block}"
         f"Target line: {target_line} (canonical: {target_canonical_key})\n\n"
+        f"{catalog_block}"
+        f"{deterministic_hint}"
         f"Return JSON:\n"
-        f'{{"shade":"<closest shade code in {target_line}>","current_level":<1-12>,'
+        f'{{"shade":"<MUST be from TARGET CATALOG>","current_level":<1-12>,'
         f'"gray":<0-100>,"texture":"fine|medium|coarse",'
         f'"service_intent":"tone_deposit|lift_deposit|gray_coverage|corrective|fashion",'
         f'"desired_level":<1-12>,"porosity":5,"elasticity":6,"line":"{target_line}",'
-        f'"translation_notes":"<explain the tone/level mapping>"}}'
+        f'"translation_notes":"<map EACH source component; preserve warmth/coolness>"}}'
     )
     resp = await _client().chat.completions.create(
         model=settings.translate_model,
@@ -304,4 +405,12 @@ async def translate_formula(
         response_format={"type": "json_object"},
         temperature=0.2,
     )
-    return json.loads(resp.choices[0].message.content)
+    parsed = json.loads(resp.choices[0].message.content)
+    if context and target_line_id:
+        parsed = ground_translation_result(
+            parsed,
+            line_id=target_line_id,
+            product_line=target_line,
+            context=context,
+        )
+    return parsed

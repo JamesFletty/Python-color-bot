@@ -185,6 +185,7 @@ async def ai_formula(body: AIFormulaRequest):
             user_input=body.user_input,
             color_line=body.color_line,
             canonical_key=body.canonical_key,
+            line_id=body.line_id,
         )
     except AIConfigurationError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
@@ -226,7 +227,7 @@ async def ai_formula(body: AIFormulaRequest):
         ai_explanation=explanation,
         structured_request=parsed,
         ai_provider=get_ai_settings().provider,
-        status="ok",
+        status="error" if formula.get("status") == "error" else "ok",
     )
 
 
@@ -242,6 +243,7 @@ async def ai_translate(body: AITranslateRequest):
             source_line=body.source_line,
             target_line=body.target_line,
             target_canonical_key=body.target_canonical_key,
+            target_line_id=body.target_line_id,
         )
     except AIConfigurationError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
@@ -287,7 +289,7 @@ async def ai_translate(body: AITranslateRequest):
         structured_request=parsed,
         translation_notes=translation_notes,
         ai_provider=get_ai_settings().provider,
-        status="ok",
+        status="error" if formula.get("status") == "error" else "ok",
     )
 
 
