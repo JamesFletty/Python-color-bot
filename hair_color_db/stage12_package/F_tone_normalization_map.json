@@ -3416,15 +3416,17 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "03",
-      "manufacturer_term": null,
+      "manufacturer_term": "Gold (Honey Milkshake family)",
       "normalized_tones": [
-        "Natural",
-        "Gold"
+        "Gold",
+        "Pearl"
       ],
-      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .3 = gold (G)",
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .3 = gold (G). Cross-line: nearest equivalent to Redken Shades EQ GI (Gold Iridescent); Pearl used as iridescent reflect proxy.",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
-      "notes": []
+      "notes": [
+        "Translation target for Redken GI (Gold Iridescent) at level 9: shade 9.03 Honey Milkshake"
+      ]
     },
     {
       "canonical_key": "L'Oréal Professionnel::Dia Light::US",
@@ -11125,7 +11127,8 @@
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": [
-        "Confirmed by stylist domain knowledge; not printed on US 2022 chart legend extract"
+        "Confirmed by stylist domain knowledge; not printed on US 2022 chart legend extract",
+        "Cross-line translation target: L'Oréal Dia Light .03 (e.g. 9.03 Honey Milkshake)"
       ]
     },
     {
