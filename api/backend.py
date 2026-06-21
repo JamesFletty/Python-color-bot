@@ -11,6 +11,18 @@ _POSTGRES_BACKENDS = frozenset({"postgres", "postgresql", "pg", "production"})
 _PRODUCTION_ENVS = frozenset({"production", "prod"})
 
 
+def _load_dotenv() -> None:
+    try:
+        from dotenv import load_dotenv
+    except ImportError:
+        return
+    repo_root = Path(__file__).resolve().parents[1]
+    load_dotenv(repo_root / ".env", override=False)
+
+
+_load_dotenv()
+
+
 def env(name: str, default: str | None = None) -> str | None:
     value = os.environ.get(name)
     if value is None:
