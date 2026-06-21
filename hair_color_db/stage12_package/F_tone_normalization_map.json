@@ -11116,14 +11116,17 @@
       "brand": "Redken",
       "product_line": "Shades EQ Gloss",
       "manufacturer_tone_code": "GI",
-      "manufacturer_term": "GI",
+      "manufacturer_term": "Gold Iridescent",
       "normalized_tones": [
-        "Other"
+        "Gold",
+        "Pearl"
       ],
-      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
-      "mapping_confidence": "medium",
+      "mapping_rationale": "Salon-standard Redken Shades EQ tone legend: GI = Gold Iridescent (warm gold with pearl/iridescent reflect). Pearl used as normalized iridescent proxy.",
+      "mapping_confidence": "high",
       "ambiguity_flag": false,
-      "notes": []
+      "notes": [
+        "Confirmed by stylist domain knowledge; not printed on US 2022 chart legend extract"
+      ]
     },
     {
       "canonical_key": "Redken::Shades EQ Gloss::US",
@@ -13943,12 +13946,6 @@
       "manufacturer_tone_code": "AA",
       "reason": "tone_meaning_unresolved",
       "details": "No printed legend; shade names (Papaya, Bonfire) suggest warm/copper but contradict conventional 'AA = intense ash' reading; unresolved"
-    },
-    {
-      "canonical_key": "Redken::Shades EQ Gloss::US",
-      "manufacturer_tone_code": "GI",
-      "reason": "tone_meaning_unresolved",
-      "details": "No printed legend; shade names (Tahitian Sand, Hamptons, St. Barths, Tenerife) do not unambiguously identify a tone family"
     }
   ],
   "issue_log": []

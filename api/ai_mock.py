@@ -22,11 +22,21 @@ _DESIRED_LEVEL_RE = re.compile(
     re.IGNORECASE,
 )
 _GRAY_RE = re.compile(r"(\d{1,3})\s*%\s*(?:gray|grey)", re.IGNORECASE)
+_SHADE_CODE_RE = re.compile(
+    r"\b0?(\d{1,2})\s*(gi|gb|gv|v|g|n|a)\b",
+    re.IGNORECASE,
+)
+_FORMULA_COMPONENT_RE = re.compile(
+    r"(\d+)\s*g\s+(90v|0?\d{1,2}\s*(?:gi|gb|gv|v|g|n|a))\b",
+    re.IGNORECASE,
+)
 
 _TONE_HINTS: dict[str, tuple[str, ...]] = {
+    "gold iridescent": ("Gold", "Pearl"),
     "caramel": ("Gold", "Beige"),
     "butterscotch": ("Gold", "Beige"),
     "gold": ("Gold",),
+    "gi": ("Gold", "Pearl"),
     "warm": ("Gold", "Warm"),
     "copper": ("Copper",),
     "ash": ("Ash",),
@@ -35,6 +45,8 @@ _TONE_HINTS: dict[str, tuple[str, ...]] = {
     "violet": ("Violet",),
     "red": ("Red",),
     "mahogany": ("Mahogany",),
+    "iridescent": ("Pearl",),
+    "pearl": ("Pearl",),
 }
 
 
@@ -50,10 +62,80 @@ def _first_level(pattern: re.Pattern[str], text: str) -> int | None:
 
 def _infer_tones(text: str) -> tuple[str, ...]:
     lowered = text.lower()
+    if "gold iridescent" in lowered or re.search(r"\bgi\b", lowered):
+        return ("Gold", "Pearl")
     for keyword, tones in _TONE_HINTS.items():
         if keyword in lowered:
             return tones
     return ()
+
+
+def _normalize_shade_token(level: int, suffix: str) -> str:
+    return f"{level:02d}{suffix.upper()}"
+
+
+def _shade_code_from_token(token: str) -> str | None:
+    lowered = token.lower().replace(" ", "")
+    if lowered == "90v":
+        return "09V"
+    match = _SHADE_CODE_RE.search(token)
+    if not match:
+        return None
+    return _normalize_shade_token(int(match.group(1)), match.group(2))
+
+
+def _infer_shade_codes(text: str) -> list[str]:
+    """Extract likely Shades EQ shade codes from stylist formula shorthand."""
+    components = _parse_formula_components(text)
+    if components:
+        codes: list[str] = []
+        for _grams, token in components:
+            code = _shade_code_from_token(token)
+            if code and code not in codes:
+                codes.append(code)
+        return codes
+
+    codes = []
+    if re.search(r"\b90v\b", text, re.IGNORECASE):
+        codes.append("09V")
+    for match in _SHADE_CODE_RE.finditer(text):
+        code = _normalize_shade_token(int(match.group(1)), match.group(2))
+        if code not in codes:
+            codes.append(code)
+    return codes
+
+
+def _parse_formula_components(text: str) -> list[tuple[int, str]]:
+    """Return (grams, shade_token) pairs from stylist shorthand formulas."""
+    components: list[tuple[int, str]] = []
+    for match in _FORMULA_COMPONENT_RE.finditer(text):
+        components.append((int(match.group(1)), match.group(2).strip()))
+    return components
+
+
+def _dia_light_equivalent(redken_code: str) -> tuple[str, str] | None:
+    """Map Redken Shades EQ code to Dia Light shade + label."""
+    level = _level_from_shade_code(redken_code)
+    if level is None:
+        return None
+    suffix = redken_code[2:].upper()
+    if suffix == "GI":
+        return (f"{level}.03", "Honey Milkshake (Gold Iridescent)")
+    if suffix == "V":
+        return (f"{level}.1", "Icy Milkshake (violet)")
+    if suffix == "G":
+        return (f"{level}.3", "gold reflect")
+    if suffix == "N":
+        return (f"{level}", "natural")
+    return None
+
+
+def _level_from_shade_code(shade_code: str) -> int | None:
+    prefix = re.match(r"^0*(\d{1,2})", shade_code)
+    if not prefix:
+        return None
+    level = int(prefix.group(1))
+    return level if 1 <= level <= 12 else None
 
 
 def _infer_service_intent(text: str) -> str:
@@ -129,12 +211,18 @@ def mock_parse_formula_request(
     gray_match = _GRAY_RE.search(user_input)
     gray = int(gray_match.group(1)) if gray_match else 0
     tones = _infer_tones(user_input)
-    shade = _pick_shade(
-        color_line=color_line,
-        desired_level=desired_level,
-        tones=tones,
-        gray=gray,
-    )
+    explicit_codes = _infer_shade_codes(user_input)
+    if desired_level is None and explicit_codes:
+        desired_level = _level_from_shade_code(explicit_codes[-1])
+    if explicit_codes:
+        shade = explicit_codes[-1]
+    else:
+        shade = _pick_shade(
+            color_line=color_line,
+            desired_level=desired_level,
+            tones=tones,
+            gray=gray,
+        )
     if shade is None and desired_level is not None:
         shade = f"{desired_level:02d}N"
 
@@ -249,11 +337,55 @@ def mock_translate_formula(
 ) -> dict[str, Any]:
     """Translate a formula using the same offline heuristics as parse."""
     parsed = mock_parse_formula_request(source_formula, target_line, target_canonical_key)
+    source_codes = _infer_shade_codes(source_formula)
+    components = _parse_formula_components(source_formula)
+    is_dia_light = target_line.lower().startswith("dia")
+
+    if is_dia_light and components:
+        translated_parts: list[str] = []
+        dominant: tuple[int, str] | None = None
+        for grams, token in components:
+            source_code = _shade_code_from_token(token)
+            if not source_code:
+                continue
+            equivalent = _dia_light_equivalent(source_code)
+            if equivalent is None:
+                continue
+            target_shade, label = equivalent
+            gi_note = " Gold Iridescent" if source_code.endswith("GI") else ""
+            translated_parts.append(
+                f"{grams}g Dia Light {target_shade} ({label}) from {source_code}{gi_note}"
+            )
+            if dominant is None or grams > dominant[0]:
+                dominant = (grams, target_shade)
+        if translated_parts:
+            parsed["translation_notes"] = "; ".join(translated_parts)
+            if dominant is not None:
+                parsed["shade"] = dominant[1]
+                parsed["desired_level"] = int(float(dominant[1].split(".")[0]))
+    elif source_codes:
+        gi_codes = [code for code in source_codes if code.endswith("GI")]
+        v_codes = [code for code in source_codes if code.endswith("V")]
+        if gi_codes and is_dia_light:
+            parsed["shade"] = "9.03"
+            parsed["desired_level"] = _level_from_shade_code(gi_codes[0]) or 9
+            parsed["translation_notes"] = (
+                f"Mapped Redken {gi_codes[0]} (Gold Iridescent) to Dia Light 9.03 Honey Milkshake; "
+                f"gold/pearl reflect family."
+            )
+        elif gi_codes:
+            parsed["shade"] = gi_codes[0]
+        if v_codes and not parsed.get("translation_notes"):
+            parsed["translation_notes"] = (
+                f"Source includes {', '.join(v_codes)} violet tone; verify target-line violet equivalent."
+            )
+
     source_label = source_line or "source line"
-    parsed["translation_notes"] = (
-        f"Offline mock translation from {source_label} to {target_line} "
-        f"matched level {parsed.get('desired_level')} and tone keywords in the source text."
-    )
+    if not parsed.get("translation_notes"):
+        parsed["translation_notes"] = (
+            f"Offline mock translation from {source_label} to {target_line} "
+            f"matched level {parsed.get('desired_level')} and tone keywords in the source text."
+        )
     parsed["line"] = target_line
     parsed.pop("_canonical_key", None)
     return parsed
