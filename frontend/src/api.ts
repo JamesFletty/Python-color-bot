@@ -1,18 +1,18 @@
 export interface Brand {
-  id: number;
+  id: string;
   name: string;
   lines: Line[];
 }
 
 export interface Line {
-  id: number;
+  id: string;
   name: string;
   key: string;
   color_type: string | null;
 }
 
 export interface Shade {
-  id: number;
+  id: string;
   code: string;
   name: string | null;
   level: number | null;
@@ -28,6 +28,7 @@ export interface AIFormulaResponse {
   ai_explanation: string;
   structured_request: Record<string, unknown>;
   translation_notes?: string;
+  ai_provider?: string;
   status: string;
 }
 
@@ -46,15 +47,15 @@ export function fetchBrands(): Promise<Brand[]> {
   return req("/api/brands");
 }
 
-export function fetchShades(lineId: number, query?: string): Promise<Shade[]> {
+export function fetchShades(lineId: string, query?: string): Promise<Shade[]> {
   const q = query ? `&q=${encodeURIComponent(query)}` : "";
-  return req(`/api/shades?line_id=${lineId}${q}`);
+  return req(`/api/shades?line_id=${encodeURIComponent(lineId)}${q}`);
 }
 
 export function aiFormula(payload: {
   user_input: string;
   color_line: string;
-  line_id: number;
+  line_id: string;
   canonical_key: string;
 }): Promise<AIFormulaResponse> {
   return req("/api/ai/formula", {
@@ -68,7 +69,7 @@ export function aiTranslate(payload: {
   source_formula: string;
   source_line?: string;
   target_line: string;
-  target_line_id: number;
+  target_line_id: string;
   target_canonical_key: string;
 }): Promise<AIFormulaResponse> {
   return req("/api/ai/translate", {

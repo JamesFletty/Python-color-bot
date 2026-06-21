@@ -12,7 +12,7 @@ interface Props {
 }
 
 export default function FormulaMode({ brands, onResult, onLoading, onError }: Props) {
-  const [selectedBrandId, setSelectedBrandId] = useState<number | null>(null);
+  const [selectedBrandId, setSelectedBrandId] = useState<string | null>(null);
   const [selectedLine, setSelectedLine] = useState<Line | null>(null);
   const [userInput, setUserInput] = useState("");
   const [shadeQuery, setShadeQuery] = useState("");
@@ -23,15 +23,15 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
   const selectedBrand = brands.find((b) => b.id === selectedBrandId) ?? null;
 
   function handleBrandChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    const id = parseInt(e.target.value);
-    setSelectedBrandId(isNaN(id) ? null : id);
+    const id = e.target.value;
+    setSelectedBrandId(id || null);
     setSelectedLine(null);
     setShades([]);
     setSelectedShade(null);
   }
 
   function handleLineChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    const id = parseInt(e.target.value);
+    const id = e.target.value;
     const line = selectedBrand?.lines.find((l) => l.id === id) ?? null;
     setSelectedLine(line);
     setShades([]);

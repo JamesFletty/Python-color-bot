@@ -7,11 +7,9 @@ produce structured requests and salon-style explanations.
 from __future__ import annotations
 
 import re
-import sqlite3
 from typing import Any
 
-from src.matching import ShadeQuery, fetch_shade_candidates
-from src.paths import DEFAULT_DB_PATH
+from src.matching import ShadeQuery
 
 _LEVEL_RE = re.compile(
     r"(?:natural|current|starting|base|on)\s+(?:level|lvl|hair)?\s*(\d{1,2})|"
@@ -80,18 +78,43 @@ def _pick_shade(
 ) -> str | None:
     if desired_level is None:
         return None
-    conn = sqlite3.connect(DEFAULT_DB_PATH)
-    try:
-        requested = ShadeQuery(level=float(desired_level), tones=tones, gray_percent=float(gray))
-        matches = [
-            match
-            for match in fetch_shade_candidates(conn, requested)
-            if color_line.lower() in match["line"].lower()
-        ]
-        if matches:
-            return str(matches[0]["shade_code"])
-    finally:
-        conn.close()
+
+    from api.backend import uses_postgres_engine
+    from src.matching import ShadeQuery, fetch_shade_candidates
+
+    requested = ShadeQuery(level=float(desired_level), tones=tones, gray_percent=float(gray))
+
+    if uses_postgres_engine():
+        from hair_color_db.production.db import create_session_factory, require_database_url
+        from hair_color_db.production.shade_matching import fetch_shade_candidates as fetch_pg_candidates
+
+        database_url = require_database_url()
+        if not database_url:
+            return None
+        SessionLocal = create_session_factory(database_url=database_url)
+        with SessionLocal() as session:
+            matches = [
+                match
+                for match in fetch_pg_candidates(session, requested)
+                if color_line.lower() in match["line"].lower()
+            ]
+    else:
+        import sqlite3
+
+        from src.paths import DEFAULT_DB_PATH
+
+        conn = sqlite3.connect(DEFAULT_DB_PATH)
+        try:
+            matches = [
+                match
+                for match in fetch_shade_candidates(conn, requested)
+                if color_line.lower() in match["line"].lower()
+            ]
+        finally:
+            conn.close()
+
+    if matches:
+        return str(matches[0]["shade_code"])
     return None
 
 
@@ -139,14 +162,29 @@ def mock_explain_formula(
 ) -> str:
     """Build a concise explanation from deterministic engine output."""
     shade = formula_result.get("shade", {})
-    formula = formula_result.get("formula", {})
+    formula_block = formula_result.get("formula", {})
     hair = formula_result.get("hair_conditions", {})
-    shade_code = shade.get("shade_code", "selected shade")
-    shade_name = shade.get("shade_name") or shade_code
-    developer = formula.get("developer") or "line-appropriate developer"
-    mixing = formula.get("mixing_ratio") or "manufacturer mixing ratio"
-    processing = formula.get("processing_time") or "standard processing time"
-    status = formula_result.get("status", "ok")
+
+    if not shade and formula_result.get("recommendation_status"):
+        shade_code = "selected shade"
+        shade_name = shade_code
+        developer_label = (
+            f"{formula_result['developer_volume']} vol"
+            if formula_result.get("developer_volume") is not None
+            else "line-appropriate developer"
+        )
+        mixing = "manufacturer mixing ratio"
+        processing = "standard processing time"
+        status = str(formula_result.get("recommendation_status", "ok"))
+        fill = formula_result.get("fill_pigment_guidance")
+    else:
+        shade_code = shade.get("shade_code", "selected shade")
+        shade_name = shade.get("shade_name") or shade_code
+        developer_label = formula_block.get("developer") or "line-appropriate developer"
+        mixing = formula_block.get("mixing_ratio") or "manufacturer mixing ratio"
+        processing = formula_block.get("processing_time") or "standard processing time"
+        status = str(formula_result.get("status", "ok"))
+        fill = formula_block.get("fill_pigment_guidance")
 
     if mode == "translate":
         opener = (
@@ -154,7 +192,10 @@ def mock_explain_formula(
             f" ({translation_notes or 'tone/level mapping from source formula'})."
         )
     else:
-        opener = f"For the request described ({user_input.strip()[:120]}), the engine selected {color_line} {shade_code} {shade_name}."
+        opener = (
+            f"For the request described ({user_input.strip()[:120]}), "
+            f"the engine selected {color_line} {shade_code} {shade_name}."
+        )
 
     caution = ""
     if status == "caution":
@@ -162,7 +203,6 @@ def mock_explain_formula(
     elif status == "blocked":
         caution = f" This recommendation is blocked: {formula_result.get('block_reason', 'rule conflict')}."
 
-    fill = formula.get("fill_pigment_guidance")
     fill_note = ""
     if fill:
         top_fill = ""
@@ -171,19 +211,26 @@ def mock_explain_formula(
             suggestions = steps[0].get("suggested_shades") or []
             if suggestions:
                 top = suggestions[0]
-                top_fill = f" Pre-fill with {top['shade_code']} {top['shade_name']} at level {steps[0]['level']}, then "
+                top_fill = (
+                    f" Pre-fill with {top['shade_code']} {top['shade_name']} "
+                    f"at level {steps[0]['level']}, then "
+                )
         fill_note = (
-            f"{top_fill}apply the final formula at {mixing} with {developer} for {processing}."
+            f"{top_fill}apply the final formula at {mixing} with {developer_label} "
+            f"for {processing}."
         )
     else:
-        fill_note = f" Mix {mixing} with {developer} and process for {processing}."
+        fill_note = f" Mix {mixing} with {developer_label} and process for {processing}."
 
     natural = hair.get("natural_level")
     desired = hair.get("desired_level")
     level_note = ""
     if natural is not None and desired is not None and natural != desired:
         direction = "darken" if desired < natural else "shift"
-        level_note = f" Starting level {natural:g} to target level {desired:g} requires a {direction} service plan."
+        level_note = (
+            f" Starting level {natural:g} to target level {desired:g} "
+            f"requires a {direction} service plan."
+        )
 
     return (
         "[Offline mock AI — no external API key required] "

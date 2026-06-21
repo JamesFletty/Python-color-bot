@@ -65,18 +65,35 @@ Match level number exactly. Match tone family as closely as possible.
 Return ONLY valid compact JSON. No markdown, no explanation outside the translation_notes field."""
 
 
+from api.backend import env, is_production_environment
+
+
 def _env(name: str, default: str | None = None) -> str | None:
-    value = os.environ.get(name)
-    if value is None:
-        return default
-    cleaned = value.strip()
-    return cleaned or default
+    return env(name, default)
+
+
+def _mock_allowed() -> bool:
+    if not is_production_environment():
+        return True
+    return (_env("AI_ALLOW_MOCK") or "").lower() in {"1", "true", "yes", "on"}
+
+
+def _reject_mock_in_production() -> None:
+    if is_production_environment() and not _mock_allowed():
+        raise AIConfigurationError(
+            "Mock AI is disabled in production. Configure Azure OpenAI "
+            "(AZURE_OPENAI_ENDPOINT + AZURE_OPENAI_API_KEY), OPENAI_API_KEY, or "
+            "XAI_API_KEY, or set AI_ALLOW_MOCK=1 for an explicit offline deployment."
+        )
 
 
 def resolve_ai_provider() -> AIProvider:
     """Pick the active AI provider from AI_PROVIDER or available credentials."""
     explicit = (_env("AI_PROVIDER") or "").lower()
-    if explicit in {"azure", "openai", "xai", "mock"}:
+    if explicit == "mock":
+        _reject_mock_in_production()
+        return "mock"
+    if explicit in {"azure", "openai", "xai"}:
         return explicit  # type: ignore[return-value]
     if _env("AZURE_OPENAI_ENDPOINT") and _env("AZURE_OPENAI_API_KEY"):
         return "azure"
@@ -84,6 +101,7 @@ def resolve_ai_provider() -> AIProvider:
         return "openai"
     if _env("XAI_API_KEY"):
         return "xai"
+    _reject_mock_in_production()
     return "mock"
 
 

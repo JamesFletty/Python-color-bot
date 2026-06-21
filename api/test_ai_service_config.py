@@ -26,6 +26,8 @@ class TestAIProviderResolution(unittest.TestCase):
             "XAI_API_KEY": "",
             "XAI_CHAT_MODEL": "",
             "XAI_TRANSLATE_MODEL": "",
+            "ENVIRONMENT": "",
+            "AI_ALLOW_MOCK": "",
         }
 
     def _patch_env(self, overrides: dict[str, str] | None = None) -> dict[str, str]:
@@ -77,11 +79,16 @@ class TestAIProviderResolution(unittest.TestCase):
             self.assertEqual(settings.provider, "openai")
             self.assertEqual(settings.parse_model, "gpt-4o-mini")
 
-    def test_raises_when_no_provider_configured(self) -> None:
-        env = self._patch_env({"AI_PROVIDER": "azure"})
+    def test_rejects_mock_in_production_without_override(self) -> None:
+        env = self._patch_env({"ENVIRONMENT": "production"})
         with patch.dict(os.environ, env, clear=False):
             with self.assertRaises(AIConfigurationError):
-                get_ai_settings()
+                resolve_ai_provider()
+
+    def test_allows_mock_in_production_when_explicitly_enabled(self) -> None:
+        env = self._patch_env({"ENVIRONMENT": "production", "AI_ALLOW_MOCK": "1"})
+        with patch.dict(os.environ, env, clear=False):
+            self.assertEqual(resolve_ai_provider(), "mock")
 
     def test_explicit_mock_provider(self) -> None:
         env = self._patch_env({"AI_PROVIDER": "mock"})

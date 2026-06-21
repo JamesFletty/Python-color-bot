@@ -5,16 +5,27 @@ from __future__ import annotations
 import sqlite3
 from typing import Any
 
-from src.paths import DEFAULT_DB_PATH
+from api.backend import db_path, uses_postgres_engine
 
 
 def _connect() -> sqlite3.Connection:
-    conn = sqlite3.connect(DEFAULT_DB_PATH)
+    conn = sqlite3.connect(db_path())
     conn.row_factory = sqlite3.Row
     return conn
 
 
 def get_brands_and_lines() -> list[dict[str, Any]]:
+    if uses_postgres_engine():
+        from api.catalog_pg import get_brands_and_lines as get_pg_brands
+        from hair_color_db.production.db import create_session_factory, require_database_url
+
+        database_url = require_database_url()
+        if not database_url:
+            raise RuntimeError("DATABASE_URL is required when ENGINE_BACKEND=postgres")
+        SessionLocal = create_session_factory(database_url=database_url)
+        with SessionLocal() as session:
+            return get_pg_brands(session)
+
     with _connect() as conn:
         cur = conn.cursor()
         cur.execute("""
@@ -28,9 +39,9 @@ def get_brands_and_lines() -> list[dict[str, Any]]:
         for row in cur.fetchall():
             bid = row["brand_id"]
             if bid not in brands:
-                brands[bid] = {"id": bid, "name": row["brand_name"], "lines": []}
+                brands[bid] = {"id": str(bid), "name": row["brand_name"], "lines": []}
             brands[bid]["lines"].append({
-                "id": row["line_id"],
+                "id": str(row["line_id"]),
                 "name": row["product_line_name"],
                 "key": row["canonical_key"],
                 "color_type": row["color_type"],
@@ -38,7 +49,23 @@ def get_brands_and_lines() -> list[dict[str, Any]]:
         return list(brands.values())
 
 
-def get_line_by_id(line_id: int) -> dict[str, Any] | None:
+def get_line_by_id(line_id: str) -> dict[str, Any] | None:
+    if uses_postgres_engine():
+        from api.catalog_pg import get_line_by_id as get_pg_line
+        from hair_color_db.production.db import create_session_factory, require_database_url
+
+        database_url = require_database_url()
+        if not database_url:
+            raise RuntimeError("DATABASE_URL is required when ENGINE_BACKEND=postgres")
+        SessionLocal = create_session_factory(database_url=database_url)
+        with SessionLocal() as session:
+            return get_pg_line(session, line_id)
+
+    try:
+        numeric_line_id = int(line_id)
+    except ValueError:
+        return None
+
     with _connect() as conn:
         cur = conn.cursor()
         cur.execute("""
@@ -47,12 +74,12 @@ def get_line_by_id(line_id: int) -> dict[str, Any] | None:
             FROM product_line pl
             JOIN brand b ON b.brand_id = pl.brand_id
             WHERE pl.line_id = ?
-        """, (line_id,))
+        """, (numeric_line_id,))
         row = cur.fetchone()
         if not row:
             return None
         return {
-            "id": row["line_id"],
+            "id": str(row["line_id"]),
             "name": row["product_line_name"],
             "key": row["canonical_key"],
             "color_type": row["color_type"],
@@ -61,10 +88,28 @@ def get_line_by_id(line_id: int) -> dict[str, Any] | None:
 
 
 def search_shades(
-    line_id: int | None = None,
+    line_id: str | None = None,
     query: str | None = None,
     limit: int = 40,
 ) -> list[dict[str, Any]]:
+    if uses_postgres_engine():
+        from api.catalog_pg import search_shades as search_pg_shades
+        from hair_color_db.production.db import create_session_factory, require_database_url
+
+        database_url = require_database_url()
+        if not database_url:
+            raise RuntimeError("DATABASE_URL is required when ENGINE_BACKEND=postgres")
+        SessionLocal = create_session_factory(database_url=database_url)
+        with SessionLocal() as session:
+            return search_pg_shades(session, line_id=line_id, query=query, limit=limit)
+
+    numeric_line_id: int | None = None
+    if line_id is not None:
+        try:
+            numeric_line_id = int(line_id)
+        except ValueError:
+            return []
+
     with _connect() as conn:
         cur = conn.cursor()
         sql = """
@@ -78,9 +123,9 @@ def search_shades(
                    OR s.discontinued_status NOT LIKE '%discontinu%')
         """
         params: list[Any] = []
-        if line_id is not None:
+        if numeric_line_id is not None:
             sql += " AND s.line_id = ?"
-            params.append(line_id)
+            params.append(numeric_line_id)
         if query:
             sql += " AND (s.shade_code LIKE ? OR s.shade_name LIKE ?)"
             params.extend([f"%{query}%", f"%{query}%"])
@@ -89,7 +134,7 @@ def search_shades(
         cur.execute(sql, params)
         return [
             {
-                "id": row["shade_id"],
+                "id": str(row["shade_id"]),
                 "code": row["shade_code"],
                 "name": row["shade_name"],
                 "level": row["level"],

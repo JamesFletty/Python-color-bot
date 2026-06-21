@@ -13,19 +13,19 @@ interface Props {
 export default function TranslateMode({ brands, onResult, onLoading, onError }: Props) {
   const [sourceFormula, setSourceFormula] = useState("");
   const [sourceLine, setSourceLine] = useState("");
-  const [targetBrandId, setTargetBrandId] = useState<number | null>(null);
+  const [targetBrandId, setTargetBrandId] = useState<string | null>(null);
   const [targetLine, setTargetLine] = useState<Line | null>(null);
 
   const targetBrand = brands.find((b) => b.id === targetBrandId) ?? null;
 
   function handleTargetBrandChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    const id = parseInt(e.target.value);
-    setTargetBrandId(isNaN(id) ? null : id);
+    const id = e.target.value;
+    setTargetBrandId(id || null);
     setTargetLine(null);
   }
 
   function handleTargetLineChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    const id = parseInt(e.target.value);
+    const id = e.target.value;
     const line = targetBrand?.lines.find((l) => l.id === id) ?? null;
     setTargetLine(line);
   }
