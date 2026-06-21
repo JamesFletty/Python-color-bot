@@ -103,6 +103,194 @@
             "set_developer_volume": 20,
             "warning": "DreamAge gray coverage: 20 vol per line technical chart."
           }
+        },
+        {
+          "rule_id": "M_SOCOLOR_001_1",
+          "rule_name": "matrix_hair_diversity_underlying_pigment_levels",
+          "rule_priority": 46,
+          "rule_category": "color_science",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_brand",
+                "op": "=",
+                "value": "Matrix"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_hair_diversity_underlying_pigment_levels",
+            "seed_rule_category": "color_science",
+            "manufacturer_rule_action": {
+              "levels": {
+                "1": "dark red brown",
+                "2": "red brown",
+                "3": "dark red",
+                "4": "red",
+                "5": "red orange",
+                "6": "dark orange",
+                "7": "orange",
+                "8": "dark yellow",
+                "9": "yellow",
+                "10": "pale yellow",
+                "11": "palest yellow"
+              },
+              "diameters": [
+                "fine",
+                "medium",
+                "coarse"
+              ],
+              "patterns": [
+                "1A",
+                "1B",
+                "1C",
+                "2A",
+                "2B",
+                "2C",
+                "3A",
+                "3B",
+                "3C",
+                "4A",
+                "4B",
+                "4C"
+              ]
+            },
+            "warning": "Apply per manufacturer chart: matrix_hair_diversity_underlying_pigment_levels"
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR_002_1",
+          "rule_name": "matrix_developer_lift_rule_by_volume",
+          "rule_priority": 47,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_brand",
+                "op": "=",
+                "value": "Matrix"
+              },
+              {
+                "field": "seed_service",
+                "op": "=",
+                "value": "lightening/lift deposit"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_developer_lift_rule_by_volume",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "10_volume": "up to 1 level",
+              "20_volume": "up to 2 levels",
+              "30_volume": "up to 3 levels",
+              "40_volume": "up to 4 levels",
+              "general_rule": "when lifting beyond one level, every 10 Volume achieves up to one level of lift"
+            },
+            "warning": "Apply per manufacturer chart: matrix_developer_lift_rule_by_volume"
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR_003_1",
+          "rule_name": "matrix_socolor_standard_usage",
+          "rule_priority": 48,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "SoColor Pre-Bonded"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_socolor_standard_usage",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:1",
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "process_45_when": [
+                "lifting more than 1 level",
+                "depositing on gray",
+                "maximum deposit"
+              ],
+              "application": "clean dry hair"
+            },
+            "warning": "Apply per manufacturer chart: matrix_socolor_standard_usage"
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR_004_1",
+          "rule_name": "matrix_socolor_refresh_restrictions",
+          "rule_priority": 49,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "SoColor Pre-Bonded"
+              },
+              {
+                "field": "seed_service",
+                "op": "=",
+                "value": "retouch_refresh"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_socolor_refresh_restrictions",
+            "seed_rule_category": "intermixing",
+            "manufacturer_rule_action": {
+              "do_not_refresh_with_socolor_if": [
+                "base formula uses 20 volume or higher",
+                "high porosity",
+                "Extra Coverage series",
+                "DreamAge series",
+                "UL series",
+                "maximum neutralization needed"
+              ]
+            },
+            "warning": "Apply per manufacturer chart: matrix_socolor_refresh_restrictions"
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR_005",
+          "rule_name": "matrix_socolor_lift_by_palette",
+          "rule_priority": 50,
+          "rule_category": "lift",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "SoColor Pre-Bonded"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_socolor_lift_by_palette",
+            "seed_rule_category": "lift",
+            "manufacturer_rule_action": {
+              "extra_coverage": "up to 2 levels",
+              "blended": "up to 4 levels",
+              "reflect": "up to 4 levels",
+              "ultra_blondes": "up to 5 levels",
+              "hd_reds": "up to 4 levels",
+              "power_cools": "up to 4 levels",
+              "dream_age": "up to 2 levels"
+            },
+            "warning": "Apply per manufacturer chart: matrix_socolor_lift_by_palette"
+          }
         }
       ]
     },
@@ -150,6 +338,70 @@
           "rule_action": {
             "warning": "Sync is pre-paired with SoColor permanent for root-to-ends services."
           }
+        },
+        {
+          "rule_id": "M_SOCOLOR__001",
+          "rule_name": "matrix_socolor_sync_usage",
+          "rule_priority": 46,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "SoColor Sync Pre-Bonded"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_socolor_sync_usage",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:1",
+              "developer": "10 Volume Matrix Cream Developer",
+              "processing_time_min": 20,
+              "application": "clean dry hair",
+              "porous_hair": "lightly mist Instacure on mids and ends before blending through"
+            },
+            "warning": "Apply per manufacturer chart: matrix_socolor_sync_usage"
+          }
+        },
+        {
+          "rule_id": "M_SOCOLOR__002",
+          "rule_name": "matrix_clear_dilution_rule",
+          "rule_priority": 47,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": [
+                  "SoColor Sync Pre-Bonded",
+                  "Tonal Control Pre-Bonded"
+                ]
+              },
+              {
+                "field": "seed_modifier",
+                "op": "=",
+                "value": [
+                  "Clear",
+                  "Totally Transparent"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_clear_dilution_rule",
+            "seed_rule_category": "intermixing",
+            "manufacturer_rule_action": {
+              "effect": "adding equal amount of Clear/Totally Transparent lessens color deposit by approximately one level",
+              "processing_time_min": "up to 20"
+            },
+            "warning": "Apply per manufacturer chart: matrix_clear_dilution_rule"
+          }
         }
       ]
     },
@@ -178,6 +430,37 @@
             "require_natural_shade_mix": true,
             "natural_shade_ratio": 0.6,
             "warning": "Coil Color gray coverage requires elevated natural-series ratio."
+          }
+        },
+        {
+          "rule_id": "M_COIL_COL_001",
+          "rule_name": "matrix_coil_color_usage",
+          "rule_priority": 46,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Coil Color"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_coil_color_usage",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:1",
+              "developer_options": [
+                "20 volume",
+                "30 volume"
+              ],
+              "processing_time_min": 35,
+              "application": "clean dry hair",
+              "porous_hair": "lightly mist Instacure on mids and ends before first pull-through only"
+            },
+            "warning": "Apply per manufacturer chart: matrix_coil_color_usage"
           }
         }
       ]
@@ -259,6 +542,34 @@
           "rule_action": {
             "set_recommendation_status": "blocked",
             "block_reason": "Tonal Control is for pre-lightened or highlighted hair only."
+          }
+        },
+        {
+          "rule_id": "M_TONAL_CO_001",
+          "rule_name": "matrix_tonal_control_usage",
+          "rule_priority": 46,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Tonal Control Pre-Bonded"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "matrix_tonal_control_usage",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:1",
+              "developer": "10 Volume Matrix Cream Developer",
+              "processing_time_min": 20,
+              "application": "dry or damp towel-dried hair",
+              "no_base_shift": true
+            },
+            "warning": "Apply per manufacturer chart: matrix_tonal_control_usage"
           }
         }
       ]
@@ -410,6 +721,152 @@
             "set_developer_volume": 6,
             "warning": "Color Touch demi deposit when darkening — 6 vol (1.9%) processing solution."
           }
+        },
+        {
+          "rule_id": "W_COLOR_TO_001",
+          "rule_name": "wella_color_touch_standard_emulsion",
+          "rule_priority": 46,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Color Touch"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_color_touch_standard_emulsion",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "emulsion_options": [
+                "1.9%",
+                "4%"
+              ],
+              "mixing_ratio": "1:2 color:emulsion"
+            },
+            "warning": "Apply per manufacturer chart: wella_color_touch_standard_emulsion"
+          }
+        },
+        {
+          "rule_id": "W_COLOR_TO_002",
+          "rule_name": "wella_color_touch_plus_requires_4_percent",
+          "rule_priority": 47,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Color Touch Plus"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_color_touch_plus_requires_4_percent",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "required_emulsion": "Color Touch Plus 4% Emulsion"
+            },
+            "warning": "Apply per manufacturer chart: wella_color_touch_plus_requires_4_percent"
+          }
+        },
+        {
+          "rule_id": "W_COLOR_TO_003",
+          "rule_name": "wella_color_touch_special_mix_ratio",
+          "rule_priority": 48,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Color Touch Special Mix"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_color_touch_special_mix_ratio",
+            "seed_rule_category": "intermixing",
+            "manufacturer_rule_action": {
+              "add_intensity_example": "20g Color Touch shade + 10g Special Mix + 60g Color Touch Emulsion",
+              "emphasis_ratio": "1:2 Special Mix:Emulsion",
+              "clear_reduces_intensity": "10/0 clear tone may reduce color intensity"
+            },
+            "warning": "Apply per manufacturer chart: wella_color_touch_special_mix_ratio"
+          }
+        },
+        {
+          "rule_id": "W_COLOR_TO_004",
+          "rule_name": "wella_color_touch_relights_touch_of_gloss",
+          "rule_priority": 49,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Color Touch Relights"
+              },
+              {
+                "field": "seed_service",
+                "op": "=",
+                "value": "touch_of_gloss"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_color_touch_relights_touch_of_gloss",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "formula": "1 part /00 + 3 parts 1.9% Color Touch Emulsion",
+              "processing_time_min": 5,
+              "application": "pre-shampooed hair"
+            },
+            "warning": "Apply per manufacturer chart: wella_color_touch_relights_touch_of_gloss"
+          }
+        },
+        {
+          "rule_id": "W_COLOR_TO_005",
+          "rule_name": "wella_color_touch_instamatic_processing_and_neutralization",
+          "rule_priority": 50,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Color Touch Instamatic"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_color_touch_instamatic_processing_and_neutralization",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "developer_options": [
+                "1.9%",
+                "4%"
+              ],
+              "processing_time_min": [
+                5,
+                20
+              ],
+              "neutralization_examples": {
+                "orange": "Ocean Storm",
+                "yellow": "Muted Mauve",
+                "red": "Jaded Mint"
+              },
+              "color_id_ratio": "10:10:1 Instamatic:Emulsion:Color.id"
+            },
+            "warning": "Apply per manufacturer chart: wella_color_touch_instamatic_processing_and_neutralization"
+          }
         }
       ]
     },
@@ -505,6 +962,126 @@
             "natural_shade_ratio": 0.5,
             "adjust_processing_time_minutes": 5,
             "warning": "50%+ grey: use 1/2 Pure Naturals; resistant hair use xx/0; max 40 min."
+          }
+        },
+        {
+          "rule_id": "W_KOLESTON_001",
+          "rule_name": "wella_kp_white_hair_pure_naturals_addition",
+          "rule_priority": 46,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Koleston Perfect ME+"
+              },
+              {
+                "field": "seed_white_hair_percentage",
+                "op": "=",
+                "value": ">=30"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_kp_white_hair_pure_naturals_addition",
+            "seed_rule_category": "gray_coverage",
+            "manufacturer_rule_action": {
+              "white_hair_30_50": "add 1/3 Pure Naturals shade",
+              "white_hair_50_100": "add 1/2 Pure Naturals shade",
+              "red_shades_over_50_white": "add 1/3 Pure Naturals shade"
+            },
+            "warning": "Apply per manufacturer chart: wella_kp_white_hair_pure_naturals_addition"
+          }
+        },
+        {
+          "rule_id": "W_KOLESTON_002",
+          "rule_name": "wella_kp_standard_processing_times",
+          "rule_priority": 47,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Koleston Perfect ME+"
+              },
+              {
+                "field": "seed_sub_ranges",
+                "op": "=",
+                "value": [
+                  "Pure Naturals",
+                  "Vibrant Reds",
+                  "Deep Browns",
+                  "Special Blondes"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_kp_standard_processing_times",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "standard_without_heat_min": [
+                30,
+                40
+              ],
+              "standard_with_heat_min": [
+                15,
+                25
+              ],
+              "special_blondes_without_heat_min": [
+                50,
+                60
+              ],
+              "special_blondes_with_heat_min": [
+                25,
+                35
+              ],
+              "pure_soft_balance_after_development_min": [
+                5,
+                10
+              ]
+            },
+            "warning": "Apply per manufacturer chart: wella_kp_standard_processing_times"
+          }
+        },
+        {
+          "rule_id": "W_KOLESTON_003",
+          "rule_name": "wella_kp_numbering_and_tone_system",
+          "rule_priority": 48,
+          "rule_category": "color_science",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Koleston Perfect ME+"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "wella_kp_numbering_and_tone_system",
+            "seed_rule_category": "color_science",
+            "manufacturer_rule_action": {
+              "depth_range": "2/ through 10/",
+              "tone_map": {
+                "/0": "natural",
+                "/1": "ash blue/green",
+                "/2": "matt green",
+                "/3": "gold yellow",
+                "/4": "red warm",
+                "/5": "mahogany red/violet",
+                "/6": "violet cool",
+                "/7": "brown red/yellow/blue",
+                "/8": "pearl blue",
+                "/9": "cendre blue/violet"
+              }
+            },
+            "warning": "Apply per manufacturer chart: wella_kp_numbering_and_tone_system"
           }
         }
       ]
@@ -621,6 +1198,2120 @@
           "rule_action": {
             "set_developer_volume": 30,
             "warning": "IGORA ABSOLUTES white-hair coverage: 9% (30 vol) per manufacturer chart."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_001",
+          "rule_name": "igora_royal_natural_standard_use",
+          "rule_priority": 45,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_sub_ranges",
+                "op": "=",
+                "value": [
+                  "Nature",
+                  "Cendré",
+                  "Beige"
+                ]
+              },
+              {
+                "field": "seed_tone_codes",
+                "op": "=",
+                "value": [
+                  "0",
+                  "1",
+                  "4"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_natural_standard_use",
+            "seed_rule_category": "processing",
+            "manufacturer_rule_action": {
+              "white_hair_coverage_pct": 100,
+              "mixing_ratio": "1:1",
+              "developer_volumes": [
+                10,
+                20,
+                30
+              ],
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "notes": "Natural shades cover up to level 9."
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_natural_standard_use"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_002",
+          "rule_name": "igora_royal_nature_extra_resistant_hair",
+          "rule_priority": 46,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_sub_range",
+                "op": "=",
+                "value": "Nature Extra"
+              },
+              {
+                "field": "seed_tone_code",
+                "op": "=",
+                "value": "00"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_nature_extra_resistant_hair",
+            "seed_rule_category": "gray_coverage",
+            "manufacturer_rule_action": {
+              "white_hair_coverage_pct": 100,
+              "mixing_ratio": "1:1",
+              "default_developer_volume": 30,
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "tip": "For pure color deposit on more than 90% white hair use 20 vol."
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_nature_extra_resistant_hair"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_003",
+          "rule_name": "igora_royal_fashion_gray_blending_mix_natural",
+          "rule_priority": 47,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_sub_ranges",
+                "op": "=",
+                "value": [
+                  "Cendré Plus",
+                  "Gold/Gold Extra",
+                  "Gold Copper",
+                  "Chocolate",
+                  "Chocolate Gold",
+                  "Chocolate Red",
+                  "Copper/Copper Extra",
+                  "Red Extra",
+                  "Violet Red/Violet Extra"
+                ]
+              },
+              {
+                "field": "seed_gray_pct_range",
+                "op": "=",
+                "value": [
+                  50,
+                  100
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_fashion_gray_blending_mix_natural",
+            "seed_rule_category": "gray_coverage",
+            "manufacturer_rule_action": {
+              "white_hair_coverage_pct": 70,
+              "mixing_ratio": "1:1",
+              "coverage_formula": "2 parts Fashion Shade : 1 part Natural Shade for 50-100% white hair; fashion shade alone up to 50%; mix 1:1 with natural shade on thick/resistant hair",
+              "developer_volumes": [
+                10,
+                20,
+                30
+              ],
+              "processing_time_min": [
+                30,
+                45
+              ]
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_fashion_gray_blending_mix_natural"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_004",
+          "rule_name": "igora_royal_10_series_ultra_blonde",
+          "rule_priority": 48,
+          "rule_category": "lift",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_sub_range",
+                "op": "=",
+                "value": "Highlift 10-series"
+              },
+              {
+                "field": "seed_starting_level_min",
+                "op": "=",
+                "value": 7
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_10_series_ultra_blonde",
+            "seed_rule_category": "lift",
+            "manufacturer_rule_action": {
+              "max_lift_levels": 4,
+              "mixing_ratio": "1:1",
+              "developer_options": [
+                {
+                  "volume": 30,
+                  "lift_levels": 3
+                },
+                {
+                  "volume": 40,
+                  "lift_levels": 4
+                }
+              ],
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "white_hair_coverage": false
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_10_series_ultra_blonde"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_005",
+          "rule_name": "igora_royal_12_series_special_blonde",
+          "rule_priority": 49,
+          "rule_category": "lift",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_sub_range",
+                "op": "=",
+                "value": "Highlift 12-series"
+              },
+              {
+                "field": "seed_starting_level_min",
+                "op": "=",
+                "value": 6
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_12_series_special_blonde",
+            "seed_rule_category": "lift",
+            "manufacturer_rule_action": {
+              "max_lift_levels": 5,
+              "mixing_ratio": "1:2",
+              "developer_options": [
+                {
+                  "volume": 30,
+                  "lift_levels": 4
+                },
+                {
+                  "volume": 40,
+                  "lift_levels": 5
+                }
+              ],
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "white_hair_coverage": false
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_12_series_special_blonde"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_006",
+          "rule_name": "igora_royal_95_series_pastel_toning",
+          "rule_priority": 50,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_sub_range",
+                "op": "=",
+                "value": "Pastels"
+              },
+              {
+                "field": "seed_target_level_min",
+                "op": "=",
+                "value": 9
+              },
+              {
+                "field": "seed_hair_state",
+                "op": "=",
+                "value": "pre_lightened_pale_yellow"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_95_series_pastel_toning",
+            "seed_rule_category": "toning",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:1",
+              "developer_volume": 10,
+              "processing_time_min": [
+                5,
+                30
+              ],
+              "process_visually": true,
+              "usage": [
+                "personalization",
+                "white refining",
+                "neutralization after lightening"
+              ]
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_95_series_pastel_toning"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_007",
+          "rule_name": "igora_royal_neutralizer_amount_by_level",
+          "rule_priority": 51,
+          "rule_category": "neutralization",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_modifier_codes",
+                "op": "=",
+                "value": [
+                  "0-11",
+                  "0-22",
+                  "0-33"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_neutralizer_amount_by_level",
+            "seed_rule_category": "neutralization",
+            "manufacturer_rule_action": {
+              "amount_by_level": [
+                {
+                  "levels": [
+                    8,
+                    9
+                  ],
+                  "max_pct_of_color_cream": 5
+                },
+                {
+                  "levels": [
+                    6,
+                    7
+                  ],
+                  "max_pct_of_color_cream": 15
+                },
+                {
+                  "levels": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "max_pct_of_color_cream": 25
+                }
+              ],
+              "neutralizes": {
+                "0-11": "yellow",
+                "0-22": "orange",
+                "0-33": "red"
+              },
+              "increase_developer_proportionally": true
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_neutralizer_amount_by_level"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_008",
+          "rule_name": "igora_royal_booster_amount",
+          "rule_priority": 52,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_modifier_codes",
+                "op": "=",
+                "value": [
+                  "0-55",
+                  "0-77",
+                  "0-88",
+                  "0-89",
+                  "0-99"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_booster_amount",
+            "seed_rule_category": "tone",
+            "manufacturer_rule_action": {
+              "max_pct_of_color_cream": 50,
+              "usage": "boost fashion tone directions on all levels",
+              "increase_developer_proportionally": true,
+              "warning": "type and amount of mixtone influence target depth"
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_booster_amount"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_009",
+          "rule_name": "igora_royal_d0_diluter",
+          "rule_priority": 53,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_modifier_code",
+                "op": "=",
+                "value": "D-0"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_d0_diluter",
+            "seed_rule_category": "tone",
+            "manufacturer_rule_action": {
+              "max_pct_of_color_cream": 50,
+              "usage": [
+                "reduce pigment concentration",
+                "create soft pastel tones"
+              ],
+              "developer_volume": 10,
+              "processing_time_min": [
+                5,
+                30
+              ],
+              "can_be_used_with_10vol_for_shine_on_light_bases": true,
+              "mixing_ratio_when_pure": "1:1"
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_d0_diluter"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_010",
+          "rule_name": "igora_royal_e0_lightening_additive",
+          "rule_priority": 54,
+          "rule_category": "lift",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_modifier_code",
+                "op": "=",
+                "value": "E-0"
+              },
+              {
+                "field": "seed_usage",
+                "op": "=",
+                "value": "mixed_with_target_shade"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_e0_lightening_additive",
+            "seed_rule_category": "lift",
+            "manufacturer_rule_action": {
+              "additional_lift_levels": 1,
+              "mixing_ratio": "2:1 shade:E-0",
+              "developer_volumes": [
+                10,
+                20,
+                30
+              ],
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "hair_state": "virgin_hair"
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_e0_lightening_additive"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_011",
+          "rule_name": "igora_royal_e0_lightening_extract_pure",
+          "rule_priority": 55,
+          "rule_category": "lift",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_modifier_code",
+                "op": "=",
+                "value": "E-0"
+              },
+              {
+                "field": "seed_usage",
+                "op": "=",
+                "value": "used_pure"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_e0_lightening_extract_pure",
+            "seed_rule_category": "lift",
+            "manufacturer_rule_action": {
+              "max_lift_levels": 4,
+              "mixing_ratio": "1:1",
+              "developer_volume": 40,
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "hair_state": "virgin_hair"
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_e0_lightening_extract_pure"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_012",
+          "rule_name": "igora_royal_e1_extra_cendre_additive_by_base",
+          "rule_priority": 56,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_modifier_code",
+                "op": "=",
+                "value": "E-1"
+              },
+              {
+                "field": "seed_usage",
+                "op": "=",
+                "value": "mixed_with_target_shade"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_e1_extra_cendre_additive_by_base",
+            "seed_rule_category": "tone",
+            "manufacturer_rule_action": {
+              "mixing_ratio_by_base": [
+                {
+                  "base_levels": [
+                    8,
+                    7
+                  ],
+                  "ratio": "2:1 shade:E-1"
+                },
+                {
+                  "base_levels": [
+                    6,
+                    5
+                  ],
+                  "ratio": "1:1 shade:E-1"
+                },
+                {
+                  "base_levels": [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  "ratio": "1:2 shade:E-1"
+                }
+              ],
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "usage_note": "extra cool tone direction"
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_e1_extra_cendre_additive_by_base"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_013",
+          "rule_name": "igora_royal_e1_extra_cendre_pure",
+          "rule_priority": 57,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_modifier_code",
+                "op": "=",
+                "value": "E-1"
+              },
+              {
+                "field": "seed_usage",
+                "op": "=",
+                "value": "used_pure"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_e1_extra_cendre_pure",
+            "seed_rule_category": "tone",
+            "manufacturer_rule_action": {
+              "mixing_ratio": "1:1",
+              "developer_volume": 10,
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "usage": "extra deposit of cool pigments"
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_e1_extra_cendre_pure"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_014",
+          "rule_name": "igora_royal_absolutes_mature_hair",
+          "rule_priority": 58,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "IGORA ROYAL Absolutes"
+              },
+              {
+                "field": "seed_tone_codes",
+                "op": "=",
+                "value": [
+                  "40",
+                  "50",
+                  "60",
+                  "70",
+                  "80",
+                  "90"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_absolutes_mature_hair",
+            "seed_rule_category": "gray_coverage",
+            "manufacturer_rule_action": {
+              "white_hair_coverage_pct": 100,
+              "mixing_ratio": "1:1",
+              "developer_volume": 30,
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "tip": "For pure color deposit on more than 90% white hair use 20 vol."
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_absolutes_mature_hair"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_015",
+          "rule_name": "igora_royal_fashion_lights",
+          "rule_priority": 59,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "IGORA ROYAL Fashion Lights"
+              },
+              {
+                "field": "seed_shade_codes",
+                "op": "=",
+                "value": [
+                  "L-00",
+                  "L-44",
+                  "L-57",
+                  "L-77",
+                  "L-88",
+                  "L-89"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_fashion_lights",
+            "seed_rule_category": "application",
+            "manufacturer_rule_action": {
+              "usage": "lift and color in one step",
+              "max_lift_levels": 5,
+              "mixing_ratio": "1:1",
+              "developer_volume": 40,
+              "processing_time_min": [
+                30,
+                45
+              ],
+              "application": "off_scalp_only",
+              "starting_base": "6 and darker; dark or colored bases"
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_fashion_lights"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_016",
+          "rule_name": "igora_royal_developer_10_vol_usage",
+          "rule_priority": 60,
+          "rule_category": "developer",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_developer_volume",
+                "op": "=",
+                "value": 10
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_developer_10_vol_usage",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "recommended_uses": [
+                "coloring darker",
+                "covering 100% white hair depending on texture",
+                "color deposit on pre-lightened hair",
+                "pastel shades"
+              ]
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_developer_10_vol_usage"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_017",
+          "rule_name": "igora_royal_developer_20_vol_usage",
+          "rule_priority": 61,
+          "rule_category": "developer",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_developer_volume",
+                "op": "=",
+                "value": 20
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_developer_20_vol_usage",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "recommended_uses": [
+                "tone-on-tone",
+                "white hair coverage",
+                "lifting 1-2 levels",
+                "can achieve 2 levels on fine hair",
+                "Absolutes deposit >90% white hair"
+              ]
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_developer_20_vol_usage"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_018",
+          "rule_name": "igora_royal_developer_30_vol_usage",
+          "rule_priority": 62,
+          "rule_category": "developer",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_developer_volume",
+                "op": "=",
+                "value": 30
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_developer_30_vol_usage",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "recommended_uses": [
+                "lifting 2-3 levels",
+                "-00 series",
+                "Absolutes gray coverage",
+                "10-series up to 3 levels",
+                "12-series 3-4 levels"
+              ]
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_developer_30_vol_usage"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_019",
+          "rule_name": "igora_royal_developer_40_vol_usage",
+          "rule_priority": 63,
+          "rule_category": "developer",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_developer_volume",
+                "op": "=",
+                "value": 40
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_developer_40_vol_usage",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "recommended_uses": [
+                "Fashion Lights",
+                "10-series 3-4 levels",
+                "12-series 4-5 levels"
+              ]
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_developer_40_vol_usage"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_020",
+          "rule_name": "igora_royal_virgin_application",
+          "rule_priority": 64,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_application_type",
+                "op": "=",
+                "value": "virgin_hair"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_virgin_application",
+            "seed_rule_category": "application",
+            "manufacturer_rule_action": {
+              "apply_to": "dry_unwashed_hair",
+              "steps": [
+                "apply first on mid-lengths and ends in fine sections leaving 1/2 inch regrowth out",
+                "develop 10 minutes or 15 minutes for Fashion Shades",
+                "apply to regrowth",
+                "develop 30-45 minutes"
+              ]
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_virgin_application"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_021",
+          "rule_name": "igora_royal_regrowth_application",
+          "rule_priority": 65,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_application_type",
+                "op": "=",
+                "value": "regrowth"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_regrowth_application",
+            "seed_rule_category": "application",
+            "manufacturer_rule_action": {
+              "apply_to": "dry_unwashed_hair",
+              "steps": [
+                "apply color only to regrowth area first in fine sections",
+                "develop 15-20 minutes",
+                "apply IGORA ROYAL or IGORA VIBRANCE demi-permanent color to mid-lengths and ends",
+                "develop 10-15 minutes"
+              ]
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_regrowth_application"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_V5_022",
+          "rule_name": "igora_royal_dual_application",
+          "rule_priority": 66,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_application_type",
+                "op": "=",
+                "value": "dual_application"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "igora_royal_dual_application",
+            "seed_rule_category": "application",
+            "manufacturer_rule_action": {
+              "description": "Permanent IGORA ROYAL for regrowth with IGORA VIBRANCE non-ammonia demi-permanent color for mid-lengths and ends.",
+              "steps": [
+                "apply permanent IGORA ROYAL to regrowth first",
+                "develop 15-20 minutes depending on mids/ends product",
+                "apply IGORA VIBRANCE to mid-lengths and ends",
+                "development time depends on desired intensity and instructions"
+              ]
+            },
+            "warning": "Apply per IGORA ROYAL quick-starter guide: igora_royal_dual_application"
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_001",
+          "rule_name": "igora_recreate_3-1",
+          "rule_priority": 36,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "3-1"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "2:1",
+            "components": [
+              {
+                "grams": 20,
+                "shade_code": "4-13"
+              },
+              {
+                "grams": 10,
+                "shade_code": "1-1"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "4-13 + 1-1 (2:1) 20g 4-13 + 10g 1-1 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_002",
+          "rule_name": "igora_recreate_3-99",
+          "rule_priority": 37,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "3-99"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "2:1",
+            "components": [
+              {
+                "grams": 20,
+                "shade_code": "4-99"
+              },
+              {
+                "grams": 10,
+                "shade_code": "4-0"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "4-99 + 4-0 (2:1) 20g 4-99 + 10g 4-0 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_003",
+          "rule_name": "igora_recreate_4-07",
+          "rule_priority": 38,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "4-07"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "3:1",
+            "components": [
+              {
+                "grams": 30,
+                "shade_code": "4-0"
+              },
+              {
+                "grams": 10,
+                "shade_code": "5-7"
+              }
+            ],
+            "developer_grams": 40.0,
+            "recreation_formula_text": "4-0 + 5-7 (3:1) 30g 4-0 + 10g 5-7 + 40g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_004",
+          "rule_name": "igora_recreate_4-1",
+          "rule_priority": 39,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "4-1"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "1:2",
+            "components": [
+              {
+                "grams": 10,
+                "shade_code": "5-0"
+              },
+              {
+                "grams": 20,
+                "shade_code": "4-13"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "5-0 + 4-13 (1:2) 10g 5-0 + 20g 4-13 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_005",
+          "rule_name": "igora_recreate_4-57",
+          "rule_priority": 40,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "4-57"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "1:1",
+            "components": [
+              {
+                "grams": 15,
+                "shade_code": "5-57"
+              },
+              {
+                "grams": 15,
+                "shade_code": "4-68"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "5-57 + 4-68 (1:1) 15g 5-57 + 15g 4-68 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_006",
+          "rule_name": "igora_recreate_4-89",
+          "rule_priority": 41,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "4-89"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "3:2:1",
+            "components": [
+              {
+                "grams": 30,
+                "shade_code": "4-0"
+              },
+              {
+                "grams": 20,
+                "shade_code": "0-88"
+              },
+              {
+                "grams": 10,
+                "shade_code": "0-99"
+              }
+            ],
+            "developer_grams": 60.0,
+            "recreation_formula_text": "4-0 + 0-88 + 0-99 (3:2:1) 30g 4-0 + 20g 0-88 + 10g 0-99 + 60g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_007",
+          "rule_name": "igora_recreate_5-3",
+          "rule_priority": 42,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "5-3"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "10:0.5",
+            "components": [
+              {
+                "grams": 30,
+                "shade_code": "5-0"
+              },
+              {
+                "grams": 2,
+                "shade_code": "0-33"
+              }
+            ],
+            "developer_grams": 32.0,
+            "recreation_formula_text": "5-0 + 0-33 (10:0.5) 30g 5-0 + 2g 0-33 + 32g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_008",
+          "rule_name": "igora_recreate_5-889",
+          "rule_priority": 43,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "5-889"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "3:1",
+            "components": [
+              {
+                "grams": 30,
+                "shade_code": "6-88"
+              },
+              {
+                "grams": 10,
+                "shade_code": "6-99"
+              }
+            ],
+            "developer_grams": 40.0,
+            "recreation_formula_text": "6-88 + 6-99 (3:1) 30g 6-88 + 10g 6-99 + 40g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_009",
+          "rule_name": "igora_recreate_5-89",
+          "rule_priority": 44,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "5-89"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "3:2",
+            "components": [
+              {
+                "grams": 30,
+                "shade_code": "5-88"
+              },
+              {
+                "grams": 20,
+                "shade_code": "5-99"
+              }
+            ],
+            "developer_grams": 50.0,
+            "recreation_formula_text": "5-88 + 5-99 (3:2) 30g 5-88 + 20g 5-99 + 50g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_010",
+          "rule_name": "igora_recreate_6-05",
+          "rule_priority": 45,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "6-05"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "3:4",
+            "components": [
+              {
+                "grams": 15,
+                "shade_code": "6-00"
+              },
+              {
+                "grams": 20,
+                "shade_code": "6-5"
+              }
+            ],
+            "developer_grams": 35.0,
+            "recreation_formula_text": "6-00 + 6-5 (3:4) 15g 6-00 + 20g 6-5 + 35g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_011",
+          "rule_name": "igora_recreate_6-07",
+          "rule_priority": 46,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "6-07"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": false,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "no mixing possible",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_012",
+          "rule_name": "igora_recreate_6-2",
+          "rule_priority": 47,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "6-2"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": false,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "no mixing possible",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_013",
+          "rule_name": "igora_recreate_6-57",
+          "rule_priority": 48,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "6-57"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "1:1",
+            "components": [
+              {
+                "grams": 15,
+                "shade_code": "5-68"
+              },
+              {
+                "grams": 15,
+                "shade_code": "7-57"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "5-68 + 7-57 (1:1) 15g 5-68 + 15g 7-57 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_014",
+          "rule_name": "igora_recreate_6-7",
+          "rule_priority": 49,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "6-7"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "6-77",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_015",
+          "rule_name": "igora_recreate_6-87",
+          "rule_priority": 50,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "6-87"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "1:1:1",
+            "components": [
+              {
+                "grams": 10,
+                "shade_code": "6-0"
+              },
+              {
+                "grams": 10,
+                "shade_code": "6-88"
+              },
+              {
+                "grams": 10,
+                "shade_code": "6-77"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "6-0 + 6-88 + 6-77 (1:1:1) 10g 6-0 + 10g 6-88 + 10g 6-77 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_016",
+          "rule_name": "igora_recreate_6-888",
+          "rule_priority": 51,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "6-888"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "6-88",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_017",
+          "rule_name": "igora_recreate_6-89",
+          "rule_priority": 52,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "6-89"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "1:2",
+            "components": [
+              {
+                "grams": 10,
+                "shade_code": "5-88"
+              },
+              {
+                "grams": 20,
+                "shade_code": "6-99"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "5-88 + 6-99 (1:2) 10g 5-88 + 20g 6-99 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_018",
+          "rule_name": "igora_recreate_7-05",
+          "rule_priority": 53,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "7-05"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "2:1",
+            "components": [
+              {
+                "grams": 20,
+                "shade_code": "7-00"
+              },
+              {
+                "grams": 10,
+                "shade_code": "7-5"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "7-00 + 7-5 (2:1) 20g 7-00 + 10g 7-5 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_019",
+          "rule_name": "igora_recreate_7-12",
+          "rule_priority": 54,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "7-12"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "1:1",
+            "components": [
+              {
+                "grams": 15,
+                "shade_code": "6-12"
+              },
+              {
+                "grams": 15,
+                "shade_code": "8-11"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "6-12 + 8-11 (1:1) 15g 6-12 + 15g 8-11 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_020",
+          "rule_name": "igora_recreate_7-2",
+          "rule_priority": 55,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "7-2"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": false,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "no mixing possible",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_021",
+          "rule_name": "igora_recreate_7-3",
+          "rule_priority": 56,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "7-3"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "10:0.4",
+            "components": [
+              {
+                "grams": 30,
+                "shade_code": "7-0"
+              },
+              {
+                "grams": 1,
+                "shade_code": "0-33"
+              }
+            ],
+            "developer_grams": 31.0,
+            "recreation_formula_text": "7-0 + 0-33 (10:0.4) 30g 7-0 + 1g 0-33 + 31g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_022",
+          "rule_name": "igora_recreate_7-5",
+          "rule_priority": 57,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "7-5"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "7-55",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_023",
+          "rule_name": "igora_recreate_7-7",
+          "rule_priority": 58,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "7-7"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "1:3",
+            "components": [
+              {
+                "grams": 10,
+                "shade_code": "7-57"
+              },
+              {
+                "grams": 30,
+                "shade_code": "7-77"
+              }
+            ],
+            "developer_grams": 40.0,
+            "recreation_formula_text": "7-57 + 7-77 (1:3) 10g 7-57 + 30g 7-77 + 40g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_024",
+          "rule_name": "igora_recreate_7-87",
+          "rule_priority": 59,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "7-87"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "2:1",
+            "components": [
+              {
+                "grams": 20,
+                "shade_code": "7-77"
+              },
+              {
+                "grams": 10,
+                "shade_code": "6-88"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "7-77 + 6-88 (2:1) 20g 7-77 + 10g 6-88 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_025",
+          "rule_name": "igora_recreate_7-887",
+          "rule_priority": 60,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "7-887"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "2:1",
+            "components": [
+              {
+                "grams": 20,
+                "shade_code": "6-88"
+              },
+              {
+                "grams": 10,
+                "shade_code": "8-77"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "6-88 + 8-77 (2:1) 20g 6-88 + 10g 8-77 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_026",
+          "rule_name": "igora_recreate_8-2",
+          "rule_priority": 61,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "8-2"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "1:1",
+            "components": [
+              {
+                "grams": 15,
+                "shade_code": "8-0"
+              },
+              {
+                "grams": 15,
+                "shade_code": "8-11"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "8-0 + 8-11 (1:1) 15g 8-0 + 15g 8-11 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_027",
+          "rule_name": "igora_recreate_8-3",
+          "rule_priority": 62,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "8-3"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "10:0.5",
+            "components": [
+              {
+                "grams": 30,
+                "shade_code": "8-0"
+              },
+              {
+                "grams": 2,
+                "shade_code": "0-33"
+              }
+            ],
+            "developer_grams": 32.0,
+            "recreation_formula_text": "8-0 + 0-33 (10:0.5) 30g 8-0 + 2g 0-33 + 32g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_028",
+          "rule_name": "igora_recreate_8-5",
+          "rule_priority": 63,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "8-5"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "1:1",
+            "components": [
+              {
+                "grams": 15,
+                "shade_code": "8-65"
+              },
+              {
+                "grams": 15,
+                "shade_code": "8-55"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "8-65 + 8-55 (1:1) 15g 8-65 + 15g 8-55 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_029",
+          "rule_name": "igora_recreate_8-7",
+          "rule_priority": 64,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "8-7"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "1:6",
+            "components": [
+              {
+                "grams": 5,
+                "shade_code": "9-0"
+              },
+              {
+                "grams": 30,
+                "shade_code": "8-77"
+              }
+            ],
+            "developer_grams": 35.0,
+            "recreation_formula_text": "9-0 + 8-77 (1:6) 5g 9-0 + 30g 8-77 + 35g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_030",
+          "rule_name": "igora_recreate_9-01",
+          "rule_priority": 65,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "9-01"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "3:1",
+            "components": [
+              {
+                "grams": 30,
+                "shade_code": "9-00"
+              },
+              {
+                "grams": 10,
+                "shade_code": "0-11"
+              }
+            ],
+            "developer_grams": 40.0,
+            "recreation_formula_text": "9-00 + 0-11 (3:1) 30g 9-00 + 10g 0-11 + 40g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_031",
+          "rule_name": "igora_recreate_9-05",
+          "rule_priority": 66,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "9-05"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "1:1",
+            "components": [
+              {
+                "grams": 15,
+                "shade_code": "9-0"
+              },
+              {
+                "grams": 15,
+                "shade_code": "8-55"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "9-0 + 8-55 (1:1) 15g 9-0 + 15g 8-55 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_032",
+          "rule_name": "igora_recreate_9-2",
+          "rule_priority": 67,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "9-2"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": false,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "no mixing possible",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_033",
+          "rule_name": "igora_recreate_9-5",
+          "rule_priority": 68,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "9-5"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "9-55",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_034",
+          "rule_name": "igora_recreate_9.5-0",
+          "rule_priority": 69,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "9.5-0"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "D-0 D-0",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_035",
+          "rule_name": "igora_recreate_9.5-5",
+          "rule_priority": 70,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "9.5-5"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": false,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "no mixing possible",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_036",
+          "rule_name": "igora_recreate_10-2",
+          "rule_priority": 71,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "10-2"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "2:1",
+            "components": [
+              {
+                "grams": 20,
+                "shade_code": "10-0"
+              },
+              {
+                "grams": 10,
+                "shade_code": "9.5-22"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "10-0 + 9.5-22 (2:1) 20g 10-0 + 10g 9.5-22+ 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_037",
+          "rule_name": "igora_recreate_10-5",
+          "rule_priority": 72,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "10-5"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "14:1",
+            "components": [
+              {
+                "grams": 28,
+                "shade_code": "10-4"
+              },
+              {
+                "grams": 2,
+                "shade_code": "0-55"
+              }
+            ],
+            "developer_grams": 30.0,
+            "recreation_formula_text": "10-4 + 0-55 (14:1) 28g 10-4 + 2g 0-55 + 30g IGORA ROYAL Oil Developer",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_038",
+          "rule_name": "igora_recreate_100-4",
+          "rule_priority": 73,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "100-4"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": "more intense",
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "L-44 (more intense) L-44",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_039",
+          "rule_name": "igora_recreate_100-5",
+          "rule_priority": 74,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "100-5"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": false,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "no mixing possible",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
+          }
+        },
+        {
+          "rule_id": "SK_IGORA_REC_040",
+          "rule_name": "igora_recreate_E-00",
+          "rule_priority": 75,
+          "rule_category": "correction",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "target_shade_code",
+                "op": "=",
+                "value": "E-00"
+              }
+            ]
+          },
+          "rule_action": {
+            "migration_recreation_formula": true,
+            "mixing_possible": true,
+            "ratio": null,
+            "components": [],
+            "developer_grams": null,
+            "recreation_formula_text": "E-0 E-0",
+            "warning": "Previous-shade recreation formula from IGORA ROYAL page 6 cheat sheet; not an active inventory shade."
           }
         }
       ]
@@ -1605,6 +4296,162 @@
               "use_product": "Full Spectrum Deposit-Only Color Treatment + Universal ØN"
             },
             "warning": "Apply per Aveda Full Spectrum manufacturer chart: aveda_precoloration_target_level_formula_matrix"
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand_name": "L'Oréal Professionnel",
+      "product_line_name": "Dia Light",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "LP_DIA_LIGH_001",
+          "rule_name": "loreal_dia_standard_preparation",
+          "rule_priority": 46,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": [
+                  "Dia Light",
+                  "Dia Richesse"
+                ]
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "loreal_dia_standard_preparation",
+            "seed_rule_category": "developer",
+            "manufacturer_rule_action": {
+              "haircolor_amount_oz": 1.7,
+              "diactivateur_amount_oz": 2.6,
+              "diactivateur_options": [
+                "6-vol 1.8%",
+                "9-vol 2.7%",
+                "15-vol 4.5%"
+              ],
+              "processing_time_min": [
+                2,
+                20
+              ],
+              "application": "dry unwashed hair",
+              "metallic_tools": false
+            },
+            "warning": "Apply per manufacturer chart: loreal_dia_standard_preparation"
+          }
+        },
+        {
+          "rule_id": "LP_DIA_LIGH_002",
+          "rule_name": "loreal_dia_light_zero_lift_acidic",
+          "rule_priority": 47,
+          "rule_category": "deposit",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Dia Light"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "loreal_dia_light_zero_lift_acidic",
+            "seed_rule_category": "product_type",
+            "manufacturer_rule_action": {
+              "lift_levels": 0,
+              "technology": "gentle acid demi-permanent gel-crème without ammonia",
+              "best_for": [
+                "color-treated hair",
+                "sensitized hair",
+                "correction",
+                "personalization"
+              ]
+            },
+            "warning": "Apply per manufacturer chart: loreal_dia_light_zero_lift_acidic"
+          }
+        },
+        {
+          "rule_id": "LP_DIA_LIGH_003",
+          "rule_name": "loreal_dia_refreshing_technique",
+          "rule_priority": 48,
+          "rule_category": "application",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": [
+                  "Dia Light",
+                  "Dia Richesse"
+                ]
+              },
+              {
+                "field": "seed_service",
+                "op": "=",
+                "value": "color_refreshing"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "loreal_dia_refreshing_technique",
+            "seed_rule_category": "application",
+            "manufacturer_rule_action": {
+              "use_matching_dia_light_if": [
+                "INOA regrowth",
+                "LUO regrowth"
+              ],
+              "use_dia_richesse_if": [
+                "Majirel regrowth"
+              ],
+              "apply_to": "faded mid-lengths and ends 20 minutes before end of permanent color development",
+              "diactivateur_options": {
+                "minimum_fading": "warm lighter target shade with 6-vol",
+                "moderate_fading": "warm target shade same level with 6-vol",
+                "maximum_fading": "warm target shade same level with 9-vol"
+              }
+            },
+            "warning": "Apply per manufacturer chart: loreal_dia_refreshing_technique"
+          }
+        }
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand_name": "L'Oréal Professionnel",
+      "product_line_name": "Dia Richesse",
+      "requires_stage12_inventory_addition": false,
+      "override_rules": [
+        {
+          "rule_id": "LP_DIA_RICH_001",
+          "rule_name": "loreal_dia_richesse_coverage_lift",
+          "rule_priority": 46,
+          "rule_category": "gray_coverage",
+          "evidence_status": "manufacturer_stated",
+          "rule_condition": {
+            "all_of": [
+              {
+                "field": "seed_line",
+                "op": "=",
+                "value": "Dia Richesse"
+              }
+            ]
+          },
+          "rule_action": {
+            "seed_rule_name": "loreal_dia_richesse_coverage_lift",
+            "seed_rule_category": "gray_coverage",
+            "manufacturer_rule_action": {
+              "white_hair_coverage_pct": "up to 70",
+              "lift_levels": "up to 1.5",
+              "technology": "advanced alkaline demi-permanent crème without ammonia"
+            },
+            "warning": "Apply per manufacturer chart: loreal_dia_richesse_coverage_lift"
           }
         }
       ]

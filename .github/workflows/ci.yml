@@ -88,6 +88,8 @@ jobs:
           set -o pipefail
           mkdir -p test-logs
           python -m unittest \
+            api.test_ai_mock \
+            api.test_ai_service_config \
             api.test_production_api \
             api.test_api \
             src.test_fill_shade_lookup \

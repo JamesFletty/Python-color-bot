@@ -3662,6 +3662,125 @@
       "notes": [
         "1034804579-2025-Product-Guide-Avec-Compression.pdf; batch09 seed package."
       ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Koleston Perfect::US",
+      "brand_name": "Wella Professionals",
+      "product_line_name": "Koleston Perfect",
+      "source_title": "Wella Koleston Perfect ME+ colour chart",
+      "source_type": "manufacturer_pdf",
+      "source_url": null,
+      "publisher_domain": "wella.com",
+      "publication_or_revision_date": null,
+      "file_type": "pdf",
+      "access_status": "available_uploaded_pdf",
+      "region_or_market": "US",
+      "coverage_summary": "Koleston Perfect ME+ Pure Naturals, Rich Naturals, Deep Browns, Vibrant Reds, Special Blondes, Special Mix.",
+      "expected_data_types_present": [
+        "shade_codes",
+        "mixing_rules",
+        "processing_times",
+        "lift_rules"
+      ],
+      "source_priority_tier": 1,
+      "notes": [
+        "Wella-Professionals-Koleston-Perfect-ME-Colour-Chart.pdf; batch10 seed package."
+      ]
+    },
+    {
+      "canonical_key": "Wella Professionals::Color Touch::US",
+      "brand_name": "Wella Professionals",
+      "product_line_name": "Color Touch",
+      "source_title": "Wella Color Touch system (Rob Eaton 2020 eBook)",
+      "source_type": "manufacturer_pdf",
+      "source_url": null,
+      "publisher_domain": "wella.com",
+      "publication_or_revision_date": "2020",
+      "file_type": "pdf",
+      "access_status": "available_uploaded_pdf",
+      "region_or_market": "US",
+      "coverage_summary": "Color Touch Plus, Sunlights, Relights, Special Mix, Instamatic rules and shades.",
+      "expected_data_types_present": [
+        "shade_codes",
+        "mixing_rules",
+        "processing_times"
+      ],
+      "source_priority_tier": 1,
+      "notes": [
+        "Color-Touch-Rob-Eaton-2020-eBook.pdf; batch10 seed package."
+      ]
+    },
+    {
+      "canonical_key": "Matrix::SoColor::US",
+      "brand_name": "Matrix",
+      "product_line_name": "SoColor",
+      "source_title": "Matrix 2023 Haircolor Manual",
+      "source_type": "manufacturer_pdf",
+      "source_url": null,
+      "publisher_domain": "matrix.com",
+      "publication_or_revision_date": "2023",
+      "file_type": "pdf",
+      "access_status": "available_uploaded_pdf",
+      "region_or_market": "US",
+      "coverage_summary": "Hair Diversity Matrix, SoColor/Coil Color/Sync/Tonal Control rules and selected shades.",
+      "expected_data_types_present": [
+        "shade_codes",
+        "mixing_rules",
+        "lift_rules",
+        "underlying_pigment"
+      ],
+      "source_priority_tier": 1,
+      "notes": [
+        "856079182-2023-Matrix-Manual-Haircolor.pdf; batch10 seed package."
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand_name": "L'Oréal Professionnel",
+      "product_line_name": "Dia Light",
+      "source_title": "L'Oréal Professionnel Dia Light / Dia Richesse color chart",
+      "source_type": "manufacturer_pdf",
+      "source_url": null,
+      "publisher_domain": "lorealprofessionnel.com",
+      "publication_or_revision_date": null,
+      "file_type": "pdf",
+      "access_status": "available_uploaded_pdf",
+      "region_or_market": "US",
+      "coverage_summary": "Dia Light and Dia Richesse shade chart, Diactivateur preparation, coverage and refresh rules.",
+      "expected_data_types_present": [
+        "shade_codes",
+        "mixing_rules",
+        "processing_times"
+      ],
+      "source_priority_tier": 1,
+      "notes": [
+        "366028726-Loreal-Professionnel-Dia-Color-Chart.pdf; batch10 seed package."
+      ]
+    },
+    {
+      "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",
+      "brand_name": "Schwarzkopf Professional",
+      "product_line_name": "IGORA ROYAL",
+      "source_title": "IGORA ROYAL quick-starter guide (shade chart, recreation formulas, technical)",
+      "source_type": "manufacturer_pdf",
+      "source_url": null,
+      "publisher_domain": "schwarzkopf-professional.com",
+      "publication_or_revision_date": null,
+      "file_type": "pdf",
+      "access_status": "available_uploaded_pdf",
+      "region_or_market": "US",
+      "coverage_summary": "Quick-starter assortment pages 4-5, previous-shade recreation cheat sheet page 6, technical pages 7-10.",
+      "expected_data_types_present": [
+        "shade_codes",
+        "mixing_rules",
+        "gray_coverage",
+        "lift_rules",
+        "formula_recreation"
+      ],
+      "source_priority_tier": 1,
+      "notes": [
+        "445122692-schwarzkopf-quick-starter-guide(1).pdf; batch11 v5 CSV seed package."
+      ]
     }
   ],
   "missing_source_targets": [

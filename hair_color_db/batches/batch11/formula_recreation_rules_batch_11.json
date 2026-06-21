@@ -1,0 +1,738 @@
+{
+  "artifact": "formula_recreation_rules",
+  "batch": 11,
+  "count": 40,
+  "formula_recreation_rules": [
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "3-1",
+      "recreation_formula_text": "4-13 + 1-1 (2:1) 20g 4-13 + 10g 1-1 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "2:1",
+      "components": [
+        {
+          "grams": 20,
+          "shade_code": "4-13"
+        },
+        {
+          "grams": 10,
+          "shade_code": "1-1"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "3-99",
+      "recreation_formula_text": "4-99 + 4-0 (2:1) 20g 4-99 + 10g 4-0 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "2:1",
+      "components": [
+        {
+          "grams": 20,
+          "shade_code": "4-99"
+        },
+        {
+          "grams": 10,
+          "shade_code": "4-0"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "4-07",
+      "recreation_formula_text": "4-0 + 5-7 (3:1) 30g 4-0 + 10g 5-7 + 40g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "3:1",
+      "components": [
+        {
+          "grams": 30,
+          "shade_code": "4-0"
+        },
+        {
+          "grams": 10,
+          "shade_code": "5-7"
+        }
+      ],
+      "developer_grams": 40.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "4-1",
+      "recreation_formula_text": "5-0 + 4-13 (1:2) 10g 5-0 + 20g 4-13 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "1:2",
+      "components": [
+        {
+          "grams": 10,
+          "shade_code": "5-0"
+        },
+        {
+          "grams": 20,
+          "shade_code": "4-13"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "4-57",
+      "recreation_formula_text": "5-57 + 4-68 (1:1) 15g 5-57 + 15g 4-68 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "1:1",
+      "components": [
+        {
+          "grams": 15,
+          "shade_code": "5-57"
+        },
+        {
+          "grams": 15,
+          "shade_code": "4-68"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "4-89",
+      "recreation_formula_text": "4-0 + 0-88 + 0-99 (3:2:1) 30g 4-0 + 20g 0-88 + 10g 0-99 + 60g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "3:2:1",
+      "components": [
+        {
+          "grams": 30,
+          "shade_code": "4-0"
+        },
+        {
+          "grams": 20,
+          "shade_code": "0-88"
+        },
+        {
+          "grams": 10,
+          "shade_code": "0-99"
+        }
+      ],
+      "developer_grams": 60.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "5-3",
+      "recreation_formula_text": "5-0 + 0-33 (10:0.5) 30g 5-0 + 2g 0-33 + 32g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "10:0.5",
+      "components": [
+        {
+          "grams": 30,
+          "shade_code": "5-0"
+        },
+        {
+          "grams": 2,
+          "shade_code": "0-33"
+        }
+      ],
+      "developer_grams": 32.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "5-889",
+      "recreation_formula_text": "6-88 + 6-99 (3:1) 30g 6-88 + 10g 6-99 + 40g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "3:1",
+      "components": [
+        {
+          "grams": 30,
+          "shade_code": "6-88"
+        },
+        {
+          "grams": 10,
+          "shade_code": "6-99"
+        }
+      ],
+      "developer_grams": 40.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "5-89",
+      "recreation_formula_text": "5-88 + 5-99 (3:2) 30g 5-88 + 20g 5-99 + 50g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "3:2",
+      "components": [
+        {
+          "grams": 30,
+          "shade_code": "5-88"
+        },
+        {
+          "grams": 20,
+          "shade_code": "5-99"
+        }
+      ],
+      "developer_grams": 50.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "6-05",
+      "recreation_formula_text": "6-00 + 6-5 (3:4) 15g 6-00 + 20g 6-5 + 35g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "3:4",
+      "components": [
+        {
+          "grams": 15,
+          "shade_code": "6-00"
+        },
+        {
+          "grams": 20,
+          "shade_code": "6-5"
+        }
+      ],
+      "developer_grams": 35.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "6-07",
+      "recreation_formula_text": "no mixing possible",
+      "mixing_possible": false,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "6-2",
+      "recreation_formula_text": "no mixing possible",
+      "mixing_possible": false,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "6-57",
+      "recreation_formula_text": "5-68 + 7-57 (1:1) 15g 5-68 + 15g 7-57 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "1:1",
+      "components": [
+        {
+          "grams": 15,
+          "shade_code": "5-68"
+        },
+        {
+          "grams": 15,
+          "shade_code": "7-57"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "6-7",
+      "recreation_formula_text": "6-77",
+      "mixing_possible": true,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "6-87",
+      "recreation_formula_text": "6-0 + 6-88 + 6-77 (1:1:1) 10g 6-0 + 10g 6-88 + 10g 6-77 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "1:1:1",
+      "components": [
+        {
+          "grams": 10,
+          "shade_code": "6-0"
+        },
+        {
+          "grams": 10,
+          "shade_code": "6-88"
+        },
+        {
+          "grams": 10,
+          "shade_code": "6-77"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "6-888",
+      "recreation_formula_text": "6-88",
+      "mixing_possible": true,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "6-89",
+      "recreation_formula_text": "5-88 + 6-99 (1:2) 10g 5-88 + 20g 6-99 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "1:2",
+      "components": [
+        {
+          "grams": 10,
+          "shade_code": "5-88"
+        },
+        {
+          "grams": 20,
+          "shade_code": "6-99"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "7-05",
+      "recreation_formula_text": "7-00 + 7-5 (2:1) 20g 7-00 + 10g 7-5 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "2:1",
+      "components": [
+        {
+          "grams": 20,
+          "shade_code": "7-00"
+        },
+        {
+          "grams": 10,
+          "shade_code": "7-5"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "7-12",
+      "recreation_formula_text": "6-12 + 8-11 (1:1) 15g 6-12 + 15g 8-11 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "1:1",
+      "components": [
+        {
+          "grams": 15,
+          "shade_code": "6-12"
+        },
+        {
+          "grams": 15,
+          "shade_code": "8-11"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "7-2",
+      "recreation_formula_text": "no mixing possible",
+      "mixing_possible": false,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "7-3",
+      "recreation_formula_text": "7-0 + 0-33 (10:0.4) 30g 7-0 + 1g 0-33 + 31g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "10:0.4",
+      "components": [
+        {
+          "grams": 30,
+          "shade_code": "7-0"
+        },
+        {
+          "grams": 1,
+          "shade_code": "0-33"
+        }
+      ],
+      "developer_grams": 31.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "7-5",
+      "recreation_formula_text": "7-55",
+      "mixing_possible": true,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "7-7",
+      "recreation_formula_text": "7-57 + 7-77 (1:3) 10g 7-57 + 30g 7-77 + 40g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "1:3",
+      "components": [
+        {
+          "grams": 10,
+          "shade_code": "7-57"
+        },
+        {
+          "grams": 30,
+          "shade_code": "7-77"
+        }
+      ],
+      "developer_grams": 40.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "7-87",
+      "recreation_formula_text": "7-77 + 6-88 (2:1) 20g 7-77 + 10g 6-88 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "2:1",
+      "components": [
+        {
+          "grams": 20,
+          "shade_code": "7-77"
+        },
+        {
+          "grams": 10,
+          "shade_code": "6-88"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "7-887",
+      "recreation_formula_text": "6-88 + 8-77 (2:1) 20g 6-88 + 10g 8-77 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "2:1",
+      "components": [
+        {
+          "grams": 20,
+          "shade_code": "6-88"
+        },
+        {
+          "grams": 10,
+          "shade_code": "8-77"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "8-2",
+      "recreation_formula_text": "8-0 + 8-11 (1:1) 15g 8-0 + 15g 8-11 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "1:1",
+      "components": [
+        {
+          "grams": 15,
+          "shade_code": "8-0"
+        },
+        {
+          "grams": 15,
+          "shade_code": "8-11"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "8-3",
+      "recreation_formula_text": "8-0 + 0-33 (10:0.5) 30g 8-0 + 2g 0-33 + 32g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "10:0.5",
+      "components": [
+        {
+          "grams": 30,
+          "shade_code": "8-0"
+        },
+        {
+          "grams": 2,
+          "shade_code": "0-33"
+        }
+      ],
+      "developer_grams": 32.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "8-5",
+      "recreation_formula_text": "8-65 + 8-55 (1:1) 15g 8-65 + 15g 8-55 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "1:1",
+      "components": [
+        {
+          "grams": 15,
+          "shade_code": "8-65"
+        },
+        {
+          "grams": 15,
+          "shade_code": "8-55"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "8-7",
+      "recreation_formula_text": "9-0 + 8-77 (1:6) 5g 9-0 + 30g 8-77 + 35g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "1:6",
+      "components": [
+        {
+          "grams": 5,
+          "shade_code": "9-0"
+        },
+        {
+          "grams": 30,
+          "shade_code": "8-77"
+        }
+      ],
+      "developer_grams": 35.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "9-01",
+      "recreation_formula_text": "9-00 + 0-11 (3:1) 30g 9-00 + 10g 0-11 + 40g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "3:1",
+      "components": [
+        {
+          "grams": 30,
+          "shade_code": "9-00"
+        },
+        {
+          "grams": 10,
+          "shade_code": "0-11"
+        }
+      ],
+      "developer_grams": 40.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "9-05",
+      "recreation_formula_text": "9-0 + 8-55 (1:1) 15g 9-0 + 15g 8-55 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "1:1",
+      "components": [
+        {
+          "grams": 15,
+          "shade_code": "9-0"
+        },
+        {
+          "grams": 15,
+          "shade_code": "8-55"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "9-2",
+      "recreation_formula_text": "no mixing possible",
+      "mixing_possible": false,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "9-5",
+      "recreation_formula_text": "9-55",
+      "mixing_possible": true,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "9.5-0",
+      "recreation_formula_text": "D-0 D-0",
+      "mixing_possible": true,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "9.5-5",
+      "recreation_formula_text": "no mixing possible",
+      "mixing_possible": false,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "10-2",
+      "recreation_formula_text": "10-0 + 9.5-22 (2:1) 20g 10-0 + 10g 9.5-22+ 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "2:1",
+      "components": [
+        {
+          "grams": 20,
+          "shade_code": "10-0"
+        },
+        {
+          "grams": 10,
+          "shade_code": "9.5-22"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "10-5",
+      "recreation_formula_text": "10-4 + 0-55 (14:1) 28g 10-4 + 2g 0-55 + 30g IGORA ROYAL Oil Developer",
+      "mixing_possible": true,
+      "ratio": "14:1",
+      "components": [
+        {
+          "grams": 28,
+          "shade_code": "10-4"
+        },
+        {
+          "grams": 2,
+          "shade_code": "0-55"
+        }
+      ],
+      "developer_grams": 30.0,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "100-4",
+      "recreation_formula_text": "L-44 (more intense) L-44",
+      "mixing_possible": true,
+      "ratio": "more intense",
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "100-5",
+      "recreation_formula_text": "no mixing possible",
+      "mixing_possible": false,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "product_line": "IGORA ROYAL",
+      "previous_shade_code": "E-00",
+      "recreation_formula_text": "E-0 E-0",
+      "mixing_possible": true,
+      "ratio": null,
+      "components": [],
+      "developer_grams": null,
+      "source_key": "schwarzkopf_professional_igora_royal_mixing_recommendations_p6",
+      "evidence_status": "manufacturer_stated"
+    }
+  ]
+}

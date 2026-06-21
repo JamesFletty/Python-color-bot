@@ -10,33 +10,30 @@ from typing import Any
 from collections.abc import Awaitable, Callable
 
 from fastapi import FastAPI, HTTPException, Request, Response
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy import func, select, text
 from sqlalchemy.exc import SQLAlchemyError
 
+from api.backend import cors_origins, db_path, docs_enabled, uses_postgres_engine
+from api.formula_dispatch import run_formula_request
 from api.schemas import FormulaRequest, HealthResponse, AIFormulaRequest, AITranslateRequest, AIFormulaResponse
-from hair_color_db.production.catalog_lookup import DEFAULT_SUB_RANGE, resolve_from_shade_reference
 from hair_color_db.production.consultation_service import (
     consultation_payload,
     update_consultation_status,
 )
 from hair_color_db.production.db import create_session_factory, require_database_url
-from hair_color_db.production.engine_models import EngineInput, SelectedShade, ServiceIntent
 from hair_color_db.production.production_models import (
     ConsultationStatus,
     FormulationRule,
-    HairTexture,
-    RecommendationType,
     Shade,
 )
 from hair_color_db.production.production_schemas import (
     ConsultationResponse,
     ConsultationUpdate,
 )
-from hair_color_db.production.run_production_engine import run_production_engine
-from src.formula_engine_service import http_status_for_formula, run_formula_engine
-from src.paths import DEFAULT_DB_PATH
+from src.formula_engine_service import http_status_for_formula
 from src.paths import EXPECTED_SHADE_COUNT
 
 ConsultationStatusUpdate = ConsultationUpdate
@@ -45,18 +42,33 @@ app = FastAPI(
     title="Hair Color Formula Engine",
     description="HTTP wrapper over the SQLite and PostgreSQL formula engines.",
     version="0.2.0",
+    docs_url="/docs" if docs_enabled() else None,
+    redoc_url="/redoc" if docs_enabled() else None,
+    openapi_url="/openapi.json" if docs_enabled() else None,
 )
+
+_allowed_origins = cors_origins()
+if _allowed_origins:
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=_allowed_origins,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
 
 # ── Static frontend ───────────────────────────────────────────────────────────
 _FRONTEND_DIST = Path(__file__).parent.parent / "static" / "dist"
 
 
 def _db_path() -> Path:
-    return Path(os.environ.get("FORMULA_DB_PATH", DEFAULT_DB_PATH))
+    return db_path()
 
 
 def _engine_backend() -> str:
-    return os.environ.get("ENGINE_BACKEND", "sqlite").strip().lower()
+    from api.backend import engine_backend
+
+    return engine_backend()
 
 
 def _request_auth_context(request: Request) -> dict[str, uuid.UUID | None]:
@@ -142,14 +154,22 @@ def _production_health() -> HealthResponse:
 def get_brands():
     """Return all brands and their product lines."""
     from api.catalog import get_brands_and_lines
-    return get_brands_and_lines()
+
+    try:
+        return get_brands_and_lines()
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
 
 
 @app.get("/api/shades")
-def get_shades(line_id: int | None = None, q: str | None = None, limit: int = 40):
+def get_shades(line_id: str | None = None, q: str | None = None, limit: int = 40):
     """Search shades by line and/or query string."""
     from api.catalog import search_shades
-    return search_shades(line_id=line_id, query=q, limit=min(limit, 100))
+
+    try:
+        return search_shades(line_id=line_id, query=q, limit=min(limit, 100))
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
 
 
 # ── AI routes ─────────────────────────────────────────────────────────────────
@@ -157,7 +177,7 @@ def get_shades(line_id: int | None = None, q: str | None = None, limit: int = 40
 @app.post("/api/ai/formula", response_model=AIFormulaResponse)
 async def ai_formula(body: AIFormulaRequest):
     """Parse natural-language input → formula engine → AI explanation."""
-    from api.ai_service import parse_formula_request, explain_formula
+    from api.ai_service import AIConfigurationError, explain_formula, get_ai_settings, parse_formula_request
 
     # Step 1: AI parses input into structured engine params
     try:
@@ -166,6 +186,8 @@ async def ai_formula(body: AIFormulaRequest):
             color_line=body.color_line,
             canonical_key=body.canonical_key,
         )
+    except AIConfigurationError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"AI parsing failed: {exc}") from exc
 
@@ -182,7 +204,9 @@ async def ai_formula(body: AIFormulaRequest):
             porosity=int(parsed.get("porosity", 5)),
             elasticity=int(parsed.get("elasticity", 6)),
         )
-        formula = run_formula_engine(req.to_engine_request(db_path=_db_path()))
+        formula = run_formula_request(req)
+    except HTTPException:
+        raise
     except Exception as exc:
         raise HTTPException(status_code=422, detail=f"Formula engine error: {exc}") from exc
 
@@ -201,6 +225,7 @@ async def ai_formula(body: AIFormulaRequest):
         formula=formula,
         ai_explanation=explanation,
         structured_request=parsed,
+        ai_provider=get_ai_settings().provider,
         status="ok",
     )
 
@@ -208,7 +233,7 @@ async def ai_formula(body: AIFormulaRequest):
 @app.post("/api/ai/translate", response_model=AIFormulaResponse)
 async def ai_translate(body: AITranslateRequest):
     """Translate a formula from one color line to another with AI."""
-    from api.ai_service import translate_formula, explain_formula
+    from api.ai_service import AIConfigurationError, explain_formula, get_ai_settings, translate_formula
 
     # Step 1: AI translates formula to target line params
     try:
@@ -218,6 +243,8 @@ async def ai_translate(body: AITranslateRequest):
             target_line=body.target_line,
             target_canonical_key=body.target_canonical_key,
         )
+    except AIConfigurationError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"AI translation failed: {exc}") from exc
 
@@ -236,7 +263,9 @@ async def ai_translate(body: AITranslateRequest):
             porosity=int(parsed.get("porosity", 5)),
             elasticity=int(parsed.get("elasticity", 6)),
         )
-        formula = run_formula_engine(req.to_engine_request(db_path=_db_path()))
+        formula = run_formula_request(req)
+    except HTTPException:
+        raise
     except Exception as exc:
         raise HTTPException(status_code=422, detail=f"Formula engine error: {exc}") from exc
 
@@ -257,6 +286,7 @@ async def ai_translate(body: AITranslateRequest):
         ai_explanation=explanation,
         structured_request=parsed,
         translation_notes=translation_notes,
+        ai_provider=get_ai_settings().provider,
         status="ok",
     )
 
@@ -279,70 +309,17 @@ def health() -> HealthResponse:
 
 
 def _production_formula(body: FormulaRequest, auth_context: dict | None = None) -> dict[str, Any]:
-    database_url = require_database_url()
-    if not database_url:
-        raise HTTPException(status_code=503, detail="DATABASE_URL is required for PostgreSQL backend")
-
-    try:
-        SessionLocal = create_session_factory(database_url=database_url)
-        with SessionLocal() as session:
-            catalog = resolve_from_shade_reference(
-                session,
-                body.shade,
-                product_line_hint=body.line,
-            )
-            sub_range_name = (
-                body.sub_ranges[0] if body.sub_ranges else catalog.sub_range_name or DEFAULT_SUB_RANGE
-            )
-            engine_input = EngineInput(
-                consultation_id=uuid.uuid4(),
-                line_id=catalog.line_id,
-                brand_id=catalog.brand_id,
-                line_region_id=catalog.line_region_id,
-                natural_level=int(body.current_level or body.desired_level or 5),
-                existing_level=int(body.existing_level) if body.existing_level is not None else None,
-                porosity=body.porosity,
-                elasticity=body.elasticity,
-                gray_percentage=int(body.gray or 0),
-                texture=HairTexture(body.texture),
-                desired_result=body.desired_result,
-                desired_level=int(body.desired_level) if body.desired_level is not None else None,
-                service_intent=ServiceIntent(body.service_intent),
-                recommendation_type=RecommendationType(body.recommendation_type),
-                selected_shades=[
-                    SelectedShade(
-                        shade_id=catalog.shade_id,
-                        shade_code=catalog.shade_code,
-                        sub_range_name=sub_range_name,
-                    )
-                ],
-            )
-            context_overrides: dict[str, object] = {}
-            if body.sub_ranges:
-                context_overrides["selected_sub_ranges"] = list(body.sub_ranges)
-            return run_production_engine(
-                session,
-                engine_input,
-                line_region_id=catalog.line_region_id,
-                context_overrides=context_overrides or None,
-                persist=body.persist,
-            )
-    except LookupError as exc:
-        raise HTTPException(status_code=404, detail=str(exc)) from exc
-    except ValueError as exc:
-        raise HTTPException(status_code=422, detail=str(exc)) from exc
-    except SQLAlchemyError as exc:
-        raise HTTPException(status_code=503, detail="PostgreSQL backend unavailable") from exc
+    return run_formula_request(body, auth_context=auth_context)
 
 
 @app.post("/formula")
 def build_formula_endpoint(body: FormulaRequest, request: Request):
     """Build a formula from shade reference and hair condition parameters."""
-    if _engine_backend() in {"postgres", "postgresql", "pg", "production"}:
+    if uses_postgres_engine():
         return _production_formula(body)
 
     try:
-        formula = run_formula_engine(body.to_engine_request(db_path=_db_path()))
+        formula = run_formula_request(body)
     except FileNotFoundError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
 

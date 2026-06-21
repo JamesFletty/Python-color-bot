@@ -1,6 +1,6 @@
 {
   "artifact": "line_technical_records",
-  "count": 36,
+  "count": 37,
   "line_technical_records": [
     {
       "canonical_key": "Redken::Shades EQ Gloss::US",
@@ -282,7 +282,9 @@
       "color_type": "permanent",
       "default_mixing_ratio": [
         "igora_royal_standard_mix_process: \"1:1\"",
-        "igora_fashion_lights_off_scalp_only: \"1:1\""
+        "igora_fashion_lights_off_scalp_only: \"1:1\"",
+        "igora_royal_natural_standard_use: \"1:1\"",
+        "igora_royal_fashion_lights: \"1:1\""
       ],
       "developer_options": [
         "IGORA ROYAL Oil Developer 3% (10 Vol.)",
@@ -290,7 +292,12 @@
         "IGORA ROYAL Oil Developer 9% (30 Vol.)",
         "IGORA ROYAL Oil Developer 12% (40 Vol.)",
         "igora_royal_standard_mix_process: {\"mixing_ratio\": \"1:1\", \"developer_volumes\": [10, 20, 30], \"processing_time_min\": [30, 45], \"apply_to\": \"dry_unwashed_hair\"}",
-        "igora_fashion_lights_off_scalp_only: {\"mixing_ratio\": \"1:1\", \"developer_volume\": 40, \"processing_time_min\": [30, 45], \"max_lift_levels\": 5, \"application\": \"off_scalp_only\", \"starting_level_max\": 6}"
+        "igora_fashion_lights_off_scalp_only: {\"mixing_ratio\": \"1:1\", \"developer_volume\": 40, \"processing_time_min\": [30, 45], \"max_lift_levels\": 5, \"application\": \"off_scalp_only\", \"starting_level_max\": 6}",
+        "igora_royal_natural_standard_use: {\"white_hair_coverage_pct\": 100, \"mixing_ratio\": \"1:1\", \"developer_volumes\": [10, 20, 30], \"processing_time_min\": [30, 45], \"notes\": \"Natural shades cover up to level 9.\"}",
+        "igora_royal_fashion_lights: {\"usage\": \"lift and color in one step\", \"max_lift_levels\": 5, \"mixing_ratio\": \"1:1\", \"developer_volume\": 40, \"processing_time_min\": [30, 45], \"application\": \"off_scalp_only\", \"starting_base\": \"6 and darker; dark or colored bases\"}",
+        "igora_royal_virgin_application: {\"apply_to\": \"dry_unwashed_hair\", \"steps\": [\"apply first on mid-lengths and ends in fine sections leaving 1/2 inch regrowth out\", \"develop 10 minutes or 15 minutes for Fashion Shades\", \"apply to regrowth\", \"develop 30-45 minutes\"]}",
+        "igora_royal_regrowth_application: {\"apply_to\": \"dry_unwashed_hair\", \"steps\": [\"apply color only to regrowth area first in fine sections\", \"develop 15-20 minutes\", \"apply IGORA ROYAL or IGORA VIBRANCE demi-permanent color to mid-lengths and ends\", \"develop 10-15 minutes\"]}",
+        "igora_royal_dual_application: {\"description\": \"Permanent IGORA ROYAL for regrowth with IGORA VIBRANCE non-ammonia demi-permanent color for mid-lengths and ends.\", \"steps\": [\"apply permanent IGORA ROYAL to regrowth first\", \"develop 15-20 minutes depending on mids/ends product\", \"apply IGORA VIBRANCE to mid-lengths and ends\", \"development time depends on desired intensity and instructions\"]}"
       ],
       "developer_strengths_if_stated": [
         "3% / 10 Vol.",
@@ -305,7 +312,9 @@
         "One chart block reads '1:1, Development time up to 20 minutes, Recommended 3% (10 Vol.)' - its product binding (likely Pastels or Silver Whites) is ambiguous in the scrambled text layout",
         "IGORA COLOR10 (companion line on same chart): 'in as little as 10 minutes'",
         "igora_royal_standard_mix_process: [30, 45]",
-        "igora_fashion_lights_off_scalp_only: [30, 45]"
+        "igora_fashion_lights_off_scalp_only: [30, 45]",
+        "igora_royal_natural_standard_use: [30, 45]",
+        "igora_royal_fashion_lights: [30, 45]"
       ],
       "gray_coverage_rules": [
         "All IGORA ROYAL and IGORA COLOR10 shades provide up to 50% or 100% white hair coverage.",
@@ -314,14 +323,22 @@
         "Chart lists 'IGORA ROYAL 100% coverage shades:' followed by a garbled token sequence '-0 -0 -1 -4 -63' in the text layer (depth digits lost).",
         "Developer guide: covering 100% white hair -> 6% 20 Vol.; white hair coverage with ABSOLUTES -> 9% 30 Vol.; ABSOLUTES/Natural Extra on more than 90% white hair -> 6% 20 Vol.",
         "igora_fashion_gray_mix_rule: {\"condition\": {\"shade_families\": [\"-11\", \"-12\", \"-13\", \"-5\", \"-55\", \"-57\", \"-6\", \"-63\", \"-65\", \"-68\", \"-7\", \"-77\", \"-88\", \"-98\", \"-99\"], \"gray_pct_min\": 50}, \"action\": {\"mix_with_natural\": \"2:1 fashion:natural\", \"resistant_hair_mix\": \"1:1 fashion:natural\"}}",
-        "igora_neutralizer_amounts_by_level: {\"condition\": {\"shades\": [\"0-11\", \"0-22\", \"0-33\"]}, \"action\": {\"additive_max_pct_by_level\": {\"8-9\": 5, \"6-7\": 15, \"1-5\": 25}, \"developer_increase_proportionally\": true}}"
+        "igora_neutralizer_amounts_by_level: {\"condition\": {\"shades\": [\"0-11\", \"0-22\", \"0-33\"]}, \"action\": {\"additive_max_pct_by_level\": {\"8-9\": 5, \"6-7\": 15, \"1-5\": 25}, \"developer_increase_proportionally\": true}}",
+        "igora_royal_nature_extra_resistant_hair: {\"condition\": {\"sub_range\": \"Nature Extra\", \"tone_code\": \"00\"}, \"action\": {\"white_hair_coverage_pct\": 100, \"mixing_ratio\": \"1:1\", \"default_developer_volume\": 30, \"processing_time_min\": [30, 45], \"tip\": \"For pure color deposit on more than 90% white hair use 20 vol.\"}}",
+        "igora_royal_fashion_gray_blending_mix_natural: {\"condition\": {\"sub_ranges\": [\"Cendré Plus\", \"Gold/Gold Extra\", \"Gold Copper\", \"Chocolate\", \"Chocolate Gold\", \"Chocolate Red\", \"Copper/Copper Extra\", \"Red Extra\", \"Violet Red/Violet Extra\"], \"gray_pct_range\": [50, 100]}, \"action\": {\"white_hair_coverage_pct\": 70, \"mixing_ratio\": \"1:1\", \"coverage_formula\": \"2 parts Fashion Shade : 1 part Natural Shade for 50-100% white hair; fashion shade alone up to 50%; mix 1:1 with natural shade on thick/resistant hair\", \"developer_volumes\": [10, 20, 30], \"processing_time_min\": [30, 45]}}",
+        "igora_royal_neutralizer_amount_by_level: {\"condition\": {\"modifier_codes\": [\"0-11\", \"0-22\", \"0-33\"]}, \"action\": {\"amount_by_level\": [{\"levels\": [8, 9], \"max_pct_of_color_cream\": 5}, {\"levels\": [6, 7], \"max_pct_of_color_cream\": 15}, {\"levels\": [1, 2, 3, 4, 5], \"max_pct_of_color_cream\": 25}], \"neutralizes\": {\"0-11\": \"yellow\", \"0-22\": \"orange\", \"0-33\": \"red\"}, \"increase_developer_proportionally\": true}}",
+        "igora_royal_absolutes_mature_hair: {\"condition\": {\"line\": \"IGORA ROYAL Absolutes\", \"tone_codes\": [\"40\", \"50\", \"60\", \"70\", \"80\", \"90\"]}, \"action\": {\"white_hair_coverage_pct\": 100, \"mixing_ratio\": \"1:1\", \"developer_volume\": 30, \"processing_time_min\": [30, 45], \"tip\": \"For pure color deposit on more than 90% white hair use 20 vol.\"}}"
       ],
       "lift_rules": [
         "Oil Developer usage table: coloring darker / 0 levels -> 3% 10 Vol. or 6% 20 Vol.; lifting 1-2 levels -> 6% 20 Vol.; lifting 2-3 levels -> 9% 30 Vol.; lifting up to 3 levels with Ultra Blonde (10-) and 3-4 levels with Special Blonde (12-) -> 9% 30 Vol.; lifting 3-4 levels with Ultra Blonde (10-) and 4-5 levels with Special Blonde (12-) -> 12% 40 Vol.",
         "Footnote: '4-5 levels of lift are achievable on natural base 6 and lighter.'",
         "Highlifts mixing: Ultra Blonde (10- Series) 1:1; Special Blonde (12- Series) 1:2; both 30-45 minutes.",
         "igora_royal_10_series_highlift: {\"mixing_ratio\": \"1:1\", \"developer_options\": [{\"volume\": 30, \"max_lift_levels\": 3}, {\"volume\": 40, \"max_lift_levels\": 4}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}",
-        "igora_royal_12_series_highlift: {\"mixing_ratio\": \"1:2\", \"developer_options\": [{\"volume\": 30, \"max_lift_levels\": 4}, {\"volume\": 40, \"max_lift_levels\": 5}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}"
+        "igora_royal_12_series_highlift: {\"mixing_ratio\": \"1:2\", \"developer_options\": [{\"volume\": 30, \"max_lift_levels\": 4}, {\"volume\": 40, \"max_lift_levels\": 5}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}",
+        "igora_royal_10_series_ultra_blonde: {\"max_lift_levels\": 4, \"mixing_ratio\": \"1:1\", \"developer_options\": [{\"volume\": 30, \"lift_levels\": 3}, {\"volume\": 40, \"lift_levels\": 4}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}",
+        "igora_royal_12_series_special_blonde: {\"max_lift_levels\": 5, \"mixing_ratio\": \"1:2\", \"developer_options\": [{\"volume\": 30, \"lift_levels\": 4}, {\"volume\": 40, \"lift_levels\": 5}], \"processing_time_min\": [30, 45], \"white_hair_coverage\": false}",
+        "igora_royal_e0_lightening_additive: {\"additional_lift_levels\": 1, \"mixing_ratio\": \"2:1 shade:E-0\", \"developer_volumes\": [10, 20, 30], \"processing_time_min\": [30, 45], \"hair_state\": \"virgin_hair\"}",
+        "igora_royal_e0_lightening_extract_pure: {\"max_lift_levels\": 4, \"mixing_ratio\": \"1:1\", \"developer_volume\": 40, \"processing_time_min\": [30, 45], \"hair_state\": \"virgin_hair\"}"
       ],
       "tone_family_legend": [
         "Tone direction: -0 Natural",
@@ -340,18 +357,28 @@
         "Numbering system (printed): number in front of the dash indicates the depth of the shade and the ideal base to choose; first number after the dash represents the primary tone direction (dominant shade); second number after the dash indicates the secondary tone direction.",
         "Official US page (fetched June 2026): portfolio streamlined from 13 ranges to 5 sub-groups totaling 143 shades - core IGORA ROYAL plus technical lines HIGHLIFTS, FASHION LIGHTS, ABSOLUTES, SILVER WHITES.",
         "Chart safety/usage hints: do not apply on damaged or irritated scalp; avoid pre-shampooing; no head massage shortly before or during coloring; observe correct mixing ratio and development time; rinse completely; do not use heat.",
-        "Chart also covers companion ranges on the same document: IGORA COLOR10 (1:1, as little as 10 minutes), IGORA VIBRANCE demi-permanent, IGORA VARIO BLOND PLUS/EXTRA (1:2, 30-45 minutes), CHROMA ID bonding color masks (up to 10 min; intense masks up to 20 min)."
+        "Chart also covers companion ranges on the same document: IGORA COLOR10 (1:1, as little as 10 minutes), IGORA VIBRANCE demi-permanent, IGORA VARIO BLOND PLUS/EXTRA (1:2, 30-45 minutes), CHROMA ID bonding color masks (up to 10 min; intense masks up to 20 min).",
+        "igora_royal_95_series_pastel_toning: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL Pastels\", \"rule_category\": \"toning\", \"rule_name\": \"igora_royal_95_series_pastel_toning\", \"rule_condition\": {\"sub_range\": \"Pastels\", \"target_level_min\": 9, \"hair_state\": \"pre_lightened_pale_yellow\"}, \"rule_action\": {\"mixing_ratio\": \"1:1\", \"developer_volume\": 10, \"processing_time_min\": [5, 30], \"process_visually\": true, \"usage\": [\"personalization\", \"white refining\", \"neutralization after lightening\"]}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_booster_amount: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL Creative Mixtones\", \"rule_category\": \"tone\", \"rule_name\": \"igora_royal_booster_amount\", \"rule_condition\": {\"modifier_codes\": [\"0-55\", \"0-77\", \"0-88\", \"0-89\", \"0-99\"]}, \"rule_action\": {\"max_pct_of_color_cream\": 50, \"usage\": \"boost fashion tone directions on all levels\", \"increase_developer_proportionally\": true, \"warning\": \"type and amount of mixtone influence target depth\"}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_d0_diluter: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL Extracts\", \"rule_category\": \"tone\", \"rule_name\": \"igora_royal_d0_diluter\", \"rule_condition\": {\"modifier_code\": \"D-0\"}, \"rule_action\": {\"max_pct_of_color_cream\": 50, \"usage\": [\"reduce pigment concentration\", \"create soft pastel tones\"], \"developer_volume\": 10, \"processing_time_min\": [5, 30], \"can_be_used_with_10vol_for_shine_on_light_bases\": true, \"mixing_ratio_when_pure\": \"1:1\"}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_e1_extra_cendre_additive_by_base: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL Extracts\", \"rule_category\": \"tone\", \"rule_name\": \"igora_royal_e1_extra_cendre_additive_by_base\", \"rule_condition\": {\"modifier_code\": \"E-1\", \"usage\": \"mixed_with_target_shade\"}, \"rule_action\": {\"mixing_ratio_by_base\": [{\"base_levels\": [8, 7], \"ratio\": \"2:1 shade:E-1\"}, {\"base_levels\": [6, 5], \"ratio\": \"1:1 shade:E-1\"}, {\"base_levels\": [1, 2, 3, 4], \"ratio\": \"1:2 shade:E-1\"}], \"processing_time_min\": [30, 45], \"usage_note\": \"extra cool tone direction\"}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_e1_extra_cendre_pure: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL Extracts\", \"rule_category\": \"tone\", \"rule_name\": \"igora_royal_e1_extra_cendre_pure\", \"rule_condition\": {\"modifier_code\": \"E-1\", \"usage\": \"used_pure\"}, \"rule_action\": {\"mixing_ratio\": \"1:1\", \"developer_volume\": 10, \"processing_time_min\": [30, 45], \"usage\": \"extra deposit of cool pigments\"}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_developer_10_vol_usage: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL\", \"rule_category\": \"developer\", \"rule_name\": \"igora_royal_developer_10_vol_usage\", \"rule_condition\": {\"developer_volume\": 10}, \"rule_action\": {\"recommended_uses\": [\"coloring darker\", \"covering 100% white hair depending on texture\", \"color deposit on pre-lightened hair\", \"pastel shades\"]}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_developer_20_vol_usage: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL\", \"rule_category\": \"developer\", \"rule_name\": \"igora_royal_developer_20_vol_usage\", \"rule_condition\": {\"developer_volume\": 20}, \"rule_action\": {\"recommended_uses\": [\"tone-on-tone\", \"white hair coverage\", \"lifting 1-2 levels\", \"can achieve 2 levels on fine hair\", \"Absolutes deposit >90% white hair\"]}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_developer_30_vol_usage: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL\", \"rule_category\": \"developer\", \"rule_name\": \"igora_royal_developer_30_vol_usage\", \"rule_condition\": {\"developer_volume\": 30}, \"rule_action\": {\"recommended_uses\": [\"lifting 2-3 levels\", \"-00 series\", \"Absolutes gray coverage\", \"10-series up to 3 levels\", \"12-series 3-4 levels\"]}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}",
+        "igora_royal_developer_40_vol_usage: {\"brand\": \"Schwarzkopf Professional\", \"product_line\": \"IGORA ROYAL\", \"rule_category\": \"developer\", \"rule_name\": \"igora_royal_developer_40_vol_usage\", \"rule_condition\": {\"developer_volume\": 40}, \"rule_action\": {\"recommended_uses\": [\"Fashion Lights\", \"10-series 3-4 levels\", \"12-series 4-5 levels\"]}, \"source_key\": \"schwarzkopf_professional_igora_royal_quick_starter_technical_p7_10\"}"
       ],
       "region_or_market": "US",
       "discontinued_status": "active (current official US line page live as of June 2026)",
       "source_url": "https://skp.media/qr/igora/assets/pdfs/IGORAPaperSwatchChart.pdf ; https://www.schwarzkopf-professional.com/us/en/color/igora/royal.html",
-      "source_document": "IGORA ROYAL technical instructions (445122692-schwarzkopf-quick-starter-guide.pdf pp. 7-10)",
+      "source_document": "IGORA ROYAL technical instructions, developer usage, application methods (445122692-schwarzkopf-quick-starter-guide(1).pdf pp. 7-10)",
       "source_confidence": "high",
       "evidence_status": "manufacturer_stated",
       "assumptions": [
         "Chart copyright 2021 used as publication date; official page fetched June 2026 used for current portfolio claims (143 shades, 5 sub-lines, active status).",
         "Scrambled multi-column text layout means some mixing blocks could not be bound to a named sub-range; only explicitly labeled bindings were recorded.",
-        "Aggregated from normalized seed package technical_rules (batch09)"
+        "Aggregated from normalized seed package technical_rules (batch09)",
+        "Aggregated from normalized seed package technical_rules (batch11)"
       ],
       "data_gaps": [
         "Per-sub-range mixing block for FASHION LIGHTS and SILVER WHITES not unambiguously recoverable (a 1:2 / 30-45 min block and a 1:1 / up to 20 min / 3% block sit adjacent to their labels but binding is uncertain).",
@@ -445,7 +472,8 @@
         "Welloxon Perfect 4%",
         "Welloxon Perfect 6%",
         "Welloxon Perfect 9%",
-        "Welloxon Perfect 12%"
+        "Welloxon Perfect 12%",
+        "wella_kp_standard_processing_times: {\"standard_without_heat_min\": [30, 40], \"standard_with_heat_min\": [15, 25], \"special_blondes_without_heat_min\": [50, 60], \"special_blondes_with_heat_min\": [25, 35], \"pure_soft_balance_after_development_min\": [5, 10]}"
       ],
       "developer_strengths_if_stated": [
         "1.9% (6 Vol) - for color balancing, blonde toning and glossing services",
@@ -469,7 +497,9 @@
         "30-50% grey hair: add 1/3 of a Pure Naturals shade (e.g. 15g 7/0 + 45g 7/75 + 60g 6%)",
         "50-100% grey hair: add 1/2 of a Pure Naturals shade (e.g. 30g 7/0 + 30g 7/75 + 60g 6%)",
         "Red shades on white hair with more than 50% white: mix 2 parts red shade to 1 part Pure Natural (older booklet)",
-        "Coloring grey hair: the addition of a Pure Naturals shade is required to give sufficient grey coverage; for resistant hair use the resistant cover shade (xx/0) as the natural shade (distributor technical guide); maximum development 40 min for grey coverage (distributor technical guide)"
+        "Coloring grey hair: the addition of a Pure Naturals shade is required to give sufficient grey coverage; for resistant hair use the resistant cover shade (xx/0) as the natural shade (distributor technical guide); maximum development 40 min for grey coverage (distributor technical guide)",
+        "wella_kp_white_hair_pure_naturals_addition: {\"condition\": {\"line\": \"Koleston Perfect ME+\", \"white_hair_percentage\": \">=30\"}, \"action\": {\"white_hair_30_50\": \"add 1/3 Pure Naturals shade\", \"white_hair_50_100\": \"add 1/2 Pure Naturals shade\", \"red_shades_over_50_white\": \"add 1/3 Pure Naturals shade\"}}",
+        "wella_kp_numbering_and_tone_system: {\"condition\": {\"line\": \"Koleston Perfect ME+\"}, \"action\": {\"depth_range\": \"2/ through 10/\", \"tone_map\": {\"/0\": \"natural\", \"/1\": \"ash blue/green\", \"/2\": \"matt green\", \"/3\": \"gold yellow\", \"/4\": \"red warm\", \"/5\": \"mahogany red/violet\", \"/6\": \"violet cool\", \"/7\": \"brown red/yellow/blue\", \"/8\": \"pearl blue\", \"/9\": \"cendre blue/violet\"}}}"
       ],
       "lift_rules": [
         "12% Welloxon Perfect for 3 levels of lift (standard shades)",
@@ -528,29 +558,33 @@
       "region_or_market": "US (canonical); leaflet/booklet PDFs are official wella.com documents without an explicit market statement",
       "discontinued_status": "Active - official US range page live as of June 2026",
       "source_url": "https://www.wella.com/professional/m/Shadechart_LP/Wella-Professionals_Koleston-Perfect_Leaflet.pdf",
-      "source_document": "Koleston Perfect Usage Guidelines leaflet / shade chart (official wella.com PDF)",
+      "source_document": "Koleston Perfect ME+ numbering, white hair, processing and application rules (669754135-Wella-Professionals-KPME-colour-chart.pdf pp. 9-10)",
       "source_confidence": "high",
-      "evidence_status": "confirmed",
+      "evidence_status": "manufacturer_stated",
       "assumptions": [
         "Line-level data aggregated from multiple official sources; primary = leaflet. Supplementary: https://www.wella.com/professional/m/_master/products/koleston_perfect/pdfs/koleston-perfect_usagebooklet.pdf; https://www.wella.com/professional/m/_master/PDF/Products/Koleston_Perfect_Fact_Sheet.pdf; https://assets.ctfassets.net/045r8o938mua/gqK2qu91DzPugE5JQwyxn/58d66f3e0d66149fc839c95f0e7f4742/WP_COL_FS.pdf; https://www.salon-services.com/on/demandware.static/-/Sites-salon-services-Library/default/dw16da43d0/1-PDF/WELLA-Koleston-Perfect-Technical-Guide.pdf; https://www.wella.com/professional/en-US/koleston-perfect",
-        "Tone legend transcribed verbatim from the official Technical Folder (usage booklet) 'Tone Numbering System' page."
+        "Tone legend transcribed verbatim from the official Technical Folder (usage booklet) 'Tone Numbering System' page.",
+        "Aggregated from normalized seed package technical_rules (batch10)"
       ],
       "data_gaps": [
         "No publication dates printed in source PDFs.",
         "US-specific shade availability not enumerated by any fetched US source.",
         "Welloxon Perfect Pastel 1.9% appears in factsheets and leaflet services but exact product naming varies across documents ('Welloxon Perfect Pastel', 'Welloxon Perfect 1.9%')."
-      ]
+      ],
+      "source_type": "manufacturer_pdf"
     },
     {
       "canonical_key": "Wella Professionals::Color Touch::US",
       "brand": "Wella Professionals",
       "product_line": "Color Touch",
-      "color_type": "demi-permanent",
+      "color_type": "demi",
       "default_mixing_ratio": "1:2 (1 part Color Touch + 2 parts Color Touch Emulsion 1.9% or 4%); Color Touch Plus 1:2 with Color Touch Plus Emulsion 4%; iNSTAMAT!C 1:1; Special Mix used within 1:2 total mix",
       "developer_options": [
         "Color Touch Emulsion 1.9%",
         "Color Touch Emulsion 4%",
-        "Color Touch Plus Emulsion 4% (for Color Touch Plus only)"
+        "Color Touch Plus Emulsion 4% (for Color Touch Plus only)",
+        "wella_color_touch_relights_touch_of_gloss: {\"formula\": \"1 part /00 + 3 parts 1.9% Color Touch Emulsion\", \"processing_time_min\": 5, \"application\": \"pre-shampooed hair\"}",
+        "wella_color_touch_instamatic_processing_and_neutralization: {\"developer_options\": [\"1.9%\", \"4%\"], \"processing_time_min\": [5, 20], \"neutralization_examples\": {\"orange\": \"Ocean Storm\", \"yellow\": \"Muted Mauve\", \"red\": \"Jaded Mint\"}, \"color_id_ratio\": \"10:10:1 Instamatic:Emulsion:Color.id\"}"
       ],
       "developer_strengths_if_stated": [
         "1.9% (6 vol per US store formulas) - same depth or darkening with soft regrowth; toning blondes; soft grey blending; after perm/straightening",
@@ -561,13 +595,16 @@
         "Blonde toning: 5-20 min, visually develop until desired result (distributor guide)",
         "Relights: blonde shades 5-10 min without heat; red shades 15-20 min without heat (technical folder)",
         "iNSTAMAT!C: 5-20 min depending on intensity, without heat (technical folder)",
-        "Color balancing: watch for visual development 5-15 min (technical folder)"
+        "Color balancing: watch for visual development 5-15 min (technical folder)",
+        "wella_color_touch_relights_touch_of_gloss: 5",
+        "wella_color_touch_instamatic_processing_and_neutralization: [5, 20]"
       ],
       "gray_coverage_rules": [
         "Up to 50% grey/white coverage (core Color Touch, factsheets and technical folder)",
         "First-time application ideal for up to 50% grey blending (leaflet)",
         "Up to 70% grey coverage with Color Touch Plus (leaflet, factsheets, US store page, distributor guide)",
-        "Color Touch Plus: apply to dry hair for maximum intensity and coverage; for touch-ups start at the roots"
+        "Color Touch Plus: apply to dry hair for maximum intensity and coverage; for touch-ups start at the roots",
+        "wella_color_touch_special_mix_ratio: {\"condition\": {\"line\": \"Color Touch Special Mix\"}, \"action\": {\"add_intensity_example\": \"20g Color Touch shade + 10g Special Mix + 60g Color Touch Emulsion\", \"emphasis_ratio\": \"1:2 Special Mix:Emulsion\", \"clear_reduces_intensity\": \"10/0 clear tone may reduce color intensity\"}}"
       ],
       "lift_rules": [
         "Demi-permanent; positioned for same depth or darkening / toning (leaflet, distributor guide)",
@@ -656,22 +693,26 @@
         "Apply to pre-shampooed, towel-dried hair from roots to ends (first-time application); Plus applied to dry hair.",
         "Sub-ranges observed but not recorded as core shades: Color Touch Relights, Color Touch Sunlights, iNSTAMAT!C by Color Touch.",
         "Allergy Alert Test recommended 48 hours before coloring (all sources).",
-        "Longevity claims: fades over 28 washes (US store page, current); older factsheets state up to 24 (EN) / 15 (UK) shampoos - see source_conflicts in the shade file."
+        "Longevity claims: fades over 28 washes (US store page, current); older factsheets state up to 24 (EN) / 15 (UK) shampoos - see source_conflicts in the shade file.",
+        "wella_color_touch_standard_emulsion: {\"brand\": \"Wella Professionals\", \"product_line\": \"Color Touch\", \"rule_category\": \"developer\", \"rule_name\": \"wella_color_touch_standard_emulsion\", \"rule_condition\": {\"line\": \"Color Touch\"}, \"rule_action\": {\"emulsion_options\": [\"1.9%\", \"4%\"], \"mixing_ratio\": \"1:2 color:emulsion\"}, \"source_key\": \"wella_color_touch_ebook_p2_10\", \"evidence_status\": \"manufacturer_stated\"}",
+        "wella_color_touch_plus_requires_4_percent: {\"brand\": \"Wella Professionals\", \"product_line\": \"Color Touch Plus\", \"rule_category\": \"developer\", \"rule_name\": \"wella_color_touch_plus_requires_4_percent\", \"rule_condition\": {\"line\": \"Color Touch Plus\"}, \"rule_action\": {\"required_emulsion\": \"Color Touch Plus 4% Emulsion\"}, \"source_key\": \"wella_color_touch_ebook_p2_10\", \"evidence_status\": \"manufacturer_stated\"}"
       ],
       "region_or_market": "US (canonical; US store page fetched); leaflet/technical folder are official wella.com documents without explicit market statement; distributor brochure is UK",
       "discontinued_status": "Active - official US store page live as of June 2026",
       "source_url": "https://www.wella.com/professional/m/Shadechart_LP/Wella-Professionals_Color-Touch_Leaflet.pdf",
-      "source_document": "Color Touch Usage Guidelines leaflet / shade chart (official wella.com PDF)",
+      "source_document": "Color Touch technology, shade numbering, subranges, special mix, relights and instamatic rules (628249492-Color-Touch-Rob-Eaton-2020-eBook.pdf pp. 2-10)",
       "source_confidence": "high",
-      "evidence_status": "confirmed",
+      "evidence_status": "manufacturer_stated",
       "assumptions": [
-        "Line-level data aggregated from multiple sources; primary = leaflet. Supplementary: https://www.wella.com/professional/m/_master/products/color_touch_NEW/PDFs/Wella_Color_Touch_Technical_Folder.pdf; https://www.salon-services.com/on/demandware.static/-/Sites-salon-services-Library/default/dw534f9e2b/brands/wella/color-touch/ct-digital-brochure.pdf; https://www.wella.com/professional/m/pdf/FactSheet_EN/ColorTouch/Color_Touch_Fact_Sheet.pdf; https://www.wella.com/professional/m/pdf/factsheet_uk/WELLA-Color-College_FactSheet_Color_Touch_FINAL.pdf; https://us.wella.professionalstore.com/en-US/color-touch"
+        "Line-level data aggregated from multiple sources; primary = leaflet. Supplementary: https://www.wella.com/professional/m/_master/products/color_touch_NEW/PDFs/Wella_Color_Touch_Technical_Folder.pdf; https://www.salon-services.com/on/demandware.static/-/Sites-salon-services-Library/default/dw534f9e2b/brands/wella/color-touch/ct-digital-brochure.pdf; https://www.wella.com/professional/m/pdf/FactSheet_EN/ColorTouch/Color_Touch_Fact_Sheet.pdf; https://www.wella.com/professional/m/pdf/factsheet_uk/WELLA-Color-College_FactSheet_Color_Touch_FINAL.pdf; https://us.wella.professionalstore.com/en-US/color-touch",
+        "Aggregated from normalized seed package technical_rules (batch10)"
       ],
       "data_gaps": [
         "No publication dates printed in source PDFs.",
         "US store page did not enumerate the full US shade roster as extractable text.",
         "Official '77 shades' portfolio claim (wella.com jp-JP market page seen in search results) could not be reconciled with the leaflet matrix count."
-      ]
+      ],
+      "source_type": "manufacturer_pdf"
     },
     {
       "canonical_key": "L'Oréal Professionnel::Majirel::US",
@@ -779,10 +820,11 @@
       "canonical_key": "L'Oréal Professionnel::Dia Light::US",
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
-      "color_type": "demi-permanent (printed: 'Acidic gel-crème demi')",
+      "color_type": "demi",
       "default_mixing_ratio": "1:1.5",
       "developer_options": [
-        "Diactivateur Developer"
+        "Diactivateur Developer",
+        "loreal_dia_refreshing_technique: {\"use_matching_dia_light_if\": [\"INOA regrowth\", \"LUO regrowth\"], \"use_dia_richesse_if\": [\"Majirel regrowth\"], \"apply_to\": \"faded mid-lengths and ends 20 minutes before end of permanent color development\", \"diactivateur_options\": {\"minimum_fading\": \"warm lighter target shade with 6-vol\", \"moderate_fading\": \"warm target shade same level with 6-vol\", \"maximum_fading\": \"warm target shade same level with 9-vol\"}}"
       ],
       "developer_strengths_if_stated": [
         "6-vol (1.8%)",
@@ -844,33 +886,41 @@
         "Dual coding example as printed: '5GV = 5.32 — Level of color / Primary tone of color / Secondary tone of color'.",
         "Level legend: 10 pale blonde, 9 very light blonde, 8 light blonde, 7 blonde, 6 dark blonde, 5 light brown, 4 brown, 3 dark brown, 2 darkest brown, 1 black.",
         "Rinsing: when development time is complete, add a little warm water and gently emulsify; rinse thoroughly and shampoo with Metal Detox Shampoo; follow with Metal Detox mask.",
-        "2 NEW coral shades flagged on the 2025 chart: 10.24/10VC and 8.24/8VC."
+        "2 NEW coral shades flagged on the 2025 chart: 10.24/10VC and 8.24/8VC.",
+        "loreal_dia_standard_preparation: {\"brand\": \"L'Oréal Professionnel\", \"product_line\": \"Dia Light\", \"rule_category\": \"developer\", \"rule_name\": \"loreal_dia_standard_preparation\", \"rule_condition\": {\"line\": [\"Dia Light\", \"Dia Richesse\"]}, \"rule_action\": {\"haircolor_amount_oz\": 1.7, \"diactivateur_amount_oz\": 2.6, \"diactivateur_options\": [\"6-vol 1.8%\", \"9-vol 2.7%\", \"15-vol 4.5%\"], \"processing_time_min\": [2, 20], \"application\": \"dry unwashed hair\", \"metallic_tools\": false}, \"source_key\": \"loreal_dia_color_chart_p2_16\", \"evidence_status\": \"manufacturer_stated\"}",
+        "loreal_dia_light_zero_lift_acidic: {\"brand\": \"L'Oréal Professionnel\", \"product_line\": \"Dia Light\", \"rule_category\": \"product_type\", \"rule_name\": \"loreal_dia_light_zero_lift_acidic\", \"rule_condition\": {\"line\": \"Dia Light\"}, \"rule_action\": {\"lift_levels\": 0, \"technology\": \"gentle acid demi-permanent gel-crème without ammonia\", \"best_for\": [\"color-treated hair\", \"sensitized hair\", \"correction\", \"personalization\"]}, \"source_key\": \"loreal_dia_color_chart_p2_16\", \"evidence_status\": \"manufacturer_stated\"}"
       ],
       "region_or_market": "US",
       "discontinued_status": null,
       "source_url": "https://us.lorealprofessionnel.com/-/media/project/loreal/brand-sites/lp/americas/us/shade-charts/dialight-color-chart-2025.pdf?rev=cdb8ab6fa8ce4222b2fc86755bdc6115",
-      "source_document": "Dia Light Color Chart 2025 (LPJUNDL01)",
+      "source_document": "Dia Light and Dia Richesse shade chart, technology, preparation and application rules (366028726-Loreal-Professionnel-Dia-Color-Chart.pdf pp. 2-16)",
       "source_confidence": "high",
-      "evidence_status": "confirmed",
-      "assumptions": [],
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch10)"
+      ],
       "data_gaps": [
         "No grey/white coverage or blending instructions are printed on the Dia Light 2025 chart; gray_coverage_rules left empty.",
         "No developer-to-result mapping beyond 'depending on the desired intensity of the result' is printed for 6-vol vs 9-vol.",
         "The chart prints only the document code LPJUNDL01 with no MM/YY revision date.",
         "No processing-time differentiation by hair condition or service type is printed beyond the single flexible 2-20 minute range."
-      ]
+      ],
+      "source_type": "manufacturer_pdf"
     },
     {
       "canonical_key": "Matrix::SoColor::US",
       "brand": "Matrix",
       "product_line": "SoColor Pre-Bonded",
-      "color_type": "Permanent cream haircolor ('Permanent Color'; Certified Vegan; Pre-Bonded, Pre-Blended, Pre-Paired)",
-      "default_mixing_ratio": "1:1 (Blended, Reflect, Extra Coverage, DreamAge, HD, SoColor 10 min collections); 1:2 (Ultra Blonde); 3:1 SoColor:additive (Extra Blonding Cream and SoRed booster uses); SoRed highlighter 1:1",
+      "color_type": "permanent",
+      "default_mixing_ratio": [
+        "matrix_socolor_standard_usage: \"1:1\""
+      ],
       "developer_options": [
         "Matrix Cream Developer 10 Volume (3%)",
         "Matrix Cream Developer 20 Volume (6%)",
         "Matrix Cream Developer 30 Volume (9%)",
-        "Matrix Cream Developer 40 Volume (12%)"
+        "Matrix Cream Developer 40 Volume (12%)",
+        "matrix_socolor_standard_usage: {\"mixing_ratio\": \"1:1\", \"processing_time_min\": [30, 45], \"process_45_when\": [\"lifting more than 1 level\", \"depositing on gray\", \"maximum deposit\"], \"application\": \"clean dry hair\"}"
       ],
       "developer_strengths_if_stated": [
         "10 Volume: Up to 1 Level of lightening action",
@@ -894,7 +944,8 @@
         "SoRed: highlighter use up to 15 minutes with heat + 5 minutes cool; booster use 30 minutes room temperature",
         "Extra Blonding Cream formulas: 30-45 minutes room temperature",
         "Base Adjust technique: 5-10 minutes including application",
-        "Strand test: 10-20 minutes"
+        "Strand test: 10-20 minutes",
+        "matrix_socolor_standard_usage: [30, 45]"
       ],
       "gray_coverage_rules": [
         "Blended: up to 50% gray coverage; formulated for natural and fashion tones on <50% gray",
@@ -904,7 +955,9 @@
         "Power Cools: up to 50% gray coverage",
         "Ultra Blonde: gray coverage 'Not Recommended'",
         "HD Series: does not cover gray",
-        "SoColor 10 min: 100% gray coverage in 10 minutes"
+        "SoColor 10 min: 100% gray coverage in 10 minutes",
+        "matrix_hair_diversity_underlying_pigment_levels: {\"condition\": {\"brand\": \"Matrix\"}, \"action\": {\"levels\": {\"1\": \"dark red brown\", \"2\": \"red brown\", \"3\": \"dark red\", \"4\": \"red\", \"5\": \"red orange\", \"6\": \"dark orange\", \"7\": \"orange\", \"8\": \"dark yellow\", \"9\": \"yellow\", \"10\": \"pale yellow\", \"11\": \"palest yellow\"}, \"diameters\": [\"fine\", \"medium\", \"coarse\"], \"patterns\": [\"1A\", \"1B\", \"1C\", \"2A\", \"2B\", \"2C\", \"3A\", \"3B\", \"3C\", \"4A\", \"4B\", \"4C\"]}}",
+        "matrix_socolor_refresh_restrictions: {\"condition\": {\"line\": \"SoColor Pre-Bonded\", \"service\": \"retouch_refresh\"}, \"action\": {\"do_not_refresh_with_socolor_if\": [\"base formula uses 20 volume or higher\", \"high porosity\", \"Extra Coverage series\", \"DreamAge series\", \"UL series\", \"maximum neutralization needed\"]}}"
       ],
       "lift_rules": [
         "Extra Coverage: up to 2 levels of lift",
@@ -913,7 +966,8 @@
         "UL-Blondes: up to 5 levels of lift",
         "HD Reds: up to 4 levels of lift",
         "Power Cools: up to 4 levels of lift",
-        "Dream Age: up to 2 levels of lift"
+        "Dream Age: up to 2 levels of lift",
+        "matrix_socolor_lift_by_palette: {\"extra_coverage\": \"up to 2 levels\", \"blended\": \"up to 4 levels\", \"reflect\": \"up to 4 levels\", \"ultra_blondes\": \"up to 5 levels\", \"hd_reds\": \"up to 4 levels\", \"power_cools\": \"up to 4 levels\", \"dream_age\": \"up to 2 levels\"}"
       ],
       "tone_family_legend": [
         {
@@ -1021,16 +1075,18 @@
         "Overly porous hair: lightly mist Instacure on mids + ends before pulling through.",
         "Base Adjust formulas by natural level: levels 1-4 use 6AA + 20 Volume; levels 5-6 use 8AV or 8AA + 20 Volume; levels 7-8 use 10AV + 20 Volume.",
         "Shine and condition last up to 30 shampoos.",
-        "Several Blended palettes (Warm, Blended Brown, Blended Bronze, Gold shades) marked 'Launching June 2023'."
+        "Several Blended palettes (Warm, Blended Brown, Blended Bronze, Gold shades) marked 'Launching June 2023'.",
+        "matrix_developer_lift_rule_by_volume: {\"brand\": \"Matrix\", \"product_line\": null, \"rule_category\": \"developer\", \"rule_name\": \"matrix_developer_lift_rule_by_volume\", \"rule_condition\": {\"brand\": \"Matrix\", \"service\": \"lightening/lift deposit\"}, \"rule_action\": {\"10_volume\": \"up to 1 level\", \"20_volume\": \"up to 2 levels\", \"30_volume\": \"up to 3 levels\", \"40_volume\": \"up to 4 levels\", \"general_rule\": \"when lifting beyond one level, every 10 Volume achieves up to one level of lift\"}, \"source_key\": \"matrix_2023_manual_consultation_formulation_p7_14\", \"evidence_status\": \"manufacturer_stated\"}"
       ],
       "region_or_market": "US",
       "discontinued_status": null,
       "source_url": "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8",
-      "source_document": "2023 Matrix Manual Haircolor (official PDF, 82 pages, cover: '2023 Manual Haircolor')",
+      "source_document": "Matrix Hair Diversity Matrix, underlying pigment, developer and texture rules (856079182-2023-Matrix-Manual-Haircolor.pdf pp. 7-14)",
       "source_confidence": "high",
-      "evidence_status": "confirmed",
+      "evidence_status": "manufacturer_stated",
       "assumptions": [
-        "SoColor 10 min Pre-Bonded shades included in this line per the manual FAQ listing 'SoColor 10 min' as one of SoColor's 8 technologies, although it is also marketed as a separately named product."
+        "SoColor 10 min Pre-Bonded shades included in this line per the manual FAQ listing 'SoColor 10 min' as one of SoColor's 8 technologies, although it is also marketed as a separately named product.",
+        "Aggregated from normalized seed package technical_rules (batch10)"
       ],
       "data_gaps": [
         "The manual prints the reflect/tone legend keyed to digits (.0-.9), not to a letter-by-letter table; letter meanings beyond those explicitly decoded (UL, A+, SR, R, HD, EBC, SP, N/J primary-secondary) are not printed and were not inferred.",
@@ -1038,17 +1094,21 @@
         "Manual 'At a Glance' shade counts (Blended 58, Reflect 18, Extra Coverage 22, DreamAge 10, Ultra Blonde 8, SoColor 10 min 10) do not all match palette-chart enumeration (Blended 62 codes incl. Power Cools, Reflect 10 codes + 7 specialty); the discrepancy could not be resolved from the manual.",
         "No per-shade names, swatch confirmations, or discontinued-status statements in the manual.",
         "Official matrix.com product page also lists 'High Impact Brunettes' (1:1.5, 35 minutes) and 'Reflect Collection Metallics' (1:1 with 20 or 30 volume, 35 minutes) sub-collections that do not appear in the 2023 manual; their shades could not be enumerated (page shade list is JavaScript-rendered)."
-      ]
+      ],
+      "source_type": "manufacturer_pdf"
     },
     {
       "canonical_key": "Matrix::SoColor Sync::US",
       "brand": "Matrix",
       "product_line": "SoColor Sync Pre-Bonded",
-      "color_type": "Ammonia-Free, Demi-Permanent Color (alkaline cream toners + 2-5 minute fast toners; pre-blended 100% oxidative dyes; Certified Vegan)",
-      "default_mixing_ratio": "1:1 (SoColor Sync + 10 Volume (3%) Matrix Cream Developer)",
+      "color_type": "demi",
+      "default_mixing_ratio": [
+        "matrix_socolor_sync_usage: \"1:1\""
+      ],
       "developer_options": [
         "Matrix Cream Developer 10 Volume (3%)",
-        "Matrix Cream Developer 20 Volume (6%) (recommended for gray blending on up to 75% gray hair)"
+        "Matrix Cream Developer 20 Volume (6%) (recommended for gray blending on up to 75% gray hair)",
+        "matrix_socolor_sync_usage: {\"mixing_ratio\": \"1:1\", \"developer\": \"10 Volume Matrix Cream Developer\", \"processing_time_min\": 20, \"application\": \"clean dry hair\", \"porous_hair\": \"lightly mist Instacure on mids and ends before blending through\"}"
       ],
       "developer_strengths_if_stated": [
         "Standard: 10 Volume (3%) Matrix Cream Developer",
@@ -1062,14 +1122,16 @@
         "HD Series: 20 minutes room temperature",
         "Refreshing over permanent color: process as needed, up to 20 minutes",
         "Immediately after an Opti texture service: up to 10 minutes, checking frequently",
-        "Strand test: 10-20 minutes (Fast Toners: 2-5 minutes)"
+        "Strand test: 10-20 minutes (Fast Toners: 2-5 minutes)",
+        "matrix_socolor_sync_usage: 20"
       ],
       "gray_coverage_rules": [
         "'SoColor Sync should not be used for gray coverage, but should be used for gray blending and to refresh coverage shades once they have grown out to the mid-lengths and ends.'",
         "FAQ: 'SoColor Sync is ideal for gray blending and provides up to 75% gray coverage.'",
         "Gray blending: formulate within one level of the natural pigmented hair; recommended shades alone or add any other SoColor Sync shade in a 3:1 ratio.",
         "Gray Blending service result: 'Up to 75% gray blending'.",
-        "HD Series: will not cover gray; gray-blending table also flags Pearl 'Icy Cool - Does Not Cover' and Violet 'Soft Violet - Does Not Cover'."
+        "HD Series: will not cover gray; gray-blending table also flags Pearl 'Icy Cool - Does Not Cover' and Violet 'Soft Violet - Does Not Cover'.",
+        "matrix_clear_dilution_rule: {\"condition\": {\"line\": [\"SoColor Sync Pre-Bonded\", \"Tonal Control Pre-Bonded\"], \"modifier\": [\"Clear\", \"Totally Transparent\"]}, \"action\": {\"effect\": \"adding equal amount of Clear/Totally Transparent lessens color deposit by approximately one level\", \"processing_time_min\": \"up to 20\"}}"
       ],
       "lift_rules": [
         "Formulated with no lift; 'It is possible to see a 1/2 level of base shift with SoColor Sync depending on condition of the hair.'",
@@ -1155,11 +1217,12 @@
       "region_or_market": "US",
       "discontinued_status": null,
       "source_url": "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8",
-      "source_document": "2023 Matrix Manual Haircolor (official PDF, 82 pages, cover: '2023 Manual Haircolor')",
+      "source_document": "Matrix demi-permanent technologies, usage and shade palettes (856079182-2023-Matrix-Manual-Haircolor.pdf pp. 42-50)",
       "source_confidence": "high",
-      "evidence_status": "confirmed",
+      "evidence_status": "manufacturer_stated",
       "assumptions": [
-        "Tonal Control Pre-Bonded (acidic gel toners) treated as a separate product line and excluded from SoColor Sync shade records, per the manual's separate branding; the shared 'Clear' is recorded once with its 'Available in Alkaline & Acidic' footnote."
+        "Tonal Control Pre-Bonded (acidic gel toners) treated as a separate product line and excluded from SoColor Sync shade records, per the manual's separate branding; the shared 'Clear' is recorded once with its 'Available in Alkaline & Acidic' footnote.",
+        "Aggregated from normalized seed package technical_rules (batch10)"
       ],
       "data_gaps": [
         "The manual prints the reflect/tone legend keyed to digits (.0-.9), not to a letter-by-letter table; letter meanings beyond those explicitly decoded (UL, A+, SR, R, HD, EBC, SP, N/J primary-secondary) are not printed and were not inferred.",
@@ -1167,7 +1230,8 @@
         "Manual 'At a Glance' states 69 alkaline shades + 3 fast toners; palette-chart enumeration yields 70-71 codes (including HD-CR seen only on the HD tips page and Clear); discrepancy unresolved.",
         "No per-shade names, swatch confirmations, or discontinued-status statements in the manual.",
         "Official matrix.com SoColor Sync product page rendered no shade or technical data in static fetch (JavaScript-rendered)."
-      ]
+      ],
+      "source_type": "manufacturer_pdf"
     },
     {
       "canonical_key": "Pravana::ChromaSilk Creme Color::US",
@@ -1526,16 +1590,20 @@
       "brand": "Matrix",
       "product_line": "Coil Color",
       "color_type": "permanent",
-      "default_mixing_ratio": "1:1 (Coil Color + Coil Color Developer)",
+      "default_mixing_ratio": [
+        "matrix_coil_color_usage: \"1:1\""
+      ],
       "developer_options": [
         "Coil Color Developer 20 Volume",
-        "Coil Color Developer 30 Volume"
+        "Coil Color Developer 30 Volume",
+        "matrix_coil_color_usage: {\"mixing_ratio\": \"1:1\", \"developer_options\": [\"20 volume\", \"30 volume\"], \"processing_time_min\": 35, \"application\": \"clean dry hair\", \"porous_hair\": \"lightly mist Instacure on mids and ends before first pull-through only\"}"
       ],
       "developer_strengths_if_stated": [
         "20 + 30 volume, 1:1 mixing ratio (manual p.39)"
       ],
       "processing_time_ranges": [
-        "35 minutes room temperature (manual p.39)"
+        "35 minutes room temperature (manual p.39)",
+        "matrix_coil_color_usage: 35"
       ],
       "gray_coverage_rules": [
         "Gray ratio tables in Coil Color Technique Guide (Stage 13 reference)"
@@ -1551,28 +1619,35 @@
       "region_or_market": "US",
       "discontinued_status": "Active per 2023 Matrix manual",
       "source_url": "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8",
-      "source_document": "2023 Matrix Manual Haircolor (official PDF, 82 pages)",
+      "source_document": "Matrix permanent color technologies, usage and shade palettes (856079182-2023-Matrix-Manual-Haircolor.pdf pp. 16-40)",
       "source_confidence": "high",
-      "evidence_status": "confirmed",
-      "assumptions": [],
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch10)"
+      ],
       "data_gaps": [
         "Coil Color gray ratio table lives in separate technique guide PDF."
-      ]
+      ],
+      "source_type": "manufacturer_pdf"
     },
     {
       "canonical_key": "Matrix::Tonal Control::US",
       "brand": "Matrix",
       "product_line": "Tonal Control Pre-Bonded",
-      "color_type": "demi_acidic",
-      "default_mixing_ratio": "1:1 (Tonal Control + 10 Volume (3%) Matrix Cream Developer)",
+      "color_type": "demi",
+      "default_mixing_ratio": [
+        "matrix_tonal_control_usage: \"1:1\""
+      ],
       "developer_options": [
-        "10 Volume (3%) Matrix Cream Developer"
+        "10 Volume (3%) Matrix Cream Developer",
+        "matrix_tonal_control_usage: {\"mixing_ratio\": \"1:1\", \"developer\": \"10 Volume Matrix Cream Developer\", \"processing_time_min\": 20, \"application\": \"dry or damp towel-dried hair\", \"no_base_shift\": true}"
       ],
       "developer_strengths_if_stated": [
         "10 Vol only; no lift (manual p.44-45)"
       ],
       "processing_time_ranges": [
-        "20 minutes room temperature (manual p.44)"
+        "20 minutes room temperature (manual p.44)",
+        "matrix_tonal_control_usage: 20"
       ],
       "gray_coverage_rules": [
         "Gray blending on pre-lightened hair; not full coverage line"
@@ -1588,11 +1663,14 @@
       "region_or_market": "US",
       "discontinued_status": "Active per 2023 Matrix manual",
       "source_url": "https://www.matrix.com/-/media/project/loreal/brand-sites/matrix/americas/us_usmx/pdf-folder/2023-matrix-manual-haircolor.pdf?rev=4560cb3389094fafb65c166cb50ca5a8",
-      "source_document": "2023 Matrix Manual Haircolor (official PDF, 82 pages)",
+      "source_document": "Matrix demi-permanent technologies, usage and shade palettes (856079182-2023-Matrix-Manual-Haircolor.pdf pp. 42-50)",
       "source_confidence": "high",
-      "evidence_status": "confirmed",
-      "assumptions": [],
-      "data_gaps": []
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch10)"
+      ],
+      "data_gaps": [],
+      "source_type": "manufacturer_pdf"
     },
     {
       "canonical_key": "Matrix::Super Sync::US",
@@ -1926,6 +2004,23 @@
         "aveda_universal_on_customization_guide: {\"condition\": {\"base_component\": \"Universal ØN\", \"line\": \"Full Spectrum Permanent Hair Color\"}, \"action\": {\"categories\": {\"soft_color_refreshing_or_glossing\": {\"natural_series_g\": 0, \"pure_tone_g_range\": [0, 8], \"universal_on_g\": 40}, \"standard_toning_prelightened_or_toning_down\": {\"natural_series_g\": 20, \"pure_tone_g_range\": [0, 8], \"universal_on_g\": 20}, \"strong_clear_tone\": {\"natural_series_g\": 0, \"pure_tone_g_range\": [10, 20], \"universal_on_g\": 40}}, \"developer_volume\": 5}}",
         "aveda_extra_lift_pastel_blonde_intensity_guide: {\"condition\": {\"line\": \"Full Spectrum Permanent Hair Color\", \"series\": \"extra_lift_pastel_blonde\"}, \"action\": {\"mixing_ratio\": \"1:2\", \"soft\": {\"extra_lifting_creme_g\": 40, \"pastel_tone_g\": 2}, \"standard\": {\"extra_lifting_creme_g\": 40, \"pastel_tone_g\": 4}, \"standard_developer_ml\": 80, \"standard_formulas\": {\"extra_light_ash_blonde\": \"40g ELC + 4g Pastel Blue\", \"extra_light_golden_blonde\": \"40g ELC + 4g Pastel Y/O\", \"extra_light_platinum_blonde\": \"40g ELC + 4g Pastel Violet\"}, \"standard_total_mixture_ml\": 124, \"strong\": {\"extra_lifting_creme_g\": 40, \"pastel_tone_g\": 8}}}",
         "aveda_color_balancing_guide: {\"condition\": {\"line\": \"Full Spectrum Permanent Hair Color\", \"service\": \"color_balance_or_gloss\"}, \"action\": {\"clear_gloss\": {\"universal_on_g\": 40}, \"color_balance\": {\"natural_series_g\": 40, \"pure_tone_amount\": \"standard_for_level\"}, \"extreme_gloss\": {\"pure_tone_or_pure_pigment_g\": 20, \"universal_on_g\": 20}, \"natural_tonal_gloss\": {\"natural_series_g\": 20, \"pure_tone_amount\": \"standard_for_level\", \"universal_on_g\": 20}, \"pure_on_prelightened_pale_yellow\": {\"pure_pigment_g\": 20}, \"tonal_gloss\": {\"pure_tone_g\": 8, \"universal_on_g\": 40}}}"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "color_type": "demi",
+      "source_document": "Dia Light and Dia Richesse shade chart, technology, preparation and application rules (366028726-Loreal-Professionnel-Dia-Color-Chart.pdf pp. 2-16)",
+      "source_type": "manufacturer_pdf",
+      "source_confidence": "high",
+      "evidence_status": "manufacturer_stated",
+      "assumptions": [
+        "Aggregated from normalized seed package technical_rules (batch10)"
+      ],
+      "data_gaps": [],
+      "gray_coverage_rules": [
+        "loreal_dia_richesse_coverage_lift: {\"condition\": {\"line\": \"Dia Richesse\"}, \"action\": {\"white_hair_coverage_pct\": \"up to 70\", \"lift_levels\": \"up to 1.5\", \"technology\": \"advanced alkaline demi-permanent crème without ammonia\"}}"
       ]
     }
   ],

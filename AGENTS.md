@@ -19,11 +19,20 @@ existing docs.
 
 - The SQLite DB (`hair_color.db`) is git-ignored and is NOT created by the update script.
   Build it before running the API or the SQLite-track e2e tests: `python3 init_db.py`
-  (writes `hair_color.db` + `hair_color_db_verification_report.json`; expects 1,840 shades).
+  (writes `hair_color.db` + `hair_color_db_verification_report.json`; expects 2,456 shades).
 - Run the API in dev mode: `python3 -m uvicorn api.main:app --host 0.0.0.0 --port 8000`
   (the `uvicorn` console script lands in `~/.local/bin`, which is not on `PATH`; invoke via
   `python3 -m uvicorn`). Swagger UI is at `/docs`; health at `/health`; build a formula via
   `POST /formula` (e.g. `{"shade":"Matrix::SoColor::5N","gray":60,"service_intent":"gray_coverage"}`).
+- AI routes (`POST /api/ai/formula`, `POST /api/ai/translate`) require an LLM provider.
+  In **development**, with no API keys configured, offline mock AI is used automatically.
+  In **production** (`ENVIRONMENT=production`), mock is disabled unless `AI_ALLOW_MOCK=1`;
+  configure Azure OpenAI (`AZURE_OPENAI_ENDPOINT` + `AZURE_OPENAI_API_KEY`) or another provider.
+- Production deployment: set `ENGINE_BACKEND=postgres`, `DATABASE_URL`, then either run
+  `python3 -m hair_color_db.production.bootstrap` once or use `docker compose up` (API service
+  bootstraps when `BOOTSTRAP_ON_START=1`). Catalog, AI, and formula routes then share Postgres.
+- Expected inventory after latest Stage 12 import: **2,456 shades** / **950 tone mappings**
+  (`src/paths.py` `EXPECTED_SHADE_COUNT`).
 
 ### Running tests
 
@@ -43,12 +52,6 @@ existing docs.
   (user/pass/db all `haircolor`). `docker` requires `sudo`.
 - Export the connection string before bootstrap/CLIs/tests:
   `export DATABASE_URL=postgresql+psycopg2://haircolor:haircolor@localhost:5432/haircolor`.
-
-- KNOWN PRE-EXISTING BUG (blocks the PostgreSQL track): `hair_color_db/production/migrate.py`
-  `_statements()` splits SQL on every `;`, which breaks the dollar-quoted `set_updated_at()`
-  function body in `production_operational_schema.sql`. As a result
-  `python3 -m hair_color_db.production.bootstrap` (and the `test_pg_*` e2e tests, which call it)
-  fail with `unterminated dollar-quoted string`. This is an application-code defect, not an
-  environment problem; the Postgres service itself is healthy. The production engine *logic* is
-  fully exercised by the in-memory test suite (`test_engine`, `test_import_*`,
-  `test_cross_engine_validation`) which does not touch Postgres.
+- Bootstrap applies Alembic migrations and imports Stage 12/13:
+  `python3 -m hair_color_db.production.bootstrap` (also run automatically when
+  `BOOTSTRAP_ON_START=1` in Docker).
