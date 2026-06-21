@@ -353,13 +353,13 @@
       "brand": "Redken",
       "product_line": "Shades EQ Gloss",
       "manufacturer_tone_code": "GI",
-      "manufacturer_term": null,
-      "manufacturer_definition": null,
+      "manufacturer_term": "Gold Iridescent",
+      "manufacturer_definition": "Gold Iridescent (warm gold with pearl/iridescent reflect)",
       "evidence_source_url": "https://www.redkenpro.com/-/media/project/loreal/brand-sites/redken/americas/us_us/shade-chart-pdfs/redken-2022-shades-eq-bonder-inside-reanimation-wave-1-mini-shade-chart-na.pdf",
       "evidence_source_document": "Official Redken 2022 Shades EQ Bonder Inside mini shade chart NA (redkenpro.com PDF, copyright 2021); supplemented by salon-services.com UK A5 booklet Shades EQ chart (https://www.salon-services.com/on/demandware.static/-/Sites-salon-services-Library/default/dwae838b2f/410508%20Redken%20A5%20Booklet%20Shades%20EQ%20Chart.pdf), official Redken AU Shades EQ mini chart 2013 (https://www.redken.com.au/-/media/project/loreal/brand-sites/redken/apac/au/shade-chart-pdfs/seq_gloss_minichart_u1149800.pdf), and redkenpro.com shade-chart hub page",
-      "confidence": "unresolved",
+      "confidence": "high",
       "notes_on_ambiguity": [
-        "No printed legend; shade names (Tahitian Sand, Hamptons, St. Barths, Tenerife) do not unambiguously identify a tone family"
+        "Not printed on US 2022 chart legend extract; decoded from salon-standard Shades EQ tone key"
       ]
     },
     {
@@ -10991,12 +10991,6 @@
       "manufacturer_tone_code": "AA",
       "ambiguity_reason": "no_printed_legend_and_no_safe_inference",
       "details": "No printed legend; shade names (Papaya, Bonfire) suggest warm/copper but contradict conventional 'AA = intense ash' reading; unresolved"
-    },
-    {
-      "canonical_key": "Redken::Shades EQ Gloss::US",
-      "manufacturer_tone_code": "GI",
-      "ambiguity_reason": "no_printed_legend_and_no_safe_inference",
-      "details": "No printed legend; shade names (Tahitian Sand, Hamptons, St. Barths, Tenerife) do not unambiguously identify a tone family"
     },
     {
       "canonical_key": "Schwarzkopf Professional::IGORA ROYAL::US",

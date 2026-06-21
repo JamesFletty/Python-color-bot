@@ -53,6 +53,7 @@ Tone mapping reference (approximate equivalents across systems):
 - Ash/Cool:          Wella /1  | Redken A   | Schwarzkopf -1  | Matrix A
 - Iridescent:        Wella /2  | Redken I   | Schwarzkopf -2
 - Gold:              Wella /3  | Redken G   | Schwarzkopf -3  | Matrix G
+- Gold Iridescent:   Redken GI  | L'Oréal Dia Light 9.03/9.31 (gold + pearl reflect) | NOT the same as I
 - Red:               Wella /4  | Redken R   | Schwarzkopf -4  | Matrix R
 - Mahogany:          Wella /5  | Redken RO  | Schwarzkopf -5  | Matrix M
 - Violet:            Wella /6  | Redken V   | Schwarzkopf -6  | Matrix V

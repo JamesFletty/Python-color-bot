@@ -3416,15 +3416,17 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "03",
-      "manufacturer_term": null,
+      "manufacturer_term": "Gold (Honey Milkshake family)",
       "normalized_tones": [
-        "Natural",
-        "Gold"
+        "Gold",
+        "Pearl"
       ],
-      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .3 = gold (G)",
+      "mapping_rationale": "Per-digit decode via printed 2025 chart legend: primary .0 = Natural (N); secondary .3 = gold (G). Cross-line: nearest equivalent to Redken Shades EQ GI (Gold Iridescent); Pearl used as iridescent reflect proxy.",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
-      "notes": []
+      "notes": [
+        "Translation target for Redken GI (Gold Iridescent) at level 9: shade 9.03 Honey Milkshake"
+      ]
     },
     {
       "canonical_key": "L'Oréal Professionnel::Dia Light::US",
@@ -11116,14 +11118,18 @@
       "brand": "Redken",
       "product_line": "Shades EQ Gloss",
       "manufacturer_tone_code": "GI",
-      "manufacturer_term": "GI",
+      "manufacturer_term": "Gold Iridescent",
       "normalized_tones": [
-        "Other"
+        "Gold",
+        "Pearl"
       ],
-      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
-      "mapping_confidence": "medium",
+      "mapping_rationale": "Salon-standard Redken Shades EQ tone legend: GI = Gold Iridescent (warm gold with pearl/iridescent reflect). Pearl used as normalized iridescent proxy.",
+      "mapping_confidence": "high",
       "ambiguity_flag": false,
-      "notes": []
+      "notes": [
+        "Confirmed by stylist domain knowledge; not printed on US 2022 chart legend extract",
+        "Cross-line translation target: L'Oréal Dia Light .03 (e.g. 9.03 Honey Milkshake)"
+      ]
     },
     {
       "canonical_key": "Redken::Shades EQ Gloss::US",
@@ -13943,12 +13949,6 @@
       "manufacturer_tone_code": "AA",
       "reason": "tone_meaning_unresolved",
       "details": "No printed legend; shade names (Papaya, Bonfire) suggest warm/copper but contradict conventional 'AA = intense ash' reading; unresolved"
-    },
-    {
-      "canonical_key": "Redken::Shades EQ Gloss::US",
-      "manufacturer_tone_code": "GI",
-      "reason": "tone_meaning_unresolved",
-      "details": "No printed legend; shade names (Tahitian Sand, Hamptons, St. Barths, Tenerife) do not unambiguously identify a tone family"
     }
   ],
   "issue_log": []

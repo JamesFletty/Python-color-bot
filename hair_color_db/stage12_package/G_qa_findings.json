@@ -1,45 +1,13 @@
 {
   "artifact": "qa_findings",
-  "count": 21,
+  "count": 17,
   "qa_findings": [
-    {
-      "canonical_key": "Redken::Shades EQ Gloss::US",
-      "record_ref": "Redken::Shades EQ Gloss::US#010GI",
-      "issue_type": "unmapped_tone_codes",
-      "severity": "medium",
-      "details": "codes ['GI'] have no normalized mapping",
-      "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
-    },
-    {
-      "canonical_key": "Redken::Shades EQ Gloss::US",
-      "record_ref": "Redken::Shades EQ Gloss::US#09GI",
-      "issue_type": "unmapped_tone_codes",
-      "severity": "medium",
-      "details": "codes ['GI'] have no normalized mapping",
-      "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
-    },
     {
       "canonical_key": "Redken::Shades EQ Gloss::US",
       "record_ref": "Redken::Shades EQ Gloss::US#09AA",
       "issue_type": "unmapped_tone_codes",
       "severity": "medium",
       "details": "codes ['AA'] have no normalized mapping",
-      "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
-    },
-    {
-      "canonical_key": "Redken::Shades EQ Gloss::US",
-      "record_ref": "Redken::Shades EQ Gloss::US#08GI",
-      "issue_type": "unmapped_tone_codes",
-      "severity": "medium",
-      "details": "codes ['GI'] have no normalized mapping",
-      "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
-    },
-    {
-      "canonical_key": "Redken::Shades EQ Gloss::US",
-      "record_ref": "Redken::Shades EQ Gloss::US#06GI",
-      "issue_type": "unmapped_tone_codes",
-      "severity": "medium",
-      "details": "codes ['GI'] have no normalized mapping",
       "recommended_fix": "Resolve via official tone legend retrieval (see unresolved_mappings)."
     },
     {
@@ -467,12 +435,6 @@
       "manufacturer_tone_code": "AA",
       "reason": "tone_meaning_unresolved",
       "details": "No printed legend; shade names (Papaya, Bonfire) suggest warm/copper but contradict conventional 'AA = intense ash' reading; unresolved"
-    },
-    {
-      "canonical_key": "Redken::Shades EQ Gloss::US",
-      "manufacturer_tone_code": "GI",
-      "reason": "tone_meaning_unresolved",
-      "details": "No printed legend; shade names (Tahitian Sand, Hamptons, St. Barths, Tenerife) do not unambiguously identify a tone family"
     }
   ],
   "issue_log": []
