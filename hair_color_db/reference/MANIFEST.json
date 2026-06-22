@@ -7,7 +7,7 @@
     "redken": "Shade inventory (SEQ + Gels), color melting pairing, technology key",
     "loreal": "Dia Light / Dia Richesse shade inventories + JSON",
     "moroccanoil": "Shade inventory with tonal families, color manual",
-    "schwarzkopf": "IGORA ROYAL normalized shades, formula recreation rules",
+    "schwarzkopf": "IGORA ROYAL normalized shades, formula recreation rules, SEQ→VIBRANCE conversion chart",
     "matrix": "2023 shade inventory JSON",
     "pravana": "ChromaSilk inventories, brand conversion charts, formulation rules",
     "shared": "L'Oréal tonal_reference_key (digit notation → families)",
@@ -28,6 +28,7 @@
     "loreal/DIA_Light_Shade_Inventory_d337.csv",
     "pravana/brand_conversions.json",
     "pravana/chromasilk_shade_inventory.csv",
-    "pravana/formulation_rules.csv"
+    "pravana/formulation_rules.csv",
+    "schwarzkopf/seq_to_vibrance_conversions.json"
   ]
 }

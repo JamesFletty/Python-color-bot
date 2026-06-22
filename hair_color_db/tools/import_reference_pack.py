@@ -39,8 +39,13 @@ AVEDA_DIRECTION_TO_NORMALIZED = _mappings.AVEDA_DIRECTION_TO_NORMALIZED
 LOREAL_FAMILY_TO_NORMALIZED = _mappings.LOREAL_FAMILY_TO_NORMALIZED
 BRAND_CONVERSION_SOURCE = _mappings.BRAND_CONVERSION_SOURCE
 PRAVANA_CHROMASILK_TARGET = _mappings.PRAVANA_CHROMASILK_TARGET
+SEQ_CK = _mappings.SEQ_CK
+VIBRANCE_CK = _mappings.VIBRANCE_CK
+MATRIX_INSIDER_CK = _mappings.MATRIX_INSIDER_CK
+MATRIX_INSIDER_SUFFIX_TO_TONES = _mappings.MATRIX_INSIDER_SUFFIX_TO_TONES
 
 PRAVANA_REF = REFERENCE / "pravana"
+SCHWARZKOPF_REF = REFERENCE / "schwarzkopf"
 
 LOREAL_TONE_MAP_LINES: list[tuple[str, str]] = [
     ("L'Oréal Professionnel::Majirel::US", "Majirel"),
@@ -666,6 +671,183 @@ def enrich_pravana_line_technical(line_records: list[dict[str, Any]]) -> int:
     return changed
 
 
+def _build_vibrance_code_index(records: list[dict[str, Any]]) -> dict[str, str]:
+    index: dict[str, str] = {}
+    for record in records:
+        if record.get("canonical_key") != VIBRANCE_CK:
+            continue
+        code = str(record.get("shade_code", "")).strip()
+        if code:
+            index[code.lower()] = code
+    return index
+
+
+def _extract_vibrance_codes(formula: str) -> list[str]:
+    return re.findall(r"(\d+\.?\d*-\d+)", formula)
+
+
+def _pick_vibrance_target(
+    codes: list[str],
+    seq_code: str,
+    vibrance_index: dict[str, str],
+) -> str | None:
+    resolved = [vibrance_index[c.lower()] for c in codes if c.lower() in vibrance_index]
+    if not resolved:
+        return None
+    if len(resolved) == 1:
+        return resolved[0]
+
+    level_m = re.match(r"0?(\d{1,2})", seq_code)
+    seq_level = int(level_m.group(1)) if level_m else None
+    if seq_level:
+        level_matches = [
+            c
+            for c in resolved
+            if c.startswith(f"{seq_level}-") or c.startswith(f"{seq_level}.")
+        ]
+        if seq_code.endswith("N") and not seq_code.endswith(("NB", "NW")):
+            naturals = [c for c in level_matches if c.endswith(("-0", "-00"))]
+            if naturals:
+                return naturals[0]
+        if level_matches:
+            return level_matches[0]
+
+    non_boosters = [c for c in resolved if not c.startswith("0-")]
+    return non_boosters[0] if non_boosters else resolved[0]
+
+
+def build_seq_vibrance_conversion_entries(
+    records: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    chart_path = SCHWARZKOPF_REF / "seq_to_vibrance_conversions.json"
+    if not chart_path.exists():
+        return []
+
+    payload = json.loads(chart_path.read_text(encoding="utf-8"))
+    vibrance_index = _build_vibrance_code_index(records)
+    entries: list[dict[str, Any]] = []
+
+    for row in payload.get("conversions", []):
+        seq_code = str(row.get("seq_code", "")).strip()
+        formula = str(row.get("vibrance_formula", "")).strip()
+        if not seq_code or not formula:
+            continue
+        codes = _extract_vibrance_codes(formula)
+        target = _pick_vibrance_target(codes, seq_code, vibrance_index)
+        if not target and len(codes) == 1:
+            target = vibrance_index.get(codes[0].lower())
+        if not target:
+            continue
+        notes_parts = [f"VIBRANCE formula: {formula}"]
+        if row.get("notes"):
+            notes_parts.append(str(row["notes"]))
+        entries.append(
+            {
+                "conversion_id": f"seq_{seq_code.lower()}__vibrance",
+                "source_canonical_key": SEQ_CK,
+                "source_shade_code": seq_code,
+                "target_canonical_key": VIBRANCE_CK,
+                "strategy": "fixed",
+                "target_shade_code": target,
+                "normalized_tones": [],
+                "level_from": "source_shade",
+                "component_role": "base",
+                "mapping_confidence": row.get("confidence", "high"),
+                "source_document": payload.get("source_document", "seq_to_vibrance_conversions.json"),
+                "notes": "; ".join(notes_parts),
+            }
+        )
+    return entries
+
+
+def _matrix_insider_tones_from_code(shade_code: str) -> list[str]:
+    level_m = re.match(r"^(\d{1,2})(.*)$", shade_code.strip())
+    if not level_m:
+        return ["Other"]
+    suffix = level_m.group(2)
+    if suffix in MATRIX_INSIDER_SUFFIX_TO_TONES:
+        return list(MATRIX_INSIDER_SUFFIX_TO_TONES[suffix])
+    if suffix:
+        tones: list[str] = []
+        for key in sorted(MATRIX_INSIDER_SUFFIX_TO_TONES, key=len, reverse=True):
+            if suffix.startswith(key):
+                for tone in MATRIX_INSIDER_SUFFIX_TO_TONES[key]:
+                    if tone not in tones:
+                        tones.append(tone)
+                return tones or ["Other"]
+    return ["Natural"]
+
+
+def _matrix_insider_template() -> dict[str, Any]:
+    return {
+        "canonical_key": MATRIX_INSIDER_CK,
+        "brand": "Matrix",
+        "product_line": "Color Insider",
+        "shade_name": None,
+        "manufacturer_tone_descriptions": [],
+        "color_type": "permanent",
+        "gray_coverage_claim": "Up to 100% gray coverage (Color Insider reference / Pravana conversion chart)",
+        "lift_levels": None,
+        "mixing_ratio": "1:1",
+        "developer_options": ["Matrix Cream Developer"],
+        "processing_time_minutes": 35,
+        "special_usage_notes": "Imported from Pravana brand conversion chart source shade list.",
+        "official_swatch_image_exists": None,
+        "region_or_market": "US",
+        "discontinued_status": None,
+        "source_url": "https://www.matrix.com/professionals/en-us/products/hair-color/color-insider",
+        "source_document": "pravana/brand_conversions.json (Matrix Color Insider shade list)",
+        "source_type": "manufacturer_reference_pack",
+        "source_publication_date": "2026-06-22",
+        "source_confidence": "medium",
+        "evidence_status": "partial",
+        "assumptions": [
+            "Shade codes and normalized tones inferred from Matrix insider notation in conversion chart."
+        ],
+        "data_gaps": [
+            "Full Color Insider shade chart not yet ingested; records seeded for cross-line conversion resolution."
+        ],
+    }
+
+
+def add_matrix_color_insider_shades(records: list[dict[str, Any]]) -> int:
+    json_path = PRAVANA_REF / "brand_conversions.json"
+    if not json_path.exists():
+        return 0
+    payload = json.loads(json_path.read_text(encoding="utf-8"))
+    insider = payload.get("brands", {}).get("Matrix Color Insider", {})
+    conversions = insider.get("conversions", [])
+    if not conversions:
+        return 0
+
+    existing = {
+        (r["canonical_key"], r["shade_code"])
+        for r in records
+        if r.get("canonical_key") == MATRIX_INSIDER_CK
+    }
+    added = 0
+    for conv in conversions:
+        code = str(conv.get("brand_shade", "")).strip()
+        if not code or (MATRIX_INSIDER_CK, code) in existing:
+            continue
+        level_m = re.match(r"^(\d{1,2})", code)
+        level = float(level_m.group(1)) if level_m else None
+        suffix = code[level_m.end() :] if level_m else code
+        record = _matrix_insider_template()
+        record.update(
+            {
+                "shade_code": code,
+                "level": level,
+                "manufacturer_tone_codes": [suffix] if suffix else [],
+                "normalized_tones": _matrix_insider_tones_from_code(code),
+            }
+        )
+        records.append(record)
+        existing.add((MATRIX_INSIDER_CK, code))
+        added += 1
+    return added
+
+
 def build_conversion_entries_from_reference(
     records: list[dict[str, Any]] | None = None,
 ) -> list[dict[str, Any]]:
@@ -673,12 +855,20 @@ def build_conversion_entries_from_reference(
     entries: list[dict[str, Any]] = []
     seen: set[str] = set()
 
+    shades_payload = json.loads(SHADES_JSON.read_text(encoding="utf-8"))
+    shade_records = records or shades_payload["normalized_shade_records"]
+    seq_vibrance_fixed = build_seq_vibrance_conversion_entries(shade_records)
+    chart_seq_codes = {e["source_shade_code"].lower() for e in seq_vibrance_fixed}
+
     def add(entry: dict[str, Any]) -> None:
         cid = entry["conversion_id"]
         if cid in seen:
             return
         seen.add(cid)
         entries.append(entry)
+
+    for entry in seq_vibrance_fixed:
+        add(entry)
 
     seq_ck = LINE_CANONICAL["Shades EQ Gloss"]
     gels_ck = LINE_CANONICAL["Color Gels Lacquers"]
@@ -751,6 +941,8 @@ def build_conversion_entries_from_reference(
             "Red": "8-88",
         }
         for code, tones in seq_codes.items():
+            if code.lower() in chart_seq_codes:
+                continue
             level_m = re.match(r"0?(\d{1,2})", code)
             level = int(level_m.group(1)) if level_m else 9
             family_key = next((t for t in tones if t in tone_to_vibrance_hint), tones[0] if tones else "Natural")
@@ -800,10 +992,14 @@ def build_conversion_entries_from_reference(
     )
 
     for entry in FIXED_CONVERSIONS:
+        if (
+            entry.get("source_canonical_key") == SEQ_CK
+            and entry.get("target_canonical_key") == VIBRANCE_CK
+            and str(entry.get("source_shade_code", "")).lower() in chart_seq_codes
+        ):
+            continue
         add(entry)
 
-    shades_payload = json.loads(SHADES_JSON.read_text(encoding="utf-8"))
-    shade_records = records or shades_payload["normalized_shade_records"]
     for entry in build_aveda_entries(shade_records):
         add(entry)
 
@@ -824,6 +1020,7 @@ def import_reference_pack(*, dry_run: bool = False) -> dict[str, Any]:
     tone_map_changed = tone_ref_changes + richesse_propagated
 
     pravana_added = add_missing_pravana_shades(records)
+    insider_added = add_matrix_color_insider_shades(records)
     shade_changes = enrich_shades_from_inventories(records) + enrich_pravana_shades(records)
 
     line_tech_changed = 0
@@ -845,7 +1042,7 @@ def import_reference_pack(*, dry_run: bool = False) -> dict[str, Any]:
 
         rematerialized = rematerialize(dry_run=False)["records_changed"]
 
-    if (shade_changes or pravana_added) and not dry_run:
+    if (shade_changes or pravana_added or insider_added) and not dry_run:
         shades_payload["count"] = len(records)
         SHADES_JSON.write_text(
             json.dumps(shades_payload, indent=2, ensure_ascii=False) + "\n",
@@ -870,6 +1067,7 @@ def import_reference_pack(*, dry_run: bool = False) -> dict[str, Any]:
             "Built from hair_color_db/reference/ manufacturer CSV inventories.",
             "Includes Redken Gels↔SEQ melting pairs, SEQ→VIBRANCE/Majirel tone bridges, Aveda rules.",
             "Includes Pravana ChromaSilk brand conversion charts (Goldwell Topchic, Matrix SoColor, Color Insider).",
+            "Includes official SEQ→IGORA VIBRANCE fixed conversion chart (SKP 2024).",
         ],
     }
     if not dry_run:
@@ -884,6 +1082,7 @@ def import_reference_pack(*, dry_run: bool = False) -> dict[str, Any]:
                     "conversion_count": len(conversions),
                     "shade_records_updated": shade_changes,
                     "pravana_shades_added": pravana_added,
+                    "matrix_insider_shades_added": insider_added,
                     "line_technical_updated": line_tech_changed,
                 },
                 indent=2,
@@ -895,6 +1094,7 @@ def import_reference_pack(*, dry_run: bool = False) -> dict[str, Any]:
     return {
         "shade_records_updated": shade_changes,
         "pravana_shades_added": pravana_added,
+        "matrix_insider_shades_added": insider_added,
         "line_technical_updated": line_tech_changed,
         "tone_map_entries_changed": tone_map_changed,
         "shade_records_rematerialized": rematerialized,

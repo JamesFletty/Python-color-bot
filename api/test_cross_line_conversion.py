@@ -72,6 +72,46 @@ class CrossLineConversionTests(unittest.TestCase):
         self.assertEqual(entry["strategy"], "fixed")
         self.assertEqual(entry["target_shade_code"], "9-1")
 
+    def test_seq_09p_fixed_conversion_to_vibrance(self) -> None:
+        from api.cross_line_conversion import lookup_conversion
+
+        entry = lookup_conversion(
+            source_canonical_key="Redken::Shades EQ Gloss::US",
+            source_shade_code="09P",
+            target_canonical_key="Schwarzkopf Professional::IGORA VIBRANCE::US",
+        )
+        self.assertIsNotNone(entry)
+        self.assertEqual(entry["strategy"], "fixed")
+        self.assertEqual(entry["target_shade_code"], "9-1")
+        self.assertEqual(entry["conversion_id"], "seq_09p__vibrance")
+
+    def test_seq_09n_fixed_conversion_to_vibrance(self) -> None:
+        from api.cross_line_conversion import lookup_conversion
+
+        entry = lookup_conversion(
+            source_canonical_key="Redken::Shades EQ Gloss::US",
+            source_shade_code="09N",
+            target_canonical_key="Schwarzkopf Professional::IGORA VIBRANCE::US",
+        )
+        self.assertIsNotNone(entry)
+        self.assertEqual(entry["strategy"], "fixed")
+        self.assertEqual(entry["target_shade_code"], "9-0")
+        self.assertIn("9-0 + 9-1", entry.get("notes", ""))
+
+    def test_matrix_insider_conversion_resolves(self) -> None:
+        from api.cross_line_conversion import lookup_conversion
+        from api.shade_catalog import lookup_shade_exact
+
+        source = lookup_shade_exact("6N", product_line_hint="Color Insider")
+        self.assertIsNotNone(source)
+        entry = lookup_conversion(
+            source_canonical_key="Matrix::Color Insider::US",
+            source_shade_code="6N",
+            target_canonical_key="Pravana::ChromaSilk Creme Color::US",
+        )
+        self.assertIsNotNone(entry)
+        self.assertEqual(entry["target_shade_code"], "6N")
+
     def test_conversion_map_loaded_in_db(self) -> None:
         import sqlite3
         from src.paths import DEFAULT_DB_PATH

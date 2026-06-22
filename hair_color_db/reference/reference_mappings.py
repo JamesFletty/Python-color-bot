@@ -16,6 +16,7 @@ LINE_CANONICAL: dict[str, str] = {
     "Color Rhapsody Permanent Cream Color": "Moroccanoil Professional::Color Rhapsody::US",
     "SoColor Pre-Bonded": "Matrix::SoColor Pre-Bonded::US",
     "SoColor": "Matrix::SoColor::US",
+    "Color Insider": "Matrix::Color Insider::US",
     "Koleston Perfect": "Wella Professionals::Koleston Perfect::US",
     # Pravana ChromaSilk lines
     "ChromaSilk Creme": "Pravana::ChromaSilk Creme Color::US",
@@ -33,6 +34,29 @@ BRAND_CONVERSION_SOURCE: dict[str, str] = {
 }
 
 PRAVANA_CHROMASILK_TARGET = "Pravana::ChromaSilk Creme Color::US"
+SEQ_CK = LINE_CANONICAL["Shades EQ Gloss"]
+VIBRANCE_CK = LINE_CANONICAL["IGORA VIBRANCE"]
+MATRIX_INSIDER_CK = LINE_CANONICAL["Color Insider"]
+
+MATRIX_INSIDER_SUFFIX_TO_TONES: dict[str, list[str]] = {
+    "N": ["Natural"],
+    "A": ["Ash"],
+    "AA": ["Ash", "Blue"],
+    "V": ["Violet"],
+    "G": ["Gold"],
+    "GC": ["Gold", "Copper"],
+    "GV": ["Gold", "Violet"],
+    "C": ["Copper"],
+    "M": ["Mahogany", "Red"],
+    "R": ["Red"],
+    "RC": ["Red", "Copper"],
+    "RV": ["Red", "Violet"],
+    "RR+": ["Red"],
+    "BR": ["Brown", "Red"],
+    "BC": ["Blue", "Copper"],
+    "WM": ["Warm", "Mahogany"],
+    "NW": ["Natural", "Warm"],
+}
 
 # Manufacturer tone family labels → normalized tone vocabulary
 TONE_FAMILY_TO_NORMALIZED: dict[str, list[str]] = {
