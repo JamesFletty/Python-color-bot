@@ -37,9 +37,27 @@ def _majirel_aliases(code: str) -> list[str]:
     return [code]
 
 
-def _normalize_candidate_codes(shade_code: str, product_line: str) -> list[str]:
+def _normalize_candidate_codes(
+    shade_code: str,
+    product_line: str,
+    *,
+    target_level: int | None = None,
+) -> list[str]:
     code = shade_code.strip()
     candidates = [code]
+
+    # Aveda-style compound codes: swap X/Y ↔ Y/X and try at target level.
+    # e.g. AI says "3 R/V Intense" but catalog has "5 V/R Intense".
+    m = re.fullmatch(r"(\d{1,2})\s+([A-Za-z])/([A-Za-z])(.*)", code)
+    if m:
+        lvl_str, t1, t2, rest = m.group(1), m.group(2), m.group(3), m.group(4)
+        swapped = f"{lvl_str} {t2}/{t1}{rest}"
+        if swapped.lower() != code.lower():
+            candidates.append(swapped)
+        if target_level is not None and int(lvl_str) != target_level:
+            candidates.append(f"{target_level} {t1}/{t2}{rest}")
+            candidates.append(f"{target_level} {t2}/{t1}{rest}")
+
     if product_line.lower().startswith("majirel"):
         candidates.extend(_majirel_aliases(code))
     if re.fullmatch(r"\d{1,2}N", code, re.IGNORECASE):
@@ -49,19 +67,48 @@ def _normalize_candidate_codes(shade_code: str, product_line: str) -> list[str]:
     return list(dict.fromkeys(candidates))
 
 
+def _tones_from_shade_code(shade_code: str) -> tuple[str, ...]:
+    """Extract likely normalized tone families from a shade code string.
+
+    Used as a last-resort fallback when the text parser finds no tones.
+    """
+    code = shade_code.upper()
+    tones: list[str] = []
+    if re.search(r"V/R|R/V", code):
+        tones.extend(["Violet", "Red"])
+    elif re.search(r"R/O|O/R", code):
+        tones.extend(["Copper", "Red"])
+    elif re.search(r"Y/O|O/Y", code):
+        tones.extend(["Gold", "Copper"])
+    elif re.search(r"B/G|G/B", code):
+        tones.extend(["Ash"])
+    elif re.search(r"B/V|V/B", code):
+        tones.extend(["Ash", "Violet"])
+    elif re.search(r"N/N", code):
+        tones.append("Natural")
+    elif re.search(r"\bR\b|\bRED\b", code):
+        tones.append("Red")
+    elif re.search(r"\bV\b|\bVIOLET\b", code):
+        tones.append("Violet")
+    return tuple(tones)
+
+
 def resolve_shade_for_line(
     shade_code: str,
     *,
     line_id: str,
     product_line: str,
     require_level: bool = True,
+    target_level: int | None = None,
 ) -> dict[str, Any] | None:
     """Find a catalog row for shade_code on the target line.
 
     When require_level=True (default), pure-tone boosters and additives that
     carry no level value are excluded — they are not valid base shade picks.
+    target_level is tried as an alternate level when the AI picked a shade at
+    the wrong level (e.g. "3 V/R Intense" when the goal is level 5).
     """
-    for candidate in _normalize_candidate_codes(shade_code, product_line):
+    for candidate in _normalize_candidate_codes(shade_code, product_line, target_level=target_level):
         exact = lookup_shade_exact(candidate, line_id=line_id)
         if exact:
             if require_level and exact.get("level") is None:
@@ -284,8 +331,18 @@ def ground_structured_result(
     """
     shade_code = str(parsed.get("shade") or "").strip()
     skip_alias = _source_needs_warmth(context) and _is_lazy_natural_alias(shade_code, product_line)
+    target_level_int: int | None = None
+    _tl = context.get("target_level") or parsed.get("desired_level")
+    if _tl is not None:
+        try:
+            target_level_int = int(float(_tl))
+        except (TypeError, ValueError):
+            pass
     resolved = None if skip_alias else resolve_shade_for_line(
-        shade_code, line_id=line_id, product_line=product_line
+        shade_code,
+        line_id=line_id,
+        product_line=product_line,
+        target_level=target_level_int,
     )
     if resolved is not None:
         parsed["shade"] = resolved["code"]
@@ -306,10 +363,12 @@ def ground_structured_result(
             or (parsed_source.inferred_level if parsed_source else None)
             or float(parsed.get("desired_level") or parsed.get("current_level") or 7)
         )
+        # Prefer tones from text parser; fall back to tones inferred from the
+        # AI's own shade code (e.g. "3 R/V Intense" → Violet + Red).
         tones: tuple[str, ...] = (
             parsed_source.inferred_tones
             if parsed_source and parsed_source.inferred_tones
-            else ("Natural",)
+            else _tones_from_shade_code(shade_code) or ("Natural",)
         )
         matches = rank_shades_for_query(
             product_line=product_line,

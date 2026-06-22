@@ -137,6 +137,7 @@ export default function ResultPanel({ result, loading, error, mode }: Props) {
   const devKeys = ["developer", "developer_strength", "developer_volume", "developer_options", "mixing_ratio", "ratio"];
   const processKeys = ["processing_time", "processing_time_minutes", "timing", "application_notes", "notes"];
   const metaKeys = ["service_intent", "gray_coverage", "gray", "current_level", "desired_level", "texture", "porosity", "elasticity"];
+  const skipKeys = ["components", "formula_rule", ...topKeys, ...devKeys, ...processKeys, ...metaKeys];
 
   function pick(keys: string[]): Record<string, unknown> {
     return Object.fromEntries(
@@ -150,9 +151,14 @@ export default function ResultPanel({ result, loading, error, mode }: Props) {
     );
   }
 
-  const allPickedKeys = [...topKeys, ...devKeys, ...processKeys, ...metaKeys];
+  const components = Array.isArray(formula.components) ? formula.components as Array<{product: string; grams: number; role: string}> : null;
+  const formulaRule = typeof formula.formula_rule === "string" ? formula.formula_rule : null;
+  const developer = typeof formula.developer === "string" ? formula.developer : null;
+  const mixingRatio = typeof formula.mixing_ratio === "string" ? formula.mixing_ratio : null;
+
+  const allPickedKeys = skipKeys;
   const shadeSection = pick(topKeys);
-  const devSection = pick(devKeys);
+  const devSection = components ? {} : pick(devKeys);
   const processSection = pick(processKeys);
   const metaSection = pick(metaKeys);
   const remainingSection = omit(allPickedKeys);
@@ -215,6 +221,35 @@ export default function ResultPanel({ result, loading, error, mode }: Props) {
           </div>
         )}
       </div>
+
+      {/* Multi-component formula (e.g. Aveda Intense Series) */}
+      {components && components.length > 0 && (
+        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
+          <div className="text-xs font-semibold text-[var(--amber)] mono uppercase tracking-widest mb-3">
+            Formula
+          </div>
+          <div className="space-y-2 mb-3">
+            {components.map((c, i) => (
+              <div key={i} className="flex items-center gap-3 text-sm">
+                <span className="mono text-[var(--teal)] font-semibold w-10 text-right shrink-0">
+                  {c.grams}g
+                </span>
+                <span className="text-[var(--text)]">{c.product}</span>
+                <span className="text-[var(--muted)] text-xs ml-auto">{c.role}</span>
+              </div>
+            ))}
+            <div className="flex items-center gap-3 text-sm pt-1 border-t border-[var(--border)] mt-2">
+              <span className="mono text-[var(--teal)] font-semibold w-10 text-right shrink-0">dev</span>
+              <span className="text-[var(--text)]">
+                {developer}{mixingRatio ? ` · ${mixingRatio}` : ""}
+              </span>
+            </div>
+          </div>
+          {formulaRule && (
+            <div className="text-xs text-[var(--muted)] mt-1 mono opacity-60">{formulaRule}</div>
+          )}
+        </div>
+      )}
 
       {/* Formula sections */}
       {Object.keys(shadeSection).length > 0 && (

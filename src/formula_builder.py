@@ -390,6 +390,24 @@ def build_formula(
     if unresolved_tones:
         confidence = "medium" if confidence == "high" else confidence
 
+    # Aveda Full Spectrum Intense Series — build multi-component formula.
+    aveda_intense_components: dict | None = None
+    try:
+        from src.aveda_intense_formula import (
+            build_intense_formula_components,
+            is_aveda_full_spectrum,
+            is_intense_series_shade,
+        )
+        if is_aveda_full_spectrum(shade["product_line"], str(shade.get("canonical_key") or "")) and \
+                is_intense_series_shade(shade["shade_code"], shade.get("sub_range")):
+            aveda_intense_components = build_intense_formula_components(
+                shade["shade_code"],
+                desired_level=int(desired_level) if desired_level is not None else int(target_level or 7),
+                current_level=int(starting_level) if starting_level is not None else None,
+            )
+    except Exception:
+        pass
+
     formula = {
         "status": "ok",
         "shade": {
@@ -423,12 +441,14 @@ def build_formula(
             ),
         },
         "formula": {
-            "mixing_ratio": mixing_ratio,
-            "developer": developer_selection["developer"],
+            "components": aveda_intense_components["components"] if aveda_intense_components else None,
+            "mixing_ratio": aveda_intense_components["mixing_ratio"] if aveda_intense_components else mixing_ratio,
+            "developer": aveda_intense_components["developer"] if aveda_intense_components else developer_selection["developer"],
             "developer_rationale": developer_selection["rationale"],
             "processing_time": processing["processing_time"],
             "gray_coverage_guidance": gray_guidance["gray_coverage_guidance"],
             "special_usage_notes": special_notes,
+            "formula_rule": aveda_intense_components["rule"] if aveda_intense_components else None,
         },
         "unresolved_tones": unresolved_tones,
         "warnings": developer_selection["warnings"],
