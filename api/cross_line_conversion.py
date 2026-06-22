@@ -83,14 +83,18 @@ def lookup_conversion(
     target_canonical_key: str,
 ) -> dict[str, Any] | None:
     """Find an explicit conversion rule for a source shade → target line."""
+    matches: list[dict[str, Any]] = []
     for entry in list_conversions():
         if (
             entry["source_canonical_key"] == source_canonical_key
             and entry["source_shade_code"].lower() == source_shade_code.lower()
             and entry["target_canonical_key"] == target_canonical_key
         ):
-            return entry
-    return None
+            matches.append(entry)
+    if not matches:
+        return None
+    matches.sort(key=lambda e: 0 if e.get("strategy") == "fixed" else 1)
+    return matches[0]
 
 
 def _formula_base_level(parsed: ParsedFormula) -> float | None:

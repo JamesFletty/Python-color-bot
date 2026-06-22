@@ -76,6 +76,14 @@ def _shade_code_from_token(token: str) -> str | None:
     if m:
         return f"{int(m.group(1))} {'Y/O' if m.group(2).lower() == 'y' else 'R/O'}"
 
+    # Aveda inventory shorthand: 6R/O, 6R (no spaces)
+    m = re.fullmatch(r"0?(\d{1,2})r/o", cleaned)
+    if m:
+        return f"{int(m.group(1))} R/O"
+    m = re.fullmatch(r"0?(\d{1,2})r", cleaned)
+    if m:
+        return f"{int(m.group(1))} R"
+
     return _normalize_token(token)
 
 

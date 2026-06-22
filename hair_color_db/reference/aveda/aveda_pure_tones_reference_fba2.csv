@@ -1,0 +1,16 @@
+Tone Category,Tone Name,Code,Usage Levels,Description
+Light Pure Tone,Light Natural/Natural,Light N/N,10-7,Lightest natural tone for blonde levels
+Light Pure Tone,Light Violet/Blue,Light V/B,10-7,Light ash/violet tone for blonde levels
+Light Pure Tone,Light Blue/Blue,Light B/B,10-7,Light intense ash tone for blonde levels
+Light Pure Tone,Light Yellow/Orange,Light Y/O,10-7,Light golden tone for blonde levels
+Light Pure Tone,Light Orange/Red,Light O/R,10-7,Light copper tone for blonde levels
+Dark Pure Tone,Dark Natural/Natural,Dark N/N,6-3,Darker natural tone for brown levels
+Dark Pure Tone,Dark Blue/Violet,Dark B/V,6-3,Dark ash tone for brown levels
+Dark Pure Tone,Dark Blue/Green,Dark B/G,6-3,Dark intense ash tone for brown levels
+Dark Pure Tone,Dark Yellow/Orange,Dark Y/O,6-3,Dark golden tone for brown levels
+Dark Pure Tone,Dark Red/Orange,Dark R/O,6-3,Dark copper tone for brown levels
+Dark Pure Tone,Dark Violet/Red,Dark V/R,6-3,Dark violet/red tone for brown levels
+Pure Pigment,Red Pure Pigment,Red,6-3,Pure red for intense red results
+Pastel Tone,Pastel Violet,Pastel Violet,High Lift,For platinum blonde results
+Pastel Tone,Pastel Blue,Pastel Blue,High Lift,For ash blonde results
+Pastel Tone,Pastel Yellow/Orange,Pastel Y/O,High Lift,For golden blonde results

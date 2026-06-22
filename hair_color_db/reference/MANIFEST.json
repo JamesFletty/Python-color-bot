@@ -1,0 +1,29 @@
+{
+  "package": "hair_color_reference_pack_v1",
+  "generated": "2026-06-21",
+  "description": "Structured manufacturer reference data for tone normalization and cross-line translation. Import via hair_color_db/tools/import_reference_pack.py",
+  "directories": {
+    "aveda": "Pure tones, shade inventory, precoloration formulas, NRP, line rules",
+    "redken": "Shade inventory (SEQ + Gels), color melting pairing, technology key",
+    "loreal": "Dia Light / Dia Richesse shade inventories + JSON",
+    "moroccanoil": "Shade inventory with tonal families, color manual",
+    "schwarzkopf": "IGORA ROYAL normalized shades, formula recreation rules",
+    "matrix": "2023 shade inventory JSON",
+    "shared": "L'Oréal tonal_reference_key (digit notation → families)",
+    "cross_line": "Generated pairing rules (output of import)"
+  },
+  "import_targets": {
+    "C_normalized_shade_records.json": "normalized_tones, manufacturer_tone_codes from inventories",
+    "F_tone_normalization_map.json": "digit/suffix tone codes from tonal_reference_key",
+    "J_cross_line_conversion_map.json": "explicit source→target rules from pairing + tone families"
+  },
+  "key_files": [
+    "aveda/aveda_pure_tones_reference_fba2.csv",
+    "aveda/aveda_shade_inventory_db61.csv",
+    "redken/redken_shade_inventory_1498.csv",
+    "redken/redken_color_melting_pairing_2b08.csv",
+    "shared/tonal_reference_key_561a.csv",
+    "moroccanoil/shade_inventory_b455.csv",
+    "loreal/DIA_Light_Shade_Inventory_d337.csv"
+  ]
+}

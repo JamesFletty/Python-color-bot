@@ -1,0 +1,59 @@
+Shade Code,Shade Name,Level,Primary Tone,Secondary Tone,Tonal Family,Is New
+5.66/5RR,Ruby,5,R,,Reds,False
+4.65/4RRv,Red Velvet,4,R,Rv,Reds,False
+7.40/7CCC,Firelight,7,C,,Coppers,True
+7.43/7CG,Sunset,7,C,G,Coppers,False
+9.03/9NG,Honey Milkshake,9,N,G,Golds,False
+9.3/9G,Light Gold,9,G,,Golds,False
+8.3/8G,Light Brown Sugar,8,G,,Golds,False
+8.34/8GC,Light Caramel,8,G,C,Golds,False
+6.3/6G,Gingerbread,6,G,,Golds,False
+6.34/6GC,Honey Chestnut,6,G,C,Golds,False
+9.31/9GB,Golden Beige,9,G,B,Warm Browns & Blondes,False
+8.31/8GB,Golden Beige,8,G,B,Warm Browns & Blondes,False
+7.31/7GB,Almond,7,G,B,Warm Browns & Blondes,False
+5.31/5GB,Praline,5,G,B,Warm Browns & Blondes,False
+5.32/5GV,Café,5,G,V,Warm Browns & Blondes,False
+6.34/6GC,Honey Chestnut,6,G,C,Warm Browns & Blondes,False
+5.35/5GRv,Warm Chestnut,5,G,Rv,Warm Browns & Blondes,True
+6.42/6CV,Light,6,C,V,Warm Browns & Blondes,True
+5.42/5CV,,5,C,V,Warm Browns & Blondes,True
+6.53/6RvG,Candied Walnut,6,Rv,G,Warm Browns & Blondes,False
+3.00/3NN,Deepest Black,3,N,,Naturals,False
+1.00/1NN,,1,N,,Naturals,False
+8/8N,Blonde,8,N,,Naturals,False
+7/7N,Dark Blonde,7,N,,Naturals,False
+6/6N,Light Brown,6,N,,Naturals,False
+5/5N,Brown,5,N,,Naturals,False
+4/4N,Dark Brown,4,N,,Naturals,False
+10.12/10BV,Frosty Pearl Milkshake,10,B,V,Cool Browns & Blondes,False
+10.13/10BG,Vanilla Macaroon Milkshake,10,B,G,Cool Browns & Blondes,False
+9.13/9BG,Cool Buttercream,9,B,G,Cool Browns & Blondes,False
+6.13/6BG,Walnut,6,B,G,Cool Browns & Blondes,False
+9.13/9BG,Sandy Blonde,9,B,G,Cool Browns & Blondes,True
+8.13/8BG,Ash Beige,8,B,G,Cool Browns & Blondes,True
+7.13/7BG,Satin Blonde,7,B,G,Cool Browns & Blondes,False
+7.14/7BC,Caramel,7,B,C,Cool Browns & Blondes,True
+7.23/7VG,Toffee Cream,7,V,G,Cool Browns & Blondes,False
+7.24/7VC,Pearly Butterscotch,7,V,C,Cool Browns & Blondes,False
+6.12/6BV,Sweet Molasses,6,B,V,Cool Browns & Blondes,False
+6.13/6BG,Walnut,6,B,G,Cool Browns & Blondes,False
+6.23/6VG,Hazelnut Honey,6,V,G,Cool Browns & Blondes,False
+6.24/6VC,Iced Tea,6,V,C,Cool Browns & Blondes,True
+5.12/5BV,Blueberry Chestnut,5,B,V,Cool Browns & Blondes,False
+5.13/5BG,Cool Chestnut,5,B,G,Cool Browns & Blondes,False
+5.15/5BRv,Cappuccino,5,B,Rv,Cool Browns & Blondes,False
+5.25/5VRv,Iced Chestnut,5,V,Rv,Cool Browns & Blondes,False
+4.15/4BRv,Chocolate,4,B,Rv,Cool Browns & Blondes,False
+5.52/5RvV,Raspberry Truffle,5,Rv,V,Violets,False
+6.02/6Nv,Glazed Pecan,6,N,V,Violets,False
+4.26/4vR,Aubergine,4,V,R,Violets,True
+7.01/7NB,Natural Cool Blonde,7,N,B,Blues,False
+6.01/6NB,Smoked Almond,6,N,B,Blues,False
+5.01/5NB,Smoked Walnut,5,N,B,Blues,True
+4.01/4NB,Iced Espresso,4,N,B,Blues,False
+2.10/2BB,Blue Onyx,2,B,,Blues,False
+9.11/9BB,Iceberg Grey,9,B,,Blues,True
+9.01/9NB,Frosty Milkshake,9,N,B,Blues,False
+5.07/5NGr,Sage,5,N,Gr,Greens,True
+9.11/9BB,Iceberg Milkshake,9,B,,Blues,True

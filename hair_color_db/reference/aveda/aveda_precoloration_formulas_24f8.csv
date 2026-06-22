@@ -1,0 +1,29 @@
+Target Level,Target Tone Family,Formula,Developer,Processing
+10,N/A,N/A,N/A,N/A
+9,Natural/Ash/Gold,20g 9N + 20g ON + 4g Light Y/O,Deposit-Only,15-20 min
+9,Light Copper/Red/Violet-Red,20g 9N + 20g ON + 4g Light O/R,Deposit-Only,15-20 min
+9,Intense,10g 9N + 30g ON + 8g Light O/R,Deposit-Only,15-20 min
+8,Natural/Ash/Gold,20g 8N + 20g ON + 6g Light Y/O,Deposit-Only,15-20 min
+8,Light Copper/Red/Violet-Red,20g 8N + 20g ON + 6g Light O/R,Deposit-Only,15-20 min
+8,Intense,10g 8N + 30g ON + 12g Light O/R,Deposit-Only,15-20 min
+7,Natural/Ash/Gold,20g 7N + 20g ON + 8g Light Y/O,Deposit-Only,15-20 min
+7,Light Copper/Red/Violet-Red,20g 7N + 20g ON + 8g Light O/R,Deposit-Only,15-20 min
+7,Intense,10g 7N + 30g ON + 16g Light O/R,Deposit-Only,15-20 min
+6,Natural/Ash/Gold,20g 6N + 20g ON + 1g Dark Y/O + 1g Dark R/O,Deposit-Only,15-20 min
+6,Light Copper/Red/Violet-Red,"20g 6N + 20g ON + 4g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min
+6,Intense,"10g 6N + 30g ON + 4g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min
+5,Natural/Ash/Gold,20g 5N + 20g ON + 2g Dark Y/O + 2g Dark R/O,Deposit-Only,15-20 min
+5,Light Copper/Red/Violet-Red,"20g 5N + 20g ON + 8g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min
+5,Intense,"10g 5N + 30g ON + 8g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min
+4,Natural/Ash/Gold,20g 4N + 20g ON + 3g Dark Y/O + 3g Dark R/O,Deposit-Only,15-20 min
+4,Light Copper/Red/Violet-Red,"20g 4N + 20g ON + 12g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min
+4,Intense,"10g 4N + 30g ON + 12g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min
+3,Natural/Ash/Gold,20g 3N + 20g ON + 4g Dark Y/O + 4g Dark R/O,Deposit-Only,15-20 min
+3,Light Copper/Red/Violet-Red,"20g 3N + 20g ON + 16g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min
+3,Intense,"10g 3N + 30g ON + 16g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min
+2,Natural/Ash/Gold,20g 3N + 20g ON + 4g Dark Y/O + 4g Dark R/O,Deposit-Only,15-20 min
+2,Light Copper/Red/Violet-Red,"20g 3N + 20g ON + 16g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min
+2,Intense,"10g 3N + 30g ON + 16g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min
+1,Natural/Ash/Gold,20g 3N + 20g ON + 4g Dark Y/O + 4g Dark R/O,Deposit-Only,15-20 min
+1,Light Copper/Red/Violet-Red,"20g 3N + 20g ON + 16g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min
+1,Intense,"10g 3N + 30g ON + 16g Dark R/O, Dark R/R or Dark R/V",Deposit-Only,15-20 min

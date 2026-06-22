@@ -1,0 +1,3281 @@
+{
+  "brand": "Matrix",
+  "year": 2023,
+  "source": "2023 Matrix Manual Haircolor",
+  "tone_key": {
+    ".0": "Neutral (N)",
+    ".1": "Ash (A)",
+    ".2": "Violet (V)",
+    ".3": "Gold (G)",
+    ".4": "Copper (C)",
+    ".5": "Mahogany (M)",
+    ".6": "Red (R)",
+    ".7": "Jade (J)",
+    ".8": "Mocha (M)",
+    ".9": "Pearl (P)"
+  },
+  "color_wheel": {
+    "Yellow": [
+      "G",
+      "W",
+      "UL-N",
+      "UL-N+"
+    ],
+    "Yellow-Orange": [
+      "NW",
+      "CG"
+    ],
+    "Orange": [
+      "CC"
+    ],
+    "Red-Orange": [
+      "BC",
+      "HD-CR"
+    ],
+    "Red": [
+      "BR",
+      "RB",
+      "RR",
+      "RR+",
+      "SR-R",
+      "HD-RR"
+    ],
+    "Red-Violet": [
+      "RV",
+      "RV+",
+      "SR-RV",
+      "HD-RV"
+    ],
+    "Violet": [
+      "V",
+      "SPV"
+    ],
+    "Blue-Violet": [
+      "VA",
+      "SPP",
+      "Silver Opal",
+      "Violet Opal"
+    ],
+    "Blue": [
+      "SPA",
+      "AA",
+      "Anti-Brass",
+      "A",
+      "UL-AA",
+      "UL-A+"
+    ],
+    "Blue-Green": [
+      "NJ",
+      "Anti-Red"
+    ],
+    "Green": [
+      "Anti-Red"
+    ],
+    "Yellow-Green": []
+  },
+  "product_lines": [
+    {
+      "line_name": "SoColor Pre-Bonded - Blended Collection",
+      "category": "Permanent",
+      "technology": "Pre-Bonded, Pre-Blended",
+      "rules": {
+        "gray_coverage": "Up to 50%",
+        "lift": "Up to 4 levels",
+        "mixing_ratio": "1:1 (Color : Developer)",
+        "developer_options": "10, 20, 30, 40 Volume Matrix Cream Developer",
+        "processing_time": "30-45 minutes room temperature. Process full 45 minutes when lifting more than 1 level, and when depositing on gray",
+        "background": "Pre-blended with brown/tan background",
+        "intermixable_with": [
+          "Reflect Collection",
+          "Extra Coverage Collection"
+        ],
+        "not_for": [
+          "Do not blend through mids+ends for Extra Coverage, DreamAge, or UL series"
+        ],
+        "virgin_application": "Apply to mids first (10 min), then base (10 min), then ends (remaining time)",
+        "retouch_application": "Apply to base (20 min), mist Instacure on mids+ends, blend through (remaining time)",
+        "porosity_adjustment": "On overly porous hair, lightly mist Instacure on mids+ends before pulling through",
+        "strand_test": "Process 10-20 minutes, rinse, dry to preview"
+      },
+      "tonal_families": {
+        "Cool Palette": {
+          "description": "Cool tones from ash to pearl",
+          "shades": [
+            {
+              "shade": "3AA",
+              "level": 3,
+              "name": "Darkest Brown",
+              "primary_tone": "A",
+              "secondary_tone": "A",
+              "tone_family": "Ash-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "4AA",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "A",
+              "secondary_tone": "A",
+              "tone_family": "Ash-Ash (Power Cools)",
+              "position": "Coolest"
+            },
+            {
+              "shade": "4VA",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "V",
+              "secondary_tone": "A",
+              "tone_family": "Violet-Ash (Power Cools)",
+              "position": "Coolest"
+            },
+            {
+              "shade": "4A",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "5A",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "6AA",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "A",
+              "secondary_tone": "A",
+              "tone_family": "Ash-Ash (Power Cools)",
+              "position": "Coolest"
+            },
+            {
+              "shade": "6A",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "7A",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "7P",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "P",
+              "secondary_tone": null,
+              "tone_family": "Pearl",
+              "position": "Warmest in Cool"
+            },
+            {
+              "shade": "8AA",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "A",
+              "secondary_tone": "A",
+              "tone_family": "Ash-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "8A",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "8AV",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "A",
+              "secondary_tone": "V",
+              "tone_family": "Ash-Violet",
+              "position": "Cool"
+            },
+            {
+              "shade": "9A",
+              "level": 9,
+              "name": "Light Blonde",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "9P",
+              "level": 9,
+              "name": "Light Blonde",
+              "primary_tone": "P",
+              "secondary_tone": null,
+              "tone_family": "Pearl",
+              "position": "Warmest in Cool"
+            },
+            {
+              "shade": "10AV",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "A",
+              "secondary_tone": "V",
+              "tone_family": "Ash-Violet",
+              "position": "Cool"
+            },
+            {
+              "shade": "11A",
+              "level": 11,
+              "name": "Extra Light Blonde Plus",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "11P",
+              "level": 11,
+              "name": "Extra Light Blonde Plus",
+              "primary_tone": "P",
+              "secondary_tone": null,
+              "tone_family": "Pearl",
+              "position": "Warmest in Cool"
+            }
+          ]
+        },
+        "Neutral Palette": {
+          "description": "Neutral balanced tones",
+          "shades": [
+            {
+              "shade": "1N",
+              "level": 1,
+              "name": "Black",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "2N",
+              "level": 2,
+              "name": "Natural Black",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "3N",
+              "level": 3,
+              "name": "Darkest Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "4N",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "4NJ",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "N",
+              "secondary_tone": "J",
+              "tone_family": "Neutral-Jade",
+              "position": "Coolest"
+            },
+            {
+              "shade": "5N",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "5NA",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "6N",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "6NA",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "6NJ",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": "J",
+              "tone_family": "Neutral-Jade",
+              "position": "Coolest"
+            },
+            {
+              "shade": "6NV",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": "V",
+              "tone_family": "Neutral-Violet",
+              "position": "Cool"
+            },
+            {
+              "shade": "6NW",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": "W",
+              "tone_family": "Neutral-Warm",
+              "position": "Warmest"
+            },
+            {
+              "shade": "7N",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "7NA",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "8N",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "8NA",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "9N",
+              "level": 9,
+              "name": "Light Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "10N",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "11N",
+              "level": 11,
+              "name": "Extra Light Blonde Plus",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            }
+          ]
+        },
+        "Mocha Palette": {
+          "description": "Warm mocha tones",
+          "shades": [
+            {
+              "shade": "4M",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Coolest"
+            },
+            {
+              "shade": "5M",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "6M",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "7M",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "8M",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warmest"
+            }
+          ]
+        },
+        "Warm Palette": {
+          "description": "Warm golden tones",
+          "shades": [
+            {
+              "shade": "5W",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "W",
+              "secondary_tone": null,
+              "tone_family": "Warm",
+              "position": "Coolest"
+            },
+            {
+              "shade": "6W",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "W",
+              "secondary_tone": null,
+              "tone_family": "Warm",
+              "position": "Warm"
+            },
+            {
+              "shade": "7W",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "W",
+              "secondary_tone": null,
+              "tone_family": "Warm",
+              "position": "Warm"
+            },
+            {
+              "shade": "8W",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "W",
+              "secondary_tone": null,
+              "tone_family": "Warm",
+              "position": "Warmest"
+            }
+          ]
+        },
+        "Blended Brown Palette": {
+          "description": "Brown-red blended tones",
+          "shades": [
+            {
+              "shade": "3BR",
+              "level": 3,
+              "name": "Darkest Brown",
+              "primary_tone": "B",
+              "secondary_tone": "R",
+              "tone_family": "Brown-Red",
+              "position": "Coolest"
+            },
+            {
+              "shade": "3RR",
+              "level": 3,
+              "name": "Darkest Brown",
+              "primary_tone": "R",
+              "secondary_tone": "R",
+              "tone_family": "Red-Red",
+              "position": "Warm"
+            },
+            {
+              "shade": "3RV",
+              "level": 3,
+              "name": "Darkest Brown",
+              "primary_tone": "R",
+              "secondary_tone": "V",
+              "tone_family": "Red-Violet",
+              "position": "Warmest"
+            },
+            {
+              "shade": "4RB",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "R",
+              "secondary_tone": "B",
+              "tone_family": "Red-Brown",
+              "position": "Warm"
+            },
+            {
+              "shade": "5BR",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "B",
+              "secondary_tone": "R",
+              "tone_family": "Brown-Red",
+              "position": "Coolest"
+            },
+            {
+              "shade": "5BC",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "B",
+              "secondary_tone": "C",
+              "tone_family": "Brown-Copper",
+              "position": "Warm"
+            },
+            {
+              "shade": "6BR",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "B",
+              "secondary_tone": "R",
+              "tone_family": "Brown-Red",
+              "position": "Cool"
+            },
+            {
+              "shade": "6RB",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "R",
+              "secondary_tone": "B",
+              "tone_family": "Red-Brown",
+              "position": "Warm"
+            },
+            {
+              "shade": "7BC",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "B",
+              "secondary_tone": "C",
+              "tone_family": "Brown-Copper",
+              "position": "Warm"
+            },
+            {
+              "shade": "7RB",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "R",
+              "secondary_tone": "B",
+              "tone_family": "Red-Brown",
+              "position": "Warmest"
+            }
+          ]
+        },
+        "Blended Bronze Palette": {
+          "description": "Copper-gold bronze tones",
+          "shades": [
+            {
+              "shade": "5G",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "G",
+              "secondary_tone": null,
+              "tone_family": "Gold",
+              "position": "Coolest"
+            },
+            {
+              "shade": "5CG",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "C",
+              "secondary_tone": "G",
+              "tone_family": "Copper-Gold",
+              "position": "Warmest"
+            },
+            {
+              "shade": "7G",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "G",
+              "secondary_tone": null,
+              "tone_family": "Gold",
+              "position": "Cool"
+            },
+            {
+              "shade": "7CG",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "C",
+              "secondary_tone": "G",
+              "tone_family": "Copper-Gold",
+              "position": "Warmest"
+            },
+            {
+              "shade": "9G",
+              "level": 9,
+              "name": "Light Blonde",
+              "primary_tone": "G",
+              "secondary_tone": null,
+              "tone_family": "Gold",
+              "position": "Cool"
+            },
+            {
+              "shade": "9CG",
+              "level": 9,
+              "name": "Light Blonde",
+              "primary_tone": "C",
+              "secondary_tone": "G",
+              "tone_family": "Copper-Gold",
+              "position": "Warmest"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "SoColor Pre-Bonded - Extra Coverage Collection",
+      "category": "Permanent",
+      "technology": "Pre-Bonded, Extra Coverage",
+      "rules": {
+        "gray_coverage": "100% for >50% gray hair",
+        "lift": "Up to 2 levels",
+        "mixing_ratio": "1:1 (Color : Developer)",
+        "developer": "20 Volume (6%) Matrix Cream Developer",
+        "processing_time": "Up to 45 minutes room temperature. Process full 45 minutes for resistant gray hair",
+        "background": "Pre-blended with brown/tan background, opaque uniform full-bodied coverage",
+        "intermixable_with": [
+          "Blended Collection",
+          "Reflect Collection"
+        ],
+        "note": "Mixing with Blended/Reflect can reduce gray coverage. Do not pull through ends after first application - use SoColor Sync for refreshing",
+        "porosity_adjustment": "On overly porous hair, lightly mist Instacure on mids+ends before pulling through, only on first application",
+        "post_color_care": "Total Results Keep Me Vivid Shampoo, Conditioner & Lamination Spray"
+      },
+      "tonal_families": {
+        "Extra Coverage Palette": {
+          "description": "Full coverage for resistant gray",
+          "shades": [
+            {
+              "shade": "504NJ",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "N",
+              "secondary_tone": "J",
+              "tone_family": "Neutral-Jade",
+              "position": "Coolest"
+            },
+            {
+              "shade": "504NA",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "504N",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "504W",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "W",
+              "secondary_tone": null,
+              "tone_family": "Warm",
+              "position": "Warm"
+            },
+            {
+              "shade": "505M",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "505R",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "R",
+              "secondary_tone": null,
+              "tone_family": "Red",
+              "position": "Warmest"
+            },
+            {
+              "shade": "505N",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "506NJ",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": "J",
+              "tone_family": "Neutral-Jade",
+              "position": "Coolest"
+            },
+            {
+              "shade": "506NA",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "506NV",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": "V",
+              "tone_family": "Neutral-Violet",
+              "position": "Cool"
+            },
+            {
+              "shade": "506N",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "506W",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "W",
+              "secondary_tone": null,
+              "tone_family": "Warm",
+              "position": "Warm"
+            },
+            {
+              "shade": "506M",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "506BC",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "B",
+              "secondary_tone": "C",
+              "tone_family": "Brown-Copper",
+              "position": "Warmest"
+            },
+            {
+              "shade": "507N",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "507NW",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "W",
+              "tone_family": "Neutral-Warm",
+              "position": "Warm"
+            },
+            {
+              "shade": "507M",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "507R",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "R",
+              "secondary_tone": null,
+              "tone_family": "Red",
+              "position": "Warmest"
+            },
+            {
+              "shade": "508N",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "508NA",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "508W",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "W",
+              "secondary_tone": null,
+              "tone_family": "Warm",
+              "position": "Warm"
+            },
+            {
+              "shade": "509N",
+              "level": 9,
+              "name": "Light Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "510N",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "510NA",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Cool"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "SoColor Pre-Bonded - DreamAge Collection",
+      "category": "Permanent",
+      "technology": "Pre-Bonded, Low Ammonia",
+      "rules": {
+        "gray_coverage": "100% for >50% gray hair (low ammonia)",
+        "lift": "Up to 2 levels",
+        "mixing_ratio": "1:1 (Color : Developer)",
+        "developer": "20 Volume (6%) Matrix Cream Developer",
+        "processing_time": "Up to 45 minutes room temperature",
+        "background": "Pre-blended with brown/tan background, radiant coverage with visible highs and lows",
+        "intermixable_with": [
+          "Only other DreamAge shades"
+        ],
+        "note": "Do not pull through ends after first application - use SoColor Sync for refreshing. Not recommended to mix with non-DreamAge shades",
+        "porosity_adjustment": "On overly porous hair, lightly mist Instacure on mids+ends before pulling through"
+      },
+      "tonal_families": {
+        "DreamAge Palette": {
+          "description": "Low ammonia gray coverage with dimension",
+          "shades": [
+            {
+              "shade": "504NA",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "505M",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "506NA",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "506M",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "506BC",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "B",
+              "secondary_tone": "C",
+              "tone_family": "Brown-Copper",
+              "position": "Warmest"
+            },
+            {
+              "shade": "507NG",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "G",
+              "tone_family": "Neutral-Gold",
+              "position": "Warm"
+            },
+            {
+              "shade": "508NA",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "508M",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "509NG",
+              "level": 9,
+              "name": "Light Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "G",
+              "tone_family": "Neutral-Gold",
+              "position": "Warm"
+            },
+            {
+              "shade": "510NA",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "SoColor Pre-Bonded - Reflect Collection",
+      "category": "Permanent",
+      "technology": "Pre-Bonded, Pure Reflect",
+      "rules": {
+        "gray_coverage": "Up to 50%",
+        "lift": "Up to 4 levels",
+        "mixing_ratio": "1:1 (Color : Developer)",
+        "developer_options": "10, 20, 30, 40 Volume Matrix Cream Developer",
+        "processing_time": "30-45 minutes room temperature. Process full 45 minutes when lifting more than 1 level, and when depositing on gray",
+        "background": "Pre-blended with little to no brown/tan background - pure reflect for vibrant results",
+        "intermixable_with": [
+          "Blended Collection",
+          "Extra Coverage Collection"
+        ],
+        "note": "Vibrant reds and coppers with specific technology for increased vibrancy and color clarity"
+      },
+      "tonal_families": {
+        "Reflective Palette": {
+          "description": "Pure reflect vibrant tones",
+          "shades": [
+            {
+              "shade": "3VR",
+              "level": 3,
+              "name": "Darkest Brown",
+              "primary_tone": "V",
+              "secondary_tone": "R",
+              "tone_family": "Violet-Red",
+              "position": "Coolest"
+            },
+            {
+              "shade": "4RV+",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "R",
+              "secondary_tone": "V",
+              "tone_family": "Red-Violet (+)",
+              "position": "Cool"
+            },
+            {
+              "shade": "5VR",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "V",
+              "secondary_tone": "R",
+              "tone_family": "Violet-Red",
+              "position": "Coolest"
+            },
+            {
+              "shade": "5RR+",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "R",
+              "secondary_tone": "R",
+              "tone_family": "Red-Red (+)",
+              "position": "Warm"
+            },
+            {
+              "shade": "5RC",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "R",
+              "secondary_tone": "C",
+              "tone_family": "Red-Copper",
+              "position": "Warmest"
+            },
+            {
+              "shade": "6RV+",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "R",
+              "secondary_tone": "V",
+              "tone_family": "Red-Violet (+)",
+              "position": "Cool"
+            },
+            {
+              "shade": "6RR+",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "R",
+              "secondary_tone": "R",
+              "tone_family": "Red-Red (+)",
+              "position": "Warm"
+            },
+            {
+              "shade": "6RC",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "R",
+              "secondary_tone": "C",
+              "tone_family": "Red-Copper",
+              "position": "Warmest"
+            },
+            {
+              "shade": "7CC",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "C",
+              "secondary_tone": "C",
+              "tone_family": "Copper-Copper",
+              "position": "Warmest"
+            },
+            {
+              "shade": "8CC",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "C",
+              "secondary_tone": "C",
+              "tone_family": "Copper-Copper",
+              "position": "Warmest"
+            }
+          ]
+        },
+        "HD Specialty": {
+          "description": "High Definition pure reflect reds",
+          "shades": [
+            {
+              "shade": "HD-RV",
+              "level": null,
+              "name": "High Definition Red Violet",
+              "primary_tone": "RV",
+              "secondary_tone": null,
+              "tone_family": "Red-Violet HD",
+              "position": "Coolest",
+              "recommended_levels": "2-4",
+              "note": "Pure reflect, zero background, intermixable only within HD series"
+            },
+            {
+              "shade": "HD-RR",
+              "level": null,
+              "name": "High Definition Red Red",
+              "primary_tone": "RR",
+              "secondary_tone": null,
+              "tone_family": "Red-Red HD",
+              "position": "Warm",
+              "recommended_levels": "3-5",
+              "note": "Pure reflect, zero background, intermixable only within HD series"
+            },
+            {
+              "shade": "HD-CR",
+              "level": null,
+              "name": "High Definition Copper Red",
+              "primary_tone": "CR",
+              "secondary_tone": null,
+              "tone_family": "Copper-Red HD",
+              "position": "Warmest",
+              "recommended_levels": "5-7",
+              "note": "Pure reflect, zero background, intermixable only within HD series"
+            }
+          ]
+        },
+        "SoRed Specialty": {
+          "description": "Vibrant red highlighter/booster",
+          "shades": [
+            {
+              "shade": "SR-RV",
+              "level": null,
+              "name": "SoRed Red Violet",
+              "primary_tone": "RV",
+              "secondary_tone": null,
+              "tone_family": "Red-Violet",
+              "position": "Coolest",
+              "note": "Lifts + tones through previous haircolor. Intermixable only within SR series"
+            },
+            {
+              "shade": "SR-R",
+              "level": null,
+              "name": "SoRed Red",
+              "primary_tone": "R",
+              "secondary_tone": null,
+              "tone_family": "Red",
+              "position": "Warmest",
+              "note": "Lifts + tones through previous haircolor. Intermixable only within SR series"
+            }
+          ]
+        },
+        "SoBoost Specialty": {
+          "description": "Color boosters",
+          "shades": [
+            {
+              "shade": "BLUE",
+              "level": null,
+              "name": "Blue Booster",
+              "primary_tone": "Blue",
+              "secondary_tone": null,
+              "tone_family": "Blue",
+              "position": "Coolest"
+            },
+            {
+              "shade": "RED",
+              "level": null,
+              "name": "Red Booster",
+              "primary_tone": "Red",
+              "secondary_tone": null,
+              "tone_family": "Red",
+              "position": "Warmest"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "SoColor Pre-Bonded - Ultra Blonde Collection",
+      "category": "Permanent",
+      "technology": "Pre-Bonded, High Lift",
+      "rules": {
+        "lift": "Up to 5 levels",
+        "mixing_ratio": "1:2 (Color : Developer)",
+        "developer_options": "30 Volume (9%) for maximum neutralization, 40 Volume (12%) for maximum lift",
+        "processing_time": "50 minutes room temperature. Process full 50 minutes for maximum lift + neutralization",
+        "background": "Pre-blended high lift color, neutralization + reflect. Low ammonia",
+        "ideal_for": "High lift on medium brown to medium blonde natural bases (levels 5+)",
+        "not_for": [
+          "Refreshing mid-lengths and ends",
+          "Toning pre-lightened or highlighted hair",
+          "Removing color",
+          "Lightening previously colored hair",
+          "Intermixing with Blended, Reflect or other Specialty Series"
+        ],
+        "tips": [
+          "If hair at hairline is very fine, do not apply formula to this area",
+          "Wait and apply UL-AA, UL-A+ formula for last 10-15 minutes only",
+          "Ideal for highlighting",
+          "For maximum lift, ensure sections are fine enough for complete saturation"
+        ]
+      },
+      "tonal_families": {
+        "Ultra Blonde Palette": {
+          "description": "High lift blonde shades",
+          "shades": [
+            {
+              "shade": "UL-AA",
+              "level": null,
+              "name": "Ultra Lift Ash Ash",
+              "primary_tone": "AA",
+              "secondary_tone": null,
+              "tone_family": "Ash-Ash",
+              "position": "Coolest",
+              "base_range": "Base 6-8"
+            },
+            {
+              "shade": "UL-A+",
+              "level": null,
+              "name": "Ultra Lift Ash Plus",
+              "primary_tone": "A+",
+              "secondary_tone": null,
+              "tone_family": "Ash Plus",
+              "position": "Cool",
+              "base_range": "Base 6-8"
+            },
+            {
+              "shade": "UL-P",
+              "level": null,
+              "name": "Ultra Lift Pearl",
+              "primary_tone": "P",
+              "secondary_tone": null,
+              "tone_family": "Pearl",
+              "position": "Cool"
+            },
+            {
+              "shade": "UL-N",
+              "level": null,
+              "name": "Ultra Lift Neutral",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "UL-N+",
+              "level": null,
+              "name": "Ultra Lift Neutral Plus",
+              "primary_tone": "N+",
+              "secondary_tone": null,
+              "tone_family": "Neutral Plus",
+              "position": "Neutral-Warm"
+            },
+            {
+              "shade": "UL-V+",
+              "level": null,
+              "name": "Ultra Lift Violet Plus",
+              "primary_tone": "V+",
+              "secondary_tone": null,
+              "tone_family": "Violet Plus",
+              "position": "Cool"
+            },
+            {
+              "shade": "UL-V",
+              "level": null,
+              "name": "Ultra Lift Violet",
+              "primary_tone": "V",
+              "secondary_tone": null,
+              "tone_family": "Violet",
+              "position": "Cool"
+            }
+          ]
+        },
+        "Extra Blonding Cream": {
+          "description": "Formula booster additive",
+          "shades": [
+            {
+              "shade": "EBC",
+              "level": null,
+              "name": "Extra Blonding Cream",
+              "primary_tone": "Clear",
+              "secondary_tone": null,
+              "tone_family": "Booster",
+              "position": "Neutral",
+              "note": "Mix 3:1 with SoColor (1.5oz SoColor + 0.5oz EBC + 2oz Developer). Disperses underlying pigment for cleaner blondes, brighter reds, richer browns. Do not use with UL Series, SoRed or HD Series"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "SoColor 10 min Pre-Bonded",
+      "category": "Permanent",
+      "technology": "Pre-Bonded, 10-Minute Gray Coverage",
+      "rules": {
+        "gray_coverage": "100% in 10 minutes",
+        "mixing_ratio": "1:1 (Color : Developer)",
+        "developer": "20 Volume (6%) Matrix Cream Developer (color + developer in every pouch)",
+        "processing_time": "10 minutes. 5-minute buffer window (10-15 minutes) to control over-processing",
+        "application": "Clean dry hair",
+        "rinsing": "Rinse thoroughly, cleanse and condition with Total Results Color Obsessed",
+        "porosity_adjustment": "On overly porous hair, at shampoo bowl lightly mist Instacure on mids+ends, add water to scalp area and emulsize formula from roots to mids+ends for 2 minutes",
+        "note": "Do not pull through ends after first application - use SoColor Sync for refreshing. 10 neutral shades available"
+      },
+      "tonal_families": {
+        "SoColor 10 min Palette": {
+          "description": "Fast gray coverage neutral shades",
+          "shades": [
+            {
+              "shade": "503NA",
+              "level": 5,
+              "name": "Darkest Brown",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "503N",
+              "level": 5,
+              "name": "Darkest Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "504N",
+              "level": 5,
+              "name": "Dark Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "505N",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "505NA",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "506N",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "507N",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "507NA",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "508N",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "509N",
+              "level": 9,
+              "name": "Light Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "Coil Color",
+      "category": "Permanent",
+      "technology": "Ammonia-Free, Oil-In-Cream, 60% Oil Formula",
+      "rules": {
+        "gray_coverage": "N/A - Not specified for gray",
+        "lift": "Up to 3-4 levels (estimated from shade range)",
+        "mixing_ratio": "1:1 (Color : Coil Color Developer)",
+        "developer": "Coil Color Developer (20 + 30 Volume available)",
+        "processing_time": "35 minutes room temperature",
+        "application": "Clean dry hair",
+        "rinsing": "Rinse thoroughly, cleanse and condition with Total Results A Curl Can Dream Shampoo and Conditioner",
+        "porosity_adjustment": "On overly porous hair, lightly mist Instacure on mids+ends before pulling through, only on first application. After first application, do not pull through ends - use SoColor Sync for refreshing",
+        "features": [
+          "60% oil formula infused with coconut oil",
+          "Promotes elasticity + preserves curl definition",
+          "Ammonia-free oil-in-cream base protects and evenly saturates curls",
+          "No harsh odor",
+          "Visible reflect on dark bases",
+          "16 curated shades"
+        ],
+        "not_for": "Do not pull through ends after first application"
+      },
+      "tonal_families": {
+        "Coil Color Palette": {
+          "description": "Ammonia-free permanent color for curly/coily hair",
+          "shades": [
+            {
+              "shade": "4VV",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "V",
+              "secondary_tone": "V",
+              "tone_family": "Violet-Violet",
+              "position": "Coolest"
+            },
+            {
+              "shade": "4RV",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "R",
+              "secondary_tone": "V",
+              "tone_family": "Red-Violet",
+              "position": "Cool"
+            },
+            {
+              "shade": "4N",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "4W",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "W",
+              "secondary_tone": null,
+              "tone_family": "Warm",
+              "position": "Warm"
+            },
+            {
+              "shade": "5M",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "5R",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "R",
+              "secondary_tone": null,
+              "tone_family": "Red",
+              "position": "Warmest"
+            },
+            {
+              "shade": "6A",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "6CC",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "C",
+              "secondary_tone": "C",
+              "tone_family": "Copper-Copper",
+              "position": "Warmest"
+            },
+            {
+              "shade": "6N",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "6RV",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "R",
+              "secondary_tone": "V",
+              "tone_family": "Red-Violet",
+              "position": "Cool"
+            },
+            {
+              "shade": "6RR",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "R",
+              "secondary_tone": "R",
+              "tone_family": "Red-Red",
+              "position": "Warmest"
+            },
+            {
+              "shade": "6W",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "W",
+              "secondary_tone": null,
+              "tone_family": "Warm",
+              "position": "Warm"
+            },
+            {
+              "shade": "7M",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "8N",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "8W",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "W",
+              "secondary_tone": null,
+              "tone_family": "Warm",
+              "position": "Warm"
+            },
+            {
+              "shade": "8CG",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "C",
+              "secondary_tone": "G",
+              "tone_family": "Copper-Gold",
+              "position": "Warmest"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "SoColor Sync Pre-Bonded - Alkaline Toners",
+      "category": "Demi-Permanent",
+      "technology": "Pre-Bonded, Alkaline Cream Toner",
+      "rules": {
+        "gray_coverage": "Up to 75% gray blending",
+        "lift": "Can shift up to 1/2 level on certain hair types",
+        "mixing_ratio": "1:1 (Color : Developer)",
+        "developer": "10 Volume (3%) Matrix Cream Developer (for standard). 20 Volume (6%) for gray blending",
+        "processing_time": "Up to 20 minutes room temperature",
+        "application": "Clean 80% minimum dry hair. Virgin: apply to base then immediately through mids+ends. Retouch: apply to base, process half time, then through mids+ends",
+        "rinsing": "Rinse thoroughly, cleanse and condition with Total Results Color Obsessed",
+        "post_color_care": "Total Results Keep Me Vivid Shampoo, Conditioner & Lamination Spray",
+        "porosity_adjustment": "On overly porous hair, lightly mist Instacure on mids+ends before blending through",
+        "features": [
+          "Long-lasting seamless blended results",
+          "Alkaline cream formula for rich color results",
+          "Fades on tone (20 washes / Sheer Pastels 25)",
+          "Ideal for color refreshing, gray blending, lowlighting, darkening, filling, neutralizing, toning"
+        ],
+        "intermixable_with": [
+          "Only other Alkaline shades"
+        ],
+        "not_with": "Alkaline shades should not be mixed with Fast shades (but Alkaline Clear can dilute Fast 1:1)"
+      },
+      "tonal_families": {
+        "Cool Palette": {
+          "description": "Cool ash and violet tones",
+          "shades": [
+            {
+              "shade": "1A",
+              "level": 1,
+              "name": "Black",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "4A",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "5AA",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "A",
+              "secondary_tone": "A",
+              "tone_family": "Ash-Ash (Power Cools)",
+              "position": "Coolest"
+            },
+            {
+              "shade": "5VA",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "V",
+              "secondary_tone": "A",
+              "tone_family": "Violet-Ash (Power Cools)",
+              "position": "Coolest"
+            },
+            {
+              "shade": "6A",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "7AA",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "A",
+              "secondary_tone": "A",
+              "tone_family": "Ash-Ash (Power Cools)",
+              "position": "Coolest"
+            },
+            {
+              "shade": "7VA",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "V",
+              "secondary_tone": "A",
+              "tone_family": "Violet-Ash (Power Cools)",
+              "position": "Coolest"
+            },
+            {
+              "shade": "8A",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "8V",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "V",
+              "secondary_tone": null,
+              "tone_family": "Violet",
+              "position": "Cool"
+            },
+            {
+              "shade": "8P",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "P",
+              "secondary_tone": null,
+              "tone_family": "Pearl",
+              "position": "Warmest in Cool"
+            },
+            {
+              "shade": "10A",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "10V",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "V",
+              "secondary_tone": null,
+              "tone_family": "Violet",
+              "position": "Cool"
+            },
+            {
+              "shade": "10P",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "P",
+              "secondary_tone": null,
+              "tone_family": "Pearl",
+              "position": "Warmest in Cool"
+            },
+            {
+              "shade": "11A",
+              "level": 11,
+              "name": "Extra Light Blonde Plus",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "11V",
+              "level": 11,
+              "name": "Extra Light Blonde Plus",
+              "primary_tone": "V",
+              "secondary_tone": null,
+              "tone_family": "Violet",
+              "position": "Cool"
+            },
+            {
+              "shade": "11P",
+              "level": 11,
+              "name": "Extra Light Blonde Plus",
+              "primary_tone": "P",
+              "secondary_tone": null,
+              "tone_family": "Pearl",
+              "position": "Warmest in Cool"
+            },
+            {
+              "shade": "SPA",
+              "level": null,
+              "name": "Sheer Pastel Ash",
+              "primary_tone": "SPA",
+              "secondary_tone": null,
+              "tone_family": "Sheer Pastel Ash",
+              "position": "Cool"
+            },
+            {
+              "shade": "SPV",
+              "level": null,
+              "name": "Sheer Pastel Violet",
+              "primary_tone": "SPV",
+              "secondary_tone": null,
+              "tone_family": "Sheer Pastel Violet",
+              "position": "Cool"
+            },
+            {
+              "shade": "SPP",
+              "level": null,
+              "name": "Sheer Pastel Pearl",
+              "primary_tone": "SPP",
+              "secondary_tone": null,
+              "tone_family": "Sheer Pastel Pearl",
+              "position": "Warmest in Cool"
+            }
+          ]
+        },
+        "Neutral Palette": {
+          "description": "Neutral balanced tones",
+          "shades": [
+            {
+              "shade": "3N",
+              "level": 3,
+              "name": "Darkest Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "5N",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "5NJ",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "N",
+              "secondary_tone": "J",
+              "tone_family": "Neutral-Jade",
+              "position": "Coolest"
+            },
+            {
+              "shade": "6N",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "7N",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "7NA",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "7NV",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "V",
+              "tone_family": "Neutral-Violet",
+              "position": "Cool"
+            },
+            {
+              "shade": "8N",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "9NA",
+              "level": 9,
+              "name": "Light Blonde",
+              "primary_tone": "N",
+              "secondary_tone": "A",
+              "tone_family": "Neutral-Ash",
+              "position": "Coolest"
+            },
+            {
+              "shade": "10N",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "11N",
+              "level": 11,
+              "name": "Extra Light Blonde Plus",
+              "primary_tone": "N",
+              "secondary_tone": null,
+              "tone_family": "Neutral",
+              "position": "Neutral"
+            },
+            {
+              "shade": "SPN",
+              "level": null,
+              "name": "Sheer Pastel Neutral",
+              "primary_tone": "SPN",
+              "secondary_tone": null,
+              "tone_family": "Sheer Pastel Neutral",
+              "position": "Neutral"
+            }
+          ]
+        },
+        "Warm Palette": {
+          "description": "Warm golden and natural warm tones",
+          "shades": [
+            {
+              "shade": "3WN",
+              "level": 3,
+              "name": "Darkest Brown",
+              "primary_tone": "W",
+              "secondary_tone": "N",
+              "tone_family": "Warm-Natural",
+              "position": "Coolest"
+            },
+            {
+              "shade": "5WN",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "W",
+              "secondary_tone": "N",
+              "tone_family": "Warm-Natural",
+              "position": "Warm"
+            },
+            {
+              "shade": "6WN",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "W",
+              "secondary_tone": "N",
+              "tone_family": "Warm-Natural",
+              "position": "Warm"
+            },
+            {
+              "shade": "8WN",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "W",
+              "secondary_tone": "N",
+              "tone_family": "Warm-Natural",
+              "position": "Warm"
+            },
+            {
+              "shade": "10WN",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "W",
+              "secondary_tone": "N",
+              "tone_family": "Warm-Natural",
+              "position": "Warmest"
+            }
+          ]
+        },
+        "Mocha Palette": {
+          "description": "Mocha warm tones",
+          "shades": [
+            {
+              "shade": "5MM",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "M",
+              "secondary_tone": "M",
+              "tone_family": "Mocha-Mocha",
+              "position": "Coolest"
+            },
+            {
+              "shade": "5M",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "6M",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "7MM",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "M",
+              "secondary_tone": "M",
+              "tone_family": "Mocha-Mocha",
+              "position": "Coolest"
+            },
+            {
+              "shade": "7M",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "8M",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warm"
+            },
+            {
+              "shade": "10M",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "M",
+              "secondary_tone": null,
+              "tone_family": "Mocha",
+              "position": "Warmest"
+            }
+          ]
+        },
+        "Blended Brown Palette": {
+          "description": "Brown-red and copper tones",
+          "shades": [
+            {
+              "shade": "4BR",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "B",
+              "secondary_tone": "R",
+              "tone_family": "Brown-Red",
+              "position": "Coolest"
+            },
+            {
+              "shade": "4BC",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "B",
+              "secondary_tone": "C",
+              "tone_family": "Brown-Copper",
+              "position": "Warm"
+            },
+            {
+              "shade": "4RB",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "R",
+              "secondary_tone": "B",
+              "tone_family": "Red-Brown",
+              "position": "Warmest"
+            },
+            {
+              "shade": "6BR",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "B",
+              "secondary_tone": "R",
+              "tone_family": "Brown-Red",
+              "position": "Coolest"
+            },
+            {
+              "shade": "6BC",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "B",
+              "secondary_tone": "C",
+              "tone_family": "Brown-Copper",
+              "position": "Warm"
+            },
+            {
+              "shade": "6RB",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "R",
+              "secondary_tone": "B",
+              "tone_family": "Red-Brown",
+              "position": "Warmest"
+            },
+            {
+              "shade": "8BC",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "B",
+              "secondary_tone": "C",
+              "tone_family": "Brown-Copper",
+              "position": "Warm"
+            }
+          ]
+        },
+        "Blended Bronze Palette": {
+          "description": "Copper and gold bronze tones",
+          "shades": [
+            {
+              "shade": "6O",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "O",
+              "secondary_tone": null,
+              "tone_family": "Bronze",
+              "position": "Coolest"
+            },
+            {
+              "shade": "6CG",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "C",
+              "secondary_tone": "G",
+              "tone_family": "Copper-Gold",
+              "position": "Warmest"
+            },
+            {
+              "shade": "8G",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "G",
+              "secondary_tone": null,
+              "tone_family": "Gold",
+              "position": "Cool"
+            },
+            {
+              "shade": "8CG",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "C",
+              "secondary_tone": "G",
+              "tone_family": "Copper-Gold",
+              "position": "Warmest"
+            },
+            {
+              "shade": "9OV",
+              "level": 9,
+              "name": "Light Blonde",
+              "primary_tone": "O",
+              "secondary_tone": "V",
+              "tone_family": "Bronze-Violet",
+              "position": "Coolest"
+            },
+            {
+              "shade": "10G",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "G",
+              "secondary_tone": null,
+              "tone_family": "Gold",
+              "position": "Cool"
+            },
+            {
+              "shade": "10CG",
+              "level": 10,
+              "name": "Extra Light Blonde",
+              "primary_tone": "C",
+              "secondary_tone": "G",
+              "tone_family": "Copper-Gold",
+              "position": "Warmest"
+            }
+          ]
+        },
+        "Reflective Palette": {
+          "description": "Vibrant red and violet reflect tones",
+          "shades": [
+            {
+              "shade": "3VV",
+              "level": 3,
+              "name": "Darkest Brown",
+              "primary_tone": "V",
+              "secondary_tone": "V",
+              "tone_family": "Violet-Violet",
+              "position": "Coolest"
+            },
+            {
+              "shade": "4RV+",
+              "level": 4,
+              "name": "Dark Brown",
+              "primary_tone": "R",
+              "secondary_tone": "V",
+              "tone_family": "Red-Violet (+)",
+              "position": "Cool"
+            },
+            {
+              "shade": "5VV",
+              "level": 5,
+              "name": "Medium Brown",
+              "primary_tone": "V",
+              "secondary_tone": "V",
+              "tone_family": "Violet-Violet",
+              "position": "Coolest"
+            },
+            {
+              "shade": "6RV+",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "R",
+              "secondary_tone": "V",
+              "tone_family": "Red-Violet (+)",
+              "position": "Cool"
+            },
+            {
+              "shade": "6RC+",
+              "level": 6,
+              "name": "Light Brown",
+              "primary_tone": "R",
+              "secondary_tone": "C",
+              "tone_family": "Red-Copper (+)",
+              "position": "Warm"
+            },
+            {
+              "shade": "7RR+",
+              "level": 7,
+              "name": "Dark Blonde",
+              "primary_tone": "R",
+              "secondary_tone": "R",
+              "tone_family": "Red-Red (+)",
+              "position": "Warm"
+            },
+            {
+              "shade": "8RC+",
+              "level": 8,
+              "name": "Medium Blonde",
+              "primary_tone": "R",
+              "secondary_tone": "C",
+              "tone_family": "Red-Copper (+)",
+              "position": "Warmest"
+            }
+          ]
+        },
+        "HD Specialty": {
+          "description": "High Definition pure reflect reds",
+          "shades": [
+            {
+              "shade": "HD-RV",
+              "level": null,
+              "name": "HD Red Violet",
+              "primary_tone": "RV",
+              "secondary_tone": null,
+              "tone_family": "Red-Violet HD",
+              "position": "Coolest",
+              "note": "Intermixable only within HD series. Will not cover gray"
+            },
+            {
+              "shade": "HD-RR",
+              "level": null,
+              "name": "HD Red Red",
+              "primary_tone": "RR",
+              "secondary_tone": null,
+              "tone_family": "Red-Red HD",
+              "position": "Warmest",
+              "note": "Intermixable only within HD series. Will not cover gray"
+            }
+          ]
+        },
+        "SoBoost Specialty": {
+          "description": "Color boosters",
+          "shades": [
+            {
+              "shade": "BLUE",
+              "level": null,
+              "name": "Blue Booster",
+              "primary_tone": "Blue",
+              "secondary_tone": null,
+              "tone_family": "Blue",
+              "position": "Coolest"
+            },
+            {
+              "shade": "RED",
+              "level": null,
+              "name": "Red Booster",
+              "primary_tone": "Red",
+              "secondary_tone": null,
+              "tone_family": "Red",
+              "position": "Warmest"
+            }
+          ]
+        },
+        "Clear": {
+          "description": "Clear diluter/shine",
+          "shades": [
+            {
+              "shade": "CLEAR",
+              "level": null,
+              "name": "Clear",
+              "primary_tone": "Clear",
+              "secondary_tone": null,
+              "tone_family": "Clear",
+              "position": "Neutral",
+              "note": "Available in Alkaline & Acidic technologies. Dilutes tonal deposit by 1 level when mixed equally. Use alone to add shine without changing tone"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "Tonal Control Pre-Bonded - Acidic Gel Toners",
+      "category": "Demi-Permanent",
+      "technology": "Pre-Bonded, Acidic Gel Toner",
+      "rules": {
+        "gray_coverage": "Not recommended for gray coverage (pre-lightened hair only)",
+        "lift": "No lift - no base shift",
+        "mixing_ratio": "1:1 (Color : Developer)",
+        "developer": "10 Volume (3%) Matrix Cream Developer",
+        "processing_time": "20 minutes room temperature",
+        "application": "Dry or damp, towel-dried hair. Apply with bowl and brush or applicator bottle",
+        "rinsing": "Rinse thoroughly, cleanse and condition with Total Results Color Obsessed",
+        "post_color_care": "Total Results Keep Me Vivid Shampoo, Conditioner & Lamination Spray",
+        "porosity_adjustment": "On overly porous hair, lightly mist Instacure on mids+ends before blending through",
+        "features": [
+          "Long-lasting, multi-dimensional results (up to 24 washes)",
+          "Real-time visible oxidation - color gradually darkens as it oxidizes",
+          "No-drip gel formula for creative control",
+          "Color-coded predictability - color represents dominant reflect",
+          "Ideal for post-lightened hair: glossing, neutralizing, toning, enhancing, darkening"
+        ],
+        "intermixable_with": [
+          "Only other Tonal Control shades"
+        ],
+        "clear_diluter": "Totally Transparent - mix 1:1 to reduce deposit by 1 level"
+      },
+      "tonal_families": {
+        "Ash Family": {
+          "description": "Cool ash tones",
+          "shades": [
+            {
+              "shade": "4AA",
+              "level": 4,
+              "name": "Greige Getter",
+              "primary_tone": "AA",
+              "secondary_tone": null,
+              "tone_family": "Ash-Ash",
+              "position": "Coolest",
+              "description": "Deep ash grey"
+            },
+            {
+              "shade": "6A",
+              "level": 6,
+              "name": "Ash If",
+              "primary_tone": "A",
+              "secondary_tone": null,
+              "tone_family": "Ash",
+              "position": "Cool",
+              "description": "Medium ash"
+            },
+            {
+              "shade": "9AA",
+              "level": 9,
+              "name": "Silver Standout",
+              "primary_tone": "AA",
+              "secondary_tone": null,
+              "tone_family": "Ash-Ash",
+              "position": "Coolest",
+              "description": "Silver ash blonde"
+            }
+          ]
+        },
+        "Neutral Ash Family": {
+          "description": "Neutral-cool ash",
+          "shades": [
+            {
+              "shade": "7NA",
+              "level": 7,
+              "name": "Neutral + Chill",
+              "primary_tone": "NA",
+              "secondary_tone": null,
+              "tone_family": "Neutral-Ash",
+              "position": "Cool",
+              "description": "Neutral ash blonde"
+            }
+          ]
+        },
+        "Pearl Violet Family": {
+          "description": "Pearl and violet tones",
+          "shades": [
+            {
+              "shade": "11PV",
+              "level": 11,
+              "name": "Platinum Please",
+              "primary_tone": "PV",
+              "secondary_tone": null,
+              "tone_family": "Pearl-Violet",
+              "position": "Cool",
+              "description": "Platinum pearl violet"
+            },
+            {
+              "shade": "9V",
+              "level": 9,
+              "name": "Iced Out",
+              "primary_tone": "V",
+              "secondary_tone": null,
+              "tone_family": "Violet",
+              "position": "Cool",
+              "description": "Icy violet blonde"
+            }
+          ]
+        },
+        "Violet Gold Family": {
+          "description": "Violet-gold balanced tones",
+          "shades": [
+            {
+              "shade": "8VG",
+              "level": 8,
+              "name": "Taupe On Top",
+              "primary_tone": "VG",
+              "secondary_tone": null,
+              "tone_family": "Violet-Gold",
+              "position": "Warm",
+              "description": "Taupe violet-gold"
+            }
+          ]
+        },
+        "Jade Family": {
+          "description": "Green-jade tones",
+          "shades": [
+            {
+              "shade": "4J",
+              "level": 4,
+              "name": "Emerald Envy",
+              "primary_tone": "J",
+              "secondary_tone": null,
+              "tone_family": "Jade",
+              "position": "Cool",
+              "description": "Emerald jade"
+            }
+          ]
+        },
+        "Neutral Jade Family": {
+          "description": "Neutral-jade tones",
+          "shades": [
+            {
+              "shade": "5NJ",
+              "level": 5,
+              "name": "Jammin Jade",
+              "primary_tone": "NJ",
+              "secondary_tone": null,
+              "tone_family": "Neutral-Jade",
+              "position": "Cool",
+              "description": "Neutral jade"
+            }
+          ]
+        },
+        "Neutral Gold Ash Family": {
+          "description": "Neutral gold ash (bronde)",
+          "shades": [
+            {
+              "shade": "5NGA",
+              "level": 5,
+              "name": "Bronde Bestie",
+              "primary_tone": "NGA",
+              "secondary_tone": null,
+              "tone_family": "Neutral-Gold-Ash",
+              "position": "Warm",
+              "description": "Bronde neutral gold ash"
+            },
+            {
+              "shade": "6NGA",
+              "level": 6,
+              "name": "Bronde Baby",
+              "primary_tone": "NGA",
+              "secondary_tone": null,
+              "tone_family": "Neutral-Gold-Ash",
+              "position": "Warm",
+              "description": "Light bronde"
+            },
+            {
+              "shade": "9NGA",
+              "level": 9,
+              "name": "Bronde Baller",
+              "primary_tone": "NGA",
+              "secondary_tone": null,
+              "tone_family": "Neutral-Gold-Ash",
+              "position": "Warm",
+              "description": "Light blonde bronde"
+            }
+          ]
+        },
+        "Neutral Warm Family": {
+          "description": "Neutral warm tones",
+          "shades": [
+            {
+              "shade": "5NW",
+              "level": 5,
+              "name": "Gold Standard",
+              "primary_tone": "NW",
+              "secondary_tone": null,
+              "tone_family": "Neutral-Warm",
+              "position": "Warm",
+              "description": "Gold neutral warm"
+            }
+          ]
+        },
+        "Gold Mocha Family": {
+          "description": "Gold mocha tones",
+          "shades": [
+            {
+              "shade": "7GM",
+              "level": 7,
+              "name": "Miss Mocha",
+              "primary_tone": "GM",
+              "secondary_tone": null,
+              "tone_family": "Gold-Mocha",
+              "position": "Warm",
+              "description": "Gold mocha"
+            }
+          ]
+        },
+        "Pearl Rose Family": {
+          "description": "Pearl rose tones",
+          "shades": [
+            {
+              "shade": "10PR",
+              "level": 10,
+              "name": "A Bit Blushed",
+              "primary_tone": "PR",
+              "secondary_tone": null,
+              "tone_family": "Pearl-Rose",
+              "position": "Warm",
+              "description": "Pearl rose blonde"
+            }
+          ]
+        },
+        "Rose Gold Family": {
+          "description": "Rose gold tones",
+          "shades": [
+            {
+              "shade": "9RG",
+              "level": 9,
+              "name": "Strawberry Stunna",
+              "primary_tone": "RG",
+              "secondary_tone": null,
+              "tone_family": "Rose-Gold",
+              "position": "Warmest",
+              "description": "Strawberry rose gold"
+            }
+          ]
+        },
+        "Clear": {
+          "description": "Totally Transparent diluter",
+          "shades": [
+            {
+              "shade": "TOTALLY_TRANSPARENT",
+              "level": null,
+              "name": "Totally Transparent",
+              "primary_tone": "Clear",
+              "secondary_tone": null,
+              "tone_family": "Clear",
+              "position": "Neutral",
+              "description": "Dilutes any Tonal Control shade by 1 level when mixed 1:1. Use alone for gloss/shine"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "SoColor Sync Pre-Bonded - Fast Toners",
+      "category": "Demi-Permanent",
+      "technology": "Pre-Bonded, Fast Pre-Toning Gel-Cream",
+      "rules": {
+        "gray_coverage": "Not for gray coverage",
+        "lift": "No lift",
+        "mixing_ratio": "1:1 (Color : Developer)",
+        "developer": "10 Volume (3%) Matrix Cream Developer",
+        "processing_time": "2-5 minutes at the back bar/sink",
+        "application": "Clean towel-dried hair. Apply at sink/back bar",
+        "rinsing": "Rinse thoroughly, cleanse and condition with Total Results Color Obsessed",
+        "post_color_care": "Total Results Keep Me Vivid Shampoo, Conditioner & Lamination Spray",
+        "porosity_adjustment": "On overly porous hair, lightly mist Instacure on mids+ends before blending through",
+        "features": [
+          "Quick neutralizing color results in 2-5 minutes",
+          "Gel-cream formula for speedy applications",
+          "Ideal for pre-toning and neutralizing warmth before toning + vivid color services",
+          "Highly pigmented oxidative dyes for express neutralization"
+        ],
+        "intermixable_with": [
+          "Only other Fast shades. Alkaline Clear can dilute Fast 1:1"
+        ],
+        "usage": "Pre-tone to neutralize warmth and soften tones before creating neutral, cool or fashion results"
+      },
+      "tonal_families": {
+        "Fast Toners": {
+          "description": "Express neutralization toners",
+          "shades": [
+            {
+              "shade": "ANTI-RED",
+              "level": null,
+              "name": "Anti-Red Fast Toner",
+              "primary_tone": "Anti-Red",
+              "secondary_tone": null,
+              "tone_family": "Anti-Red",
+              "position": "Coolest",
+              "target": "Levels 5 & below - neutralizes red tones"
+            },
+            {
+              "shade": "ANTI-BRASS",
+              "level": null,
+              "name": "Anti-Brass Fast Toner",
+              "primary_tone": "Anti-Brass",
+              "secondary_tone": null,
+              "tone_family": "Anti-Brass",
+              "position": "Cool",
+              "target": "Levels 6-8 - neutralizes orange + brass tones"
+            },
+            {
+              "shade": "ANTI-YELLOW",
+              "level": null,
+              "name": "Anti-Yellow Fast Toner",
+              "primary_tone": "Anti-Yellow",
+              "secondary_tone": null,
+              "tone_family": "Anti-Yellow",
+              "position": "Warmest",
+              "target": "Levels 9 & above - neutralizes yellow tones"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "SoColor Cult",
+      "category": "Semi-Permanent",
+      "technology": "Direct Dye, Acidic Formula, No Developer",
+      "rules": {
+        "gray_coverage": "None - not for gray coverage",
+        "lift": "No lift",
+        "mixing_ratio": "No developer needed - direct dye",
+        "developer": "None required",
+        "processing_time": "Up to 30 minutes",
+        "application": "Virgin and pre-lightened hair (starting level 8-10)",
+        "longevity": "Up to 20 washes",
+        "conditioning": "5x more conditioned vs pre-lightened hair",
+        "features": [
+          "Vibrant, long-lasting results",
+          "Acidic formula leaves hair feeling 5x more conditioned",
+          "13 mixable shades",
+          "No developer needed - direct dye technology",
+          "Vegan formula",
+          "Mix + match to create custom shades"
+        ],
+        "intermixable_with": [
+          "All SoColor Cult shades"
+        ],
+        "custom_mixing": "See mixing chart for custom shades like Orange Alert, Starfish Coral, Mermaid Teal, etc."
+      },
+      "tonal_families": {
+        "Most-Have's (Vibrant)": {
+          "description": "Core vibrant shades",
+          "shades": [
+            {
+              "shade": "RED_HOT",
+              "level": 10,
+              "name": "Red Hot",
+              "primary_tone": "Red",
+              "secondary_tone": null,
+              "tone_family": "Red",
+              "position": "Warmest",
+              "intensity": 10
+            },
+            {
+              "shade": "RED_HOT",
+              "level": 8,
+              "name": "Red Hot",
+              "primary_tone": "Red",
+              "secondary_tone": null,
+              "tone_family": "Red",
+              "position": "Warmest",
+              "intensity": 8
+            },
+            {
+              "shade": "RED_HOT",
+              "level": 6,
+              "name": "Red Hot",
+              "primary_tone": "Red",
+              "secondary_tone": null,
+              "tone_family": "Red",
+              "position": "Warmest",
+              "intensity": 6
+            },
+            {
+              "shade": "FLAMENCO_FUCHSIA",
+              "level": 10,
+              "name": "Flamenco Fuchsia",
+              "primary_tone": "Fuchsia",
+              "secondary_tone": null,
+              "tone_family": "Fuchsia",
+              "position": "Cool",
+              "intensity": 10
+            },
+            {
+              "shade": "FLAMENCO_FUCHSIA",
+              "level": 8,
+              "name": "Flamenco Fuchsia",
+              "primary_tone": "Fuchsia",
+              "secondary_tone": null,
+              "tone_family": "Fuchsia",
+              "position": "Cool",
+              "intensity": 8
+            },
+            {
+              "shade": "FLAMENCO_FUCHSIA",
+              "level": 6,
+              "name": "Flamenco Fuchsia",
+              "primary_tone": "Fuchsia",
+              "secondary_tone": null,
+              "tone_family": "Fuchsia",
+              "position": "Cool",
+              "intensity": 6
+            },
+            {
+              "shade": "LUCKY_DUCK_YELLOW",
+              "level": 10,
+              "name": "Lucky Duck Yellow",
+              "primary_tone": "Yellow",
+              "secondary_tone": null,
+              "tone_family": "Yellow",
+              "position": "Warm",
+              "intensity": 10
+            },
+            {
+              "shade": "LUCKY_DUCK_YELLOW",
+              "level": 8,
+              "name": "Lucky Duck Yellow",
+              "primary_tone": "Yellow",
+              "secondary_tone": null,
+              "tone_family": "Yellow",
+              "position": "Warm",
+              "intensity": 8
+            },
+            {
+              "shade": "LUCKY_DUCK_YELLOW",
+              "level": 6,
+              "name": "Lucky Duck Yellow",
+              "primary_tone": "Yellow",
+              "secondary_tone": null,
+              "tone_family": "Yellow",
+              "position": "Warm",
+              "intensity": 6
+            },
+            {
+              "shade": "CLOVER_GREEN",
+              "level": 10,
+              "name": "Clover Green",
+              "primary_tone": "Green",
+              "secondary_tone": null,
+              "tone_family": "Green",
+              "position": "Cool",
+              "intensity": 10
+            },
+            {
+              "shade": "CLOVER_GREEN",
+              "level": 8,
+              "name": "Clover Green",
+              "primary_tone": "Green",
+              "secondary_tone": null,
+              "tone_family": "Green",
+              "position": "Cool",
+              "intensity": 8
+            },
+            {
+              "shade": "CLOVER_GREEN",
+              "level": 6,
+              "name": "Clover Green",
+              "primary_tone": "Green",
+              "secondary_tone": null,
+              "tone_family": "Green",
+              "position": "Cool",
+              "intensity": 6
+            },
+            {
+              "shade": "ADMIRAL_NAVY",
+              "level": 10,
+              "name": "Admiral Navy",
+              "primary_tone": "Navy",
+              "secondary_tone": null,
+              "tone_family": "Blue",
+              "position": "Coolest",
+              "intensity": 10
+            },
+            {
+              "shade": "ADMIRAL_NAVY",
+              "level": 8,
+              "name": "Admiral Navy",
+              "primary_tone": "Navy",
+              "secondary_tone": null,
+              "tone_family": "Blue",
+              "position": "Coolest",
+              "intensity": 8
+            },
+            {
+              "shade": "ADMIRAL_NAVY",
+              "level": 6,
+              "name": "Admiral Navy",
+              "primary_tone": "Navy",
+              "secondary_tone": null,
+              "tone_family": "Blue",
+              "position": "Coolest",
+              "intensity": 6
+            },
+            {
+              "shade": "ROYAL_PURPLE",
+              "level": 10,
+              "name": "Royal Purple",
+              "primary_tone": "Purple",
+              "secondary_tone": null,
+              "tone_family": "Purple",
+              "position": "Cool",
+              "intensity": 10
+            },
+            {
+              "shade": "ROYAL_PURPLE",
+              "level": 8,
+              "name": "Royal Purple",
+              "primary_tone": "Purple",
+              "secondary_tone": null,
+              "tone_family": "Purple",
+              "position": "Cool",
+              "intensity": 8
+            },
+            {
+              "shade": "ROYAL_PURPLE",
+              "level": 6,
+              "name": "Royal Purple",
+              "primary_tone": "Purple",
+              "secondary_tone": null,
+              "tone_family": "Purple",
+              "position": "Cool",
+              "intensity": 6
+            },
+            {
+              "shade": "RETRO_BLUE",
+              "level": 10,
+              "name": "Retro Blue",
+              "primary_tone": "Blue",
+              "secondary_tone": null,
+              "tone_family": "Blue",
+              "position": "Cool",
+              "intensity": 10
+            },
+            {
+              "shade": "RETRO_BLUE",
+              "level": 8,
+              "name": "Retro Blue",
+              "primary_tone": "Blue",
+              "secondary_tone": null,
+              "tone_family": "Blue",
+              "position": "Cool",
+              "intensity": 8
+            },
+            {
+              "shade": "RETRO_BLUE",
+              "level": 6,
+              "name": "Retro Blue",
+              "primary_tone": "Blue",
+              "secondary_tone": null,
+              "tone_family": "Blue",
+              "position": "Cool",
+              "intensity": 6
+            }
+          ]
+        },
+        "Dusty's": {
+          "description": "Dusty muted tones",
+          "shades": [
+            {
+              "shade": "DUSTY_TEAL",
+              "level": 10,
+              "name": "Dusty Teal",
+              "primary_tone": "Teal",
+              "secondary_tone": null,
+              "tone_family": "Teal",
+              "position": "Cool",
+              "intensity": 10
+            },
+            {
+              "shade": "DUSTY_TEAL",
+              "level": 8,
+              "name": "Dusty Teal",
+              "primary_tone": "Teal",
+              "secondary_tone": null,
+              "tone_family": "Teal",
+              "position": "Cool",
+              "intensity": 8
+            },
+            {
+              "shade": "DUSTY_TEAL",
+              "level": 6,
+              "name": "Dusty Teal",
+              "primary_tone": "Teal",
+              "secondary_tone": null,
+              "tone_family": "Teal",
+              "position": "Cool",
+              "intensity": 6
+            }
+          ]
+        },
+        "Gray's": {
+          "description": "Gray and neutral tones",
+          "shades": [
+            {
+              "shade": "DISCO_SILVER",
+              "level": 10,
+              "name": "Disco Silver",
+              "primary_tone": "Silver",
+              "secondary_tone": null,
+              "tone_family": "Silver",
+              "position": "Neutral",
+              "intensity": 10,
+              "note": "Violet-based gray"
+            },
+            {
+              "shade": "DISCO_SILVER",
+              "level": 8,
+              "name": "Disco Silver",
+              "primary_tone": "Silver",
+              "secondary_tone": null,
+              "tone_family": "Silver",
+              "position": "Neutral",
+              "intensity": 8,
+              "note": "Violet-based gray"
+            },
+            {
+              "shade": "DISCO_SILVER",
+              "level": 6,
+              "name": "Disco Silver",
+              "primary_tone": "Silver",
+              "secondary_tone": null,
+              "tone_family": "Silver",
+              "position": "Neutral",
+              "intensity": 6,
+              "note": "Violet-based gray"
+            },
+            {
+              "shade": "CLEAR",
+              "level": 10,
+              "name": "Clear",
+              "primary_tone": "Clear",
+              "secondary_tone": null,
+              "tone_family": "Clear",
+              "position": "Neutral",
+              "intensity": 10
+            },
+            {
+              "shade": "CLEAR",
+              "level": 8,
+              "name": "Clear",
+              "primary_tone": "Clear",
+              "secondary_tone": null,
+              "tone_family": "Clear",
+              "position": "Neutral",
+              "intensity": 8
+            },
+            {
+              "shade": "CLEAR",
+              "level": 6,
+              "name": "Clear",
+              "primary_tone": "Clear",
+              "secondary_tone": null,
+              "tone_family": "Clear",
+              "position": "Neutral",
+              "intensity": 6
+            },
+            {
+              "shade": "BLACK",
+              "level": 10,
+              "name": "Black",
+              "primary_tone": "Black",
+              "secondary_tone": null,
+              "tone_family": "Black",
+              "position": "Neutral",
+              "intensity": 10,
+              "note": "Blue-based black"
+            },
+            {
+              "shade": "BLACK",
+              "level": 8,
+              "name": "Black",
+              "primary_tone": "Black",
+              "secondary_tone": null,
+              "tone_family": "Black",
+              "position": "Neutral",
+              "intensity": 8,
+              "note": "Blue-based black"
+            },
+            {
+              "shade": "BLACK",
+              "level": 6,
+              "name": "Black",
+              "primary_tone": "Black",
+              "secondary_tone": null,
+              "tone_family": "Black",
+              "position": "Neutral",
+              "intensity": 6,
+              "note": "Blue-based black"
+            }
+          ]
+        },
+        "Pastel's": {
+          "description": "Soft pastel tones",
+          "shades": [
+            {
+              "shade": "BUBBLEGUM_PINK",
+              "level": 10,
+              "name": "Bubblegum Pink",
+              "primary_tone": "Pink",
+              "secondary_tone": null,
+              "tone_family": "Pink",
+              "position": "Warm",
+              "intensity": 10
+            },
+            {
+              "shade": "BUBBLEGUM_PINK",
+              "level": 8,
+              "name": "Bubblegum Pink",
+              "primary_tone": "Pink",
+              "secondary_tone": null,
+              "tone_family": "Pink",
+              "position": "Warm",
+              "intensity": 8
+            },
+            {
+              "shade": "BUBBLEGUM_PINK",
+              "level": 6,
+              "name": "Bubblegum Pink",
+              "primary_tone": "Pink",
+              "secondary_tone": null,
+              "tone_family": "Pink",
+              "position": "Warm",
+              "intensity": 6
+            },
+            {
+              "shade": "LAVENDER_MACAROON",
+              "level": 10,
+              "name": "Lavender Macaroon",
+              "primary_tone": "Lavender",
+              "secondary_tone": null,
+              "tone_family": "Lavender",
+              "position": "Cool",
+              "intensity": 10
+            },
+            {
+              "shade": "LAVENDER_MACAROON",
+              "level": 8,
+              "name": "Lavender Macaroon",
+              "primary_tone": "Lavender",
+              "secondary_tone": null,
+              "tone_family": "Lavender",
+              "position": "Cool",
+              "intensity": 8
+            },
+            {
+              "shade": "LAVENDER_MACAROON",
+              "level": 6,
+              "name": "Lavender Macaroon",
+              "primary_tone": "Lavender",
+              "secondary_tone": null,
+              "tone_family": "Lavender",
+              "position": "Cool",
+              "intensity": 6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "Curl Lights",
+      "category": "Lightener",
+      "technology": "Ammonia-Free Cream Lightener, Beeswax + Ceramides",
+      "rules": {
+        "lift": "Up to 5 levels",
+        "mixing_ratio": "1:1:1 (1 oz Step 1 Lightening Cream + 1 oz Step 2 Lightening Accelerator Cream + 1 oz Developer)",
+        "developer_options": "20, 30, 40 Volume Matrix Cream Developer. Recommended: 30 Volume (9%)",
+        "processing_time": "35 minutes without heat OR 15 minutes with heat",
+        "application": "Off-scalp applications. Clean dry hair",
+        "features": [
+          "Ammonia-free cream lightener preserves curl pattern while lightening",
+          "Infused with beeswax + ceramides for extra conditioning",
+          "Sun-kissed highlights in 15 minutes with heat",
+          "Forms to hair's natural curl pattern"
+        ],
+        "foil_usage": "When using foil, exclusively use aluminum foils: REFALLOY 1235, 18u; REFSOFT ALLOY 8079, 20μm; SOFT ALLOY 1200, 18um (Norms EN573-3)",
+        "safety": [
+          "Wear suitable gloves during mixing + application",
+          "Do not use any metallic tools (clips, combs)",
+          "Do not overlap on previously lightened hair",
+          "Only mix with Matrix Cream Developer"
+        ]
+      },
+      "tonal_families": {
+        "Curl Lights System": {
+          "description": "Two-step curl-preserving lightener",
+          "shades": [
+            {
+              "shade": "CURL_LIGHTS_STEP1",
+              "name": "Step 1 Lightening Cream",
+              "type": "Lightening Cream",
+              "size": "1/2 tube per application"
+            },
+            {
+              "shade": "CURL_LIGHTS_STEP2",
+              "name": "Step 2 Lightening Accelerator Cream",
+              "type": "Accelerator",
+              "size": "1 sachet per application"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "Lift + Tone",
+      "category": "Lightener",
+      "technology": "1-Step Lift And Tone System",
+      "rules": {
+        "lift": "Up to 6 levels",
+        "mixing_ratio": "Follow product instructions",
+        "developer": "Matrix Cream Developer",
+        "processing_time": "10 minutes with heat for toned highlights",
+        "features": [
+          "Simultaneously lifts and tones in one single step",
+          "Up to 6 levels of lift",
+          "Achieve toned highlights in 10 minutes with heat",
+          "Customizable toner options: Extra Cool (softens orange), Cool (softens yellow), Neutral (balances natural tones)"
+        ]
+      },
+      "tonal_families": {
+        "Lift + Tone System": {
+          "description": "One-step lift and tone lightener",
+          "shades": [
+            {
+              "shade": "LIFT_TONE_EXTRA_COOL",
+              "name": "Extra Cool",
+              "tone_family": "Extra Cool",
+              "description": "Softens orange tones for extra cool highlights"
+            },
+            {
+              "shade": "LIFT_TONE_COOL",
+              "name": "Cool",
+              "tone_family": "Cool",
+              "description": "Softens yellow tones for cool highlights"
+            },
+            {
+              "shade": "LIFT_TONE_NEUTRAL",
+              "name": "Neutral",
+              "tone_family": "Neutral",
+              "description": "Balances natural tones for lived-in, sun-kissed looks"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "Open Air Pre-Bonded",
+      "category": "Lightener",
+      "technology": "Pre-Bonded Precise Balayage Clay Lightener",
+      "rules": {
+        "lift": "Up to 7 levels",
+        "mixing_ratio": "Follow product instructions",
+        "developer": "Matrix Cream Developer",
+        "features": [
+          "Pre-Bonded with citric acid + glycine to protect hair during lightening",
+          "Whipped clay texture saturates and forms to hair's natural curl pattern",
+          "Ideal for balayage painting on all hair patterns",
+          "Precise balayage application"
+        ]
+      },
+      "tonal_families": {
+        "Open Air System": {
+          "description": "Pre-bonded balayage clay lightener",
+          "shades": [
+            {
+              "shade": "OPEN_AIR",
+              "name": "Open Air Pre-Bonded Lightener",
+              "type": "Clay Lightener",
+              "description": "Whipped clay texture for balayage"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "Light Master",
+      "category": "Lightener",
+      "technology": "Pre-Bonded Powder Lightener",
+      "rules": {
+        "lift": "Up to 8 levels",
+        "features": [
+          "Pre-Bonded powder lightener",
+          "Light Master Pre-Bonded uses citric acid + glycine combination (different from SoColor/SoColor Sync Bond-Protecting Concentrate)"
+        ]
+      },
+      "tonal_families": {
+        "Light Master System": {
+          "description": "Pre-bonded powder lightener",
+          "shades": [
+            {
+              "shade": "LIGHT_MASTER",
+              "name": "Light Master Pre-Bonded",
+              "type": "Powder Lightener"
+            },
+            {
+              "shade": "LIGHT_MASTER_PREBONDED",
+              "name": "Light Master Pre-Bonded",
+              "type": "Powder Lightener",
+              "note": "With bonder technology"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "line_name": "High Riser",
+      "category": "Lightener",
+      "technology": "Pre-Bonded Lightener",
+      "rules": {
+        "lift": "Up to 9 levels",
+        "features": [
+          "Pre-Bonded lightening technology",
+          "Highest lift in Matrix lightening portfolio"
+        ]
+      },
+      "tonal_families": {
+        "High Riser System": {
+          "description": "Maximum lift lightener",
+          "shades": [
+            {
+              "shade": "HIGH_RISER",
+              "name": "High Riser Pre-Bonded",
+              "type": "Lightener",
+              "description": "Up to 9 levels of lift"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

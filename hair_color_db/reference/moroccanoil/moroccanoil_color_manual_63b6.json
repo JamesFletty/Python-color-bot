@@ -1,0 +1,1290 @@
+{
+  "brand": "Moroccanoil Professional Haircolor",
+  "document_title": "Complete Shade Inventory & Formulation Rules",
+  "last_updated": "2026-06-21",
+  "tonal_reference_key": {
+    ".00/NN": {
+      "descriptor": "Intense Natural",
+      "family": "Natural"
+    },
+    ".0/N": {
+      "descriptor": "Natural",
+      "family": "Natural"
+    },
+    ".1/B": {
+      "descriptor": "Ash",
+      "family": "Blue"
+    },
+    ".12/BV": {
+      "descriptor": "Blue-Violet",
+      "family": "Blue"
+    },
+    ".13/BG": {
+      "descriptor": "Blue-Green",
+      "family": "Blue"
+    },
+    ".17/BGr": {
+      "descriptor": "Blue-Green",
+      "family": "Blue"
+    },
+    ".2/V": {
+      "descriptor": "Iridescent",
+      "family": "Violet"
+    },
+    ".21/VB": {
+      "descriptor": "Violet-Blue",
+      "family": "Violet"
+    },
+    ".24/VC": {
+      "descriptor": "Violet-Copper",
+      "family": "Violet"
+    },
+    ".3/G": {
+      "descriptor": "Gold",
+      "family": "Yellow"
+    },
+    ".34/GC": {
+      "descriptor": "Gold-Copper",
+      "family": "Yellow"
+    },
+    ".4/C": {
+      "descriptor": "Copper",
+      "family": "Orange"
+    },
+    ".43/CG": {
+      "descriptor": "Copper-Gold",
+      "family": "Orange"
+    },
+    ".46/CR": {
+      "descriptor": "Copper-Red",
+      "family": "Orange"
+    },
+    ".5/Rv": {
+      "descriptor": "Mahogany",
+      "family": "Red-Violet"
+    },
+    ".6/R": {
+      "descriptor": "Red",
+      "family": "Red"
+    },
+    ".64/RC": {
+      "descriptor": "Red-Copper",
+      "family": "Red"
+    },
+    ".65/RRv": {
+      "descriptor": "Red-Mahogany",
+      "family": "Red-Violet"
+    },
+    ".7/Gr": {
+      "descriptor": "Matte",
+      "family": "Green"
+    },
+    ".8/Gy": {
+      "descriptor": "Grey",
+      "family": "Grey"
+    },
+    ".82/GyV": {
+      "descriptor": "Grey-Violet",
+      "family": "Grey"
+    },
+    ".9/Ch": {
+      "descriptor": "Brown",
+      "family": "Chocolate"
+    },
+    ".91/ChB": {
+      "descriptor": "Chocolate-Blue",
+      "family": "Chocolate"
+    },
+    ".99/ChCh": {
+      "descriptor": "Intense Chocolate",
+      "family": "Chocolate"
+    },
+    ".03/NG": {
+      "descriptor": "Natural-Gold",
+      "family": "Yellow"
+    },
+    ".034/NGC": {
+      "descriptor": "Natural-Gold-Copper",
+      "family": "Yellow"
+    },
+    ".06/NR": {
+      "descriptor": "Natural-Red",
+      "family": "Red"
+    },
+    ".01/NB": {
+      "descriptor": "Natural-Blue",
+      "family": "Blue"
+    },
+    ".09/NCh": {
+      "descriptor": "Natural-Chocolate",
+      "family": "Chocolate"
+    }
+  },
+  "depth_numbering_system": {
+    "10": "Lightest Blonde",
+    "9": "Very Light Blonde",
+    "8": "Light Blonde",
+    "7": "Medium Blonde",
+    "6": "Dark Blonde",
+    "5": "Light Brown",
+    "4": "Medium Brown",
+    "3": "Dark Brown",
+    "2": "Black"
+  },
+  "color_lines": [
+    {
+      "line_name": "Color Rhapsody Permanent Cream Color",
+      "type": "Permanent",
+      "format": "Cream",
+      "mixing_ratio": "1:1",
+      "mixing_details": "1 part Color Rhapsody + 1 part Oxidative Cream Developer",
+      "application": "Dry hair only",
+      "development_time": {
+        "without_heat": "35-45 minutes",
+        "with_heat": "15-25 minutes",
+        "resistant_hair_without_heat": "up to 45 minutes",
+        "resistant_hair_with_heat": "up to 25 minutes"
+      },
+      "developer_recommendations": {
+        "5_vol_1.5%": {
+          "use": "Adding tone",
+          "additional": "Toning/coloring on porous hair"
+        },
+        "10_vol_3%": {
+          "use": "Same depth or darker",
+          "additional": "Deeper results on natural hair; soft blending on white hair"
+        },
+        "20_vol_6%": {
+          "use": "1 level of lift",
+          "additional": "Up to 100% coverage on white hair; same depth or darker"
+        },
+        "30_vol_9%": {
+          "use": "Up to 2 levels of lift",
+          "additional": ""
+        },
+        "40_vol_12%": {
+          "use": "Up to 3 levels of lift",
+          "additional": ""
+        }
+      },
+      "white_hair_coverage": {
+        "25-50%": "1 part Natural (N/.0) + 2 parts desired shade",
+        "50-100%": "1 part Natural + 1 part desired shade",
+        "red_shades_above_50%": "1 part Natural + 2 parts desired red shade"
+      },
+      "key_claims": [
+        "100% dimensional coverage on white hair",
+        "72% more shine",
+        "96% scalp comfort",
+        "9+ weeks of salon-vibrant color"
+      ],
+      "shades": [
+        {
+          "shade_code": "10.8/10Gy",
+          "depth": 10,
+          "tone_code": ".8/Gy",
+          "tone_name": "Grey",
+          "family": "Grey"
+        },
+        {
+          "shade_code": "10.82/10GyV",
+          "depth": 10,
+          "tone_code": ".82/GyV",
+          "tone_name": "Grey-Violet",
+          "family": "Grey"
+        },
+        {
+          "shade_code": "9.8/9Gy",
+          "depth": 9,
+          "tone_code": ".8/Gy",
+          "tone_name": "Grey",
+          "family": "Grey"
+        },
+        {
+          "shade_code": "9.82/9GyV",
+          "depth": 9,
+          "tone_code": ".82/GyV",
+          "tone_name": "Grey-Violet",
+          "family": "Grey"
+        },
+        {
+          "shade_code": "8.8/8Gy",
+          "depth": 8,
+          "tone_code": ".8/Gy",
+          "tone_name": "Grey",
+          "family": "Grey"
+        },
+        {
+          "shade_code": "8.82/8GyV",
+          "depth": 8,
+          "tone_code": ".82/GyV",
+          "tone_name": "Grey-Violet",
+          "family": "Grey"
+        },
+        {
+          "shade_code": "6.8/6Gy",
+          "depth": 6,
+          "tone_code": ".8/Gy",
+          "tone_name": "Grey",
+          "family": "Grey"
+        },
+        {
+          "shade_code": "6.82/6GyV",
+          "depth": 6,
+          "tone_code": ".82/GyV",
+          "tone_name": "Grey-Violet",
+          "family": "Grey"
+        },
+        {
+          "shade_code": "7.7/7Gr",
+          "depth": 7,
+          "tone_code": ".7/Gr",
+          "tone_name": "Matte",
+          "family": "Green"
+        },
+        {
+          "shade_code": "6.7/6Gr",
+          "depth": 6,
+          "tone_code": ".7/Gr",
+          "tone_name": "Matte",
+          "family": "Green"
+        },
+        {
+          "shade_code": "5.7/5Gr",
+          "depth": 5,
+          "tone_code": ".7/Gr",
+          "tone_name": "Matte",
+          "family": "Green"
+        },
+        {
+          "shade_code": "10.1/10B",
+          "depth": 10,
+          "tone_code": ".1/B",
+          "tone_name": "Ash",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "10.12/10BV",
+          "depth": 10,
+          "tone_code": ".12/BV",
+          "tone_name": "Blue-Violet",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "10.13/10BG",
+          "depth": 10,
+          "tone_code": ".13/BG",
+          "tone_name": "Blue-Green",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "9.1/9B",
+          "depth": 9,
+          "tone_code": ".1/B",
+          "tone_name": "Ash",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "9.13/9BG",
+          "depth": 9,
+          "tone_code": ".13/BG",
+          "tone_name": "Blue-Green",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "8.1/8B",
+          "depth": 8,
+          "tone_code": ".1/B",
+          "tone_name": "Ash",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "8.12/8BV",
+          "depth": 8,
+          "tone_code": ".12/BV",
+          "tone_name": "Blue-Violet",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "7.13/7BG",
+          "depth": 7,
+          "tone_code": ".13/BG",
+          "tone_name": "Blue-Green",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "6.1/6B",
+          "depth": 6,
+          "tone_code": ".1/B",
+          "tone_name": "Ash",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "6.12/6BV",
+          "depth": 6,
+          "tone_code": ".12/BV",
+          "tone_name": "Blue-Violet",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "6.13/6BG",
+          "depth": 6,
+          "tone_code": ".13/BG",
+          "tone_name": "Blue-Green",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "6.17/6BGr",
+          "depth": 6,
+          "tone_code": ".17/BGr",
+          "tone_name": "Blue-Green",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "5.13/5BG",
+          "depth": 5,
+          "tone_code": ".13/BG",
+          "tone_name": "Blue-Green",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "4.1/4B",
+          "depth": 4,
+          "tone_code": ".1/B",
+          "tone_name": "Ash",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "2.1/2B",
+          "depth": 2,
+          "tone_code": ".1/B",
+          "tone_name": "Ash",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "10.2/10V",
+          "depth": 10,
+          "tone_code": ".2/V",
+          "tone_name": "Iridescent",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "10.21/10VB",
+          "depth": 10,
+          "tone_code": ".21/VB",
+          "tone_name": "Violet-Blue",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "10.24/10VC",
+          "depth": 10,
+          "tone_code": ".24/VC",
+          "tone_name": "Violet-Copper",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "9.2/9V",
+          "depth": 9,
+          "tone_code": ".2/V",
+          "tone_name": "Iridescent",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "9.21/9VB",
+          "depth": 9,
+          "tone_code": ".21/VB",
+          "tone_name": "Violet-Blue",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "8.2/8V",
+          "depth": 8,
+          "tone_code": ".2/V",
+          "tone_name": "Iridescent",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "8.21/8VB",
+          "depth": 8,
+          "tone_code": ".21/VB",
+          "tone_name": "Violet-Blue",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "8.24/8VC",
+          "depth": 8,
+          "tone_code": ".24/VC",
+          "tone_name": "Violet-Copper",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "7.21/7VB",
+          "depth": 7,
+          "tone_code": ".21/VB",
+          "tone_name": "Violet-Blue",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "6.2/6V",
+          "depth": 6,
+          "tone_code": ".2/V",
+          "tone_name": "Iridescent",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "4.2/4V",
+          "depth": 4,
+          "tone_code": ".2/V",
+          "tone_name": "Iridescent",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "10.0/10N",
+          "depth": 10,
+          "tone_code": ".0/N",
+          "tone_name": "Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "9.0/9N",
+          "depth": 9,
+          "tone_code": ".0/N",
+          "tone_name": "Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "9.9/9Ch",
+          "depth": 9,
+          "tone_code": ".9/Ch",
+          "tone_name": "Brown",
+          "family": "Chocolate"
+        },
+        {
+          "shade_code": "8.0/8N",
+          "depth": 8,
+          "tone_code": ".0/N",
+          "tone_name": "Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "8.00/8NN",
+          "depth": 8,
+          "tone_code": ".00/NN",
+          "tone_name": "Intense Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "8.9/8Ch",
+          "depth": 8,
+          "tone_code": ".9/Ch",
+          "tone_name": "Brown",
+          "family": "Chocolate"
+        },
+        {
+          "shade_code": "7.0/7N",
+          "depth": 7,
+          "tone_code": ".0/N",
+          "tone_name": "Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "7.00/7NN",
+          "depth": 7,
+          "tone_code": ".00/NN",
+          "tone_name": "Intense Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "7.9/7Ch",
+          "depth": 7,
+          "tone_code": ".9/Ch",
+          "tone_name": "Brown",
+          "family": "Chocolate"
+        },
+        {
+          "shade_code": "6.0/6N",
+          "depth": 6,
+          "tone_code": ".0/N",
+          "tone_name": "Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "6.00/6NN",
+          "depth": 6,
+          "tone_code": ".00/NN",
+          "tone_name": "Intense Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "6.9/6Ch",
+          "depth": 6,
+          "tone_code": ".9/Ch",
+          "tone_name": "Brown",
+          "family": "Chocolate"
+        },
+        {
+          "shade_code": "5.0/5N",
+          "depth": 5,
+          "tone_code": ".0/N",
+          "tone_name": "Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "5.00/5NN",
+          "depth": 5,
+          "tone_code": ".00/NN",
+          "tone_name": "Intense Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "4.0/4N",
+          "depth": 4,
+          "tone_code": ".0/N",
+          "tone_name": "Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "4.00/4NN",
+          "depth": 4,
+          "tone_code": ".00/NN",
+          "tone_name": "Intense Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "4.9/4Ch",
+          "depth": 4,
+          "tone_code": ".9/Ch",
+          "tone_name": "Brown",
+          "family": "Chocolate"
+        },
+        {
+          "shade_code": "3.0/3N",
+          "depth": 3,
+          "tone_code": ".0/N",
+          "tone_name": "Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "2.0/2N",
+          "depth": 2,
+          "tone_code": ".0/N",
+          "tone_name": "Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "9.91/9ChB",
+          "depth": 9,
+          "tone_code": ".91/ChB",
+          "tone_name": "Chocolate-Blue",
+          "family": "Chocolate"
+        },
+        {
+          "shade_code": "5.99/5ChCh",
+          "depth": 5,
+          "tone_code": ".99/ChCh",
+          "tone_name": "Intense Chocolate",
+          "family": "Chocolate"
+        },
+        {
+          "shade_code": "10.3/10G",
+          "depth": 10,
+          "tone_code": ".3/G",
+          "tone_name": "Gold",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "9.3/9G",
+          "depth": 9,
+          "tone_code": ".3/G",
+          "tone_name": "Gold",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "9.34/9GC",
+          "depth": 9,
+          "tone_code": ".34/GC",
+          "tone_name": "Gold-Copper",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "8.3/8G",
+          "depth": 8,
+          "tone_code": ".3/G",
+          "tone_name": "Gold",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "7.3/7G",
+          "depth": 7,
+          "tone_code": ".3/G",
+          "tone_name": "Gold",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "7.34/7GC",
+          "depth": 7,
+          "tone_code": ".34/GC",
+          "tone_name": "Gold-Copper",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "6.3/6G",
+          "depth": 6,
+          "tone_code": ".3/G",
+          "tone_name": "Gold",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "5.3/5G",
+          "depth": 5,
+          "tone_code": ".3/G",
+          "tone_name": "Gold",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "5.34/5GC",
+          "depth": 5,
+          "tone_code": ".34/GC",
+          "tone_name": "Gold-Copper",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "4.3/4G",
+          "depth": 4,
+          "tone_code": ".3/G",
+          "tone_name": "Gold",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "8.4/8C",
+          "depth": 8,
+          "tone_code": ".4/C",
+          "tone_name": "Copper",
+          "family": "Orange"
+        },
+        {
+          "shade_code": "8.43/8CG",
+          "depth": 8,
+          "tone_code": ".43/CG",
+          "tone_name": "Copper-Gold",
+          "family": "Orange"
+        },
+        {
+          "shade_code": "7.4/7C",
+          "depth": 7,
+          "tone_code": ".4/C",
+          "tone_name": "Copper",
+          "family": "Orange"
+        },
+        {
+          "shade_code": "7.46/7CR",
+          "depth": 7,
+          "tone_code": ".46/CR",
+          "tone_name": "Copper-Red",
+          "family": "Orange"
+        },
+        {
+          "shade_code": "6.4/6C",
+          "depth": 6,
+          "tone_code": ".4/C",
+          "tone_name": "Copper",
+          "family": "Orange"
+        },
+        {
+          "shade_code": "6.43/6CG",
+          "depth": 6,
+          "tone_code": ".43/CG",
+          "tone_name": "Copper-Gold",
+          "family": "Orange"
+        },
+        {
+          "shade_code": "5.4/5C",
+          "depth": 5,
+          "tone_code": ".4/C",
+          "tone_name": "Copper",
+          "family": "Orange"
+        },
+        {
+          "shade_code": "5.46/5CR",
+          "depth": 5,
+          "tone_code": ".46/CR",
+          "tone_name": "Copper-Red",
+          "family": "Orange"
+        },
+        {
+          "shade_code": "4.4/4C",
+          "depth": 4,
+          "tone_code": ".4/C",
+          "tone_name": "Copper",
+          "family": "Orange"
+        },
+        {
+          "shade_code": "8.6/8R",
+          "depth": 8,
+          "tone_code": ".6/R",
+          "tone_name": "Red",
+          "family": "Red"
+        },
+        {
+          "shade_code": "7.6/7R",
+          "depth": 7,
+          "tone_code": ".6/R",
+          "tone_name": "Red",
+          "family": "Red"
+        },
+        {
+          "shade_code": "6.6/6R",
+          "depth": 6,
+          "tone_code": ".6/R",
+          "tone_name": "Red",
+          "family": "Red"
+        },
+        {
+          "shade_code": "5.6/5R",
+          "depth": 5,
+          "tone_code": ".6/R",
+          "tone_name": "Red",
+          "family": "Red"
+        },
+        {
+          "shade_code": "4.6/4R",
+          "depth": 4,
+          "tone_code": ".6/R",
+          "tone_name": "Red",
+          "family": "Red"
+        },
+        {
+          "shade_code": "4.64/4RC",
+          "depth": 4,
+          "tone_code": ".64/RC",
+          "tone_name": "Red-Copper",
+          "family": "Red"
+        },
+        {
+          "shade_code": "7.5/7Rv",
+          "depth": 7,
+          "tone_code": ".5/Rv",
+          "tone_name": "Mahogany",
+          "family": "Red-Violet"
+        },
+        {
+          "shade_code": "6.65/6RRv",
+          "depth": 6,
+          "tone_code": ".65/RRv",
+          "tone_name": "Red-Mahogany",
+          "family": "Red-Violet"
+        },
+        {
+          "shade_code": "6.5/6Rv",
+          "depth": 6,
+          "tone_code": ".5/Rv",
+          "tone_name": "Mahogany",
+          "family": "Red-Violet"
+        },
+        {
+          "shade_code": "5.5/5Rv",
+          "depth": 5,
+          "tone_code": ".5/Rv",
+          "tone_name": "Mahogany",
+          "family": "Red-Violet"
+        },
+        {
+          "shade_code": "4.65/4RRv",
+          "depth": 4,
+          "tone_code": ".65/RRv",
+          "tone_name": "Red-Mahogany",
+          "family": "Red-Violet"
+        },
+        {
+          "shade_code": "4.5/4Rv",
+          "depth": 4,
+          "tone_code": ".5/Rv",
+          "tone_name": "Mahogany",
+          "family": "Red-Violet"
+        }
+      ]
+    },
+    {
+      "line_name": "Color Rhapsody High Lift Permanent Cream Color",
+      "type": "Permanent",
+      "format": "Cream",
+      "mixing_ratio": "1:2",
+      "mixing_details": "1 part High Lift + 2 parts Oxidative Cream Developer",
+      "application": "Untreated, dry hair only; ideal for natural dark blonde (level 6) or lighter",
+      "development_time": {
+        "without_heat": "50-60 minutes",
+        "with_heat": "DO NOT USE HEAT"
+      },
+      "developer_recommendations": {
+        "30_vol_9%": {
+          "use": "Up to 4 levels of lift",
+          "additional": ""
+        },
+        "40_vol_12%": {
+          "use": "Up to 5 levels of lift",
+          "additional": ""
+        }
+      },
+      "application_technique": "Apply to mid-lengths/ends first, leaving 1 inch from scalp; process for half the time, then apply fresh mix to roots and process full time",
+      "key_claims": [
+        "Up to 5 levels of lift",
+        "Helps reduce damage",
+        "72% increase in shine"
+      ],
+      "shades": [
+        {
+          "shade_code": "HL.0/N",
+          "depth": "High Lift",
+          "tone_code": ".0/N",
+          "tone_name": "Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "HL.1/B",
+          "depth": "High Lift",
+          "tone_code": ".1/B",
+          "tone_name": "Ash",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "HL.2/V",
+          "depth": "High Lift",
+          "tone_code": ".2/V",
+          "tone_name": "Iridescent",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "HL.3/G",
+          "depth": "High Lift",
+          "tone_code": ".3/G",
+          "tone_name": "Gold",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "HL.8/Gy",
+          "depth": "High Lift",
+          "tone_code": ".8/Gy",
+          "tone_name": "Grey",
+          "family": "Grey"
+        }
+      ]
+    },
+    {
+      "line_name": "Color Rhapsody Ultimates Permanent Cream Color",
+      "type": "Permanent",
+      "format": "Cream",
+      "mixing_ratio": "1:1",
+      "mixing_details": "1 part Ultimates + 1 part Oxidative Cream Developer",
+      "application": "Dry hair only",
+      "development_time": {
+        "without_heat": "35 minutes",
+        "with_heat": "Not specified; up to 45 minutes for resistant or coarse hair without heat"
+      },
+      "developer_recommendations": {
+        "5_vol_1.5%": {
+          "use": "Adding tone",
+          "additional": ""
+        },
+        "10_vol_3%": {
+          "use": "Same depth or darker",
+          "additional": "Deeper results on natural hair with soft blending on white hair"
+        },
+        "20_vol_6%": {
+          "use": "1 level of lift",
+          "additional": "100% coverage on white hair; same depth or darker"
+        },
+        "30_vol_9%": {
+          "use": "Up to 2 levels of lift",
+          "additional": ""
+        },
+        "40_vol_12%": {
+          "use": "Up to 3 levels of lift",
+          "additional": ""
+        }
+      },
+      "target_client": "Specifically formulated for clients with 50% or more highly resistant grey/white hair",
+      "key_claims": [
+        "100% coverage on toughest greys",
+        "Up to 3x more fortified hair",
+        "Up to 64% less breakage",
+        "Up to 109% increase in shine"
+      ],
+      "shades": [
+        {
+          "shade_code": "8.01/8NB",
+          "depth": 8,
+          "tone_code": ".01/NB",
+          "tone_name": "Natural-Blue",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "6.01/6NB",
+          "depth": 6,
+          "tone_code": ".01/NB",
+          "tone_name": "Natural-Blue",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "4.01/4NB",
+          "depth": 4,
+          "tone_code": ".01/NB",
+          "tone_name": "Natural-Blue",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "9.00/9NN",
+          "depth": 9,
+          "tone_code": ".00/NN",
+          "tone_name": "Intense Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "8.00/8NN",
+          "depth": 8,
+          "tone_code": ".00/NN",
+          "tone_name": "Intense Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "7.00/7NN",
+          "depth": 7,
+          "tone_code": ".00/NN",
+          "tone_name": "Intense Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "6.00/6NN",
+          "depth": 6,
+          "tone_code": ".00/NN",
+          "tone_name": "Intense Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "5.00/5NN",
+          "depth": 5,
+          "tone_code": ".00/NN",
+          "tone_name": "Intense Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "4.00/4NN",
+          "depth": 4,
+          "tone_code": ".00/NN",
+          "tone_name": "Intense Natural",
+          "family": "Natural"
+        },
+        {
+          "shade_code": "8.09/8NCh",
+          "depth": 8,
+          "tone_code": ".09/NCh",
+          "tone_name": "Natural-Chocolate",
+          "family": "Chocolate"
+        },
+        {
+          "shade_code": "6.09/6NCh",
+          "depth": 6,
+          "tone_code": ".09/NCh",
+          "tone_name": "Natural-Chocolate",
+          "family": "Chocolate"
+        },
+        {
+          "shade_code": "4.09/4NCh",
+          "depth": 4,
+          "tone_code": ".09/NCh",
+          "tone_name": "Natural-Chocolate",
+          "family": "Chocolate"
+        },
+        {
+          "shade_code": "8.03/8NG",
+          "depth": 8,
+          "tone_code": ".03/NG",
+          "tone_name": "Natural-Gold",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "6.03/6NG",
+          "depth": 6,
+          "tone_code": ".03/NG",
+          "tone_name": "Natural-Gold",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "4.03/4NG",
+          "depth": 4,
+          "tone_code": ".03/NG",
+          "tone_name": "Natural-Gold",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "9.034/9NGC",
+          "depth": 9,
+          "tone_code": ".034/NGC",
+          "tone_name": "Natural-Gold-Copper",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "7.034/7NGC",
+          "depth": 7,
+          "tone_code": ".034/NGC",
+          "tone_name": "Natural-Gold-Copper",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "5.034/5NGC",
+          "depth": 5,
+          "tone_code": ".034/NGC",
+          "tone_name": "Natural-Gold-Copper",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "7.06/7NR",
+          "depth": 7,
+          "tone_code": ".06/NR",
+          "tone_name": "Natural-Red",
+          "family": "Red"
+        },
+        {
+          "shade_code": "5.06/5NR",
+          "depth": 5,
+          "tone_code": ".06/NR",
+          "tone_name": "Natural-Red",
+          "family": "Red"
+        }
+      ]
+    },
+    {
+      "line_name": "Color Calypso Demi-Permanent Gloss",
+      "type": "Demi-Permanent",
+      "format": "Liquid Gloss",
+      "mixing_ratio": "1:1",
+      "mixing_details": "1 part Gloss + 1 part Color Calypso Demi-Permanent Gloss Activator (dedicated activator required)",
+      "application": "Damp or dry hair. Damp = softer result (recommended for mixed porosities). Dry = increased color intensity.",
+      "development_time": {
+        "without_heat": "Up to 20 minutes",
+        "with_heat": "Up to 15 minutes"
+      },
+      "white_hair_blending": {
+        "20-60%": "1 part natural base + 2 parts desired shade",
+        "60-100%": "1 part natural base + 1 part desired shade"
+      },
+      "key_claims": [
+        "67% increase in shine",
+        "56% more conditioned/manageable hair",
+        "Improves hair integrity",
+        "9+ weeks salon-vibrant color"
+      ],
+      "availability": "North America and Australia only",
+      "note": "Shares the same shade portfolio as Color Rhapsody Permanent Cream Color",
+      "shades": "See Color Rhapsody Permanent Cream Color shade inventory"
+    },
+    {
+      "line_name": "Color Calypso Demi-Permanent Cream Color",
+      "type": "Demi-Permanent",
+      "format": "Cream",
+      "mixing_ratio": "1:2",
+      "mixing_details": "1 part Cream Color + 2 parts Oxidative Cream Developer 5 vol (1.5%) or 15 vol (4.5%)",
+      "application": "Damp or dry hair. Damp = softer result (recommended for mixed porosities). Dry = increased color intensity.",
+      "development_time": {
+        "without_heat": "Up to 25 minutes",
+        "with_heat": "Up to 20 minutes"
+      },
+      "developer_recommendations": {
+        "5_vol_1.5%": {
+          "use": "Adding tone, soft color effects, subtle blending of white hair, minimum regrowth, highly porous/mixed porosity hair",
+          "additional": ""
+        },
+        "15_vol_4.5%": {
+          "use": "Greater intensity, color vibrancy",
+          "additional": "Up to 60% blended coverage on white hair"
+        }
+      },
+      "white_hair_blending": {
+        "20-60%": "1 part natural base + 2 parts desired shade",
+        "60-100%": "1 part natural base + 1 part desired shade"
+      },
+      "key_claims": [
+        "52% increase in shine",
+        "56% more conditioned/manageable hair",
+        "Maintains hair integrity",
+        "9+ weeks salon-vibrant color"
+      ],
+      "availability": "International markets only",
+      "note": "Shares the same shade portfolio as Color Rhapsody Permanent Cream Color",
+      "shades": "See Color Rhapsody Permanent Cream Color shade inventory"
+    },
+    {
+      "line_name": "Color Infusion Pure Color Mixers",
+      "type": "Pure Color Mixer",
+      "format": "Gel",
+      "purpose": "Customize any haircolor to intensify, neutralize, or pastelize results",
+      "mixing_ratios_by_line": {
+        "Color Rhapsody": "1:1",
+        "Color Rhapsody Ultimates": "1:1",
+        "Color Rhapsody High Lift": "1:2",
+        "Color Calypso Cream": "1:2",
+        "Color Calypso Gloss": "1:1"
+      },
+      "stand_alone_use": "1 part Color Infusion + 1 part developer (5, 10, or 20 vol); develop up to 20 minutes without heat",
+      "amount_guide_per_30g_base": {
+        "level_10": "1g",
+        "level_9": "2g",
+        "level_8": "3g",
+        "level_7": "4g",
+        "level_6": "5g",
+        "level_5": "6g",
+        "level_4": "8g",
+        "level_3": "10g",
+        "level_2": "15g"
+      },
+      "key_claims": [
+        "Helps reduce damage caused by color service",
+        "Improves shine and enhances color longevity"
+      ],
+      "shades": [
+        {
+          "shade_code": "Grey Mixer",
+          "family": "Grey"
+        },
+        {
+          "shade_code": "Green Mixer",
+          "family": "Green"
+        },
+        {
+          "shade_code": "Blue Mixer",
+          "family": "Blue"
+        },
+        {
+          "shade_code": "Violet Mixer",
+          "family": "Violet"
+        },
+        {
+          "shade_code": "Yellow Mixer",
+          "family": "Yellow"
+        },
+        {
+          "shade_code": "Orange Mixer",
+          "family": "Orange"
+        },
+        {
+          "shade_code": "Red Mixer",
+          "family": "Red"
+        },
+        {
+          "shade_code": "Clear",
+          "family": "Diluter",
+          "purpose": "Pastelizer/Diluter"
+        }
+      ]
+    },
+    {
+      "line_name": "Blonde Voyage Lighteners",
+      "type": "Lightener",
+      "products": [
+        {
+          "name": "Blonde Voyage Powder Lightener",
+          "formula": "Powder",
+          "mixing_ratio": "1:1.5 to 1:2",
+          "max_lift": "9 levels",
+          "best_for": "Lightest blondes, pastels, vivids, color transformations"
+        },
+        {
+          "name": "Blonde Voyage Clay Lightener",
+          "formula": "Clay",
+          "mixing_ratio": "1:1.5",
+          "max_lift": "8 levels",
+          "best_for": "Balayage, freehand techniques, precision application"
+        },
+        {
+          "name": "Blonde Voyage Cream Lightener",
+          "formula": "Cream",
+          "mixing_ratio": "1:1.5",
+          "max_lift": "8 levels",
+          "best_for": "Damaged/delicate hair, on/off-scalp, nourishing lift"
+        }
+      ],
+      "application": "Dry, unwashed hair only",
+      "processing": "Maximum 50 minutes; check every 5-10 minutes; DO NOT USE HEAT",
+      "on_scalp_safety": "Do not exceed 20 vol developer when applying directly to scalp; never cover with plastic cap",
+      "developer_options": "5, 10, 15, 20, 30, or 40 vol depending on desired lift and hair condition",
+      "key_technology": "BondCare + ArganID System — reinforces bonds, reduces damage/breakage, infuses argan oil deep into cortex",
+      "shades": "N/A — Lightener system with no tonal shades"
+    }
+  ],
+  "developer_summary": {
+    "5_vol_1.5%": {
+      "uses": [
+        "Color Rhapsody: Adding tone",
+        "Color Rhapsody: Toning/coloring on porous hair",
+        "Color Calypso Cream: Adding tone, soft color effects, subtle blending, minimum regrowth, highly porous hair",
+        "Blonde Voyage: Gentle lightening"
+      ]
+    },
+    "10_vol_3%": {
+      "uses": [
+        "Color Rhapsody: Same depth or darker; deeper results on natural hair; soft blending on white hair",
+        "Color Rhapsody Ultimates: Same depth or darker; deeper results on natural hair; soft blending on white hair",
+        "Blonde Voyage: Mild lightening"
+      ]
+    },
+    "15_vol_4.5%": {
+      "uses": [
+        "Color Calypso Cream: Greater intensity, color vibrancy, up to 60% blended coverage on white hair"
+      ]
+    },
+    "20_vol_6%": {
+      "uses": [
+        "Color Rhapsody: 1 level of lift; up to 100% coverage on white hair; same depth or darker",
+        "Color Rhapsody Ultimates: 1 level of lift; 100% coverage on white hair; same depth or darker",
+        "Blonde Voyage: On/off scalp lightening (max for on-scalp)"
+      ]
+    },
+    "30_vol_9%": {
+      "uses": [
+        "Color Rhapsody: Up to 2 levels of lift",
+        "Color Rhapsody Ultimates: Up to 2 levels of lift",
+        "Color Rhapsody High Lift: Up to 4 levels of lift",
+        "Blonde Voyage: Moderate lightening"
+      ]
+    },
+    "40_vol_12%": {
+      "uses": [
+        "Color Rhapsody: Up to 3 levels of lift",
+        "Color Rhapsody Ultimates: Up to 3 levels of lift",
+        "Color Rhapsody High Lift: Up to 5 levels of lift",
+        "Blonde Voyage: Maximum lightening (off-scalp only)"
+      ]
+    }
+  },
+  "color_balance_services": {
+    "color_rebalance": {
+      "description": "Add a touch of color and refresh mid-lengths/ends after root application",
+      "method": "After full root development, add water, emulsify, work through mid-lengths and ends. Develop additional 10-15 minutes."
+    },
+    "arganid_glossing": {
+      "description": "Quick service to infuse color and boost shine",
+      "method": "Mix 1 part Color Rhapsody + 1 part Cream Developer (5, 10, 15, or 20 vol) + 1 part Moroccanoil Color Care Conditioner. Apply to pre-shampooed, damp hair. Develop 5-10 minutes."
+    },
+    "arganid_toning": {
+      "description": "Neutralize unwanted tones on lightened hair or create pastel effects",
+      "method": "Mix 1 part Color Rhapsody (Clear or levels 9-10) + 1 part Cream Developer 10 vol. Apply on slightly damp hair, develop without heat up to 20 minutes."
+    }
+  },
+  "pre_pigmentation_techniques": {
+    "color_calypso_gloss": {
+      "ratio": "1 part color to 1 part Gloss Activator",
+      "example": "For level 6.0 dark blonde: 30g 10.0 Gloss + 5g Orange Color Infusion + 35g Gloss Activator",
+      "application": "Pre-shampooed, damp hair, avoiding natural color at root. Develop up to 15 minutes without heat."
+    },
+    "color_calypso_cream": {
+      "ratio": "1 part color to 2 parts 5 vol (1.5%) Cream Developer",
+      "example": "For level 6.0 dark blonde: 30g 10.0 Cream + 5g Orange Color Infusion + 70g 5 vol Developer",
+      "application": "Pre-shampooed, damp hair, avoiding natural color at root. Develop up to 15 minutes without heat."
+    },
+    "color_rhapsody": {
+      "ratio": "1 part color to 2 parts 5 vol (1.5%) Cream Developer",
+      "example": "For level 6.0 dark blonde: 30g 10.0 Rhapsody + 5g Orange Color Infusion + 70g 5 vol Developer",
+      "application": "Dry hair, avoiding natural color at root. Develop up to 15 minutes without heat."
+    },
+    "note": "Color on top of color can go darker; formulate target shade 1-2 levels lighter to avoid over-darkening"
+  }
+}

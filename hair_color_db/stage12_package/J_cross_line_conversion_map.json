@@ -2,8 +2,3712 @@
   "artifact": "cross_line_conversion_map",
   "generated": "2026-06-21",
   "completion_status": "partial",
-  "count": 618,
+  "count": 840,
   "conversion_entries": [
+    {
+      "conversion_id": "gels_10na__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "10NA",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "010NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 10NA ↔ 010NA."
+    },
+    {
+      "conversion_id": "seq_010na__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010NA",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "10NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 010NA ↔ 10NA."
+    },
+    {
+      "conversion_id": "gels_10n__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "10N",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "010N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 10N ↔ 010N."
+    },
+    {
+      "conversion_id": "seq_010n__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010N",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "10N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 010N ↔ 10N."
+    },
+    {
+      "conversion_id": "gels_10nw__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "10NW",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "010NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 10NW ↔ 010NW."
+    },
+    {
+      "conversion_id": "seq_010nw__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010NW",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "10NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 010NW ↔ 10NW."
+    },
+    {
+      "conversion_id": "gels_9n__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "9N",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "09N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 9N ↔ 09N."
+    },
+    {
+      "conversion_id": "seq_09n__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09N",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "9N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 09N ↔ 9N."
+    },
+    {
+      "conversion_id": "gels_8na__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "8NA",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "08NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 8NA ↔ 08NA."
+    },
+    {
+      "conversion_id": "seq_08na__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08NA",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "8NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 08NA ↔ 8NA."
+    },
+    {
+      "conversion_id": "gels_8n__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "8N",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "08N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 8N ↔ 08N."
+    },
+    {
+      "conversion_id": "seq_08n__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08N",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "8N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 08N ↔ 8N."
+    },
+    {
+      "conversion_id": "gels_8nw__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "8NW",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "08NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 8NW ↔ 08NW."
+    },
+    {
+      "conversion_id": "seq_08nw__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08NW",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "8NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 08NW ↔ 8NW."
+    },
+    {
+      "conversion_id": "gels_8wg__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "8WG",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "08WG",
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 8WG ↔ 08WG."
+    },
+    {
+      "conversion_id": "seq_08wg__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08WG",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "8WG",
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 08WG ↔ 8WG."
+    },
+    {
+      "conversion_id": "gels_7ab__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "7AB",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "07AB",
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 7AB ↔ 07AB."
+    },
+    {
+      "conversion_id": "seq_07ab__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07AB",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "7AB",
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 07AB ↔ 7AB."
+    },
+    {
+      "conversion_id": "gels_7na__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "7NA",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "07NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 7NA ↔ 07NA."
+    },
+    {
+      "conversion_id": "seq_07na__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07NA",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "7NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 07NA ↔ 7NA."
+    },
+    {
+      "conversion_id": "gels_7n__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "7N",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "07N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 7N ↔ 07N."
+    },
+    {
+      "conversion_id": "seq_07n__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07N",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "7N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 07N ↔ 7N."
+    },
+    {
+      "conversion_id": "gels_7nw__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "7NW",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "07NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 7NW ↔ 07NW."
+    },
+    {
+      "conversion_id": "seq_07nw__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07NW",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "7NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 07NW ↔ 7NW."
+    },
+    {
+      "conversion_id": "gels_7gb__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "7GB",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "07GB",
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 7GB ↔ 07GB."
+    },
+    {
+      "conversion_id": "seq_07gb__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07GB",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "7GB",
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 07GB ↔ 7GB."
+    },
+    {
+      "conversion_id": "gels_7ro__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "7RO",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "07RO",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 7RO ↔ 07RO."
+    },
+    {
+      "conversion_id": "seq_07ro__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07RO",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "7RO",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 07RO ↔ 7RO."
+    },
+    {
+      "conversion_id": "gels_7rr__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "7RR",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "07RR",
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 7RR ↔ 07RR."
+    },
+    {
+      "conversion_id": "seq_07rr__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07RR",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "7RR",
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 07RR ↔ 7RR."
+    },
+    {
+      "conversion_id": "gels_6ab__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "6AB",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "06AB",
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 6AB ↔ 06AB."
+    },
+    {
+      "conversion_id": "seq_06ab__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06AB",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "6AB",
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 06AB ↔ 6AB."
+    },
+    {
+      "conversion_id": "gels_6na__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "6NA",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "06NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 6NA ↔ 06NA."
+    },
+    {
+      "conversion_id": "seq_06na__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06NA",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "6NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 06NA ↔ 6NA."
+    },
+    {
+      "conversion_id": "gels_6n__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "6N",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "06N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 6N ↔ 06N."
+    },
+    {
+      "conversion_id": "seq_06n__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06N",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "6N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 06N ↔ 6N."
+    },
+    {
+      "conversion_id": "gels_6nw__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "6NW",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "06NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 6NW ↔ 06NW."
+    },
+    {
+      "conversion_id": "seq_06nw__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06NW",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "6NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 06NW ↔ 6NW."
+    },
+    {
+      "conversion_id": "gels_6wg__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "6WG",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "06WG",
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 6WG ↔ 06WG."
+    },
+    {
+      "conversion_id": "seq_06wg__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06WG",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "6WG",
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 06WG ↔ 6WG."
+    },
+    {
+      "conversion_id": "gels_6cb__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "6CB",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "06CB",
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 6CB ↔ 06CB."
+    },
+    {
+      "conversion_id": "seq_06cb__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06CB",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "6CB",
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 06CB ↔ 6CB."
+    },
+    {
+      "conversion_id": "gels_6ro__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "6RO",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "06RO",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 6RO ↔ 06RO."
+    },
+    {
+      "conversion_id": "seq_06ro__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06RO",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "6RO",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 06RO ↔ 6RO."
+    },
+    {
+      "conversion_id": "gels_6rr__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "6RR",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "06RR",
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 6RR ↔ 06RR."
+    },
+    {
+      "conversion_id": "seq_06rr__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06RR",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "6RR",
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 06RR ↔ 6RR."
+    },
+    {
+      "conversion_id": "gels_6vr__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "6VR",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "06VR",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 6VR ↔ 06VR."
+    },
+    {
+      "conversion_id": "seq_06vr__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06VR",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "6VR",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 06VR ↔ 6VR."
+    },
+    {
+      "conversion_id": "gels_5ab__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "5AB",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "05AB",
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 5AB ↔ 05AB."
+    },
+    {
+      "conversion_id": "seq_05ab__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05AB",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "5AB",
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 05AB ↔ 5AB."
+    },
+    {
+      "conversion_id": "gels_5na__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "5NA",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "05NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 5NA ↔ 05NA."
+    },
+    {
+      "conversion_id": "seq_05na__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05NA",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "5NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 05NA ↔ 5NA."
+    },
+    {
+      "conversion_id": "gels_5n__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "5N",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "05N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 5N ↔ 05N."
+    },
+    {
+      "conversion_id": "seq_05n__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05N",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "5N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 05N ↔ 5N."
+    },
+    {
+      "conversion_id": "gels_5nw__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "5NW",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "05NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 5NW ↔ 05NW."
+    },
+    {
+      "conversion_id": "seq_05nw__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05NW",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "5NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 05NW ↔ 5NW."
+    },
+    {
+      "conversion_id": "gels_5cb__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "5CB",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "05CB",
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 5CB ↔ 05CB."
+    },
+    {
+      "conversion_id": "seq_05cb__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05CB",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "5CB",
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 05CB ↔ 5CB."
+    },
+    {
+      "conversion_id": "gels_5rb__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "5RB",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "05RB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 5RB ↔ 05RB."
+    },
+    {
+      "conversion_id": "seq_05rb__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05RB",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "5RB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 05RB ↔ 5RB."
+    },
+    {
+      "conversion_id": "gels_5ro__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "5RO",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "05RO",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 5RO ↔ 05RO."
+    },
+    {
+      "conversion_id": "seq_05ro__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05RO",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "5RO",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 05RO ↔ 5RO."
+    },
+    {
+      "conversion_id": "gels_5rv__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "5RV",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "05RV",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 5RV ↔ 05RV."
+    },
+    {
+      "conversion_id": "seq_05rv__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05RV",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "5RV",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 05RV ↔ 5RV."
+    },
+    {
+      "conversion_id": "gels_4ab__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "4AB",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "04AB",
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 4AB ↔ 04AB."
+    },
+    {
+      "conversion_id": "seq_04ab__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04AB",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "4AB",
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 04AB ↔ 4AB."
+    },
+    {
+      "conversion_id": "gels_4na__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "4NA",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "04NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 4NA ↔ 04NA."
+    },
+    {
+      "conversion_id": "seq_04na__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04NA",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "4NA",
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 04NA ↔ 4NA."
+    },
+    {
+      "conversion_id": "gels_4n__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "4N",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "04N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 4N ↔ 04N."
+    },
+    {
+      "conversion_id": "seq_04n__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04N",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "4N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 04N ↔ 4N."
+    },
+    {
+      "conversion_id": "gels_4nw__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "4NW",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "04NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 4NW ↔ 04NW."
+    },
+    {
+      "conversion_id": "seq_04nw__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04NW",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "4NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 04NW ↔ 4NW."
+    },
+    {
+      "conversion_id": "gels_4wg__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "4WG",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "04WG",
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 4WG ↔ 04WG."
+    },
+    {
+      "conversion_id": "seq_04wg__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04WG",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "4WG",
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 04WG ↔ 4WG."
+    },
+    {
+      "conversion_id": "gels_4cb__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "4CB",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "04CB",
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 4CB ↔ 04CB."
+    },
+    {
+      "conversion_id": "seq_04cb__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04CB",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "4CB",
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 04CB ↔ 4CB."
+    },
+    {
+      "conversion_id": "gels_4rr__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "4RR",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "04RR",
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 4RR ↔ 04RR."
+    },
+    {
+      "conversion_id": "seq_04rr__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04RR",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "4RR",
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 04RR ↔ 4RR."
+    },
+    {
+      "conversion_id": "gels_4rv__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "4RV",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "04RV",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 4RV ↔ 04RV."
+    },
+    {
+      "conversion_id": "seq_04rv__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04RV",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "4RV",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 04RV ↔ 4RV."
+    },
+    {
+      "conversion_id": "gels_4vr__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "4VR",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "04VR",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 4VR ↔ 04VR."
+    },
+    {
+      "conversion_id": "seq_04vr__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04VR",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "4VR",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 04VR ↔ 4VR."
+    },
+    {
+      "conversion_id": "gels_3n__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "3N",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "03N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 3N ↔ 03N."
+    },
+    {
+      "conversion_id": "seq_03n__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "03N",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "3N",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 03N ↔ 3N."
+    },
+    {
+      "conversion_id": "gels_3nw__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "3NW",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "03NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 3NW ↔ 03NW."
+    },
+    {
+      "conversion_id": "seq_03nw__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "03NW",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "3NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 03NW ↔ 3NW."
+    },
+    {
+      "conversion_id": "gels_3rb__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "3RB",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "03RB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 3RB ↔ 03RB."
+    },
+    {
+      "conversion_id": "seq_03rb__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "03RB",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "3RB",
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 03RB ↔ 3RB."
+    },
+    {
+      "conversion_id": "gels_2ab__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "2AB",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "02AB",
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 2AB ↔ 02AB."
+    },
+    {
+      "conversion_id": "seq_02ab__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "02AB",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "2AB",
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 02AB ↔ 2AB."
+    },
+    {
+      "conversion_id": "gels_1nw__seq",
+      "source_canonical_key": "Redken::Color Gels Lacquers::US",
+      "source_shade_code": "1NW",
+      "target_canonical_key": "Redken::Shades EQ Gloss::US",
+      "strategy": "fixed",
+      "target_shade_code": "01NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt shared code 1NW ↔ 01NW."
+    },
+    {
+      "conversion_id": "seq_01nw__gels",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "01NW",
+      "target_canonical_key": "Redken::Color Gels Lacquers::US",
+      "strategy": "fixed",
+      "target_shade_code": "1NW",
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "redken_color_melting_pairing_2b08.csv",
+      "notes": "Redken color melt reverse 01NW ↔ 1NW."
+    },
+    {
+      "conversion_id": "seq_010t__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010T",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-12."
+    },
+    {
+      "conversion_id": "seq_010na__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010NA",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-0."
+    },
+    {
+      "conversion_id": "seq_010p__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010P",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-1."
+    },
+    {
+      "conversion_id": "seq_010n__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010N",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-0."
+    },
+    {
+      "conversion_id": "seq_010ag__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010AG",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Gold"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-12."
+    },
+    {
+      "conversion_id": "seq_010nb__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010NB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Beige"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-0."
+    },
+    {
+      "conversion_id": "seq_010vg__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010VG",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Violet",
+        "Gold"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-99."
+    },
+    {
+      "conversion_id": "seq_010nw__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010NW",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-0."
+    },
+    {
+      "conversion_id": "seq_010gi__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010GI",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-55."
+    },
+    {
+      "conversion_id": "seq_010g__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010G",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-55."
+    },
+    {
+      "conversion_id": "seq_010wg__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010WG",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-55."
+    },
+    {
+      "conversion_id": "seq_010aa__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010AA",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-88."
+    },
+    {
+      "conversion_id": "seq_010gro__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010GRo",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 10-55."
+    },
+    {
+      "conversion_id": "seq_09cr__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09CR",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 7-77."
+    },
+    {
+      "conversion_id": "seq_09v__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09V",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 9-99."
+    },
+    {
+      "conversion_id": "seq_09vv__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09VV",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 9-99."
+    },
+    {
+      "conversion_id": "seq_09t__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09T",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 9-12."
+    },
+    {
+      "conversion_id": "seq_09p__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09P",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 9-1."
+    },
+    {
+      "conversion_id": "seq_09n__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09N",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 9-0."
+    },
+    {
+      "conversion_id": "seq_09ag__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09AG",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Gold"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 9-12."
+    },
+    {
+      "conversion_id": "seq_09gro__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09GRo",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 9-55."
+    },
+    {
+      "conversion_id": "seq_08t__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08T",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-12."
+    },
+    {
+      "conversion_id": "seq_08na__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08NA",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-0."
+    },
+    {
+      "conversion_id": "seq_08n__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08N",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-0."
+    },
+    {
+      "conversion_id": "seq_08nw__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08NW",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-0."
+    },
+    {
+      "conversion_id": "seq_08wg__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08WG",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-55."
+    },
+    {
+      "conversion_id": "seq_07ab__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07AB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 7-12."
+    },
+    {
+      "conversion_id": "seq_07na__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07NA",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 7-0."
+    },
+    {
+      "conversion_id": "seq_07n__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07N",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 7-0."
+    },
+    {
+      "conversion_id": "seq_07nw__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07NW",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 7-0."
+    },
+    {
+      "conversion_id": "seq_07gb__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07GB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 7-55."
+    },
+    {
+      "conversion_id": "seq_07ro__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07RO",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-88."
+    },
+    {
+      "conversion_id": "seq_07rr__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07RR",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-88."
+    },
+    {
+      "conversion_id": "seq_06ab__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06AB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 6-12."
+    },
+    {
+      "conversion_id": "seq_06na__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06NA",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 6-0."
+    },
+    {
+      "conversion_id": "seq_06n__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06N",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 6-0."
+    },
+    {
+      "conversion_id": "seq_06nw__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06NW",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 6-0."
+    },
+    {
+      "conversion_id": "seq_06wg__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06WG",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 6-55."
+    },
+    {
+      "conversion_id": "seq_06cb__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06CB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 7-77."
+    },
+    {
+      "conversion_id": "seq_06ro__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06RO",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-88."
+    },
+    {
+      "conversion_id": "seq_06rr__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06RR",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-88."
+    },
+    {
+      "conversion_id": "seq_06vr__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06VR",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 6-0."
+    },
+    {
+      "conversion_id": "seq_05ab__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05AB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 5-12."
+    },
+    {
+      "conversion_id": "seq_05na__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05NA",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 5-0."
+    },
+    {
+      "conversion_id": "seq_05n__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05N",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 5-0."
+    },
+    {
+      "conversion_id": "seq_05nw__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05NW",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 5-0."
+    },
+    {
+      "conversion_id": "seq_05cb__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05CB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 7-77."
+    },
+    {
+      "conversion_id": "seq_05rb__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05RB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 5-0."
+    },
+    {
+      "conversion_id": "seq_05ro__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05RO",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-88."
+    },
+    {
+      "conversion_id": "seq_05rv__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05RV",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 5-0."
+    },
+    {
+      "conversion_id": "seq_04ab__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04AB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 4-12."
+    },
+    {
+      "conversion_id": "seq_04na__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04NA",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 4-0."
+    },
+    {
+      "conversion_id": "seq_04n__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04N",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 4-0."
+    },
+    {
+      "conversion_id": "seq_04nw__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04NW",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 4-0."
+    },
+    {
+      "conversion_id": "seq_04wg__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04WG",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 4-55."
+    },
+    {
+      "conversion_id": "seq_04cb__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04CB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 7-77."
+    },
+    {
+      "conversion_id": "seq_04rr__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04RR",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 8-88."
+    },
+    {
+      "conversion_id": "seq_04rv__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04RV",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 4-0."
+    },
+    {
+      "conversion_id": "seq_04vr__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04VR",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 4-0."
+    },
+    {
+      "conversion_id": "seq_03n__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "03N",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 3-0."
+    },
+    {
+      "conversion_id": "seq_03nw__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "03NW",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 3-0."
+    },
+    {
+      "conversion_id": "seq_03rb__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "03RB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 3-0."
+    },
+    {
+      "conversion_id": "seq_02ab__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "02AB",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 2-12."
+    },
+    {
+      "conversion_id": "seq_01nw__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "01NW",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 1-0."
+    },
+    {
+      "conversion_id": "seq_000__vibrance_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "000",
+      "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "Tone-family bridge; hint target 0-0."
+    },
+    {
+      "conversion_id": "seq_010t__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010T",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010na__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010NA",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010p__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010P",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010n__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010N",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010ag__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010AG",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Gold"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010nb__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010NB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Beige"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010vg__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010VG",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Violet",
+        "Gold"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010nw__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010NW",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010gi__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010GI",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010g__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010G",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010wg__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010WG",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010aa__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010AA",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_010gro__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "010GRo",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_09cr__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09CR",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_09v__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09V",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_09vv__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09VV",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_09t__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09T",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_09p__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09P",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Pearl"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_09n__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09N",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_09ag__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09AG",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Gold"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_09gro__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "09GRo",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_08t__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08T",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_08na__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08NA",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_08n__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08N",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_08nw__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08NW",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_08wg__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "08WG",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_07ab__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07AB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_07na__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07NA",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_07n__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07N",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_07nw__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07NW",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_07gb__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07GB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Beige"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_07ro__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07RO",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_07rr__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "07RR",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_06ab__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06AB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_06na__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06NA",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_06n__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06N",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_06nw__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06NW",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_06wg__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06WG",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_06cb__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06CB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_06ro__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06RO",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_06rr__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06RR",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_06vr__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "06VR",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_05ab__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05AB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_05na__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05NA",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_05n__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05N",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_05nw__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05NW",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_05cb__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05CB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_05rb__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05RB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_05ro__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05RO",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_05rv__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "05RV",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_04ab__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04AB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_04na__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04NA",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Ash"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_04n__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04N",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_04nw__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04NW",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_04wg__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04WG",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Gold",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_04cb__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04CB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Copper",
+        "Brown",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_04rr__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04RR",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_04rv__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04RV",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_04vr__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "04VR",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_03n__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "03N",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_03nw__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "03NW",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_03rb__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "03RB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_02ab__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "02AB",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Ash",
+        "Brown"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_01nw__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "01NW",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Natural",
+        "Warm"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
+    {
+      "conversion_id": "seq_000__majirel_ref",
+      "source_canonical_key": "Redken::Shades EQ Gloss::US",
+      "source_shade_code": "000",
+      "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "strategy": "tone_level_match",
+      "target_shade_code": null,
+      "normalized_tones": [
+        "Other"
+      ],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "medium",
+      "source_document": "redken_shade_inventory_1498.csv",
+      "notes": "SEQ tone family → Majirel digit notation via shared normalized tones."
+    },
     {
       "conversion_id": "seq_09p__vibrance_9-1",
       "source_canonical_key": "Redken::Shades EQ Gloss::US",
@@ -2562,8 +6266,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -2579,8 +6282,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -2596,8 +6298,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -2613,8 +6314,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -2630,8 +6330,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -2647,8 +6346,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -2664,8 +6362,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -2681,8 +6378,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -2698,8 +6394,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -2715,8 +6410,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -2732,8 +6426,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -2749,8 +6442,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -3540,8 +7232,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -3557,8 +7248,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -3574,8 +7264,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -3591,8 +7280,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -3608,8 +7296,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -3625,8 +7312,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4158,8 +7844,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4175,8 +7860,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4192,8 +7876,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4209,8 +7892,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4226,8 +7908,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4243,8 +7924,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4776,8 +8456,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4793,8 +8472,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4810,8 +8488,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4827,8 +8504,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4844,8 +8520,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -4861,8 +8536,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -5394,8 +9068,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -5411,8 +9084,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -5428,8 +9100,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -5445,8 +9116,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -5462,8 +9132,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -5479,8 +9148,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -6012,8 +9680,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -6029,8 +9696,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -6046,8 +9712,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -6063,8 +9728,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -6080,8 +9744,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -6097,8 +9760,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7032,8 +10694,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7049,8 +10710,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7066,8 +10726,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7083,8 +10742,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7100,8 +10758,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7117,8 +10774,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8052,8 +11708,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8069,8 +11724,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8086,8 +11740,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8103,8 +11756,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8120,8 +11772,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8137,8 +11788,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9072,8 +12722,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9089,8 +12738,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9106,8 +12754,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9123,8 +12770,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9140,8 +12786,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9157,8 +12802,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -10091,10 +13735,12 @@
       "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Violet"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Violet → Majirel via normalized tone bridge."
     },
@@ -10105,10 +13751,12 @@
       "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Violet"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Violet → IGORA VIBRANCE via normalized tone bridge."
     },
@@ -10119,10 +13767,12 @@
       "target_canonical_key": "Redken::Shades EQ Gloss::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Violet"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Violet → Shades EQ Gloss via normalized tone bridge."
     },
@@ -10133,10 +13783,12 @@
       "target_canonical_key": "Matrix::SoColor::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Violet"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Violet → SoColor via normalized tone bridge."
     },
@@ -10147,10 +13799,12 @@
       "target_canonical_key": "Wella Professionals::Koleston Perfect::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Violet"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Violet → Koleston Perfect via normalized tone bridge."
     },
@@ -10161,10 +13815,12 @@
       "target_canonical_key": "L'Oréal Professionnel::Dia Light::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Violet"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Violet → Dia Light via normalized tone bridge."
     },
@@ -10175,10 +13831,12 @@
       "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Blue"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Blue → Majirel via normalized tone bridge."
     },
@@ -10189,10 +13847,12 @@
       "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Blue"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Blue → IGORA VIBRANCE via normalized tone bridge."
     },
@@ -10203,10 +13863,12 @@
       "target_canonical_key": "Redken::Shades EQ Gloss::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Blue"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Blue → Shades EQ Gloss via normalized tone bridge."
     },
@@ -10217,10 +13879,12 @@
       "target_canonical_key": "Matrix::SoColor::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Blue"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Blue → SoColor via normalized tone bridge."
     },
@@ -10231,10 +13895,12 @@
       "target_canonical_key": "Wella Professionals::Koleston Perfect::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Blue"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Blue → Koleston Perfect via normalized tone bridge."
     },
@@ -10245,10 +13911,12 @@
       "target_canonical_key": "L'Oréal Professionnel::Dia Light::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Blue"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Blue → Dia Light via normalized tone bridge."
     },
@@ -10259,10 +13927,13 @@
       "target_canonical_key": "L'Oréal Professionnel::Majirel::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Y/O → Majirel via normalized tone bridge."
     },
@@ -10273,10 +13944,13 @@
       "target_canonical_key": "Schwarzkopf Professional::IGORA VIBRANCE::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Y/O → IGORA VIBRANCE via normalized tone bridge."
     },
@@ -10287,10 +13961,13 @@
       "target_canonical_key": "Redken::Shades EQ Gloss::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Y/O → Shades EQ Gloss via normalized tone bridge."
     },
@@ -10301,10 +13978,13 @@
       "target_canonical_key": "Matrix::SoColor::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Y/O → SoColor via normalized tone bridge."
     },
@@ -10315,10 +13995,13 @@
       "target_canonical_key": "Wella Professionals::Koleston Perfect::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Y/O → Koleston Perfect via normalized tone bridge."
     },
@@ -10329,18 +14012,19 @@
       "target_canonical_key": "L'Oréal Professionnel::Dia Light::US",
       "strategy": "tone_level_match",
       "target_shade_code": null,
-      "normalized_tones": null,
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
       "level_from": "formula_base",
       "component_role": "booster",
-      "mapping_confidence": "medium",
+      "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Y/O → Dia Light via normalized tone bridge."
     }
   ],
   "notes": [
-    "Path B explicit cross-line translation rules.",
-    "strategy=fixed uses target_shade_code directly.",
-    "strategy=tone_level_match ranks target catalog by normalized_tones + level.",
-    "level_from=formula_base means boosters inherit level from the base shade in the formula."
+    "Built from hair_color_db/reference/ manufacturer CSV inventories.",
+    "Includes Redken Gels↔SEQ melting pairs, SEQ→VIBRANCE/Majirel tone bridges, Aveda rules."
   ]
 }
