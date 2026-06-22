@@ -6,7 +6,12 @@ import os
 import unittest
 from unittest.mock import patch
 
-from api.ai_service import AIConfigurationError, get_ai_settings, resolve_ai_provider
+from api.ai_service import (
+    AIConfigurationError,
+    _normalize_openai_base_url,
+    get_ai_settings,
+    resolve_ai_provider,
+)
 
 
 class TestAIProviderResolution(unittest.TestCase):
@@ -78,6 +83,37 @@ class TestAIProviderResolution(unittest.TestCase):
             settings = get_ai_settings()
             self.assertEqual(settings.provider, "openai")
             self.assertEqual(settings.parse_model, "gpt-4o-mini")
+
+    def test_bedrock_mantle_nemotron_settings(self) -> None:
+        mantle_url = "https://bedrock-mantle.us-east-1.api.aws/v1"
+        env = self._patch_env(
+            {
+                "AI_PROVIDER": "openai",
+                "OPENAI_API_KEY": "bedrock-key",
+                "OPENAI_BASE_URL": mantle_url,
+                "OPENAI_CHAT_MODEL": "nvidia.nemotron-super-3-120b",
+                "OPENAI_TRANSLATE_MODEL": "nvidia.nemotron-super-3-120b",
+            }
+        )
+        with patch.dict(os.environ, env, clear=False):
+            settings = get_ai_settings()
+            self.assertEqual(settings.provider, "openai")
+            self.assertEqual(settings.parse_model, "nvidia.nemotron-super-3-120b")
+            self.assertEqual(settings.translate_model, "nvidia.nemotron-super-3-120b")
+            self.assertEqual(settings.endpoint, mantle_url)
+
+    def test_normalize_bedrock_runtime_url_to_openai_v1(self) -> None:
+        normalized = _normalize_openai_base_url(
+            "https://bedrock-runtime.us-east-1.amazonaws.com/compatible-apis/openai/v1"
+        )
+        self.assertEqual(
+            normalized,
+            "https://bedrock-runtime.us-east-1.amazonaws.com/openai/v1",
+        )
+
+    def test_passthrough_bedrock_mantle_url(self) -> None:
+        mantle_url = "https://bedrock-mantle.us-east-1.api.aws/v1"
+        self.assertEqual(_normalize_openai_base_url(mantle_url), mantle_url)
 
     def test_rejects_mock_in_production_without_override(self) -> None:
         env = self._patch_env({"ENVIRONMENT": "production"})
