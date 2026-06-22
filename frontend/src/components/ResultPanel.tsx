@@ -132,12 +132,17 @@ export default function ResultPanel({ result, loading, error, mode }: Props) {
   const structured = result.structured_request as Record<string, unknown> | undefined;
   const groundingNote =
     typeof structured?.grounding_note === "string" ? structured.grounding_note : null;
+  const qualityFlags = formula.quality_flags as Record<string, unknown> | undefined;
+  const ruleProvenance = formula.rule_provenance as Record<string, unknown> | undefined;
+  const matchedStage13Rules = Array.isArray(ruleProvenance?.matched_stage13_rules)
+    ? ruleProvenance.matched_stage13_rules
+    : [];
 
   const topKeys = ["shade", "shade_code", "shade_name", "color_line", "line", "product_line", "brand"];
   const devKeys = ["developer", "developer_strength", "developer_volume", "developer_options", "mixing_ratio", "ratio"];
   const processKeys = ["processing_time", "processing_time_minutes", "timing", "application_notes", "notes"];
   const metaKeys = ["service_intent", "gray_coverage", "gray", "current_level", "desired_level", "texture", "porosity", "elasticity"];
-  const skipKeys = ["components", "formula_rule", ...topKeys, ...devKeys, ...processKeys, ...metaKeys];
+  const skipKeys = ["components", "formula_rule", "quality_flags", "rule_provenance", ...topKeys, ...devKeys, ...processKeys, ...metaKeys];
 
   function pick(keys: string[]): Record<string, unknown> {
     return Object.fromEntries(
@@ -221,6 +226,53 @@ export default function ResultPanel({ result, loading, error, mode }: Props) {
           </div>
         )}
       </div>
+
+      {/* Why this formula / diagnostics */}
+      {(qualityFlags || ruleProvenance) && (
+        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
+          <div className="flex items-center gap-2 mb-3">
+            <FlaskConical size={14} className="text-[var(--amber)]" />
+            <span className="text-xs font-semibold text-[var(--amber)] mono uppercase tracking-widest">
+              Why this formula
+            </span>
+          </div>
+          {qualityFlags && Array.isArray(qualityFlags.active) && qualityFlags.active.length > 0 && (
+            <div className="mb-3 flex flex-wrap gap-2">
+              {(qualityFlags.active as string[]).map((flag) => (
+                <span key={flag} className="rounded-full border border-[var(--amber)]/40 bg-[var(--amber)]/10 px-2 py-1 text-[10px] uppercase tracking-wide text-[var(--amber)] mono">
+                  {flag.replace(/_/g, " ")}
+                </span>
+              ))}
+            </div>
+          )}
+          {ruleProvenance && (
+            <div className="grid gap-3 text-xs sm:grid-cols-2">
+              <div>
+                <div className="text-[var(--muted)] mb-1">Selected shade source</div>
+                <FormulaValue value={ruleProvenance.selected_shade_source} />
+              </div>
+              <div>
+                <div className="text-[var(--muted)] mb-1">Developer source</div>
+                <FormulaValue value={ruleProvenance.developer_source} />
+              </div>
+              <div>
+                <div className="text-[var(--muted)] mb-1">Processing time source</div>
+                <FormulaValue value={ruleProvenance.processing_time_source} />
+              </div>
+              <div>
+                <div className="text-[var(--muted)] mb-1">Gray rule source</div>
+                <FormulaValue value={ruleProvenance.gray_rule_source} />
+              </div>
+            </div>
+          )}
+          {matchedStage13Rules.length > 0 && (
+            <div className="mt-3 pt-3 border-t border-[var(--border)] text-xs">
+              <span className="text-[var(--muted)]">Matched rules: </span>
+              <FormulaValue value={matchedStage13Rules} />
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Multi-component formula (e.g. Aveda Intense Series) */}
       {components && components.length > 0 && (

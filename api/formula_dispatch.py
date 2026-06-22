@@ -10,6 +10,7 @@ from sqlalchemy.exc import SQLAlchemyError
 
 from api.backend import db_path, uses_postgres_engine
 from api.schemas import FormulaRequest
+from api.quality import attach_diagnostics
 from hair_color_db.production.catalog_lookup import DEFAULT_SUB_RANGE, resolve_from_shade_reference
 from hair_color_db.production.db import create_session_factory, require_database_url
 from hair_color_db.production.engine_models import EngineInput, SelectedShade, ServiceIntent
@@ -25,8 +26,8 @@ def run_formula_request(
 ) -> dict[str, Any]:
     """Execute a formula request against the configured backend."""
     if uses_postgres_engine():
-        return _run_postgres_formula(body, auth_context=auth_context)
-    return run_formula_engine(body.to_engine_request(db_path=db_path()))
+        return attach_diagnostics(_run_postgres_formula(body, auth_context=auth_context))
+    return attach_diagnostics(run_formula_engine(body.to_engine_request(db_path=db_path())))
 
 
 def _run_postgres_formula(
