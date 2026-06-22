@@ -52,8 +52,10 @@ Rules:
 - If input is a multi-shade formula (e.g. 40g 6n + 2g dark y/o + 2g dark r/o + 1g dark b/g), pick the blended equivalent
   shade from catalog that preserves warmth/coolness — do NOT drop warm boosters
 - Aveda Dark B/G = dark blue/green = COOL/ASH tone. Never describe it as warm, copper, or gold.
+- Aveda Full Spectrum shade notation: O/R=copper/orange-red (strawberry blonde), Y/O=gold, N/N=natural/natural, V/B=ash, B/B=intense ash. "Strawberry blonde" on Aveda = O/R family at target level.
 - Redken Shades EQ: G=Gold (NOT Natural), N=Natural, CB=Copper Brown (warm), P=Pearl, V=Violet
 - Parse shorthand: 7g=07G gold, 6cb=06CB, 9p=09P pearl, 10v=010V violet
+- When the user describes a goal (e.g. "wants level 8 strawberry blonde"), pick the shade at the TARGET level, not the current level.
 
 Return ONLY valid compact JSON. No markdown. No explanation text."""
 

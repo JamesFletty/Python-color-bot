@@ -104,6 +104,18 @@ def resolve_canonical_key(line_name: str | None) -> str | None:
     return None
 
 
+def _resolve_canonical_key_to_id(canonical_key: str) -> int | None:
+    """Resolve a canonical key (e.g. 'Aveda::Full Spectrum Permanent::US') to its numeric line_id."""
+    with _connect() as conn:
+        cur = conn.cursor()
+        cur.execute(
+            "SELECT line_id FROM product_line WHERE canonical_key = ? LIMIT 1",
+            (canonical_key,),
+        )
+        row = cur.fetchone()
+        return int(row["line_id"]) if row else None
+
+
 def search_shades(
     line_id: str | None = None,
     query: str | None = None,
@@ -125,7 +137,11 @@ def search_shades(
         try:
             numeric_line_id = int(line_id)
         except ValueError:
-            return []
+            # line_id may be a canonical key like "Aveda::Full Spectrum Permanent::US"
+            # — resolve it to a numeric DB id.
+            numeric_line_id = _resolve_canonical_key_to_id(line_id)
+            if numeric_line_id is None:
+                return []
 
     with _connect() as conn:
         cur = conn.cursor()
