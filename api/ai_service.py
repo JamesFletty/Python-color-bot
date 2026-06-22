@@ -82,6 +82,53 @@ def _env(name: str, default: str | None = None) -> str | None:
     return env(name, default)
 
 
+def _normalize_openai_base_url(base_url: str | None) -> str | None:
+    """Normalize an OpenAI-compatible base URL.
+
+    Amazon Bedrock's OpenAI-compatible endpoint lives at
+    `https://bedrock-runtime.<region>.amazonaws.com/openai/v1`. A common
+    misconfiguration is pointing at `/compatible-apis/openai/v1` or `/v1`,
+    which Bedrock answers with `UnknownOperationException`. Rewrite those to
+    the supported `/openai/v1` path so the integration works regardless of the
+    exact value entered in the env var.
+    """
+    if not base_url:
+        return base_url
+    from urllib.parse import urlsplit, urlunsplit
+
+    parts = urlsplit(base_url)
+    if "bedrock-runtime" in parts.netloc and parts.path.rstrip("/") != "/openai/v1":
+        parts = parts._replace(path="/openai/v1")
+        return urlunsplit(parts)
+    return base_url
+
+
+def _completion_text(resp: Any) -> str:
+    """Extract message content, raising a clear error on an empty/error payload.
+
+    OpenAI-compatible gateways (e.g. Bedrock) may return a 200 with no
+    `choices` and an error blob in the body. Accessing `resp.choices[0]`
+    then raises an opaque `TypeError: 'NoneType' object is not subscriptable`.
+    Surface the actual upstream payload instead.
+    """
+    choices = getattr(resp, "choices", None)
+    if not choices:
+        detail = ""
+        try:
+            detail = resp.model_dump_json()
+        except Exception:
+            detail = str(resp)
+        raise AIConfigurationError(
+            "LLM provider returned no choices. Check OPENAI_BASE_URL and that "
+            "OPENAI_API_KEY is a valid key for that endpoint. "
+            f"Upstream response: {detail[:500]}"
+        )
+    content = choices[0].message.content
+    if content is None:
+        raise AIConfigurationError("LLM provider returned an empty message.")
+    return content
+
+
 def _mock_allowed() -> bool:
     if not is_production_environment():
         return True
@@ -158,7 +205,9 @@ def get_ai_settings() -> AISettings:
             provider="openai",
             parse_model=chat_model,
             translate_model=translate_model,
-            endpoint=_env("OPENAI_BASE_URL", "https://api.openai.com/v1"),
+            endpoint=_normalize_openai_base_url(
+                _env("OPENAI_BASE_URL", "https://api.openai.com/v1")
+            ),
         )
     if not _env("XAI_API_KEY"):
         raise AIConfigurationError("xAI requires XAI_API_KEY.")
@@ -250,7 +299,7 @@ async def parse_formula_request(
         response_format={"type": "json_object"},
         temperature=0.1,
     )
-    parsed = json.loads(resp.choices[0].message.content)
+    parsed = json.loads(_completion_text(resp))
     if context and line_id:
         parsed = ground_structured_result(
             parsed, line_id=line_id, product_line=color_line, context=context
@@ -323,7 +372,7 @@ async def explain_formula(
         ],
         temperature=0.3,
     )
-    return resp.choices[0].message.content.strip()
+    return _completion_text(resp).strip()
 
 
 async def translate_formula(
@@ -416,7 +465,7 @@ async def translate_formula(
         response_format={"type": "json_object"},
         temperature=0.2,
     )
-    parsed = json.loads(resp.choices[0].message.content)
+    parsed = json.loads(_completion_text(resp))
     if context and target_line_id:
         parsed = ground_translation_result(
             parsed,
