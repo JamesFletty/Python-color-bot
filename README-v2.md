@@ -6,21 +6,33 @@ This branch introduces the **v2 simplified architecture** described in
 v1 (`api/`, `src/`, `hair_color_db/production/`) remains intact during the migration.
 v2 code lives alongside it until Phase 5 cleanup.
 
-## Status (Phase 2)
+## Status (Phase 3)
 
 | Deliverable | Status |
 |-------------|--------|
 | PRD + repo layout scaffold | Done |
-| Stage12/13 data audit script | Done |
-| CSV export scripts | Done |
-| Seed CSVs (`data/seed/`) | Done |
-| Alembic v2 schema (`v2_001_initial_schema`) | Done |
-| `scripts/seed_db.py` + `scripts/bootstrap_v2.py` | Done |
+| Stage12/13 data audit + CSV export | Done |
+| Alembic v2 schema + seed loader | Done |
 | Engine port (`app/services/`) | Done |
-| Phase 2 unit + integration tests | Done |
-| API routers | Phase 3 |
+| API routers (`/brands`, `/lines/{id}/shades`, `/formula`, `/ai/*`) | Done |
+| Single-provider LLM client (`LLM_*` env vars) | Done |
+| Phase 3 API integration tests | Done |
 | Frontend cleanup | Phase 4 |
 | v1 deletion | Phase 5 |
+
+## API endpoints (v2)
+
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/health` | DB + LLM readiness |
+| GET | `/brands` | Brand/line catalog |
+| GET | `/lines/{line_id}/shades` | Shades for a line |
+| POST | `/formula` | Deterministic formula engine |
+| POST | `/ai/parse` | NL → structured params (LLM or deterministic fallback) |
+| POST | `/ai/translate` | Cross-line translate + formula (requires LLM) |
+| POST | `/ai/explain` | Explain formula output (requires LLM) |
+
+Swagger UI: `/docs`
 
 ## Phase 2 commands
 
