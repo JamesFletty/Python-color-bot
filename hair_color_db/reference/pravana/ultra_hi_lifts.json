@@ -1,0 +1,78 @@
+{
+  "line_name": "ChromaSilk Ultra Hi-Lifts",
+  "type": "Oxidative Permanent Color",
+  "total_shades": 6,
+  "description": "Create multi-dimensional, natural blondes with the most lift available in one-step coloring, without bleach. Formulated for virgin hair levels 6 and above.",
+  "mixing_ratio": "1:1.5 (color to developer)",
+  "shades": [
+    {
+      "shade_number": "Ultra Violet",
+      "code": "VIOLET",
+      "tone_family": "Cool",
+      "base": "Violet"
+    },
+    {
+      "shade_number": "Ultra Natural",
+      "code": "NATURAL",
+      "tone_family": "Neutral",
+      "base": "Natural"
+    },
+    {
+      "shade_number": "Ultra Ash",
+      "code": "ASH",
+      "tone_family": "Cool",
+      "base": "Ash"
+    },
+    {
+      "shade_number": "Ultra Beige",
+      "code": "BEIGE",
+      "tone_family": "Neutral-Warm",
+      "base": "Beige"
+    },
+    {
+      "shade_number": "Ultra Copper",
+      "code": "COPPER",
+      "tone_family": "Warm",
+      "base": "Copper"
+    },
+    {
+      "shade_number": "Ultra Gold",
+      "code": "GOLD",
+      "tone_family": "Warm",
+      "base": "Gold"
+    }
+  ],
+  "developer_rules": [
+    {
+      "technique": "Base-Breaking",
+      "developer": "Zero Lift",
+      "levels_of_lift": "1-2",
+      "processing_time": "15-20 minutes"
+    },
+    {
+      "technique": "Base-Breaking",
+      "developer": "10 Volume",
+      "levels_of_lift": "2-3",
+      "processing_time": "15-20 minutes"
+    },
+    {
+      "technique": "Touch-Up, Global Blonding, Hair-Painting, Highlighting",
+      "developer": "30 Volume",
+      "levels_of_lift": "3-4",
+      "processing_time": "45 minutes"
+    },
+    {
+      "technique": "Touch-Up, Global Blonding, Hair-Painting, Highlighting",
+      "developer": "40 Volume",
+      "levels_of_lift": "4-5",
+      "processing_time": "45 minutes"
+    }
+  ],
+  "key_rules": [
+    "Formulated for use on virgin hair levels 6 and above",
+    "Mix with 30 or 40 Volume for maximum lift",
+    "Use Zero Lift or 10 Volume for base-breaking",
+    "Suitable for both on and off scalp applications",
+    "Perfect for global blonding, base-lifting, highlighting, and hair-painting"
+  ]
+}

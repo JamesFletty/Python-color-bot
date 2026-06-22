@@ -1,8 +1,8 @@
 {
   "artifact": "cross_line_conversion_map",
-  "generated": "2026-06-21",
+  "generated": "2026-06-22",
   "completion_status": "partial",
-  "count": 840,
+  "count": 989,
   "conversion_entries": [
     {
       "conversion_id": "gels_10na__seq",
@@ -6266,8 +6266,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -6283,8 +6282,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -6300,8 +6298,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -6317,8 +6314,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -6334,8 +6330,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -6351,8 +6346,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -6368,8 +6362,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -6385,8 +6378,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -6402,8 +6394,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -6419,8 +6410,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -6436,8 +6426,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -6453,8 +6442,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "formula_base",
       "component_role": "booster",
@@ -7244,8 +7232,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7261,8 +7248,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7278,8 +7264,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7295,8 +7280,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7312,8 +7296,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7329,8 +7312,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7862,8 +7844,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7879,8 +7860,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7896,8 +7876,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7913,8 +7892,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7930,8 +7908,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -7947,8 +7924,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8480,8 +8456,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8497,8 +8472,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8514,8 +8488,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8531,8 +8504,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8548,8 +8520,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -8565,8 +8536,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9098,8 +9068,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9115,8 +9084,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9132,8 +9100,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9149,8 +9116,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9166,8 +9132,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9183,8 +9148,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9716,8 +9680,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9733,8 +9696,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9750,8 +9712,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9767,8 +9728,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9784,8 +9744,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -9801,8 +9760,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -10736,8 +10694,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -10753,8 +10710,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -10770,8 +10726,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -10787,8 +10742,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -10804,8 +10758,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -10821,8 +10774,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -11756,8 +11708,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -11773,8 +11724,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -11790,8 +11740,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -11807,8 +11756,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -11824,8 +11772,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -11841,8 +11788,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -12776,8 +12722,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -12793,8 +12738,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -12810,8 +12754,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -12827,8 +12770,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -12844,8 +12786,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -12861,8 +12802,7 @@
       "strategy": "tone_level_match",
       "target_shade_code": null,
       "normalized_tones": [
-        "Natural",
-        "Neutral"
+        "Natural"
       ],
       "level_from": "source_shade",
       "component_role": "base",
@@ -14081,10 +14021,2097 @@
       "mapping_confidence": "high",
       "source_document": "Aveda Full Spectrum permanent customization mixing chart (452808418-Full-Spectrum-Color.pdf pp. 2-2)",
       "notes": "Aveda ELC + Pastel Y/O → Dia Light via normalized tone bridge."
+    },
+    {
+      "conversion_id": "goldwell_2n__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "2N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "3N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 1N : 1pt 3N; Black & Dark Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_3n__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "3N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "3N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_4n__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "4N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_5n__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "5N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6n__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_7n__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "7N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_8n__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "8N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_9n__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "9N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_10n__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "10N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Extra Light Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_5a__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "5A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Brown - Natural Tones for 100% gray coverage; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6a__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Blonde - Natural Tones; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_7a__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "7A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Blonde - Natural Tones; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_8a__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "8A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Blonde - Natural Tones; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_9a__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "9A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Blonde - Natural Tones; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_10a__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "10A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Extra Light Blonde - Natural Tones; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6na__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6NA",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 6N : 1pt 6.22; Dark Blonde & Intense Dark Beige Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_7na__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "7NA",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 7N : 1pt 7.22; Blonde & Intense Beige Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_8na__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "8NA",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 8N : 1pt 8.22; Light Blonde & Light Intense Beige Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_9na__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "9NA",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 9N : 1pt 9.22; Very Light Blonde & Very Light Intense Beige Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6pa__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6PA",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Intense Dark Beige Blonde - may appear cooler; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_8p__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "8P",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Intense Beige Blonde - may appear cooler; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_9p__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "9P",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Intense Beige Blonde - may appear cooler; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_10p__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "10P",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10.02",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Ultra Sheer Beige Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_9pv__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "9PV",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Intense Beige Blonde - may appear more blue; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_10v__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "10V",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10.07",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Ultra Sheer Platinum Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_4g__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "4G",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Golden Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6g__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6G",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Golden Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_7g__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "7G",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Golden Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_8g__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "8G",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Golden Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_9g__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "9G",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Golden Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_9gn__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "9GN",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 9.3 : 1pt 9; Very Light Golden Blonde & Very Light Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_7gb__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "7GB",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 7.3 : 1pt 7.22; Golden Blonde & Intense Beige Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_8gb__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "8GB",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 8.3 : 1pt 8.22; Light Golden Blonde & Light Intense Beige Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_9gb__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "9GB",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 9.3 : 1pt 9.22; Very Light Golden Blonde & Very Light Intense Beige Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_10gb__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "10GB",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10.02",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 10.03 : 1pt 10.02; Ultra Sheer Golden Extra Light Blonde & Ultra Sheer Beige Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_4b__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "4B",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.45",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 3N : 1pt 4.45; Dark Brown & Copper Mahogany Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_5b__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "5B",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.45",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 5N : 1pt 4.45; Light Brown & Copper Mahogany Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6b__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6B",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.45",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 6N : 1pt 4.45; Dark Blonde & Dark Copper Mahogany Blonde - may appear darker; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_7b__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "7B",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.45",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 7N : 1pt 6.45; Blonde & Dark Copper Mahogany Blonde - may appear darker; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_7bn__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "7BN",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.35",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Golden Mahogany Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_8b__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "8B",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.03",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 2pts 8.22 : 1pt 9.03; Light Golden Beige Blonde & Very Light Intense Golden Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_10b__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "10B",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10.02",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Ultra Sheer Beige Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_5nk__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "5NK",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.4",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Copper Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6kb__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6KB",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.45",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Copper Mahogany Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_7kg__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "7KG",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.46",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 7.43 : 1pt 7.46; Copper Golden Blonde & Copper Red Blonde - or 7.44 for more intense copper; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_8kg__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "8KG",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.43",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Copper Golden Blonde - may appear darker; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6kr__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6KR",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.66",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 2pts 6.46 : 1pt 6.66; Dark Copper Red Blonde & Dark Intense Red Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_7kr__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "7KR",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.46",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Copper Red Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_7rg__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "7RG",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.43",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 7.46 : 1pt 7.43; Copper Red Blonde & Copper Golden Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_8kr__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "8KR",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.66",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 9.04 : 1pt 7.66; Very Light Sheer Copper Blonde & Intense Red Blonde; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_5rb__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "5RB",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 5N : 1pt 5.6; Light Brown & Light Red Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6rb__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6RB",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 6N : 1pt 5.6; Dark Blonde & Light Red Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_7rb__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "7RB",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 2pts 7N : 1pt 5.6; Blonde & Light Red Brown - may appear darker; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_8rb__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "8RB",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.66",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 2pts 8N : 1pt 7.66; Light Blonde & Intense Red Blonde - may appear darker; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_4r__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "4R",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 4N : 1pt 5.6; Brown & Light Red Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_5r__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "5R",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Red Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6r__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6R",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.66",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Intense Red Blonde - may appear brighter red; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_4v__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "4V",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.20",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Bright Beige Brown - close match; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_5v__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "5V",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.7",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Violet Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_5vr__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "5VR",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 5.7 : 1pt 5.6; Light Violet Brown & Light Red Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6v__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6V",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.7",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 7N : 1pt 5.7; Blonde & Light Violet Brown; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_6vr__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "6VR",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.66",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 5.7 : 1pt 6.66; Light Violet Brown & Dark Intense Red Blonde - may appear brighter; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_11v__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "11V",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10.07",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Ultra Sheer Platinum Blonde - Close match, but may appear darker; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_11a__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "11A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.1",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 3 pts 901 : 1 pt 000; Ultra Light Ash Blonde - 3/4 000 & 1/4 color gives up to 1.5 additional levels of lift; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_11p__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "11P",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.1",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 3 pts 902 : 1 pt 000; Ultra Light Platinum Blonde - 3/4 000 & 1/4 color gives up to 1.5 additional levels of lift; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_11n__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "11N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 3 pts 900 : 1pt 000; Ultra Light Blonde - 3/4 000 & 1/4 color gives up to 1.5 additional levels of lift; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_11g__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "11G",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.1",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 3 pts 903 : 1 pt 000; Ultra Light Golden Blonde - 3/4 000 & 1/4 color gives up to 1.5 additional levels of lift; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "goldwell_blonding cream__chromasilk",
+      "source_canonical_key": "Goldwell::Topchic::US",
+      "source_shade_code": "Blonding Cream",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "000",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Lightening Booster; Goldwell naturals may appear warmer due to slight blue base in ChromaSilk"
+    },
+    {
+      "conversion_id": "matrix_1n__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "1N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "1N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Black; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_2n__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "2N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "3N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 1N : 1pt 3N; Black & Dark Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_3n__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "3N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "3N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_4n__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "4N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5n__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_6n__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "6N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_7n__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "7N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_8n__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "8N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_9n__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "9N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_10n__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "10N",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Extra Light Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_4m__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "4M",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.20",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Bright Beige Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5m__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5M",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.5",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Mahogany Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_6m__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "6M",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.5",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Mahogany Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_3v__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "3V",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.20",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 3 : 1pt 4.20; Dark Brown & Bright Beige Brown - close match; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5v__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5V",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.7",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Violet Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_7v__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "7V",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.52",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Mahogany Violet Blonde - may appear more red; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_10v__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "10V",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10.07",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Ultra Sheer Platinum Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5a__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5 w/ Ash Corrector",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Brown & 1 inch Ash Corrector/1 oz color; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_6a__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "6A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.1",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Ash Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_8a__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "8A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8.1",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Ash Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_10a__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "10A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10.1",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Extra Light Ash Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_6aa__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "6AA",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.11",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Intense Ash Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_4nw__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "4NW",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 4N : 1pt 4.3; Brown & Golden Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5nw__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5NW",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 5N : 1pt 5.3; Light Brown & Light Golden Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_6nw__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "6NW",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 6N : 1pt 6.3; Dark Blonde & Dark Golden Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_7nw__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "7NW",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 7N : 1pt 7.3; Blonde & Golden Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_8nw__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "8NW",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 8N : 1pt 8.3; Light Blonde & Light Golden Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_9nw__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "9NW",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 9N : 1pt 9.3; Very Light Blonde & Very Light Golden Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_4wm__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "4WM",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.5",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 4.3 : 1pt 5.5; Golden Brown & Light Mahogany Brown - may appear lighter; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5wm__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5WM",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.5",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 5.3 : 1pt 5.5; Light Golden Brown & Light Mahogany Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_7wm__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "7WM",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.5",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 7.3 : 1pt 7.5; Golden Blonde & Mahogany Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5bc__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5BC",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.4",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 5N : 1pt 4.4; Light Brown & Copper Brown - close match; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_7bc__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "7BC",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.4",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 7N : 1pt 7.4; Blonde & Copper Blonde - close match; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_4br__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "4BR",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 4N : 1pt 5.6; Brown & Light Red Brown - close match; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_6br__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "6BR",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 2pts 6N : 1pt 5.6; Dark Blonde & Light Red Brown - close match; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_6gv__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "6GV",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.37",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Golden Violet Dark Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_8gv__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "8GV",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8.37",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Golden Violet Light Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_10gv__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "10GV",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10.07",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 10.03 : 1pt 10.07; Sheer Golden Violet Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5g__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5G",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Golden Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_7g__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "7G",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Golden Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_9g__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "9G",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Golden Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_7gc__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "7GC",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8.34",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 6.34 : 1pt 8.34; Golden Copper Blonde & Light Golden Copper Blonde - close match; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_7c__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "7C",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.4",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Copper Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_8c__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "8C",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8.43",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Copper Golden Blonde - may appear more gold; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5rc__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5RC",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.64",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 5 : 2pts 6.64; Light Brown & Dark Red Copper Brown - close match; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_7rc__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "7RC",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.64",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Red Copper Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5r__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5R",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Red Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5rr+__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5RR+",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.66",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Intense Red Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_6rr+__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "6RR+",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.66",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Intense Red Blonde; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_4rv__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "4RV",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.56",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Mahogany Red Brown - close match; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_5rv__chromasilk",
+      "source_canonical_key": "Matrix::Color Insider::US",
+      "source_shade_code": "5RV",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.7",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 5.6 : 1pt 5.7; Light Red Brown & Light Violet Brown; Slight Blue Base in ChromaSilk Natural Tones for 100% gray coverage"
+    },
+    {
+      "conversion_id": "matrix_504__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "504",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Brown; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_505__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "505",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Brown; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_506__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "506",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_507__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "507",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_508__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "508",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_509__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "509",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_510__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "510",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Extra Light Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_504-w__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "504-W",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Golden Brown; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_506-w__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "506-W",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Golden Blonde - close match; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_508-w__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "508-W",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.3",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Golden Blonde - close match; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_503-r__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "503-R",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 2pts 3N : 1pt 5.6; Dark Brown & Light Red Brown - close match; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_505-r__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "505-R",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 5N : 1pt 5.6; Light Brown & Light Red Brown; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_507-r__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "507-R",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5.6",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 3pts 7N : 1pt 5.6; Blonde & Light Red Brown - close match; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_1__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "1",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "1N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Black; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_2__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "2",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "3N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "ChromaSilk formula: 1pt 1N : 1pt 3N; Black & Dark Brown; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_3__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "3",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "3N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Brown; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_4__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "4",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Brown; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_5__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "5",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "5N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Brown; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_6__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "6",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "6N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Dark Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_7__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "7",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_8__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "8",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_9__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "9",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_10__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "10",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "10N",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Extra Light Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_4a__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "4A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "4N w/ Ash Green Corrector",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Brown & 1 inch Ash Green Corrector / 1 oz color; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_7a__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "7A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "7.1",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Medium Ash Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_9a__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "9A",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.1",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Ash Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_7aa__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "7AA",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8.11",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Intense Ash Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_8aa__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "8AA",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.11",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Intense Ash Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_7-i__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "7-I",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "8.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Light Intense Beige Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
+    },
+    {
+      "conversion_id": "matrix_9-i__chromasilk",
+      "source_canonical_key": "Matrix::SoColor::US",
+      "source_shade_code": "9-I",
+      "target_canonical_key": "Pravana::ChromaSilk Creme Color::US",
+      "strategy": "fixed",
+      "target_shade_code": "9.22",
+      "normalized_tones": [],
+      "level_from": "source_shade",
+      "component_role": "base",
+      "mapping_confidence": "high",
+      "source_document": "pravana/brand_conversions.json",
+      "notes": "Very Light Intense Beige Blonde; Grey'T Naturals - 50% gray coverage. ChromaSilk Natural Tones provide 100% gray coverage with slight blue base."
     }
   ],
   "notes": [
     "Built from hair_color_db/reference/ manufacturer CSV inventories.",
-    "Includes Redken Gels↔SEQ melting pairs, SEQ→VIBRANCE/Majirel tone bridges, Aveda rules."
+    "Includes Redken Gels↔SEQ melting pairs, SEQ→VIBRANCE/Majirel tone bridges, Aveda rules.",
+    "Includes Pravana ChromaSilk brand conversion charts (Goldwell Topchic, Matrix SoColor, Color Insider)."
   ]
 }

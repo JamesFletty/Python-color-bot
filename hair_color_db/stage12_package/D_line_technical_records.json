@@ -1238,7 +1238,7 @@
       "brand": "Pravana",
       "product_line": "ChromaSilk Crème Color (Permanent)",
       "color_type": "permanent",
-      "default_mixing_ratio": "1:1.5 (1 part ChromaSilk Creme Color : 1.5 parts ChromaSilk Creme Developer)",
+      "default_mixing_ratio": "1:1.5 (Color:Developer)",
       "developer_options": [
         "ChromaSilk Creme Developer 10V",
         "ChromaSilk Creme Developer 20V",
@@ -1247,7 +1247,7 @@
       ],
       "developer_strengths_if_stated": "10V–40V per official product pages (\"creme developer 10-40V\")",
       "processing_time_ranges": "30 minutes — up to 45 minutes (printed on product pages)",
-      "gray_coverage_rules": "Up to 100% gray coverage (printed Features on product pages)",
+      "gray_coverage_rules": "25% Gray: 25% Natural/Gold + 75% Target Shade — For every 25% gray, mix 25% of Natural (N) or Gold (G) series at same level into target shade | 50% Gray: 50% Natural/Gold + 50% Target Shade — Mix equal parts Natural/Gold and target shade at same level | 75%+ Gray: 75% Natural/Gold + 25% Target Shade — Majority Natural/Gold with small amount of target shade",
       "lift_rules": null,
       "tone_family_legend": "12 tonal families; per-family descriptions on product pages (e.g., Ash Family: cool green base)",
       "special_usage_notes": "3 oz tube; 1:1.5 mixing ratio yields 7.5 oz working product (printed on product pages)",
@@ -1269,7 +1269,7 @@
       "brand": "Pravana",
       "product_line": "ChromaSilk Express Tones",
       "color_type": "demi-permanent toner",
-      "default_mixing_ratio": "1:1.5 (1 part Express Tones : 1.5 parts ChromaSilk Zero Lift Creme Developer)",
+      "default_mixing_ratio": "1:1.5 (Tone:Zero Lift Developer)",
       "developer_options": [
         "ChromaSilk Zero Lift Creme Developer"
       ],

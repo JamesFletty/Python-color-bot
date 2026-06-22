@@ -18,5 +18,5 @@ CROSS_LINE_JSON = STAGE12 / "J_cross_line_conversion_map.json"
 DEFAULT_DB_PATH = REPO_ROOT / "hair_color.db"
 VERIFICATION_REPORT_PATH = REPO_ROOT / "hair_color_db_verification_report.json"
 
-EXPECTED_SHADE_COUNT = 2456
+EXPECTED_SHADE_COUNT = 2479
 EXPECTED_TONE_MAPPING_COUNT = 1022

@@ -1,0 +1,935 @@
+{
+  "line_name": "ChromaSilk Creme Hair Color",
+  "type": "Permanent / Demi-Permanent (with Zero Lift Developer)",
+  "total_shades": "125+",
+  "mixing_ratio": "1:1.5 (color to developer)",
+  "tube_size": "90ml (3oz)",
+  "key_features": [
+    "Low-ammonia formula",
+    "Enriched with pure silk and keratin amino acids",
+    "Complete gray coverage",
+    "Can be used as permanent or demi-permanent"
+  ],
+  "developer_options": [
+    {
+      "volume": "Zero Lift",
+      "lift": "None",
+      "processing_time": "20-30 minutes",
+      "use": "Demi-permanent, no-lift, toning, gray coverage"
+    },
+    {
+      "volume": "10 Volume",
+      "lift": "Minimal Lift - Maximum Deposit",
+      "processing_time": "30 minutes",
+      "use": "Gray coverage, deposit"
+    },
+    {
+      "volume": "20 Volume",
+      "lift": "Up to 1 Level",
+      "processing_time": "30-45 minutes",
+      "use": "Optimal for gray/white coverage"
+    },
+    {
+      "volume": "30 Volume",
+      "lift": "Up to 2 Levels",
+      "processing_time": "Up to 45 minutes",
+      "use": "Lighter, brighter effects"
+    },
+    {
+      "volume": "40 Volume",
+      "lift": "Up to 3 Levels",
+      "processing_time": "Up to 45 minutes",
+      "use": "Maximum lifting"
+    }
+  ],
+  "formulation_rules": {
+    "gray_coverage": {
+      "rule": "For every 25% of gray hair, mix 25% of Natural (N) or Gold (G) series at the same level into the target shade formula.",
+      "chart": [
+        {
+          "percent_gray": "25%",
+          "natural_or_gold": "25%",
+          "target_shade": "75%"
+        },
+        {
+          "percent_gray": "50%",
+          "natural_or_gold": "50%",
+          "target_shade": "50%"
+        },
+        {
+          "percent_gray": "75%+",
+          "natural_or_gold": "75%",
+          "target_shade": "25%"
+        }
+      ],
+      "notes": [
+        "To maintain coolness in target shade with gray, add Natural series.",
+        "For warm target colors or higher gray %, Gold series may be used instead of Natural to avoid overly cool results."
+      ]
+    },
+    "replenishing_filling": {
+      "rule": "When tinting back 2+ levels darker, add replenishing warm tones directly into target shade formula.",
+      "ratio": "1/4 oz replenishing color to 3/4 oz target color (1:3 ratio)",
+      "options": [
+        {
+          "target_level": "7 or 8",
+          "replenishing_shade": "8.34 / 8Gc"
+        },
+        {
+          "target_level": "Overly-Porous",
+          "replenishing_shade": "8.43 / 8Cg"
+        },
+        {
+          "target_level": "6 or Lower",
+          "replenishing_shade": "6.34 / 6Gc"
+        }
+      ],
+      "note": "Lowlight Collection shades are pre-blended with replenishing tones for levels 6 and 8."
+    },
+    "underlying_pigment": {
+      "description": "As hair lightens, underlying warm tones are exposed. Use correcting colors to neutralize unwanted tones.",
+      "levels": [
+        {
+          "level": 10,
+          "underlying_pigment": "Pale Yellow",
+          "correcting_color": "Shades V, Bv"
+        },
+        {
+          "level": 9,
+          "underlying_pigment": "Yellow",
+          "correcting_color": "Shades V, Bv"
+        },
+        {
+          "level": 8,
+          "underlying_pigment": "Yellow-Orange",
+          "correcting_color": "Shades V, Bv"
+        },
+        {
+          "level": 7,
+          "underlying_pigment": "Orange",
+          "correcting_color": "Shades Aa, A, N"
+        },
+        {
+          "level": 6,
+          "underlying_pigment": "Red-Orange",
+          "correcting_color": "Shades Aa, A, N"
+        },
+        {
+          "level": 5,
+          "underlying_pigment": "Red",
+          "correcting_color": "Shades Aa, A, N"
+        },
+        {
+          "level": 4,
+          "underlying_pigment": "Red-Violet",
+          "correcting_color": "Shades Aa, A, N"
+        },
+        {
+          "level": 3,
+          "underlying_pigment": "Violet",
+          "correcting_color": "Shades Aa, A, N"
+        },
+        {
+          "level": 2,
+          "underlying_pigment": "Violet-Blue",
+          "correcting_color": "Shades Aa, A, N"
+        },
+        {
+          "level": 1,
+          "underlying_pigment": "Blue",
+          "correcting_color": "Shades Aa, A, N"
+        }
+      ]
+    }
+  },
+  "numbering_system": {
+    "level": "First number before decimal = Level of deposit (1-10)",
+    "tone_1_digit": "One number after decimal = 100% of that tone",
+    "tone_2_digits": "Two numbers after decimal = 70% primary tone / 30% secondary tone",
+    "bright": "Second number after decimal is 0 = Bright shade (e.g., .40)",
+    "intense": "Both numbers after decimal are same = Intense shade (e.g., .44)",
+    "sheer": "First number after decimal is 0 = Sheer version (e.g., .02)"
+  },
+  "tonal_families": [
+    {
+      "family": "Lowlight Collection",
+      "description": "Pre-blended with replenishing tones for tint-back and lowlight services",
+      "shades": [
+        {
+          "shade_number": "6.3L",
+          "code": "6GL",
+          "level": 6,
+          "primary_tone": "Gold",
+          "secondary_tone": "Lowlight",
+          "tone_family": "Golden"
+        },
+        {
+          "shade_number": "6NL",
+          "code": "6NIL",
+          "level": 6,
+          "primary_tone": "Natural",
+          "secondary_tone": "Lowlight",
+          "tone_family": "Natural"
+        },
+        {
+          "shade_number": "6.4L",
+          "code": "6CL",
+          "level": 6,
+          "primary_tone": "Copper",
+          "secondary_tone": "Lowlight",
+          "tone_family": "Copper"
+        },
+        {
+          "shade_number": "8.3L",
+          "code": "8GL",
+          "level": 8,
+          "primary_tone": "Gold",
+          "secondary_tone": "Lowlight",
+          "tone_family": "Golden"
+        },
+        {
+          "shade_number": "8NL",
+          "code": "8NIL",
+          "level": 8,
+          "primary_tone": "Natural",
+          "secondary_tone": "Lowlight",
+          "tone_family": "Natural"
+        },
+        {
+          "shade_number": "8.4L",
+          "code": "8CL",
+          "level": 8,
+          "primary_tone": "Copper",
+          "secondary_tone": "Lowlight",
+          "tone_family": "Copper"
+        }
+      ]
+    },
+    {
+      "family": "Cool Fashion Browns/Blondes",
+      "description": "Cool fashion tones with violet, mahogany, and beige bases",
+      "shades": [
+        {
+          "shade_number": "4.20",
+          "code": "4Bv",
+          "level": 4,
+          "primary_tone": "Beige",
+          "secondary_tone": "Violet",
+          "tone_family": "Cool Fashion"
+        },
+        {
+          "shade_number": "4.52",
+          "code": "4Mgv",
+          "level": 4,
+          "primary_tone": "Mahogany",
+          "secondary_tone": "Violet",
+          "tone_family": "Cool Fashion"
+        },
+        {
+          "shade_number": "4.56",
+          "code": "4Mr",
+          "level": 4,
+          "primary_tone": "Mahogany",
+          "secondary_tone": "Red",
+          "tone_family": "Cool Fashion"
+        },
+        {
+          "shade_number": "5.5",
+          "code": "5M",
+          "level": 5,
+          "primary_tone": "Mahogany",
+          "secondary_tone": "None",
+          "tone_family": "Cool Fashion"
+        },
+        {
+          "shade_number": "5.7",
+          "code": "5V",
+          "level": 5,
+          "primary_tone": "Violet",
+          "secondary_tone": "None",
+          "tone_family": "Cool Fashion"
+        },
+        {
+          "shade_number": "6.5",
+          "code": "6M",
+          "level": 6,
+          "primary_tone": "Mahogany",
+          "secondary_tone": "None",
+          "tone_family": "Cool Fashion"
+        },
+        {
+          "shade_number": "7.5",
+          "code": "7M",
+          "level": 7,
+          "primary_tone": "Mahogany",
+          "secondary_tone": "None",
+          "tone_family": "Cool Fashion"
+        },
+        {
+          "shade_number": "7.52",
+          "code": "7Mgv",
+          "level": 7,
+          "primary_tone": "Mahogany",
+          "secondary_tone": "Violet",
+          "tone_family": "Cool Fashion"
+        },
+        {
+          "shade_number": "10.02",
+          "code": "10Bv",
+          "level": 10,
+          "primary_tone": "Beige",
+          "secondary_tone": "Violet",
+          "tone_family": "Cool Fashion"
+        },
+        {
+          "shade_number": "10.07",
+          "code": "10V",
+          "level": 10,
+          "primary_tone": "Violet",
+          "secondary_tone": "None",
+          "tone_family": "Cool Fashion"
+        }
+      ]
+    },
+    {
+      "family": "Fashion Browns",
+      "description": "Fashion-forward brown tones with golden and beige accents",
+      "shades": [
+        {
+          "shade_number": "5.31",
+          "code": "5Ga",
+          "level": 5,
+          "primary_tone": "Gold",
+          "secondary_tone": "Ash",
+          "tone_family": "Fashion Brown"
+        },
+        {
+          "shade_number": "6.23",
+          "code": "6Bvg",
+          "level": 6,
+          "primary_tone": "Beige",
+          "secondary_tone": "Gold",
+          "tone_family": "Fashion Brown"
+        },
+        {
+          "shade_number": "6.35",
+          "code": "6Gm",
+          "level": 6,
+          "primary_tone": "Gold",
+          "secondary_tone": "Mahogany",
+          "tone_family": "Fashion Brown"
+        },
+        {
+          "shade_number": "7.31",
+          "code": "7Gg",
+          "level": 7,
+          "primary_tone": "Gold",
+          "secondary_tone": "Ash",
+          "tone_family": "Fashion Brown"
+        },
+        {
+          "shade_number": "7.35",
+          "code": "7Gm",
+          "level": 7,
+          "primary_tone": "Gold",
+          "secondary_tone": "Mahogany",
+          "tone_family": "Fashion Brown"
+        },
+        {
+          "shade_number": "8.31",
+          "code": "8Ga",
+          "level": 8,
+          "primary_tone": "Gold",
+          "secondary_tone": "Ash",
+          "tone_family": "Fashion Brown"
+        }
+      ]
+    },
+    {
+      "family": "Beige",
+      "description": "Cool blue-violet based beige tones",
+      "shades": [
+        {
+          "shade_number": "6.22",
+          "code": "6Bvbv",
+          "level": 6,
+          "primary_tone": "Beige",
+          "secondary_tone": "Violet",
+          "tone_family": "Beige"
+        },
+        {
+          "shade_number": "7.22",
+          "code": "7Bvbv",
+          "level": 7,
+          "primary_tone": "Beige",
+          "secondary_tone": "Violet",
+          "tone_family": "Beige"
+        },
+        {
+          "shade_number": "8.22",
+          "code": "8Bvbv",
+          "level": 8,
+          "primary_tone": "Beige",
+          "secondary_tone": "Violet",
+          "tone_family": "Beige"
+        },
+        {
+          "shade_number": "9.22",
+          "code": "9Bvbv",
+          "level": 9,
+          "primary_tone": "Beige",
+          "secondary_tone": "Violet",
+          "tone_family": "Beige"
+        }
+      ]
+    },
+    {
+      "family": "Light Fashion Ash",
+      "description": "Light ash tones with fashion-forward results",
+      "shades": [
+        {
+          "shade_number": "5.51",
+          "code": "5Ma",
+          "level": 5,
+          "primary_tone": "Mahogany",
+          "secondary_tone": "Ash",
+          "tone_family": "Ash"
+        },
+        {
+          "shade_number": "9.12",
+          "code": "9Abv",
+          "level": 9,
+          "primary_tone": "Ash",
+          "secondary_tone": "Beige",
+          "tone_family": "Ash"
+        },
+        {
+          "shade_number": "9.13",
+          "code": "9Ag",
+          "level": 9,
+          "primary_tone": "Ash",
+          "secondary_tone": "Gold",
+          "tone_family": "Ash"
+        },
+        {
+          "shade_number": "10.13",
+          "code": "10Ag",
+          "level": 10,
+          "primary_tone": "Ash",
+          "secondary_tone": "Gold",
+          "tone_family": "Ash"
+        }
+      ]
+    },
+    {
+      "family": "Intense Ash",
+      "description": "Double ash base for maximum coolness",
+      "shades": [
+        {
+          "shade_number": "5.11",
+          "code": "5Aa",
+          "level": 5,
+          "primary_tone": "Ash",
+          "secondary_tone": "Ash",
+          "tone_family": "Ash"
+        },
+        {
+          "shade_number": "6.11",
+          "code": "6Aa",
+          "level": 6,
+          "primary_tone": "Ash",
+          "secondary_tone": "Ash",
+          "tone_family": "Ash"
+        },
+        {
+          "shade_number": "7.11",
+          "code": "7Aa",
+          "level": 7,
+          "primary_tone": "Ash",
+          "secondary_tone": "Ash",
+          "tone_family": "Ash"
+        },
+        {
+          "shade_number": "8.11",
+          "code": "8Aa",
+          "level": 8,
+          "primary_tone": "Ash",
+          "secondary_tone": "Ash",
+          "tone_family": "Ash"
+        },
+        {
+          "shade_number": "9.11",
+          "code": "9Aa",
+          "level": 9,
+          "primary_tone": "Ash",
+          "secondary_tone": "Ash",
+          "tone_family": "Ash"
+        }
+      ]
+    },
+    {
+      "family": "Ash",
+      "description": "Cool green-based ash tones",
+      "shades": [
+        {
+          "shade_number": "6.1",
+          "code": "6A",
+          "level": 6,
+          "primary_tone": "Ash",
+          "secondary_tone": "None",
+          "tone_family": "Ash"
+        },
+        {
+          "shade_number": "7.1",
+          "code": "7A",
+          "level": 7,
+          "primary_tone": "Ash",
+          "secondary_tone": "None",
+          "tone_family": "Ash"
+        },
+        {
+          "shade_number": "8.1",
+          "code": "8A",
+          "level": 8,
+          "primary_tone": "Ash",
+          "secondary_tone": "None",
+          "tone_family": "Ash"
+        },
+        {
+          "shade_number": "9.1",
+          "code": "9A",
+          "level": 9,
+          "primary_tone": "Ash",
+          "secondary_tone": "None",
+          "tone_family": "Ash"
+        },
+        {
+          "shade_number": "10.1",
+          "code": "10A",
+          "level": 10,
+          "primary_tone": "Ash",
+          "secondary_tone": "None",
+          "tone_family": "Ash"
+        }
+      ]
+    },
+    {
+      "family": "Naturals",
+      "description": "100% gray coverage with slight blue base",
+      "shades": [
+        {
+          "shade_number": "1",
+          "code": "1N",
+          "level": 1,
+          "primary_tone": "Natural",
+          "secondary_tone": "None",
+          "tone_family": "Natural"
+        },
+        {
+          "shade_number": "3",
+          "code": "3N",
+          "level": 3,
+          "primary_tone": "Natural",
+          "secondary_tone": "None",
+          "tone_family": "Natural"
+        },
+        {
+          "shade_number": "4",
+          "code": "4N",
+          "level": 4,
+          "primary_tone": "Natural",
+          "secondary_tone": "None",
+          "tone_family": "Natural"
+        },
+        {
+          "shade_number": "5",
+          "code": "5N",
+          "level": 5,
+          "primary_tone": "Natural",
+          "secondary_tone": "None",
+          "tone_family": "Natural"
+        },
+        {
+          "shade_number": "6",
+          "code": "6N",
+          "level": 6,
+          "primary_tone": "Natural",
+          "secondary_tone": "None",
+          "tone_family": "Natural"
+        },
+        {
+          "shade_number": "7",
+          "code": "7N",
+          "level": 7,
+          "primary_tone": "Natural",
+          "secondary_tone": "None",
+          "tone_family": "Natural"
+        },
+        {
+          "shade_number": "8",
+          "code": "8N",
+          "level": 8,
+          "primary_tone": "Natural",
+          "secondary_tone": "None",
+          "tone_family": "Natural"
+        },
+        {
+          "shade_number": "9",
+          "code": "9N",
+          "level": 9,
+          "primary_tone": "Natural",
+          "secondary_tone": "None",
+          "tone_family": "Natural"
+        },
+        {
+          "shade_number": "10",
+          "code": "10N",
+          "level": 10,
+          "primary_tone": "Natural",
+          "secondary_tone": "None",
+          "tone_family": "Natural"
+        }
+      ]
+    },
+    {
+      "family": "Golden",
+      "description": "Warm gold-based tones, 100% gray coverage",
+      "shades": [
+        {
+          "shade_number": "4.3",
+          "code": "4G",
+          "level": 4,
+          "primary_tone": "Gold",
+          "secondary_tone": "None",
+          "tone_family": "Golden"
+        },
+        {
+          "shade_number": "5.3",
+          "code": "5G",
+          "level": 5,
+          "primary_tone": "Gold",
+          "secondary_tone": "None",
+          "tone_family": "Golden"
+        },
+        {
+          "shade_number": "6.3",
+          "code": "6G",
+          "level": 6,
+          "primary_tone": "Gold",
+          "secondary_tone": "None",
+          "tone_family": "Golden"
+        },
+        {
+          "shade_number": "7.3",
+          "code": "7G",
+          "level": 7,
+          "primary_tone": "Gold",
+          "secondary_tone": "None",
+          "tone_family": "Golden"
+        },
+        {
+          "shade_number": "8.3",
+          "code": "8G",
+          "level": 8,
+          "primary_tone": "Gold",
+          "secondary_tone": "None",
+          "tone_family": "Golden"
+        },
+        {
+          "shade_number": "9.3",
+          "code": "9G",
+          "level": 9,
+          "primary_tone": "Gold",
+          "secondary_tone": "None",
+          "tone_family": "Golden"
+        },
+        {
+          "shade_number": "9.03",
+          "code": "9g",
+          "level": 9,
+          "primary_tone": "Gold",
+          "secondary_tone": "Sheer",
+          "tone_family": "Golden"
+        },
+        {
+          "shade_number": "10.03",
+          "code": "10g",
+          "level": 10,
+          "primary_tone": "Gold",
+          "secondary_tone": "Sheer",
+          "tone_family": "Golden"
+        }
+      ]
+    },
+    {
+      "family": "Bombshell Brunettes",
+      "description": "Golden violet tones for brunettes",
+      "shades": [
+        {
+          "shade_number": "4.37",
+          "code": "4Gv",
+          "level": 4,
+          "primary_tone": "Gold",
+          "secondary_tone": "Violet",
+          "tone_family": "Bombshell"
+        },
+        {
+          "shade_number": "5.37",
+          "code": "5Gv",
+          "level": 5,
+          "primary_tone": "Gold",
+          "secondary_tone": "Violet",
+          "tone_family": "Bombshell"
+        },
+        {
+          "shade_number": "6.37",
+          "code": "6Gv",
+          "level": 6,
+          "primary_tone": "Gold",
+          "secondary_tone": "Violet",
+          "tone_family": "Bombshell"
+        },
+        {
+          "shade_number": "8.37",
+          "code": "8Gv",
+          "level": 8,
+          "primary_tone": "Gold",
+          "secondary_tone": "Violet",
+          "tone_family": "Bombshell"
+        }
+      ]
+    },
+    {
+      "family": "Cool Copper",
+      "description": "Cool copper and copper mahogany tones",
+      "shades": [
+        {
+          "shade_number": "4.45",
+          "code": "4Cm",
+          "level": 4,
+          "primary_tone": "Copper",
+          "secondary_tone": "Mahogany",
+          "tone_family": "Cool Copper"
+        },
+        {
+          "shade_number": "5.45",
+          "code": "5Cm",
+          "level": 5,
+          "primary_tone": "Copper",
+          "secondary_tone": "Mahogany",
+          "tone_family": "Cool Copper"
+        },
+        {
+          "shade_number": "6.45",
+          "code": "6Cm",
+          "level": 6,
+          "primary_tone": "Copper",
+          "secondary_tone": "Mahogany",
+          "tone_family": "Cool Copper"
+        },
+        {
+          "shade_number": "7.45",
+          "code": "7Cm",
+          "level": 7,
+          "primary_tone": "Copper",
+          "secondary_tone": "Mahogany",
+          "tone_family": "Cool Copper"
+        },
+        {
+          "shade_number": "8.42",
+          "code": "8Cbv",
+          "level": 8,
+          "primary_tone": "Copper",
+          "secondary_tone": "Beige",
+          "tone_family": "Cool Copper"
+        },
+        {
+          "shade_number": "8.45",
+          "code": "8Cm",
+          "level": 8,
+          "primary_tone": "Copper",
+          "secondary_tone": "Mahogany",
+          "tone_family": "Cool Copper"
+        }
+      ]
+    },
+    {
+      "family": "Copper",
+      "description": "Warm copper and copper-gold tones",
+      "shades": [
+        {
+          "shade_number": "4.4",
+          "code": "4C",
+          "level": 4,
+          "primary_tone": "Copper",
+          "secondary_tone": "None",
+          "tone_family": "Copper"
+        },
+        {
+          "shade_number": "6.34",
+          "code": "6Gc",
+          "level": 6,
+          "primary_tone": "Gold",
+          "secondary_tone": "Copper",
+          "tone_family": "Copper"
+        },
+        {
+          "shade_number": "6.46",
+          "code": "6Cr",
+          "level": 6,
+          "primary_tone": "Copper",
+          "secondary_tone": "Red",
+          "tone_family": "Copper"
+        },
+        {
+          "shade_number": "7.4",
+          "code": "7C",
+          "level": 7,
+          "primary_tone": "Copper",
+          "secondary_tone": "None",
+          "tone_family": "Copper"
+        },
+        {
+          "shade_number": "7.43",
+          "code": "7Cg",
+          "level": 7,
+          "primary_tone": "Copper",
+          "secondary_tone": "Gold",
+          "tone_family": "Copper"
+        },
+        {
+          "shade_number": "8.34",
+          "code": "8Gc",
+          "level": 8,
+          "primary_tone": "Gold",
+          "secondary_tone": "Copper",
+          "tone_family": "Copper"
+        },
+        {
+          "shade_number": "8.43",
+          "code": "8Cg",
+          "level": 8,
+          "primary_tone": "Copper",
+          "secondary_tone": "Gold",
+          "tone_family": "Copper"
+        },
+        {
+          "shade_number": "9.04",
+          "code": "9c",
+          "level": 9,
+          "primary_tone": "Copper",
+          "secondary_tone": "Sheer",
+          "tone_family": "Copper"
+        },
+        {
+          "shade_number": "10.04",
+          "code": "10c",
+          "level": 10,
+          "primary_tone": "Copper",
+          "secondary_tone": "Sheer",
+          "tone_family": "Copper"
+        }
+      ]
+    },
+    {
+      "family": "Vibrant Copper",
+      "description": "Intense copper tones",
+      "shades": [
+        {
+          "shade_number": "7.40",
+          "code": "7CC",
+          "level": 7,
+          "primary_tone": "Copper",
+          "secondary_tone": "Bright",
+          "tone_family": "Vibrant Copper"
+        },
+        {
+          "shade_number": "7.44",
+          "code": "7Cc",
+          "level": 7,
+          "primary_tone": "Copper",
+          "secondary_tone": "Intense",
+          "tone_family": "Vibrant Copper"
+        },
+        {
+          "shade_number": "7.46",
+          "code": "7Cr",
+          "level": 7,
+          "primary_tone": "Copper",
+          "secondary_tone": "Red",
+          "tone_family": "Vibrant Copper"
+        }
+      ]
+    },
+    {
+      "family": "Vibrant Red",
+      "description": "Intense red tones with maximum vibrancy",
+      "shades": [
+        {
+          "shade_number": "5.6",
+          "code": "5R",
+          "level": 5,
+          "primary_tone": "Red",
+          "secondary_tone": "None",
+          "tone_family": "Vibrant Red"
+        },
+        {
+          "shade_number": "5.62",
+          "code": "5Rbv",
+          "level": 5,
+          "primary_tone": "Red",
+          "secondary_tone": "Beige/Violet",
+          "tone_family": "Vibrant Red"
+        },
+        {
+          "shade_number": "5.66",
+          "code": "5Rr",
+          "level": 5,
+          "primary_tone": "Red",
+          "secondary_tone": "Intense",
+          "tone_family": "Vibrant Red"
+        },
+        {
+          "shade_number": "6.64",
+          "code": "6Rc",
+          "level": 6,
+          "primary_tone": "Red",
+          "secondary_tone": "Copper",
+          "tone_family": "Vibrant Red"
+        },
+        {
+          "shade_number": "6.66",
+          "code": "6Rr",
+          "level": 6,
+          "primary_tone": "Red",
+          "secondary_tone": "Intense",
+          "tone_family": "Vibrant Red"
+        },
+        {
+          "shade_number": "7.62",
+          "code": "7Rbv",
+          "level": 7,
+          "primary_tone": "Red",
+          "secondary_tone": "Beige/Violet",
+          "tone_family": "Vibrant Red"
+        },
+        {
+          "shade_number": "7.64",
+          "code": "7Rc",
+          "level": 7,
+          "primary_tone": "Red",
+          "secondary_tone": "Copper",
+          "tone_family": "Vibrant Red"
+        },
+        {
+          "shade_number": "7.66",
+          "code": "7Rr",
+          "level": 7,
+          "primary_tone": "Red",
+          "secondary_tone": "Intense",
+          "tone_family": "Vibrant Red"
+        }
+      ]
+    }
+  ]
+}
