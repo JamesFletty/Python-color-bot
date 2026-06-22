@@ -4,8 +4,11 @@ from __future__ import annotations
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from sqlalchemy import func, select
 
 from app.config import get_settings
+from app.db import get_session_factory
+from app.models import FormulationRule, Shade
 
 
 def create_app() -> FastAPI:
@@ -25,12 +28,30 @@ def create_app() -> FastAPI:
     )
 
     @app.get("/health")
-    def health() -> dict[str, str | bool]:
+    def health() -> dict[str, object]:
+        db_ready = False
+        shade_count = 0
+        rule_count = 0
+        if settings.database_url:
+            try:
+                session = get_session_factory()()
+                try:
+                    shade_count = session.scalar(select(func.count()).select_from(Shade)) or 0
+                    rule_count = session.scalar(
+                        select(func.count()).select_from(FormulationRule)
+                    ) or 0
+                    db_ready = shade_count > 0
+                finally:
+                    session.close()
+            except Exception:
+                db_ready = False
+
         return {
             "status": "ok",
-            "version": "2.0.0-scaffold",
-            "db_ready": False,
-            "note": "Phase 1 scaffold — seed + engine port in progress",
+            "version": "2.0.0",
+            "db_ready": db_ready,
+            "shade_count": shade_count,
+            "rule_count": rule_count,
         }
 
     return app
