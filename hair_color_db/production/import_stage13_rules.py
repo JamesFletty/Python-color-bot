@@ -14,7 +14,7 @@ import uuid
 from dataclasses import dataclass, field
 from typing import Any, Callable, Optional, Protocol
 
-from sqlalchemy import delete, select
+from sqlalchemy import delete, select, text
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.orm import Session
 
@@ -38,6 +38,25 @@ from .production_models import (
 )
 
 STAGE13_RULE_NAMESPACE = uuid.UUID("6ba7b810-9dad-11d1-80b4-00c04fd430c8")
+
+_STAGE13_RULE_CATEGORIES = (
+    "deposit",
+    "developer_selection",
+)
+
+
+def _ensure_stage13_rule_categories(session: Session) -> None:
+    """Extend formulation_rule_category for Stage 13 values missing from older schemas."""
+    bind = session.get_bind()
+    if bind is None or bind.dialect.name != "postgresql":
+        return
+    for value in _STAGE13_RULE_CATEGORIES:
+        session.execute(
+            text(
+                f"ALTER TYPE formulation_rule_category "
+                f"ADD VALUE IF NOT EXISTS '{value}'"
+            )
+        )
 
 
 @dataclass(frozen=True)
@@ -213,7 +232,17 @@ def import_stage13_rules(
 ) -> Stage13ImportSummary:
     """Upsert Stage 13 package artifacts into PostgreSQL (idempotent)."""
     summary = Stage13ImportSummary()
+    _ensure_stage13_rule_categories(session)
     rule_rows = build_stage13_import_rows(resolver=resolver)
+
+    # Migration SQL may seed legacy rules without package_rule_id; remove before upsert.
+    legacy_names = [row.rule_name for row in rule_rows]
+    session.execute(
+        delete(FormulationRule).where(
+            FormulationRule.rule_name.in_(legacy_names),
+            FormulationRule.package_rule_id.is_(None),
+        )
+    )
 
     for row in rule_rows:
         if row.scope_level == "universal":

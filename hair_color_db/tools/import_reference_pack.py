@@ -874,7 +874,6 @@ def build_conversion_entries_from_reference(
     gels_ck = LINE_CANONICAL["Color Gels Lacquers"]
     vibrance_ck = LINE_CANONICAL["IGORA VIBRANCE"]
     majirel_ck = LINE_CANONICAL["Majirel"]
-    aveda_ck = LINE_CANONICAL["Full Spectrum Permanent"]
 
     # Redken Gels ↔ SEQ same-code melting pairing
     redken_path = REFERENCE / "redken" / "redken_shade_inventory_1498.csv"

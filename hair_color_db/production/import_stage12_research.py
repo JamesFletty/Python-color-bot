@@ -81,6 +81,24 @@ def deterministic_id(key: str) -> uuid.UUID:
     return uuid.uuid5(RESEARCH_NAMESPACE, key)
 
 
+def _parse_processing_time_minutes(value: Any) -> int | None:
+    """Return integer minutes when the source value is a single scalar."""
+    if value is None or value == "":
+        return None
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value if value > 0 else None
+    if isinstance(value, float):
+        whole = int(value)
+        return whole if whole > 0 else None
+    text = str(value).strip()
+    if not text.isdigit():
+        return None
+    minutes = int(text)
+    return minutes if minutes > 0 else None
+
+
 def _brand_id(brand_name: str) -> uuid.UUID:
     return deterministic_id(f"brand:{brand_name}")
 
@@ -373,7 +391,9 @@ def import_normalized_shade(
             lift_levels=record.get("lift_levels"),
             mixing_ratio=record.get("mixing_ratio"),
             mixing_ratio_inherited=mixing_inherited,
-            processing_time_minutes=record.get("processing_time_minutes"),
+            processing_time_minutes=_parse_processing_time_minutes(
+                record.get("processing_time_minutes")
+            ),
             processing_time_inherited=False,
             is_active=True,
         )
