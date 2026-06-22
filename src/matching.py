@@ -216,11 +216,11 @@ def parse_shade_reference(shade_ref: str) -> tuple[str | None, str | None, str]:
         if len(parts) >= 2:
             return parts[0], None, parts[-1]
 
-    # Shade codes with spaces (e.g. Aveda "7 N/N", "8 O/R") must not be split —
-    # treat the whole string as the shade code when it contains a "/" or matches
-    # a known multi-token pattern like "<digit> <suffix>".
+    # Shade codes with spaces (e.g. Aveda "7 N/N", "Light N/N", "8 O/R") must not
+    # be split — treat the whole string as the shade code whenever the last token
+    # contains a "/" (the separator used in Aveda-style compound codes).
     tokens = cleaned.split()
-    if len(tokens) == 2 and re.match(r"^\d{1,2}$", tokens[0]) and "/" in tokens[1]:
+    if len(tokens) == 2 and "/" in tokens[1]:
         return None, None, cleaned
 
     if len(tokens) >= 2:

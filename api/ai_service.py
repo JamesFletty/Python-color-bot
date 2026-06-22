@@ -381,15 +381,12 @@ async def explain_formula(
 
     prompt = (
         f"{context}"
-        f"Formula engine output (AUTHORITATIVE — base explanation only on this data):\n"
+        f"Formula engine output:\n"
         f"{json.dumps(formula_result, indent=2)}\n\n"
-        "Write a 3–5 sentence professional explanation covering:\n"
-        "1. Specific products selected and the clinical reason\n"
-        "2. Developer strength and mix ratio rationale\n"
-        "3. Expected result and any key application notes\n\n"
-        "Use ONLY shades and developer details present in the engine output. "
-        "If engine output lacks a field, say it is unavailable — do not invent. "
-        "Be direct and specific. Professional salon language. No bullet points."
+        "Write 1–2 sentences for a stylist. State: what shade and developer to use and why it achieves the goal. "
+        "Do NOT mention rule codes, stage numbers, engine internals, or system names. "
+        "Do NOT tell the stylist to 'account for' warmth or anything else — the formula already handles it. "
+        "Just state the result plainly. Professional, direct, no hedging."
     )
     resp = await _client().chat.completions.create(
         model=settings.parse_model,
@@ -397,9 +394,9 @@ async def explain_formula(
             {
                 "role": "system",
                 "content": (
-                    "You are a senior hair color educator explaining formulas to stylists. "
-                    "The formula engine JSON is authoritative. Never contradict it or invent "
-                    "shade codes not present in the engine output."
+                    "You are a senior colorist giving a brief formula note to another stylist. "
+                    "Be concise and direct. Never mention internal rule codes, stage numbers, or engine details. "
+                    "The formula is already correct — do not add caveats or application warnings."
                 ),
             },
             {"role": "user", "content": prompt},

@@ -54,11 +54,18 @@ def resolve_shade_for_line(
     *,
     line_id: str,
     product_line: str,
+    require_level: bool = True,
 ) -> dict[str, Any] | None:
-    """Find a catalog row for shade_code on the target line."""
+    """Find a catalog row for shade_code on the target line.
+
+    When require_level=True (default), pure-tone boosters and additives that
+    carry no level value are excluded — they are not valid base shade picks.
+    """
     for candidate in _normalize_candidate_codes(shade_code, product_line):
         exact = lookup_shade_exact(candidate, line_id=line_id)
         if exact:
+            if require_level and exact.get("level") is None:
+                continue
             return {
                 "code": exact["shade_code"],
                 "name": exact.get("shade_name"),
@@ -69,6 +76,8 @@ def resolve_shade_for_line(
         rows = search_line_shades(line_id=line_id, query=candidate, limit=20)
         for row in rows:
             if str(row["code"]).lower() == candidate.lower():
+                if require_level and row.get("level") is None:
+                    continue
                 return row
     return None
 
