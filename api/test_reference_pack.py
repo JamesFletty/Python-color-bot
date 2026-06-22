@@ -104,6 +104,32 @@ class ReferencePackTests(unittest.TestCase):
         self.assertEqual(entry["strategy"], "fixed")
         self.assertIn(entry["target_shade_code"], {"6.22", "6N"})
 
+    def test_matrix_color_insider_in_catalog(self) -> None:
+        from src.paths import SHADES_JSON
+
+        records = json.loads(SHADES_JSON.read_text(encoding="utf-8"))["normalized_shade_records"]
+        insider = [
+            r for r in records if r.get("canonical_key") == "Matrix::Color Insider::US"
+        ]
+        self.assertGreaterEqual(len(insider), 58)
+        six_n = next(r for r in insider if r.get("shade_code") == "6N")
+        self.assertIn("Natural", six_n.get("normalized_tones", []))
+
+    def test_seq_vibrance_chart_imported(self) -> None:
+        from src.paths import CROSS_LINE_JSON
+
+        payload = json.loads(CROSS_LINE_JSON.read_text(encoding="utf-8"))
+        fixed = [
+            e
+            for e in payload["conversion_entries"]
+            if e.get("conversion_id", "").endswith("__vibrance")
+            and e.get("strategy") == "fixed"
+        ]
+        self.assertGreaterEqual(len(fixed), 60)
+        ids = {e["conversion_id"] for e in fixed}
+        self.assertIn("seq_09n__vibrance", ids)
+        self.assertIn("seq_07g__vibrance", ids)
+
     def test_dia_light_dual_shade_materializes_tones(self) -> None:
         from src.paths import SHADES_JSON, TONE_MAP_JSON
 
