@@ -1,0 +1,30 @@
+Tone Code,Descriptor Name,Tonal Family
+.00/NN,Intense Natural,Natural
+.0/N,Natural,Natural
+.1/B,Ash,Blue
+.12/BV,Blue-Violet,Blue
+.13/BG,Blue-Green,Blue
+.17/BGr,Blue-Green,Blue
+.2/V,Iridescent,Violet
+.21/VB,Violet-Blue,Violet
+.24/VC,Violet-Copper,Violet
+.3/G,Gold,Yellow
+.34/GC,Gold-Copper,Yellow
+.4/C,Copper,Orange
+.43/CG,Copper-Gold,Orange
+.46/CR,Copper-Red,Orange
+.5/Rv,Mahogany,Red-Violet
+.6/R,Red,Red
+.64/RC,Red-Copper,Red
+.65/RRv,Red-Mahogany,Red-Violet
+.7/Gr,Matte,Green
+.8/Gy,Grey,Grey
+.82/GyV,Grey-Violet,Grey
+.9/Ch,Brown,Chocolate
+.91/ChB,Chocolate-Blue,Chocolate
+.99/ChCh,Intense Chocolate,Chocolate
+.03/NG,Natural-Gold,Yellow
+.034/NGC,Natural-Gold-Copper,Yellow
+.06/NR,Natural-Red,Red
+.01/NB,Natural-Blue,Blue
+.09/NCh,Natural-Chocolate,Chocolate

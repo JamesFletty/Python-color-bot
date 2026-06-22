@@ -1,0 +1,102 @@
+"""Shared mappings for reference pack import."""
+
+from __future__ import annotations
+
+# Display line name → Stage 12 canonical_key
+LINE_CANONICAL: dict[str, str] = {
+    "Shades EQ Gloss": "Redken::Shades EQ Gloss::US",
+    "Color Gels Lacquers": "Redken::Color Gels Lacquers::US",
+    "Color Gels 10 Minute": "Redken::Color Gels 10 Minute::US",
+    "Full Spectrum Permanent": "Aveda::Full Spectrum Permanent::US",
+    "Majirel": "L'Oréal Professionnel::Majirel::US",
+    "Dia Light": "L'Oréal Professionnel::Dia Light::US",
+    "Dia Richesse": "L'Oréal Professionnel::Dia Richesse::US",
+    "IGORA VIBRANCE": "Schwarzkopf Professional::IGORA VIBRANCE::US",
+    "IGORA ROYAL Core": "Schwarzkopf Professional::IGORA ROYAL::US",
+    "Color Rhapsody Permanent Cream Color": "Moroccanoil Professional::Color Rhapsody::US",
+    "SoColor Pre-Bonded": "Matrix::SoColor Pre-Bonded::US",
+    "SoColor": "Matrix::SoColor::US",
+    "Koleston Perfect": "Wella Professionals::Koleston Perfect::US",
+}
+
+# Manufacturer tone family labels → normalized tone vocabulary
+TONE_FAMILY_TO_NORMALIZED: dict[str, list[str]] = {
+    "Pearl": ["Pearl"],
+    "Gold": ["Gold"],
+    "Gold Iridescent": ["Gold"],
+    "Warm Gold": ["Gold", "Warm"],
+    "Gold Beige": ["Gold", "Beige"],
+    "Gold Rose": ["Gold", "Red"],
+    "Natural": ["Natural"],
+    "Natural Ash": ["Natural", "Ash"],
+    "Natural Warm": ["Natural", "Warm"],
+    "Natural Beige": ["Natural", "Beige"],
+    "Natural Natural": ["Natural", "Neutral"],
+    "Neutral": ["Natural", "Neutral"],
+    "Ash": ["Ash"],
+    "Ash Blue": ["Ash", "Blue"],
+    "Ash Brown": ["Ash", "Brown"],
+    "Ash Gold": ["Ash", "Gold"],
+    "Blue": ["Blue"],
+    "Blue-Violet": ["Blue", "Violet"],
+    "Blue-Green": ["Blue", "Green"],
+    "Violet": ["Violet"],
+    "Violet Violet": ["Violet"],
+    "Violet Gold": ["Violet", "Gold"],
+    "Violet-Blue": ["Violet", "Blue"],
+    "Copper": ["Copper"],
+    "Copper Brown": ["Copper", "Brown", "Warm"],
+    "Copper Red": ["Copper", "Red"],
+    "Red": ["Red"],
+    "Red Orange": ["Red", "Copper"],
+    "Red Red": ["Red"],
+    "Red-Violet": ["Red", "Violet"],
+    "Red-Mahogany": ["Red", "Mahogany"],
+    "Mahogany": ["Mahogany", "Red"],
+    "Auburn Accent": ["Red", "Copper"],
+    "Silver/Blue": ["Ash", "Blue"],
+    "Grey": ["Other"],
+    "Grey-Violet": ["Violet", "Other"],
+    "Matte": ["Green"],
+    "Green": ["Green"],
+    "Beige": ["Beige", "Gold"],
+    "Chocolate": ["Brown", "Warm"],
+    "Coppers": ["Copper"],
+    "Golds": ["Gold"],
+    "Reds": ["Red"],
+    "Naturals": ["Natural", "Neutral"],
+    "Cool Browns & Blondes": ["Ash", "Blue"],
+    "Warm Browns & Blondes": ["Gold", "Warm"],
+}
+
+# Aveda pure tone Tonal Direction (from inventory) → normalized
+AVEDA_DIRECTION_TO_NORMALIZED: dict[str, list[str]] = {
+    "Natural": ["Natural"],
+    "Natural/Natural": ["Natural", "Neutral"],
+    "Blue/Violet": ["Blue", "Violet", "Ash"],
+    "Blue": ["Blue", "Ash"],
+    "Blue/Green": ["Blue", "Green", "Ash"],
+    "Yellow/Orange": ["Gold", "Copper"],
+    "Orange/Red": ["Copper", "Red"],
+    "Red/Orange": ["Red", "Copper"],
+    "Violet/Red": ["Violet", "Red"],
+    "Red": ["Red"],
+    "Intense Ash": ["Ash", "Blue"],
+    "Intense Copper": ["Copper", "Red"],
+    "Intense Violet/Red": ["Violet", "Red"],
+    "Intense Red": ["Red"],
+}
+
+# L'Oréal tonal_reference_key Tonal Family column → normalized
+LOREAL_FAMILY_TO_NORMALIZED: dict[str, list[str]] = {
+    "Natural": ["Natural"],
+    "Blue": ["Blue", "Ash"],
+    "Violet": ["Violet"],
+    "Yellow": ["Gold"],
+    "Orange": ["Copper"],
+    "Red": ["Red"],
+    "Red-Violet": ["Red", "Violet"],
+    "Green": ["Green"],
+    "Grey": ["Other"],
+    "Chocolate": ["Brown", "Warm"],
+}

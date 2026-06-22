@@ -1,0 +1,498 @@
+{
+  "product_line": "DIA Light",
+  "brand": "L'Or\u00e9al Professionnel",
+  "type": "Demi-Permanent Haircolor",
+  "rules": {
+    "line_name": "DIA Light",
+    "technology": "Gentle Acid Technology",
+    "type": "Luminous demi-permanent gel-cr\u00e8me haircolor without ammonia",
+    "key_benefits": [
+      "Color personalization and correction made easy, quick and predictable",
+      "Luminous tones, vinyl shine, exceptionally even color",
+      "Zero lift",
+      "Intense care for the hair",
+      "Ideal for color-treated or sensitized hair"
+    ],
+    "color_process": {
+      "before": "Faded color-treated or sensitized hair fiber. The alkaline agent is neutralized during mixing.",
+      "during": "The hair fiber swells slightly due to a water-based environment with an acidic pH. Colorants penetrate and bond themselves inside the hair fiber. The colorants develop in harmony to the hair's natural tones.",
+      "after": "Hair cuticle is closed and the hair fiber benefits from a resurfacing effect. Hair reveals a vinyl-like shine and a luminous tone. Intense haircare-like result."
+    },
+    "preparation": {
+      "ratio": "1:1.5",
+      "mixing": "Measure 2.6 oz. of Diactivateur (6-vol/1.8%, 9-vol/2.7%, or 15-vol/4.5% depending on desired intensity). Add 1 tube (1.7 oz.) of DIA Light haircolor. Mix until smooth, creamy texture."
+    },
+    "application": {
+      "on": "Dry unwashed hair",
+      "method": "Apply with brush or plastic bottle on re-growth, mid-lengths and ends",
+      "development_time": "2 to 20 minutes",
+      "aftercare": "Carefully emulsify, rinse thoroughly and finish with specific post-haircolor shampoo"
+    },
+    "service_guidelines": {
+      "virgin_application": "n/a",
+      "refreshing_mid_lengths_ends": "6-vol Diactivateur, up to 20 min",
+      "pre_coloration": "6-vol Diactivateur, 20 min",
+      "covering_up_to_30_white": "n/a",
+      "covering_up_to_70_white": "n/a",
+      "toning_lightened_hair": "6-vol Diactivateur, 2-10 min",
+      "post_perm": "6-vol Diactivateur, 5-10 min",
+      "post_smoothing": "6-vol Diactivateur, 5-10 min",
+      "post_straightening": "6-vol Diactivateur, 5-10 min"
+    }
+  },
+  "tone_legend": {
+    "N": {
+      "name": "Natural",
+      "number": "0"
+    },
+    "B": {
+      "name": "Blue",
+      "number": ".1"
+    },
+    "V": {
+      "name": "Violet",
+      "number": ".2"
+    },
+    "G": {
+      "name": "Gold",
+      "number": ".3"
+    },
+    "C": {
+      "name": "Copper",
+      "number": ".4"
+    },
+    "Rv": {
+      "name": "Red-Violet",
+      "number": ".5"
+    },
+    "R": {
+      "name": "Red",
+      "number": ".6"
+    },
+    "Gr": {
+      "name": "Green",
+      "number": ".7"
+    }
+  },
+  "level_legend": {
+    "10": "Very Light Blonde",
+    "9": "Light Blonde",
+    "8": "Blonde",
+    "7": "Dark Blonde",
+    "6": "Light Brown",
+    "5": "Brown",
+    "4": "Dark Brown",
+    "3": "Darkest Brown",
+    "2": "Brownish Black",
+    "1": "Black"
+  },
+  "tonal_families": [
+    "Reds",
+    "Coppers",
+    "Golds",
+    "Warm Browns & Blondes",
+    "Naturals",
+    "Cool Browns & Blondes",
+    "Violets",
+    "Blues & Greens"
+  ],
+  "shade_inventory": [
+    {
+      "shade_code": "5.5/5Rv",
+      "shade_name": "Mahogany",
+      "level": 5,
+      "primary_tone": "Rv",
+      "secondary_tone": null,
+      "tonal_family": "Reds",
+      "is_new": true
+    },
+    {
+      "shade_code": "5.54/5RvC",
+      "shade_name": "Intense Mahogany",
+      "level": 5,
+      "primary_tone": "Rv",
+      "secondary_tone": "C",
+      "tonal_family": "Reds",
+      "is_new": true
+    },
+    {
+      "shade_code": "4.62/4RV",
+      "shade_name": "Amaryllis",
+      "level": 4,
+      "primary_tone": "R",
+      "secondary_tone": "V",
+      "tonal_family": "Reds",
+      "is_new": false
+    },
+    {
+      "shade_code": "4.5/4Rv",
+      "shade_name": "Truffle",
+      "level": 4,
+      "primary_tone": "Rv",
+      "secondary_tone": null,
+      "tonal_family": "Reds",
+      "is_new": true
+    },
+    {
+      "shade_code": "6.40/6CCC",
+      "shade_name": "Copper",
+      "level": 6,
+      "primary_tone": "C",
+      "secondary_tone": null,
+      "tonal_family": "Coppers",
+      "is_new": false
+    },
+    {
+      "shade_code": "6.45/6CRv",
+      "shade_name": "Cinnamon",
+      "level": 6,
+      "primary_tone": "C",
+      "secondary_tone": "Rv",
+      "tonal_family": "Coppers",
+      "is_new": true
+    },
+    {
+      "shade_code": "8.3/8G",
+      "shade_name": "Butterscotch",
+      "level": 8,
+      "primary_tone": "G",
+      "secondary_tone": null,
+      "tonal_family": "Golds",
+      "is_new": true
+    },
+    {
+      "shade_code": "7.30/7GGG",
+      "shade_name": "Gold",
+      "level": 7,
+      "primary_tone": "G",
+      "secondary_tone": null,
+      "tonal_family": "Golds",
+      "is_new": false
+    },
+    {
+      "shade_code": "6.3/6G",
+      "shade_name": "Gingerbread",
+      "level": 6,
+      "primary_tone": "G",
+      "secondary_tone": null,
+      "tonal_family": "Golds",
+      "is_new": true
+    },
+    {
+      "shade_code": "5.3/5G",
+      "shade_name": "Brown Sugar",
+      "level": 5,
+      "primary_tone": "G",
+      "secondary_tone": null,
+      "tonal_family": "Golds",
+      "is_new": true
+    },
+    {
+      "shade_code": "10.32/10GV",
+      "shade_name": "Sandy Milkshake",
+      "level": 10,
+      "primary_tone": "G",
+      "secondary_tone": "V",
+      "tonal_family": "Warm Browns & Blondes",
+      "is_new": true
+    },
+    {
+      "shade_code": "7.31/7GB",
+      "shade_name": "Almond",
+      "level": 7,
+      "primary_tone": "G",
+      "secondary_tone": "B",
+      "tonal_family": "Warm Browns & Blondes",
+      "is_new": false
+    },
+    {
+      "shade_code": "5.31/5GB",
+      "shade_name": "Praline",
+      "level": 5,
+      "primary_tone": "G",
+      "secondary_tone": "B",
+      "tonal_family": "Warm Browns & Blondes",
+      "is_new": false
+    },
+    {
+      "shade_code": "5.32/5GV",
+      "shade_name": "Caf\u00e9",
+      "level": 5,
+      "primary_tone": "G",
+      "secondary_tone": "V",
+      "tonal_family": "Warm Browns & Blondes",
+      "is_new": false
+    },
+    {
+      "shade_code": "6.34/6GC",
+      "shade_name": "Honey Chestnut",
+      "level": 6,
+      "primary_tone": "G",
+      "secondary_tone": "C",
+      "tonal_family": "Warm Browns & Blondes",
+      "is_new": false
+    },
+    {
+      "shade_code": "5.35/5GRv",
+      "shade_name": "Warm Chestnut",
+      "level": 5,
+      "primary_tone": "G",
+      "secondary_tone": "Rv",
+      "tonal_family": "Warm Browns & Blondes",
+      "is_new": true
+    },
+    {
+      "shade_code": "6.42/6CV",
+      "shade_name": "Light",
+      "level": 6,
+      "primary_tone": "C",
+      "secondary_tone": "V",
+      "tonal_family": "Warm Browns & Blondes",
+      "is_new": true
+    },
+    {
+      "shade_code": "5.42/5CV",
+      "shade_name": null,
+      "level": 5,
+      "primary_tone": "C",
+      "secondary_tone": "V",
+      "tonal_family": "Warm Browns & Blondes",
+      "is_new": true
+    },
+    {
+      "shade_code": "6.53/6RvG",
+      "shade_name": "Candied Walnut",
+      "level": 6,
+      "primary_tone": "Rv",
+      "secondary_tone": "G",
+      "tonal_family": "Warm Browns & Blondes",
+      "is_new": false
+    },
+    {
+      "shade_code": "3.00/3NN",
+      "shade_name": "Deepest Black",
+      "level": 3,
+      "primary_tone": "N",
+      "secondary_tone": null,
+      "tonal_family": "Naturals",
+      "is_new": false
+    },
+    {
+      "shade_code": "1.00/1NN",
+      "shade_name": null,
+      "level": 1,
+      "primary_tone": "N",
+      "secondary_tone": null,
+      "tonal_family": "Naturals",
+      "is_new": false
+    },
+    {
+      "shade_code": "8/8N",
+      "shade_name": "Blonde",
+      "level": 8,
+      "primary_tone": "N",
+      "secondary_tone": null,
+      "tonal_family": "Naturals",
+      "is_new": false
+    },
+    {
+      "shade_code": "7/7N",
+      "shade_name": "Dark Blonde",
+      "level": 7,
+      "primary_tone": "N",
+      "secondary_tone": null,
+      "tonal_family": "Naturals",
+      "is_new": false
+    },
+    {
+      "shade_code": "6/6N",
+      "shade_name": "Light Brown",
+      "level": 6,
+      "primary_tone": "N",
+      "secondary_tone": null,
+      "tonal_family": "Naturals",
+      "is_new": false
+    },
+    {
+      "shade_code": "5/5N",
+      "shade_name": "Brown",
+      "level": 5,
+      "primary_tone": "N",
+      "secondary_tone": null,
+      "tonal_family": "Naturals",
+      "is_new": false
+    },
+    {
+      "shade_code": "4/4N",
+      "shade_name": "Dark Brown",
+      "level": 4,
+      "primary_tone": "N",
+      "secondary_tone": null,
+      "tonal_family": "Naturals",
+      "is_new": false
+    },
+    {
+      "shade_code": "10.12/10BV",
+      "shade_name": "Frosty Pearl Milkshake",
+      "level": 10,
+      "primary_tone": "B",
+      "secondary_tone": "V",
+      "tonal_family": "Cool Browns & Blondes",
+      "is_new": false
+    },
+    {
+      "shade_code": "10.13/10BG",
+      "shade_name": "Vanilla Macaroon Milkshake",
+      "level": 10,
+      "primary_tone": "B",
+      "secondary_tone": "G",
+      "tonal_family": "Cool Browns & Blondes",
+      "is_new": false
+    },
+    {
+      "shade_code": "9.13/9BG",
+      "shade_name": "Cool Buttercream",
+      "level": 9,
+      "primary_tone": "B",
+      "secondary_tone": "G",
+      "tonal_family": "Cool Browns & Blondes",
+      "is_new": false
+    },
+    {
+      "shade_code": "6.13/6BG",
+      "shade_name": "Walnut",
+      "level": 6,
+      "primary_tone": "B",
+      "secondary_tone": "G",
+      "tonal_family": "Cool Browns & Blondes",
+      "is_new": false
+    },
+    {
+      "shade_code": "5.52/5RvV",
+      "shade_name": "Raspberry Truffle",
+      "level": 5,
+      "primary_tone": "Rv",
+      "secondary_tone": "V",
+      "tonal_family": "Violets",
+      "is_new": false
+    },
+    {
+      "shade_code": "6.02/6Nv",
+      "shade_name": "Glazed Pecan",
+      "level": 6,
+      "primary_tone": "N",
+      "secondary_tone": "V",
+      "tonal_family": "Violets",
+      "is_new": false
+    },
+    {
+      "shade_code": "7.01/7NB",
+      "shade_name": "Natural Cool Blonde",
+      "level": 7,
+      "primary_tone": "N",
+      "secondary_tone": "B",
+      "tonal_family": "Blues",
+      "is_new": false
+    },
+    {
+      "shade_code": "6.01/6NB",
+      "shade_name": "Smoked Almond",
+      "level": 6,
+      "primary_tone": "N",
+      "secondary_tone": "B",
+      "tonal_family": "Blues",
+      "is_new": false
+    },
+    {
+      "shade_code": "4.26/4vR",
+      "shade_name": "Aubergine",
+      "level": 4,
+      "primary_tone": "V",
+      "secondary_tone": "R",
+      "tonal_family": "Violets",
+      "is_new": true
+    },
+    {
+      "shade_code": "5.01/5NB",
+      "shade_name": "Smoked Walnut",
+      "level": 5,
+      "primary_tone": "N",
+      "secondary_tone": "B",
+      "tonal_family": "Blues",
+      "is_new": true
+    },
+    {
+      "shade_code": "4.01/4NB",
+      "shade_name": "Iced Espresso",
+      "level": 4,
+      "primary_tone": "N",
+      "secondary_tone": "B",
+      "tonal_family": "Blues",
+      "is_new": false
+    },
+    {
+      "shade_code": "2.10/2BB",
+      "shade_name": "Blue Onyx",
+      "level": 2,
+      "primary_tone": "B",
+      "secondary_tone": null,
+      "tonal_family": "Blues",
+      "is_new": false
+    },
+    {
+      "shade_code": "9.11/9BB",
+      "shade_name": "Iceberg Grey",
+      "level": 9,
+      "primary_tone": "B",
+      "secondary_tone": null,
+      "tonal_family": "Blues",
+      "is_new": true
+    },
+    {
+      "shade_code": "4.15/4BRv",
+      "shade_name": "Chocolate",
+      "level": 4,
+      "primary_tone": "B",
+      "secondary_tone": "Rv",
+      "tonal_family": "Blues",
+      "is_new": false
+    },
+    {
+      "shade_code": "9.01/9NB",
+      "shade_name": "Frosty Milkshake",
+      "level": 9,
+      "primary_tone": "N",
+      "secondary_tone": "B",
+      "tonal_family": "Blues",
+      "is_new": false
+    },
+    {
+      "shade_code": "5.07/5NGr",
+      "shade_name": "Sage",
+      "level": 5,
+      "primary_tone": "N",
+      "secondary_tone": "Gr",
+      "tonal_family": "Greens",
+      "is_new": true
+    },
+    {
+      "shade_code": "9.11/9BB",
+      "shade_name": "Iceberg Milkshake",
+      "level": 9,
+      "primary_tone": "B",
+      "secondary_tone": null,
+      "tonal_family": "Blues",
+      "is_new": true
+    },
+    {
+      "shade_code": "Clear",
+      "shade_name": "Clear",
+      "level": null,
+      "primary_tone": null,
+      "secondary_tone": null,
+      "tonal_family": "Clear",
+      "is_new": false
+    }
+  ],
+  "total_shades": 44
+}

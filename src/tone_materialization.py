@@ -5,6 +5,8 @@ from __future__ import annotations
 import re
 from typing import Any
 
+_LOREAL_PREFIX = "L'Oréal Professionnel::"
+
 # Aveda booster / pure-tone shade_code → manufacturer_tone_code
 AVEDA_SHADE_CODE_TO_TONE: dict[str, str] = {
     "Dark Y/O": "Y/O",
@@ -37,6 +39,30 @@ NON_TRANSLATABLE_SHADE_CODES = frozenset(
         "Extra Lifting Creme",
     }
 )
+
+
+def normalize_loreal_tone_code(code: str) -> str:
+    """Normalize L'Oréal dual-format tone codes (e.g. 31/7gB → 31, 3/6g → 3)."""
+    cleaned = code.strip()
+    if "/" in cleaned:
+        cleaned = cleaned.split("/", 1)[0]
+    return cleaned
+
+
+def infer_loreal_tone_suffix_from_shade(shade_code: str) -> str | None:
+    """Extract digit suffix from L'Oréal shade notation (6.03 → 03, 7/7n → 0)."""
+    code = shade_code.strip()
+    if not code or code.lower() == "clear":
+        return None
+    dotted = re.match(r"^\d+\.(\d+)(?:/.*)?$", code)
+    if dotted:
+        return dotted.group(1)
+    slash_natural = re.match(r"^\d+/(\w+)$", code, re.IGNORECASE)
+    if slash_natural and slash_natural.group(1).lower().endswith("n"):
+        return "0"
+    if re.fullmatch(r"\d+", code):
+        return "0"
+    return None
 
 
 def build_tone_map_index(
@@ -78,6 +104,14 @@ def infer_manufacturer_tone_codes(record: dict[str, Any]) -> list[str]:
         if m and m.group(2) not in {"Natural"}:
             return [m.group(2)]
 
+    if canonical_key.startswith(_LOREAL_PREFIX):
+        normalized = [normalize_loreal_tone_code(code) for code in existing if code]
+        if normalized:
+            return normalized
+        suffix = infer_loreal_tone_suffix_from_shade(shade_code)
+        if suffix is not None:
+            return [suffix]
+
     return existing
 
 
@@ -95,7 +129,11 @@ def materialize_normalized_tones(
     tone_codes = infer_manufacturer_tone_codes(record)
     collected: list[str] = []
 
-    for code in tone_codes:
+    lookup_codes = list(tone_codes)
+    if canonical_key.startswith(_LOREAL_PREFIX):
+        lookup_codes = [normalize_loreal_tone_code(code) for code in tone_codes]
+
+    for code in lookup_codes:
         for tone in line_tones.get(code, []):
             if tone not in collected:
                 collected.append(tone)

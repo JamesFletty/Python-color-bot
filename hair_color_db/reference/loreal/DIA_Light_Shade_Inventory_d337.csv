@@ -1,0 +1,45 @@
+Shade Code,Shade Name,Level,Primary Tone,Secondary Tone,Tonal Family,Is New
+5.5/5Rv,Mahogany,5.0,Rv,,Reds,True
+5.54/5RvC,Intense Mahogany,5.0,Rv,C,Reds,True
+4.62/4RV,Amaryllis,4.0,R,V,Reds,False
+4.5/4Rv,Truffle,4.0,Rv,,Reds,True
+6.40/6CCC,Copper,6.0,C,,Coppers,False
+6.45/6CRv,Cinnamon,6.0,C,Rv,Coppers,True
+8.3/8G,Butterscotch,8.0,G,,Golds,True
+7.30/7GGG,Gold,7.0,G,,Golds,False
+6.3/6G,Gingerbread,6.0,G,,Golds,True
+5.3/5G,Brown Sugar,5.0,G,,Golds,True
+10.32/10GV,Sandy Milkshake,10.0,G,V,Warm Browns & Blondes,True
+7.31/7GB,Almond,7.0,G,B,Warm Browns & Blondes,False
+5.31/5GB,Praline,5.0,G,B,Warm Browns & Blondes,False
+5.32/5GV,Café,5.0,G,V,Warm Browns & Blondes,False
+6.34/6GC,Honey Chestnut,6.0,G,C,Warm Browns & Blondes,False
+5.35/5GRv,Warm Chestnut,5.0,G,Rv,Warm Browns & Blondes,True
+6.42/6CV,Light,6.0,C,V,Warm Browns & Blondes,True
+5.42/5CV,,5.0,C,V,Warm Browns & Blondes,True
+6.53/6RvG,Candied Walnut,6.0,Rv,G,Warm Browns & Blondes,False
+3.00/3NN,Deepest Black,3.0,N,,Naturals,False
+1.00/1NN,,1.0,N,,Naturals,False
+8/8N,Blonde,8.0,N,,Naturals,False
+7/7N,Dark Blonde,7.0,N,,Naturals,False
+6/6N,Light Brown,6.0,N,,Naturals,False
+5/5N,Brown,5.0,N,,Naturals,False
+4/4N,Dark Brown,4.0,N,,Naturals,False
+10.12/10BV,Frosty Pearl Milkshake,10.0,B,V,Cool Browns & Blondes,False
+10.13/10BG,Vanilla Macaroon Milkshake,10.0,B,G,Cool Browns & Blondes,False
+9.13/9BG,Cool Buttercream,9.0,B,G,Cool Browns & Blondes,False
+6.13/6BG,Walnut,6.0,B,G,Cool Browns & Blondes,False
+5.52/5RvV,Raspberry Truffle,5.0,Rv,V,Violets,False
+6.02/6Nv,Glazed Pecan,6.0,N,V,Violets,False
+7.01/7NB,Natural Cool Blonde,7.0,N,B,Blues,False
+6.01/6NB,Smoked Almond,6.0,N,B,Blues,False
+4.26/4vR,Aubergine,4.0,V,R,Violets,True
+5.01/5NB,Smoked Walnut,5.0,N,B,Blues,True
+4.01/4NB,Iced Espresso,4.0,N,B,Blues,False
+2.10/2BB,Blue Onyx,2.0,B,,Blues,False
+9.11/9BB,Iceberg Grey,9.0,B,,Blues,True
+4.15/4BRv,Chocolate,4.0,B,Rv,Blues,False
+9.01/9NB,Frosty Milkshake,9.0,N,B,Blues,False
+5.07/5NGr,Sage,5.0,N,Gr,Greens,True
+9.11/9BB,Iceberg Milkshake,9.0,B,,Blues,True
+Clear,Clear,,,,Clear,False
