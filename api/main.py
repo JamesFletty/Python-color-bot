@@ -47,6 +47,35 @@ app = FastAPI(
     openapi_url="/openapi.json" if docs_enabled() else None,
 )
 
+@app.on_event("startup")
+def _ensure_sqlite_catalog() -> None:
+    """Build the SQLite catalog on startup if it's missing.
+
+    The SQLite database file is gitignored and not part of the deployed
+    artifact, so a fresh environment running the default (sqlite) backend has
+    no catalog tables. Without this, /api/brands raises an uncaught
+    OperationalError and the frontend shows "Failed to load color catalog: 500".
+    """
+    if uses_postgres_engine():
+        return
+
+    target = db_path()
+    if target.exists() and target.stat().st_size > 0:
+        return
+
+    try:
+        from init_db import build_database
+        from src.logging_utils import configure_logging
+
+        build_database(target, configure_logging())
+    except Exception:  # pragma: no cover - best-effort bootstrap
+        import logging
+
+        logging.getLogger("hair_color_engine").exception(
+            "Failed to auto-build SQLite catalog at %s", target
+        )
+
+
 _allowed_origins = cors_origins()
 if _allowed_origins:
     app.add_middleware(

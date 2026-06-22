@@ -9,7 +9,12 @@ from api.backend import db_path, uses_postgres_engine
 
 
 def _connect() -> sqlite3.Connection:
-    conn = sqlite3.connect(db_path())
+    path = db_path()
+    if not path.exists() or path.stat().st_size == 0:
+        raise RuntimeError(
+            f"SQLite catalog not found at {path}. Run `python init_db.py` to build it."
+        )
+    conn = sqlite3.connect(path)
     conn.row_factory = sqlite3.Row
     return conn
 
