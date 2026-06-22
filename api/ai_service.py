@@ -49,8 +49,9 @@ Output fields:
 
 Rules:
 - shade MUST be copied exactly from the catalog list — never invent codes like 6N on Majirel (use 6.0, 6.46, etc.)
-- If input is a multi-shade formula (e.g. 40g 6n + 2g dark y/o + 2g dark r/o), pick the blended equivalent
+- If input is a multi-shade formula (e.g. 40g 6n + 2g dark y/o + 2g dark r/o + 1g dark b/g), pick the blended equivalent
   shade from catalog that preserves warmth/coolness — do NOT drop warm boosters
+- Aveda Dark B/G = dark blue/green = COOL/ASH tone. Never describe it as warm, copper, or gold.
 - Redken Shades EQ: G=Gold (NOT Natural), N=Natural, CB=Copper Brown (warm), P=Pearl, V=Violet
 - Parse shorthand: 7g=07G gold, 6cb=06CB, 9p=09P pearl, 10v=010V violet
 
@@ -70,7 +71,7 @@ CRITICAL RULES:
    NEVER say warm tones are "not required" or "not needed".
 3. Map EACH source component in translation_notes (grams + shade + tone family).
 4. Redken Shades EQ: G=Gold, N=Natural, CB=Copper Brown (warm), P=Pearl, V=Violet, GI=Gold Iridescent
-5. Aveda boosters: Dark Y/O=warm gold/copper, Dark R/O=copper/red
+5. Aveda boosters: Dark Y/O=warm gold/copper, Dark R/O=copper/red, Dark B/G=dark blue/green (COOL — ash/green tone, NOT warm)
 
 Return ONLY valid compact JSON with fields:
 shade, current_level, gray, texture, service_intent, desired_level, porosity, elasticity, line, translation_notes"""

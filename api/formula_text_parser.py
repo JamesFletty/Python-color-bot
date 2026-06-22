@@ -9,7 +9,7 @@ from typing import Any
 # e.g. 40g 6n, 20g 7g, 2g dark y/o, 40g 20 vol
 _COMPONENT_RE = re.compile(
     r"(\d+)\s*g\s+"
-    r"(dark\s*[yr]/o|light\s*[yr]/o|pastel\s*[yr]/o|"
+    r"(dark\s*[yrb]/[go]|light\s*[yr]/o|pastel\s*[yr]/o|"
     r"\d+\s*vol|"
     r"90v|"
     r"0?\d{1,2}\s*(?:gi|gb|gv|cb|rb|nw|na|gg|gn|vb|g|p|a|v)|"
@@ -54,6 +54,8 @@ def _shade_code_from_token(token: str) -> str | None:
         return "Dark Y/O"
     if cleaned == "darkr/o":
         return "Dark R/O"
+    if cleaned == "darkb/g":
+        return "Dark B/G"
     if cleaned == "lighty/o":
         return "Light Y/O"
     if cleaned == "lightr/o":
@@ -151,6 +153,10 @@ def enrich_components_from_db(
                     tone_set.append(tone)
         if "r/o" in token_lower:
             for tone in ("Red", "Copper"):
+                if tone not in tone_set:
+                    tone_set.append(tone)
+        if "b/g" in token_lower:
+            for tone in ("Blue", "Green"):
                 if tone not in tone_set:
                     tone_set.append(tone)
         if not comp.shade_code:
