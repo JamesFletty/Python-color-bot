@@ -17,7 +17,22 @@ LINE_CANONICAL: dict[str, str] = {
     "SoColor Pre-Bonded": "Matrix::SoColor Pre-Bonded::US",
     "SoColor": "Matrix::SoColor::US",
     "Koleston Perfect": "Wella Professionals::Koleston Perfect::US",
+    # Pravana ChromaSilk lines
+    "ChromaSilk Creme": "Pravana::ChromaSilk Creme Color::US",
+    "ChromaSilk Creme Color": "Pravana::ChromaSilk Creme Color::US",
+    "Express Tones": "Pravana::ChromaSilk Express Tones::US",
+    "Ultra Hi-Lifts": "Pravana::ChromaSilk Ultra Hi-Lifts::US",
+    "Correctors/Additives": "Pravana::ChromaSilk Correctors::US",
 }
+
+# Brand conversion chart source lines → Stage 12 canonical_key
+BRAND_CONVERSION_SOURCE: dict[str, str] = {
+    "Goldwell Topchic": "Goldwell::Topchic::US",
+    "Matrix Color Insider": "Matrix::Color Insider::US",
+    "Matrix SoColor": "Matrix::SoColor::US",
+}
+
+PRAVANA_CHROMASILK_TARGET = "Pravana::ChromaSilk Creme Color::US"
 
 # Manufacturer tone family labels → normalized tone vocabulary
 TONE_FAMILY_TO_NORMALIZED: dict[str, list[str]] = {
@@ -67,6 +82,20 @@ TONE_FAMILY_TO_NORMALIZED: dict[str, list[str]] = {
     "Naturals": ["Natural", "Neutral"],
     "Cool Browns & Blondes": ["Ash", "Blue"],
     "Warm Browns & Blondes": ["Gold", "Warm"],
+    # Pravana ChromaSilk inventory families
+    "Lowlight": ["Gold", "Copper", "Natural"],
+    "Cool Fashion": ["Ash", "Violet"],
+    "Fashion Brown": ["Gold", "Beige", "Ash"],
+    "Beige": ["Beige", "Violet"],
+    "Light Fashion Ash": ["Ash", "Beige", "Gold"],
+    "Intense Ash": ["Ash", "Blue"],
+    "Golden": ["Gold"],
+    "Bombshell": ["Gold", "Violet"],
+    "Cool Copper": ["Copper", "Mahogany"],
+    "Vibrant Copper": ["Copper", "Red"],
+    "Vibrant Red": ["Red"],
+    "Neutral-Warm": ["Beige", "Gold"],
+    "Additive": ["Other"],
 }
 
 # Aveda pure tone Tonal Direction (from inventory) → normalized

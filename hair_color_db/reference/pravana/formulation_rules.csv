@@ -1,0 +1,26 @@
+category,rule_name,formula,details,notes
+Gray Coverage,25% Gray,25% Natural/Gold + 75% Target Shade,"For every 25% gray, mix 25% of Natural (N) or Gold (G) series at same level into target shade",Use Natural series to maintain coolness; use Gold series for warm target colors or higher gray %
+Gray Coverage,50% Gray,50% Natural/Gold + 50% Target Shade,Mix equal parts Natural/Gold and target shade at same level,
+Gray Coverage,75%+ Gray,75% Natural/Gold + 25% Target Shade,Majority Natural/Gold with small amount of target shade,
+Replenishing/Filling,Target Level 7-8,1/4 oz 8.34/8Gc per 3/4 oz Target Color,Add replenishing warm tone to target shade when tinting back 2+ levels,Mix with appropriate developer for one-step tint-back
+Replenishing/Filling,Overly-Porous Hair,1/4 oz 8.43/8Cg per 3/4 oz Target Color,Use more gold-copper replenishing for porous hair,
+Replenishing/Filling,Target Level 6 or Lower,1/4 oz 6.34/6Gc per 3/4 oz Target Color,Deeper replenishing for darker target levels,
+Mixing,ChromaSilk Creme,1:1.5 (Color:Developer),90ml tube mixed with 135ml developer. Example: 2oz color + 3oz developer,Always use PRAVANA Creme Developer for consistency
+Mixing,Ultra Hi-Lifts,1:1.5 (Color:Developer),Mix with 30 or 40 Volume for maximum lift; Zero Lift or 10 Volume for base-breaking,For virgin hair levels 6 and above
+Mixing,Pure Light Power Lightener,1:3 (Lightener:Developer),1 scoop (1oz) Pure Light + 3oz Creme Developer,Process up to 55 minutes at room temperature
+Mixing,Pure Light Balayage,1:2 Recommended (powder:activator),Thicker 1:1.5 for lightest blend; Thinner 1:2.5 for more obvious lightening,"Pair with Low, Medium, or High Balayage Activator"
+Mixing,Express Tones,1:1.5 (Tone:Zero Lift Developer),Apply to damp hair with tint brush,Process under 5 minutes
+Mixing,Silk Degrees Toner,1 part ChromaSilk : 1.5 parts Zero Lift + up to 50% Silk Degrees,Example: 1oz color + 1.5oz Zero Lift = 2.5oz working product. Add up to 1.25oz Silk Degrees,Creates custom demi-permanent toner
+Processing,Zero Lift Developer,20-30 minutes,"No lift, demi-permanent results, maximum deposit","Use for toning, gray coverage, no-lift color"
+Processing,10 Volume Developer,30 minutes,"Minimal lift, maximum deposit",Optimal for gray/white coverage
+Processing,20 Volume Developer,30-45 minutes,Up to 1 level of lift,Optimal for gray/white coverage with slight lift
+Processing,30 Volume Developer,Up to 45 minutes,Up to 2 levels of lift,"For lighter, brighter effects"
+Processing,40 Volume Developer,Up to 45 minutes,Up to 3 levels of lift,For maximum lifting
+Processing,VIVIDS,20-30 minutes at room temperature,"No developer needed - apply directly to clean, dry, pre-lightened hair",Lasts 3-12 weeks depending on hair condition
+Processing,Artificial Hair Color Extractor,20 minutes maximum under heat,"Mix equal parts 1 and 2, apply to dry hair, process under heat",Can repeat up to 3 times. Verify with 10 Volume developer rinse
+Express Tones,Level 9 Deposit,1:1 Clear + Express Tone,Mix equal parts Clear with desired Express Tone for 5 minutes,For less deposit on level 9 hair
+Express Tones,Level 10 Deposit,2:1 Clear + Express Tone,Mix 2 parts Clear to 1 part desired Express Tone for 5 minutes,For less deposit on level 10 hair
+Correctors,Ash Blue Corrector,1 inch per 1 oz color,Add to starting levels 3-5 for maximum coolness and blue neutralization,Prevents warmth in dark levels
+Correctors,Ash Green Corrector,1 inch per 1 oz color,"Add for maximum green-based cooling, neutralizes red tones",Use in ash formulas for extra coolness
+Correctors,Red Additive,1 inch per 1 oz color,Enhance red tones and add warmth to formula,
+Correctors,Yellow Additive,1 inch per 1 oz color,Enhance gold tones and add warmth to formula,

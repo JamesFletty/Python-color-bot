@@ -1,0 +1,43 @@
+{
+  "line_name": "Color Correctors and Additives",
+  "type": "Color Enhancers/Neutralizers",
+  "description": "5 shades to enhance or neutralize color",
+  "shades": [
+    {
+      "shade_name": "Ash Green Corrector",
+      "code": "ASH GREEN",
+      "purpose": "Neutralize red tones, cool down warm results",
+      "use_case": "Add to ash formulas for extra coolness"
+    },
+    {
+      "shade_name": "Ash Blue Corrector",
+      "code": "ASH BLUE",
+      "purpose": "Neutralize orange/yellow tones, maximum coolness",
+      "use_case": "Add 1 inch per 1 oz color for starting levels 3-5"
+    },
+    {
+      "shade_name": "Ash",
+      "code": "ASH",
+      "purpose": "General ash toning",
+      "use_case": "Standard ash correction"
+    },
+    {
+      "shade_name": "Red",
+      "code": "RED",
+      "purpose": "Enhance red tones, add warmth",
+      "use_case": "Add 1 inch per 1 oz color for red enhancement"
+    },
+    {
+      "shade_name": "Yellow",
+      "code": "YELLOW",
+      "purpose": "Enhance gold tones, add warmth",
+      "use_case": "Add 1 inch per 1 oz color for golden enhancement"
+    }
+  ],
+  "usage_rules": [
+    "Add 1 inch of corrector per 1 oz of color for most applications",
+    "Ash Blue Corrector recommended for starting levels 3-5 to prevent warmth",
+    "Ash Green Corrector for maximum green-based cooling",
+    "Red and Yellow additives for warm color enhancement"
+  ]
+}

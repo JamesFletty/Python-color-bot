@@ -16,6 +16,7 @@ sys.path.insert(0, str(REPO))
 
 from src.paths import (  # noqa: E402
     CROSS_LINE_JSON,
+    LINE_TECH_JSON,
     SHADES_JSON,
     STAGE12,
     TONE_MAP_JSON,
@@ -36,6 +37,10 @@ LINE_CANONICAL = _mappings.LINE_CANONICAL
 TONE_FAMILY_TO_NORMALIZED = _mappings.TONE_FAMILY_TO_NORMALIZED
 AVEDA_DIRECTION_TO_NORMALIZED = _mappings.AVEDA_DIRECTION_TO_NORMALIZED
 LOREAL_FAMILY_TO_NORMALIZED = _mappings.LOREAL_FAMILY_TO_NORMALIZED
+BRAND_CONVERSION_SOURCE = _mappings.BRAND_CONVERSION_SOURCE
+PRAVANA_CHROMASILK_TARGET = _mappings.PRAVANA_CHROMASILK_TARGET
+
+PRAVANA_REF = REFERENCE / "pravana"
 
 LOREAL_TONE_MAP_LINES: list[tuple[str, str]] = [
     ("L'Oréal Professionnel::Majirel::US", "Majirel"),
@@ -384,7 +389,286 @@ def propagate_majirel_digit_map_to_dia_richesse(
     return changed
 
 
-def build_conversion_entries_from_reference() -> list[dict[str, Any]]:
+def _pravana_tones_from_inventory_row(row: dict[str, str]) -> list[str]:
+    primary = row.get("primary_tone", "").strip()
+    secondary = row.get("secondary_tone", "").strip()
+    family = row.get("tone_family", "").strip()
+    tones: list[str] = []
+    for label in (primary, secondary, family):
+        if not label or label.lower() in {"none", "lowlight", "bright", "intense", "sheer"}:
+            continue
+        for tone in _tone_family_to_normalized(label):
+            if tone not in tones:
+                tones.append(tone)
+    return tones or _tone_family_to_normalized(family)
+
+
+def _pravana_shade_code_from_inventory(row: dict[str, str]) -> str:
+    """Prefer shade_number; naturals use manufacturer code (6N)."""
+    shade_number = row.get("shade_number", "").strip()
+    code = row.get("code", "").strip()
+    if shade_number and "." in shade_number:
+        return shade_number
+    if shade_number and shade_number.isdigit() and code:
+        return code
+    return shade_number or code
+
+
+def _pravana_template_record() -> dict[str, Any]:
+    return {
+        "canonical_key": PRAVANA_CHROMASILK_TARGET,
+        "brand": "Pravana",
+        "product_line": "ChromaSilk Crème Color (Permanent)",
+        "shade_name": None,
+        "manufacturer_tone_descriptions": [],
+        "color_type": "permanent",
+        "gray_coverage_claim": "Up to 100% gray coverage (ChromaSilk reference pack)",
+        "lift_levels": None,
+        "mixing_ratio": "1:1.5",
+        "developer_options": [
+            "ChromaSilk Creme Developer 10V",
+            "ChromaSilk Creme Developer 20V",
+            "ChromaSilk Creme Developer 30V",
+            "ChromaSilk Creme Developer 40V",
+        ],
+        "processing_time_minutes": 30,
+        "special_usage_notes": "Mix 1 part ChromaSilk Creme Color with 1.5 parts Creme Developer.",
+        "official_swatch_image_exists": None,
+        "region_or_market": "US",
+        "discontinued_status": None,
+        "source_url": "https://www.pravana.com/pro/chromasilk-creme-hair-color/",
+        "source_document": "pravana/chromasilk_shade_inventory.csv",
+        "source_type": "manufacturer_reference_pack",
+        "source_publication_date": "2026-06-22",
+        "source_confidence": "high",
+        "evidence_status": "confirmed",
+        "assumptions": ["Imported from Pravana reference pack shade inventory."],
+        "data_gaps": [],
+    }
+
+
+def add_missing_pravana_shades(records: list[dict[str, Any]]) -> int:
+    inv_path = PRAVANA_REF / "chromasilk_shade_inventory.csv"
+    if not inv_path.exists():
+        return 0
+    existing = {
+        (r["canonical_key"], r["shade_code"])
+        for r in records
+        if r.get("canonical_key") == PRAVANA_CHROMASILK_TARGET
+    }
+    added = 0
+    for row in _read_csv(inv_path):
+        shade_code = _pravana_shade_code_from_inventory(row)
+        if (PRAVANA_CHROMASILK_TARGET, shade_code) in existing:
+            continue
+        level_raw = row.get("level", "").strip()
+        level = float(level_raw) if level_raw else None
+        tones = _pravana_tones_from_inventory_row(row)
+        tone_code = row.get("code", "").strip()
+        record = _pravana_template_record()
+        record.update(
+            {
+                "shade_code": shade_code,
+                "shade_name": row.get("description") or row.get("family"),
+                "level": level,
+                "manufacturer_tone_codes": [tone_code] if tone_code else [],
+                "normalized_tones": tones,
+            }
+        )
+        records.append(record)
+        existing.add((PRAVANA_CHROMASILK_TARGET, shade_code))
+        added += 1
+    return added
+
+
+def enrich_pravana_shades(records: list[dict[str, Any]]) -> int:
+    changed = 0
+    index: dict[tuple[str, str], dict[str, Any]] = {
+        (r["canonical_key"], r["shade_code"]): r for r in records
+    }
+
+    inv_path = PRAVANA_REF / "chromasilk_shade_inventory.csv"
+    if inv_path.exists():
+        for row in _read_csv(inv_path):
+            shade_code = _pravana_shade_code_from_inventory(row)
+            record = index.get((PRAVANA_CHROMASILK_TARGET, shade_code))
+            if not record:
+                alt = row.get("code", "").strip()
+                record = index.get((PRAVANA_CHROMASILK_TARGET, alt))
+            if not record:
+                continue
+            tones = _pravana_tones_from_inventory_row(row)
+            if tones and tones != ["Other"] and record.get("normalized_tones") != tones:
+                record["normalized_tones"] = tones
+                changed += 1
+
+    express_path = PRAVANA_REF / "express_tones_inventory.csv"
+    if express_path.exists():
+        ck = LINE_CANONICAL["Express Tones"]
+        express_name_map = {
+            "ASH": "Ash",
+            "BEIGE": "Beige",
+            "PEARL": "Pearl",
+            "VIOLET": "Violet",
+            "CLEAR": "Clear",
+        }
+        for row in _read_csv(express_path):
+            code = row.get("code", "").strip()
+            shade_name = express_name_map.get(code)
+            if not shade_name:
+                continue
+            record = index.get((ck, shade_name))
+            if not record:
+                continue
+            base = row.get("base", "").strip()
+            tones = _tone_family_to_normalized(base or row.get("tone_family", ""))
+            if tones != ["Other"] and record.get("normalized_tones") != tones:
+                record["normalized_tones"] = tones
+                changed += 1
+
+    return changed
+
+
+def _build_pravana_code_index(records: list[dict[str, Any]]) -> dict[str, str]:
+    """Map conversion-facing codes (6N, 6.3) to catalog shade_code."""
+    index: dict[str, str] = {}
+    for record in records:
+        if record.get("canonical_key") != PRAVANA_CHROMASILK_TARGET:
+            continue
+        shade_code = str(record.get("shade_code", "")).strip()
+        if shade_code:
+            index[shade_code.lower()] = shade_code
+        for alt in record.get("manufacturer_tone_codes") or []:
+            index[str(alt).lower()] = shade_code
+    return index
+
+
+def _parse_chromasilk_target(
+    formula: str,
+    pravana_index: dict[str, str],
+) -> tuple[str | None, str | None]:
+    """Return (catalog_shade_code, full_formula_note) for a ChromaSilk conversion."""
+    cleaned = formula.strip()
+    if not cleaned or cleaned.upper() in {"NA", "N/A"}:
+        return None, None
+    if "no comparison" in cleaned.lower():
+        return None, None
+
+    if ":" in cleaned or re.search(r"\d+\s*pt", cleaned, re.IGNORECASE):
+        codes = re.findall(r"(\d+\.?\d*[A-Za-z]*)", cleaned)
+        resolved = [pravana_index[c.lower()] for c in codes if c.lower() in pravana_index]
+        if not resolved:
+            return None, cleaned
+        # Prefer fashion/tonal code over plain natural in multi-part mixes.
+        non_natural = [c for c in resolved if not re.fullmatch(r"\d+N", c, re.IGNORECASE)]
+        target = non_natural[-1] if non_natural else resolved[-1]
+        return target, cleaned
+
+    return pravana_index.get(cleaned.lower(), cleaned), None
+
+
+def build_pravana_brand_conversion_entries(
+    records: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    entries: list[dict[str, Any]] = []
+    pravana_index = _build_pravana_code_index(records)
+    json_path = PRAVANA_REF / "brand_conversions.json"
+    if not json_path.exists():
+        return entries
+
+    payload = json.loads(json_path.read_text(encoding="utf-8"))
+    for brand_name, brand_data in payload.get("brands", {}).items():
+        source_ck = BRAND_CONVERSION_SOURCE.get(brand_name)
+        if not source_ck:
+            continue
+        for conv in brand_data.get("conversions", []):
+            source_code = str(conv.get("brand_shade", "")).strip()
+            formula = str(conv.get("chromasilk", "")).strip()
+            if not source_code or not formula:
+                continue
+            target_code, formula_note = _parse_chromasilk_target(formula, pravana_index)
+            if not target_code:
+                continue
+            conversion_id = (
+                f"{source_ck.split('::')[0].lower()}_{source_code.lower()}__chromasilk"
+            )
+            notes_parts = [
+                conv.get("description", ""),
+                brand_data.get("notes", ""),
+            ]
+            if formula_note:
+                notes_parts.insert(0, f"ChromaSilk formula: {formula_note}")
+            entries.append(
+                {
+                    "conversion_id": conversion_id,
+                    "source_canonical_key": source_ck,
+                    "source_shade_code": source_code,
+                    "target_canonical_key": PRAVANA_CHROMASILK_TARGET,
+                    "strategy": "fixed",
+                    "target_shade_code": target_code,
+                    "normalized_tones": [],
+                    "level_from": "source_shade",
+                    "component_role": "base",
+                    "mapping_confidence": "high",
+                    "source_document": "pravana/brand_conversions.json",
+                    "notes": "; ".join(p for p in notes_parts if p),
+                }
+            )
+    return entries
+
+
+def enrich_pravana_line_technical(line_records: list[dict[str, Any]]) -> int:
+    rules_path = PRAVANA_REF / "formulation_rules.csv"
+    creme_path = PRAVANA_REF / "chromasilk_creme_hair_color.json"
+    if not rules_path.exists():
+        return 0
+
+    by_key = {r["canonical_key"]: r for r in line_records}
+    changed = 0
+    creme = by_key.get(PRAVANA_CHROMASILK_TARGET)
+    if creme:
+        gray_rules = []
+        for row in _read_csv(rules_path):
+            if row.get("category") == "Gray Coverage":
+                gray_rules.append(
+                    f"{row['rule_name']}: {row['formula']} — {row.get('details', '')}"
+                )
+        if gray_rules:
+            merged = " | ".join(gray_rules)
+            if creme.get("gray_coverage_rules") != merged:
+                creme["gray_coverage_rules"] = merged
+                changed += 1
+        mixing = next(
+            (r for r in _read_csv(rules_path) if r.get("rule_name") == "ChromaSilk Creme"),
+            None,
+        )
+        if mixing and creme.get("default_mixing_ratio") != mixing.get("formula"):
+            creme["default_mixing_ratio"] = mixing["formula"]
+            changed += 1
+
+    if creme_path.exists() and creme:
+        payload = json.loads(creme_path.read_text(encoding="utf-8"))
+        legend = payload.get("numbering_system")
+        if legend and not creme.get("tone_family_legend"):
+            creme["tone_family_legend"] = json.dumps(legend)
+            changed += 1
+
+    express = by_key.get(LINE_CANONICAL["Express Tones"])
+    if express:
+        mixing = next(
+            (r for r in _read_csv(rules_path) if r.get("rule_name") == "Express Tones"),
+            None,
+        )
+        if mixing and express.get("default_mixing_ratio") != mixing.get("formula"):
+            express["default_mixing_ratio"] = mixing["formula"]
+            changed += 1
+
+    return changed
+
+
+def build_conversion_entries_from_reference(
+    records: list[dict[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
     """Generate cross-line conversion rules from reference pairing data."""
     entries: list[dict[str, Any]] = []
     seen: set[str] = set()
@@ -519,7 +803,11 @@ def build_conversion_entries_from_reference() -> list[dict[str, Any]]:
         add(entry)
 
     shades_payload = json.loads(SHADES_JSON.read_text(encoding="utf-8"))
-    for entry in build_aveda_entries(shades_payload["normalized_shade_records"]):
+    shade_records = records or shades_payload["normalized_shade_records"]
+    for entry in build_aveda_entries(shade_records):
+        add(entry)
+
+    for entry in build_pravana_brand_conversion_entries(shade_records):
         add(entry)
 
     return entries
@@ -535,7 +823,16 @@ def import_reference_pack(*, dry_run: bool = False) -> dict[str, Any]:
     richesse_propagated = propagate_majirel_digit_map_to_dia_richesse(tone_mappings)
     tone_map_changed = tone_ref_changes + richesse_propagated
 
-    shade_changes = enrich_shades_from_inventories(records)
+    pravana_added = add_missing_pravana_shades(records)
+    shade_changes = enrich_shades_from_inventories(records) + enrich_pravana_shades(records)
+
+    line_tech_changed = 0
+    line_payload: dict[str, Any] = {}
+    line_records: list[dict[str, Any]] = []
+    if LINE_TECH_JSON.exists():
+        line_payload = json.loads(LINE_TECH_JSON.read_text(encoding="utf-8"))
+        line_records = line_payload.get("line_technical_records", [])
+        line_tech_changed = enrich_pravana_line_technical(line_records)
 
     rematerialized = 0
     if tone_map_changed and not dry_run:
@@ -548,23 +845,31 @@ def import_reference_pack(*, dry_run: bool = False) -> dict[str, Any]:
 
         rematerialized = rematerialize(dry_run=False)["records_changed"]
 
-    if shade_changes and not dry_run:
+    if (shade_changes or pravana_added) and not dry_run:
         shades_payload["count"] = len(records)
         SHADES_JSON.write_text(
             json.dumps(shades_payload, indent=2, ensure_ascii=False) + "\n",
             encoding="utf-8",
         )
 
-    conversions = build_conversion_entries_from_reference()
+    if line_tech_changed and not dry_run:
+        line_payload["count"] = len(line_records)
+        LINE_TECH_JSON.write_text(
+            json.dumps(line_payload, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
+
+    conversions = build_conversion_entries_from_reference(records)
     conversion_payload = {
         "artifact": "cross_line_conversion_map",
-        "generated": "2026-06-21",
+        "generated": "2026-06-22",
         "completion_status": "partial",
         "count": len(conversions),
         "conversion_entries": conversions,
         "notes": [
             "Built from hair_color_db/reference/ manufacturer CSV inventories.",
             "Includes Redken Gels↔SEQ melting pairs, SEQ→VIBRANCE/Majirel tone bridges, Aveda rules.",
+            "Includes Pravana ChromaSilk brand conversion charts (Goldwell Topchic, Matrix SoColor, Color Insider).",
         ],
     }
     if not dry_run:
@@ -575,7 +880,12 @@ def import_reference_pack(*, dry_run: bool = False) -> dict[str, Any]:
         out_path = REFERENCE / "cross_line" / "generated_conversion_summary.json"
         out_path.write_text(
             json.dumps(
-                {"conversion_count": len(conversions), "shade_records_updated": shade_changes},
+                {
+                    "conversion_count": len(conversions),
+                    "shade_records_updated": shade_changes,
+                    "pravana_shades_added": pravana_added,
+                    "line_technical_updated": line_tech_changed,
+                },
                 indent=2,
             )
             + "\n",
@@ -584,6 +894,8 @@ def import_reference_pack(*, dry_run: bool = False) -> dict[str, Any]:
 
     return {
         "shade_records_updated": shade_changes,
+        "pravana_shades_added": pravana_added,
+        "line_technical_updated": line_tech_changed,
         "tone_map_entries_changed": tone_map_changed,
         "shade_records_rematerialized": rematerialized,
         "conversion_entries": len(conversions),
