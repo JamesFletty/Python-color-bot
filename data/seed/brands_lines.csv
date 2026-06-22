@@ -1,0 +1,137 @@
+canonical_key,brand_name,product_line_name,line_category,region_or_market,apparent_status,parent_company
+Redken::Shades EQ Gloss::US,Redken,Shades EQ Gloss,demi,US,active,L'Oréal (Professional Products Division)
+Redken::Color Gels Lacquers::US,Redken,Color Gels Lacquers,permanent,US,active,L'Oréal (Professional Products Division)
+Redken::Color Fusion::US,Redken,Color Fusion,permanent,US,active,L'Oréal (Professional Products Division)
+Redken::Flash Lift Bonder Inside::global,Redken,Flash Lift / Flash Lift Bonder Inside,lightener,global,active,L'Oréal (Professional Products Division)
+Redken::Chromatics::US,Redken,Chromatics,permanent,US,unclear,L'Oréal (Professional Products Division)
+Redken::Shades ALK::US,Redken,Shades ALK,unknown,US,active,L'Oréal (Professional Products Division)
+Redken::Blonde Idol::US,Redken,Blonde Idol,unknown,US,active,L'Oréal (Professional Products Division)
+Redken::Blonde IQ::US,Redken,Blonde IQ,unknown,US,active,L'Oréal (Professional Products Division)
+Redken::Color Camo::US,Redken,Color Camo,unknown,US,active,L'Oréal (Professional Products Division)
+Wella Professionals::Koleston Perfect::US,Wella Professionals,Koleston Perfect,permanent,US,active,Wella Company
+Wella Professionals::Illumina Color::US,Wella Professionals,Illumina Color,permanent,US,active,Wella Company
+Wella Professionals::Color Touch::US,Wella Professionals,Color Touch,demi,US,active,Wella Company
+Wella Professionals::Shinefinity::US,Wella Professionals,Shinefinity,toner,US,active,Wella Company
+Wella Professionals::Color Fresh::US,Wella Professionals,"Color Fresh (incl. Color Fresh Create, Color Fresh Masks)",semi,US,active,Wella Company
+Wella Professionals::Blondor::US,Wella Professionals,"Blondor (incl. BlondorPlex, Blondor Freelights, Blondor Toner)",lightener,US,active,Wella Company
+Wella Professionals::Magma::global,Wella Professionals,Magma,mixed_system,global,active,Wella Company
+Schwarzkopf Professional::IGORA ROYAL::US,Schwarzkopf Professional,IGORA ROYAL,permanent,US,active,Henkel
+Schwarzkopf Professional::IGORA ZERO AMM::US,Schwarzkopf Professional,IGORA ZERO AMM,permanent,US,active,Henkel
+Schwarzkopf Professional::IGORA VIBRANCE::US,Schwarzkopf Professional,IGORA VIBRANCE,demi,US,active,Henkel
+Schwarzkopf Professional::Chroma ID::US,Schwarzkopf Professional,Chroma ID,direct_dye,US,active,Henkel
+Schwarzkopf Professional::BlondMe::US,Schwarzkopf Professional,BLONDME,mixed_system,US,active,Henkel
+Schwarzkopf Professional::IGORA VARIO BLOND::global,Schwarzkopf Professional,IGORA VARIO BLOND,lightener,global,active,Henkel
+Goldwell::Topchic::US,Goldwell,Topchic,permanent,US,active,Kao Corporation (Kao Salon Division)
+Goldwell::Topchic Zero::US,Goldwell,Topchic Zero,permanent,US,active,Kao Corporation (Kao Salon Division)
+Goldwell::Colorance::US,Goldwell,"Colorance (incl. Cover Plus, Gloss Tones)",demi,US,active,Kao Corporation (Kao Salon Division)
+Goldwell::Elumen::US,Goldwell,Elumen (incl. Elumen Play),direct_dye,US,active,Kao Corporation (Kao Salon Division)
+Goldwell::SilkLift::US,Goldwell,LightDimensions SilkLift,lightener,US,active,Kao Corporation (Kao Salon Division)
+Goldwell::Oxycur Platin::US,Goldwell,Oxycur Platin,lightener,US,active,Kao Corporation (Kao Salon Division)
+Goldwell::@Pure Pigments::US,Goldwell,@Pure Pigments,direct_dye,US,active,Kao Corporation (Kao Salon Division)
+Matrix::SoColor::US,Matrix,SoColor (Pre-Bonded),permanent,US,active,L'Oréal (Professional Products Division)
+Matrix::SoColor Sync::US,Matrix,SoColor Sync,demi,US,active,L'Oréal (Professional Products Division)
+Matrix::Tonal Control::US,Matrix,Tonal Control Pre-Bonded,toner,US,active,L'Oréal (Professional Products Division)
+Matrix::Light Master::US,Matrix,Light Master (incl. Light Master Pre-Bonded),lightener,US,active,L'Oréal (Professional Products Division)
+Matrix::SoColor Cult::US,Matrix,SoColor Cult (Vivids),direct_dye,US,active,L'Oréal (Professional Products Division)
+Matrix::Super Sync::US,Matrix,Super Sync,unknown,US,unclear,L'Oréal (Professional Products Division)
+Joico::LumiShine Permanent Creme Color::US,Joico,LumiShine Permanent Crème Color,permanent,US,active,Henkel
+Joico::LumiShine YouthLock Permanent Creme Color::US,Joico,LumiShine YouthLock Permanent Crème Color,permanent,US,active,Henkel
+Joico::LumiShine Lumi10 Permanent Creme Color::US,Joico,LumiShine Lumi10 Permanent Crème Color,permanent,US,active,Henkel
+Joico::LumiShine Demi-Permanent Creme Color::US,Joico,LumiShine Demi-Permanent Crème Color,demi,US,active,Henkel
+Joico::LumiShine Demi-Permanent Liquid Color::US,Joico,LumiShine Demi-Permanent Liquid Color,demi,US,active,Henkel
+Joico::Vero K-PAK Color::US,Joico,Vero K-PAK Color,permanent,US,active,Henkel
+Joico::Blonde Life::US,Joico,Blonde Life,mixed_system,US,active,Henkel
+Joico::Color Intensity::US,Joico,Color Intensity,direct_dye,US,active,Henkel
+Kenra Professional::Kenra Color Permanent::US,Kenra Professional,Kenra Color Permanent,permanent,US,active,Henkel
+Kenra Professional::Kenra Color Demi-Permanent::US,Kenra Professional,Kenra Color Demi-Permanent,demi,US,active,Henkel
+Kenra Professional::Kenra Color Creatives::US,Kenra Professional,Kenra Color Creatives (Semi-Permanent),semi,US,active,Henkel
+Kenra Professional::Kenra Color Rapid Toners::US,Kenra Professional,Kenra Color Rapid Toners,toner,US,active,Henkel
+Kenra Professional::Studio Stylist Express::US,Kenra Professional,Studio Stylist Express,permanent,US,active,Henkel
+Kenra Professional::Simply Blonde::US,Kenra Professional,Simply Blonde,lightener,US,active,Henkel
+Pravana::ChromaSilk Creme Color::US,Pravana,ChromaSilk Crème Color (Permanent),permanent,US,active,Henkel
+Pravana::ChromaSilk VIVIDS::US,Pravana,"ChromaSilk VIVIDS (Original, Neons, Pastels)",direct_dye,US,active,Henkel
+Pravana::ChromaSilk VIVIDS Everlasting::US,Pravana,ChromaSilk VIVIDS Everlasting,permanent,US,active,Henkel
+Pravana::ChromaSilk Express Tones::US,Pravana,ChromaSilk Express Tones,toner,US,active,Henkel
+Pravana::Pure Light::US,Pravana,"Pure Light (Power Lightener, Ultra Lightener)",lightener,US,active,Henkel
+Paul Mitchell::The Color::global,Paul Mitchell,Paul Mitchell The Color,permanent,global,active,John Paul Mitchell Systems
+Paul Mitchell::The Color XG::global,Paul Mitchell,Paul Mitchell Color XG (incl. CoverSmart),permanent,global,active,John Paul Mitchell Systems
+Paul Mitchell::Crema XG::global,Paul Mitchell,Paul Mitchell Crema XG,demi,global,active,John Paul Mitchell Systems
+Paul Mitchell::The Demi::global,Paul Mitchell,Paul Mitchell The Demi,demi,global,active,John Paul Mitchell Systems
+Paul Mitchell::PM Shines::US,Paul Mitchell,PM Shines,demi,US,discontinued,John Paul Mitchell Systems
+Paul Mitchell::Pop XG::global,Paul Mitchell,Pop XG,direct_dye,global,unclear,John Paul Mitchell Systems
+Paul Mitchell::The Color 10 Minute::global,Paul Mitchell,Paul Mitchell The Color (10 Minute express permanent),permanent,global,unclear,John Paul Mitchell Systems
+Paul Mitchell::Lighteners::global,Paul Mitchell,"Paul Mitchell Lighteners (e.g., Dual-Purpose Lightener, Skylight, Bond Rx)",lightener,global,unclear,John Paul Mitchell Systems
+Pulp Riot::Semi-Permanent::US,Pulp Riot,Pulp Riot Semi-Permanent (Paint),direct_dye,US,active,L'Oréal
+Pulp Riot::FACTION8::US,Pulp Riot,FACTION8,permanent,US,active,L'Oréal
+Pulp Riot::High Speed Toner::US,Pulp Riot,High Speed Toners,toner,US,active,L'Oréal
+Pulp Riot::Liquid Demi::US,Pulp Riot,Liquid Demi,demi,US,unclear,L'Oréal
+Pulp Riot::Lighteners::US,Pulp Riot,Pulp Riot Lighteners,lightener,US,active,L'Oréal
+Pulp Riot::Blank Canvas::US,Pulp Riot,Blank Canvas (Semi-Permanent Color Remover),lightener,US,active,L'Oréal
+Davines::Mask with Vibrachrom::US,Davines,Mask with Vibrachrom,permanent,US,active,Davines Group (Davines S.p.A.)
+Davines::A New Colour::US,Davines,A New Colour,permanent,US,active,Davines Group (Davines S.p.A.)
+Davines::View::US,Davines,View,demi,US,active,Davines Group (Davines S.p.A.)
+Davines::The Present Time::US,Davines,The Present Time,demi,US,active,Davines Group (Davines S.p.A.)
+Davines::The Century of Light::US,Davines,The Century of Light,lightener,US,active,Davines Group (Davines S.p.A.)
+Davines::Finest Pigments::US,Davines,Finest Pigments,direct_dye,US,active,Davines Group (Davines S.p.A.)
+Framesi::Framcolor 2001::US,Framesi,Framcolor 2001,permanent,US,active,Framesi S.p.A.
+Framesi::Framcolor 2001 Intense::global,Framesi,Framcolor 2001 Intense,permanent,global,active,Framesi S.p.A.
+Framesi::Framcolor Glamour::US,Framesi,Framcolor Glamour,permanent,US,active,Framesi S.p.A.
+Framesi::Framcolor Eclectic::US,Framesi,Framcolor Eclectic,demi,US,active,Framesi S.p.A.
+Framesi::Framcolor Eclectic Care::US,Framesi,Framcolor Eclectic Care,permanent,US,active,Framesi S.p.A.
+Framesi::Framcolor Eclectic 5D Color Gloss::global,Framesi,Framcolor Eclectic 5D Color Gloss,demi,global,active,Framesi S.p.A.
+Framesi::Framcolor Pure Pigment Plus::global,Framesi,Framcolor Pure Pigment Plus,direct_dye,global,active,Framesi S.p.A.
+Framesi::Decolor B::US,Framesi,Decolor B,lightener,US,active,Framesi S.p.A.
+Framesi::Framcolor Futura::US,Framesi,Framcolor Futura,permanent,US,unclear,Framesi S.p.A.
+Keune::Tinta Color::global,Keune,Tinta Color,permanent,global,active,Keune Haircosmetics
+Keune::Semi Color::global,Keune,Semi Color,demi,global,active,Keune Haircosmetics
+Keune::So Pure Color::global,Keune,So Pure Color,permanent,global,active,Keune Haircosmetics
+Keune::Color Chameleon::global,Keune,Color Chameleon,direct_dye,global,active,Keune Haircosmetics
+Keune::Ultimate Blonde::global,Keune,Ultimate Blonde,mixed_system,global,active,Keune Haircosmetics
+Alfaparf Milano Professional::Evolution of the Color::US,Alfaparf Milano Professional,Evolution of the Color,permanent,US,active,Alfaparf Group (Beauty & Business S.p.A.)
+Alfaparf Milano Professional::Evolution of the Color Shine Effect::global,Alfaparf Milano Professional,Evolution of the Color Shine Effect,permanent,global,active,Alfaparf Group (Beauty & Business S.p.A.)
+Alfaparf Milano Professional::Color Wear::US,Alfaparf Milano Professional,Color Wear,demi,US,active,Alfaparf Group (Beauty & Business S.p.A.)
+Alfaparf Milano Professional::Color Wear Gloss Toner::US,Alfaparf Milano Professional,Color Wear Gloss Toner,toner,US,active,Alfaparf Group (Beauty & Business S.p.A.)
+Alfaparf Milano Professional::Pigments::US,Alfaparf Milano Professional,Pigments,mixed_system,US,active,Alfaparf Group (Beauty & Business S.p.A.)
+Alfaparf Milano Professional::rEvolution::US,Alfaparf Milano Professional,rEvolution (rEvolution JC),direct_dye,US,active,Alfaparf Group (Beauty & Business S.p.A.)
+Alfaparf Milano Professional::BB Bleach::US,Alfaparf Milano Professional,BB Bleach,lightener,US,active,Alfaparf Group (Beauty & Business S.p.A.)
+Aveda::Full Spectrum Permanent::US,Aveda,Full Spectrum Permanent,permanent,US,active,The Estée Lauder Companies
+Aveda::Full Spectrum Deep::US,Aveda,Full Spectrum Deep,permanent,US,active,The Estée Lauder Companies
+Aveda::Full Spectrum Demi+::US,Aveda,Full Spectrum Demi+,demi,US,active,The Estée Lauder Companies
+Aveda::Full Spectrum Vibrants::US,Aveda,Full Spectrum Vibrants,semi,US,active,The Estée Lauder Companies
+Aveda::Enlightenment Blonding (Enlightener)::US,Aveda,Enlightenment Blonding (Enlightener),mixed_system,US,active,The Estée Lauder Companies
+L'Oréal Professionnel::Majirel::US,L'Oréal Professionnel,Majirel,permanent,US,active,L'Oréal Groupe
+L'Oréal Professionnel::Majirel High Lift::US,L'Oréal Professionnel,Majirel High Lift,permanent,US,active,L'Oréal Groupe
+L'Oréal Professionnel::Majirel Cool Cover::US,L'Oréal Professionnel,Majirel Cool Cover,permanent,US,active,L'Oréal Groupe
+L'Oréal Professionnel::iNOA::US,L'Oréal Professionnel,iNOA,permanent,US,active,L'Oréal Groupe
+L'Oréal Professionnel::Dia Light::US,L'Oréal Professionnel,Dia Light,demi,US,active,L'Oréal Groupe
+L'Oréal Professionnel::Dia Color::US,L'Oréal Professionnel,Dia Color,demi,US,active,L'Oréal Groupe
+L'Oréal Professionnel::Dia Richesse::global,L'Oréal Professionnel,Dia Richesse,demi,global,unclear,L'Oréal Groupe
+L'Oréal Professionnel::Blond Studio::US,L'Oréal Professionnel,Blond Studio,lightener,US,active,L'Oréal Groupe
+L'Oréal Professionnel::Colorful Hair::global,L'Oréal Professionnel,Colorful Hair (#COLORFULHAIR),direct_dye,global,unclear,L'Oréal Groupe
+Rusk::Deepshine Permanent (Pure Pigments)::US,Rusk,Deepshine Permanent Pure Pigments Conditioning Cream Color,permanent,US,active,Beauty Quest Group
+Rusk::Deepshine Gloss::US,Rusk,Deepshine Gloss,demi,US,active,Beauty Quest Group
+Rusk::Deepshine Xpress Gloss::US,Rusk,Deepshine Xpress Gloss,demi,US,active,Beauty Quest Group
+Rusk::RUSKin10::US,Rusk,RUSKin10 (RUSK IN 10),permanent,US,active,Beauty Quest Group
+Rusk::Deepshine Direct::US,Rusk,Deepshine Direct,direct_dye,US,active,Beauty Quest Group
+Rusk::Deepshine Lighteners::US,Rusk,Deepshine Lighteners,lightener,US,active,Beauty Quest Group
+Moroccanoil Professional::Color Rhapsody::US,Moroccanoil Professional,Color Rhapsody Permanent Cream Color,permanent,US,active,"Moroccanoil, Inc."
+Moroccanoil Professional::Color Calypso::US,Moroccanoil Professional,Color Calypso Demi-Permanent (Gloss & Cream),demi,US,active,"Moroccanoil, Inc."
+Moroccanoil Professional::Color Infusion::US,Moroccanoil Professional,Color Infusion Pure Color Mixer,mixed_system,US,active,"Moroccanoil, Inc."
+Moroccanoil Professional::Blonde Voyage Lighteners::US,Moroccanoil Professional,"Blonde Voyage Lighteners (Powder, Clay, Cream)",lightener,US,active,"Moroccanoil, Inc."
+Moroccanoil::Color Depositing Masks::US,Moroccanoil,Color Depositing Masks,semi,US,active,"Moroccanoil, Inc."
+Danger Jones::Semi-Permanent Color::US,Danger Jones,Semi-Permanent Hair Color,semi,US,active,
+Danger Jones::Gloss Toner with Bonder::US,Danger Jones,Gloss Toner with Bonder,toner,US,active,
+Danger Jones::Artistic Toners::US,Danger Jones,Artistic Toners,toner,US,active,
+Danger Jones::Lighteners::US,Danger Jones,Powder Lightener & Cream Lightener (with Bonding Complex),lightener,US,active,
+Danger Jones::Epilogue::US,Danger Jones,Epilogue Permanent Hair Color,permanent,US,active,
+Guy Tang #mydentity::Permanent Haircolor::US,Guy Tang #mydentity,Permanent Haircolor,permanent,US,active,Henkel Corporation
+Guy Tang #mydentity::Demi-Permanent Haircolor::US,Guy Tang #mydentity,Demi-Permanent Haircolor,demi,US,active,Henkel Corporation
+Guy Tang #mydentity::Demi-Permanent X-Press Toners::US,Guy Tang #mydentity,Demi-Permanent X-Press Toners,toner,US,active,Henkel Corporation
+Guy Tang #mydentity::Reflect Liquid Demi-Permanent::US,Guy Tang #mydentity,Reflect Liquid Demi-Permanent,demi,US,active,Henkel Corporation
+Guy Tang #mydentity::Super Power Direct Dye::US,Guy Tang #mydentity,Super Power Direct Dye,direct_dye,US,active,Henkel Corporation
+Guy Tang #mydentity::Direct Dye Vibrant Pastel::US,Guy Tang #mydentity,Direct Dye Vibrant / Pastel,direct_dye,US,active,Henkel Corporation
+Guy Tang #mydentity::Big9 Creme Lightener::US,Guy Tang #mydentity,Big9 Creme Lightener,lightener,US,active,Henkel Corporation
+Guy Tang #mydentity::#Magnum8 Powder Lightener::US,Guy Tang #mydentity,#Magnum8 Powder Lightener,lightener,US,active,Henkel Corporation
+Redken::Cover Fusion::US,Redken,Cover Fusion,,US,,L'Oréal USA
+Redken::Color Gels Oils::US,Redken,Color Gels Oils,,US,,L'Oréal USA
+Redken::Color Gels 10 Minute::US,Redken,Color Gels 10 Minute,,US,,L'Oréal USA
