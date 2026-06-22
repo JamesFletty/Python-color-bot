@@ -1,6 +1,6 @@
 {
   "artifact": "tone_normalization_map",
-  "count": 950,
+  "count": 1022,
   "tone_normalization_map": [
     {
       "canonical_key": "Redken::Color Gels Lacquers::US",
@@ -3385,7 +3385,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "01",
-      "manufacturer_term": null,
+      "manufacturer_term": "Natural-Blue",
       "normalized_tones": [
         "Natural",
         "Blue",
@@ -3448,7 +3448,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "1",
-      "manufacturer_term": null,
+      "manufacturer_term": "Ash",
       "normalized_tones": [
         "Blue",
         "Ash"
@@ -3478,7 +3478,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "12",
-      "manufacturer_term": null,
+      "manufacturer_term": "Blue-Violet",
       "normalized_tones": [
         "Blue",
         "Ash",
@@ -3494,7 +3494,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "13",
-      "manufacturer_term": null,
+      "manufacturer_term": "Blue-Green",
       "normalized_tones": [
         "Blue",
         "Ash",
@@ -3526,7 +3526,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "2",
-      "manufacturer_term": null,
+      "manufacturer_term": "Iridescent",
       "normalized_tones": [
         "Violet"
       ],
@@ -3540,7 +3540,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "21",
-      "manufacturer_term": null,
+      "manufacturer_term": "Violet-Blue",
       "normalized_tones": [
         "Violet",
         "Blue",
@@ -3585,7 +3585,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "24",
-      "manufacturer_term": null,
+      "manufacturer_term": "Violet-Copper",
       "normalized_tones": [
         "Violet",
         "Copper"
@@ -3600,7 +3600,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "3",
-      "manufacturer_term": null,
+      "manufacturer_term": "Gold",
       "normalized_tones": [
         "Gold"
       ],
@@ -3645,7 +3645,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "34",
-      "manufacturer_term": null,
+      "manufacturer_term": "Gold-Copper",
       "normalized_tones": [
         "Gold",
         "Copper"
@@ -3675,7 +3675,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "43",
-      "manufacturer_term": null,
+      "manufacturer_term": "Copper-Gold",
       "normalized_tones": [
         "Copper",
         "Gold"
@@ -3707,7 +3707,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "46",
-      "manufacturer_term": null,
+      "manufacturer_term": "Copper-Red",
       "normalized_tones": [
         "Copper",
         "Red"
@@ -3722,7 +3722,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "64",
-      "manufacturer_term": null,
+      "manufacturer_term": "Red-Copper",
       "normalized_tones": [
         "Red",
         "Copper"
@@ -3751,7 +3751,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "8",
-      "manufacturer_term": null,
+      "manufacturer_term": "Grey",
       "normalized_tones": [
         "Mocha"
       ],
@@ -3765,7 +3765,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Light",
       "manufacturer_tone_code": "82",
-      "manufacturer_term": null,
+      "manufacturer_term": "Grey-Violet",
       "normalized_tones": [
         "Mocha",
         "Violet"
@@ -3780,7 +3780,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "0",
-      "manufacturer_term": null,
+      "manufacturer_term": "Natural",
       "normalized_tones": [
         "Natural"
       ],
@@ -3794,7 +3794,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "01",
-      "manufacturer_term": null,
+      "manufacturer_term": "Natural-Blue",
       "normalized_tones": [
         "Natural",
         "Blue",
@@ -3810,7 +3810,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "03",
-      "manufacturer_term": null,
+      "manufacturer_term": "Natural-Gold",
       "normalized_tones": [
         "Natural",
         "Gold"
@@ -3855,7 +3855,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "1",
-      "manufacturer_term": null,
+      "manufacturer_term": "Ash",
       "normalized_tones": [
         "Blue",
         "Ash"
@@ -3901,7 +3901,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "12",
-      "manufacturer_term": null,
+      "manufacturer_term": "Blue-Violet",
       "normalized_tones": [
         "Blue",
         "Ash",
@@ -3917,7 +3917,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "13",
-      "manufacturer_term": null,
+      "manufacturer_term": "Blue-Green",
       "normalized_tones": [
         "Blue",
         "Ash",
@@ -3951,7 +3951,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "17",
-      "manufacturer_term": null,
+      "manufacturer_term": "Blue-Green",
       "normalized_tones": [
         "Blue",
         "Ash",
@@ -3998,7 +3998,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "21",
-      "manufacturer_term": null,
+      "manufacturer_term": "Violet-Blue",
       "normalized_tones": [
         "Violet",
         "Blue",
@@ -4058,7 +4058,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "3",
-      "manufacturer_term": null,
+      "manufacturer_term": "Gold",
       "normalized_tones": [
         "Gold"
       ],
@@ -4103,7 +4103,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "34",
-      "manufacturer_term": null,
+      "manufacturer_term": "Gold-Copper",
       "normalized_tones": [
         "Gold",
         "Copper"
@@ -4135,7 +4135,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "4",
-      "manufacturer_term": null,
+      "manufacturer_term": "Copper",
       "normalized_tones": [
         "Copper"
       ],
@@ -4164,7 +4164,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "43",
-      "manufacturer_term": null,
+      "manufacturer_term": "Copper-Gold",
       "normalized_tones": [
         "Copper",
         "Gold"
@@ -4210,7 +4210,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "46",
-      "manufacturer_term": null,
+      "manufacturer_term": "Copper-Red",
       "normalized_tones": [
         "Copper",
         "Red"
@@ -4225,7 +4225,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "5",
-      "manufacturer_term": null,
+      "manufacturer_term": "Mahogany",
       "normalized_tones": [
         "Red",
         "Violet",
@@ -4289,7 +4289,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "6",
-      "manufacturer_term": null,
+      "manufacturer_term": "Red",
       "normalized_tones": [
         "Red"
       ],
@@ -4333,7 +4333,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "64",
-      "manufacturer_term": null,
+      "manufacturer_term": "Red-Copper",
       "normalized_tones": [
         "Red",
         "Copper"
@@ -4348,7 +4348,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "65",
-      "manufacturer_term": null,
+      "manufacturer_term": "Red-Mahogany",
       "normalized_tones": [
         "Red",
         "Violet",
@@ -4393,7 +4393,7 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Majirel",
       "manufacturer_tone_code": "8",
-      "manufacturer_term": null,
+      "manufacturer_term": "Grey",
       "normalized_tones": [
         "Mocha"
       ],
@@ -12359,12 +12359,13 @@
       "brand": "L'Oréal Professionnel",
       "product_line": "Dia Richesse",
       "manufacturer_tone_code": "32",
-      "manufacturer_term": "32",
+      "manufacturer_term": null,
       "normalized_tones": [
-        "Other"
+        "Gold",
+        "Violet"
       ],
-      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
-      "mapping_confidence": "medium",
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []
     },
@@ -13935,6 +13936,1240 @@
       "mapping_confidence": "medium",
       "ambiguity_flag": false,
       "notes": []
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "00",
+      "manufacturer_term": "Intense Natural",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "tonal_reference_key: .00/NN (Intense Natural)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.00/NN)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "00",
+      "manufacturer_term": "Intense Natural",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "tonal_reference_key: .00/NN (Intense Natural)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.00/NN)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "00",
+      "manufacturer_term": "Intense Natural",
+      "normalized_tones": [
+        "Natural",
+        "Neutral"
+      ],
+      "mapping_rationale": "tonal_reference_key: .00/NN (Intense Natural)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.00/NN)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "0",
+      "manufacturer_term": "Natural",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "mapping_rationale": "tonal_reference_key: .0/N (Natural)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.0/N)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "0",
+      "manufacturer_term": "Natural",
+      "normalized_tones": [
+        "Natural"
+      ],
+      "mapping_rationale": "tonal_reference_key: .0/N (Natural)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.0/N)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "1",
+      "manufacturer_term": "Ash",
+      "normalized_tones": [
+        "Ash",
+        "Blue"
+      ],
+      "mapping_rationale": "tonal_reference_key: .1/B (Ash)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.1/B)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "12",
+      "manufacturer_term": "Blue-Violet",
+      "normalized_tones": [
+        "Blue",
+        "Violet"
+      ],
+      "mapping_rationale": "tonal_reference_key: .12/BV (Blue-Violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.12/BV)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "13",
+      "manufacturer_term": "Blue-Green",
+      "normalized_tones": [
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "tonal_reference_key: .13/BG (Blue-Green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.13/BG)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "17",
+      "manufacturer_term": "Blue-Green",
+      "normalized_tones": [
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "tonal_reference_key: .17/BGr (Blue-Green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.17/BGr)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "17",
+      "manufacturer_term": "Blue-Green",
+      "normalized_tones": [
+        "Blue",
+        "Green"
+      ],
+      "mapping_rationale": "tonal_reference_key: .17/BGr (Blue-Green)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.17/BGr)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "2",
+      "manufacturer_term": "Iridescent",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "tonal_reference_key: .2/V (Iridescent)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.2/V)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "2",
+      "manufacturer_term": "Iridescent",
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "tonal_reference_key: .2/V (Iridescent)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.2/V)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "21",
+      "manufacturer_term": "Violet-Blue",
+      "normalized_tones": [
+        "Violet",
+        "Blue"
+      ],
+      "mapping_rationale": "tonal_reference_key: .21/VB (Violet-Blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.21/VB)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "24",
+      "manufacturer_term": "Violet-Copper",
+      "normalized_tones": [
+        "Violet",
+        "Copper"
+      ],
+      "mapping_rationale": "tonal_reference_key: .24/VC (Violet-Copper)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.24/VC)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "24",
+      "manufacturer_term": "Violet-Copper",
+      "normalized_tones": [
+        "Violet",
+        "Copper"
+      ],
+      "mapping_rationale": "tonal_reference_key: .24/VC (Violet-Copper)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.24/VC)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "3",
+      "manufacturer_term": "Gold",
+      "normalized_tones": [
+        "Gold"
+      ],
+      "mapping_rationale": "tonal_reference_key: .3/G (Gold)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.3/G)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "34",
+      "manufacturer_term": "Gold-Copper",
+      "normalized_tones": [
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "tonal_reference_key: .34/GC (Gold-Copper)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.34/GC)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "4",
+      "manufacturer_term": "Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "tonal_reference_key: .4/C (Copper)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.4/C)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "4",
+      "manufacturer_term": "Copper",
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "tonal_reference_key: .4/C (Copper)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.4/C)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "43",
+      "manufacturer_term": "Copper-Gold",
+      "normalized_tones": [
+        "Copper",
+        "Gold"
+      ],
+      "mapping_rationale": "tonal_reference_key: .43/CG (Copper-Gold)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.43/CG)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "46",
+      "manufacturer_term": "Copper-Red",
+      "normalized_tones": [
+        "Copper",
+        "Red"
+      ],
+      "mapping_rationale": "tonal_reference_key: .46/CR (Copper-Red)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.46/CR)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "5",
+      "manufacturer_term": "Mahogany",
+      "normalized_tones": [
+        "Mahogany",
+        "Red"
+      ],
+      "mapping_rationale": "tonal_reference_key: .5/Rv (Mahogany)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.5/Rv)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "6",
+      "manufacturer_term": "Red",
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "tonal_reference_key: .6/R (Red)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.6/R)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "64",
+      "manufacturer_term": "Red-Copper",
+      "normalized_tones": [
+        "Red",
+        "Copper"
+      ],
+      "mapping_rationale": "tonal_reference_key: .64/RC (Red-Copper)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.64/RC)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "65",
+      "manufacturer_term": "Red-Mahogany",
+      "normalized_tones": [
+        "Red",
+        "Mahogany"
+      ],
+      "mapping_rationale": "tonal_reference_key: .65/RRv (Red-Mahogany)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.65/RRv)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "65",
+      "manufacturer_term": "Red-Mahogany",
+      "normalized_tones": [
+        "Red",
+        "Mahogany"
+      ],
+      "mapping_rationale": "tonal_reference_key: .65/RRv (Red-Mahogany)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.65/RRv)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "7",
+      "manufacturer_term": "Matte",
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "tonal_reference_key: .7/Gr (Matte)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.7/Gr)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "7",
+      "manufacturer_term": "Matte",
+      "normalized_tones": [
+        "Green"
+      ],
+      "mapping_rationale": "tonal_reference_key: .7/Gr (Matte)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.7/Gr)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "82",
+      "manufacturer_term": "Grey-Violet",
+      "normalized_tones": [
+        "Violet",
+        "Other"
+      ],
+      "mapping_rationale": "tonal_reference_key: .82/GyV (Grey-Violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.82/GyV)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "82",
+      "manufacturer_term": "Grey-Violet",
+      "normalized_tones": [
+        "Violet",
+        "Other"
+      ],
+      "mapping_rationale": "tonal_reference_key: .82/GyV (Grey-Violet)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.82/GyV)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "9",
+      "manufacturer_term": "Brown",
+      "normalized_tones": [
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "tonal_reference_key: .9/Ch (Brown)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.9/Ch)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "9",
+      "manufacturer_term": "Brown",
+      "normalized_tones": [
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "tonal_reference_key: .9/Ch (Brown)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.9/Ch)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "9",
+      "manufacturer_term": "Brown",
+      "normalized_tones": [
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "tonal_reference_key: .9/Ch (Brown)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.9/Ch)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "91",
+      "manufacturer_term": "Chocolate-Blue",
+      "normalized_tones": [
+        "Brown",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "tonal_reference_key: .91/ChB (Chocolate-Blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.91/ChB)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "91",
+      "manufacturer_term": "Chocolate-Blue",
+      "normalized_tones": [
+        "Brown",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "tonal_reference_key: .91/ChB (Chocolate-Blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.91/ChB)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "91",
+      "manufacturer_term": "Chocolate-Blue",
+      "normalized_tones": [
+        "Brown",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "tonal_reference_key: .91/ChB (Chocolate-Blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.91/ChB)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "99",
+      "manufacturer_term": "Intense Chocolate",
+      "normalized_tones": [
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "tonal_reference_key: .99/ChCh (Intense Chocolate)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.99/ChCh)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "99",
+      "manufacturer_term": "Intense Chocolate",
+      "normalized_tones": [
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "tonal_reference_key: .99/ChCh (Intense Chocolate)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.99/ChCh)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "99",
+      "manufacturer_term": "Intense Chocolate",
+      "normalized_tones": [
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "tonal_reference_key: .99/ChCh (Intense Chocolate)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.99/ChCh)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "03",
+      "manufacturer_term": "Natural-Gold",
+      "normalized_tones": [
+        "Natural",
+        "Gold"
+      ],
+      "mapping_rationale": "tonal_reference_key: .03/NG (Natural-Gold)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.03/NG)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "034",
+      "manufacturer_term": "Natural-Gold-Copper",
+      "normalized_tones": [
+        "Natural",
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "tonal_reference_key: .034/NGC (Natural-Gold-Copper)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.034/NGC)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "034",
+      "manufacturer_term": "Natural-Gold-Copper",
+      "normalized_tones": [
+        "Natural",
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "tonal_reference_key: .034/NGC (Natural-Gold-Copper)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.034/NGC)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "034",
+      "manufacturer_term": "Natural-Gold-Copper",
+      "normalized_tones": [
+        "Natural",
+        "Gold",
+        "Copper"
+      ],
+      "mapping_rationale": "tonal_reference_key: .034/NGC (Natural-Gold-Copper)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.034/NGC)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "06",
+      "manufacturer_term": "Natural-Red",
+      "normalized_tones": [
+        "Natural",
+        "Red"
+      ],
+      "mapping_rationale": "tonal_reference_key: .06/NR (Natural-Red)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.06/NR)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "06",
+      "manufacturer_term": "Natural-Red",
+      "normalized_tones": [
+        "Natural",
+        "Red"
+      ],
+      "mapping_rationale": "tonal_reference_key: .06/NR (Natural-Red)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.06/NR)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "06",
+      "manufacturer_term": "Natural-Red",
+      "normalized_tones": [
+        "Natural",
+        "Red"
+      ],
+      "mapping_rationale": "tonal_reference_key: .06/NR (Natural-Red)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.06/NR)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "01",
+      "manufacturer_term": "Natural-Blue",
+      "normalized_tones": [
+        "Natural",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "tonal_reference_key: .01/NB (Natural-Blue)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.01/NB)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Majirel::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Majirel",
+      "manufacturer_tone_code": "09",
+      "manufacturer_term": "Natural-Chocolate",
+      "normalized_tones": [
+        "Natural",
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "tonal_reference_key: .09/NCh (Natural-Chocolate)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.09/NCh)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Light::US",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Light",
+      "manufacturer_tone_code": "09",
+      "manufacturer_term": "Natural-Chocolate",
+      "normalized_tones": [
+        "Natural",
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "tonal_reference_key: .09/NCh (Natural-Chocolate)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.09/NCh)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "09",
+      "manufacturer_term": "Natural-Chocolate",
+      "normalized_tones": [
+        "Natural",
+        "Brown",
+        "Warm"
+      ],
+      "mapping_rationale": "tonal_reference_key: .09/NCh (Natural-Chocolate)",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Imported from tonal_reference_key_561a.csv (.09/NCh)"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "04",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Copper"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "07",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Natural",
+        "Green"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "10",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Natural"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "11",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "15",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "18",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Blue",
+        "Ash",
+        "Mocha"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "20",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Natural"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "22",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "23",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Gold"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "26",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Violet",
+        "Red"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "31",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Blue",
+        "Ash"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "35",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Gold",
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "40",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Natural"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "44",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "45",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Copper",
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "52",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "55",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "56",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet",
+        "Mahogany"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "60",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Natural"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "62",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red",
+        "Violet"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "66",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Red"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
+    },
+    {
+      "canonical_key": "L'Oréal Professionnel::Dia Richesse::global",
+      "brand": "L'Oréal Professionnel",
+      "product_line": "Dia Richesse",
+      "manufacturer_tone_code": "70",
+      "manufacturer_term": null,
+      "normalized_tones": [
+        "Green",
+        "Natural"
+      ],
+      "mapping_rationale": "Propagated from Majirel digit decode via tonal_reference_key import",
+      "mapping_confidence": "high",
+      "ambiguity_flag": false,
+      "notes": [
+        "Propagated from Majirel::US"
+      ]
     }
   ],
   "unresolved_mappings": [

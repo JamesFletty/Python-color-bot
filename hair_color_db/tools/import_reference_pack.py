@@ -37,6 +37,46 @@ TONE_FAMILY_TO_NORMALIZED = _mappings.TONE_FAMILY_TO_NORMALIZED
 AVEDA_DIRECTION_TO_NORMALIZED = _mappings.AVEDA_DIRECTION_TO_NORMALIZED
 LOREAL_FAMILY_TO_NORMALIZED = _mappings.LOREAL_FAMILY_TO_NORMALIZED
 
+LOREAL_TONE_MAP_LINES: list[tuple[str, str]] = [
+    ("L'Oréal Professionnel::Majirel::US", "Majirel"),
+    ("L'Oréal Professionnel::Dia Light::US", "Dia Light"),
+    ("L'Oréal Professionnel::Dia Richesse::global", "Dia Richesse"),
+]
+
+DESCRIPTOR_PART_TO_NORMALIZED: dict[str, list[str]] = {
+    "Intense Natural": ["Natural", "Neutral"],
+    "Natural": ["Natural"],
+    "Ash": ["Ash", "Blue"],
+    "Blue": ["Blue", "Ash"],
+    "Violet": ["Violet"],
+    "Blue-Violet": ["Blue", "Violet"],
+    "Blue-Green": ["Blue", "Green"],
+    "Iridescent": ["Violet"],
+    "Violet-Blue": ["Violet", "Blue"],
+    "Violet-Copper": ["Violet", "Copper"],
+    "Gold": ["Gold"],
+    "Gold-Copper": ["Gold", "Copper"],
+    "Copper": ["Copper"],
+    "Copper-Gold": ["Copper", "Gold"],
+    "Copper-Red": ["Copper", "Red"],
+    "Mahogany": ["Mahogany", "Red"],
+    "Red": ["Red"],
+    "Red-Copper": ["Red", "Copper"],
+    "Red-Mahogany": ["Red", "Mahogany"],
+    "Matte": ["Green"],
+    "Grey": ["Other"],
+    "Grey-Violet": ["Violet", "Other"],
+    "Brown": ["Brown", "Warm"],
+    "Chocolate": ["Brown", "Warm"],
+    "Chocolate-Blue": ["Brown", "Blue", "Ash"],
+    "Intense Chocolate": ["Brown", "Warm"],
+    "Natural-Gold": ["Natural", "Gold"],
+    "Natural-Gold-Copper": ["Natural", "Gold", "Copper"],
+    "Natural-Red": ["Natural", "Red"],
+    "Natural-Blue": ["Natural", "Blue", "Ash"],
+    "Natural-Chocolate": ["Natural", "Brown", "Warm"],
+}
+
 
 def _read_csv(path: Path) -> list[dict[str, str]]:
     with path.open(encoding="utf-8", newline="") as handle:
@@ -214,6 +254,136 @@ def enrich_shades_from_inventories(records: list[dict[str, Any]]) -> int:
     return changed
 
 
+def _descriptor_to_normalized(descriptor: str, family: str) -> list[str]:
+    """Map tonal_reference_key descriptor + family to normalized tone vocabulary."""
+    cleaned = descriptor.strip()
+    if cleaned in DESCRIPTOR_PART_TO_NORMALIZED:
+        return list(DESCRIPTOR_PART_TO_NORMALIZED[cleaned])
+    if "-" in cleaned:
+        merged: list[str] = []
+        for part in cleaned.split("-"):
+            for tone in DESCRIPTOR_PART_TO_NORMALIZED.get(part.strip(), []):
+                if tone not in merged:
+                    merged.append(tone)
+        if merged:
+            return merged
+    return list(LOREAL_FAMILY_TO_NORMALIZED.get(family.strip(), ["Other"]))
+
+
+def _parse_tonal_reference_code(tone_code: str) -> tuple[str, str]:
+    """Parse .03/NG → ('03', 'NG')."""
+    body = tone_code.strip().lstrip(".")
+    if "/" in body:
+        digits, letters = body.split("/", 1)
+        return digits, letters
+    return body, ""
+
+
+def enrich_tone_map_from_tonal_reference_key(
+    mappings: list[dict[str, Any]],
+) -> int:
+    """Upsert L'Oréal digit tone codes from shared/tonal_reference_key CSV."""
+    ref_path = REFERENCE / "shared" / "tonal_reference_key_561a.csv"
+    if not ref_path.exists():
+        return 0
+
+    index: dict[tuple[str, str], dict[str, Any]] = {}
+    for entry in mappings:
+        index[(entry["canonical_key"], entry["manufacturer_tone_code"])] = entry
+
+    changed = 0
+    for row in _read_csv(ref_path):
+        digit_code, letter_code = _parse_tonal_reference_code(row["Tone Code"])
+        descriptor = row.get("Descriptor Name", "").strip()
+        family = row.get("Tonal Family", "").strip()
+        normalized = _descriptor_to_normalized(descriptor, family)
+        manufacturer_term = descriptor or (f".{digit_code}/{letter_code}" if letter_code else f".{digit_code}")
+
+        for canonical_key, product_line in LOREAL_TONE_MAP_LINES:
+            key = (canonical_key, digit_code)
+            existing = index.get(key)
+            if existing:
+                preserve = any(
+                    note
+                    for note in (existing.get("notes") or [])
+                    if "Translation target" in str(note) or "cross-line" in str(note).lower()
+                )
+                if preserve:
+                    continue
+                updated = False
+                if not existing.get("manufacturer_term") and manufacturer_term:
+                    existing["manufacturer_term"] = manufacturer_term
+                    updated = True
+                if existing.get("normalized_tones") in (None, [], ["Other"]) and normalized != ["Other"]:
+                    existing["normalized_tones"] = normalized
+                    existing["mapping_rationale"] = (
+                        f"tonal_reference_key: {row['Tone Code']} ({descriptor})"
+                    )
+                    existing["mapping_confidence"] = "high"
+                    updated = True
+                if updated:
+                    changed += 1
+                continue
+
+            entry = {
+                "canonical_key": canonical_key,
+                "brand": "L'Oréal Professionnel",
+                "product_line": product_line,
+                "manufacturer_tone_code": digit_code,
+                "manufacturer_term": manufacturer_term,
+                "normalized_tones": normalized,
+                "mapping_rationale": f"tonal_reference_key: {row['Tone Code']} ({descriptor})",
+                "mapping_confidence": "high",
+                "ambiguity_flag": False,
+                "notes": [f"Imported from tonal_reference_key_561a.csv ({row['Tone Code']})"],
+            }
+            mappings.append(entry)
+            index[key] = entry
+            changed += 1
+
+    return changed
+
+
+def propagate_majirel_digit_map_to_dia_richesse(
+    mappings: list[dict[str, Any]],
+) -> int:
+    """Copy Majirel per-digit decode entries onto Dia Richesse::global."""
+    majirel_ck = "L'Oréal Professionnel::Majirel::US"
+    richesse_ck = "L'Oréal Professionnel::Dia Richesse::global"
+    index: dict[tuple[str, str], dict[str, Any]] = {
+        (entry["canonical_key"], entry["manufacturer_tone_code"]): entry for entry in mappings
+    }
+    changed = 0
+    for entry in mappings:
+        if entry["canonical_key"] != majirel_ck:
+            continue
+        code = entry["manufacturer_tone_code"]
+        key = (richesse_ck, code)
+        existing = index.get(key)
+        if existing and existing.get("normalized_tones") not in (None, [], ["Other"]):
+            continue
+        if existing:
+            existing["normalized_tones"] = list(entry["normalized_tones"])
+            existing["manufacturer_term"] = entry.get("manufacturer_term")
+            existing["mapping_rationale"] = (
+                "Propagated from Majirel digit decode via tonal_reference_key import"
+            )
+            existing["mapping_confidence"] = entry.get("mapping_confidence", "high")
+            changed += 1
+            continue
+        clone = dict(entry)
+        clone["canonical_key"] = richesse_ck
+        clone["product_line"] = "Dia Richesse"
+        clone["mapping_rationale"] = (
+            "Propagated from Majirel digit decode via tonal_reference_key import"
+        )
+        clone["notes"] = list(entry.get("notes") or []) + ["Propagated from Majirel::US"]
+        mappings.append(clone)
+        index[key] = clone
+        changed += 1
+    return changed
+
+
 def build_conversion_entries_from_reference() -> list[dict[str, Any]]:
     """Generate cross-line conversion rules from reference pairing data."""
     entries: list[dict[str, Any]] = []
@@ -359,7 +529,25 @@ def import_reference_pack(*, dry_run: bool = False) -> dict[str, Any]:
     shades_payload = json.loads(SHADES_JSON.read_text(encoding="utf-8"))
     records = shades_payload["normalized_shade_records"]
 
+    tone_payload = json.loads(TONE_MAP_JSON.read_text(encoding="utf-8"))
+    tone_mappings = tone_payload["tone_normalization_map"]
+    tone_ref_changes = enrich_tone_map_from_tonal_reference_key(tone_mappings)
+    richesse_propagated = propagate_majirel_digit_map_to_dia_richesse(tone_mappings)
+    tone_map_changed = tone_ref_changes + richesse_propagated
+
     shade_changes = enrich_shades_from_inventories(records)
+
+    rematerialized = 0
+    if tone_map_changed and not dry_run:
+        tone_payload["count"] = len(tone_mappings)
+        TONE_MAP_JSON.write_text(
+            json.dumps(tone_payload, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
+        from hair_color_db.tools.rematerialize_shade_tones_from_map import rematerialize
+
+        rematerialized = rematerialize(dry_run=False)["records_changed"]
+
     if shade_changes and not dry_run:
         shades_payload["count"] = len(records)
         SHADES_JSON.write_text(
@@ -396,6 +584,8 @@ def import_reference_pack(*, dry_run: bool = False) -> dict[str, Any]:
 
     return {
         "shade_records_updated": shade_changes,
+        "tone_map_entries_changed": tone_map_changed,
+        "shade_records_rematerialized": rematerialized,
         "conversion_entries": len(conversions),
         "dry_run": dry_run,
     }

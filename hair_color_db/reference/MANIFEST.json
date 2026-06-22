@@ -14,7 +14,7 @@
   },
   "import_targets": {
     "C_normalized_shade_records.json": "normalized_tones, manufacturer_tone_codes from inventories",
-    "F_tone_normalization_map.json": "digit/suffix tone codes from tonal_reference_key",
+    "F_tone_normalization_map.json": "digit/suffix tone codes from tonal_reference_key (import_reference_pack)",
     "J_cross_line_conversion_map.json": "explicit source→target rules from pairing + tone families"
   },
   "key_files": [
