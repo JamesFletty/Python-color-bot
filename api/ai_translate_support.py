@@ -73,6 +73,27 @@ def resolve_shade_for_line(
     return None
 
 
+def _is_specialty_subrange_code(shade_code: str) -> bool:
+    """True for specialty sub-range codes (e.g. IGORA ROYAL Absolutes 7-470).
+
+    Standard core shades use a 1-2 digit tone suffix (7-0, 7-4, 7-55, 6.46).
+    Specialty/anti-aging sub-ranges (Absolutes, etc.) use a 3+ digit tone
+    suffix. Those are gray-coverage shades and should not be the default pick
+    for a tone/level translation unless nothing else matches.
+    """
+    code = str(shade_code or "").strip()
+    m = re.search(r"[-.\s]([0-9]{3,})$", code)
+    return bool(m)
+
+
+def _deprioritize_specialty(matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Stable-sort core shades ahead of specialty sub-range shades."""
+    def code_of(m: dict[str, Any]) -> str:
+        return str(m.get("shade_code") or m.get("code") or "")
+
+    return sorted(matches, key=lambda m: _is_specialty_subrange_code(code_of(m)))
+
+
 def pick_best_target_shade(
     *,
     line_id: str,
@@ -104,6 +125,9 @@ def pick_best_target_shade(
     )
     if not matches:
         return None
+    # Prefer standard core shades over specialty sub-range (e.g. Absolutes)
+    # codes, which otherwise surface confusing picks like IGORA ROYAL 7-470.
+    matches = _deprioritize_specialty(matches)
     top = matches[0]
     return {
         "code": top["shade_code"],

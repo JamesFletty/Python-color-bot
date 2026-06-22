@@ -17,7 +17,17 @@ def _load_dotenv() -> None:
     except ImportError:
         return
     repo_root = Path(__file__).resolve().parents[1]
-    load_dotenv(repo_root / ".env", override=False)
+    # Load in priority order (first match wins because override=False).
+    # `.env.development.local` is where the v0/Vercel platform writes managed
+    # env vars (e.g. OPENAI_API_KEY); it must be loaded so the Python backend
+    # can see provider credentials, not just the Node/Next dev server.
+    for candidate in (
+        ".env.development.local",
+        ".env.local",
+        ".env.development",
+        ".env",
+    ):
+        load_dotenv(repo_root / candidate, override=False)
 
 
 _load_dotenv()

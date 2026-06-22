@@ -12,11 +12,13 @@ function FormulaValue({ value }: { value: unknown }) {
   if (value === null || value === undefined) return <span className="text-[var(--muted)]">—</span>;
   if (typeof value === "object" && !Array.isArray(value)) {
     return (
-      <div className="pl-4 border-l border-[var(--border)] space-y-1 mt-1">
+      <div className="pl-3 border-l border-[var(--border)] space-y-1 mt-1 min-w-0">
         {Object.entries(value as Record<string, unknown>).map(([k, v]) => (
-          <div key={k} className="flex gap-2 text-xs">
+          <div key={k} className="flex gap-2 text-xs min-w-0">
             <span className="text-[var(--muted)] shrink-0">{k}:</span>
-            <FormulaValue value={v} />
+            <div className="min-w-0 flex-1">
+              <FormulaValue value={v} />
+            </div>
           </div>
         ))}
       </div>
@@ -25,18 +27,20 @@ function FormulaValue({ value }: { value: unknown }) {
   if (Array.isArray(value)) {
     if (value.length === 0) return <span className="text-[var(--muted)]">[]</span>;
     return (
-      <div className="space-y-1">
+      <div className="space-y-1 min-w-0">
         {value.map((item, i) => (
-          <div key={i} className="flex items-start gap-1">
+          <div key={i} className="flex items-start gap-1 min-w-0">
             <ChevronRight size={10} className="mt-0.5 text-[var(--teal)] shrink-0" />
-            <FormulaValue value={item} />
+            <div className="min-w-0 flex-1">
+              <FormulaValue value={item} />
+            </div>
           </div>
         ))}
       </div>
     );
   }
   return (
-    <span className="mono text-[var(--teal)] text-xs break-all">
+    <span className="mono text-[var(--teal)] text-xs break-words [overflow-wrap:anywhere]">
       {String(value)}
     </span>
   );
@@ -58,9 +62,14 @@ function FormulaSection({
       </div>
       <div className="space-y-2">
         {entries.map(([key, value]) => (
-          <div key={key} className="grid grid-cols-[160px_1fr] gap-2 text-xs items-start">
-            <span className="text-[var(--muted)] truncate pt-0.5">{key.replace(/_/g, " ")}</span>
-            <FormulaValue value={value} />
+          <div
+            key={key}
+            className="flex flex-col gap-0.5 sm:grid sm:grid-cols-[150px_1fr] sm:gap-2 sm:items-start text-xs min-w-0"
+          >
+            <span className="text-[var(--muted)] sm:truncate sm:pt-0.5">{key.replace(/_/g, " ")}</span>
+            <div className="min-w-0">
+              <FormulaValue value={value} />
+            </div>
           </div>
         ))}
       </div>
