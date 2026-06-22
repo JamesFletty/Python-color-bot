@@ -11445,9 +11445,9 @@
       "manufacturer_tone_code": "R",
       "manufacturer_term": "R",
       "normalized_tones": [
-        "Other"
+        "Red"
       ],
-      "mapping_rationale": "Inferred from seed package tone_code / shade_category",
+      "mapping_rationale": "Aveda pure-tone R suffix = red reflect on base level",
       "mapping_confidence": "high",
       "ambiguity_flag": false,
       "notes": []

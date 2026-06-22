@@ -74,6 +74,9 @@ class AIFormulaRequest(BaseModel):
 class AITranslateRequest(BaseModel):
     source_formula: str = Field(..., max_length=4000, description="Existing formula to translate (free text)")
     source_line: str | None = Field(None, description="Source product line name (optional if in formula)")
+    source_canonical_key: str | None = Field(
+        None, description="Source canonical key (auto-inferred from source_line when omitted)"
+    )
     target_line: str = Field(..., description="Target product line name")
     target_line_id: str = Field(..., description="Target line ID")
     target_canonical_key: str = Field(..., description="Canonical key for target line")

@@ -244,6 +244,7 @@ async def ai_translate(body: AITranslateRequest):
             target_line=body.target_line,
             target_canonical_key=body.target_canonical_key,
             target_line_id=body.target_line_id,
+            source_canonical_key=body.source_canonical_key,
         )
     except AIConfigurationError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc

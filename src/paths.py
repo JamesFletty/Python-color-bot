@@ -13,6 +13,8 @@ SHADES_JSON = STAGE12 / "C_normalized_shade_records.json"
 TONE_MAP_JSON = STAGE12 / "F_tone_normalization_map.json"
 LINE_TECH_JSON = STAGE12 / "D_line_technical_records.json"
 
+CROSS_LINE_JSON = STAGE12 / "J_cross_line_conversion_map.json"
+
 DEFAULT_DB_PATH = REPO_ROOT / "hair_color.db"
 VERIFICATION_REPORT_PATH = REPO_ROOT / "hair_color_db_verification_report.json"
 

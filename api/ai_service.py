@@ -333,9 +333,15 @@ async def translate_formula(
     target_canonical_key: str,
     *,
     target_line_id: str | None = None,
+    source_canonical_key: str | None = None,
 ) -> dict[str, Any]:
     """Translate a formula from one color line to another."""
     from api.ai_translate_support import build_translation_context, ground_translation_result
+    from api.catalog import resolve_canonical_key
+
+    effective_source_key = source_canonical_key
+    if not effective_source_key:
+        effective_source_key = resolve_canonical_key(source_line)
 
     context = None
     if target_line_id:
@@ -344,6 +350,8 @@ async def translate_formula(
             source_line,
             target_line_id=target_line_id,
             target_line=target_line,
+            source_canonical_key=effective_source_key,
+            target_canonical_key=target_canonical_key,
         )
 
     settings = get_ai_settings()
@@ -377,10 +385,13 @@ async def translate_formula(
         catalog_block = f"TARGET CATALOG (pick shade code exactly from this list):\n{context['catalog_text']}\n\n"
         det = context.get("deterministic_pick")
         if det:
-            deterministic_hint = (
-                f"Suggested catalog match from tone engine: {det['code']} "
-                f"(level {det.get('level')}, tones {det.get('normalized_tones')})\n\n"
+            hint = (
+                f"Suggested catalog match from cross-line map/tone engine: {det['code']} "
+                f"(level {det.get('level')}, tones {det.get('normalized_tones')})"
             )
+            if det.get("conversion_notes"):
+                hint += f"\nComponent mapping: {det['conversion_notes']}"
+            deterministic_hint = hint + "\n\n"
 
     prompt = (
         f"Source formula:\n{source_formula}\n\n"

@@ -19,6 +19,7 @@ import sys
 from pathlib import Path
 
 from src.loaders import (
+    load_cross_line_conversions,
     load_json,
     load_line_technical_rules,
     load_shades,
@@ -62,6 +63,7 @@ def build_database(db_path: Path, logger) -> dict:
         load_shades(conn, logger)
         load_tone_mappings(conn, logger)
         load_line_technical_rules(conn, logger)
+        load_cross_line_conversions(conn, logger)
         report = validate_counts(conn)
         report["database_path"] = str(db_path.resolve())
         report["status"] = (

@@ -5,6 +5,7 @@ from __future__ import annotations
 import re
 from typing import Any
 
+from api.cross_line_conversion import convert_formula_via_cross_line_map
 from api.formula_text_parser import ParsedFormula, enrich_components_from_db, parse_formula_text, source_analysis_summary
 from api.shade_catalog import (
     format_catalog_for_prompt,
@@ -77,8 +78,21 @@ def pick_best_target_shade(
     line_id: str,
     product_line: str,
     parsed_source: ParsedFormula,
+    source_canonical_key: str | None = None,
+    target_canonical_key: str | None = None,
 ) -> dict[str, Any] | None:
-    """Deterministically pick a target shade using tone/level matching."""
+    """Pick target shade via cross-line conversion map, then tone/level match."""
+    if source_canonical_key and target_canonical_key:
+        converted = convert_formula_via_cross_line_map(
+            parsed_source,
+            source_canonical_key=source_canonical_key,
+            target_canonical_key=target_canonical_key,
+            target_line_id=line_id,
+            product_line=product_line,
+        )
+        if converted:
+            return converted
+
     level = parsed_source.inferred_level or 7.0
     tones = parsed_source.inferred_tones or ("Natural",)
     matches = rank_shades_for_query(
@@ -107,6 +121,8 @@ def build_translation_context(
     *,
     target_line_id: str,
     target_line: str,
+    source_canonical_key: str | None = None,
+    target_canonical_key: str | None = None,
 ) -> dict[str, Any]:
     """Parse source formula and load target-line catalog slice for grounded translation."""
     parsed = enrich_components_from_db(
@@ -118,6 +134,8 @@ def build_translation_context(
         line_id=target_line_id,
         product_line=target_line,
         parsed_source=parsed,
+        source_canonical_key=source_canonical_key,
+        target_canonical_key=target_canonical_key,
     )
     return {
         "parsed_source": parsed,
@@ -125,6 +143,7 @@ def build_translation_context(
         "catalog_shades": catalog,
         "catalog_text": format_catalog_for_prompt(catalog[:40]),
         "deterministic_pick": deterministic,
+        "conversion_notes": (deterministic or {}).get("conversion_notes"),
     }
 
 
@@ -237,5 +256,10 @@ def ground_translation_result(
     if grounded.get("grounding_note"):
         grounded["translation_notes"] = (
             f"{grounded.get('translation_notes', '').strip()} {grounded['grounding_note']}"
+        ).strip()
+    conversion_notes = context.get("conversion_notes")
+    if conversion_notes:
+        grounded["translation_notes"] = (
+            f"{grounded.get('translation_notes', '').strip()} [Cross-line map] {conversion_notes}"
         ).strip()
     return grounded
