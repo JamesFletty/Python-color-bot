@@ -18,6 +18,7 @@ from sqlalchemy.exc import SQLAlchemyError
 
 from api.backend import cors_origins, db_path, docs_enabled, uses_postgres_engine
 from api.formula_dispatch import run_formula_request
+from api.quality import attach_diagnostics
 from api.schemas import FormulaRequest, HealthResponse, AIFormulaRequest, AITranslateRequest, AIFormulaResponse
 from hair_color_db.production.consultation_service import (
     consultation_payload,
@@ -234,7 +235,7 @@ async def ai_formula(body: AIFormulaRequest):
             porosity=int(parsed.get("porosity", 5)),
             elasticity=int(parsed.get("elasticity", 6)),
         )
-        formula = run_formula_request(req)
+        formula = attach_diagnostics(run_formula_request(req), structured_request=parsed)
     except HTTPException:
         raise
     except Exception as exc:
@@ -295,7 +296,7 @@ async def ai_translate(body: AITranslateRequest):
             porosity=int(parsed.get("porosity", 5)),
             elasticity=int(parsed.get("elasticity", 6)),
         )
-        formula = run_formula_request(req)
+        formula = attach_diagnostics(run_formula_request(req), structured_request=parsed, translation_notes=translation_notes)
     except HTTPException:
         raise
     except Exception as exc:
