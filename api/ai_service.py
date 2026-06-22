@@ -52,7 +52,8 @@ Rules:
 - If input is a multi-shade formula (e.g. 40g 6n + 2g dark y/o + 2g dark r/o + 1g dark b/g), pick the blended equivalent
   shade from catalog that preserves warmth/coolness — do NOT drop warm boosters
 - Aveda Dark B/G = dark blue/green = COOL/ASH tone. Never describe it as warm, copper, or gold.
-- Aveda Full Spectrum shade notation: O/R=copper/orange-red (strawberry blonde), Y/O=gold, N/N=natural/natural, V/B=ash, B/B=intense ash. "Strawberry blonde" on Aveda = O/R family at target level.
+- Aveda Full Spectrum shade notation: O/R=copper/orange-red (strawberry blonde), R/O=red/copper, Y/O=gold/copper, N/N=natural/natural, V/R=violet-red, V/B=ash, B/B=intense ash. "Strawberry blonde" on Aveda = O/R or R/O family at target level; "red violet" = V/R or R/V family at target level.
+- Do not choose a plain natural shade when the goal includes warm/cool fashion language (strawberry, copper, red-violet, violet-red, beige, ash).
 - Redken Shades EQ: G=Gold (NOT Natural), N=Natural, CB=Copper Brown (warm), P=Pearl, V=Violet
 - Parse shorthand: 7g=07G gold, 6cb=06CB, 9p=09P pearl, 10v=010V violet
 - When the user describes a goal (e.g. "wants level 8 strawberry blonde"), pick the shade at the TARGET level, not the current level.
@@ -69,9 +70,9 @@ CRITICAL RULES:
 1. shade MUST be copied exactly from TARGET CATALOG — never invent codes (no 9-66, no 6N on Majirel).
    - Majirel: 6.0, 6.46, 6.64 (digit notation)
    - IGORA VIBRANCE: 9-1, 9-65, 6-46 (hyphen notation)
-2. Preserve warmth/coolness. Warm source (G, CB, Y/O, R/O, copper, gold) → warm target.
-   NEVER say warm tones are "not required" or "not needed".
-3. Map EACH source component in translation_notes (grams + shade + tone family).
+2. Preserve warmth/coolness. Warm source (G, CB, Y/O, R/O, copper, gold, strawberry) → warm target; cool source (B/G, V/B, ash, pearl, violet) → cool target.
+   NEVER say source tones are "not required" or "not needed". If no direct target equivalent exists, choose the nearest catalog shade and mark it as nearest-match in translation_notes.
+3. Map EACH source component in translation_notes (grams + shade + tone family) and identify the dominant base versus boosters/additives.
 4. Redken Shades EQ: G=Gold, N=Natural, CB=Copper Brown (warm), P=Pearl, V=Violet, GI=Gold Iridescent
 5. Aveda boosters: Dark Y/O=warm gold/copper, Dark R/O=copper/red, Dark B/G=dark blue/green (COOL — ash/green tone, NOT warm)
 
@@ -383,10 +384,10 @@ async def explain_formula(
         f"{context}"
         f"Formula engine output:\n"
         f"{json.dumps(formula_result, indent=2)}\n\n"
-        "Write 1–2 sentences for a stylist. State: what shade and developer to use and why it achieves the goal. "
-        "Do NOT mention rule codes, stage numbers, engine internals, or system names. "
-        "Do NOT tell the stylist to 'account for' warmth or anything else — the formula already handles it. "
-        "Just state the result plainly. Professional, direct, no hedging."
+        "Write 2–4 concise sentences for a stylist using ONLY the deterministic formula output. "
+        "State the selected shade, developer, mix ratio, processing time when present, and gray/lift rationale when present. "
+        "If warnings, assumptions, grounding substitutions, missing processing time, missing gray guidance, caution, or blocked status appear, disclose them plainly as verification notes. "
+        "Do NOT mention rule codes, stage numbers, or system names. Do NOT invent application steps, timings, gray coverage, or neutralizers that are absent from the engine output."
     )
     resp = await _client().chat.completions.create(
         model=settings.parse_model,
@@ -394,9 +395,9 @@ async def explain_formula(
             {
                 "role": "system",
                 "content": (
-                    "You are a senior colorist giving a brief formula note to another stylist. "
-                    "Be concise and direct. Never mention internal rule codes, stage numbers, or engine details. "
-                    "The formula is already correct — do not add caveats or application warnings."
+                    "You are a senior colorist auditing deterministic formula output for another stylist. "
+                    "Be concise, direct, and evidence-bound. Never mention internal rule codes or stage numbers. "
+                    "Do not assume the formula is correct: surface warnings, assumptions, substitutions, and missing fields when they exist."
                 ),
             },
             {"role": "user", "content": prompt},

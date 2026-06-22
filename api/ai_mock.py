@@ -32,6 +32,14 @@ _FORMULA_COMPONENT_RE = re.compile(
 )
 
 _TONE_HINTS: dict[str, tuple[str, ...]] = {
+    "strawberry blonde": ("Copper", "Red", "Gold"),
+    "strawberry blond": ("Copper", "Red", "Gold"),
+    "red violet": ("Red", "Violet"),
+    "red-violet": ("Red", "Violet"),
+    "violet red": ("Violet", "Red"),
+    "violet-red": ("Violet", "Red"),
+    "copper red": ("Copper", "Red"),
+    "copper-red": ("Copper", "Red"),
     "gold iridescent": ("Gold", "Pearl"),
     "caramel": ("Gold", "Beige"),
     "butterscotch": ("Gold", "Beige"),

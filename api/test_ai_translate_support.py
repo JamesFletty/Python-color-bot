@@ -28,6 +28,17 @@ class FormulaTextParserTests(unittest.TestCase):
         self.assertIn("07G", codes)
         self.assertIn("06CB", codes)
 
+    def test_goal_text_infers_strawberry_blonde_tones(self) -> None:
+        parsed = parse_formula_text(
+            "My client is 50% grey and a natural level 6 and wants to be a level 8 strawberry blonde"
+        )
+        self.assertEqual(parsed.inferred_tones[:3], ("Copper", "Red", "Gold"))
+
+    def test_goal_text_infers_intense_red_violet_tones(self) -> None:
+        parsed = parse_formula_text("Level 3 natural 20% grey wants level 5 intense red violet")
+        self.assertIn("Red", parsed.inferred_tones)
+        self.assertIn("Violet", parsed.inferred_tones)
+
 
 class TranslateGroundingTests(unittest.TestCase):
     @classmethod

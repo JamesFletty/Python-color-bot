@@ -19,6 +19,43 @@ _COMPONENT_RE = re.compile(
 )
 _SEQ_SUFFIXES = frozenset({"GI", "GB", "GV", "CB", "RB", "NW", "NA", "GG", "GN", "VB", "N", "G", "V", "A", "P"})
 
+_GOAL_TONE_HINTS: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ("strawberry blonde", ("Copper", "Red", "Gold")),
+    ("strawberry blond", ("Copper", "Red", "Gold")),
+    ("red violet", ("Red", "Violet")),
+    ("red-violet", ("Red", "Violet")),
+    ("violet red", ("Violet", "Red")),
+    ("violet-red", ("Violet", "Red")),
+    ("copper red", ("Copper", "Red")),
+    ("copper-red", ("Copper", "Red")),
+    ("red copper", ("Red", "Copper")),
+    ("red-copper", ("Red", "Copper")),
+    ("beige blonde", ("Beige", "Gold")),
+    ("beige blond", ("Beige", "Gold")),
+    ("ash brown", ("Ash", "Natural")),
+    ("neutral brown", ("Natural", "Brown")),
+    ("grey coverage", ("Natural",)),
+    ("gray coverage", ("Natural",)),
+    ("gold", ("Gold",)),
+    ("copper", ("Copper",)),
+    ("violet", ("Violet",)),
+    ("red", ("Red",)),
+    ("ash", ("Ash",)),
+    ("natural", ("Natural",)),
+)
+
+
+def infer_goal_tones(text: str) -> tuple[str, ...]:
+    """Infer tone families from goal-oriented free text, not just gram formulas."""
+    lowered = text.lower()
+    tones: list[str] = []
+    for phrase, phrase_tones in _GOAL_TONE_HINTS:
+        if phrase in lowered:
+            for tone in phrase_tones:
+                if tone not in tones:
+                    tones.append(tone)
+    return tuple(tones)
+
 
 @dataclass
 class FormulaComponent:
@@ -131,6 +168,9 @@ def parse_formula_text(text: str) -> ParsedFormula:
         for tone in comp.normalized_tones:
             if tone not in tone_set:
                 tone_set.append(tone)
+    for tone in infer_goal_tones(text):
+        if tone not in tone_set:
+            tone_set.append(tone)
     result.inferred_tones = tuple(tone_set)
     return result
 
@@ -184,6 +224,9 @@ def enrich_components_from_db(
 
     if levels:
         parsed.inferred_level = sum(levels) / len(levels)
+    for tone in infer_goal_tones(parsed.source_line_hint or ""):
+        if tone not in tone_set:
+            tone_set.append(tone)
     parsed.inferred_tones = tuple(dict.fromkeys(tone_set))
     return parsed
 
