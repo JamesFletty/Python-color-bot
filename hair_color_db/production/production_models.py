@@ -31,6 +31,16 @@ from sqlalchemy.dialects.postgresql import ARRAY, JSONB, UUID
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 
+def _pg_enum(enum_cls: type[enum.Enum], name: str) -> Enum:
+    """PostgreSQL enum column using Python enum values (lowercase), not names."""
+    return Enum(
+        enum_cls,
+        name=name,
+        create_type=False,
+        values_callable=lambda members: [member.value for member in members],
+    )
+
+
 class Base(DeclarativeBase):
     """Declarative base for operational models."""
 
@@ -390,7 +400,9 @@ class FormulationRuleCategory(str, enum.Enum):
     POROSITY = "porosity"
     CORRECTION = "correction"
     DEVELOPER = "developer"
+    DEVELOPER_SELECTION = "developer_selection"
     PROCESSING = "processing"
+    DEPOSIT = "deposit"
     SAFETY = "safety"
     COLOR_SCIENCE = "color_science"
     PRODUCT_TYPE = "product_type"
@@ -489,7 +501,7 @@ class UniversalColorScience(Base):
         nullable=True,
     )
     confidence: Mapped[ColorScienceConfidence] = mapped_column(
-        Enum(ColorScienceConfidence, name="color_science_confidence", create_type=False),
+        _pg_enum(ColorScienceConfidence, "color_science_confidence"),
         nullable=False,
     )
     created_at: Mapped[datetime] = mapped_column(
@@ -546,11 +558,11 @@ class ShadeIntermixingRule(Base):
         nullable=True,
     )
     rule_scope: Mapped[IntermixRuleScope] = mapped_column(
-        Enum(IntermixRuleScope, name="intermix_rule_scope", create_type=False),
+        _pg_enum(IntermixRuleScope, "intermix_rule_scope"),
         nullable=False,
     )
     restriction_type: Mapped[IntermixRestrictionType] = mapped_column(
-        Enum(IntermixRestrictionType, name="intermix_restriction_type", create_type=False),
+        _pg_enum(IntermixRestrictionType, "intermix_restriction_type"),
         nullable=False,
     )
     restriction_note: Mapped[str] = mapped_column(Text, nullable=False)
@@ -560,7 +572,7 @@ class ShadeIntermixingRule(Base):
         nullable=False,
     )
     evidence_status: Mapped[IntermixEvidenceStatus] = mapped_column(
-        Enum(IntermixEvidenceStatus, name="intermix_evidence_status", create_type=False),
+        _pg_enum(IntermixEvidenceStatus, "intermix_evidence_status"),
         nullable=False,
     )
     created_at: Mapped[datetime] = mapped_column(
@@ -603,7 +615,7 @@ class FormulationRule(Base):
     rule_condition: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
     rule_action: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
     rule_category: Mapped[FormulationRuleCategory] = mapped_column(
-        Enum(FormulationRuleCategory, name="formulation_rule_category", create_type=False),
+        _pg_enum(FormulationRuleCategory, "formulation_rule_category"),
         nullable=False,
     )
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
@@ -622,7 +634,7 @@ class FormulationRule(Base):
         nullable=True,
     )
     evidence_status: Mapped[IntermixEvidenceStatus] = mapped_column(
-        Enum(IntermixEvidenceStatus, name="intermix_evidence_status", create_type=False),
+        _pg_enum(IntermixEvidenceStatus, "intermix_evidence_status"),
         nullable=False,
     )
     test_coverage: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
@@ -762,7 +774,7 @@ class Consultation(Base):
         DateTime(timezone=True), nullable=True
     )
     status: Mapped[ConsultationStatus] = mapped_column(
-        Enum(ConsultationStatus, name="consultation_status", create_type=False),
+        _pg_enum(ConsultationStatus, "consultation_status"),
         nullable=False,
         default=ConsultationStatus.DRAFT,
     )
@@ -802,10 +814,10 @@ class HairProfile(Base):
     elasticity: Mapped[int] = mapped_column(Integer, nullable=False)
     gray_percentage: Mapped[int] = mapped_column(Integer, nullable=False)
     texture: Mapped[HairTexture] = mapped_column(
-        Enum(HairTexture, name="hair_texture", create_type=False), nullable=False
+        _pg_enum(HairTexture, "hair_texture"), nullable=False
     )
     scalp_condition: Mapped[ScalpCondition] = mapped_column(
-        Enum(ScalpCondition, name="scalp_condition", create_type=False), nullable=False
+        _pg_enum(ScalpCondition, "scalp_condition"), nullable=False
     )
     chemical_history: Mapped[list[Any]] = mapped_column(
         JSONB, nullable=False, server_default="[]"
@@ -815,7 +827,7 @@ class HairProfile(Base):
     desired_level: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     photo_urls: Mapped[Optional[list[str]]] = mapped_column(ARRAY(Text), nullable=True)
     intake_source: Mapped[IntakeSource] = mapped_column(
-        Enum(IntakeSource, name="intake_source", create_type=False), nullable=False
+        _pg_enum(IntakeSource, "intake_source"), nullable=False
     )
     data_confidence: Mapped[Decimal] = mapped_column(Numeric(3, 2), nullable=False)
     created_at: Mapped[datetime] = mapped_column(
@@ -871,11 +883,11 @@ class Formula(Base):
         nullable=False,
     )
     recommendation_type: Mapped[RecommendationType] = mapped_column(
-        Enum(RecommendationType, name="recommendation_type", create_type=False),
+        _pg_enum(RecommendationType, "recommendation_type"),
         nullable=False,
     )
     status: Mapped[FormulaStatus] = mapped_column(
-        Enum(FormulaStatus, name="formula_status", create_type=False),
+        _pg_enum(FormulaStatus, "formula_status"),
         nullable=False,
         default=FormulaStatus.DRAFT,
     )
@@ -920,7 +932,7 @@ class FormulaStep(Base):
     )
     step_order: Mapped[int] = mapped_column(Integer, nullable=False)
     zone: Mapped[FormulaZone] = mapped_column(
-        Enum(FormulaZone, name="formula_zone", create_type=False), nullable=False
+        _pg_enum(FormulaZone, "formula_zone"), nullable=False
     )
     shade_id: Mapped[Optional[uuid.UUID]] = mapped_column(
         UUID(as_uuid=True), ForeignKey("shade.shade_id", ondelete="SET NULL"), nullable=True
@@ -957,11 +969,11 @@ class RiskAssessment(Base):
         nullable=False,
     )
     risk_type: Mapped[RiskType] = mapped_column(
-        Enum(RiskType, name="risk_type", create_type=False), nullable=False
+        _pg_enum(RiskType, "risk_type"), nullable=False
     )
     probability: Mapped[Decimal] = mapped_column(Numeric(3, 2), nullable=False)
     severity: Mapped[RiskSeverity] = mapped_column(
-        Enum(RiskSeverity, name="risk_severity", create_type=False), nullable=False
+        _pg_enum(RiskSeverity, "risk_severity"), nullable=False
     )
     contributing_factors: Mapped[list[Any]] = mapped_column(
         JSONB, nullable=False, server_default="[]"

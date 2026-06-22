@@ -180,6 +180,7 @@ def apply_pending_migrations(
         before = MigrationContext.configure(connection).get_current_revision()
         alembic_config.attributes["connection"] = connection
         command.upgrade(alembic_config, "head")
+        connection.commit()
         after = MigrationContext.configure(connection).get_current_revision()
 
     if before == after:

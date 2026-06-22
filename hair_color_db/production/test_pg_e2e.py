@@ -35,7 +35,7 @@ class PostgreSqlEndToEndTests(unittest.TestCase):
             catalog = resolve_catalog_reference(
                 session,
                 canonical_key="Matrix::SoColor::US",
-                shade_code="5NN",
+                shade_code="5N",
             )
             result = run_engine(
                 EngineInput(
@@ -113,7 +113,7 @@ class PostgreSqlEndToEndTests(unittest.TestCase):
             catalog = resolve_catalog_reference(
                 session,
                 canonical_key="Matrix::SoColor::US",
-                shade_code="5NN",
+                shade_code="5N",
             )
             engine_input = EngineInput(
                 consultation_id=consultation_id,
