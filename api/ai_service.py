@@ -11,6 +11,7 @@ import os
 from dataclasses import dataclass
 from typing import Any, Literal
 
+import httpx
 from openai import AsyncAzureOpenAI, AsyncOpenAI
 
 AIProvider = Literal["azure", "openai", "xai", "mock"]
@@ -219,6 +220,30 @@ def get_ai_settings() -> AISettings:
     )
 
 
+def _is_bedrock_endpoint(endpoint: str | None) -> bool:
+    return bool(endpoint and ("amazonaws.com" in endpoint or "api.aws" in endpoint))
+
+
+def _bedrock_http_client() -> httpx.AsyncClient:
+    """Return an httpx client with AWS SigV4 signing for Bedrock endpoints."""
+    from httpx_aws_auth import AwsCredentials, AwsSigV4Auth
+
+    access_key = _env("AWS_ACCESS_KEY_ID")
+    secret_key = _env("AWS_SECRET_ACCESS_KEY")
+    if not access_key or not secret_key:
+        raise AIConfigurationError(
+            "AWS credentials not found. Ensure AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY are set."
+        )
+    region = _env("AWS_REGION") or _env("AWS_DEFAULT_REGION") or "us-east-1"
+    credentials = AwsCredentials(
+        access_key=access_key,
+        secret_key=secret_key,
+        session_token=_env("AWS_SESSION_TOKEN"),
+    )
+    auth = AwsSigV4Auth(credentials=credentials, region=region, service="bedrock")
+    return httpx.AsyncClient(auth=auth)
+
+
 def _client():
     settings = get_ai_settings()
     if settings.provider == "azure":
@@ -230,6 +255,12 @@ def _client():
             api_version=settings.api_version,
         )
     if settings.provider == "openai":
+        if _is_bedrock_endpoint(settings.endpoint):
+            return AsyncOpenAI(
+                api_key="bedrock",
+                base_url=settings.endpoint,
+                http_client=_bedrock_http_client(),
+            )
         return AsyncOpenAI(
             api_key=_env("OPENAI_API_KEY"),
             base_url=settings.endpoint,
