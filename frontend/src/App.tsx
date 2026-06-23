@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FlaskConical, ArrowRightLeft, Zap, Database, AlertCircle } from "lucide-react";
-import type { Brand, AIFormulaResponse } from "./api";
+import type { Brand, FormulaResult } from "./api";
 import { fetchBrands } from "./api";
 import FormulaMode from "./components/FormulaMode";
 import TranslateMode from "./components/TranslateMode";
@@ -12,7 +12,7 @@ export default function App() {
   const [mode, setMode] = useState<Mode>("formula");
   const [brands, setBrands] = useState<Brand[]>([]);
   const [brandsError, setBrandsError] = useState<string | null>(null);
-  const [result, setResult] = useState<AIFormulaResponse | null>(null);
+  const [result, setResult] = useState<FormulaResult | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -31,6 +31,7 @@ export default function App() {
   }
 
   const totalLines = brands.reduce((sum, b) => sum + b.lines.length, 0);
+  const totalBrands = brands.length;
 
   return (
     <div className="min-h-screen flex flex-col bg-[var(--bg)]">
@@ -56,7 +57,7 @@ export default function App() {
             {brands.length > 0 && (
               <div className="hidden sm:flex items-center gap-1.5 text-xs text-[var(--muted)]">
                 <Database size={11} />
-                <span className="mono">{brands.length} brands</span>
+                <span className="mono">{totalBrands} brands</span>
                 <span className="opacity-40">·</span>
                 <span className="mono">{totalLines} lines</span>
               </div>

@@ -2,14 +2,20 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 from sqlalchemy import func, select, text
 
 from app.config import get_settings
 from app.db import get_session_factory
 from app.models import FormulationRule, Shade
 from app.routers import ai, catalog, formula
+
+_FRONTEND_DIST = Path(__file__).resolve().parent.parent / "static" / "dist"
 
 
 def create_app() -> FastAPI:
@@ -60,6 +66,22 @@ def create_app() -> FastAPI:
             "rule_count": rule_count,
             "llm_configured": bool(settings.llm_api_key),
         }
+
+    if _FRONTEND_DIST.exists():
+        assets_dir = _FRONTEND_DIST / "assets"
+        if assets_dir.is_dir():
+            app.mount("/assets", StaticFiles(directory=str(assets_dir)), name="assets")
+
+        @app.get("/", include_in_schema=False)
+        def spa_index() -> FileResponse:
+            return FileResponse(str(_FRONTEND_DIST / "index.html"))
+
+        @app.get("/{full_path:path}", include_in_schema=False)
+        def spa_fallback(full_path: str):
+            index = _FRONTEND_DIST / "index.html"
+            if index.exists():
+                return FileResponse(str(index))
+            return JSONResponse({"detail": "Frontend not built"}, status_code=503)
 
     return app
 

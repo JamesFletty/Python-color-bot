@@ -1,9 +1,7 @@
 // Dev launcher: starts the Python FastAPI backend and the Vite dev server together.
 //
 // v0's preview (and `pnpm dev`) only runs a single command. The frontend proxies
-// /api, /health and /formula to a FastAPI backend on port 8000, so that backend
-// must be running too — otherwise the catalog requests fail with ECONNREFUSED and
-// the UI shows "Failed to load color catalog".
+// API routes to the v2 FastAPI backend on port 8000.
 //
 // This script bootstraps a Python virtualenv (once), installs requirements, then
 // runs uvicorn and vite side by side, forwarding their output and shutdown signals.
@@ -80,7 +78,7 @@ async function main() {
   startProcess(
     "backend",
     venvPython,
-    ["-m", "uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", BACKEND_PORT, "--reload"],
+    ["-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", BACKEND_PORT, "--reload"],
     { cwd: rootDir },
   )
 

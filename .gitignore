@@ -12,3 +12,4 @@ __pycache__/
 !.env.example
 hair_color.db
 hair_color_db_verification_report.json
+static/dist/

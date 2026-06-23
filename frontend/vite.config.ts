@@ -10,9 +10,13 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      "/api": "http://localhost:8000",
-      "/health": "http://localhost:8000",
+      "/brands": "http://localhost:8000",
+      "/lines": "http://localhost:8000",
       "/formula": "http://localhost:8000",
+      "/ai": "http://localhost:8000",
+      "/health": "http://localhost:8000",
+      "/docs": "http://localhost:8000",
+      "/openapi.json": "http://localhost:8000",
     },
   },
 });
