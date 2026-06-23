@@ -22,6 +22,11 @@ def _count_csv_rows(path: Path) -> int:
         return sum(1 for _ in csv.DictReader(handle))
 
 
+def _csv_rows(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
 class ExportValidationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
@@ -46,6 +51,14 @@ class ExportValidationTests(unittest.TestCase):
     def test_brands_lines_present(self) -> None:
         count = _count_csv_rows(BRANDS_LINES_CSV)
         self.assertGreaterEqual(count, 100)
+
+    def test_line_technical_defaults_exported(self) -> None:
+        rows = _csv_rows(BRANDS_LINES_CSV)
+        matrix = next(row for row in rows if row["canonical_key"] == "Matrix::SoColor::US")
+        self.assertEqual(matrix["mixing_ratio_default"], "1:1")
+        self.assertEqual(matrix["developer_default_volume"], "20")
+        self.assertTrue(matrix["processing_time_default_minutes"])
+        self.assertIn("technical_defaults_json", matrix)
 
 
 if __name__ == "__main__":

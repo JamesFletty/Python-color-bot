@@ -61,6 +61,7 @@ def build_formula(request: FormulaRequest, db: Session) -> FormulaResponse:
     rules = repo.load_active_formulation_rules(brand_id, shade.line_id)
     matched_rules, accumulated = evaluate_and_apply_rules(rules, context)
     status = apply_safety_checks(context, accumulated)
+    line_defaults = repo.get_line_technical_defaults(shade.line_id)
 
     if accumulated.hard_stops:
         return FormulaResponse(
@@ -87,11 +88,16 @@ def build_formula(request: FormulaRequest, db: Session) -> FormulaResponse:
             matched_rules=[rule.rule_name for rule in matched_rules],
         )
 
-    developer_volume = accumulated.developer_volume or 20
-    processing_time = accumulated.processing_time_minutes
+    developer_volume = accumulated.developer_volume or line_defaults.get("developer_volume") or 20
+    processing_time = (
+        accumulated.processing_time_minutes
+        if accumulated.processing_time_adjustments
+        else line_defaults.get("processing_time_minutes") or accumulated.processing_time_minutes
+    )
     mixing_ratio = (
         accumulated.mixing_ratio
         or shade.mixing_ratio
+        or line_defaults.get("mixing_ratio")
         or "1:1"
     )
 
@@ -131,7 +137,9 @@ def build_formula(request: FormulaRequest, db: Session) -> FormulaResponse:
         ),
         hair_conditions=conditions,
         warnings=warnings,
-        assumptions=["Standard manufacturer application assumed."],
+        assumptions=[
+            "Stage 12 line technical defaults fill developer, ratio, and timing only when rules or shade records do not provide them."
+        ],
         matched_rules=[rule.rule_name for rule in matched_rules],
     )
 

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any, Optional
 
-from sqlalchemy import Boolean, ForeignKey, Numeric, Text, UniqueConstraint
+from sqlalchemy import Boolean, ForeignKey, Integer, Numeric, Text, UniqueConstraint
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -29,6 +29,9 @@ class ProductLine(Base):
     canonical_key: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
     color_type: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     mixing_ratio_default: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    developer_default_volume: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    processing_time_default_minutes: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    technical_defaults: Mapped[Optional[dict[str, Any]]] = mapped_column(JSONB, nullable=True)
     region_or_market: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
 
     brand: Mapped["Brand"] = relationship(back_populates="product_lines")

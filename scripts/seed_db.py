@@ -86,6 +86,14 @@ def seed_brands_and_lines(session: Session) -> dict[str, int]:
                 line_name=row["product_line_name"].strip(),
                 canonical_key=canonical_key,
                 color_type=row.get("line_category") or None,
+                mixing_ratio_default=row.get("mixing_ratio_default") or None,
+                developer_default_volume=int(row["developer_default_volume"])
+                if row.get("developer_default_volume")
+                else None,
+                processing_time_default_minutes=int(row["processing_time_default_minutes"])
+                if row.get("processing_time_default_minutes")
+                else None,
+                technical_defaults=_parse_json_field(row.get("technical_defaults_json", "")) or None,
                 region_or_market=row.get("region_or_market") or None,
             )
             .on_conflict_do_update(
@@ -93,6 +101,15 @@ def seed_brands_and_lines(session: Session) -> dict[str, int]:
                 set_={
                     "line_name": row["product_line_name"].strip(),
                     "color_type": row.get("line_category") or None,
+                    "mixing_ratio_default": row.get("mixing_ratio_default") or None,
+                    "developer_default_volume": int(row["developer_default_volume"])
+                    if row.get("developer_default_volume")
+                    else None,
+                    "processing_time_default_minutes": int(row["processing_time_default_minutes"])
+                    if row.get("processing_time_default_minutes")
+                    else None,
+                    "technical_defaults": _parse_json_field(row.get("technical_defaults_json", ""))
+                    or None,
                     "region_or_market": row.get("region_or_market") or None,
                 },
             )

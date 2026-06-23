@@ -32,6 +32,17 @@ class EngineRepository:
         line = self.session.get(ProductLine, line_id)
         return line.brand_id if line else None
 
+    def get_line_technical_defaults(self, line_id: int) -> dict[str, Any]:
+        line = self.session.get(ProductLine, line_id)
+        if not line:
+            return {}
+        return {
+            "mixing_ratio": line.mixing_ratio_default,
+            "developer_volume": line.developer_default_volume,
+            "processing_time_minutes": line.processing_time_default_minutes,
+            "raw": line.technical_defaults or {},
+        }
+
     def load_active_formulation_rules(
         self, brand_id: int | None, line_id: int
     ) -> list[FormulationRuleRecord]:
