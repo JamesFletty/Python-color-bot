@@ -1,79 +1,25 @@
-import { Sparkles, FlaskConical, ChevronRight, AlertTriangle } from "lucide-react";
-import type { AIFormulaResponse } from "../api";
+import { Sparkles, FlaskConical, AlertTriangle } from "lucide-react";
+import type { FormulaResult } from "../api";
 
 interface Props {
-  result: AIFormulaResponse | null;
+  result: FormulaResult | null;
   loading: boolean;
   error: string | null;
   mode: "formula" | "translate";
 }
 
-function FormulaValue({ value }: { value: unknown }) {
-  if (value === null || value === undefined) return <span className="text-[var(--muted)]">—</span>;
-  if (typeof value === "object" && !Array.isArray(value)) {
-    return (
-      <div className="pl-3 border-l border-[var(--border)] space-y-1 mt-1 min-w-0">
-        {Object.entries(value as Record<string, unknown>).map(([k, v]) => (
-          <div key={k} className="flex gap-2 text-xs min-w-0">
-            <span className="text-[var(--muted)] shrink-0">{k}:</span>
-            <div className="min-w-0 flex-1">
-              <FormulaValue value={v} />
-            </div>
-          </div>
-        ))}
-      </div>
-    );
-  }
-  if (Array.isArray(value)) {
-    if (value.length === 0) return <span className="text-[var(--muted)]">[]</span>;
-    return (
-      <div className="space-y-1 min-w-0">
-        {value.map((item, i) => (
-          <div key={i} className="flex items-start gap-1 min-w-0">
-            <ChevronRight size={10} className="mt-0.5 text-[var(--teal)] shrink-0" />
-            <div className="min-w-0 flex-1">
-              <FormulaValue value={item} />
-            </div>
-          </div>
-        ))}
-      </div>
-    );
-  }
+function StatusBadge({ status }: { status: string }) {
+  const colors: Record<string, string> = {
+    ok: "text-emerald-400 border-emerald-900/50 bg-emerald-950/30",
+    caution: "text-[var(--amber)] border-[var(--amber)]/30 bg-[var(--amber-dim)]",
+    blocked: "text-red-400 border-red-900/50 bg-red-950/30",
+    error: "text-red-400 border-red-900/50 bg-red-950/30",
+  };
+  const cls = colors[status] ?? colors.caution;
   return (
-    <span className="mono text-[var(--teal)] text-xs break-words [overflow-wrap:anywhere]">
-      {String(value)}
+    <span className={`inline-flex px-2 py-0.5 rounded-full text-[10px] mono uppercase tracking-widest border ${cls}`}>
+      {status}
     </span>
-  );
-}
-
-function FormulaSection({
-  title,
-  data,
-}: {
-  title: string;
-  data: Record<string, unknown>;
-}) {
-  const entries = Object.entries(data).filter(([, v]) => v !== null && v !== undefined && v !== "" && !(Array.isArray(v) && v.length === 0));
-  if (entries.length === 0) return null;
-  return (
-    <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
-      <div className="text-xs font-semibold text-[var(--amber)] mono uppercase tracking-widest mb-3">
-        {title}
-      </div>
-      <div className="space-y-2">
-        {entries.map(([key, value]) => (
-          <div
-            key={key}
-            className="flex flex-col gap-0.5 sm:grid sm:grid-cols-[150px_1fr] sm:gap-2 sm:items-start text-xs min-w-0"
-          >
-            <span className="text-[var(--muted)] sm:truncate sm:pt-0.5">{key.replace(/_/g, " ")}</span>
-            <div className="min-w-0">
-              <FormulaValue value={value} />
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
   );
 }
 
@@ -88,7 +34,6 @@ export default function ResultPanel({ result, loading, error, mode }: Props) {
         <div className="text-sm mono animate-pulse">
           {mode === "translate" ? "Translating formula..." : "Computing formula..."}
         </div>
-        <div className="text-xs text-[var(--muted)] opacity-60">AI is analyzing your input</div>
       </div>
     );
   }
@@ -112,221 +57,168 @@ export default function ResultPanel({ result, loading, error, mode }: Props) {
         <div className="text-sm">
           {mode === "translate" ? "Enter a formula to translate" : "Describe your client to get started"}
         </div>
-        <div className="text-xs opacity-60 text-center max-w-xs">
-          {mode === "translate"
-            ? "Paste any formula — the AI will map it to your target line"
-            : "Use natural language or shade codes — the AI handles the rest"}
-        </div>
       </div>
     );
   }
 
-  const formula = result.formula as Record<string, unknown>;
-  const engineFailed = result.status === "error" || formula.status === "error";
-  const engineError =
-    typeof formula.error === "string"
-      ? formula.error
-      : engineFailed
-        ? "The formula engine could not complete this request."
-        : null;
-  const structured = result.structured_request as Record<string, unknown> | undefined;
-  const groundingNote =
-    typeof structured?.grounding_note === "string" ? structured.grounding_note : null;
-  const qualityFlags = formula.quality_flags as Record<string, unknown> | undefined;
-  const ruleProvenance = formula.rule_provenance as Record<string, unknown> | undefined;
-  const matchedStage13Rules = Array.isArray(ruleProvenance?.matched_stage13_rules)
-    ? ruleProvenance.matched_stage13_rules
-    : [];
-
-  const topKeys = ["shade", "shade_code", "shade_name", "color_line", "line", "product_line", "brand"];
-  const devKeys = ["developer", "developer_strength", "developer_volume", "developer_options", "mixing_ratio", "ratio"];
-  const processKeys = ["processing_time", "processing_time_minutes", "timing", "application_notes", "notes"];
-  const metaKeys = ["service_intent", "gray_coverage", "gray", "current_level", "desired_level", "texture", "porosity", "elasticity"];
-  const skipKeys = ["components", "formula_rule", "quality_flags", "rule_provenance", ...topKeys, ...devKeys, ...processKeys, ...metaKeys];
-
-  function pick(keys: string[]): Record<string, unknown> {
-    return Object.fromEntries(
-      Object.entries(formula).filter(([k]) => keys.some((kk) => k.toLowerCase().includes(kk)))
-    );
-  }
-
-  function omit(keys: string[]): Record<string, unknown> {
-    return Object.fromEntries(
-      Object.entries(formula).filter(([k]) => !keys.some((kk) => k.toLowerCase().includes(kk)))
-    );
-  }
-
-  const components = Array.isArray(formula.components) ? formula.components as Array<{product: string; grams: number; role: string}> : null;
-  const formulaRule = typeof formula.formula_rule === "string" ? formula.formula_rule : null;
-  const developer = typeof formula.developer === "string" ? formula.developer : null;
-  const mixingRatio = typeof formula.mixing_ratio === "string" ? formula.mixing_ratio : null;
-
-  const allPickedKeys = skipKeys;
-  const shadeSection = pick(topKeys);
-  const devSection = components ? {} : pick(devKeys);
-  const processSection = pick(processKeys);
-  const metaSection = pick(metaKeys);
-  const remainingSection = omit(allPickedKeys);
+  const { formula: data } = result;
+  const { shade, formula: block, hair_conditions, warnings, assumptions, matched_rules } = data;
 
   return (
     <div className="h-full overflow-y-auto space-y-4 pr-1">
-      {engineFailed && (
+      <div className="flex items-center gap-2">
+        <StatusBadge status={data.status} />
+        {result.parse_source && (
+          <span className="text-[10px] mono text-[var(--muted)]">parse: {result.parse_source}</span>
+        )}
+      </div>
+
+      {data.status === "blocked" && warnings.length > 0 && (
         <div className="bg-red-950/30 border border-red-900/50 rounded-lg p-4">
           <div className="flex items-center gap-2 mb-2">
             <AlertTriangle size={14} className="text-red-400" />
             <span className="text-xs font-semibold text-red-400 mono uppercase tracking-widest">
-              Engine Error
+              Blocked
             </span>
           </div>
-          <p className="text-sm text-red-300 leading-relaxed">{engineError}</p>
-          {structured?.shade != null && (
-            <p className="mt-2 text-xs text-[var(--muted)] mono">
-              AI translated to shade: {String(structured.shade)}
-            </p>
-          )}
+          <ul className="text-sm text-red-300 space-y-1">
+            {warnings.map((w, i) => (
+              <li key={i}>{w}</li>
+            ))}
+          </ul>
         </div>
       )}
 
-      {structured && Object.keys(structured).length > 0 && (
-        <details className="group bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
-          <summary className="cursor-pointer text-xs text-[var(--muted)] hover:text-[var(--text)] transition-colors mono select-none">
-            ▶ structured engine input (AI → deterministic engine)
-          </summary>
-          <pre className="mt-3 text-xs mono text-[var(--muted)] overflow-x-auto whitespace-pre-wrap">
-            {JSON.stringify(structured, null, 2)}
-          </pre>
-        </details>
-      )}
-
-      {/* AI Explanation */}
-      <div
-        className={`bg-[var(--surface)] border rounded-lg p-4 relative overflow-hidden ${
-          engineFailed ? "border-[var(--border)]" : "border-[var(--teal)]/20"
-        }`}
-      >
-        {!engineFailed && (
-          <div className="absolute inset-0 bg-gradient-to-br from-[var(--teal)]/5 to-transparent pointer-events-none" />
-        )}
+      <div className="bg-[var(--surface)] border border-[var(--teal)]/20 rounded-lg p-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--teal)]/5 to-transparent pointer-events-none" />
         <div className="flex items-center gap-2 mb-3">
-          <Sparkles size={14} className={engineFailed ? "text-[var(--muted)]" : "text-[var(--teal)]"} />
-          <span
-            className={`text-xs font-semibold mono uppercase tracking-widest ${
-              engineFailed ? "text-[var(--muted)]" : "text-[var(--teal)]"
-            }`}
-          >
-            {engineFailed ? "AI Notes" : "AI Recommendation"}
+          <Sparkles size={14} className="text-[var(--teal)]" />
+          <span className="text-xs font-semibold mono uppercase tracking-widest text-[var(--teal)]">
+            Recommendation
           </span>
         </div>
-        <p className={`text-sm leading-relaxed ${engineFailed ? "text-[var(--muted)]" : "text-[var(--text)]"}`}>
-          {result.ai_explanation}
-        </p>
-        {(result.translation_notes || groundingNote) && (
+        <p className="text-sm leading-relaxed text-[var(--text)]">{result.ai_explanation}</p>
+        {result.translation_notes && (
           <div className="mt-3 pt-3 border-t border-[var(--border)] text-xs text-[var(--muted)] italic">
-            {result.translation_notes || groundingNote}
+            {result.translation_notes}
           </div>
         )}
       </div>
 
-      {/* Why this formula / diagnostics */}
-      {(qualityFlags || ruleProvenance) && (
-        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
-          <div className="flex items-center gap-2 mb-3">
-            <FlaskConical size={14} className="text-[var(--amber)]" />
-            <span className="text-xs font-semibold text-[var(--amber)] mono uppercase tracking-widest">
-              Why this formula
-            </span>
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
+        <div className="text-xs font-semibold text-[var(--amber)] mono uppercase tracking-widest mb-3">
+          Selected Shade
+        </div>
+        <div className="space-y-2 text-sm">
+          <div className="flex gap-2">
+            <span className="mono text-[var(--teal)] text-lg font-semibold">{shade.shade_code}</span>
+            {shade.shade_name && <span className="text-[var(--text)]">{shade.shade_name}</span>}
           </div>
-          {qualityFlags && Array.isArray(qualityFlags.active) && qualityFlags.active.length > 0 && (
-            <div className="mb-3 flex flex-wrap gap-2">
-              {(qualityFlags.active as string[]).map((flag) => (
-                <span key={flag} className="rounded-full border border-[var(--amber)]/40 bg-[var(--amber)]/10 px-2 py-1 text-[10px] uppercase tracking-wide text-[var(--amber)] mono">
-                  {flag.replace(/_/g, " ")}
+          <div className="text-xs text-[var(--muted)]">
+            {shade.brand} · {shade.product_line}
+            {shade.level != null && ` · Level ${shade.level}`}
+          </div>
+          {shade.normalized_tones.length > 0 && (
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {shade.normalized_tones.map((t) => (
+                <span
+                  key={t}
+                  className="px-2 py-0.5 rounded-full text-[10px] mono bg-[var(--surface-2)] border border-[var(--border)] text-[var(--muted)]"
+                >
+                  {t}
                 </span>
               ))}
             </div>
           )}
-          {ruleProvenance && (
-            <div className="grid gap-3 text-xs sm:grid-cols-2">
-              <div>
-                <div className="text-[var(--muted)] mb-1">Selected shade source</div>
-                <FormulaValue value={ruleProvenance.selected_shade_source} />
-              </div>
-              <div>
-                <div className="text-[var(--muted)] mb-1">Developer source</div>
-                <FormulaValue value={ruleProvenance.developer_source} />
-              </div>
-              <div>
-                <div className="text-[var(--muted)] mb-1">Processing time source</div>
-                <FormulaValue value={ruleProvenance.processing_time_source} />
-              </div>
-              <div>
-                <div className="text-[var(--muted)] mb-1">Gray rule source</div>
-                <FormulaValue value={ruleProvenance.gray_rule_source} />
-              </div>
-            </div>
-          )}
-          {matchedStage13Rules.length > 0 && (
-            <div className="mt-3 pt-3 border-t border-[var(--border)] text-xs">
-              <span className="text-[var(--muted)]">Matched rules: </span>
-              <FormulaValue value={matchedStage13Rules} />
-            </div>
-          )}
         </div>
-      )}
+      </div>
 
-      {/* Multi-component formula (e.g. Aveda Intense Series) */}
-      {components && components.length > 0 && (
-        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
-          <div className="text-xs font-semibold text-[var(--amber)] mono uppercase tracking-widest mb-3">
-            Formula
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
+        <div className="text-xs font-semibold text-[var(--amber)] mono uppercase tracking-widest mb-3">
+          Formula
+        </div>
+        <div className="grid gap-3 sm:grid-cols-3 text-sm">
+          <div>
+            <div className="text-[var(--muted)] text-xs mb-1">Developer</div>
+            <div className="mono text-[var(--teal)] font-semibold">{block.developer}</div>
+            {block.developer_rationale && (
+              <div className="text-xs text-[var(--muted)] mt-1">{block.developer_rationale}</div>
+            )}
           </div>
-          <div className="space-y-2 mb-3">
-            {components.map((c, i) => (
-              <div key={i} className="flex items-center gap-3 text-sm">
-                <span className="mono text-[var(--teal)] font-semibold w-10 text-right shrink-0">
-                  {c.grams}g
-                </span>
-                <span className="text-[var(--text)]">{c.product}</span>
-                <span className="text-[var(--muted)] text-xs ml-auto">{c.role}</span>
-              </div>
+          <div>
+            <div className="text-[var(--muted)] text-xs mb-1">Mix Ratio</div>
+            <div className="mono text-[var(--text)]">{block.mixing_ratio}</div>
+          </div>
+          <div>
+            <div className="text-[var(--muted)] text-xs mb-1">Processing</div>
+            <div className="mono text-[var(--text)]">{block.processing_time}</div>
+          </div>
+        </div>
+        {block.gray_coverage_guidance && (
+          <div className="mt-3 pt-3 border-t border-[var(--border)] text-xs text-[var(--muted)]">
+            Gray coverage: {block.gray_coverage_guidance}
+          </div>
+        )}
+      </div>
+
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4">
+        <div className="text-xs font-semibold text-[var(--amber)] mono uppercase tracking-widest mb-3">
+          Client Profile
+        </div>
+        <div className="grid gap-2 sm:grid-cols-2 text-xs">
+          {hair_conditions.natural_level != null && (
+            <div><span className="text-[var(--muted)]">Natural level:</span> {hair_conditions.natural_level}</div>
+          )}
+          {hair_conditions.desired_level != null && (
+            <div><span className="text-[var(--muted)]">Desired level:</span> {hair_conditions.desired_level}</div>
+          )}
+          <div><span className="text-[var(--muted)]">Gray:</span> {hair_conditions.gray_percent}%</div>
+          <div><span className="text-[var(--muted)]">Porosity:</span> {hair_conditions.porosity}/10</div>
+          <div><span className="text-[var(--muted)]">Elasticity:</span> {hair_conditions.elasticity}/10</div>
+          <div><span className="text-[var(--muted)]">Texture:</span> {hair_conditions.texture}</div>
+        </div>
+      </div>
+
+      {warnings.length > 0 && data.status !== "blocked" && (
+        <div className="bg-[var(--amber-dim)] border border-[var(--amber)]/20 rounded-lg p-4">
+          <div className="text-xs font-semibold text-[var(--amber)] mono uppercase tracking-widest mb-2">
+            Warnings
+          </div>
+          <ul className="text-sm text-[var(--text)] space-y-1">
+            {warnings.map((w, i) => (
+              <li key={i}>{w}</li>
             ))}
-            <div className="flex items-center gap-3 text-sm pt-1 border-t border-[var(--border)] mt-2">
-              <span className="mono text-[var(--teal)] font-semibold w-10 text-right shrink-0">dev</span>
-              <span className="text-[var(--text)]">
-                {developer}{mixingRatio ? ` · ${mixingRatio}` : ""}
-              </span>
-            </div>
-          </div>
-          {formulaRule && (
-            <div className="text-xs text-[var(--muted)] mt-1 mono opacity-60">{formulaRule}</div>
-          )}
+          </ul>
         </div>
       )}
 
-      {/* Formula sections */}
-      {Object.keys(shadeSection).length > 0 && (
-        <FormulaSection title="Selected Shade" data={shadeSection} />
-      )}
-      {Object.keys(devSection).length > 0 && (
-        <FormulaSection title="Developer & Mix" data={devSection} />
-      )}
-      {Object.keys(processSection).length > 0 && (
-        <FormulaSection title="Processing" data={processSection} />
-      )}
-      {Object.keys(metaSection).length > 0 && (
-        <FormulaSection title="Client Profile" data={metaSection} />
-      )}
-      {Object.keys(remainingSection).length > 0 && (
-        <FormulaSection title="Additional Data" data={remainingSection} />
+      {matched_rules.length > 0 && (
+        <div className="text-xs text-[var(--muted)]">
+          <span className="mono">Matched rules:</span> {matched_rules.join(", ")}
+        </div>
       )}
 
-      {/* Raw output toggle */}
+      {assumptions.length > 0 && (
+        <div className="text-xs text-[var(--muted)] italic">
+          {assumptions.join(" ")}
+        </div>
+      )}
+
+      <details className="group">
+        <summary className="cursor-pointer text-xs text-[var(--muted)] hover:text-[var(--text)] transition-colors mono select-none py-2">
+          ▶ structured input
+        </summary>
+        <pre className="mt-2 text-xs mono text-[var(--muted)] bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4 overflow-x-auto whitespace-pre-wrap">
+          {JSON.stringify(result.structured_request, null, 2)}
+        </pre>
+      </details>
+
       <details className="group">
         <summary className="cursor-pointer text-xs text-[var(--muted)] hover:text-[var(--text)] transition-colors mono select-none py-2">
           ▶ raw engine output
         </summary>
         <pre className="mt-2 text-xs mono text-[var(--muted)] bg-[var(--surface)] border border-[var(--border)] rounded-lg p-4 overflow-x-auto whitespace-pre-wrap">
-          {JSON.stringify(result.formula, null, 2)}
+          {JSON.stringify(data, null, 2)}
         </pre>
       </details>
     </div>

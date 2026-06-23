@@ -1,2 +1,0 @@
-- [Frontend architecture](frontend-arch.md) — Vite+React frontend in frontend/, built to static/dist/, served by FastAPI StaticFiles + SPA catch-all
-- [xAI API key issue](xai-credits.md) — XAI_API_KEY set but team has no credits; add at console.x.ai to activate AI layer

@@ -1,18 +1,17 @@
 import { useState } from "react";
 import { ChevronDown, Search, Wand2 } from "lucide-react";
-import type { Brand, Line, AIFormulaResponse } from "../api";
-import { aiFormula, fetchShades } from "../api";
-import type { Shade } from "../api";
+import type { Brand, Line, FormulaResult, Shade } from "../api";
+import { computeFormula, fetchShades } from "../api";
 
 interface Props {
   brands: Brand[];
-  onResult: (r: AIFormulaResponse) => void;
+  onResult: (r: FormulaResult) => void;
   onLoading: (v: boolean) => void;
   onError: (e: string | null) => void;
 }
 
 export default function FormulaMode({ brands, onResult, onLoading, onError }: Props) {
-  const [selectedBrandId, setSelectedBrandId] = useState<string | null>(null);
+  const [selectedBrandId, setSelectedBrandId] = useState<number | null>(null);
   const [selectedLine, setSelectedLine] = useState<Line | null>(null);
   const [userInput, setUserInput] = useState("");
   const [shadeQuery, setShadeQuery] = useState("");
@@ -20,19 +19,19 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
   const [shadesLoading, setShadesLoading] = useState(false);
   const [selectedShade, setSelectedShade] = useState<Shade | null>(null);
 
-  const selectedBrand = brands.find((b) => b.id === selectedBrandId) ?? null;
+  const selectedBrand = brands.find((b) => b.brand_id === selectedBrandId) ?? null;
 
   function handleBrandChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    const id = e.target.value;
-    setSelectedBrandId(id || null);
+    const id = e.target.value ? Number(e.target.value) : null;
+    setSelectedBrandId(id);
     setSelectedLine(null);
     setShades([]);
     setSelectedShade(null);
   }
 
   function handleLineChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    const id = e.target.value;
-    const line = selectedBrand?.lines.find((l) => l.id === id) ?? null;
+    const id = Number(e.target.value);
+    const line = selectedBrand?.lines.find((l) => l.line_id === id) ?? null;
     setSelectedLine(line);
     setShades([]);
     setSelectedShade(null);
@@ -42,7 +41,7 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
     if (!selectedLine) return;
     setShadesLoading(true);
     try {
-      const results = await fetchShades(selectedLine.id, shadeQuery || undefined);
+      const results = await fetchShades(selectedLine.line_id, shadeQuery || undefined);
       setShades(results);
     } catch {
       // ignore shade search errors silently
@@ -63,12 +62,12 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
     onError(null);
     onLoading(true);
     try {
-      const shadeHint = selectedShade ? ` (shade code: ${selectedShade.code})` : "";
-      const result = await aiFormula({
+      const shadeHint = selectedShade ? ` (shade code: ${selectedShade.shade_code})` : "";
+      const result = await computeFormula({
         user_input: userInput + shadeHint,
-        color_line: selectedLine.name,
-        line_id: selectedLine.id,
-        canonical_key: selectedLine.key,
+        color_line: selectedLine.line_name,
+        line_id: selectedLine.line_id,
+        canonical_key: selectedLine.canonical_key,
       });
       onResult(result);
     } catch (err) {
@@ -80,7 +79,6 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
 
   return (
     <div className="space-y-5">
-      {/* Brand selector */}
       <div>
         <label className="block text-xs mono text-[var(--muted)] uppercase tracking-widest mb-2">
           Brand
@@ -93,8 +91,8 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
           >
             <option value="">Select brand…</option>
             {brands.map((b) => (
-              <option key={b.id} value={b.id}>
-                {b.name}
+              <option key={b.brand_id} value={b.brand_id}>
+                {b.brand_name}
               </option>
             ))}
           </select>
@@ -102,7 +100,6 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
         </div>
       </div>
 
-      {/* Line selector */}
       {selectedBrand && (
         <div>
           <label className="block text-xs mono text-[var(--muted)] uppercase tracking-widest mb-2">
@@ -110,14 +107,14 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
           </label>
           <div className="relative">
             <select
-              value={selectedLine?.id ?? ""}
+              value={selectedLine?.line_id ?? ""}
               onChange={handleLineChange}
               className="w-full appearance-none bg-[var(--surface-2)] border border-[var(--border)] rounded-lg px-4 py-2.5 text-sm text-[var(--text)] focus:outline-none focus:border-[var(--teal)]/50 transition-colors cursor-pointer"
             >
               <option value="">Select line…</option>
               {selectedBrand.lines.map((l) => (
-                <option key={l.id} value={l.id}>
-                  {l.name}
+                <option key={l.line_id} value={l.line_id}>
+                  {l.line_name}
                   {l.color_type ? ` (${l.color_type})` : ""}
                 </option>
               ))}
@@ -127,12 +124,11 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
         </div>
       )}
 
-      {/* Shade search (optional) */}
       {selectedLine && (
         <div>
           <label className="block text-xs mono text-[var(--muted)] uppercase tracking-widest mb-2">
             Shade Reference{" "}
-            <span className="normal-case font-normal opacity-60">(optional — type level or name)</span>
+            <span className="normal-case font-normal opacity-60">(optional)</span>
           </label>
           <div className="flex gap-2">
             <input
@@ -156,15 +152,15 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
             <div className="mt-2 max-h-40 overflow-y-auto bg-[var(--surface)] border border-[var(--border)] rounded-lg divide-y divide-[var(--border)]">
               {shades.map((s) => (
                 <button
-                  key={s.id}
+                  key={s.shade_id}
                   onClick={() => setSelectedShade(s)}
                   className={`w-full text-left px-3 py-2 text-xs hover:bg-[var(--surface-2)] transition-colors flex items-center gap-3 ${
-                    selectedShade?.id === s.id ? "bg-[var(--teal-dim)]" : ""
+                    selectedShade?.shade_id === s.shade_id ? "bg-[var(--teal-dim)]" : ""
                   }`}
                 >
-                  <span className="mono text-[var(--teal)] w-12 shrink-0">{s.code}</span>
-                  <span className="text-[var(--text)] flex-1 truncate">{s.name || "—"}</span>
-                  {s.level && (
+                  <span className="mono text-[var(--teal)] w-12 shrink-0">{s.shade_code}</span>
+                  <span className="text-[var(--text)] flex-1 truncate">{s.shade_name || "—"}</span>
+                  {s.level != null && (
                     <span className="text-[var(--muted)] shrink-0">Lv {s.level}</span>
                   )}
                 </button>
@@ -174,9 +170,9 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
 
           {selectedShade && (
             <div className="mt-2 flex items-center gap-2 px-3 py-2 bg-[var(--teal-dim)] border border-[var(--teal)]/20 rounded-lg">
-              <span className="text-xs mono text-[var(--teal)]">{selectedShade.code}</span>
-              {selectedShade.name && (
-                <span className="text-xs text-[var(--text)]">— {selectedShade.name}</span>
+              <span className="text-xs mono text-[var(--teal)]">{selectedShade.shade_code}</span>
+              {selectedShade.shade_name && (
+                <span className="text-xs text-[var(--text)]">— {selectedShade.shade_name}</span>
               )}
               <button
                 onClick={() => setSelectedShade(null)}
@@ -189,7 +185,6 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
         </div>
       )}
 
-      {/* Client description */}
       <div>
         <label className="block text-xs mono text-[var(--muted)] uppercase tracking-widest mb-2">
           Client & Goal
@@ -199,7 +194,7 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
           onChange={(e) => setUserInput(e.target.value)}
           placeholder={
             selectedLine
-              ? `Describe the client and desired result using ${selectedLine.name}…\n\nExamples:\n• Level 6 natural, 30% gray, medium texture, wants a cool ash brown\n• Dark brunette wanting balayage highlights, fine hair, first lightening service\n• 7NB to a warm golden blonde, currently colored`
+              ? `Describe the client and desired result using ${selectedLine.line_name}…`
               : "Select a color line first, then describe the client and goal…"
           }
           disabled={!selectedLine}
@@ -208,7 +203,6 @@ export default function FormulaMode({ brands, onResult, onLoading, onError }: Pr
         />
       </div>
 
-      {/* Submit */}
       <button
         onClick={handleSubmit}
         disabled={!selectedLine || !userInput.trim()}
