@@ -1,28 +1,43 @@
 # ColorSynth Formula Engine — v2
 
-This branch introduces the **v2 simplified architecture** described in
+This branch is the **v2 simplified architecture** described in
 [`prd/colorsynth-formula-engine-v2.md`](prd/colorsynth-formula-engine-v2.md).
 
-v1 (`api/`, `src/`, `hair_color_db/production/`) remains intact during the migration.
-v2 code lives alongside it until Phase 5 cleanup.
+v1 code (`api/`, `src/`, `hair_color_db/production/`) has been removed. The runnable
+application is `app/` with PostgreSQL only.
 
-## Status (Phase 4)
+## Status (Phase 5 complete)
 
 | Deliverable | Status |
 |-------------|--------|
-| Phases 1–3 (data, engine, API) | Done |
-| Frontend wired to v2 API (`/brands`, `/lines`, `/formula`, `/ai/*`) | Done |
-| `pnpm` only (removed `package-lock.json`) | Done |
-| Deleted `artifacts/mockup-sandbox/` | Done |
-| `static/dist/` gitignored (build via `pnpm build`) | Done |
-| v1 deletion | Phase 5 |
+| Phases 1–4 (data, engine, API, frontend) | Done |
+| v1 deletion + Docker/CI cleanup | Done |
+| Single LLM provider (`LLM_*` env vars) | Done |
+
+## Quick start
+
+```bash
+export DATABASE_URL=postgresql+psycopg2://haircolor:haircolor@localhost:5432/haircolor
+
+# Migrate + seed (requires running postgres)
+PYTHONPATH=. python3 scripts/bootstrap_v2.py
+
+# Run API (serves built frontend from static/dist/ when present)
+python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
+
+Docker full stack (builds frontend + bootstraps on start):
+
+```bash
+docker compose up --build
+```
 
 ## Frontend dev
 
 ```bash
-# Terminal 1 — backend (requires Postgres + seed)
+# Terminal 1 — backend
 export DATABASE_URL=postgresql+psycopg2://haircolor:haircolor@localhost:5432/haircolor
-PYTHONPATH=/workspace python3 scripts/bootstrap_v2.py
+PYTHONPATH=. python3 scripts/bootstrap_v2.py
 python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
 # Terminal 2 — Vite dev server (proxies API to :8000)
@@ -38,7 +53,7 @@ Production build (served by FastAPI at `/` when `static/dist/` exists):
 cd frontend && pnpm build
 ```
 
-## API endpoints (v2)
+## API endpoints
 
 | Method | Path | Description |
 |--------|------|-------------|
@@ -52,51 +67,32 @@ cd frontend && pnpm build
 
 Swagger UI: `/docs`
 
-## Phase 2 commands
+## Tests
 
 ```bash
-export DATABASE_URL=postgresql+psycopg2://haircolor:haircolor@localhost:5432/haircolor
-
-# Migrate + seed (requires running postgres)
-PYTHONPATH=/workspace python3 scripts/bootstrap_v2.py
-
-# Run v2 test suite
-PYTHONPATH=/workspace python3 -m unittest discover -s tests/v2 -v
+PYTHONPATH=. python3 -m unittest discover -s tests/v2 -v
 ```
 
-## Phase 1 commands
+## Regenerate seed CSVs
 
 ```bash
-# Audit source JSON (counts, duplicates, gaps)
-PYTHONPATH=/workspace python3 scripts/audit_stage_data.py
-
-# Export seed CSVs from stage12/stage13 JSON
-PYTHONPATH=/workspace python3 scripts/export_stage12_to_csv.py
-PYTHONPATH=/workspace python3 scripts/export_stage13_to_csv.py
-PYTHONPATH=/workspace python3 scripts/export_crossline_to_csv.py
-
-# Validate exports
-PYTHONPATH=/workspace python3 -m unittest tests.v2.test_export_validation -v
+PYTHONPATH=. python3 scripts/audit_stage_data.py
+PYTHONPATH=. python3 scripts/export_stage12_to_csv.py
+PYTHONPATH=. python3 scripts/export_stage13_to_csv.py
+PYTHONPATH=. python3 scripts/export_crossline_to_csv.py
+PYTHONPATH=. python3 -m unittest tests.v2.test_export_validation -v
 ```
 
 ## Inventory (repo-verified)
 
-- **2,537** normalized shades (stage12 `C_normalized_shade_records.json`)
+- **2,537** normalized shades
 - **1,032** cross-line conversion entries
-- **36** formulation rules (18 universal + 18 line overrides)
+- **143** formulation rules (18 universal + 125 line overrides)
 - **136** brand/line inventory rows
 
-## v2 stack
+## Stack
 
 - Python 3.12 + FastAPI
-- PostgreSQL 16 (single backend — no `ENGINE_BACKEND` switch)
-- OpenAI SDK with configurable `OPENAI_BASE_URL` (Bedrock Mantle compatible)
-- React 18 + Vite frontend (existing `frontend/`, cleaned in Phase 4)
-
-## Run v2 API scaffold
-
-```bash
-python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000
-```
-
-Health: `GET /health`
+- PostgreSQL 15+ (single backend)
+- OpenAI SDK with `LLM_BASE_URL` (Bedrock Mantle compatible)
+- React 18 + Vite frontend

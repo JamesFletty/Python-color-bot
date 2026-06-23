@@ -4,13 +4,14 @@ from __future__ import annotations
 
 from typing import Any
 
-from hair_color_db.formulation_rules.evaluator import (
+from app.domain.pigment_fill import compute_fill_guidance
+from app.domain.rule_evaluator_core import (
     apply_core_rule_action,
-    evaluate_condition as shared_evaluate_condition,
     is_blocked_status,
 )
-from hair_color_db.stage13_formulation_rules.pigment_fill import compute_fill_guidance
-
+from app.domain.rule_evaluator_core import (
+    evaluate_condition as shared_evaluate_condition,
+)
 from app.services.engine_models import (
     AccumulatedActions,
     MatchedRule,

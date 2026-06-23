@@ -1,4 +1,4 @@
-"""v2 initial schema — simplified catalog + rules (coexists with v1 tables)."""
+"""v2 initial schema — simplified catalog + rules."""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ import sqlalchemy as sa
 from sqlalchemy.dialects import postgresql
 
 revision = "v2_001_initial_schema"
-down_revision = "op001_production_layer"
+down_revision = None
 branch_labels = None
 depends_on = None
 

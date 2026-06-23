@@ -1,4 +1,4 @@
-"""Alembic environment for the PostgreSQL production schema."""
+"""Alembic environment for v2 PostgreSQL schema."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ from logging.config import fileConfig
 from alembic import context
 from sqlalchemy import engine_from_config, pool
 
-from hair_color_db.production.production_models import Base
+from app.models import Base
 
 config = context.config
 
@@ -26,7 +26,6 @@ def _database_url() -> str:
 
 
 def run_migrations_offline() -> None:
-    """Run migrations in offline mode."""
     context.configure(
         url=_database_url(),
         target_metadata=target_metadata,
@@ -39,7 +38,6 @@ def run_migrations_offline() -> None:
 
 
 def run_migrations_online() -> None:
-    """Run migrations in online mode."""
     existing_connection = config.attributes.get("connection")
     if existing_connection is not None:
         context.configure(connection=existing_connection, target_metadata=target_metadata)

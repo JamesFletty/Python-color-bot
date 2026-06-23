@@ -4,15 +4,10 @@ from __future__ import annotations
 
 from typing import Any
 
-from sqlalchemy import cast, Integer, select
+from sqlalchemy import Integer, cast, select
 from sqlalchemy.orm import Session
 
-from src.fill_shade_lookup import (
-    _is_natural_shade_code,
-    _normalized_tones_for_families,
-    _score_shade,
-)
-
+from app.domain.fill_shade_helpers import normalized_tones_for_families, score_fill_shade
 from app.models import Brand, ProductLine, Shade
 
 
@@ -24,7 +19,7 @@ def lookup_fill_shades_for_level(
     tone_families: list[str],
     limit: int = 3,
 ) -> list[dict[str, Any]]:
-    target_tones = _normalized_tones_for_families(tone_families)
+    target_tones = normalized_tones_for_families(tone_families)
     rows = session.execute(
         select(Shade, ProductLine, Brand)
         .join(ProductLine, ProductLine.line_id == Shade.line_id)
@@ -39,7 +34,7 @@ def lookup_fill_shades_for_level(
     ranked: list[dict[str, Any]] = []
     for shade, line, brand in rows:
         matched = {tone.tone_name for tone in shade.tones}
-        score = _score_shade(
+        score = score_fill_shade(
             matched_tones=matched,
             target_tones=target_tones,
             gray_coverage_claim=shade.gray_coverage_claim,

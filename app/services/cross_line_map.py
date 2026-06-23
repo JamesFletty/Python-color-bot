@@ -7,7 +7,7 @@ from typing import Any
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models import CrossLineMapping, ProductLine, Shade
+from app.models import CrossLineMapping, ProductLine
 from app.services.formula_text_parser import ParsedFormula
 from app.services.shade_matcher import rank_shade_candidates, resolve_shade
 

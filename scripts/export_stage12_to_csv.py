@@ -5,21 +5,16 @@ from __future__ import annotations
 
 import csv
 import json
-import sys
 from pathlib import Path
 from typing import Any
 
+from scripts.export_utils import infer_sub_range, parse_level
 from scripts.v2_paths import (
     BRANDS_LINES_CSV,
     LINE_INVENTORY_JSON,
-    SEED_DIR,
     SHADES_CSV,
     SHADES_JSON,
 )
-
-# Reuse v1 sub-range inference (domain logic preserved in src/ until v2 port).
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from src.loaders import infer_sub_range, parse_level  # noqa: E402
 
 
 def load_json(path: Path) -> dict[str, Any]:

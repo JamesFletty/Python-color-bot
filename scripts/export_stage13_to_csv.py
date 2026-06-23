@@ -12,7 +12,11 @@ import json
 from pathlib import Path
 from typing import Any
 
-from scripts.v2_paths import FORMULATION_RULES_CSV, LINE_OVERRIDES_JSON, SEED_DIR, UNIVERSAL_RULES_JSON
+from scripts.v2_paths import (
+    FORMULATION_RULES_CSV,
+    LINE_OVERRIDES_JSON,
+    UNIVERSAL_RULES_JSON,
+)
 
 
 def load_json(path: Path) -> dict[str, Any]:

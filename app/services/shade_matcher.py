@@ -6,8 +6,7 @@ from typing import Any
 
 from sqlalchemy.orm import Session
 
-from src.matching import ShadeQuery, brand_matches, parse_shade_reference, score_shade
-
+from app.domain.matching import ShadeQuery, brand_matches, parse_shade_reference, score_shade
 from app.services.engine_models import ResolvedShade
 from app.services.repository import EngineRepository
 

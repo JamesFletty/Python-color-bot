@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
-from typing import Any
 
 # e.g. 40g 6n, 20g 7g, 2g dark y/o, 40g 20 vol
 _COMPONENT_RE = re.compile(

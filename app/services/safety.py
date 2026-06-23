@@ -4,7 +4,11 @@ from __future__ import annotations
 
 from typing import Iterable
 
-from app.services.engine_models import AccumulatedActions, RecommendationStatus, RuleEvaluationContext
+from app.services.engine_models import (
+    AccumulatedActions,
+    RecommendationStatus,
+    RuleEvaluationContext,
+)
 
 
 def derive_recommendation_status(

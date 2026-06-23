@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any, Optional
 
-from sqlalchemy import Boolean, ForeignKey, Numeric, String, Text, UniqueConstraint
+from sqlalchemy import Boolean, ForeignKey, Numeric, Text, UniqueConstraint
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 

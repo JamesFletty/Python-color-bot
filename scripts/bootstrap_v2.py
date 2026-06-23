@@ -3,20 +3,20 @@
 
 from __future__ import annotations
 
+import os
 import subprocess
 import sys
+from pathlib import Path
 
 
 def main() -> int:
-    env = {"PYTHONPATH": "/workspace"}
-    import os
-
-    merged = os.environ.copy()
-    merged.update(env)
-
+    repo_root = Path(__file__).resolve().parent.parent
     if not os.environ.get("DATABASE_URL"):
         print("DATABASE_URL is required", file=sys.stderr)
         return 1
+
+    env = os.environ.copy()
+    env["PYTHONPATH"] = str(repo_root)
 
     steps = [
         [sys.executable, "-m", "alembic", "upgrade", "head"],
@@ -24,7 +24,7 @@ def main() -> int:
     ]
     for cmd in steps:
         print(f"Running: {' '.join(cmd)}", file=sys.stderr)
-        result = subprocess.run(cmd, cwd="/workspace", env=merged)
+        result = subprocess.run(cmd, cwd=repo_root, env=env)
         if result.returncode != 0:
             return result.returncode
     return 0

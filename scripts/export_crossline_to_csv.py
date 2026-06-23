@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from scripts.v2_paths import CROSS_LINE_JSON, CROSS_LINE_MAPPINGS_CSV, SEED_DIR
+from scripts.v2_paths import CROSS_LINE_JSON, CROSS_LINE_MAPPINGS_CSV
 
 
 def load_json(path: Path) -> dict[str, Any]:

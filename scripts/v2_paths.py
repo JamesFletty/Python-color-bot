@@ -16,6 +16,7 @@ CROSS_LINE_JSON = STAGE12_DIR / "J_cross_line_conversion_map.json"
 
 UNIVERSAL_RULES_JSON = STAGE13_DIR / "B_universal_rule_library.json"
 LINE_OVERRIDES_JSON = STAGE13_DIR / "D_brand_line_overrides.json"
+FORMULATION_ONTOLOGY_JSON = STAGE13_DIR / "A_formulation_ontology.json"
 
 SEED_DIR = REPO_ROOT / "data" / "seed"
 SHADES_CSV = SEED_DIR / "shades.csv"
